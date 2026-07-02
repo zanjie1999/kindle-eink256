@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Kindle.Dark" parent="@style/Base.Kindle.Shared.Dark.v27" />
+    <style name="Base.Kindle.Light" parent="@style/Base.Kindle.Shared.Light.v27" />
+    <style name="BottomSheetDialogStyle.Base" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:navigationBarColor">@color/ugs_background</item>
+        <item name="android:windowLightNavigationBar">@bool/light_navigation_and_status_bar</item>
+    </style>
+    <style name="FfsTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/ugs_background</item>
+        <item name="android:navigationBarColor">@color/ugs_background</item>
+        <item name="android:windowLightStatusBar">@bool/light_navigation_and_status_bar</item>
+        <item name="android:windowLightNavigationBar">@bool/light_navigation_and_status_bar</item>
+    </style>
+    <style name="Theme.ReaderStyle" parent="@style/Theme.ReaderStyle.White.v27" />
+    <style name="Theme.ReaderStyle.Black" parent="@style/Theme.ReaderStyle.Shared.Black.v27" />
+    <style name="Theme.ReaderStyle.Green" parent="@style/Theme.ReaderStyle.Shared.Green.v27" />
+    <style name="Theme.ReaderStyle.Sepia" parent="@style/Theme.ReaderStyle.Shared.Sepia.v27" />
+    <style name="Theme.ReaderStyle.White" parent="@style/Theme.ReaderStyle.Shared.White.v27" />
+    <style name="chromeDarkTheme" parent="@style/chromeDarkTheme.v27" />
+    <style name="chromeLightTheme" parent="@style/chromeLightTheme.v27" />
+    <style name="Base.Kindle.Shared.Dark.v27" parent="@style/Base.Kindle.Shared.Dark.v26">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Base.Kindle.Shared.Light.v27" parent="@style/Base.Kindle.Shared.Light.v26">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Black.v27" parent="@style/Theme.ReaderStyle.Shared.Black.v26">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Green.v27" parent="@style/Theme.ReaderStyle.Shared.Green.v26">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Sepia.v27" parent="@style/Theme.ReaderStyle.Shared.Sepia.v26">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.White.v27" parent="@style/Theme.ReaderStyle.Shared.White.v26">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.White.v27" parent="@style/Theme.ReaderStyle.Shared.White.v27" />
+    <style name="chromeDarkTheme.v27" parent="@style/chromeDarkTheme.v26">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="chromeLightTheme.v27" parent="@style/chromeLightTheme.v26">
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

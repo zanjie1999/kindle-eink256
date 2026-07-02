@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/ftue_loading_screen_tint" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:id="@id/ftue_loading_screen_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/syncing_your_account" />
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ruby_ftue_progress_bar" />
+</LinearLayout>

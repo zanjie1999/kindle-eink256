@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:drawable="@drawable/anyactions_share_icon_light" android:insetTop="@dimen/anyactions_share_icon_inset_top" android:insetBottom="@dimen/anyactions_share_icon_inset_bottom" />
+    </item>
+</selector>

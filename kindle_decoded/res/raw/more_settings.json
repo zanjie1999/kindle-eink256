@@ -1,0 +1,157 @@
+{
+  "name": "More",
+  "settings": [
+    {
+      "identifier": 31,
+      "priority": 100,
+      "display": {
+        "type": "disclosure",
+        "title": "kre_aamenu_reading_ruler",
+        "subTitle": "kre_aamenu_readingruler_desc",
+        "contents": [
+          {
+            "identifier": 40,
+            "priority": 100,
+            "display": {
+              "type": "toggle",
+              "title": "kre_aamenu_reading_ruler",
+              "subTitle": "kre_aamenu_readingruler_desc"
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          },
+          {
+            "identifier": 18,
+            "priority": 200,
+            "display": {
+              "type": "custom"
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          },
+          {
+            "identifier": 2,
+            "priority": 300,
+            "display": {
+              "type": "seekBar",
+              "title": "kre_aamenu_readingruler_opacity",
+              "minImage": "reading-ruler-opacity-min",
+              "maxImage": "reading-ruler-opacity-max",
+              "minValue": 0.2,
+              "maxValue": 1.0,
+              "increment": 0
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          },
+          {
+            "identifier": 19,
+            "priority": 400,
+            "display": {
+              "type": "radioGroup",
+              "title": "kre_aamenu_readingruler_style",
+              "buttonText": ["kre_aamenu_accessibility_label_readingruler_style_banded", "kre_aamenu_accessibility_label_readingruler_style_solid"],
+              "buttonImagesSelected": ["reading-ruler-banded", "reading-ruler-solid"],
+              "buttonImagesUnselected": ["reading-ruler-banded", "reading-ruler-solid"],
+              "buttonIds": [1, 2]
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          },
+          {
+            "identifier": 20,
+            "priority": 500,
+            "display": {
+              "type": "radioGroup",
+              "title": "kre_aamenu_readingruler_number_of_lines",
+              "buttonText": ["kre_aamenu_accessibility_label_readingruler_number_of_lines_small","kre_aamenu_accessibility_label_readingruler_number_of_lines_medium","kre_aamenu_accessibility_label_readingruler_number_of_lines_large"],
+              "buttonImagesSelected": ["reading-ruler-lines-one","reading-ruler-lines-three","reading-ruler-lines-five"],
+              "buttonImagesUnselected": ["reading-ruler-lines-one","reading-ruler-lines-three","reading-ruler-lines-five"],
+              "buttonIds": [1, 2, 3]
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          }
+        ]
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 10,
+      "priority": 200,
+      "display": {
+        "type": "disclosure",
+        "title": "kre_aamenu_reading_progress",
+        "subTitle": "kre_aamenu_reading_progress_description",
+        "contents": [
+          {
+            "identifier": 15,
+            "priority": 0,
+            "display": {
+              "type": "custom"
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          }
+        ]
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 13,
+      "priority": 400,
+      "display": {
+        "type": "toggle",
+        "title": "highlight_menu",
+        "subTitle": "Show the highlight menu when you select a passage of text."
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 12,
+      "priority": 500,
+      "display": {
+        "type": "toggle",
+        "title": "visible_clock"
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 23,
+      "priority": 600,
+      "display": {
+        "type": "toggle",
+        "title": "about_this_book"
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 9,
+      "priority": 700,
+      "display": {
+        "type": "toggle",
+        "title": "page_turn_animation",
+        "subTitle": "kre_aamenu_use_page_turn_animation"
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    }
+  ]
+}

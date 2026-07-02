@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/blurb_card_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/readingactions_large_padding" android:accessibilityHeading="true">
+        <ImageView android:id="@id/readingactions_program_image" android:layout_width="@dimen/readingactions_program_image_width" android:layout_height="@dimen/readingactions_program_image_height" android:layout_marginTop="@dimen/readingactions_small_padding" android:layout_marginEnd="@dimen/readingactions_xlarge_padding" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/readingactions_blurb_card_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/readingactions_title_byline_margin" android:maxLines="2" />
+            <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:ellipsize="end" android:id="@id/readingactions_blurb_card_byLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/apparentlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/apwebview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/apimageview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:adjustViewBounds="true" />
+    <ProgressBar android:id="@id/approgressbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

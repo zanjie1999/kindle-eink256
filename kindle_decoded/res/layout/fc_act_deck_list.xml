@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fc_toolbar_container" layout="@layout/fc_toolbar" />
+    <TextView android:id="@id/deck_list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fc_toolbar_container" android:textDirection="firstStrong" style="@style/fc_deck_list_title" />
+    <View android:id="@id/deck_list_title_divider" android:layout_width="fill_parent" android:layout_height="@dimen/fc_deck_list_divider_height" android:layout_below="@id/deck_list_title" style="@style/fc_deck_list_item_divider" />
+    <com.amazon.kedu.flashcards.views.SwipableDeckListView android:id="@id/deck_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:layout_below="@id/deck_list_title_divider" />
+    <com.amazon.kedu.flashcards.views.EmptyDecksView android:id="@id/deck_list_empty_view" android:paddingBottom="@dimen/fc_empty_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deck_list_title_divider" />
+</RelativeLayout>

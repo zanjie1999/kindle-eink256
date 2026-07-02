@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.debug.MemInfoView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Polling Interval in Seconds:    " />
+    <EditText android:id="@id/meminfo_pause_interval" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="5" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+    <Button android:id="@id/meminfo_controller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start Memory Profiling" />
+</com.amazon.kcp.debug.MemInfoView>

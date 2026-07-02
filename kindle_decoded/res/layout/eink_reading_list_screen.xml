@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/eink_reading_list_screen_padding_left" android:paddingBottom="@dimen/eink_reading_list_find_more_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/eink_reading_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/recommendations_provider" android:background="@drawable/e3os_textview_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="@dimen/eink_reading_list_shoveler_padding_left" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/eink_reading_list_no_recommendations_text_size" android:id="@id/find_books" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_books_reading_list_screen_button" android:layout_centerVertical="true" style="@style/EinkWidget.TextView" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/text_dashed_selector" android:scaleType="centerInside" android:layout_below="@id/find_books" android:layout_alignLeft="@id/find_books" android:layout_alignRight="@id/find_books" />
+    </RelativeLayout>
+</RelativeLayout>

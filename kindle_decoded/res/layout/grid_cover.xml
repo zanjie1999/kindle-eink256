@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.widget.CheckableLinearLayout android:gravity="bottom|center" android:orientation="vertical" android:paddingTop="?library_grid_view_vertical_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/series_grid_deep_stack" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/series_grid_deep_stack" />
+    <include android:id="@id/badgeable_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/badgeable_cover" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:ellipsize="end" android:layout_gravity="start" android:id="@id/book_number" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</com.amazon.kcp.widget.CheckableLinearLayout>

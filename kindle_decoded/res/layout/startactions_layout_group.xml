@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/startactions_widget_padding_horizontal" android:paddingRight="@dimen/startactions_widget_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/startactions_layout_group_header" style="@style/startactions_layout_group_header" />
+    <include layout="@layout/startactions_component_divider" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/notifications_screen" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/notification_setting_header" style="?notification_setting_header_style" />
+    <fragment android:name="com.amazon.kcp.library.NotificationsFragment" android:id="@id/pushNotificationsFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

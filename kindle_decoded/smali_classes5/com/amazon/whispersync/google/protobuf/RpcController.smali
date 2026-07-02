@@ -1,0 +1,33 @@
+.class public interface abstract Lcom/amazon/whispersync/google/protobuf/RpcController;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract errorText()Ljava/lang/String;
+.end method
+
+.method public abstract failed()Z
+.end method
+
+.method public abstract isCanceled()Z
+.end method
+
+.method public abstract notifyOnCancel(Lcom/amazon/whispersync/google/protobuf/RpcCallback;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/amazon/whispersync/google/protobuf/RpcCallback<",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract reset()V
+.end method
+
+.method public abstract setFailed(Ljava/lang/String;)V
+.end method
+
+.method public abstract startCancel()V
+.end method

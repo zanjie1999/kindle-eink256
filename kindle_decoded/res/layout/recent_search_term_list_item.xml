@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/recent_search_list_item_padding_vert" android:paddingBottom="@dimen/recent_search_list_item_padding_vert" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/amazon_grey_818181" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/search_term_text" android:paddingTop="@dimen/recent_search_list_term_padding_vert" android:paddingBottom="@dimen/recent_search_list_term_padding_vert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="Amazon Ember" android:layout_marginStart="@dimen/recent_search_list_term_margin_start" android:layout_marginEnd="@dimen/recent_search_list_term_margin_end" style="@style/reader_search_text.body" />
+</LinearLayout>

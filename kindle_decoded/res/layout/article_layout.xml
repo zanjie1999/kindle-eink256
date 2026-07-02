@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.ArticleLayout android:paddingBottom="16.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/select_overlay_selector" style="?article_layout_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/shoveler_article_section" android:background="@drawable/article_border_light" android:layout_width="255.0dip" android:layout_height="316.0dip" android:baselineAligned="false">
+        <FrameLayout android:id="@id/shoveler_article_top_section" android:layout_width="fill_parent" android:layout_height="147.0dip">
+            <include layout="@layout/article_hero_image" />
+            <FrameLayout android:background="@drawable/article_publisher_backdrop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="118.0dip" android:layout_marginStart="14.0dip">
+                <include layout="@layout/article_publisher_image" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/shoveler_article_bottom_section_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.599976dip" android:layout_marginBottom="2.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+            <include layout="@layout/article_title" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/shoveler_article_bottom_section_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.399994dip" android:baselineAligned="false" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+            <include layout="@layout/article_intro" />
+        </FrameLayout>
+    </LinearLayout>
+</com.amazon.kcp.home.ui.ArticleLayout>

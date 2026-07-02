@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.FoldingSelectionButtons android:visibility="gone" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/selection_buttons_container" android:importantForAccessibility="no" style="@style/selection_buttons_container" />
+    <ImageView android:id="@id/selection_buttons_marker_top" android:src="@drawable/menu_annotation_pointer_top" style="@style/wrap" />
+    <ImageView android:id="@id/selection_buttons_marker_bottom" android:src="@drawable/menu_annotation_pointer_btm" style="@style/wrap" />
+</com.amazon.kcp.reader.ui.FoldingSelectionButtons>

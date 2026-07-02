@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="?top_bar_search_background" android:padding="@dimen/search_box_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?top_bar_search_icon" />
+    <EditText android:textAppearance="@style/Ruby.TextAppearance.Caption2" android:textColorHint="?text_secondary" android:id="@id/search_query" android:background="?top_bar_search_background" android:layout_width="0.0dip" android:layout_height="@dimen/search_box_height" android:hint="@string/search_box_text" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch|flagNoExtractUi" android:textDirection="firstStrong" style="@style/Ruby.TextAppearance.Body.Grey">
+        <requestFocus />
+    </EditText>
+    <ImageView android:id="@id/search_close_icon" android:background="?top_bar_search_close_icon_background" android:padding="@dimen/search_box_close_icon_padding" android:visibility="gone" android:layout_width="@dimen/search_box_close_icon_size" android:layout_height="@dimen/search_box_close_icon_size" android:src="?top_bar_close_icon" android:contentDescription="@string/clear_search_text" />
+</LinearLayout>

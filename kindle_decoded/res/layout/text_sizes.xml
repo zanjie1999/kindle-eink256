@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ReaderTextSizesOptionsView android:id="@id/view_options_row_text_size" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/font_size_decrease" android:src="?ic_font_size_decrease" android:contentDescription="@string/decrease_text_size" style="@style/view_options_text_size_button" />
+    <ImageButton android:id="@id/font_size_increase" android:src="?ic_font_size_increase" android:contentDescription="@string/increase_text_size" style="@style/view_options_text_size_button" />
+</com.amazon.kcp.reader.ui.ReaderTextSizesOptionsView>

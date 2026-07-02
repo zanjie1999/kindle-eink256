@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/home_loading_spinner" android:layout_width="fill_parent" android:layout_height="@dimen/home_spinner_widget_height" android:layout_marginTop="@dimen/home_spinner_margin_top" android:layout_marginStart="@dimen/resume_layout_margin" android:layout_marginEnd="@dimen/resume_layout_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_bar" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_recommendations" android:maxLines="2" android:layout_marginStart="@dimen/home_spinner_text_margin_start" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/library_state_items_label" android:layout_weight="1.0" style="@style/library_state_item_label" />
+    <TextView android:id="@id/library_state_items_count" android:layout_weight="0.0" style="@style/library_state_item_count" />
+</LinearLayout>

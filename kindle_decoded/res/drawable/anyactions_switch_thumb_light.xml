@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/anyactions_amazon_orange_light" />
+            <size android:height="@dimen/anyactions_switch_thumb_size" android:width="@dimen/anyactions_switch_thumb_size" />
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/anyactions_amazon_orange_disabled_light" />
+            <size android:height="@dimen/anyactions_switch_thumb_size" android:width="@dimen/anyactions_switch_thumb_size" />
+        </shape>
+    </item>
+</selector>

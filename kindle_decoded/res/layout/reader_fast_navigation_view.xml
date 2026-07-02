@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ReaderFastNavigationView android:layout_gravity="right" android:id="@id/fast_navigation_container" android:paddingTop="@dimen/fast_navigation_view_padding_top" android:paddingBottom="@dimen/fast_navigation_view_padding_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/cs_page_indicator_view" />
+    <include layout="@layout/cs_breadcrumb_view" />
+    <com.amazon.kcp.reader.ui.ReaderVerticalSeekBar android:id="@id/vertical_seek_bar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:splitTrack="false" />
+</com.amazon.kcp.reader.ui.ReaderFastNavigationView>

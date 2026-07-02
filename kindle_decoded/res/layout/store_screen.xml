@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amazon.kcp.store.StoreWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backgroundColor="?store_background_color" />
+    <ProgressBar android:id="@id/progress_bar" style="@style/store_progress_bar" />
+    <ViewStub android:id="@id/store_error_message_stub" android:layout="@layout/store_error_message" android:inflatedId="@id/store_error_message" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/modal_store_bottom_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</FrameLayout>

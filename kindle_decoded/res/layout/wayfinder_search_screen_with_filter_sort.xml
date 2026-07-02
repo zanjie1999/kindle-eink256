@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:windowNoTitle="false" android:orientation="vertical" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/search_top_tool_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.SecondaryMenuBehavior">
+            <LinearLayout android:orientation="vertical" android:id="@id/sort_filter_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll" />
+            <View android:id="@id/sort_filter_bar_divider" android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_scrollFlags="enterAlways|scroll" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.amazon.kcp.search.views.SearchRecyclerView android:id="@id/search_recycler_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:cacheColorHint="#00000000" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <TextView android:textAppearance="?search_no_results_text_style" android:gravity="center_horizontal" android:id="@id/no_results" android:paddingTop="@dimen/search_section_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_no_results_found" />
+        <ViewStub android:layout_gravity="top" android:id="@id/search_widget_stub" android:layout="@layout/search_widget_container" android:inflatedId="@id/search_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

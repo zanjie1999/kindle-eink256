@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/thumbnail_slider_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:foregroundGravity="bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/replica_title_bar" android:paddingLeft="0.0dip" android:paddingTop="@dimen/replica_title_bar_top_padding" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+        <TableRow android:gravity="center_vertical">
+            <TextView android:textSize="@dimen/replica_nav_bar_textSize" android:ellipsize="end" android:gravity="center|left" android:id="@id/replica_title_text_view" android:paddingLeft="@dimen/replica_title_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="0" android:singleLine="true" style="@style/default_text_color" />
+            <TextView android:textSize="@dimen/replica_nav_bar_textSize" android:gravity="center|right" android:id="@id/replica_publish_date" android:paddingRight="@dimen/replica_date_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:singleLine="true" style="@style/default_text_color" />
+        </TableRow>
+    </TableLayout>
+    <com.amazon.android.widget.ThumbnailSlider android:scrollbarStyle="outsideOverlay" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/thumbnail_slider_item" android:scrollX="0.0dip" android:paddingTop="@dimen/thumbnail_slider_top_padding" android:paddingBottom="@dimen/thumbnail_slider_bottom_padding" android:scrollbars="horizontal" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="@dimen/thumbnail_items_spacing" android:minHeight="@dimen/thumbnail_slider_minHeight" android:layout_below="@id/replica_title_bar" android:unselectedAlpha="1.0" android:scrollbarFadeDuration="200" android:scrollbarDefaultDelayBeforeFade="200" />
+    <FrameLayout android:id="@id/spacing_below_thumbnail_slider_scroll" android:layout_width="fill_parent" android:layout_height="@dimen/thumbnail_slider_bottom" android:layout_below="@id/thumbnail_slider_item" />
+</RelativeLayout>

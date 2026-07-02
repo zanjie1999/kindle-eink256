@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fc="http://schemas.android.com/apk/res-auto">
+    <ViewSwitcher android:id="@id/view_switcher" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.kedu.flashcards.views.QuizCardSideView android:id="@id/front_side" android:layout_width="fill_parent" android:layout_height="fill_parent" fc:side="front" style="@style/fc_quiz_card" />
+        <com.amazon.kedu.flashcards.views.QuizCardSideView android:id="@id/back_side" android:layout_width="fill_parent" android:layout_height="fill_parent" fc:side="back" style="@style/fc_quiz_card" />
+    </ViewSwitcher>
+</merge>

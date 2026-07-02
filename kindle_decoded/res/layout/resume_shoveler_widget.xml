@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.ResumeShovelerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/resume_layout_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/resume_icon" android:layout_width="wrap_content" android:layout_height="@dimen/resume_icon_height" android:layout_marginTop="@dimen/resume_icon_margin" android:src="?nav_library_book_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/resume_layout_margin" />
+        <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header3.Home" android:textSize="@dimen/resume_title_text_size" android:ellipsize="end" android:id="@id/resume_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/resume_margin" android:layout_marginBottom="@dimen/resume_margin" android:maxWidth="504.0dip" android:text="@string/from_your_library" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/resume_margin" android:layout_toEndOf="@id/resume_icon" />
+    </RelativeLayout>
+    <com.amazon.kcp.library.ui.NestedRecyclerView android:id="@id/resume_shoveler" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/shoveler_default_cover_height" android:paddingStart="@dimen/shoveler_padding_start" android:paddingEnd="@dimen/shoveler_padding_end" />
+</com.amazon.kcp.home.ui.ResumeShovelerView>

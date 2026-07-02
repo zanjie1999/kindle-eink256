@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment android:id="@id/periodical_replica_frag" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.amazon.kcp.periodicals.fragments.ReplicaNavBarFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

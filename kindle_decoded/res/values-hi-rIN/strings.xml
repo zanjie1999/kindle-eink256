@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anyactions_author_follow_button_follow">फ़ॉलो करें</string>
+    <string name="anyactions_author_follow_button_following">फ़ॉलो कर रहे हैं</string>
+    <string name="anyactions_author_follow_hint_follow_multiple">नई रिलीज़ संबंधी अपडेट, बेहतर सुझाव और आगामी बहुत कुछ के लिए लेखक को फ़ॉलो करें</string>
+    <string name="anyactions_widget_goodreads_shelf_currently_reading">अभी पढ़ रहे हैं</string>
+    <string name="anyactions_widget_goodreads_shelf_not_on_profile">प्रोफ़ाइल में नहीं है</string>
+    <string name="anyactions_widget_goodreads_shelf_read">पढ़ा है</string>
+    <string name="anyactions_widget_goodreads_shelf_want_to_read">पढ़ना चाहते हैं</string>
+    <string name="anyactions_widget_share_text">शेयर करें</string>
+    <string name="endactions_buy_with_price">इतने में खरीदें %1$s</string>
+    <string name="marketplace_from_language">A21TJRUUN4KGV</string>
+    <string name="readingactions_bottomsheet_title_widget_description_collapsed">इस पुस्तक के बारे में जानकारी छोटी हो गई है. इसे बड़ा करने के लिए दो बार टैप या स्वाइप करें.</string>
+    <string name="readingactions_bottomsheet_title_widget_description_expanded">इस पुस्तक के बारे में जानकारी बड़ी हो गई है. इसे छोटा करने के लिए दो बार टैप या स्वाइप करें.</string>
+    <string name="readingactions_bottomsheet_title_widget_typical_time_to_read">आम तौर पर पढ़ने का समय</string>
+    <string name="readingactions_kre_madread_button_no_thank_you">आवश्यकता नहीं, धन्यवाद!</string>
+    <string name="readingactions_kre_madread_rating_amazon">Amazon पर इस पुस्तक को रेट करें.</string>
+    <string name="readingactions_kre_madread_rating_amazon_goodreads">Amazon और Goodreads पर इस पुस्तक को रेट करें.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon">Amazon पर रेटिंग पोस्ट की गई.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon_goodreads">रेटिंग Amazon और Goodreads पर पोस्ट की गई.</string>
+    <string name="readingactions_kre_madread_rating_posted_goodreads">Goodreads पर रेटिंग पोस्ट की गई.</string>
+    <string name="readingactions_kre_madread_rating_remove">रेटिंग हटाएं</string>
+    <string name="readingactions_kre_madread_rating_review_edit">रेटिंग और समीक्षा संपादित करें</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_goodreads">धन्यवाद! इस पुस्तक के लिए आपकी रेटिंग और समीक्षा Goodreads पर पोस्ट की गई थी.</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_processing">धन्यवाद! हम आपकी समीक्षा को प्रोसेस कर रहे हैं. इसमें कुछ दिनों का समय लग सकता है, इसलिए हम आपके धैर्य की सराहना करते हैं. अगर आपको अपनी समीक्षा कुछ दिनों के बाद भी प्रोडक्ट पेज पर या आपके प्रोफ़ाइल पेज पर नहीं दिखाई देती है, तो हो सकता है कि हम आपकी समीक्षा को आपके लिखे गए रूप में पोस्ट न कर पाए हों. अपनी समीक्षा फिर से सबमिट करने से पहले कृपया Amazon कम्यूनिटी गाइ़लाइन पढ़ लें.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon">धन्यवाद! इस पुस्तक के लिए आपकी रेटिंग Amazon पर पोस्ट की गई थी.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon_goodreads">धन्यवाद! इस पुस्तक के लिए आपकी रेटिंग Amazon और Goodreads पर पोस्ट की गई थी.</string>
+    <string name="readingactions_kre_madread_review_add">एक समीक्षा जोड़ें (वैकल्पिक)</string>
+    <string name="readingactions_kre_madread_review_amazon">Amazon पर इस पुस्तक की समीक्षा करें.</string>
+    <string name="readingactions_kre_madread_review_amazon_goodreads">Amazon और Goodreads पर इस पुस्तक की समीक्षा करें.</string>
+    <string name="readingactions_kre_madread_review_post_amazon_goodreads">Amazon (%1$s के रूप में) और Goodreads पर पोस्ट करें</string>
+    <string name="readingactions_kre_madread_review_submitted">समीक्षा सबमिट कर दी गई है.</string>
+    <string name="readingactions_kre_madread_review_title_hint">आपकी समीक्षा के लिए शीर्षक (आवश्यक)</string>
+    <string name="startactions_widget_read_less">− कम दिखाएं</string>
+    <string name="startactions_widget_read_more">+ ज़्यादा दिखाएं</string>
+    <string name="startactions_widget_see_in_store">स्टोर में देखें</string>
+</resources>

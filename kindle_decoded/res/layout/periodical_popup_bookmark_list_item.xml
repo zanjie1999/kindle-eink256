@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.nwstd.toc.widget.ArticleRow android:id="@id/popup_bookmark_list_item" style="@style/popup_bookmark_article_cntr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/popup_bookmark_article_image_margin_right" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/bookmark_thumbnail" android:adjustViewBounds="true" android:maxHeight="@dimen/popup_bookmark_article_thumbnail_max_height" style="@style/wrap" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_bookmark_articlelist_article_marginTop" android:layout_alignParentTop="true">
+        <TextView android:id="@id/periodical_popup_bookmark_section_title" style="@style/popup_bookmark_list_section_title" />
+        <TextView android:id="@id/periodical_popup_bookmark_title" android:layout_below="@id/periodical_popup_bookmark_section_title" style="@style/popup_bookmarkable_list_article_title" />
+        <TextView android:id="@id/periodical_popup_bookmark_preview" android:layout_below="@id/periodical_popup_bookmark_title" style="@style/popup_bookmark_list_article_preview" />
+    </RelativeLayout>
+</com.amazon.nwstd.toc.widget.ArticleRow>

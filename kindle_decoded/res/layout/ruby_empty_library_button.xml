@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ruby_empty_library_buttons_vertical_spacing" android:minWidth="@dimen/empty_library_button_min_size" android:minHeight="@dimen/empty_library_button_min_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/ruby_empty_library_buttons_icon_size" android:layout_height="@dimen/ruby_empty_library_buttons_icon_size" />
+    <TextView android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ruby_empty_library_buttons_icon_text_spacing" style="@style/Ruby.TextAppearance.Button.Link" />
+</LinearLayout>

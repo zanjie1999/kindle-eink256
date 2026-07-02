@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/book_cover_display_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/book_cover_display_overlay" android:background="?pageBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="start|center|top" android:id="@id/book_cover_resume_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/book_cover_resume_main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <ImageView android:orientation="vertical" android:id="@id/book_cover_display_image" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHeight_default="percent" app:layout_constraintHeight_percent="0.6" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="percent" app:layout_constraintWidth_percent="0.8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@id/book_cover_resume_empty_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+</FrameLayout>

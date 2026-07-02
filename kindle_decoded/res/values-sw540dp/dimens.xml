@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fr_grid_horizontal_margins">24.0dip</dimen>
+    <dimen name="fr_grid_item_standard_width">156.0dip</dimen>
+</resources>

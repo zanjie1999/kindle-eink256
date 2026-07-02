@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="endactions_button_horizontal_align_with_text">3.9959717dip</dimen>
+    <dimen name="endactions_buttons_horizontal_margin">-3.0dip</dimen>
+    <dimen name="endactions_medium_padding">9.0dip</dimen>
+    <dimen name="endactions_space_between_buttons">4.0dip</dimen>
+    <dimen name="startactions_content_container_margin_right">15.0dip</dimen>
+    <dimen name="startactions_dialog_radio_button_margin_left">-6.0dip</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/periodical_toc_newspaper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/newtron_toolbar" android:gravity="left" android:id="@id/newtron_periodical_toc_toolbar" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetStart="0.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/toc_header_top_padding" android:paddingBottom="@dimen/toc_header_newspaper_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/newtron_periodical_toc_title_and_date" />
+            <include layout="@layout/newtron_periodical_toc_section_button" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <com.amazon.nwstd.toc.widget.ArticleRow android:id="@id/periodical_header_toc" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/toc_divider_height" />
+</LinearLayout>

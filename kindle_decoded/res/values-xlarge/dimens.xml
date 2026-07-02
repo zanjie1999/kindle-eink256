@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="abc_dialog_fixed_width_major">50.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">70.00001%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">45.000004%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">72.0%</item>
+    <dimen name="carousel_bottom_margin">75.0dip</dimen>
+    <dimen name="carousel_instructions_heading_size">50.0sp</dimen>
+    <dimen name="carousel_instructions_subheading_1_size">30.0sp</dimen>
+    <dimen name="carousel_instructions_subheading_2_size">25.0sp</dimen>
+    <dimen name="carousel_instructions_vertical_padding">30.0dip</dimen>
+    <dimen name="carousel_top_margin">80.0dip</dimen>
+    <dimen name="cover_height">220.0dip</dimen>
+    <dimen name="fontLarge">24.0sp</dimen>
+    <dimen name="fontMedium">21.299988sp</dimen>
+    <dimen name="fontRegular">20.0sp</dimen>
+    <dimen name="fontSmall">18.699982sp</dimen>
+    <dimen name="fontXLarge">25.299988sp</dimen>
+    <dimen name="fontXSmall">17.299988sp</dimen>
+    <dimen name="fontXXLarge">26.699982sp</dimen>
+    <dimen name="fontXXSmall">16.0sp</dimen>
+    <dimen name="gallery_curve_density">450.0dip</dimen>
+    <dimen name="gallery_curve_span">1700.0dip</dimen>
+    <dimen name="generated_cover_date_text_size">27.0dip</dimen>
+    <dimen name="generated_cover_subtitle_text_size">27.0dip</dimen>
+    <dimen name="generated_cover_title_text_size">36.0dip</dimen>
+    <dimen name="lib_grid_default_side_padding">32.0dip</dimen>
+    <dimen name="lib_grid_view_vertical_spacing">25.0dip</dimen>
+    <dimen name="library_action_bar_button_width">75.0dip</dimen>
+    <dimen name="library_action_bar_height">55.0dip</dimen>
+    <dimen name="library_action_bar_nav_button_width">75.0dip</dimen>
+    <dimen name="library_gallery_cover_height">720.0dip</dimen>
+    <dimen name="library_gallery_cover_width">720.0dip</dimen>
+    <dimen name="library_grid_book_prefix_height">60.0dip</dimen>
+    <dimen name="library_nav_panel_item_height">53.0dip</dimen>
+    <dimen name="library_nav_panel_item_text_size">23.0sp</dimen>
+    <dimen name="library_nav_panel_subhead_padding_horz">33.0dip</dimen>
+    <dimen name="location_seekbar_thumb_radius">11.0dip</dimen>
+    <dimen name="nav_panel_item_height">53.0dip</dimen>
+    <dimen name="notebook_bookmark_height">337.0dip</dimen>
+    <dimen name="notebook_bookmark_width">633.3281dip</dimen>
+    <dimen name="periodical_top_margin">80.0dip</dimen>
+    <dimen name="reader_bookmark_corner_size">80.0dip</dimen>
+    <dimen name="reader_title_offset_from_top">25.0dip</dimen>
+    <dimen name="reader_top_margin">80.0dip</dimen>
+    <dimen name="thumbnail_scrubber_location_info_padding_bottom">17.0dip</dimen>
+    <dimen name="welcome_button_width">280.0dip</dimen>
+    <dimen name="welcome_headline_size">40.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_sides">200.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_top">100.0dip</dimen>
+    <dimen name="whackamole_max_title_width">360.0dip</dimen>
+    <dimen name="word_wise_card_middle_text_size">17.0dip</dimen>
+    <dimen name="feedback_screen_height">500.0dip</dimen>
+    <dimen name="feedback_screen_top_margin">2.0dip</dimen>
+    <dimen name="feedback_screen_width">650.0dip</dimen>
+    <dimen name="transient_screen_cover_size">500.0dip</dimen>
+    <dimen name="library_cloud_device_button_width">140.0dip</dimen>
+    <dimen name="library_grid_vertical_spacing">30.0dip</dimen>
+</resources>

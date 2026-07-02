@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/aa_ripple_background_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/aa_btn_default_alpha" android:tint="@color/aa_btn_default_dark" />
+    </item>
+    <item android:id="@android:id/mask" android:drawable="@drawable/aa_btn_default_alpha" />
+</ripple>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/library_screenlet_coordinator_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/library_top_tool_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.SecondaryMenuBehavior">
+            <LinearLayout android:orientation="vertical" android:id="@id/secondary_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll" />
+            <View android:id="@id/secondary_menu_divider" android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_scrollFlags="enterAlways|scroll" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/lib_az_scrubber_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.amazon.kcp.library.ui.RubySwipeRefreshLayout android:id="@id/pull_to_refresh_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="yes" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/empty_library_stub" />
+                <FrameLayout android:id="@id/library_view_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.amazon.kcp.library.ui.RubySwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

@@ -1,0 +1,26 @@
+.class public Lcom/amazon/whispersync/org/codehaus/jackson/map/deser/EnumDeserializer;
+.super Lcom/amazon/whispersync/org/codehaus/jackson/map/deser/std/EnumDeserializer;
+.source "EnumDeserializer.java"
+
+
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lcom/amazon/whispersync/org/codehaus/jackson/map/util/EnumResolver;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/amazon/whispersync/org/codehaus/jackson/map/util/EnumResolver<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 13
+    invoke-direct {p0, p1}, Lcom/amazon/whispersync/org/codehaus/jackson/map/deser/std/EnumDeserializer;-><init>(Lcom/amazon/whispersync/org/codehaus/jackson/map/util/EnumResolver;)V
+
+    return-void
+.end method

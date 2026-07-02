@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/close_button" android:id="@id/close_button" android:title="@string/close_description" android:showAsAction="always" app:showAsAction="always" />
+</menu>

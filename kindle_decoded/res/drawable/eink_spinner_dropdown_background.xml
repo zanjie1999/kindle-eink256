@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="@dimen/e3os_dropdownlistview_rightpadding">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <padding android:top="@dimen/e3os_spinner_dropdown_border_top" android:bottom="@dimen/e3os_spinner_dropdown_border_bottom" />
+            <solid android:color="@color/eink_background_white" />
+            <stroke android:width="@dimen/e3os_spinner_dropdown_border_width" android:color="@color/e3os_eink_dialog_border_color" />
+        </shape>
+    </item>
+</layer-list>

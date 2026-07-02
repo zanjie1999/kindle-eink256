@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/selected_thumbnail_item_border_color" />
+    <padding android:left="@dimen/toc_header_cover_border_width" android:top="@dimen/toc_header_cover_border_width" android:right="@dimen/toc_header_cover_border_width" android:bottom="@dimen/toc_header_cover_border_width" />
+</shape>

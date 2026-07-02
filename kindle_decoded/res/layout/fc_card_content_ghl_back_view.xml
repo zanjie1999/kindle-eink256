@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kedu.flashcards.views.LoadableGraphicalHighlightView android:id="@id/flashcard_back_ghl" style="@style/fc_card_content_ghl"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

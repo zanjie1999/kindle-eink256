@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notebook_export_layout_margin" android:layout_marginRight="@dimen/notebook_export_layout_margin">
+        <TextView android:id="@id/module_message_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/notebook_export_elements_margin" />
+        <CheckBox android:id="@id/module_include_images_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_export_images" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notebook_export_citation_style_text_margin_left" android:layout_marginTop="@dimen/notebook_export_citation_style_text_margin_top" android:text="@string/notebook_export_citations" android:layout_marginStart="@dimen/notebook_export_citation_style_text_margin_left" />
+        <RadioGroup android:id="@id/module_citation_style_radiogroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RadioButton android:id="@id/module_citation_style_apa_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/notebook_export_citation_style_apa" />
+            <RadioButton android:id="@id/module_citation_style_chicago_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_export_citation_style_chicago_style" />
+            <RadioButton android:id="@id/module_citation_style_mla_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_export_citation_style_mla" />
+            <RadioButton android:id="@id/module_citation_style_none_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_export_citation_style_none" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

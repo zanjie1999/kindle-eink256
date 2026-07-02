@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:drawable="@drawable/ic_overflow_light" />
+    <item android:drawable="@drawable/resume_overflow_background_light" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <stroke android:width="@dimen/resume_overflow_image_border_width" android:color="@color/black" />
+            <padding android:left="@dimen/resume_overflow_image_padding" android:top="@dimen/resume_overflow_image_padding" android:right="@dimen/resume_overflow_image_padding" android:bottom="@dimen/resume_overflow_image_padding" />
+            <size android:height="@dimen/resume_overflow_image_size" android:width="@dimen/resume_overflow_image_size" />
+        </shape>
+    </item>
+</layer-list>

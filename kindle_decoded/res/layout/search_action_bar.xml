@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="?search_query_text_color" android:textColorHint="?search_query_hint_color" android:id="@id/search_query" android:paddingTop="@dimen/search_bar_text_top_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_hint" android:inputType="text" android:imeOptions="actionSearch|flagNoExtractUi" android:textDirection="firstStrong">
+        <requestFocus />
+    </EditText>
+</LinearLayout>

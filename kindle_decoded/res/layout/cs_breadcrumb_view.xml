@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.breadcrumb.CSBreadcrumbView android:id="@id/cs_breadcrumb" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="@dimen/cs_breadcrumb_right_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:background="?csBreadcrumbBackgroundDrawable" android:padding="@dimen/vertical_breadcrumb_view_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.amazon.kindle.nln.breadcrumb.CSBreadcrumbContentLayout android:id="@id/cs_breadcrumb_content_container" android:layout_width="@dimen/vertical_breadcrumb_content_size" android:layout_height="@dimen/vertical_breadcrumb_content_size">
+            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/page_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" android:fontFamily="Amazon Ember" />
+        </com.amazon.kindle.nln.breadcrumb.CSBreadcrumbContentLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/breadcrumb_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vertical_breadcrumb_arrow_margin_left" android:src="?csBreadcrumbArrowDrawable" />
+</com.amazon.kindle.nln.breadcrumb.CSBreadcrumbView>

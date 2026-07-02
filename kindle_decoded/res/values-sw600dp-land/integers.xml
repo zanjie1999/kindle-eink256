@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fr_grid_item_num_columns">4</integer>
+    <integer name="in_book_clock_width_percentage_of_header">16</integer>
+    <integer name="tooltip_screen_width_percentage">33</integer>
+</resources>

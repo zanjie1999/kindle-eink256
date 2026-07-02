@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/force_release_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force Release Mode" />
+    <CheckBox android:id="@id/allow_all_urls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allow All URLs" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="top" android:id="@id/endpoint_override" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Cantilever endpoint URL" android:lines="4" android:scrollHorizontally="false" android:layout_weight="1.0" android:inputType="textMultiLine|textUri" />
+        <Button android:id="@id/apply_endpoint_override" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apply" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/return_asin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="asin" android:layout_weight="1.0" />
+            <EditText android:id="@id/order_id" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="order id" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:id="@id/return_for_refund" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Return for Refund" />
+    </LinearLayout>
+    <Button android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Main page" />
+    <Button android:id="@id/old_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Main page (empty intent)" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?fc_ic_shuffle" android:id="@id/menu_shuffle" android:orderInCategory="100" android:title="@string/fc_quiz_menu_shuffle" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?fc_ic_refresh" android:id="@id/menu_reset" android:orderInCategory="200" android:title="@string/fc_quiz_menu_reset" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?fc_ic_add" android:id="@id/menu_add_card" android:orderInCategory="300" android:title="@string/fc_quiz_menu_add_card" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?fc_ic_edit" android:id="@id/menu_edit_deck" android:orderInCategory="400" android:title="@string/fc_quiz_menu_edit_deck" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+</menu>

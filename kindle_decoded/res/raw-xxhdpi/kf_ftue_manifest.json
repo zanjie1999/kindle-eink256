@@ -1,0 +1,25 @@
+{
+  "version": 4,
+  "assets": [
+    {
+      "__type": "remote",
+      "url": "https://s3.amazonaws.com/kedu-remote-assets-android/ftue_assets_v5_xxhdpi.zip",
+      "sha256": "c8ed676b8dc15ac9a74aa2417dd09aca46d04043521f50b6622c17ecfe02c257"
+    },
+    {
+      "__type": "remote",
+      "url": "https://s3.amazonaws.com/kedu-remote-assets-android/klo_assets_v2_xxhdpi.zip",
+      "sha256": "44b357dcf4d83765ee56eecbced2c266267d55229d161f00960fb4539f9a2f89"
+    },
+    {
+      "__type": "remote",
+      "url": "https://s3.amazonaws.com/kedu-remote-assets-android/fc_assets_v1_xxhdpi.zip",
+      "sha256": "8a49522b3ac4b32f24d1ae06bee5ad40d5589ade27943f70d6ec404b7408b74c"
+    },
+    {
+      "__type": "remote",
+      "url": "https://s3.amazonaws.com/kedu-remote-assets-android/krl_assets_v1_xxhdpi.zip",
+      "sha256": "6baa4336a9e3d2d6a8ad2909116fcc7ce4d128afaedb5e4147d7ed61be06ce51"
+    }
+  ]
+}

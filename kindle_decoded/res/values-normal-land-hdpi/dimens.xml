@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_player_artwork_size">145.0dip</dimen>
+    <dimen name="main_player_download_text_size">12.0dip</dimen>
+    <dimen name="main_player_download_top_text_margin_top">8.0dip</dimen>
+    <dimen name="main_player_sleep_timer_height">18.0dip</dimen>
+    <dimen name="main_player_sleep_timer_margin_bottom">6.0dip</dimen>
+    <dimen name="player_artwork_size">145.0dip</dimen>
+    <dimen name="player_download_text_size">12.0dip</dimen>
+</resources>

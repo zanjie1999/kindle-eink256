@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.mangaviewer.MangaLayout android:id="@id/manga_root_layout" android:background="@android:color/white" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kindle.mangaviewer.MangaViewPager android:id="@id/mangapager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/manga_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/reader_menu_container" layout="@layout/reader_menu_container" style="@style/fill" />
+    <include layout="@layout/action_header_bar" />
+    <ViewStub android:id="@id/reader_plugin_overlay_stub" android:inflatedId="@id/reader_plugin_overlay" style="@style/wrap" />
+    <FrameLayout android:id="@id/bottom_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</com.amazon.kindle.mangaviewer.MangaLayout>

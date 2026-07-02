@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/lib_menu_sort_group" android:checkableBehavior="single">
+        <item android:id="@id/lib_menu_sort_recent" android:title="@string/sortby_recent_option" />
+        <item android:id="@id/lib_menu_sort_title" android:title="@string/sortby_title_option" />
+        <item android:id="@id/lib_menu_sort_author" android:title="@string/sortby_author_option" />
+        <item android:id="@id/lib_menu_sort_rank" android:title="@string/sortby_rank_option" />
+    </group>
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/book_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/book_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/startactions_medium_padding" android:scaleType="fitStart" android:adjustViewBounds="true" android:maxWidth="@dimen/startactions_author_image_width" />
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:id="@id/startactions_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/book_image" />
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:textStyle="bold" android:id="@id/book_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/book_image" android:layout_below="@id/startactions_header_text" android:layout_alignLeft="@id/startactions_header_text" />
+    </RelativeLayout>
+    <com.amazon.startactions.ui.helpers.TextViewWithEndButton android:textAppearance="@style/anyactions_amazon_text_small" android:id="@id/book_description_text" android:background="@drawable/bg_startactions_borderless_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/endactions_medium_padding" android:maxLines="@integer/startactions_widget_book_detail_text_view_max_lines_collapsed" android:layout_below="@id/book_info" android:textDirection="firstStrong" android:textAlignment="textStart" />
+    <Button android:id="@id/read_less" android:visibility="gone" android:text="@string/startactions_widget_read_less" android:layout_below="@id/book_description_text" android:layout_alignParentLeft="true" android:contentDescription="@string/startactions_widget_read_less_content_description" style="@style/startactions_text_button_light_small" />
+</RelativeLayout>

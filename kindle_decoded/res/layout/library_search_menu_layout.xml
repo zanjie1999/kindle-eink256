@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/notebook_share_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/library_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search" />
+    <TextView android:id="@id/library_search_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_hint" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/kcv_non_ruby_dark_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/update_toolbar" android:background="@color/kcv_non_ruby_dark_toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/kcu_text_size_title" android:textColor="@color/kcv_non_ruby_heading" android:gravity="center|left" android:id="@id/update_toolbar_title" android:padding="@dimen/kcu_zero_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/kcu_toolbar_title_left_margin" android:layout_marginTop="@dimen/kcu_zero_padding" android:maxLines="1" android:fontFamily="sans-serif-medium" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/abu_setting_background" android:padding="@dimen/kcu_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/kcu_setting_item_vertical_padding" android:paddingBottom="@dimen/kcu_setting_item_vertical_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/kcv_non_ruby_item_heading" android:id="@id/tv_updates_enabled_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kre_more_as_update_setting_title" />
+            <TextView android:textColor="@color/kcv_non_ruby_item_info" android:id="@id/tv_updates_enabled_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/kcu_text_padding" android:text="@string/kre_more_as_update_setting_context" />
+        </LinearLayout>
+        <Switch android:gravity="bottom" android:id="@id/cb_updates_enabled" android:paddingTop="@dimen/kcu_setting_item_vertical_padding" android:paddingBottom="@dimen/kcu_setting_item_vertical_padding" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/recycle_view_frame" android:padding="@dimen/kcu_zero_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/kcu_listview" android:paddingTop="-1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@drawable/update_panel_banner_background" android:paddingLeft="@dimen/kcu_non_rubyitem_margin_left" android:paddingTop="@dimen/kcu_banner_padding_vertical" android:paddingRight="@dimen/kcu_banner_padding_horizontal" android:paddingBottom="@dimen/kcu_banner_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/kcv_non_ruby_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/book_update_panel_message" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/kcu_scrollview_thumb_rubydark" android:id="@id/automatic_update_recycler_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <TextView android:textColor="@color/kcv_non_ruby_item_heading" android:gravity="center" android:id="@id/empty_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty_panel_message" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/progress_view_frame" android:paddingLeft="@dimen/kcu_default_padding" android:paddingRight="@dimen/kcu_default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/kcu_default_padding" android:paddingEnd="@dimen/kcu_default_padding">
+        <ProgressBar android:layout_gravity="center" android:id="@id/initial_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</LinearLayout>

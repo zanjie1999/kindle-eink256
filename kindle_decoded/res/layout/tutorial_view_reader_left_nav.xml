@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tutorial_container" style="@style/TutorialScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="@dimen/toolbar_height" android:src="@drawable/tutorial_triangle" android:scaleType="center" />
+    <TextView android:text="@string/tutorial_reader_left_nav" android:layout_below="@id/triangle" style="@style/TutorialBubble" />
+</RelativeLayout>

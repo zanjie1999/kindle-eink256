@@ -1,0 +1,616 @@
+.class public final Lcom/amazon/kindle/newsstand/forstandalone/R$layout;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final abc_action_bar_title_item:I = 0x7f0c0016
+
+.field public static final abc_action_bar_up_container:I = 0x7f0c0017
+
+.field public static final abc_action_menu_item_layout:I = 0x7f0c0018
+
+.field public static final abc_action_menu_layout:I = 0x7f0c0019
+
+.field public static final abc_action_mode_bar:I = 0x7f0c001a
+
+.field public static final abc_action_mode_close_item_material:I = 0x7f0c001b
+
+.field public static final abc_activity_chooser_view:I = 0x7f0c001c
+
+.field public static final abc_activity_chooser_view_list_item:I = 0x7f0c001d
+
+.field public static final abc_alert_dialog_button_bar_material:I = 0x7f0c001e
+
+.field public static final abc_alert_dialog_material:I = 0x7f0c001f
+
+.field public static final abc_dialog_title_material:I = 0x7f0c0022
+
+.field public static final abc_expanded_menu_layout:I = 0x7f0c0023
+
+.field public static final abc_list_menu_item_checkbox:I = 0x7f0c0024
+
+.field public static final abc_list_menu_item_icon:I = 0x7f0c0025
+
+.field public static final abc_list_menu_item_layout:I = 0x7f0c0026
+
+.field public static final abc_list_menu_item_radio:I = 0x7f0c0027
+
+.field public static final abc_popup_menu_item_layout:I = 0x7f0c0029
+
+.field public static final abc_screen_content_include:I = 0x7f0c002a
+
+.field public static final abc_screen_simple:I = 0x7f0c002b
+
+.field public static final abc_screen_simple_overlay_action_mode:I = 0x7f0c002c
+
+.field public static final abc_screen_toolbar:I = 0x7f0c002d
+
+.field public static final abc_search_dropdown_item_icons_2line:I = 0x7f0c002e
+
+.field public static final abc_search_view:I = 0x7f0c002f
+
+.field public static final abc_select_dialog_material:I = 0x7f0c0030
+
+.field public static final accessibility_gap_view_layout:I = 0x7f0c0036
+
+.field public static final accessible_selection_left_layout:I = 0x7f0c0037
+
+.field public static final accessible_selection_right_layout:I = 0x7f0c0038
+
+.field public static final action_bar_decoration:I = 0x7f0c003c
+
+.field public static final action_header_bar:I = 0x7f0c003f
+
+.field public static final activity_tutorial_fragment:I = 0x7f0c0050
+
+.field public static final acx_spinner_layout:I = 0x7f0c0054
+
+.field public static final animation_dialog:I = 0x7f0c005b
+
+.field public static final annotation_creation:I = 0x7f0c005c
+
+.field public static final app_utils_debug_layout:I = 0x7f0c0067
+
+.field public static final audio_player:I = 0x7f0c0072
+
+.field public static final bev_chapter_header:I = 0x7f0c0084
+
+.field public static final bev_layout:I = 0x7f0c0085
+
+.field public static final book_cover_view:I = 0x7f0c0096
+
+.field public static final book_default_cover:I = 0x7f0c0097
+
+.field public static final book_layout:I = 0x7f0c009b
+
+.field public static final book_toc_screen:I = 0x7f0c00a1
+
+.field public static final bookmark_page_toggle_fragment:I = 0x7f0c00a2
+
+.field public static final bookmark_view_empty:I = 0x7f0c00a3
+
+.field public static final bookmark_view_row:I = 0x7f0c00a4
+
+.field public static final bookmark_view_toggle_button:I = 0x7f0c00a5
+
+.field public static final breadcrumb:I = 0x7f0c00d0
+
+.field public static final breadcrumb_content_container:I = 0x7f0c00d1
+
+.field public static final brochure_fullscreen:I = 0x7f0c00d2
+
+.field public static final brochure_layout:I = 0x7f0c00d3
+
+.field public static final brochure_pager_fragment:I = 0x7f0c00d4
+
+.field public static final brochure_slide_fragment:I = 0x7f0c00d5
+
+.field public static final brochure_slide_title_view:I = 0x7f0c00d6
+
+.field public static final brochure_tutorial:I = 0x7f0c00d7
+
+.field public static final bubble_view:I = 0x7f0c00da
+
+.field public static final bubble_view_text:I = 0x7f0c00db
+
+.field public static final bubble_view_title:I = 0x7f0c00dc
+
+.field public static final channels_signup_dialog:I = 0x7f0c00e1
+
+.field public static final checkbox_list_item_2:I = 0x7f0c00e5
+
+.field public static final color_options:I = 0x7f0c00ed
+
+.field public static final command_bar_action_item:I = 0x7f0c00ff
+
+.field public static final command_bar_internal_container:I = 0x7f0c0100
+
+.field public static final command_bar_popup_button:I = 0x7f0c0101
+
+.field public static final command_bar_popup_container:I = 0x7f0c0102
+
+.field public static final command_bar_popup_layout:I = 0x7f0c0104
+
+.field public static final commandbar:I = 0x7f0c0105
+
+.field public static final component_viewer_header:I = 0x7f0c0107
+
+.field public static final cover_list_row:I = 0x7f0c010c
+
+.field public static final curl_view:I = 0x7f0c0110
+
+.field public static final custom_actionbar:I = 0x7f0c0112
+
+.field public static final custom_reader_location_seekbar:I = 0x7f0c0114
+
+.field public static final custom_reader_location_seekbar_container:I = 0x7f0c0115
+
+.field public static final debug_app_shortcuts:I = 0x7f0c0118
+
+.field public static final debug_authentication:I = 0x7f0c0119
+
+.field public static final debug_cantilever:I = 0x7f0c011a
+
+.field public static final debug_command_bar:I = 0x7f0c011b
+
+.field public static final debug_glide:I = 0x7f0c011e
+
+.field public static final debug_image_overlay_screen:I = 0x7f0c011f
+
+.field public static final debug_kfc_share_ux:I = 0x7f0c0120
+
+.field public static final debug_logging:I = 0x7f0c0122
+
+.field public static final debug_login_cookies_dialog:I = 0x7f0c0123
+
+.field public static final debug_menu_button:I = 0x7f0c0124
+
+.field public static final debug_menu_spinner_item:I = 0x7f0c0125
+
+.field public static final debug_notes_and_highlight:I = 0x7f0c0127
+
+.field public static final debug_perf_markers:I = 0x7f0c0128
+
+.field public static final debug_reader_search:I = 0x7f0c0129
+
+.field public static final debug_ruby:I = 0x7f0c012d
+
+.field public static final debug_screen:I = 0x7f0c012e
+
+.field public static final debug_screen_v2:I = 0x7f0c012f
+
+.field public static final debug_series_grouping:I = 0x7f0c0130
+
+.field public static final debug_upgrade_page:I = 0x7f0c0131
+
+.field public static final debug_upsell_button:I = 0x7f0c0132
+
+.field public static final debug_upsell_layout:I = 0x7f0c0133
+
+.field public static final debugv2_spinner_items:I = 0x7f0c0135
+
+.field public static final default_reader_layout_seek_bar:I = 0x7f0c0137
+
+.field public static final design_bottom_sheet_dialog:I = 0x7f0c013c
+
+.field public static final design_layout_snackbar:I = 0x7f0c013d
+
+.field public static final design_layout_snackbar_include:I = 0x7f0c013e
+
+.field public static final design_layout_tab_icon:I = 0x7f0c013f
+
+.field public static final design_layout_tab_text:I = 0x7f0c0140
+
+.field public static final design_menu_item_action_area:I = 0x7f0c0141
+
+.field public static final design_navigation_item:I = 0x7f0c0142
+
+.field public static final design_navigation_item_header:I = 0x7f0c0143
+
+.field public static final design_navigation_item_separator:I = 0x7f0c0144
+
+.field public static final design_navigation_item_subheader:I = 0x7f0c0145
+
+.field public static final design_navigation_menu:I = 0x7f0c0146
+
+.field public static final design_navigation_menu_item:I = 0x7f0c0147
+
+.field public static final doc_cover:I = 0x7f0c014e
+
+.field public static final download_debug_menu:I = 0x7f0c0154
+
+.field public static final e3os_checkbox_layout:I = 0x7f0c0160
+
+.field public static final e3os_checkbox_preference_layout:I = 0x7f0c0161
+
+.field public static final e3os_preference_layout:I = 0x7f0c0162
+
+.field public static final expandable_text_entry_edit_text_box:I = 0x7f0c0192
+
+.field public static final exsd_feature_flash:I = 0x7f0c0193
+
+.field public static final full_page_fragment:I = 0x7f0c01d0
+
+.field public static final full_page_layout:I = 0x7f0c01d1
+
+.field public static final gallery_info_view:I = 0x7f0c01da
+
+.field public static final goto_dialog:I = 0x7f0c01db
+
+.field public static final graphical_highlight_layout:I = 0x7f0c01dc
+
+.field public static final horizontal_paging_view:I = 0x7f0c01ef
+
+.field public static final image_and_text_dropdown_selection_button:I = 0x7f0c01f2
+
+.field public static final image_button:I = 0x7f0c01f3
+
+.field public static final image_only_dropdown_selection_button:I = 0x7f0c01f4
+
+.field public static final image_zoom_screen:I = 0x7f0c01f5
+
+.field public static final info_card_layout:I = 0x7f0c01fb
+
+.field public static final info_card_widget:I = 0x7f0c01fd
+
+.field public static final input_area_button:I = 0x7f0c0203
+
+.field public static final kindle_settings:I = 0x7f0c020d
+
+.field public static final lava_seek_bar:I = 0x7f0c0228
+
+.field public static final library_ce_banner:I = 0x7f0c024a
+
+.field public static final library_debug_layout:I = 0x7f0c024b
+
+.field public static final library_debug_menu_divider:I = 0x7f0c024c
+
+.field public static final library_state_item:I = 0x7f0c0254
+
+.field public static final list_section_header:I = 0x7f0c0255
+
+.field public static final loading_screen:I = 0x7f0c025a
+
+.field public static final location_seeker_decoration:I = 0x7f0c025f
+
+.field public static final log_level:I = 0x7f0c0260
+
+.field public static final magnifying_glass:I = 0x7f0c0261
+
+.field public static final magnifying_glass_horizontal:I = 0x7f0c0262
+
+.field public static final magnifying_glass_vertical:I = 0x7f0c0263
+
+.field public static final main:I = 0x7f0c0264
+
+.field public static final meminfo:I = 0x7f0c0269
+
+.field public static final mobile_weblab_debug_page:I = 0x7f0c026b
+
+.field public static final newtron_periodical_toc_magazine:I = 0x7f0c0275
+
+.field public static final newtron_periodical_toc_newspaper:I = 0x7f0c0276
+
+.field public static final newtron_periodical_toc_section_button:I = 0x7f0c0277
+
+.field public static final newtron_periodical_toc_title_and_date:I = 0x7f0c0278
+
+.field public static final nln_seeker_bar_text:I = 0x7f0c027c
+
+.field public static final nn_adjustments_dialog:I = 0x7f0c027d
+
+.field public static final no_overlap_toolbar:I = 0x7f0c027e
+
+.field public static final notecard_edit_layout:I = 0x7f0c028c
+
+.field public static final notecard_text_snippet:I = 0x7f0c0291
+
+.field public static final notes_list_item:I = 0x7f0c0292
+
+.field public static final notes_list_item_template:I = 0x7f0c0293
+
+.field public static final notes_screen:I = 0x7f0c0294
+
+.field public static final notification_media_action:I = 0x7f0c02a0
+
+.field public static final notification_media_cancel_action:I = 0x7f0c02a1
+
+.field public static final notification_template_big_media:I = 0x7f0c02a2
+
+.field public static final notification_template_big_media_narrow:I = 0x7f0c02a4
+
+.field public static final notification_template_media:I = 0x7f0c02a9
+
+.field public static final notification_template_part_chronometer:I = 0x7f0c02ab
+
+.field public static final notification_template_part_time:I = 0x7f0c02ac
+
+.field public static final object_selection_view:I = 0x7f0c02b0
+
+.field public static final orientation_lock_container:I = 0x7f0c02b2
+
+.field public static final otter_color_options:I = 0x7f0c02b3
+
+.field public static final page_container:I = 0x7f0c02b5
+
+.field public static final paging_button_widget:I = 0x7f0c02b6
+
+.field public static final pdf_layout:I = 0x7f0c02ba
+
+.field public static final pdf_magnifying_glass:I = 0x7f0c02bb
+
+.field public static final pdf_magnifying_glass_horizontal:I = 0x7f0c02bc
+
+.field public static final pdf_magnifying_glass_vertical:I = 0x7f0c02bd
+
+.field public static final pdf_render_spinner_layout:I = 0x7f0c02be
+
+.field public static final pdf_tile_view:I = 0x7f0c02bf
+
+.field public static final periodical_bookmark_container:I = 0x7f0c02c0
+
+.field public static final periodical_bookmark_frag:I = 0x7f0c02c1
+
+.field public static final periodical_bookmark_list:I = 0x7f0c02c2
+
+.field public static final periodical_bookmark_list_item:I = 0x7f0c02c3
+
+.field public static final periodical_close_button:I = 0x7f0c02c4
+
+.field public static final periodical_gridview_toolbar:I = 0x7f0c02c5
+
+.field public static final periodical_layout:I = 0x7f0c02c6
+
+.field public static final periodical_layout_common:I = 0x7f0c02c7
+
+.field public static final periodical_location_container:I = 0x7f0c02c8
+
+.field public static final periodical_magnifying_glass:I = 0x7f0c02c9
+
+.field public static final periodical_menu_container:I = 0x7f0c02ca
+
+.field public static final periodical_popup_bookmark:I = 0x7f0c02cb
+
+.field public static final periodical_popup_bookmark_list_item:I = 0x7f0c02cc
+
+.field public static final periodical_popup_bookmarkable_list_item:I = 0x7f0c02cd
+
+.field public static final periodical_toc_articlelist_article:I = 0x7f0c02ce
+
+.field public static final periodical_toc_articlelist_section:I = 0x7f0c02cf
+
+.field public static final periodical_toc_articlelist_section_separator:I = 0x7f0c02d0
+
+.field public static final periodical_toc_layout:I = 0x7f0c02d1
+
+.field public static final periodical_toc_magazine:I = 0x7f0c02d2
+
+.field public static final periodical_toc_newspaper:I = 0x7f0c02d3
+
+.field public static final periodical_toc_newspaper_header:I = 0x7f0c02d4
+
+.field public static final periodical_toc_sectionlist_item:I = 0x7f0c02d5
+
+.field public static final periodicals_debug_preferences_screen:I = 0x7f0c02d6
+
+.field public static final periodicals_debug_settings_layout:I = 0x7f0c02d7
+
+.field public static final pfv_layout:I = 0x7f0c02da
+
+.field public static final prev_next_all_articles_view:I = 0x7f0c02ee
+
+.field public static final prev_next_button:I = 0x7f0c02ef
+
+.field public static final progressive_download_content_missing_view:I = 0x7f0c02f5
+
+.field public static final reader_brightness_slider:I = 0x7f0c02f7
+
+.field public static final reader_content_fragment:I = 0x7f0c02f8
+
+.field public static final reader_layout:I = 0x7f0c02fc
+
+.field public static final reader_layout_core:I = 0x7f0c02fd
+
+.field public static final reader_layout_plugin_containers:I = 0x7f0c02fe
+
+.field public static final reader_location_container:I = 0x7f0c02ff
+
+.field public static final reader_menu_container:I = 0x7f0c0300
+
+.field public static final reader_nav_panel_book_info:I = 0x7f0c0301
+
+.field public static final reader_nav_panel_close_book:I = 0x7f0c0302
+
+.field public static final reader_nav_panel_close_lava:I = 0x7f0c0303
+
+.field public static final reader_nav_panel_item:I = 0x7f0c0306
+
+.field public static final reader_nav_panel_item_section_label:I = 0x7f0c0307
+
+.field public static final reader_nav_panel_item_with_page_label:I = 0x7f0c0308
+
+.field public static final reader_nav_panel_item_with_split:I = 0x7f0c030a
+
+.field public static final reader_nav_panel_item_with_thumbnail:I = 0x7f0c030b
+
+.field public static final reader_nav_panel_items:I = 0x7f0c030c
+
+.field public static final reader_nav_panel_list_header:I = 0x7f0c030d
+
+.field public static final reader_nav_panel_subhead:I = 0x7f0c030e
+
+.field public static final reader_plugin_overlay_stub:I = 0x7f0c030f
+
+.field public static final reader_plugin_surface_layout:I = 0x7f0c0310
+
+.field public static final reader_plugin_surface_stub:I = 0x7f0c0311
+
+.field public static final reader_render_progress:I = 0x7f0c0312
+
+.field public static final reader_screen:I = 0x7f0c0313
+
+.field public static final reader_screen_lava:I = 0x7f0c0314
+
+.field public static final reader_search_activity:I = 0x7f0c0315
+
+.field public static final reader_search_header:I = 0x7f0c0316
+
+.field public static final reader_search_label:I = 0x7f0c0317
+
+.field public static final reader_search_list_expander:I = 0x7f0c0318
+
+.field public static final reader_search_list_no_results:I = 0x7f0c0319
+
+.field public static final reader_search_list_section_header:I = 0x7f0c031a
+
+.field public static final reader_search_list_spinner:I = 0x7f0c031b
+
+.field public static final reader_search_list_subsection_header:I = 0x7f0c031c
+
+.field public static final reader_search_result_item:I = 0x7f0c031d
+
+.field public static final reader_search_screen:I = 0x7f0c031e
+
+.field public static final reader_search_view:I = 0x7f0c031f
+
+.field public static final recent_search_term_empty_state:I = 0x7f0c0346
+
+.field public static final recent_search_term_list_header:I = 0x7f0c0347
+
+.field public static final recent_search_term_list_item:I = 0x7f0c0348
+
+.field public static final replica_nav_bar_frag:I = 0x7f0c0352
+
+.field public static final replica_view:I = 0x7f0c0353
+
+.field public static final scrolling_button_object_selection_layout:I = 0x7f0c0378
+
+.field public static final search_screen:I = 0x7f0c0387
+
+.field public static final search_simple_result_view:I = 0x7f0c0388
+
+.field public static final section_list_dialog_header_newtron_phase1:I = 0x7f0c0390
+
+.field public static final section_list_layout:I = 0x7f0c0391
+
+.field public static final section_list_view:I = 0x7f0c0392
+
+.field public static final select_dialog_item_material:I = 0x7f0c0394
+
+.field public static final select_dialog_multichoice_material:I = 0x7f0c0395
+
+.field public static final select_dialog_singlechoice_material:I = 0x7f0c0396
+
+.field public static final selection_popup_gridview:I = 0x7f0c0397
+
+.field public static final selection_popup_image_button:I = 0x7f0c0398
+
+.field public static final settings_screen:I = 0x7f0c03a1
+
+.field public static final simple_header_bar:I = 0x7f0c03ae
+
+.field public static final simple_list_item_2:I = 0x7f0c03b0
+
+.field public static final simple_list_title:I = 0x7f0c03b1
+
+.field public static final simple_top_level_selection_button:I = 0x7f0c03b2
+
+.field public static final spinner_dropdown_item:I = 0x7f0c03b4
+
+.field public static final spinner_item:I = 0x7f0c03b5
+
+.field public static final spinner_top_level_selection_button:I = 0x7f0c03b6
+
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0c03f1
+
+.field public static final tap_to_text_tuto:I = 0x7f0c03f3
+
+.field public static final text_button:I = 0x7f0c03f9
+
+.field public static final text_sizes:I = 0x7f0c03fb
+
+.field public static final text_view:I = 0x7f0c03fc
+
+.field public static final thumbnail_grid_view:I = 0x7f0c03fd
+
+.field public static final thumbnail_item_layout:I = 0x7f0c03fe
+
+.field public static final thumbnail_scrubber:I = 0x7f0c03ff
+
+.field public static final thumbnail_slider_background:I = 0x7f0c0400
+
+.field public static final thumbnail_slider_layout:I = 0x7f0c0401
+
+.field public static final toc_list_item:I = 0x7f0c0409
+
+.field public static final toc_loading_list_item:I = 0x7f0c040a
+
+.field public static final toolbar_with_shadow:I = 0x7f0c040f
+
+.field public static final transfer_library_progress_layout:I = 0x7f0c0413
+
+.field public static final transient_downloading_section:I = 0x7f0c0414
+
+.field public static final transient_screen:I = 0x7f0c0415
+
+.field public static final trial_bar:I = 0x7f0c0416
+
+.field public static final trial_bar_and_scrubber:I = 0x7f0c0417
+
+.field public static final tts_button_container_accessibility:I = 0x7f0c0419
+
+.field public static final tutorial_dialog_layout:I = 0x7f0c041c
+
+.field public static final tutorial_full_page:I = 0x7f0c041d
+
+.field public static final tutorial_layout_gridview_button:I = 0x7f0c041e
+
+.field public static final tutorial_layout_gridview_swipe:I = 0x7f0c041f
+
+.field public static final tutorial_tool_tip:I = 0x7f0c0420
+
+.field public static final tweak_settings:I = 0x7f0c042b
+
+.field public static final tweak_settings_comics:I = 0x7f0c042c
+
+.field public static final unified_definition_button:I = 0x7f0c042e
+
+.field public static final unused_placeholder:I = 0x7f0c042f
+
+.field public static final up_button:I = 0x7f0c0430
+
+.field public static final upsell_banner_view:I = 0x7f0c0433
+
+.field public static final upsell_fullpage_button:I = 0x7f0c0437
+
+.field public static final upsell_fullpage_view:I = 0x7f0c0438
+
+.field public static final view_options:I = 0x7f0c0444
+
+.field public static final view_options_comics_toggle_layout:I = 0x7f0c0445
+
+.field public static final view_options_drop_down_font_manage_item:I = 0x7f0c0446
+
+.field public static final view_options_drop_down_item:I = 0x7f0c0447
+
+.field public static final view_options_row:I = 0x7f0c0448
+
+.field public static final view_options_row_text_size:I = 0x7f0c0449
+
+.field public static final view_options_selected_item:I = 0x7f0c044a
+
+.field public static final view_options_toggle_layout:I = 0x7f0c044c
+
+.field public static final waypoint_view:I = 0x7f0c0454
+
+.field public static final waypoint_view_empty:I = 0x7f0c0455
+
+.field public static final waypoint_view_row:I = 0x7f0c0456
+
+.field public static final web_view_screen:I = 0x7f0c045a
+
+.field public static final zico_icon_layout:I = 0x7f0c0498
+
+.field public static final zico_small_icon_layout:I = 0x7f0c0499
+
+.field public static final zoom_not_supported_dialog:I = 0x7f0c049a

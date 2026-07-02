@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/blurb_card_header_image" android:tag="THEMED_IMAGE_1" android:focusable="false" android:layout_width="@dimen/bl_blurb_icon_size" android:layout_height="@dimen/bl_blurb_icon_size" android:layout_marginTop="@dimen/bl_header_image_margin_top" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="@dimen/bl_header_image_margin_start" />
+            <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.blurb_card_header_title" android:ellipsize="end" android:id="@id/blurb_card_header_title" android:tag="TITLE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl_header_margin_top" android:maxLines="2" android:layout_marginStart="@dimen/bl_header_margin_start" android:layout_marginEnd="@dimen/bl_header_margin_end" />
+                <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Caption2.Italic.Grey" android:ellipsize="end" android:id="@id/blurb_card_header_desc" android:tag="TEXT_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl_header_desc_margin_top" android:layout_marginBottom="@dimen/bl_header_desc_margin_bottom" android:maxLines="3" android:layout_marginStart="@dimen/bl_header_desc_margin_start" android:layout_marginEnd="@dimen/bl_header_desc_margin_end" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.blurb_card_article_title" android:layout_gravity="fill" android:id="@id/blurb_card_article_title" android:tag="TEXT_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl_article_title_margin_top" android:layout_marginBottom="@dimen/bl_article_title_margin_bottom" android:layout_marginStart="@dimen/bl_article_title_margin_start" android:layout_marginEnd="@dimen/bl_article_title_margin_end" />
+    </LinearLayout>
+</merge>

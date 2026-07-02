@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.falkor.panels.FalkorActionBarView android:background="?action_bar_decoration_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/follow_unfollow_offline_text_size" android:textColor="?offline_action_bar_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/falkor_title_bar_textview" android:paddingTop="@dimen/follow_unfollow_offline_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/follow_unfollow_bar_height" android:maxLines="1" android:fontFamily="Bookerly" android:paddingStart="@dimen/follow_unfollow_offline_padding_start" android:paddingEnd="@dimen/follow_unfollow_offline_padding_end" />
+</com.amazon.falkor.panels.FalkorActionBarView>

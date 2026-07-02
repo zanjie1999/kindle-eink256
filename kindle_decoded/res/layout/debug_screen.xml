@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/debug_view_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/version_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@android:color/holo_red_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="This Debug Activity is to be deprecated, please add your debug options to a new page in the new debug menu as per the wiki at w.amazon.com/bin/view/KCP/Redding/Development/DebugMenu" />
+        <Button android:id="@id/debug_v2_launcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Launch New Debug Menu" />
+        <CheckBox android:id="@id/krf_accessibility_page_turn_support_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KRF Accessibility Page Turn Support(5.3.3+ and YJLR only)" android:onClick="onToggleKRFAccessibilityPageTurnSupport" />
+        <GridLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="2">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="0" android:text="User role:" android:layout_row="0" />
+            <TextView android:id="@id/user_role" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:layout_row="0" />
+        </GridLayout>
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:id="@id/enable_nln" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable nln" />
+        <CheckBox android:id="@id/page_curl_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Page Curl" android:onClick="togglePageCurl" />
+        <Button android:id="@id/enable_bookType_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable BookType in cover badge(Reading progress and New wont show up) " android:onClick="onBookTypeBadgeButtonClick" />
+        <ToggleButton android:id="@id/toggle_cn_push_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Toggle CN Push Notification Off" android:textOff="Toggle CN Push Notification On" android:text="Toggle CN Push Notification" android:onClick="onToggleCNPushNotification" />
+        <LinearLayout android:orientation="vertical" android:id="@id/debug_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <CheckBox android:id="@id/nln_not_indexed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NLN - Debug indexing" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Spinner android:id="@id/library_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Launch Library" android:onClick="launchLibrary" />
+        </LinearLayout>
+        <CheckBox android:id="@id/force_demo_mode_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force Demo Mode" android:onClick="onToggleForceDemoMode" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/max_scroll_speed" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="8000" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Scroll Speed" android:onClick="setMaxScrollSpeed" />
+        </LinearLayout>
+        <ToggleButton android:id="@id/toggle_metrics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Metrics: On" android:textOff="Metrics: Off" android:onClick="onToggleMetrics" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload Metrics" android:onClick="onUploadMetrics" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Login Cookies" android:onClick="onSetLoginCookies" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kill app" android:onClick="onExitAppClick" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Current Page Settings" android:onClick="onDumpPageSettings" />
+        <TextView android:text="Silent updates" style="@style/debug_option_category_title" />
+        <ToggleButton android:id="@id/toggle_silent_updates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Silent updates are enabled. Tap to disable." android:textOff="Silent updates are disabled. Tap to enable." android:onClick="onToggleSilentUpdates" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/delay_before_annotation_upload_edit_text" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+            <Button android:id="@id/delay_before_annotation_upload_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set delay before annotation upload" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/delay_after_content_download_edit_text" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+            <Button android:id="@id/delay_after_content_download_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set delay after content download" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/delay_after_swap_edit_text" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+            <Button android:id="@id/delay_after_swap_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set delay after swap" />
+        </LinearLayout>
+        <CheckBox android:id="@id/force_fail_updates_before_swap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force-fail updates before swap" />
+        <TextView android:text="Annotation conversion" style="@style/debug_option_category_title" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Spinner android:id="@id/annotation_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:layout_row="1" />
+            <EditText android:id="@id/annotation_start_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Start pos" />
+            <EditText android:id="@id/annotation_end_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="End pos" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/source_asin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Source ASIN" />
+            <EditText android:id="@id/source_guid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Source GUID" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/target_asin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Target ASIN" />
+            <EditText android:id="@id/target_guid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Target GUID" />
+        </LinearLayout>
+        <Button android:id="@id/convert_annotation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Convert" android:onClick="onConvertAnnotation" />
+        <TextView android:text="Miscellaneous" style="@style/debug_option_category_title" />
+        <TextView android:textColor="@android:color/holo_red_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Gamma/Prod toggle has been moved to new DebugMenu/regionalization" />
+        <Button android:id="@id/delete_all_annotations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete all annotations" android:onClick="onDeleteAllAnnotations" />
+        <Button android:id="@id/dump_heap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Generate Heap Dump" android:onClick="onDumpHeap" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear Sidecar Migration Flag" android:onClick="onClearSidecarMigrationSetting" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete font directory" android:onClick="deleteFontDir" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IsBookPurchaseBlocked(for student edition)" android:onClick="onBookPurchaseBlocked" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IsNewsstandPurchaseBlocked(for student edition)" android:onClick="onNewsstandPurchaseBlocked" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IsBookPurchaseProtected" android:onClick="onBookPurchaseProtected" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="isSocialNetworkBlocked" android:onClick="onSocialNetworkBlocked" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="isAppRestricted" android:onClick="onAppRestriction" />
+            <EditText android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.audible.application.kindle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="true" android:id="@id/button_set_notifications_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Notifications Endpoint" android:onClick="onSetNotificationsEndpoint" />
+            <EditText android:textSize="14.0dip" android:id="@id/textview_notifications_endpoint" android:layout_width="400.0dip" android:layout_height="wrap_content" android:text="master" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="true" android:id="@id/button_open_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Book(BoodId)" android:onClick="onOpenBook" />
+            <EditText android:textSize="14.0dip" android:id="@id/textview_openbook_bookId" android:layout_width="400.0dip" android:layout_height="wrap_content" android:text="AMZNID0/B002SAUCGC/0/" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="true" android:id="@id/button_download_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download Book(BookId)" android:onClick="onDownloadBook" />
+            <EditText android:textSize="14.0dip" android:id="@id/textview_download_bookId" android:layout_width="400.0dip" android:layout_height="wrap_content" android:text="AMZNID0/B002SAUCGC/0/" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="true" android:id="@id/button_cancel_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel book download(BookId)" android:onClick="onCancelBook" />
+            <EditText android:textSize="14.0dip" android:id="@id/textview_cancel_download_bookId" android:layout_width="400.0dip" android:layout_height="wrap_content" android:text="AMZNID0/B002SAUCGC/0/" />
+        </LinearLayout>
+        <Button android:id="@id/change_campaign_domain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change Campaign Domain" android:onClick="onChangeCampaignDomain" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version Overrides are in the new Menu" android:singleLine="false" android:textIsSelectable="true" />
+        <Button android:id="@id/load_asin_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Asin Detail Page" android:onClick="onloadAsinDetail" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TUTORIALS" />
+            <CheckBox android:id="@id/enable_utm_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use Unified Tutorial Manager" android:onClick="onToggleUtm" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/clear_tutorials" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear tutorial history" android:onClick="onClearTutorials" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap this to clear the cache of the tutorials been shown so far." />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/lock_tutorials" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lock Tutorials" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap this to lock or unlock the tutorials. Locking the tutorials will prevent them to show." />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:id="@id/enable_auto_shelving_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:text="Enable Auto-Shelf Feature" />
+        <Button android:id="@id/endactions_debug_activity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EndActions Debug" />
+        <Button android:id="@id/dump_databases" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dump databases" android:onClick="onDumpDatabases" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear Settings" android:onClick="onClearSettingsClick" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete disk-cached covers" android:onClick="onDeleteDiskCachedCoversClick" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete downloaded fonts" android:onClick="onDeleteDownloadedFontsClick" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perform manual sync" android:onClick="onPerformManualSync" />
+        <Button android:id="@id/trigger_bookopen_sync" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trigger bookopen sync (MRPR)" android:onClick="onTriggerBookOpenSync" />
+        <Button android:id="@id/suppress_mrpr_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Toggle Suppression of MRPR Dialog" android:onClick="onSuppressMrprDialog" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Invalidate Fingerprint" android:onClick="onInvalidateFingerprint" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Device Information" android:onClick="onShowDeviceInformation" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send Odot Message" android:onClick="onSendOdotMessage" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear store credentials" android:onClick="onClearStoreCredentials" />
+        <Button android:id="@id/currentlyReadingBookDetailsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show currently-reading book details" android:onClick="onShowCurrentlyReadingBookDetails" />
+        <Button android:id="@id/clearDynamicConfig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear Dynamic Config URLs" android:onClick="onClearDynamicConfig" />
+        <Button android:id="@id/changeDictionaryLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change dictionary language" android:onClick="onChangeDictionaryLanguage" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Last Notification Date two weeks earlier" android:onClick="onSetLastNotificationDateEarlier" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear Last Notification Date" android:onClick="onClearLastNotificationDate" />
+        <CheckBox android:id="@id/force_hfs_failure_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force HFS Response Failure" android:onClick="onForceHFSResponseFailure" />
+        <CheckBox android:id="@id/force_hfs_expired_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force HFS Feeds Expired" android:onClick="onForceHFSExpired" />
+        <CheckBox android:id="@id/use_debug_hfs_feed_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use HFS feed from disk (/sdcard/json.in)" android:onClick="onUseDebugHFSFeed" />
+        <CheckBox android:id="@id/save_hfs_feed_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save HFS feed to disk (/sdcard/json.out)" android:onClick="onSaveHFSFeed" />
+        <CheckBox android:id="@id/force_domain_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force US domain for cred. cookies" android:onClick="toggleDomainForcing" />
+        <CheckBox android:id="@id/preprod_redirect_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use preprod KCPMason redirects" android:onClick="togglePreprodRedirects" />
+        <CheckBox android:id="@id/forced_app_update_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force app update (requires app restart)" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/vertical_threshold" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberSigned" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/circle_horizontal_threshold" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberSigned" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/underline_horizontal_threshold" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberSigned" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+        </LinearLayout>
+        <CheckBox android:id="@id/disable_ftue_loading_screen_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable FTUE loading screen" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deregister Kindle (Make me work with MAP ;_;)" android:onClick="deregister" />
+        <Button android:id="@id/download_all_books" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download All Books" android:onClick="onDownloadAllBooks" />
+        <Button android:id="@id/remove_all_books" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="**REMOVE** All Local Books" android:onClick="onRemoveLocalBooks" />
+        <EditText android:id="@id/debug_asin_to_remove" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:text="ASINs;" />
+        <CheckBox android:id="@id/ignore_remote_deregister_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ignore remote deregister command" android:onClick="toggleIgnoreRemoteDeregister" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/debug_preview_length" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="800" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+            </LinearLayout>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set" android:onClick="onPreviewCoverLengthClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="true" android:id="@id/button_select_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Overlay image" android:onClick="onSelectFile" />
+            <EditText android:textSize="14.0dip" android:id="@id/textview_filename" android:layout_width="400.0dip" android:layout_height="wrap_content" android:text="/mnt/sdcard/" />
+        </LinearLayout>
+        <Button android:id="@id/spr_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable SPR toggle" android:onClick="onEnableSubPixelRendering" />
+        <Button android:id="@id/font_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable test fonts" android:onClick="onEnableTestFonts" />
+        <Button android:id="@id/custom_colors_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Custom Settings" android:onClick="onEnableCustomColors" />
+        <Button android:id="@id/lock_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable first page render lock" android:onClick="onEnableFirstPageRenderLock" />
+        <Button android:id="@id/page_snapshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save current page bitmap to disk" android:onClick="onPageSnapshot" />
+        <Button android:id="@id/toggle_xml_logging" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Toggle DefaultContentHandler Logging" android:onClick="onXmlToggle" />
+        <Button android:id="@id/enable_appstart_tracing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable tracing of cold open" />
+        <Button android:id="@id/write_xml_to_disk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable write xml responses to disk" />
+        <Button android:id="@id/toggle_local_cleanup_in_map_account_removed_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable local cleanup in MAPAccountRemovedReceiver" android:onClick="onToggleLocalCleanupInMAPAccountRemovedReceiver" />
+        <Button android:id="@id/enable_systrace_markers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable systrace markers" />
+        <Button android:id="@id/enable_logcat_perf_markers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable logcat perf markers" />
+        <Button android:id="@id/enable_logcat_qa_perf_markers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable logcat perf markers for QA" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Multipage Highlight Page Flip Delay(ms): " />
+            <EditText android:id="@id/mphl_delay_ms_tv" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:inputType="number" />
+            <Button android:id="@id/mphl_set_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set delay" android:onClick="mphlSetButtonOnClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/modules_list" android:background="#55a0a0a0" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nwstd Magazines backissues expiry" />
+            <EditText android:id="@id/debug_nwstd_backissues_MAGAZINES_timelimit" android:padding="10.0dip" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:hint="Minutes before archiving:" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set limit" android:onClick="onNwstdBackissuesMagazinesLimitSet" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" android:onClick="onNwstdBackissuesMagazinesLimitReset" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nwstd Newspapers backissues expiry" />
+            <EditText android:id="@id/debug_nwstd_backissues_NEWSPAPERS_timelimit" android:padding="10.0dip" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:hint="Minutes before archiving:" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set limit" android:onClick="onNwstdBackissuesNewspapersLimitSet" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" android:onClick="onNwstdBackissuesNewspapersLimitReset" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YJ Cache Size (KB) for Reader Process (-1 to unset):" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/debug_yj_cache_size_for_main_process" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberSigned" />
+            <Button android:id="@id/yj_cache_size_main_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set (must &quot;kill app&quot; to take effect)" android:onClick="onYJCacheSizeSet" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YJ Cache Size (KB) for thumbnail process (-1 to unset):" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/debug_yj_cache_size_for_thumbnail_process" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberSigned" />
+            <Button android:id="@id/yj_cache_size_thumbnail_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set (must &quot;kill app&quot; to take effect)" android:onClick="onYJCacheSizeSet" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test Purchasing" />
+            <LinearLayout android:background="@color/dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/debug_purchasing_asin" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="B00RKPK8PA;B00DGXT4Z0;B00PQQNXMU;B00DSAPD60;B00S1DNDNO;B00G5SAVNC;B0048EJZT6;B00CI7QJ2Q" android:selectAllOnFocus="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@id/debug_purchasing_price_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Price Available" />
+            <HorizontalScrollView android:id="@id/debug_purchasing_price_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/debug_purchasing_price_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <TextView android:id="@id/debug_purchasing_buy_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Buy Information Available..." />
+            <HorizontalScrollView android:id="@id/debug_purchasing_undo_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/debug_purchasing_undo_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

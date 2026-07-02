@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/lib_book_row_title" style="@style/library_book_row_text.title" />
+    <TextView android:id="@id/lib_book_row_author" android:layout_marginTop="@dimen/ruby_library_book_row_author_text_margin_top" android:layout_below="@id/lib_book_row_title" style="@style/library_book_row_text.subheading" />
+    <RelativeLayout android:id="@id/lib_book_rows" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lib_book_row_author">
+        <LinearLayout android:id="@id/lib_book_row_1" android:paddingTop="@dimen/ruby_library_book_row_extras_padding_top" android:paddingBottom="@dimen/ruby_library_book_row_extras_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/library_book_row_ribbon_stamp_badges" />
+            <ViewStub android:id="@id/lib_book_row_reading_progress" android:paddingTop="@dimen/ruby_library_book_row_extras_text_additional_padding_top" android:layout="@layout/library_book_row_reading_progress" android:inflatedId="@id/lib_book_row_reading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+            <ViewStub android:id="@id/lib_book_row_file_size" android:paddingTop="@dimen/ruby_library_book_row_extras_text_additional_padding_top" android:layout="@layout/library_book_row_file_size" android:inflatedId="@id/lib_book_row_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lib_book_row_2" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/lib_book_row_1">
+            <ViewStub android:id="@id/lib_book_row_subscription" android:layout="@layout/legacy_lib_book_row_simple_image_view" android:inflatedId="@id/lib_book_row_subscription" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lib_book_row_download_view" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lib_book_row_author">
+        <include android:id="@id/lib_book_row_download_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/download_progress_height" android:layout_marginTop="@dimen/ruby_library_book_row_downloading_progress_margin_top" layout="@layout/two_state_progress_bar" />
+        <ViewStub android:id="@id/lib_book_row_downloading_text" android:layout="@layout/library_book_row_downloading_text" android:inflatedId="@id/lib_book_row_downloading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ruby_library_book_row_downloading_text_margin_top" android:layout_below="@id/lib_book_row_download_progress" />
+    </RelativeLayout>
+</merge>

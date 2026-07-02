@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sample_bar_message_text_margin_right">40.0dip</dimen>
+    <dimen name="sample_bar_padding_left">33.0dip</dimen>
+    <dimen name="sample_bar_padding_right">33.0dip</dimen>
+    <dimen name="sitb_softkey_bar_right_width">52.0dip</dimen>
+    <dimen name="upsell_bar_message_text_margin_right">40.0dip</dimen>
+    <dimen name="upsell_bar_padding_left">33.0dip</dimen>
+    <dimen name="upsell_bar_padding_right">33.0dip</dimen>
+</resources>

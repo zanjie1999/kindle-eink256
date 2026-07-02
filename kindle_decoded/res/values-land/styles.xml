@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="cocktail_authenticated_parent_view">
+        <item name="android:paddingLeft">@dimen/cocktail_padding_left</item>
+        <item name="android:paddingRight">@dimen/cocktail_padding_right</item>
+    </style>
+    <style name="cocktail_unauthenticated_parent_view">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+    </style>
+    <style name="cocktail_unauthenticated_textview">
+        <item name="android:rotation">@integer/cocktail_unauthenticated_textview_rotation</item>
+    </style>
+</resources>

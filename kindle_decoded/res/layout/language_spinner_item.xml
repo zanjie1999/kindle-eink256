@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/word_wise_spinner_item_text_size" android:gravity="center_vertical" android:id="@id/languageSpinnerItem" android:paddingLeft="@dimen/word_wise_spinner_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/word_wise_spinner_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

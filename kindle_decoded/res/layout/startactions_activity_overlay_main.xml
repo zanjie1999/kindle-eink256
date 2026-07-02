@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pkg="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/startactions_dismiss_overlay" android:background="@color/startactions_dismiss_view_background" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/startactions_content_description_dismiss_overlay" />
+    <com.amazon.startactions.ui.helpers.MaxHeightLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/startactions_content_container" android:background="@drawable/bg_startactions_borderless_button" android:focusable="false" android:layout_width="@dimen/startactions_content_container_width" android:layout_height="wrap_content" android:contentDescription="@string/startactions_content_description_content_container" pkg:max_height="@dimen/startactions_content_container_max_height_percentage" pkg:max_height_legacy="@dimen/startactions_content_container_max_height_percentage_legacy" />
+</FrameLayout>

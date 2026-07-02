@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/book_action_book_details_recommended_books" style="@style/book_action_book_details_recommended_books"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_recommended_button" style="@style/book_action_recommended_button" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginRight="@dimen/book_action_recommend_margin_left_and_right" android:src="@drawable/ic_see_more_blue" />
+</LinearLayout>

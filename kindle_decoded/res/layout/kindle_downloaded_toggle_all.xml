@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton android:id="@id/kindle_downloaded_toggle_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/kindle_downloaded_toggle_all" android:textOff="@string/kindle_downloaded_toggle_all" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" android:text="@string/kindle_downloaded_toggle_all" style="?kindle_downloadedToggleButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

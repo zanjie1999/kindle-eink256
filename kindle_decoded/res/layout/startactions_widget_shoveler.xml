@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/startactions_widget_shoveler_internal_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/anyactions_amazon_text_medium_xsmall" android:textStyle="bold" android:id="@id/startactions_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_widget_shoveler_internal_padding_vertical" android:textAllCaps="true" />
+    <HorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/cover_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

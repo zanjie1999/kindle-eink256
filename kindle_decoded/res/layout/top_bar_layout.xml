@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_box" android:background="?top_bar_search_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/search_box_icon_margin" android:src="?top_bar_search_icon" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Body.Grey" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_box_text" android:layout_marginStart="@dimen/search_box_text_margin_start" />
+</LinearLayout>

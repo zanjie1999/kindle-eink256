@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_view" android:background="?reader_search_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/search_results_padding_left" android:paddingRight="@dimen/search_results_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/search_results_title_height">
+        <TextView android:textAppearance="@style/TextAppearance.DeprecatedStyle.Body1" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/sub_title_text_view" android:paddingBottom="@dimen/search_results_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/title_progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10000" android:indeterminate="false" android:layout_below="@id/sub_title_text_view" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <ListView android:id="@id/list_view" android:padding="@dimen/search_result_list_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?reader_search_divider" android:dividerHeight="@dimen/reader_search_list_divider_size" android:fastScrollEnabled="true" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fc_toolbar_container" layout="@layout/fc_toolbar" />
+    <com.amazon.kedu.flashcards.views.LoadableGraphicalHighlightView android:id="@id/ghl_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fc_toolbar_container" fc:layoutResource="@layout/fc_loadable_see_more_ghl"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fc="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

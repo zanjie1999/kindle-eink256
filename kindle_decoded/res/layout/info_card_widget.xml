@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.reader.ui.InfoCardContainer android:id="@id/info_card_widget_instance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_card_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    </com.amazon.kcp.reader.ui.InfoCardContainer>
+    <com.amazon.kcp.reader.ui.DotPageIndicator android:layout_gravity="bottom|center" android:id="@id/info_card_page_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/infocard_page_selector_height" android:layout_marginTop="@dimen/infocard_page_selector_vertical_margin" android:layout_marginBottom="@dimen/infocard_page_selector_vertical_margin" android:importantForAccessibility="no" />
+</FrameLayout>

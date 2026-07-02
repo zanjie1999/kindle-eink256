@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selection_handle_left_horizontal_offset">62.0px</dimen>
+    <dimen name="selection_handle_left_vertical_offset">6.0px</dimen>
+    <dimen name="selection_handle_right_horizontal_offset">15.0px</dimen>
+    <dimen name="selection_handle_right_vertical_offset">6.0px</dimen>
+</resources>

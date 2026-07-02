@@ -1,0 +1,405 @@
+{"discovery": [
+    {
+        "contract": "com.amazon.kcp.integrator.LargeLibraryItemSynchronousRepository",
+        "implementations": ["com.amazon.kcp.integrator.LargeLibraryRepositoryImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.util.device.ISafeInsetsDetector",
+        "implementations": ["com.amazon.kindle.device.cutout.SafeInsetsDetector"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.store.StoreJavascriptInterfaceProvider",
+        "implementations": ["com.amazon.falkor.bottomsheet.FalkorTOSJavascriptInterfaceLazyProxy"]
+    },
+    {
+        "contract": "com.amazon.kindle.home.card.SidekickCardBuilder",
+        "implementations": [
+            "com.amazon.kcp.home.cards.AnnouncementCardBuilder",
+            "com.amazon.kcp.home.cards.KindleUnlimitedUpsellCardBuilder",
+            "com.amazon.kcp.home.cards.FalkorDiscoveryCardBuilder",
+            "com.amazon.kcp.home.cards.FreeBooksCardBuilder",
+            "com.amazon.kcp.home.cards.ChartsCardBuilder",
+            "com.amazon.kcp.home.cards.BookEntityShovelerCardBuilder",
+            "com.amazon.kcp.home.cards.HeroCardBuilder",
+            "com.amazon.kcp.home.cards.WaysToReadCardBuilder",
+            "com.amazon.kcp.home.cards.ArticleShovelerCardBuilder",
+            "com.amazon.kcp.home.cards.DonationCardBuilder",
+            "com.amazon.kcp.home.cards.NISCardBuilder",
+            "com.amazon.kcp.home.cards.BrandedShovelerCardBuilder",
+            "com.amazon.kcp.home.cards.AuthorFollowCardBuilder",
+            "com.amazon.kcp.home.cards.TipsAndTricksCardBuilder",
+            "com.amazon.kcp.home.cards.ShovelerCardBuilder",
+            "com.amazon.kcp.home.cards.WebCardBuilder",
+            "com.amazon.kcp.home.cards.OldWebCardBuilder",
+            "com.amazon.kcp.home.cards.BooksBlurbCardBuilder"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.library.mar.goodreads.IGoodreadsMarManagerProvider",
+        "implementations": ["com.amazon.kcp.goodreads.GoodreadsMarManagerProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.home.card.HomeCardBuilder",
+        "implementations": [
+            "com.amazon.kcp.home.widget.resume.RubyResumeWidgetProviderWrapper",
+            "com.amazon.kcp.home.widget.resume.LargeLibraryResumeWidgetProviderWrapper",
+            "com.amazon.kcp.home.widget.storeupsell.StoreUpsellWidgetProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.ui.DarkModeHelper",
+        "implementations": ["com.amazon.kindle.krx.ui.DarkModeHelperImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.oob.TopBarViewFactory",
+        "implementations": ["com.amazon.kcp.oob.KindleTopBarViewFactory"]
+    },
+    {
+        "contract": "com.amazon.kindle.contentprovider.ILibraryContentProviderProvider",
+        "implementations": ["com.amazon.kindle.contentprovider.StandaloneLibraryContentProviderProvider"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.LargeLibraryRefineMenuAdapterProvider",
+        "implementations": ["com.amazon.kcp.library.LargeLibraryRefineMenuAdapterProviderImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.library.ui.popup.LibraryViewSortMenuProvider",
+        "implementations": ["com.amazon.kindle.library.ui.popup.StandAloneLibraryViewSortMenuProvider"]
+    },
+    {
+        "contract": "com.amazon.kcp.LargeLibraryPerformanceTracker",
+        "implementations": ["com.amazon.kcp.LargeLibraryPerformanceTrackerImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.ffs.utils.FfsHelper",
+        "implementations": ["com.amazon.kindle.ffs.utils.FfsHelperImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.setting.layout.LayoutDefaultRule",
+        "implementations": ["com.amazon.kindle.setting.layout.KindleLayoutDefaultRule"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.fragments.LargeLibraryFragmentProvider",
+        "implementations": ["com.amazon.kcp.library.fragments.LargeLibraryFragmentProviderImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.home.action.HomeActionProvider",
+        "implementations": [
+            "com.amazon.kcp.home.actions.AuthorFollowActionProvider",
+            "com.amazon.kcp.home.actions.OpenArticleActionProvider",
+            "com.amazon.kcp.home.actions.BookActionsActionProvider",
+            "com.amazon.kcp.home.actions.OpenStoreUrlActionProvider",
+            "com.amazon.kcp.home.actions.PurchaseDownloadActionProvider",
+            "com.amazon.kcp.home.actions.OpenWebUrlActionProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.viewoptions.IAaSettingsProvider",
+        "implementations": [
+            "com.amazon.ea.AboutThisBookAaSettingsProvider",
+            "com.amazon.kindle.viewoptions.KSDKSettingsProvider",
+            "com.amazon.phl.PopularHighlightsAaSettingsProvider",
+            "com.amazon.kcp.reader.ui.WordWiseAaSettingProvider",
+            "com.amazon.kcp.reader.ui.ReadingRulerAaSettingProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.library.LibraryBookActionFactory",
+        "implementations": [
+            "com.amazon.falkor.download.RemoveDownloadedEpisodesBookActionFactory",
+            "com.amazon.kcp.store.ViewStoryDetailsBookActionFactory",
+            "com.amazon.kindle.deletecontent.action.DeleteContentButtonActionFactory",
+            "com.amazon.kindle.socialsharing.entrypoints.RecommendThisStoryBookActionFactory",
+            "com.amazon.kcp.store.ViewInStoreLibraryBookActionFactory"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.cover.GridCoverProvider",
+        "implementations": ["com.amazon.kcp.cover.DefaultGridCoverProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.bottomsheet.BottomSheetPresenterActivityRegistry",
+        "implementations": ["com.amazon.kindle.krx.ui.bottomsheet.BottomSheetPresenterImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.langdetector.BookLangDetectorUtils",
+        "implementations": ["com.amazon.kindle.langdetector.StandAloneBookLangDetectorUtils"]
+    },
+    {
+        "contract": "com.amazon.kindle.fastmetrics.service.client.IKindleFastMetrics",
+        "implementations": ["com.amazon.kindle.fastmetrics.service.provider.KindleFastMetrics"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.LargeLibraryCounterProvider",
+        "implementations": ["com.amazon.kcp.library.LargeLibraryCounterProviderImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.store.StoreFragmentProvider",
+        "implementations": ["com.amazon.kcp.store.KfaStoreFragmentProvider"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.ILibraryFilterProvider",
+        "implementations": ["com.amazon.kcp.library.LibraryFilterProvider"]
+    },
+    {
+        "contract": "com.amazon.kcp.util.fastmetrics.appevents.EventsFastMetricsRecorder",
+        "implementations": ["com.amazon.kcp.util.fastmetrics.appevents.AppEventsFastMetricsRecorder"]
+    },
+    {
+        "contract": "com.amazon.kindle.displaymask.DisplayMaskMetricsProvider",
+        "implementations": ["com.amazon.kindle.displaymask.DuoDisplayMaskMetricsProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.mobileweblab.IWeblabConfiguration",
+        "implementations": [
+            "com.amazon.kcp.payments.PlayBillingWeblabConfig",
+            "com.amazon.kcp.home.debug.SidekickWeblabManager",
+            "com.amazon.falkor.FalkorPluginWeblabConfig",
+            "com.amazon.kcp.reader.ui.HushpuppySuppressionWebLab",
+            "com.amazon.sitb.android.plugin.config.UpsellWeblabConfig",
+            "com.amazon.kindle.recaps.RecapsFeatureWebLab",
+            "com.amazon.kindle.mobileweblab.ReaderWeblabs",
+            "com.amazon.kcp.debug.ScopedStorageWeblabConfig",
+            "com.amazon.readingactions.helpers.ReadingActionsWeblabManager",
+            "com.amazon.bookwizard.weblab.BookwizardWeblabConfiguration",
+            "com.amazon.kindle.mobileweblab.KindleAndroidReaderWeblabs"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.debug.IDebugMenuPageProvider",
+        "implementations": [
+            "com.amazon.kcp.reader.ui.HushpuppyUpsellDebugMenu",
+            "com.amazon.kcp.debug.KRXDebugMenuPageProvider",
+            "com.amazon.kcp.debug.DefaultDebugMenuPageProvider",
+            "com.amazon.kindle.displaymask.DisplayMaskDebugPageProvider",
+            "com.amazon.kindle.modules.MangaDebugMenuProvider",
+            "com.amazon.kindle.krx.mobileweblab.debug.MobileWeblabDebugPageProvider",
+            "com.amazon.kcp.reader.notebook.KeduDebugMenuProvider",
+            "com.amazon.kindle.attribution.AttributionDebugMenuProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.store.StoreOpenerExecutor",
+        "implementations": ["com.amazon.kcp.store.StoreOpenerExecutorImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.util.fastmetrics.ReadingRulerMetricsProvider",
+        "implementations": ["com.amazon.kcp.readingruler.ReadingRulerMetricsProviderImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.store.StoreTabProvider",
+        "implementations": ["com.amazon.kcp.store.StoreTab"]
+    },
+    {
+        "contract": "com.amazon.kcp.store.StoreDiscoveryEntryPointsInterface",
+        "implementations": ["com.amazon.kcp.store.StoreDiscoveryEntryPoints"]
+    },
+    {
+        "contract": "com.amazon.kindle.yj.controller.IResourceHost",
+        "implementations": ["com.amazon.kindle.rendering.KRIFReadingModeBookViewController"]
+    },
+    {
+        "contract": "com.amazon.kcp.accounts.RegistrationProviderFactory",
+        "implementations": ["com.amazon.kcp.accounts.StandaloneRegistrationProviderFactory"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.ui.LandingScreenTab",
+        "implementations": [
+            "com.amazon.kcp.store.StoreTab",
+            "com.amazon.kcp.more.MoreTab",
+            "com.amazon.kcp.home.HomeTab",
+            "com.amazon.kcp.library.LibraryTab"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.integrator.LargeLibraryItemRepository",
+        "implementations": ["com.amazon.kcp.integrator.LargeLibraryRepositoryImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.SearchActivityProvider",
+        "implementations": ["com.amazon.kcp.oob.KindleSearchActivityProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.contentprovider.TtsBookBridge",
+        "implementations": ["com.amazon.kindle.rendering.KRIFReadingModeBookViewController"]
+    },
+    {
+        "contract": "com.amazon.kcp.notifications.handlers.DiscoverableBackgroundTodoSyncNotificationHandler",
+        "implementations": ["com.amazon.kcp.notifications.handlers.BackgroundTodoSyncNotificationHandler"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.payment.PlayBillingUtils",
+        "implementations": ["com.amazon.kcp.payments.PlayBillingUtilsImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.download.IReaderDownloadClient",
+        "implementations": ["com.amazon.kcp.application.ReaderDownloadClient"]
+    },
+    {
+        "contract": "com.amazon.kindle.bottomsheet.BottomSheetPresenter",
+        "implementations": ["com.amazon.kindle.krx.ui.bottomsheet.BottomSheetPresenterImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.store.StoreOpenerFactory",
+        "implementations": ["com.amazon.kcp.store.StoreOpenerFactoryImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.reader.features.SearchActivityFeature",
+        "implementations": ["com.amazon.kcp.reader.features.KindleSearchActivityFeature"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.reader.ReaderBookActionFactory",
+        "implementations": ["com.amazon.kcp.store.ShopInStoreReaderBookActionFactory"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.metrics.IMetricsManager",
+        "implementations": ["com.amazon.kcp.util.fastmetrics.PluginMetricsManager"]
+    },
+    {
+        "contract": "com.amazon.kindle.content.IDeeplinkHandler",
+        "implementations": ["com.amazon.kcp.application.DeeplinkHandler"]
+    },
+    {
+        "contract": "com.amazon.kcp.helpandfeedback.HelpWebErrorHandler",
+        "implementations": ["com.amazon.kcp.helpandfeedback.StandaloneHelpWebErrorHandler"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.mobileweblab.IWeblabManager",
+        "implementations": ["com.amazon.kindle.krx.mobileweblab.WeblabManagerDiscoverableProxy"]
+    },
+    {
+        "contract": "com.amazon.kindle.store.StoreBookHelper",
+        "implementations": ["com.amazon.kcp.store.StoreBookHelperImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.content.bookopen.BookOpenTracker",
+        "implementations": ["com.amazon.kindle.krx.content.bookopen.KindleBookOpenManager"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.appshortcuts.AppShortcut",
+        "implementations": [
+            "com.amazon.kcp.home.HomeAppShortcut",
+            "com.amazon.kcp.store.StoreAppShortcut",
+            "com.amazon.kcp.library.LibraryAppShortcut",
+            "com.amazon.kindle.RecentBookAppShortcut"
+        ]
+    },
+    {
+        "contract": "com.amazon.kindle.setting.item.ItemsProvider",
+        "implementations": [
+            "com.amazon.kindle.timedisplay.TimeDisplaySettingItemProvider",
+            "com.amazon.kcp.profiles.setting.item.profiles.FamilySharingItemProvider",
+            "com.amazon.kindle.setting.item.sync.SyncItemProvider",
+            "com.audible.hushpuppy.extensions.autodownload.AutoDownloadAudiobooksSettingItemProvider",
+            "com.amazon.kindle.pagecurl.PageCurlAnimationSettingItemProvider",
+            "com.amazon.kindle.setting.provider.RegistrationSettingItemProvider",
+            "com.amazon.ea.AboutThisBookSettingItemProvider",
+            "com.amazon.kindle.sdcard.ExternalSDCardSettingItemProvider",
+            "com.amazon.kcp.groupcontent.GroupBooksBySeriesItemProvider",
+            "com.audible.hushpuppy.view.leftnav.ReadAndListenWithAudibleSettingItemProvider",
+            "com.amazon.kcp.more.readingstreaks.ReadingInsightsMoreHelper",
+            "com.amazon.kindle.volumecontrol.VolumeControlSettingItemProvider",
+            "com.amazon.kindle.ffs.settings.FFSItemsProvider",
+            "com.amazon.kcp.reader.SelectionSettingItemProvider",
+            "com.amazon.versioning.reader.ui.controller.NewBookUpdatesSettingItemProvider",
+            "com.amazon.phl.PopularHighlightsSettingItemProvider",
+            "com.amazon.kcp.wordwise.plugin.WordWiseSettingItemProvider",
+            "com.amazon.kcp.library.NotificationSettingItemProvider",
+            "com.amazon.kindle.setting.provider.CoreSettingItemsProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.library.EmptyLibraryControllerProvider",
+        "implementations": ["com.amazon.kindle.trial.TrialLibraryControllerProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.setting.layout.ItemsFragmentCreator",
+        "implementations": ["com.amazon.kindle.setting.layout.MoreItemsFragmentCreator"]
+    },
+    {
+        "contract": "com.amazon.kindle.setting.item.ItemUIBuilderProvider",
+        "implementations": [
+            "com.amazon.kindle.setting.item.sync.SyncItemUIBuilderProvider",
+            "com.amazon.kindle.setting.provider.MoreBuiltInItemUIBuilderProvider"
+        ]
+    },
+    {
+        "contract": "com.amazon.kindle.library.household.HouseholdMembersProvider",
+        "implementations": ["com.amazon.kindle.library.household.KfaHouseholdMembersProvider"]
+    },
+    {
+        "contract": "com.amazon.android.util.ReviewUtils",
+        "implementations": ["com.amazon.kcp.review.KfaReviewUtils"]
+    },
+    {
+        "contract": "com.amazon.kcp.application.CrashIdentifierUploadHelper",
+        "implementations": ["com.amazon.kcp.application.StandaloneCrashIdentifierUploadHelper"]
+    },
+    {
+        "contract": "com.amazon.kcp.application.internal.commands.InvalidDownloadsHandler",
+        "implementations": ["com.amazon.kcp.library.releaselicense.LibraryInvalidDownloadsHandler"]
+    },
+    {
+        "contract": "com.amazon.kindle.home.action.HomeBookActionProvider",
+        "implementations": ["com.amazon.kcp.home.actions.ViewInStoreBookActionProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.services.download.IKRLForDownloadFacade",
+        "implementations": ["com.amazon.kcp.application.KRLForDownloadFacade"]
+    },
+    {
+        "contract": "com.amazon.kcp.integrator.LargeNarrativeProvider",
+        "implementations": ["com.amazon.kcp.library.LargeNarrativeProviderImpl"]
+    },
+    {
+        "contract": "com.amazon.kindle.recaps.controller.ReadingModeBookViewController",
+        "implementations": ["com.amazon.kindle.rendering.KRIFReadingModeBookViewController"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.sdcard.librarytransfer.IContentTransferParticipant",
+        "implementations": [
+            "com.amazon.kindle.contenttransfer.AirContentTransferParticipant",
+            "com.amazon.kindle.sdcard.librarytransfer.BookTransferParticipant"
+        ]
+    },
+    {
+        "contract": "com.amazon.kcp.application.ApplicationDiscoveryEntryPointsInterface",
+        "implementations": ["com.amazon.kcp.application.ApplicationDiscoveryEntryPoints"]
+    },
+    {
+        "contract": "com.amazon.kcp.application.DeeplinkStoreHelper",
+        "implementations": ["com.amazon.kcp.application.DeeplinkStoreHelperImpl"]
+    },
+    {
+        "contract": "com.amazon.kcp.library.customerbenefits.ICustomerBenefits",
+        "implementations": ["com.amazon.kcp.library.customerbenefits.CustomerBenefits"]
+    },
+    {
+        "contract": "com.amazon.kindle.download.DownloadDiscoveryEntryPointsInterface",
+        "implementations": ["com.amazon.kindle.download.DownloadDiscoveryEntryPoints"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.content.bookopen.BookOpenManager",
+        "implementations": ["com.amazon.kindle.krx.content.bookopen.KindleBookOpenManager"]
+    },
+    {
+        "contract": "com.amazon.kindle.download.IReaderDownloadModule",
+        "implementations": ["com.amazon.kindle.download.ReaderDownloadModule"]
+    },
+    {
+        "contract": "com.amazon.kindle.krx.reader.ITableOfContentsExProvider",
+        "implementations": ["com.amazon.nwstd.toc.ReplicaTOCProvider"]
+    },
+    {
+        "contract": "com.amazon.kindle.fastmetrics.service.contract.IKindleFastMetricsSessions",
+        "implementations": ["com.amazon.kindle.fastmetrics.service.provider.KindleFastMetricsSessions"]
+    },
+    {
+        "contract": "com.amazon.kcp.store.StoreSslErrorHandler",
+        "implementations": ["com.amazon.kcp.store.StandaloneStoreSslErrorHandler"]
+    },
+    {
+        "contract": "com.amazon.kcp.integrator.LargeLibraryRepository",
+        "implementations": ["com.amazon.kcp.integrator.LargeLibraryRepositoryImpl"]
+    }
+]}

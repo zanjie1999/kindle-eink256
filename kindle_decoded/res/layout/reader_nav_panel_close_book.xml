@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/reader_nav_panel_library" android:contentDescription="@string/nav_panel_header_close_book" style="@style/ReaderStyle.Navigation.CloseBookHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/close_book_header_image" android:focusable="false" android:clickable="false" android:layout_width="@dimen/action_button_image_width" android:layout_height="@dimen/action_button_image_height" android:scaleType="centerInside" android:layout_marginStart="@dimen/start_button_padding" android:layout_marginEnd="@dimen/start_button_padding" />
+    <TextView android:id="@id/close_book_header_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/nav_panel_header_close_book" style="@style/ReaderStyle.Navigation.CloseBookHeaderText" />
+</LinearLayout>

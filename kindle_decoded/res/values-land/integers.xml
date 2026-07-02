@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bookmark_menu_top_divide">6</integer>
+    <integer name="bookwizard_genre_grid_column_count">3</integer>
+    <integer name="bookwizard_ku_offer_row_count">1</integer>
+    <integer name="bookwizard_welcome_content_weight">6</integer>
+    <integer name="cocktail_authenticated_logo_rotation">0</integer>
+    <integer name="cocktail_unauthenticated_textview_rotation">0</integer>
+    <integer name="definition_popup_height_percentage_for_phone">43</integer>
+    <integer name="endactions_detail_bubble_description_max_lines">2</integer>
+    <integer name="endactions_detail_bubble_title_max_lines">1</integer>
+    <integer name="in_book_clock_width_percentage_of_header">16</integer>
+    <integer name="infocard_note_bottom_space_weight">9</integer>
+    <integer name="klo_termlist_num_columns">2</integer>
+    <integer name="nln_breadcrumb_label_max_lines">1</integer>
+    <integer name="readingactions_detail_bubble_description_max_lines">2</integer>
+    <integer name="thumbnail_grid_view_number_of_columns">4</integer>
+    <integer name="tooltip_screen_width_percentage">40</integer>
+    <integer name="upsell_player_error_cust_care_contact_info_max_lines">1</integer>
+    <integer name="f_grid_item_num_columns">4</integer>
+</resources>

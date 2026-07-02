@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sample_bar_title" android:paddingTop="@dimen/sample_bar_title_text_top_padding_nln" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:paddingBottom="@dimen/sample_bar_title_text_bottom_padding_nln" android:focusable="true" android:layout_toLeftOf="@id/right_content" android:layout_alignParentLeft="true" style="@style/upsell_bar_text_title_nln" />
+    <TextView android:id="@id/sample_bar_message_text" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:layout_toLeftOf="@id/right_content" android:layout_below="@id/sample_bar_title" android:layout_alignParentLeft="true" style="@style/upsell_bar_text_message_nln" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sample_bar_expandable_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sample_bar_message_text" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/failure_asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sample_bar_padding" android:src="@drawable/upsell_triangle" />
+        <TextView android:id="@id/sample_bar_expandable_message_text" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:layout_toRightOf="@id/failure_asset" style="@style/upsell_bar_expandable_message_nln" />
+    </LinearLayout>
+</merge>

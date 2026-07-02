@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bookwizard_header_rating_books_needed">
+        <item quantity="other">Te recomendamos que valores al menos %1$d libros más.</item>
+        <item quantity="one">Te recomendamos que valores al menos %1$d libro más.</item>
+    </plurals>
+    <plurals name="bookwizard_ku_books_header_rated">
+        <item quantity="other">Puedes elegir hasta %1$d libros más. Toca Completado cuando quieras empezar a leer.</item>
+        <item quantity="one">Puedes elegir hasta %1$d libro más. Toca Completado cuando quieras empezar a leer.</item>
+    </plurals>
+    <plurals name="charts_review_counts">
+        <item quantity="other">%d reseñas de clientes</item>
+        <item quantity="one">una reseña de cliente</item>
+    </plurals>
+    <plurals name="date_string_hours">
+        <item quantity="other">Hace %1$d horas</item>
+        <item quantity="one">Hace 1 hora</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">Hace %1$d minutos</item>
+        <item quantity="one">Hace 1 minuto</item>
+    </plurals>
+    <plurals name="dt_eoc_hours">
+        <item quantity="other">%1d horas</item>
+        <item quantity="one">%1$d hora</item>
+    </plurals>
+    <plurals name="dt_eoc_minutes">
+        <item quantity="other">%1d minutos</item>
+        <item quantity="one">%1$d minuto</item>
+    </plurals>
+    <plurals name="dt_eoc_seconds">
+        <item quantity="other">%1d segundos</item>
+        <item quantity="one">%1$d segundo</item>
+    </plurals>
+    <plurals name="dt_eoc_words">
+        <item quantity="other">%1$d palabras</item>
+        <item quantity="one">%1$d palabra</item>
+    </plurals>
+    <plurals name="endactions_reviews_more_words">
+        <item quantity="other">%d palabras más</item>
+        <item quantity="one">%d palabra más</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">Vence en %1$d días</item>
+        <item quantity="one">Vence en un día</item>
+    </plurals>
+    <plurals name="falkor_story_ownership_count">
+        <item quantity="other">Tiene %1$d de %2$d episodios de esta historia.</item>
+        <item quantity="one">Tiene %1$d de %2$d episodio de esta historia.</item>
+    </plurals>
+    <plurals name="popularhighlights_annotation_item_label">
+        <item quantity="other">Subrayado popular: %1$d subrayadores</item>
+        <item quantity="one">Subrayado popular: %1$d subrayador</item>
+    </plurals>
+    <plurals name="popularhighlights_content_decoration_label">
+        <item quantity="other">%1$d subrayadores</item>
+        <item quantity="one">%1$d subrayador</item>
+    </plurals>
+    <plurals name="series_ownership_count_issues">
+        <item quantity="other">Tienes %1$d números en esta serie.</item>
+        <item quantity="one">Tienes %1$d número en esta serie.</item>
+    </plurals>
+    <plurals name="series_ownership_count_omnibus">
+        <item quantity="other">Tienes %1$d antologías en esta serie.</item>
+        <item quantity="one">Tienes %1$d antología en esta serie.</item>
+    </plurals>
+    <plurals name="series_ownership_count_trades">
+        <item quantity="other">Tienes %1$d volúmenes en esta serie.</item>
+        <item quantity="one">Tienes %1$d volumen en esta serie.</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">%d páginas</item>
+        <item quantity="one">%d página</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_images">
+        <item quantity="other">%d imágenes</item>
+        <item quantity="one">%d imagen</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_people">
+        <item quantity="other">%d personas</item>
+        <item quantity="one">%d persona</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_terms">
+        <item quantity="other">%d términos</item>
+        <item quantity="one">%d término</item>
+    </plurals>
+    <plurals name="unpublished_falkor_story_ownership_count">
+        <item quantity="other">Tiene %1$d episodios de esta historia.</item>
+        <item quantity="one">Tiene %1$d episodio de esta historia.</item>
+    </plurals>
+    <plurals name="xray_mentions_count">
+        <item quantity="other">%d menciones</item>
+        <item quantity="one">%d mención</item>
+    </plurals>
+</resources>

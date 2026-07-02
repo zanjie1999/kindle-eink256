@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.bookwizard.ui.view.CheckableCoverImageView android:id="@id/cover_image" android:layout_width="@dimen/bookwizard_grid_cover_width" android:layout_height="@dimen/bookwizard_grid_cover_height" android:adjustViewBounds="true" android:minWidth="@dimen/bookwizard_grid_cover_width" android:minHeight="@dimen/bookwizard_grid_cover_height" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/details_icon" android:padding="@dimen/bookwizard_ku_details_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookwizard_btn_more_info" android:contentDescription="@string/book_detail_title_text" />
+</merge>

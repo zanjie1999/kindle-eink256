@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="date_string_hours">
+        <item quantity="other">%1$d 小时之前</item>
+        <item quantity="one">1 小时之前</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">%1$d 分钟之前</item>
+        <item quantity="one">1 分钟之前</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">%1$d 天后过期</item>
+        <item quantity="one">1 天后过期</item>
+    </plurals>
+</resources>

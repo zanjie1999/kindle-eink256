@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.setting.item.views.SAToggleItemView android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ruby_simple_two_lines_list_item_min_height" style="@style/more_menu_item_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/item_title" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/SimpleTwoLinesItemText.FirstLine.Ruby" />
+            <TextView android:id="@id/item_subtitle" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/SimpleTwoLinesItemText.SecondLine.Ruby" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/item_checkbox" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SimpleCheckBox" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/more_menu_item_divider" />
+</com.amazon.kindle.setting.item.views.SAToggleItemView>

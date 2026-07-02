@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_image" android:layout_width="@dimen/carousel_icon_width" android:layout_height="@dimen/carousel_icon_height" />
+    <TextView android:textSize="@dimen/carousel_icon_title_text_size" android:textColor="@color/carousel_text" android:ellipsize="end" android:gravity="center|top" android:layout_gravity="bottom|center" android:id="@id/icon_title" android:layout_width="@dimen/carousel_icon_title_text_width" android:layout_height="@dimen/carousel_icon_title_text_height" android:layout_marginLeft="@dimen/carousel_icon_title_text_margin_left_right" android:layout_marginRight="@dimen/carousel_icon_title_text_margin_left_right" android:layout_marginBottom="@dimen/carousel_icon_title_text_margin_bottom" android:maxLines="2" />
+</FrameLayout>

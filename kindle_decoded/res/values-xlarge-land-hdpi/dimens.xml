@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thumbnail_grid_view_horizontal_spacing">40.0px</dimen>
+</resources>

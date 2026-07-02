@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar android:layout_gravity="center" android:layout_width="@dimen/home_spinner_progress_bar_size" android:layout_height="@dimen/home_spinner_progress_bar_size" android:indeterminate="false" android:indeterminateDrawable="?home_loading_spinner"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

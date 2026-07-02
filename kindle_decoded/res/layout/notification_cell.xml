@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/notification_item_background" android:background="?core_attention" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/notification_left_delete_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_left_delete_layout_padding_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/notification_left_delete_icon" android:layout_width="@dimen/notification_delete_icon_horizontal" android:layout_height="@dimen/notification_delete_icon_vertical" android:layout_marginBottom="@dimen/notification_delete_icon_padding_bottom" android:src="@drawable/ic_inapp_trash_icon" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+            <ThemeTextView android:textColor="@color/notification_delete_text" android:id="@id/notification_left_delete_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="@string/inapp_notifications_delete" android:layout_below="@id/notification_left_delete_icon" android:importantForAccessibility="no" style="@style/notification_cell_body" theme_text_view_font="@dimen/notification_delete_text_size" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/notification_right_delete_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_right_delete_layout_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/notification_right_delete_icon" android:layout_width="@dimen/notification_delete_icon_horizontal" android:layout_height="@dimen/notification_delete_icon_vertical" android:layout_marginBottom="@dimen/notification_delete_icon_padding_bottom" android:src="@drawable/ic_inapp_trash_icon" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+            <ThemeTextView android:textColor="@color/notification_delete_text" android:id="@id/notification_right_delete_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inapp_notifications_delete" android:layout_below="@id/notification_right_delete_icon" android:importantForAccessibility="no" style="@style/notification_cell_body" theme_text_view_font="@dimen/notification_delete_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/notification_item_foreground" android:paddingLeft="@dimen/notification_cell_inset_left" android:paddingTop="@dimen/notification_cell_inset_vertical" android:paddingRight="@dimen/notification_cell_inset_right" android:paddingBottom="@dimen/notification_cell_inset_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/notification_cell_image_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_cell_inset_between_image_and_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/notification_cell_image" android:layout_width="@dimen/notification_cell_image_width" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/notification_cell_check_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_selected_notifications_check_mark" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/notification_cell_image_holder" android:layout_centerInParent="true">
+            <ThemeTextView android:id="@id/notification_cell_title" android:paddingBottom="@dimen/notification_cell_inset_between_title_and_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/notification_cell_title" />
+            <ThemeTextView android:id="@id/notification_cell_body" android:paddingBottom="@dimen/notification_cell_inset_between_body_and_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/notification_cell_body" />
+            <ThemeTextView android:ellipsize="end" android:id="@id/notification_cell_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/notification_cell_footer" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

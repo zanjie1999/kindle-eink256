@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/xor_background_selector" android:paddingTop="@dimen/eink_reading_list_row_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/eink_reading_list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/xor_text_color_selector" android:ellipsize="end" android:id="@id/eink_reading_list_row_book_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/eink_reading_list_row_book_name_bottom_padding" android:maxLines="1" style="@style/eink_reading_list_book_name_style" />
+    <TextView android:textColor="@color/xor_text_color_selector" android:ellipsize="end" android:id="@id/eink_reading_list_row_book_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/eink_reading_list_row_book_name" style="@style/eink_reading_list_book_author_style" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Kindle.Dark" parent="@style/Base.Kindle.Shared.Dark.v29" />
+    <style name="Base.Kindle.Light" parent="@style/Base.Kindle.Shared.Light.v29" />
+    <style name="BottomSheetDarkTheme" parent="@style/BottomSheetDarkTheme.v29" />
+    <style name="BottomSheetLightTheme" parent="@style/BottomSheetLightTheme.v29" />
+    <style name="chromeDarkTheme" parent="@style/chromeDarkTheme.v29" />
+    <style name="chromeLightTheme" parent="@style/chromeLightTheme.v29" />
+    <style name="Base.Kindle.Shared.Dark.v29" parent="@style/Base.Kindle.Shared.Dark.v27">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Base.Kindle.Shared.Light.v29" parent="@style/Base.Kindle.Shared.Light.v27">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="BottomSheetDarkTheme.v29" parent="@style/BottomSheetDarkThemeBase">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="BottomSheetLightTheme.v29" parent="@style/BottomSheetLightThemeBase">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="chromeDarkTheme.v29" parent="@style/chromeDarkTheme.v27">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="chromeLightTheme.v29" parent="@style/chromeLightTheme.v27">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

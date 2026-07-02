@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wordwise_settings_eink_page_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/eink_settings_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/wordwise_settings_item_eink">
+            <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/wordwise_settings_eink_switch_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/wordwise_settings_eink_item_title_text_size" android:id="@id/wordwise_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_settings_title" />
+                <TextView android:textSize="@dimen/wordwise_settings_eink_item_description_text_size" android:textColor="@color/black" android:id="@id/wordwise_title_description_text" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wordwise_settings_eink_item_text_margin_vertical" android:text="@string/wordwise_settings_subtitle_eink" />
+            </LinearLayout>
+            <Switch android:id="@id/wordwise_switch" android:paddingLeft="@dimen/wordwise_settings_eink_switch_padding" android:paddingRight="@dimen/wordwise_settings_eink_switch_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/wordwise_settings_sub_item_eink">
+            <TextView android:textSize="@dimen/wordwise_settings_eink_item_title_text_size" android:id="@id/wordwise_multihint_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_settings_multichoice_title" />
+            <CheckBox android:id="@id/wordwise_multihint_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_settings_multichoice_description" style="@style/wordwise_settings_item_widget_eink" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/wordwise_settings_sub_item_eink">
+            <TextView android:textSize="@dimen/wordwise_settings_eink_item_title_text_size" android:id="@id/wordwise_language_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wordwise_settings_language_title_eink" />
+            <TextView android:textSize="@dimen/wordwise_settings_eink_item_description_text_size" android:id="@id/wordwise_language_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wordwise_settings_eink_item_text_margin_vertical" android:text="@string/wordwise_settings_language_description_eink" />
+            <RadioGroup android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/wordwise_english_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_settings_language_menu_item_english" style="@style/wordwise_settings_item_widget_eink" />
+                <RadioButton android:id="@id/wordwise_chinese_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_settings_language_menu_item_chinese" style="@style/wordwise_settings_item_widget_eink" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/wordwise_settings_item_eink">
+        <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/wordwise_settings_eink_switch_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wordwise_settings_eink_item_title_text_size" android:id="@id/pinyin_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinyin_settings_title" />
+            <TextView android:textSize="@dimen/wordwise_settings_eink_item_description_text_size" android:textColor="@color/black" android:id="@id/pinyin_title_description_text" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wordwise_settings_eink_item_text_margin_vertical" android:text="@string/pinyin_settings_subtitle_eink" />
+        </LinearLayout>
+        <Switch android:id="@id/pinyin_switch" android:paddingLeft="@dimen/wordwise_settings_eink_switch_padding" android:paddingRight="@dimen/wordwise_settings_eink_switch_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

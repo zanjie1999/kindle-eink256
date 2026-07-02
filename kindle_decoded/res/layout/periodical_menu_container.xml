@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.periodicals.ui.PeriodicalMenuContainer android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="bottom" android:id="@id/stub_location_seeker_decoration" android:layout="@layout/location_seeker_decoration" android:inflatedId="@id/location_seeker_decoration" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/stub_location_container" android:layout="@layout/reader_location_container" android:inflatedId="@id/location_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/toolbar_with_shadow" />
+</com.amazon.kcp.periodicals.ui.PeriodicalMenuContainer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@color/accent_1_light_15_percent" />
+    <item android:state_pressed="true" android:drawable="@color/accent_1_light_60_percent" />
+    <item android:state_focused="true" android:drawable="@color/accent_1_light_40_percent" />
+    <item android:drawable="@color/accent_1_light" />
+</selector>

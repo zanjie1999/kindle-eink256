@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/reading_ruler_color_yellow" android:pathData="M47,24C47,36.69 36.69,47 24,47C11.31,47 1,36.69 1,24C1,11.31 11.31,1 24,1C36.69,1 47,11.31 47,24Z" android:fillAlpha="1.0" />
+    <path android:fillColor="#ff000000" android:pathData="M47,24C47,36.69 36.69,47 24,47C11.31,47 1,36.69 1,24C1,11.31 11.31,1 24,1C36.69,1 47,11.31 47,24Z" android:strokeColor="?aaMenuV2SelectedBlueColor" android:strokeWidth="2.0" android:strokeAlpha="1.0" android:fillAlpha="0.0" />
+</vector>

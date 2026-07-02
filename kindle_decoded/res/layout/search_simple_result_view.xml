@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/search_simple_result_view_element_divider" android:layout_alignParentTop="true" android:showDividers="middle">
+        <com.amazon.kindle.krx.search.SearchResultSnippetTextView android:ellipsize="end" android:id="@id/titleLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/reader_search_result_title_max_lines" android:scrollHorizontally="true" style="@style/reader_search_text.body" />
+        <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.amazon.kindle.krx.search.SearchResultSnippetTextView android:id="@id/bodyLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/reader_search_result_body_max_lines" android:scrollHorizontally="true" style="@style/reader_search_text.body" />
+            <View android:id="@id/decorator" android:layout_width="@dimen/reader_search_result_accessory_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reader_search_result_accessory_margin_horiz" android:layout_alignTop="@id/bodyLabel" android:layout_alignBottom="@id/bodyLabel" android:layout_marginStart="@dimen/reader_search_result_accessory_margin_horiz" />
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:id="@id/footerLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/reader_search_result_footer_max_lines" android:scrollHorizontally="true" style="@style/reader_search_text.caption" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/childResultsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reader_search_result_children_indent" android:layout_marginTop="@dimen/reader_search_result_children_margin_top" android:divider="@drawable/search_simple_result_view_child_divider" android:layout_below="@id/mainLayout" android:showDividers="middle" android:layout_marginStart="@dimen/reader_search_result_children_indent" />
+</merge>

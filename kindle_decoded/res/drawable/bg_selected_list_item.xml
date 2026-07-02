@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/accent_orange" />
+        </shape>
+    </item>
+    <item android:left="3.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/library_action_bar_bg" />
+        </shape>
+    </item>
+</layer-list>

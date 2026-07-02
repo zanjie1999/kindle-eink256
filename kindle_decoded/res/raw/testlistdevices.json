@@ -1,0 +1,129 @@
+{
+	"CONSUMPTION_DETAILS": [{
+			"deviceAccountId": "DeviceAccountId1",
+			"deviceAccountName": "DeviceName1",
+			"deviceAccountType": "AGZZ1ST63LKBW",
+			"consumptionStartDate": 1557017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId2",
+			"deviceAccountName": "DeviceName2",
+			"deviceAccountType": "A2DRYVRL4HBK7V",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId3",
+			"deviceAccountName": "DeviceName3",
+			"deviceAccountType": "A3VNNDO1I14V03",
+			"consumptionStartDate": 1587017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId4",
+			"deviceAccountName": "DeviceName4",
+			"deviceAccountType": "A3VNNDO1I14V03",
+			"consumptionStartDate": 1577017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId5",
+			"deviceAccountName": "DeviceName5",
+			"deviceAccountType": "A3VNNDO1I14V03",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId6",
+			"deviceAccountName": "DeviceName6",
+			"deviceAccountType": "A3VNNDO1I14V03",
+			"consumptionStartDate": 1597017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId7",
+			"deviceAccountName": "DeviceName7",
+			"deviceAccountType": "A2DRYVRL4HBK7V",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId8",
+			"deviceAccountName": "DeviceName8",
+			"deviceAccountType": "A2Y8LFC259B97P",
+			"consumptionStartDate": 1587017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId9",
+			"deviceAccountName": "DeviceName9",
+			"deviceAccountType": "A2Y8LFC259B97P",
+			"consumptionStartDate": 1577017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId10",
+			"deviceAccountName": "DeviceName10",
+			"deviceAccountType": "A1FG5NAKX0MRJL",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId11",
+			"deviceAccountName": "DeviceName11",
+			"deviceAccountType": "A1C66CX2XD756O",
+			"consumptionStartDate": 1597017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId12",
+			"deviceAccountName": "DeviceName12",
+			"deviceAccountType": "A2DRYVRL4HBK7V",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId13",
+			"deviceAccountName": "DeviceName13",
+			"deviceAccountType": "A1J16TEDOYCZTN",
+			"consumptionStartDate": 1587017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId14",
+			"deviceAccountName": "DeviceName14",
+			"deviceAccountType": "A2Y8LFC259B97P",
+			"consumptionStartDate": 1577017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId15",
+			"deviceAccountName": "DeviceName15",
+			"deviceAccountType": "AGZZ1ST63LKBW",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId16",
+			"deviceAccountName": "DeviceName16",
+			"deviceAccountType": "AGZZ1ST63LKBW",
+			"consumptionStartDate": 1597017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId17",
+			"deviceAccountName": "DeviceName17",
+			"deviceAccountType": "A2DRYVRL4HBK7V",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId18",
+			"deviceAccountName": "DeviceName18",
+			"deviceAccountType": "ALYWZPYF4JAIT",
+			"consumptionStartDate": 1587017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId19",
+			"deviceAccountName": "DeviceName19",
+			"deviceAccountType": "AGZZ1ST63LKBW",
+			"consumptionStartDate": 1577017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId20",
+			"deviceAccountName": "DeviceName20",
+			"deviceAccountType": "AGZZ1ST63LKBW",
+			"consumptionStartDate": 1567017825129
+		},
+		{
+			"deviceAccountId": "DeviceAccountId21",
+			"deviceAccountName": "DeviceName21",
+			"deviceAccountType": "A2O85NMVNLPKVN",
+			"consumptionStartDate": 1597017825129
+		}
+	]
+}

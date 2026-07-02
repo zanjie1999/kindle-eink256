@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/text_link_light_60_percent" />
+    <item android:color="@color/text_link_light_40_percent" android:state_hovered="true" />
+    <item android:state_focused="true" android:color="@color/text_link_light_40_percent" />
+    <item android:state_enabled="false" android:color="@color/text_link_light_15_percent" />
+    <item android:color="@color/text_link_light" />
+</selector>

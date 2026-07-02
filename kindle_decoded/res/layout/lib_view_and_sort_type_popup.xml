@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/popup_container_style">
+        <LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/lib_popup_menu_padding" android:paddingBottom="@dimen/sort_filter_header_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="?text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_menu_view" android:textAllCaps="true" android:importantForAccessibility="no" android:paddingStart="@dimen/lib_popup_menu_padding" />
+            <View style="@style/sort_filter_divider" />
+        </LinearLayout>
+        <include layout="@layout/lib_view_type_popup" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sort_options_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:paddingBottom="@dimen/sort_filter_header_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="?text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_menu_sort" android:textAllCaps="true" android:importantForAccessibility="no" android:paddingStart="@dimen/lib_popup_menu_padding" />
+                <View style="@style/sort_filter_divider" />
+            </LinearLayout>
+            <include layout="@layout/lib_sort_type_popup" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

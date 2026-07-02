@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/reader_nav_panel_book_info" style="@style/reader_nav_panel_book_info"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/reader_nav_panel_book_cover" android:background="?android:selectableItemBackground" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="@dimen/reader_nav_panel_cover_width" android:maxHeight="@dimen/reader_nav_panel_cover_height" android:contentDescription="@string/speak_left_panel_cover_description" android:importantForAccessibility="no" style="@style/wrap" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/reader_nav_panel_book_title" android:paddingBottom="@dimen/reader_nav_panel_item_padding" android:layout_marginLeft="@dimen/reader_nav_panel_book_cover_padding" style="?readerNavPanelBookTitle" />
+        <TextView android:id="@id/reader_nav_panel_book_author" android:layout_marginLeft="@dimen/reader_nav_panel_book_cover_padding" style="?readerNavPanelBookAuthor" />
+    </LinearLayout>
+</LinearLayout>

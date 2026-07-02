@@ -1,0 +1,36 @@
+.class public final Lcom/audible/application/stats/receivers/ConnectionChangeReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "ConnectionChangeReceiver.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 0
+
+    .line 11
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/audible/application/stats/integration/StatsApplication;
+
+    .line 12
+    invoke-interface {p1}, Lcom/audible/application/stats/integration/StatsApplication;->getStats()Lcom/audible/application/stats/StatsService;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lcom/audible/application/stats/StatsService;->connectionChangedUpdate()V
+
+    return-void
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/fastscroll_label_right_alpha" android:tint="?android:colorControlActivated"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

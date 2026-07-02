@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <nine-patch android:src="@drawable/scrubber_primary_dark" android:tint="@color/fr_white_10_percent" />
+    </item>
+    <item>
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/background">
+                <nine-patch android:src="@drawable/scrubber_primary_dark" android:tint="@color/fr_white_10_percent" />
+            </item>
+            <item android:id="@android:id/secondaryProgress">
+                <scale android:scaleWidth="100%">
+                    <nine-patch android:src="@drawable/scrubber_primary_dark" android:tint="@color/fr_white_10_percent" />
+                </scale>
+            </item>
+            <item android:id="@android:id/progress">
+                <scale android:scaleWidth="100%">
+                    <nine-patch android:src="@drawable/scrubber_primary_dark" android:tint="?colorAccent" />
+                </scale>
+            </item>
+        </layer-list>
+    </item>
+</selector>

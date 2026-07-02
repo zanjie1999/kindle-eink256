@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:background="@color/ffs_permissions_rationale_dialog_background" android:paddingLeft="30.0dip" android:paddingTop="25.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/ffs_permissions_rationale_dialog_text_color" android:id="@id/textView2" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_device_setup_over_bluetooth_title" android:layout_weight="1.0" android:textAllCaps="true" android:textAlignment="center" />
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="229.0dip" android:layout_height="114.0dip" android:src="@drawable/kindle_bluetooth_phone" android:layout_weight="1.0" android:contentDescription="@string/ffs_device_setup_over_bluetooth_image_content_description" />
+        <TextView android:textColor="@color/ffs_permissions_rationale_dialog_text_color" android:id="@id/rationale_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ffs_device_setup_over_bluetooth_dialog" android:layout_weight="1.0" />
+        <Button android:textColor="@color/ffs_permissions_rationale_dialog_primary_button_text_color" android:id="@id/accept" android:background="@color/ffs_permissions_rationale_dialog_primary_button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_device_setup_over_bluetooth_enable" android:layout_weight="1.0" />
+        <Button android:textColor="@color/amazon_blue" android:id="@id/cancel" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/ffs_device_setup_over_bluetooth_not_now" android:layout_weight="1.0" android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

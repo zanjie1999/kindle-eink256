@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.nwstd.toc.TOCViewForStandAlone android:orientation="vertical" android:id="@id/periodical_contents_cntr" android:background="@color/reader_text_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/periodical_toc_toolbar" android:background="?toolbar_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.amazon.nwstd.toc.TOCViewForStandAlone>

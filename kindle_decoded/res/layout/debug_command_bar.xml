@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/debug_paging_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.android.widget.CommandBar android:id="@id/debug_command_bar" style="@style/Reader.Toolbar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start Button Count" android:layout_marginEnd="6.0dip" android:labelFor="@id/start_button_count" />
+        <EditText android:id="@id/start_button_count" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="1" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="End Button Count" android:layout_marginEnd="6.0dip" android:labelFor="@id/end_button_count" />
+        <EditText android:id="@id/end_button_count" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="5" android:inputType="number" />
+    </LinearLayout>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update" android:onClick="updateTheThings" />
+</LinearLayout>

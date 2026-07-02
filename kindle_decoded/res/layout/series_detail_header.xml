@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/series_detail_toolbar" android:background="?library_list_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="none" android:layout_gravity="center_vertical" android:id="@id/series_ownership_count_field" android:maxLines="2" style="@style/series_detail_header_text" />
+    <TextView android:textColor="@color/textview_link" android:ellipsize="none" android:layout_gravity="center_vertical" android:id="@id/series_see_all_items_in_store" android:paddingBottom="10.0dip" android:layout_marginTop="5.0dip" android:singleLine="true" style="@style/series_detail_header_text" />
+</LinearLayout>

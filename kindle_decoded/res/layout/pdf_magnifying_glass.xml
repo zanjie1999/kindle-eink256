@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/pdf_magnifying_glass_horizontal_stub" android:layout="@layout/pdf_magnifying_glass_horizontal" android:inflatedId="@id/magnifying_glass" style="@style/wrap" />
+    <ViewStub android:id="@id/pdf_magnifying_glass_vertical_stub" android:layout="@layout/pdf_magnifying_glass_vertical" android:inflatedId="@id/magnifying_glass" style="@style/wrap" />
+</merge>

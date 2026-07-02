@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_card_v2_definition_view_maximum_height">3000.0dip</dimen>
+</resources>

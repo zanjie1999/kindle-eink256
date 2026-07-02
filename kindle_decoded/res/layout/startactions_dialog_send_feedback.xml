@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/startactions_dialog_feedback_container" android:paddingLeft="@dimen/startactions_dialog_padding_medium" android:paddingRight="@dimen/startactions_dialog_padding_medium" android:paddingBottom="@dimen/startactions_dialog_padding_medium" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/buttons_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/feedback_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aa_cancel" android:layout_alignParentLeft="true" style="@style/startactions_text_button" />
+        <TextView android:textAppearance="@style/anyactions_amazon_text_roman_regular" android:id="@id/startactions_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/startactions_widget_send_feedback_text" android:layout_centerInParent="true" />
+        <Button android:enabled="false" android:id="@id/feedback_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/startactions_send_feedback_dialog_send" android:layout_alignParentRight="true" style="@style/startactions_text_button" />
+    </RelativeLayout>
+    <include layout="@layout/startactions_component_divider" />
+    <TextView android:textAppearance="@style/anyactions_amazon_text_regular" android:id="@id/usefulness_prompt" android:paddingTop="@dimen/startactions_dialog_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/startactions_send_feedback_dialog_prompt" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/usefulness_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_dialog_radio_group_margin_bottom">
+        <RadioButton android:textAppearance="@style/anyactions_amazon_text_regular" android:id="@id/radio_yes" android:paddingRight="@dimen/startactions_dialog_padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/startactions_dialog_radio_button_margin_left" android:text="@string/aa_yes" />
+        <RadioButton android:textAppearance="@style/anyactions_amazon_text_regular" android:id="@id/radio_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/startactions_dialog_radio_button_margin_left" android:text="@string/aa_no" />
+    </RadioGroup>
+    <TextView android:textAppearance="@style/anyactions_amazon_text_regular" android:id="@id/comments_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_small_padding" android:text="@string/startactions_send_feedback_dialog_comments_prompt" />
+    <EditText android:gravity="center|left|top" android:id="@id/comments" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/startactions_send_feedback_dialog_comments_hint" android:maxLength="@integer/startactions_feedback_comments_max_characters" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+</LinearLayout>

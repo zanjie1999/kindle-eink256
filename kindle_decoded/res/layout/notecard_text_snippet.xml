@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/notecard_text_snippet" android:padding="@dimen/notebook_text_snippet_padding" android:textDirection="firstStrong" style="@style/notebook_text_snippet"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

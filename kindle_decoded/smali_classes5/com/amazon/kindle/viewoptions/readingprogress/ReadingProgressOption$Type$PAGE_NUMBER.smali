@@ -1,0 +1,76 @@
+.class final Lcom/amazon/kindle/viewoptions/readingprogress/ReadingProgressOption$Type$PAGE_NUMBER;
+.super Lcom/amazon/kindle/viewoptions/readingprogress/ReadingProgressOption$Type;
+.source "ReadingProgressOption.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/kindle/viewoptions/readingprogress/ReadingProgressOption$Type;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "PAGE_NUMBER"
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;I)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 28
+    sget v4, Lcom/amazon/kindle/krl/R$string;->aa_menu_v2_reading_progress_type_current_page:I
+
+    const/4 v3, 0x1
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    invoke-direct/range {v0 .. v5}, Lcom/amazon/kindle/viewoptions/readingprogress/ReadingProgressOption$Type;-><init>(Ljava/lang/String;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getTitle(Landroid/content/Context;ZZ)Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p3, :cond_0
+
+    .line 35
+    sget p2, Lcom/amazon/kindle/krl/R$string;->aa_menu_v2_reading_progress_type_current_page_episode:I
+
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string p2, "context.getString(R.stri\u2026ype_current_page_episode)"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 37
+    :cond_0
+    invoke-super {p0, p1, p2, p3}, Lcom/amazon/kindle/viewoptions/readingprogress/ReadingProgressOption$Type;->getTitle(Landroid/content/Context;ZZ)Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+.end method

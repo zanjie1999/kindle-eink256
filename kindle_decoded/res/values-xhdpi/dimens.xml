@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anyactions_share_icon_inset_bottom">-1.0dip</dimen>
+    <dimen name="anyactions_share_icon_inset_top">1.0dip</dimen>
+    <dimen name="info_card_page_indicator_border">2.0px</dimen>
+    <dimen name="seekbar_padding">7.0px</dimen>
+    <dimen name="selection_handle_left_horizontal_offset">42.0px</dimen>
+    <dimen name="selection_handle_left_vertical_offset">11.0px</dimen>
+    <dimen name="selection_handle_right_horizontal_offset">11.0px</dimen>
+    <dimen name="selection_handle_right_vertical_offset">11.0px</dimen>
+    <dimen name="replica_reader_nav_panel_width">400.0dip</dimen>
+    <dimen name="com_facebook_picker_divider_width">2.0px</dimen>
+    <dimen name="magnifying_glass_frame">20.0px</dimen>
+    <dimen name="reader_hamburger_line_thickness">1.0dip</dimen>
+    <dimen name="content_missing_view_retry_button_top_margin">50.0px</dimen>
+    <dimen name="content_missing_view_text_top_margin">30.0px</dimen>
+    <dimen name="info_card_v2_normal_button_left_margin">-10.0px</dimen>
+    <dimen name="tablet_selection_bottom_margin">30.0px</dimen>
+    <dimen name="tablet_selection_intra_item_padding">45.0px</dimen>
+    <dimen name="tablet_selection_left_padding">45.0px</dimen>
+    <dimen name="tablet_selection_right_padding">45.0px</dimen>
+    <dimen name="tablet_selection_row_height">117.0px</dimen>
+</resources>

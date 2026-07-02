@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.SelectionPopupImageButton android:visibility="gone" style="@style/tablet_selection_buttons"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/persistent_player_layout" android:layout_width="fill_parent" android:layout_height="@dimen/upsell_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_buttons_container" android:background="@drawable/player_action_area_background" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upsell_bar_pitch_container_margin_left" android:layout_marginTop="@dimen/upsell_bar_pitch_container_margin_top" android:layout_marginRight="@dimen/upsell_bar_pitch_container_margin_right" android:layout_marginBottom="@dimen/upsell_bar_pitch_container_margin_bottom" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/player_cover_art" android:background="@android:color/white" android:layout_width="@dimen/upsell_bar_player_cover_art_size" android:layout_height="@dimen/upsell_bar_player_cover_art_size" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/upsell_bar_player_text_margin_top">
+        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:id="@id/player_upsell_pitch_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.503">
+            <TextView android:textSize="@dimen/upsell_bar_title_text_size" android:gravity="top" android:id="@id/player_upsell_pitch_text" android:background="@drawable/player_action_text_background" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upsell_purchasing_thanks" android:maxLines="1" style="@style/Hp_TextAppearance_Upsell_Bold" />
+            <TextView android:textSize="@dimen/upsell_bar_sub_title_text_size" android:id="@id/cancel_purchase" android:background="@drawable/player_action_text_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audiobook_upsell_msg_details_post_purchase" android:maxLines="1" style="@style/Hp_TextAppearance_Upsell_Roman" />
+        </LinearLayout>
+        <ProgressBar android:gravity="center" android:focusable="true" android:layout_width="0.0dip" android:layout_height="@dimen/upsell_bar_button_size" android:layout_marginTop="@dimen/upsell_bar_button_margin_top" android:layout_marginRight="@dimen/upsell_bar_button_margin_right" android:layout_weight="0.105" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="?android:progressBarStyleLarge" />
+    </LinearLayout>
+</LinearLayout>

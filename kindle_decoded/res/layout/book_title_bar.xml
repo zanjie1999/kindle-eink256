@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="@dimen/page_flip_title_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.kindle.nln.NoOverlapLinearLayout android:id="@id/title_no_overlap_linear_layout" android:layout_width="fill_parent" android:layout_height="@dimen/page_flip_title_space" android:paddingStart="30.0dip" android:paddingEnd="45.0dip">
+            <TableLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shrinkColumns="1">
+                <TableRow android:gravity="center_horizontal">
+                    <Space android:id="@id/left_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/page_flip_title_size" android:textColor="?chromeTextPrimary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/book_title" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:fontFamily="Bookerly" android:textDirection="ltr" android:layoutDirection="inherit" />
+                    <com.amazon.kindle.nln.NoOverlapImageButton android:id="@id/book_info_icon" android:background="?selectableItemBackgroundBorderless" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" />
+                    <Space android:id="@id/right_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/title_bar_button_text_size" android:textColor="?titleBarButtonTextColor" android:id="@id/book_title_bar_button" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:textAllCaps="false" android:paddingEnd="15.0dip" />
+                </TableRow>
+            </TableLayout>
+        </com.amazon.kindle.nln.NoOverlapLinearLayout>
+    </LinearLayout>
+    <View android:id="@id/title_container_bottom_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_flip_bottom_border_weight" />
+</LinearLayout>

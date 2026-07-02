@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" style="@style/Background.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kindles" android:importantForAccessibility="no" />
+    <com.amazon.kindle.ffs.view.BookerlyTextView android:id="@id/discover_bottom_sheet_header" android:text="@string/ffs_device_found_text" style="@style/Text.Header" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/discover_bottom_sheet_positive_button" android:text="@string/ffs_ugs_get_started_text" style="@style/FfsButton.Primary" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/discover_bottom_sheet_connecting_button" android:text="@string/ffs_connecting" style="@style/FfsButton.Disabled" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/discover_bottom_sheet_negative_button" android:text="@string/ffs_ugs_setup_cancel_setup" style="@style/FfsButton.Tertiary" />
+</LinearLayout>

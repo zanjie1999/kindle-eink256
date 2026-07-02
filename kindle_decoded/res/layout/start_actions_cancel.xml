@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/unbuy_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audiobook_unbuy_instructions_dialog_us" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/Hp_TextAppearance_Amazon_Light_Small" />
+    <TextView android:textColor="@color/link_text_color" android:id="@id/ok_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/audiobook_ok" android:layout_below="@id/unbuy_instruction" android:layout_centerHorizontal="true" style="@style/Hp_TextAppearance_Amazon_Light_Small" />
+</RelativeLayout>

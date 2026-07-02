@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="5.0dip" android:insetBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <size android:width="1.0dip" />
+        <solid android:color="@color/paging_button_divider_color" />
+    </shape>
+</inset>

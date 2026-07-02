@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dummy_result_cover_color" android:layout_width="@dimen/eink_search_result_cover_width" android:layout_height="@dimen/eink_search_result_cover_height" />
+    <View android:background="@color/dummy_result_cover_color" android:layout_width="@dimen/eink_search_dummy_result_desc_width_line1" android:layout_height="@dimen/eink_search_dummy_result_desc_height" android:layout_marginTop="@dimen/eink_search_result_title_margin_top" />
+    <View android:background="@color/dummy_result_cover_color" android:layout_width="@dimen/eink_search_dummy_result_desc_width_line2" android:layout_height="@dimen/eink_search_dummy_result_desc_height" android:layout_marginTop="@dimen/eink_search_result_title_margin_top" />
+    <View android:background="@color/dummy_result_cover_color" android:layout_width="@dimen/eink_search_dummy_result_desc_width_line3" android:layout_height="@dimen/eink_search_dummy_result_desc_height" android:layout_marginTop="@dimen/eink_search_result_title_margin_top" />
+    <View android:background="@drawable/bg_dummy_rating_stars" android:layout_width="@dimen/eink_search_dummy_result_rating_width" android:layout_height="@dimen/eink_search_dummy_result_rating_height" android:layout_marginTop="@dimen/eink_search_result_title_margin_top" />
+</LinearLayout>

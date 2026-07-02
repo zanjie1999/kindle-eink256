@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?rlr_top_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/rlr_top_bar" android:gravity="center" android:id="@id/rlr_title" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/rlr_title" android:singleLine="false" android:layout_weight="1.0" android:contentDescription="@string/rlr_title_content_description" android:paddingStart="@dimen/rlr_title_padding_start" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end" android:id="@id/rlr_cancel" android:focusable="true" android:layout_width="@dimen/rlr_cancel_button" android:layout_height="fill_parent">
+        <TextView android:background="?rlr_cancel_button_icon" android:layout_width="@dimen/rlr_cancel_button_icon" android:layout_height="@dimen/rlr_cancel_button_icon" android:contentDescription="@string/rlr_cancel_button_content_description" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="wordwise_info_card_link" parent="@style/info_card_link">
+        <item name="android:textSize">@dimen/word_wise_card_footer_text_fixed_size</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:id="@id/banner_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/home_card_text_header" />
+        <ImageView android:layout_gravity="center" android:id="@id/banner_card_image" android:layout_width="fill_parent" android:layout_height="@dimen/banner_widget_max_height" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

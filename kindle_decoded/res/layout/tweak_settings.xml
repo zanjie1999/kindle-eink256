@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/custom_color_box" android:padding="@dimen/default_padding" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_color_text" android:text="Font Color 0-255 (R G B). Alpha is always 255:" style="@style/fill_width" />
+    <LinearLayout android:orientation="horizontal" style="@style/fill_width">
+        <EditText android:id="@id/fontRText" android:paddingTop="@dimen/default_padding" android:hint="R" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/fontGText" android:paddingTop="@dimen/default_padding" android:hint="G" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/fontBText" android:paddingTop="@dimen/default_padding" android:hint="B" android:layout_weight="0.34" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+    <TextView android:id="@id/background_color_text" android:text="Background Color 0-255 (R G B). Alpha is always 255:" style="@style/fill_width" />
+    <LinearLayout android:orientation="horizontal" style="@style/fill_width">
+        <EditText android:id="@id/backgroundRText" android:paddingTop="@dimen/default_padding" android:hint="R" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/backgroundGText" android:paddingTop="@dimen/default_padding" android:hint="G" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/backgroundBText" android:paddingTop="@dimen/default_padding" android:hint="B" android:layout_weight="0.34" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/fill_width">
+        <TextView android:id="@id/font_size_text" android:text="Font Size: " android:layout_weight="0.17" style="@style/wrap" />
+        <EditText android:id="@id/fontSizeText" android:paddingTop="@dimen/default_padding" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <TextView android:id="@id/spacing_text" android:text=" Line Spacing: " android:layout_weight="0.17" style="@style/wrap" />
+        <EditText android:id="@id/spacingText" android:paddingTop="@dimen/default_padding" android:layout_weight="0.33" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+    <TextView android:text="Margins (L T R B) Settings only affect the current orientation.Right margin is forced to equal left for horizontal books, similar with bottom/top in vertical books. For mobi books settings are lost if page is animated." android:maxLines="3" style="@style/fill_width" />
+    <LinearLayout android:orientation="horizontal" style="@style/fill_width">
+        <EditText android:id="@id/marginLeftText" android:paddingTop="@dimen/default_padding" android:hint="Left" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/marginTopText" android:paddingTop="@dimen/default_padding" android:hint="Top" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/marginRightText" android:paddingTop="@dimen/default_padding" android:hint="Right" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/marginBottomText" android:paddingTop="@dimen/default_padding" android:hint="Bottom" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+</LinearLayout>

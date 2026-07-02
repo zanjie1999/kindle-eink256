@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fr_grid_item_standard_width">130.0dip</dimen>
+    <dimen name="generated_cover_date_text_size">14.0dip</dimen>
+    <dimen name="selected_thumbnail_item_border_width">5.0dip</dimen>
+    <dimen name="thumbnail_item_height">126.0dip</dimen>
+    <dimen name="thumbnail_item_page_nb_horizontal_padding">5.0dip</dimen>
+    <dimen name="thumbnail_item_width">175.0dip</dimen>
+    <dimen name="thumbnail_items_spacing">9.0dip</dimen>
+    <dimen name="thumbnail_slider_bottom">5.0dip</dimen>
+    <dimen name="thumbnail_slider_bottom_padding">12.0dip</dimen>
+    <dimen name="thumbnail_slider_minHeight">129.0dip</dimen>
+    <dimen name="upsell_banner_button_font_size">9.0dip</dimen>
+    <dimen name="upsell_banner_paddingBottom">32.0dip</dimen>
+    <dimen name="upsell_banner_paddingLeft">21.0dip</dimen>
+    <dimen name="upsell_banner_paddingRight">26.0dip</dimen>
+    <dimen name="upsell_banner_paddingTop">28.0dip</dimen>
+    <dimen name="upsell_banner_text_description_font_size">15.0dip</dimen>
+    <dimen name="upsell_banner_text_title_font_size">19.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonTextSize">8.0dip</dimen>
+    <dimen name="upsell_fullpageAd_discriptionTextSize">13.0dip</dimen>
+    <dimen name="upsell_fullpageAd_relativeLayoutHeight">158.0dip</dimen>
+    <dimen name="upsell_fullpageAd_titleTextSize">19.0dip</dimen>
+    <dimen name="upsell_fullpage_button_marginBottom">3.0dip</dimen>
+    <dimen name="upsell_fullpage_button_marginTop">9.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingLeft">44.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingRight">44.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingTop">35.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingLeft">47.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingRight">40.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingTop">25.0dip</dimen>
+    <dimen name="generated_cover_date_padding_medium">6.0dip</dimen>
+    <dimen name="generated_cover_date_padding_small">0.0dip</dimen>
+</resources>

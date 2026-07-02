@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.xray.ui.widget.XrayInfoCard android:layout_width="@dimen/infocard_width" android:layout_height="@dimen/infocard_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/infocard_side_padding" android:paddingRight="@dimen/infocard_side_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/info_card_wikipedia_button_height">
+            <TextView android:ellipsize="end" android:id="@id/xray_info_card_title" android:layout_width="@dimen/xray_feedback_layout_default_width" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/info_card_title" />
+            <ImageView android:id="@id/xray_info_card_entity_icon" android:layout_width="@dimen/xray_size_info_card_icon" android:layout_height="@dimen/xray_size_info_card_icon" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/xray_error_type_container" android:padding="@dimen/xray_feedback_layout_default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/xray_feedback_layout_default_height" android:layout_weight="1.0">
+            <TextView android:id="@id/xray_card_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_feedback_sub_title_left_margin" android:layout_marginTop="@dimen/xray_feedback_sub_title_top_margin" android:text="@string/xray_feedback_error_type_title" style="@style/xray_info_card_bold" />
+            <View android:id="@id/xray_subtitle_divider" android:background="@drawable/error_type_title_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/xray_error_type_selection_list_divider_height" android:layout_marginTop="@dimen/xray_feedback_question_padding" />
+            <ListView android:id="@id/xray_error_type_selection_list" android:layout_width="fill_parent" android:layout_height="@dimen/xray_error_type_selection_list_layout_height" android:dividerHeight="@dimen/xray_error_type_selection_list_divider_height" android:layout_weight="1.0" android:fadeScrollbars="false" />
+        </LinearLayout>
+        <com.amazon.xray.ui.widget.DescriptionView android:id="@id/xray_info_card_description" android:layout_width="fill_parent" android:layout_height="@dimen/xray_feedback_layout_default_height" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/info_card_wikipedia_button_height">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_feedback_back" android:layout_alignParentLeft="true" style="@style/info_card_link" />
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_feedback_question" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" style="@style/info_card_link" />
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_feedback_helpful" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_info_card_feedback_helpful" android:contentDescription="@string/xray_feedback_yes_content_description" style="@style/info_card_link" />
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_feedback_separator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_info_card_log_feedback_separator" style="@style/info_card_link" />
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_feedback_not_helpful" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_info_card_feedback_not_helpful" android:contentDescription="@string/xray_feedback_no_content_description" style="@style/info_card_link" />
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_feedback_thankyou" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_info_card_log_feedback_thankyou" android:layout_alignParentLeft="true" style="@style/info_card_link" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:gravity="center_vertical" android:id="@id/xray_info_card_open_link" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xray_info_card_launch_xray" android:layout_alignParentRight="true" style="@style/info_card_link" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.xray.ui.widget.XrayInfoCard>

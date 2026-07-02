@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_dark_horizontal" android:showDividers="middle">
+        <CheckBox android:id="@id/enable_comics_filter_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enable Comics/Manga Filter" />
+        <CheckBox android:id="@id/enable_series_cover_image_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Series Cover Image" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dexter Series Grouping" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filename of test Series Group data" />
+            <EditText android:id="@id/series_group_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <Button android:id="@id/load_test_series_data_from_file_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Test Series To DB" />
+            <Button android:id="@id/delete_all_group_data_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete DB Group Data" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Book To Series" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/book_asin_add_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.4" />
+                <EditText android:id="@id/series_asin_add_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Series ASIN" android:layout_weight="0.4" />
+                <EditText android:id="@id/series_position_add_series_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Series Position" android:inputType="numberDecimal" />
+                <EditText android:id="@id/series_position_label_prefix_add_series_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Position Label Prefix" />
+            </LinearLayout>
+            <Button android:id="@id/add_series_book_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Book To Series" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Series Book Position" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/book_asin_update_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.4" />
+                <EditText android:id="@id/series_asin_update_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Series ASIN" android:layout_weight="0.4" />
+                <EditText android:id="@id/series_position_update_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Series Position" android:layout_weight="0.2" android:inputType="numberDecimal" />
+                <EditText android:id="@id/series_position_label_prefix_update_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Position Label Prefix" android:layout_weight="0.2" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <Button android:id="@id/update_series_book_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Book In Series" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete Series Book" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/book_asin_delete_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.5" />
+                <EditText android:id="@id/series_asin_delete_series_book" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Series ASIN" android:layout_weight="0.5" />
+            </LinearLayout>
+            <Button android:id="@id/delete_series_book_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete Book In Series" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete User Content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/book_asin_delete_user_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.85" />
+                <Button android:id="@id/delete_user_content_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete User Content Item" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update User Content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/book_asin_update_user_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.85" />
+                <Button android:id="@id/set_last_accessed_now_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set LAST_ACCESSED to now" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Is Content comic/manga?" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/book_asin_is_book_comic" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="Book ASIN" android:layout_weight="0.75" />
+                <CheckBox android:id="@id/checkbox_is_book_comic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Comic?" />
+                <Button android:id="@id/set_is_comic_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Comic State" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:id="@id/enable_series_upsell_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enable Series Upsell" />
+    </LinearLayout>
+</ScrollView>

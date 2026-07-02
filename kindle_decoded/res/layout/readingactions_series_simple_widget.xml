@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/series_simple_widget" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="start" android:id="@id/series_simple_widget_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_widget_header_padding_vertical" layout="@layout/readingactions_layout_group_header" />
+    <TextView android:textAppearance="@style/readingactions_amazon_text_body" android:gravity="start" android:id="@id/simple_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

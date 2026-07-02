@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/xray_card" android:focusable="true" android:nextFocusDown="@id/xray_card_excerpt_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nextFocusForward="@id/xray_card_excerpt_scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/xray_card_excerpt_scroll" android:nextFocusLeft="@id/xray_card" android:nextFocusRight="@id/xray_card" android:nextFocusUp="@id/xray_card" android:nextFocusDown="@id/xray_card_page_link" android:inflatedId="@id/xray_card_excerpt_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/xray_separator" android:nextFocusForward="@id/xray_card_page_link" />
+    <View android:id="@id/xray_separator" android:layout_above="@id/xray_card_links" style="@style/xray_horizontal_rule" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/xray_card_links" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/xray_card_page_link" android:nextFocusLeft="@id/xray_card" android:nextFocusUp="@id/xray_card_excerpt_scroll" android:text="@string/xray_go_to_page" style="@style/xray_card_link.left" />
+        <TextView android:id="@id/xray_card_link_separator_0" style="@style/xray_card_link_separator" />
+        <Button android:id="@id/xray_card_share_link" android:nextFocusUp="@id/xray_card_excerpt_scroll" android:text="@string/xray_share" style="@style/xray_card_link" />
+        <TextView android:id="@id/xray_card_link_separator_1" style="@style/xray_card_link_separator" />
+        <Button android:id="@id/xray_card_highlight_link" android:nextFocusRight="@id/xray_card" android:nextFocusUp="@id/xray_card_excerpt_scroll" android:text="@string/xray_highlight" style="@style/xray_card_link.right" />
+    </LinearLayout>
+</RelativeLayout>

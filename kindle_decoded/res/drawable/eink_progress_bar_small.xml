@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small1" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small2" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small3" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small4" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small5" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small6" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small7" />
+        </scale>
+    </item>
+    <item android:duration="500">
+        <scale>
+            <bitmap android:gravity="center" android:src="@drawable/progress_bar_small8" />
+        </scale>
+    </item>
+</animation-list>

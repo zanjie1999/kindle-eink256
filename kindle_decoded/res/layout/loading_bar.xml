@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="?notification_loading_spinner" android:contentDescription="@string/inapp_loading_notifications"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

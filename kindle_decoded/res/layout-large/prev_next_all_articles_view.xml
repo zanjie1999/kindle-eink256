@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/periodical_horizontal_line" android:background="@color/black_mode_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/prev_button" android:background="@color/periodical_selector_subtle" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:gravity="center|left" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_menu_previous" />
+            <TextView android:gravity="center|left" android:id="@id/menuitem_prev_article_txt" android:text="@string/prev_article" style="@style/prev_next_all_buttons" />
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/all_articles_button" android:background="@color/periodical_selector_subtle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/all_articles" android:layout_weight="1.0" style="@style/prev_next_all_buttons" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/next_button" android:background="@color/periodical_selector_subtle" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:gravity="center|right" android:id="@id/menuitem_next_article_txt" android:text="@string/next_article" style="@style/prev_next_all_buttons" />
+            <ImageView android:gravity="center|right" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_menu_next" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

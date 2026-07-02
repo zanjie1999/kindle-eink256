@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout android:orientation="horizontal" android:descendantFocusability="beforeDescendants" style="@style/ReaderStyle.Navigation.Item.Split"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/reader_nav_panel_split_item_text" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ReaderStyle.Navigation.Item.Label" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/reader_nav_panel_split_item_icon" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:duplicateParentState="false" android:layout_width="@dimen/reader_nav_panel_expand_button_width" android:layout_height="@dimen/reader_nav_panel_expand_button_height" android:scaleType="center" />
+</com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout>

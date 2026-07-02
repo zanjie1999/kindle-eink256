@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ux_column_count">20</integer>
+    <integer name="ux_gutter_size">15</integer>
+    <integer name="ux_toc_book_cover_column_count">6</integer>
+    <integer name="ux_toc_header_title_column_count">18</integer>
+    <integer name="ux_toc_spacer_column_count">1</integer>
+</resources>

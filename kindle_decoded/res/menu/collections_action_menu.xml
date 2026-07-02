@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?actionbar_delete_icon" android:id="@id/lib_menu_delete" android:title="@string/remove_collection_prompt" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?edit_icon" android:id="@id/lib_menu_rename" android:title="@string/rename_collection_prompt" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?actionbar_download_icon" android:id="@id/lib_menu_download" android:title="@string/download_collection_prompt" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+</menu>

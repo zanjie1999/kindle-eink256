@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/seekbar_with_left_and_right_decorations" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/nln_location_seeker_height" android:layout_weight="1.0" style="@style/location_seekbar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/left_decorator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reader_left_button_icon_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/krx_location_seeker_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/nln_location_seeker_height" android:layout_toLeftOf="@id/right_decorator" android:layout_toRightOf="@id/left_decorator" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/right_decorator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/reader_right_button_icon_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/seekbar_with_chapter_navigation_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <view android:id="@id/previous_chapter_button" android:padding="@dimen/chapter_navigation_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chapter_navigation_left_margin" android:src="@drawable/tts_btn_prev_chapter_white" android:contentDescription="@string/prev_article" class="com.amazon.kcp.reader.ui.ChapterNavigationButton$Previous" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/location_seeker_text_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/seeker_text_padding_left" android:layout_marginRight="@dimen/seeker_text_padding_right" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="center|left" android:id="@id/top_left_text" android:layout_width="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" style="@style/reader_overlay_text.location_info" />
+                <TextView android:ellipsize="end" android:gravity="center" android:id="@id/top_center_text" android:layout_width="wrap_content" android:maxLines="2" android:layout_centerInParent="true" android:layout_centerHorizontal="true" style="@style/reader_overlay_text.location_info" />
+                <TextView android:gravity="center|right" android:id="@id/top_right_text" android:layout_width="wrap_content" android:maxLines="2" android:layout_alignParentRight="true" style="@style/reader_overlay_text.location_info" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/custom_reader_seekbar_texts" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center|left" android:id="@id/bottom_left_text" android:layout_width="wrap_content" android:layout_alignParentLeft="true" style="@style/reader_seekbar_bottom_text" />
+                <TextView android:ellipsize="end" android:gravity="center" android:id="@id/bottom_center_text" android:layout_width="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:color="@color/reader_text_white" style="@style/reader_seekbar_bottom_text" />
+                <ProgressBar android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+                <TextView android:gravity="center|right" android:id="@id/bottom_right_text" android:layout_width="wrap_content" android:layout_alignParentRight="true" style="@style/reader_seekbar_bottom_text" />
+            </RelativeLayout>
+        </LinearLayout>
+        <view android:id="@id/next_chapter_button" android:padding="@dimen/chapter_navigation_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/chapter_navigation_right_margin" android:src="@drawable/tts_btn_next_chapter_white" android:contentDescription="@string/next_article" class="com.amazon.kcp.reader.ui.ChapterNavigationButton$Next" />
+    </LinearLayout>
+</merge>

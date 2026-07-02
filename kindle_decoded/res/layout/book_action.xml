@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.widget.bookAction.BookAction android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/book_action_triangle" />
+    <FrameLayout android:id="@id/book_action_body_container" style="@style/book_action_for_home_body_container">
+        <LinearLayout android:orientation="vertical" android:id="@id/book_action_animation_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/book_action_title_author" />
+            <include layout="@layout/book_action_rating" />
+            <include layout="@layout/book_action_time_page_description" />
+            <include layout="@layout/book_action_buttons" />
+            <include layout="@layout/book_action_split_line" />
+            <include layout="@layout/book_action_recommended_button" />
+        </LinearLayout>
+    </FrameLayout>
+</com.amazon.kcp.library.widget.bookAction.BookAction>

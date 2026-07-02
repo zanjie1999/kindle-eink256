@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/upsell_bar_button_light_background_pressed_nln"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@color/upsell_bar_button_light_background_disabled_nln" />
+            <item android:drawable="@color/upsell_bar_button_light_background_default_nln" />
+        </selector>
+    </item>
+</ripple>

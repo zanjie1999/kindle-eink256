@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/info_card_v2_scroll_bar_thumb_source" android:tint="@color/fr_gray_300"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

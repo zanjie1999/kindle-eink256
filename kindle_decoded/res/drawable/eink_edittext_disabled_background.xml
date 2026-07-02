@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/e3os_edit_text_left_margin" android:top="@dimen/e3os_edit_text_top_margin" android:right="@dimen/e3os_edit_text_right_margin" android:bottom="@dimen/e3os_edit_text_bottom_margin">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/e3os_edit_text_border" android:color="@color/eink_grey_disabled" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

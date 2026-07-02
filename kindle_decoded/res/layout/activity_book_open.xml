@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center|top" android:id="@id/book_open_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" layout="@layout/content_book_open" />
+        <View android:id="@id/book_open_empty_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

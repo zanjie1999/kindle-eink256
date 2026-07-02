@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/transient_screen_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/transient_screen_main_content" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:id="@id/transient_downloading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <include android:id="@id/large_cover" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" layout="@layout/book_cover_view" />
+        <include android:gravity="bottom|center" layout="@layout/ruby_transient_screen_details" />
+    </LinearLayout>
+    <View android:id="@id/transient_screen_empty_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+</LinearLayout>

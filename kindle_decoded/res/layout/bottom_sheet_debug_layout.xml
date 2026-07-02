@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/bottom_sheet_is_collapsed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Collapsed" />
+    <CheckBox android:id="@id/bottom_sheet_dismiss_with_swipe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dismiss With Swipe" />
+    <CheckBox android:id="@id/bottom_sheet_dismiss_on_tap_outside" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dismiss On Tap Outside" />
+    <CheckBox android:id="@id/bottom_sheet_has_dim_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dim Background" />
+    <CheckBox android:id="@id/force_show_drag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force Show Drag" />
+    <CheckBox android:id="@id/show_as_modal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show As Modal" />
+    <CheckBox android:id="@id/show_full_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Full Height For Modal" />
+    <Button android:id="@id/bottom_sheet_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Bottom Sheet" />
+    <Button android:id="@id/bottom_sheet_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dismiss Bottom Sheet" />
+</LinearLayout>

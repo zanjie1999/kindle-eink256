@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/dim_view" android:layout="@layout/badgeable_cover_dim_view" android:inflatedId="@id/dim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/badgeable_cover_top_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/badgeable_cover_top_section_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:layout_gravity="center|right|top" android:id="@id/top_right_badge" android:layout="@layout/badgeable_simple_image_view" android:inflatedId="@id/top_right_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:layout_gravity="center|right|top" android:id="@id/top_right_corner_badge" android:layout="@layout/badgeable_simple_image_view" android:inflatedId="@id/top_right_corner_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:layout_gravity="center|right|top" android:id="@id/top_right_sash_badge" android:layout="@layout/badgeable_simple_image_view" android:inflatedId="@id/top_right_sash_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/badgeable_cover_bottom_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:paddingBottom="@dimen/badge_padding_default" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:layout_gravity="bottom|center|right" android:id="@id/bottom_right_badge" android:layout="@layout/badgeable_simple_image_view" android:inflatedId="@id/bottom_right_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:layout_gravity="bottom|center|right" android:id="@id/bottom_right_label" android:layout="@layout/badgeable_cover_bottom_right_label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/back_issues_count_text" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/badgeable_cover_bottom_section_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:layout_gravity="bottom|center|left" android:id="@id/bottom_label" android:layout="@layout/badgeable_cover_bottom_label" android:inflatedId="@id/bottom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:layout_gravity="bottom|center|left" android:id="@id/bottom_left_badge" android:layout="@layout/badgeable_simple_image_view" android:inflatedId="@id/bottom_left_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:id="@id/bottom_left_content" android:background="@color/badgeable_cover_bottom_section_background" android:paddingTop="@dimen/badgeable_cover_bottom_section_2_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewStub android:layout_gravity="center|left" android:id="@id/bottom_left_label" android:layout="@layout/badgeable_bottom_left_label" android:inflatedId="@id/bottom_left_label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/back_issues_count_text" />
+                </LinearLayout>
+                <ViewStub android:layout_gravity="bottom|center|right" android:id="@id/overflow_menu_button_stub" android:layout="@layout/overflow_menu_button" android:inflatedId="@id/overflow_menu_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:id="@id/book_opening" android:visibility="gone" style="@style/eink_opening_xor_grid_view" />
+                <ViewStub android:id="@id/rich_placeholder_overlay_stub" android:layout="@layout/badgeable_cover_rich_placeholder_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/badgeable_cover_bottom_section_bottom" android:background="@color/badgeable_cover_bottom_section_background" android:paddingTop="@dimen/badgeable_cover_bottom_section_2_padding" android:paddingBottom="@dimen/badgeable_cover_bottom_section_2_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/bottom_section_center_label" android:layout="@layout/badgeable_cover_bottom_section_label" android:inflatedId="@id/bottom_section_center_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/bottom_section_center_badge" android:layout="@layout/legacy_badgeable_cover_bottom_section_simple_image_view" android:inflatedId="@id/bottom_section_center_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/download_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

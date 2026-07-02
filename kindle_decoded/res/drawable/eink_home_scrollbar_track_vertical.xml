@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/eink_scrollbar_track_vertical_icon" android:left="@dimen/e3os_vertical_scrollbar_left_padding" android:top="@dimen/eink_home_scrollbar_padding_top" android:right="@dimen/e3os_vertical_scrollbar_right_padding" android:bottom="@dimen/eink_home_scrollbar_padding_bottom" />
+</layer-list>

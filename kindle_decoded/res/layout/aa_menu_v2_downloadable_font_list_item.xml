@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.viewoptions.font.DownloadableFontsListItem android:orientation="horizontal" android:paddingLeft="@dimen/aa_menu_v2_downloadable_fonts_margin" android:paddingRight="@dimen/aa_menu_v2_downloadable_fonts_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_downloadable_fonts_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/aa_menu_v2_downloadable_font_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/aa_menu_v2_downloadable_font_text_label_size" android:layout_gravity="center" android:id="@id/aa_menu_v2_downloadable_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/aa_menu_v2_downloadable_font_size_margin_right" android:singleLine="true" android:importantForAccessibility="no" android:fontFamily="Amazon Ember" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/aa_menu_v2_downloadable_font_operations" android:layout_width="@dimen/aa_menu_v2_downloadable_font_operations_icon_layout_width" android:layout_height="@dimen/aa_menu_v2_downloadable_font_operations_icon_layout_height">
+        <TextView android:id="@id/aa_menu_v2_downloadable_font_default" android:text="@string/aa_menu_v2_downloadable_fonts_default" style="@style/AaMenuV2DownloadableFontButtonText" />
+        <ImageView android:id="@id/aa_menu_v2_downloadable_font_download" android:background="?aaMenuV2BackgroundColor" android:src="@drawable/ic_font_download_white" style="@style/wrap" />
+        <ImageView android:id="@id/aa_menu_v2_downloadable_font_remove" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" android:src="@drawable/ic_large_font_delete" />
+        <ProgressBar android:id="@id/aa_menu_v2_downloadable_font_downloading" android:visibility="gone" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" style="@style/AaMenuV2DownloadableFontProgressBar" />
+        <ProgressBar android:id="@id/aa_menu_v2_downloadable_font_downloading_with_cancel" android:visibility="gone" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" style="@style/AaMenuV2DownloadableFontProgressBarWithCancel" />
+    </LinearLayout>
+</com.amazon.kindle.viewoptions.font.DownloadableFontsListItem>

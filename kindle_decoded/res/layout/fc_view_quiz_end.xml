@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/quiz_end_container" android:layout_width="@dimen/fc_quiz_end_container_width" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fc_quiz_end_score_margin_bottom">
+                <TextView android:id="@id/quiz_end_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_quiz_end_title_text" style="@style/fc_quiz_end_title" />
+                <TextView android:gravity="center" android:id="@id/quiz_end_score" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fc_quiz_end_margin_ends" style="@style/fc_quiz_end_score" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/fc_font_medium_text_size" android:id="@id/quiz_end_learn_button" android:background="@drawable/fc_bg_quiz_controls_incorrect" android:paddingTop="@dimen/fc_quiz_end_button_padding_ends" android:paddingBottom="@dimen/fc_quiz_end_button_padding_ends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fc_quiz_end_margin_ends" android:text="@string/fc_quiz_end_learn_button" style="@style/fc_button.negative" />
+            <Button android:textSize="@dimen/fc_font_medium_text_size" android:id="@id/quiz_end_restart_button" android:background="@drawable/fc_bg_quiz_controls_neutral" android:paddingTop="@dimen/fc_quiz_end_button_padding_ends" android:paddingBottom="@dimen/fc_quiz_end_button_padding_ends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fc_quiz_end_margin_ends" android:text="@string/fc_quiz_end_restart_button" style="@style/fc_button.neutral" />
+        </LinearLayout>
+    </ScrollView>
+</merge>

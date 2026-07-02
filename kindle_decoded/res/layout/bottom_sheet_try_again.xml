@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/bottom_sheet_try_again_layout_top_padding" android:paddingBottom="@dimen/bottom_sheet_try_again_layout_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bottom_sheet_try_again_layout_padding" android:paddingEnd="@dimen/bottom_sheet_try_again_layout_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/try_again_bottom_sheet_description_text_size" android:textColor="?bottom_sheet_try_again_description_text_color" android:gravity="center" android:id="@id/bottom_sheet_try_again_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_sheet_try_again_button" android:padding="7.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:textColor="?try_again_color" android:id="@id/bottom_sheet_try_again_button_icon" android:background="@android:color/transparent" android:padding="@dimen/try_again_button_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bottom_sheet_try_again_icon" />
+        <TextView android:textSize="@dimen/try_again_button_text_size" android:textColor="?try_again_color" android:id="@id/bottom_sheet_try_again_button_text" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_sheet_try_again_button_text" />
+    </LinearLayout>
+</LinearLayout>

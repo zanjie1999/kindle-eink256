@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.ShovelerCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/home_card_text_header" />
+        <com.amazon.kcp.library.ui.NestedRecyclerView android:id="@id/shoveler_card_nested_recycler" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/shoveler_padding" android:paddingEnd="@dimen/shoveler_padding" />
+        <include layout="@layout/home_card_footer" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.ShovelerCardView>

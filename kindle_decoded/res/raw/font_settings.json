@@ -1,0 +1,55 @@
+{
+  "name": "Font",
+  "settings": [
+    {
+      "identifier": 1,
+      "priority": 100,
+      "display": {
+        "type": "custom"
+      },
+      "disabledDisplay": {
+        "type": "none"
+      }
+    },
+    {
+      "identifier": 15,
+      "priority": 200,
+      "display": {
+        "type": "seekBar",
+        "title": "kre_aamenu_FontSize",
+        "minImage": "small-Aa",
+        "maxImage": "large-Aa",
+        "minValue": 0,
+        "maxValue": 13,
+        "increment": 1
+      },
+      "disabledDisplay": {
+        "type": "none"
+      }
+    },
+    {
+      "identifier": 17,
+      "priority": 200,
+      "display": {
+        "type": "disclosure",
+        "title": "Manage Downloadable Fonts",
+        "subTitle": "Download or remove reading fonts with large file sizes",
+        "contents": [
+          {
+            "identifier": 50,
+            "priority": 0,
+            "display": {
+              "type": "custom"
+            },
+            "disabledDisplay": {
+              "type": "none"
+            }
+          }
+        ]
+      },
+      "disabledDisplay": {
+        "type": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fr_grid_item_spacing">16.0dip</dimen>
+    <dimen name="fr_grid_item_standard_width">136.0dip</dimen>
+    <dimen name="fr_grid_margin_bot">24.0dip</dimen>
+    <dimen name="fr_grid_margin_top">16.0dip</dimen>
+    <dimen name="f_grid_item_book_height">204.0dip</dimen>
+    <dimen name="f_grid_item_doc_height">176.0dip</dimen>
+    <dimen name="f_grid_item_newsstand_height">255.0dip</dimen>
+    <dimen name="f_grid_item_tv_height">139.0dip</dimen>
+    <dimen name="f_grid_item_video_height">181.0dip</dimen>
+    <dimen name="f_grid_item_wide_width">186.0dip</dimen>
+</resources>

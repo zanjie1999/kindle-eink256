@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/reader_search_debug_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Notebook" />
+    <ToggleButton android:id="@id/enable_notebook_search_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/enable_recent_search_terms_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/enable_autocomplete_suggestions_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/enable_top_search_widget_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/enable_diacritics_stripping_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

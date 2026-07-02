@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/xray_inline_progress" />
+    <include layout="@layout/xray_inline_error" />
+    <RelativeLayout android:id="@id/xray_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.xray.ui.widget.TimelineSeekBar android:id="@id/xray_seek_bar" android:paddingLeft="@dimen/xray_padding_seek_bar_gutter" android:paddingTop="@dimen/xray_padding_seek_bar_top" android:paddingRight="@dimen/xray_padding_seek_bar_gutter" android:paddingBottom="@dimen/xray_padding_occurrence_list_top" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/xray_occurrences_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/xray_seek_bar" layout="@layout/xray_list_view" />
+    </RelativeLayout>
+</FrameLayout>

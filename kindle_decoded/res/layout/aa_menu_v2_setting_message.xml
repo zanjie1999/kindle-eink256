@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/aa_v2_setting_message_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/aa_v2_setting_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AaMenuV2SettingDisabledTitle" />
+        <TextView android:id="@id/aa_v2_setting_message_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" android:layout_marginRight="@dimen/aa_menu_v2_setting_subtitle_margin_right" style="@style/AaMenuV2SettingSubtitle" />
+        <TextView android:textColor="?aaMenuV2TextTitleColor" android:id="@id/aa_v2_setting_message_only" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AaMenuV2SettingSubtitle" />
+    </LinearLayout>
+</merge>

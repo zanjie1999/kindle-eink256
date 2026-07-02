@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.NotesScreenLayout android:id="@id/notes_screen" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="top" android:id="@id/notes_list_top_divider" style="@style/notes_divider" />
+    <ListView android:id="@id/list_view" style="@style/notes_list" />
+    <TextView android:id="@id/zero_notes_notification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_notes_notification_text" style="@style/zero_notes_notification" />
+</com.amazon.kcp.reader.ui.NotesScreenLayout>

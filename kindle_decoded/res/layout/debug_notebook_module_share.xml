@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.notebook.module.exporting.NotebookExportDebugOption android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/module_export_enabled_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Notebook Export" />
+    <CheckBox android:id="@id/module_export_enabled_checkbox_reflowable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Notebook Export On Reflowable" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/module_toc_max_level_edit" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+        <Button android:id="@id/module_toc_max_level_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Export TOC Drop Down Max Level" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/module_graphical_highlight_max_width_edit" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+        <Button android:id="@id/module_graphical_highlight_max_width_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Graphical Highlight Max Width" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/module_graphical_highlight_jpeg_quality_edit" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+        <Button android:id="@id/module_graphical_highlight_jpeg_quality_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Graphical Highlight JPEG Quality (1-100)" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center|left" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Graphical Highlight Image Format: " />
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/module_radio_jpeg" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JPEG" />
+            <RadioButton android:id="@id/module_radio_png" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PNG" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button android:id="@id/module_clear_clipping_limit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset clipping limit for the current book" />
+</com.amazon.notebook.module.exporting.NotebookExportDebugOption>

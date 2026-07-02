@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/store_upsell_widget" android:paddingTop="@dimen/store_upsell_padding_vertical" android:paddingBottom="@dimen/store_upsell_padding_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/store_upsell_margin_top" android:paddingStart="@dimen/store_upsell_padding_horizontal" android:paddingEnd="@dimen/store_upsell_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="?library_empty_view_store_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/empty_view_link_to_store" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Button.Link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_view_link_to_store" android:layout_marginStart="@dimen/store_upsell_image_view_margin" />
+</LinearLayout>

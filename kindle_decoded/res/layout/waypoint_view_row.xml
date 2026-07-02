@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/waypoint_view_row" style="@style/waypoint_view_row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/waypoint_view_row_waypoint_text" android:text="@string/waypoint_view_row_default_text" style="@style/waypoint_view_row_waypoint_text" />
+    <TextView android:id="@id/waypoint_view_row_location" android:text="@string/waypoint_view_row_loc" android:layout_below="@id/waypoint_view_row_waypoint_text" style="@style/waypoint_view_row_page_text" />
+</RelativeLayout>

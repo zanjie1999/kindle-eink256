@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bookwizard_footer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bookwizard_footer_button_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/black" android:id="@id/footer_previous_button" android:background="@drawable/bookwizard_footer_previous_button" android:text="@string/bookwizard_previous_button_text" style="@style/bookwizard_footer_button" />
+    <Button android:textColor="@color/black" android:id="@id/footer_next_button" android:background="@drawable/bookwizard_footer_next_button" android:text="@string/bookwizard_next_button_text" style="@style/bookwizard_footer_button" />
+</LinearLayout>

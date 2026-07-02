@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/full_player_book_icon_black_disabled" />
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/full_player_book_icon_black_pressed" />
+    <item android:drawable="@drawable/full_player_book_icon_black_normal" />
+</selector>

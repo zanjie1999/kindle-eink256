@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/kcu_non_rubyitem_margin_left" android:paddingTop="@dimen/kcu_non_rubyitem" android:paddingRight="@dimen/kcu_non_rubyitem" android:paddingBottom="@dimen/kcu_non_rubyitem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="top" android:id="@id/update_item_cover_image" android:layout_width="@dimen/kcu_non_rubyitem_image_width" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/kcu_default_padding" android:paddingRight="@dimen/kcu_default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/kcv_non_ruby_item_heading" android:ellipsize="end" android:id="@id/update_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textColor="@color/kcv_non_ruby_item_info" android:id="@id/update_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textColor="@color/kcv_non_ruby_item_heading" android:id="@id/update_open_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_notes_open_button" />
+    </LinearLayout>
+</LinearLayout>

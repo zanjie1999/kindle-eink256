@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/annotation_module_selection_image_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notebook_annotation_selection_image_frame_marginLeft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/annotation_module_selection_image" android:background="@drawable/notebook_dropshadow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/notebook_bookmark_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/annotation_module_image_loading_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/notebook_progress_bar" />
+</FrameLayout>

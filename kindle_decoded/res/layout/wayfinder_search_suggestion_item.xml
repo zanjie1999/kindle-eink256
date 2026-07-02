@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:windowNoTitle="false" android:orientation="horizontal" android:background="?suggestion_search_background" android:layout_width="fill_parent" android:layout_height="@dimen/library_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:background="?suggestion_search_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?top_bar_search_icon" android:paddingStart="@dimen/library_bar_search_suggestion_icon_start_pad" android:paddingEnd="@dimen/library_bar_search_suggestion_icon_end_pad" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Body.Bold" android:ellipsize="start" android:gravity="center_vertical" android:id="@id/wayfinder_suggestion_title" android:layout_width="0.0dip" android:layout_height="@dimen/library_action_bar_height" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="@dimen/library_bar_search_suggestion_text_end_pad" />
+</LinearLayout>

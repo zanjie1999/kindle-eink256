@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/shoveler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/shoveler_margin_offset">
+        <TextView android:textSize="@dimen/shoveler_header_text_size" android:layout_gravity="center_horizontal" android:id="@id/shoveler_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+        <com.amazon.kcp.library.ui.NestedRecyclerView android:id="@id/shoveler_recycler_view" style="@style/home_shoveler" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" style="@android:style/Widget.DeviceDefault.ProgressBar.Large" />
+    </LinearLayout>
+</merge>

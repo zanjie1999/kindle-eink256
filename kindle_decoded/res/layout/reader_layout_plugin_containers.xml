@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/reader_layout_plugin_containers" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/reader_plugin_surface_stub" android:layout="@layout/reader_plugin_surface_layout" android:inflatedId="@id/reader_plugin_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

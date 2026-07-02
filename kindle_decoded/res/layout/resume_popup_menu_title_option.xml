@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header4" android:ellipsize="end" android:id="@id/resume_popup_title" android:paddingTop="@dimen/resume_popup_menu_title_option_padding_vertical" android:paddingBottom="@dimen/resume_popup_menu_title_option_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="@dimen/resume_popup_menu_title_option_padding_horizontal" android:paddingEnd="@dimen/resume_popup_menu_title_option_padding_horizontal" />
+    <View android:background="?core_tertiary_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

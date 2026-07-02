@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goto_notes">查看我的備註與標記</string>
+    <string name="colors_and_brightness">彩度與亮度</string>
+    <string name="font_size_options">字型大小選項</string>
+</resources>

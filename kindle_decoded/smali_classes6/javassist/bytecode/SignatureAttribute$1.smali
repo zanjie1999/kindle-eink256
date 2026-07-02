@@ -1,0 +1,14 @@
+.class synthetic Ljavassist/bytecode/SignatureAttribute$1;
+.super Ljava/lang/Object;
+.source "SignatureAttribute.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljavassist/bytecode/SignatureAttribute;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

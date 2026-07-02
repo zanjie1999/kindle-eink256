@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.nwstd.toc.widget.ArticleRow android:id="@id/bookmarkable_list_item" style="@style/popup_bookmarkable_article_cntr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/add_remove_bookmark_image" android:layout_marginRight="@dimen/article_thumbnail_margin_right" android:layout_alignParentLeft="true" style="@style/wrap" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/description" android:layout_height="@dimen/popup_bookmark_article_cntr_height" style="@style/popup_bookmarkable_list_article" />
+</com.amazon.nwstd.toc.widget.ArticleRow>

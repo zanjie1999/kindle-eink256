@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.WordWiseInfoCardView android:id="@id/info_card_word_wise" style="@style/info_card_v2_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:importantForAccessibility="no" style="@style/info_card_v2_title_bar">
+            <TextView android:layout_gravity="center|left" android:id="@id/wordwise_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_title_text" />
+            <Button android:layout_gravity="center|right" android:id="@id/wordwise_speak" android:background="@drawable/infocard_audio_play_light" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wordwise_card_content" style="@style/info_card_v2_content_bar">
+            <ScrollView android:scrollbarThumbVertical="@drawable/info_card_v2_scroll_bar_thumb" android:id="@id/wordwise_card_content_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/info_card_v2_content_horizontal_padding" android:paddingTop="@dimen/info_card_v2_content_vertical_padding" android:paddingRight="@dimen/info_card_v2_content_horizontal_padding" android:paddingBottom="@dimen/info_card_v2_content_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/wordwise_card_lemma" android:paddingRight="@dimen/word_wise_card_horizontal_padding" android:paddingBottom="@dimen/word_wise_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text_bold" />
+                        <TextView android:id="@id/wordwise_card_pos_type" android:paddingLeft="@dimen/word_wise_card_horizontal_padding" android:paddingBottom="@dimen/word_wise_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text" />
+                    </LinearLayout>
+                    <TextView android:id="@id/wordwise_card_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text_bold" />
+                    <TextView android:id="@id/wordwise_card_sub_details" android:paddingBottom="@dimen/word_wise_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text" />
+                    <View android:id="@id/wordwise_subtitle_divider" android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/word_wise_card_divider_height" android:layout_marginTop="@dimen/word_wise_card_vertical_padding" />
+                    <TextView android:id="@id/wordwise_card_short_definition" android:paddingBottom="@dimen/word_wise_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/word_wise_card_horizontal_padding" android:layout_marginRight="@dimen/word_wise_card_horizontal_padding" style="@style/info_card_v2_content_text_bold" />
+                    <TextView android:id="@id/wordwise_card_source" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text_bold" />
+                    <TextView android:id="@id/wordwise_card_definition" android:paddingBottom="@dimen/word_wise_output_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/info_card_v2_content_text" />
+                </LinearLayout>
+            </ScrollView>
+            <ListView android:id="@id/wordwise_card_list" android:paddingLeft="@dimen/info_card_v2_content_horizontal_padding" android:paddingRight="@dimen/info_card_v2_content_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="@dimen/word_wise_card_divider_height" />
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="@dimen/info_card_v2_link_button_bar_horizontal_padding" android:paddingRight="@dimen/info_card_v2_link_button_bar_horizontal_padding" android:importantForAccessibility="no" style="@style/info_card_v2_button_bar">
+            <LinearLayout android:orientation="horizontal" android:id="@id/wordwise_card_helpful" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/wordwise_card_helpful_question" android:layout_width="@dimen/info_card_v2_wordwise_helpful_text_width" android:layout_height="fill_parent" android:text="@string/wordwise_card_helpful" app:autoSizeMaxTextSize="@dimen/info_card_v2_button_text_font_size" app:autoSizeMinTextSize="6.0dip" app:autoSizeStepGranularity="1.0dip" app:autoSizeTextType="uniform" style="@style/info_card_v2_link_button" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/wordwise_card_helpful_yes" android:paddingLeft="@dimen/word_wise_card_helpful_padding" android:paddingRight="@dimen/word_wise_card_helpful_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_card_yes" style="@style/info_card_v2_link_button" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/wordwise_card_helpful_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_card_separator" style="@style/info_card_v2_normal_button_text" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/wordwise_card_helpful_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_card_no" android:paddingStart="@dimen/word_wise_card_helpful_padding" android:paddingEnd="0.0dip" style="@style/info_card_v2_link_button" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/wordwise_card_thank_you" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:id="@id/wordwise_card_thank_you_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_card_thank_you" android:layout_centerVertical="true" style="@style/info_card_v2_normal_button_text" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wordwise_card_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:id="@id/wordwise_card_back_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wordwise_card_back" android:layout_centerVertical="true" style="@style/info_card_v2_link_button_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wordwise_card_use_this_meaning" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <TextView android:id="@id/wordwise_card_use_this_meaning_text" android:text="@string/wordwise_card_use_this_meaning" android:layout_centerVertical="true" style="@style/info_card_v2_link_button_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wordwise_card_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <TextView android:id="@id/wordwise_card_more_text" android:text="@string/wordwise_card_more" android:layout_centerVertical="true" style="@style/info_card_v2_link_button_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wordwise_card_other_meanings" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="end|center" android:id="@id/wordwise_card_other_meanings_text" android:layout_width="@dimen/info_card_v2_wordwise_other_meanings_text_width" android:layout_height="fill_parent" android:text="@string/wordwise_card_other_meanings" android:layout_centerVertical="true" app:autoSizeMaxTextSize="@dimen/info_card_v2_button_text_font_size" app:autoSizeMinTextSize="6.0dip" app:autoSizeStepGranularity="1.0dip" app:autoSizeTextType="uniform" style="@style/info_card_v2_link_button_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wordwise_card_see_meanings" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <TextView android:id="@id/wordwise_card_see_meanings_text" android:text="@string/wordwise_card_see_meanings" android:layout_centerVertical="true" style="@style/info_card_v2_link_button_bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.kcp.reader.ui.WordWiseInfoCardView>

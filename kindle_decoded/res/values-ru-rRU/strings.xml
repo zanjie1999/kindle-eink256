@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anyactions_author_follow_button_follow">Подписаться</string>
+    <string name="anyactions_author_follow_button_following">Подписка</string>
+    <string name="anyactions_author_follow_hint_follow_multiple">Подпишитесь на автора, чтобы получать сведения о новых работах, рекомендации и другую полезную информацию.</string>
+    <string name="anyactions_widget_goodreads_shelf_currently_reading">Сейчас читаю</string>
+    <string name="anyactions_widget_goodreads_shelf_not_on_profile">Не в профиле</string>
+    <string name="anyactions_widget_goodreads_shelf_read">Прочитано</string>
+    <string name="anyactions_widget_goodreads_shelf_want_to_read">Хочу прочитать</string>
+    <string name="anyactions_widget_share_text">Поделиться</string>
+    <string name="endactions_buy_with_price">Купить за %1$s</string>
+    <string name="readingactions_bottomsheet_title_widget_description_collapsed">Информация об этой книге свернута. Дважды коснитесь или проведите по экрану вверх, чтобы развернуть.</string>
+    <string name="readingactions_bottomsheet_title_widget_description_expanded">Информация об этой книге развернута. Дважды коснитесь или проведите по экрану вниз, чтобы свернуть.</string>
+    <string name="readingactions_bottomsheet_title_widget_typical_time_to_read">Среднее время чтения</string>
+    <string name="readingactions_kre_madread_button_no_thank_you">Нет, спасибо</string>
+    <string name="readingactions_kre_madread_rating_amazon">Поставьте оценку книге на Amazon.</string>
+    <string name="readingactions_kre_madread_rating_amazon_goodreads">Поставьте оценку книге на Amazon и Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon">Оценка опубликована на Amazon.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon_goodreads">Оценка опубликована на Amazon и Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_posted_goodreads">Оценка опубликована на Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_remove">Удалить оценку</string>
+    <string name="readingactions_kre_madread_rating_review_edit">Изменить оценку и отзыв</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_goodreads">Спасибо! Ваши оценка книги и отзыв о ней опубликованы на Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_processing">Спасибо! Ваш отзыв обрабатывается. Процесс может занять несколько дней. Благодарим вас за терпение. Если через несколько дней ваш отзыв не появится на странице продукта или на странице вашего профиля, это значит, отзыв не прошел проверку и не может быть опубликован в данном виде. Ознакомьтесь с руководством сообщества Amazon перед повторной отправкой отзыва.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon">Спасибо! Ваша оценка книги опубликована на Amazon.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon_goodreads">Спасибо! Ваша оценка книги опубликована на Amazon и Goodreads.</string>
+    <string name="readingactions_kre_madread_review_add">Добавить отзыв (необязательно)</string>
+    <string name="readingactions_kre_madread_review_amazon">Оставьте отзыв о книге на Amazon.</string>
+    <string name="readingactions_kre_madread_review_amazon_goodreads">Оставьте отзыв о книге на Amazon и Goodreads.</string>
+    <string name="readingactions_kre_madread_review_post_amazon_goodreads">Опубликовать на Amazon (как %1$s) и Goodreads</string>
+    <string name="readingactions_kre_madread_review_submitted">Отзыв отправлен.</string>
+    <string name="readingactions_kre_madread_review_title_hint">Озаглавьте отзыв (обязательно)</string>
+    <string name="startactions_widget_read_less">− Свернуть</string>
+    <string name="startactions_widget_read_more">+ Развернуть</string>
+    <string name="startactions_widget_see_in_store">Посмотреть в магазине</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_action_time_page_margin_top_and_bottom" android:layout_marginBottom="@dimen/book_action_time_page_margin_top_and_bottom">
+        <ImageView android:layout_width="@dimen/book_action_time_page_side_length" android:layout_height="@dimen/book_action_time_page_side_length" android:src="@drawable/ic_time" />
+        <TextView android:id="@id/book_details_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/book_action_page_time" />
+        <ImageView android:layout_width="@dimen/book_action_time_page_side_length" android:layout_height="@dimen/book_action_time_page_side_length" android:layout_marginLeft="@dimen/book_action_time_page_margin_middle" android:src="@drawable/ic_pages" />
+        <TextView android:id="@id/book_details_pages" style="@style/book_action_page_time" />
+    </LinearLayout>
+    <com.amazon.kcp.library.widget.bookAction.ExpandableTextView android:id="@id/bookDetails_description" style="@style/book_action_description" />
+</merge>

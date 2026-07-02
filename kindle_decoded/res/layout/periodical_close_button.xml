@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton android:id="@id/periodical_close_button" android:background="@android:color/transparent" android:paddingLeft="@dimen/periodical_text_view_close_button_padding_left" android:paddingTop="@dimen/periodical_text_view_close_button_padding_top" android:paddingRight="@dimen/periodical_text_view_close_button_padding_right" android:paddingBottom="@dimen/periodical_text_view_close_button_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

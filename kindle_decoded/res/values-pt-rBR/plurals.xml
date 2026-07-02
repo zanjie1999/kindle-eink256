@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bookwizard_header_rating_books_needed">
+        <item quantity="other">Recomendamos que você classifique pelo menos mais %1$d livros.</item>
+        <item quantity="one">Recomendamos que você classifique pelo menos mais %1$d livro.</item>
+    </plurals>
+    <plurals name="bookwizard_ku_books_header_rated">
+        <item quantity="other">"Escolha mais %1$d livros. Clique em 'Concluído' quando puder começar a leitura."</item>
+        <item quantity="one">"Escolha mais %1$d livro. Clique em 'Concluído' quando puder começar a leitura."</item>
+    </plurals>
+    <plurals name="charts_review_counts">
+        <item quantity="other">%d avaliações de clientes</item>
+        <item quantity="one">uma avaliação de cliente</item>
+    </plurals>
+    <plurals name="dt_eoc_hours">
+        <item quantity="other">%1d horas</item>
+        <item quantity="one">%1$d hora</item>
+    </plurals>
+    <plurals name="dt_eoc_minutes">
+        <item quantity="other">%1d minutos</item>
+        <item quantity="one">%1$d minuto</item>
+    </plurals>
+    <plurals name="dt_eoc_seconds">
+        <item quantity="other">%1d segundos</item>
+        <item quantity="one">%1$d segundo</item>
+    </plurals>
+    <plurals name="dt_eoc_words">
+        <item quantity="other">%1$d palavras</item>
+        <item quantity="one">%1$d palavra</item>
+    </plurals>
+    <plurals name="falkor_story_ownership_count">
+        <item quantity="other">Você tem %1$d dos %2$d episódios desta história</item>
+        <item quantity="one">Você tem %1$d de %2$d episódio desta história.</item>
+    </plurals>
+    <plurals name="popularhighlights_annotation_item_label">
+        <item quantity="other">Destaque popular - %1$d marcadores</item>
+        <item quantity="one">Destaque popular - %1$d marcador</item>
+    </plurals>
+    <plurals name="popularhighlights_content_decoration_label">
+        <item quantity="other">%1$d marcadores</item>
+        <item quantity="one">%1$d marcador</item>
+    </plurals>
+    <plurals name="series_ownership_count_issues">
+        <item quantity="other">Você tem %1$d edições nesta série.</item>
+        <item quantity="one">Você tem %1$d edição nesta série.</item>
+    </plurals>
+    <plurals name="series_ownership_count_omnibus">
+        <item quantity="other">Você tem %1$d omnibuses nesta série.</item>
+        <item quantity="one">Você tem %1$d omnibus nesta série.</item>
+    </plurals>
+    <plurals name="series_ownership_count_trades">
+        <item quantity="other">Você tem %1$d volumes nesta série.</item>
+        <item quantity="one">Você tem %1$d volume nesta série.</item>
+    </plurals>
+    <plurals name="unpublished_falkor_story_ownership_count">
+        <item quantity="other">Você tem %1$d episódios desta história</item>
+        <item quantity="one">Você tem %1$d episódio desta história</item>
+    </plurals>
+    <plurals name="xray_mentions_count">
+        <item quantity="other">%d menções</item>
+        <item quantity="one">%d menção</item>
+    </plurals>
+</resources>

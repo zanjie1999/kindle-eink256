@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/reader_frame" android:importantForAccessibility="no" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/reader_layout_core" />
+    <include layout="@layout/reader_plugin_overlay_stub" />
+    <ViewStub android:id="@id/bubble_view_stub" android:layout="@layout/bubble_view" android:inflatedId="@id/bubble_view" android:layout_width="280.0dip" android:layout_height="wrap_content" />
+    <include layout="@layout/accessible_selection_left_layout" />
+    <include layout="@layout/accessible_selection_right_layout" />
+</merge>

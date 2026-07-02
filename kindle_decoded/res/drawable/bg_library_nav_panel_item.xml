@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/amznGrey"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:drawable="@color/white" />
+    <selector>
+        <item android:state_focused="true">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/black_mode_highlight_blue" />
+            </shape>
+        </item>
+        <item android:state_selected="true">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/amznGrey" />
+            </shape>
+        </item>
+        <item android:state_activated="true">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/amznLightGrey" />
+            </shape>
+        </item>
+    </selector>
+</ripple>

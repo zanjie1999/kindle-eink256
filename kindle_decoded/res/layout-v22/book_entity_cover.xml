@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.BookEntityCover android:layout_width="@dimen/shoveler_default_book_cover_width" android:layout_height="@dimen/shoveler_default_badged_book_cover_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/book_entity_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <FrameLayout android:id="@id/book_entity_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/generated_cover_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/book_entity_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:maxLines="3" android:fontFamily="Amazon Ember" android:layout_marginHorizontal="8.0dip" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/generated_cover_text_color" android:ellipsize="end" android:gravity="bottom|center" android:id="@id/book_entity_author" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:maxLines="2" android:fontFamily="Amazon Ember" android:layout_marginHorizontal="8.0dip" />
+    </FrameLayout>
+</com.amazon.kcp.home.ui.BookEntityCover>

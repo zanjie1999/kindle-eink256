@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header3" android:id="@id/transient_book_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingEnd="20.0dip" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Caption1.Grey" android:id="@id/transient_book_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:paddingEnd="20.0dip" />
+    <ProgressBar android:id="@id/transient_book_download_progress_bar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="12.0dip" android:max="100" android:indeterminate="false" android:progressDrawable="?transient_download_progress_downloading_drawable" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="4.0dip">
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Caption2" android:id="@id/transient_book_download_progress_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Caption2" android:id="@id/transient_book_download_progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_zero_percent" />
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Caption2" android:id="@id/transient_book_download_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:onClick="onCancelPressed" style="@style/ruby_transient_cancel_button" />
+</LinearLayout>

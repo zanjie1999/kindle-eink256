@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/accessible_selection_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/accessible_selection_right_decrease" android:focusable="true" android:src="@drawable/ic_keyboard_left_selector" android:text="&lt;" android:contentDescription="@string/speak_decrease_selection_end" android:importantForAccessibility="yes" style="@style/accessible_selection_button" />
+    <ImageButton android:id="@id/accessible_selection_right_increase" android:focusable="true" android:src="@drawable/ic_keyboard_right_selector" android:text=">" android:contentDescription="@string/speak_increase_selection_end" android:importantForAccessibility="yes" style="@style/accessible_selection_button" />
+</LinearLayout>

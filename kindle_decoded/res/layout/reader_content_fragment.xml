@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/reader_page_fragment_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/object_selection_view_stub" android:layout="@layout/object_selection_view" android:inflatedId="@id/object_selection_view" style="@style/fill" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.GraphicalHighlightLayout android:focusable="true" android:focusableInTouchMode="true" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/reader_layout" />
+    <include layout="@layout/pdf_magnifying_glass" />
+    <TextView android:layout_gravity="bottom|center" android:id="@id/graphical_highlight_drag_to_select_text" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/graphical_highlight_drag_to_select_text" style="@style/selection_buttons" />
+</com.amazon.kcp.reader.ui.GraphicalHighlightLayout>

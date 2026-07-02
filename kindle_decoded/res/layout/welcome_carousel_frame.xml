@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/welcome_carousel_top_margin" android:layout_marginBottom="@dimen/welcome_carousel_bottom_margin" android:layout_weight="@integer/carousel_frame_weight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

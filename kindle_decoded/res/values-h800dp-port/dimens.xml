@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="display_counter_text_size">14.0sp</dimen>
+    <dimen name="fc_nln_toolbar_height">64.0dip</dimen>
+    <dimen name="follow_unfollow_bar_height">64.0dip</dimen>
+    <dimen name="klo_nln_toolbar_height">64.0dip</dimen>
+    <dimen name="nln_breadcrumb_text_size">15.0dip</dimen>
+    <dimen name="nln_breadcrumb_width">66.0dip</dimen>
+    <dimen name="nln_location_seeker_height">64.0dip</dimen>
+    <dimen name="nln_location_seeker_height_doubled">128.0dip</dimen>
+    <dimen name="nln_page_badge_size">21.0dip</dimen>
+    <dimen name="nln_page_container_text_size">13.0sp</dimen>
+    <dimen name="nln_toolbar_height">64.0dip</dimen>
+    <dimen name="page_flip_location_label_text_size">15.0sp</dimen>
+    <dimen name="page_flip_title_container_height">65.0dip</dimen>
+    <dimen name="page_flip_title_size">18.0sp</dimen>
+    <dimen name="page_flip_title_space">64.0dip</dimen>
+    <dimen name="nln_text_container_height">64.0dip</dimen>
+</resources>

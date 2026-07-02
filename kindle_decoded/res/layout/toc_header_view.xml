@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.android.tableofcontents.columns.ColumnViewGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="wrap_content" android:layout_height="fill_parent" app:columnWidth="@integer/ux_toc_close_button_column_count" app:insetToColumnGutters="true" />
+    <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:gravity="center" android:orientation="vertical" android:id="@id/toc_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:columnWidth="@integer/ux_toc_header_title_column_count" app:insetToColumnGutters="true">
+        <TextView android:textSize="@dimen/toc_header_title_text_size" android:ellipsize="end" android:gravity="center" android:id="@id/toc_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/ux_toc_header_max_lines" />
+        <TextView android:textSize="@dimen/toc_header_author_text_size" android:ellipsize="end" android:gravity="center" android:id="@id/toc_header_authors" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+    <ImageView android:id="@id/toc_header_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:contentDescription="@string/close_toc_button_description" app:columnWidth="@integer/ux_toc_close_button_column_count" app:insetToColumnGutters="true" />
+</com.amazon.android.tableofcontents.columns.ColumnViewGroup>

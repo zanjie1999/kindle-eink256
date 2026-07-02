@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end|center|top" android:id="@id/bookmark_page_toggle_container" android:focusable="false" android:clipChildren="false" android:layout_width="@dimen/bookmark_toggle_area_width" android:layout_height="@dimen/bookmark_toggle_area_height" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/bookmark_page_toggle" android:layout_width="@dimen/bookmark_toggle_image_width" android:layout_height="@dimen/bookmark_toggle_image_height" android:src="@drawable/ic_bookmark_no_padding" android:contentDescription="@string/bookmark_toggle_button_remove" />
+</FrameLayout>

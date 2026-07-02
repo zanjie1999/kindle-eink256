@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="250" android:startOffset="0" android:repeatCount="1" android:repeatMode="reverse" android:valueFrom="@dimen/info_card_v2_full_definition_loading_indicator_normal_line_width" android:valueTo="@dimen/info_card_v2_full_definition_loading_indicator_highlight_line_width" android:valueType="floatType" android:propertyName="strokeWidth" />
+    <objectAnimator android:duration="250" android:startOffset="0" android:repeatCount="1" android:repeatMode="reverse" android:valueFrom="@color/info_card_v2_definition_loading_indicator_normal_line_color_light" android:valueTo="@color/info_card_v2_definition_loading_indicator_highlight_line_color_light" android:valueType="colorType" android:propertyName="strokeColor" />
+</set>

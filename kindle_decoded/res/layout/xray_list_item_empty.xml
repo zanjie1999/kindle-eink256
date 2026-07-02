@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/xray_amazon_text_medium_regular" android:ellipsize="end" android:gravity="center_vertical" android:paddingLeft="@dimen/xray_padding_gutter" android:paddingTop="@dimen/xray_padding_list_group_vertical" android:paddingRight="@dimen/xray_padding_gutter" android:paddingBottom="@dimen/xray_padding_list_group_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/xray_none_found" android:lines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:duration="500" android:fromDegrees="-90.0" android:toDegrees="630.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring" android:useLevel="true" android:innerRadius="@dimen/kcu_progressbar_innerReadius" android:thickness="@dimen/kcu_progressbar_thickness">
+        <size android:height="@dimen/kcu_progressbar_size" android:width="@dimen/kcu_progressbar_size" />
+        <gradient android:startColor="@color/accent_3_light" android:endColor="@color/accent_3_light" android:useLevel="false" android:angle="0.0" android:type="sweep" />
+    </shape>
+</rotate>

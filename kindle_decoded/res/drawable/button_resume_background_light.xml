@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/tertiary_1_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <color android:color="@android:color/black" />
+    </item>
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@color/accent_1_light_15_percent" />
+            <item android:state_pressed="true" android:drawable="@color/accent_1_light_60_percent" />
+            <item android:state_focused="true" android:drawable="@color/accent_1_light_40_percent" />
+            <item android:drawable="@color/accent_1_light" />
+        </selector>
+    </item>
+</ripple>

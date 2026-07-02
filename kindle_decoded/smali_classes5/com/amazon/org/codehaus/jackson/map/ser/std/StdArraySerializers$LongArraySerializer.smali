@@ -1,0 +1,145 @@
+.class public final Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$LongArraySerializer;
+.super Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$ArraySerializerBase;
+.source "StdArraySerializers.java"
+
+
+# annotations
+.annotation runtime Lcom/amazon/org/codehaus/jackson/map/annotate/JacksonStdImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "LongArraySerializer"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$ArraySerializerBase<",
+        "[J>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 387
+    invoke-direct {p0, v0}, Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$LongArraySerializer;-><init>(Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;)V
+    .locals 2
+
+    .line 388
+    const-class v0, [J
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, p1, v1}, Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$ArraySerializerBase;-><init>(Ljava/lang/Class;Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;Lcom/amazon/org/codehaus/jackson/map/BeanProperty;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public _withValueTypeSerializer(Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;)Lcom/amazon/org/codehaus/jackson/map/ser/std/ContainerSerializerBase;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;",
+            ")",
+            "Lcom/amazon/org/codehaus/jackson/map/ser/std/ContainerSerializerBase<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 392
+    new-instance v0, Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$LongArraySerializer;
+
+    invoke-direct {v0, p1}, Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$LongArraySerializer;-><init>(Lcom/amazon/org/codehaus/jackson/map/TypeSerializer;)V
+
+    return-object v0
+.end method
+
+.method public getSchema(Lcom/amazon/org/codehaus/jackson/map/SerializerProvider;Ljava/lang/reflect/Type;)Lcom/amazon/org/codehaus/jackson/JsonNode;
+    .locals 1
+
+    const/4 p1, 0x1
+
+    const-string p2, "array"
+
+    .line 407
+    invoke-virtual {p0, p2, p1}, Lcom/amazon/org/codehaus/jackson/map/ser/std/SerializerBase;->createSchemaNode(Ljava/lang/String;Z)Lcom/amazon/org/codehaus/jackson/node/ObjectNode;
+
+    move-result-object p2
+
+    const-string v0, "number"
+
+    .line 408
+    invoke-virtual {p0, v0, p1}, Lcom/amazon/org/codehaus/jackson/map/ser/std/SerializerBase;->createSchemaNode(Ljava/lang/String;Z)Lcom/amazon/org/codehaus/jackson/node/ObjectNode;
+
+    move-result-object p1
+
+    const-string v0, "items"
+
+    invoke-virtual {p2, v0, p1}, Lcom/amazon/org/codehaus/jackson/node/ObjectNode;->put(Ljava/lang/String;Lcom/amazon/org/codehaus/jackson/JsonNode;)Lcom/amazon/org/codehaus/jackson/JsonNode;
+
+    return-object p2
+.end method
+
+.method public bridge synthetic serializeContents(Ljava/lang/Object;Lcom/amazon/org/codehaus/jackson/JsonGenerator;Lcom/amazon/org/codehaus/jackson/map/SerializerProvider;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lcom/amazon/org/codehaus/jackson/JsonGenerationException;
+        }
+    .end annotation
+
+    .line 383
+    check-cast p1, [J
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/amazon/org/codehaus/jackson/map/ser/std/StdArraySerializers$LongArraySerializer;->serializeContents([JLcom/amazon/org/codehaus/jackson/JsonGenerator;Lcom/amazon/org/codehaus/jackson/map/SerializerProvider;)V
+
+    return-void
+.end method
+
+.method public serializeContents([JLcom/amazon/org/codehaus/jackson/JsonGenerator;Lcom/amazon/org/codehaus/jackson/map/SerializerProvider;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lcom/amazon/org/codehaus/jackson/JsonGenerationException;
+        }
+    .end annotation
+
+    .line 399
+    array-length p3, p1
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, p3, :cond_0
+
+    .line 400
+    aget-wide v1, p1, v0
+
+    invoke-virtual {p2, v1, v2}, Lcom/amazon/org/codehaus/jackson/JsonGenerator;->writeNumber(J)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method

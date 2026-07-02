@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="fc_card_side_meta_label" parent="@style/fc_font.light.small">
+        <item name="android:textColor">@color/fc_text_light_secondary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/fc_quiz_card_side_footer_component_padding_sides</item>
+        <item name="android:paddingTop">@dimen/fc_quiz_card_side_footer_component_padding_ends</item>
+        <item name="android:paddingRight">@dimen/fc_quiz_card_side_footer_component_padding_sides</item>
+        <item name="android:paddingBottom">@dimen/fc_quiz_card_side_footer_component_padding_ends</item>
+    </style>
+</resources>

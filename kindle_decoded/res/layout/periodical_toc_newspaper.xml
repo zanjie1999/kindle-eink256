@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/periodical_toc_newspaper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/periodical_toc_newspaper_header" />
+    <com.amazon.nwstd.toc.widget.ArticleRow android:id="@id/periodical_header_toc" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/toc_divider_height" />
+</LinearLayout>

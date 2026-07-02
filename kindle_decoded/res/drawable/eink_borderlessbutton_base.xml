@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <size android:height="64.0dip" />
+            <padding android:left="20.0dip" android:top="20.0dip" android:right="20.0dip" android:bottom="20.0dip" />
+            <solid android:color="@color/e3os_eink_primary_text_dark" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="64.0dip" />
+            <padding android:left="20.0dip" android:top="20.0dip" android:right="20.0dip" android:bottom="20.0dip" />
+            <solid android:color="@color/e3os_eink_primary_text_light" />
+        </shape>
+    </item>
+</selector>

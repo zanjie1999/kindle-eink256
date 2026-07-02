@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header_widget_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/readingactions_layout_group_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rating_review_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/book_rating" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RatingBar android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/stars" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="@style/reading_actions_bse_ratingbar" />
+            <androidx.legacy.widget.Space android:layout_width="@dimen/ra_rating_bar_right_padding" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/num_reviews" android:paddingTop="@dimen/ra_number_of_reviews_top_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/readingactions_amazon_text_subtitle" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="wrap_content" android:layout_height="@dimen/ra_rating_bar_top_padding" />
+        <include layout="@layout/startactions_component_divider" />
+        <androidx.legacy.widget.Space android:layout_width="wrap_content" android:layout_height="@dimen/ra_book_header_description_top_padding" />
+    </LinearLayout>
+    <com.amazon.readingactions.ui.helpers.TextViewWithEndButton android:textAppearance="@style/readingactions_amazon_text_body" android:id="@id/expanding_text" android:background="@drawable/bg_startactions_borderless_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/readingactions_widget_expanding_text_max_lines_collapsed_wo_goodreads" android:lineSpacingExtra="@dimen/ra_text_size_body_line_spacing_extra" android:textDirection="firstStrong" android:textAlignment="textStart" />
+    <Button android:textAppearance="@style/readingactions_amazon_text_body" android:textStyle="normal" android:id="@id/see_less" android:visibility="gone" android:layout_marginTop="@dimen/startactions_medium_padding" android:minHeight="0.0dip" android:text="@string/startactions_widget_read_less" android:contentDescription="@string/startactions_widget_read_less_content_description" style="@style/startactions_text_button_light_small" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/readingactions_header_button_top_margin" android:layout_marginBottom="@dimen/readingactions_header_button_bottom_margin" android:minHeight="@dimen/ra_button_min_height">
+        <Button android:textAppearance="@style/readingactions_amazon_text_button_regular" android:id="@id/store_link" android:padding="@dimen/ra_header_button_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ra_button_min_height" android:text="@string/startactions_widget_see_in_store" android:layout_weight="1.0" android:textAlignment="center" />
+        <Button android:textAppearance="@style/readingactions_amazon_text_button_regular" android:id="@id/share_button" android:padding="@dimen/ra_header_button_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ra_button_min_height" android:text="@string/anyactions_widget_share_text" android:layout_weight="1.0" android:textAlignment="center" android:layout_marginStart="@dimen/ra_horizontal_margin_buttons" />
+    </LinearLayout>
+</LinearLayout>

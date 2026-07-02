@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.StandaloneBrightnessSlider android:orientation="vertical" android:id="@id/brightness_slider_options" android:paddingLeft="@dimen/view_options_brightness_padding_horz" android:paddingRight="@dimen/view_options_brightness_padding_horz" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/brightness_slider_row" android:layout_width="wrap_content" android:layout_height="@dimen/view_options_brightness_height">
+        <ImageView android:id="@id/increase_brightness_image" android:src="?increaseBrightnessIcon" android:contentDescription="@string/increase_brightness" style="@style/view_options_brightness_icon.right" />
+        <ImageView android:id="@id/decrease_brightness_image" android:src="?decreaseBrightnessIcon" android:contentDescription="@string/decrease_brightness" style="@style/view_options_brightness_icon.left" />
+        <SeekBar android:id="@id/reader_brightness_slider" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/increase_brightness_image" android:layout_toRightOf="@id/decrease_brightness_image" android:layout_centerVertical="true" android:contentDescription="@string/brightness_slider" style="@style/view_options_brightness_slider" />
+    </RelativeLayout>
+    <CheckBox android:textSize="@dimen/view_options_row_text_title_size" android:textColor="?colorModeDependantTextColor" android:id="@id/system_brightness_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?checkboxButton" android:text="@string/use_system_brightness" android:fontFamily="sans-serif-light" />
+</com.amazon.kcp.reader.ui.StandaloneBrightnessSlider>

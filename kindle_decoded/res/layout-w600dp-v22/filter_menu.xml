@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:id="@id/refine_menu_button_container" android:focusable="true" android:contentDescription="@string/library_filter" android:accessibilityTraversalBefore="@id/selected_filters_close_btn" style="@style/secondary_menu_button_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?filter_menu_icon" android:layout_marginEnd="@dimen/refine_sort_image_margin" />
+    <TextView android:id="@id/refine_button" android:text="@string/library_filter" style="@style/filter_menu_button_text" />
+</LinearLayout>

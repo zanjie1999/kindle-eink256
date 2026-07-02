@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/aa_btn_default_pressed_dark" />
+    <item android:state_window_focused="true" android:drawable="@drawable/aa_btn_default_focused_dark" android:state_hovered="true" />
+    <item android:state_focused="true" android:state_window_focused="true" android:state_enabled="false" android:drawable="@drawable/aa_btn_default_disabled_focused_dark" />
+    <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/aa_btn_default_focused_dark" />
+    <item android:state_enabled="false" android:drawable="@drawable/aa_btn_default_disabled_dark" />
+    <item android:drawable="@drawable/aa_btn_default_normal_dark" />
+</selector>

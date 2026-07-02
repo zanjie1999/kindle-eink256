@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="beginning|end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.DeprecatedStyle.Preference.Category" android:gravity="bottom" android:id="@android:id/title" android:paddingTop="@dimen/fr_preferenceCategoryTextPaddingTop" android:paddingBottom="@dimen/fr_preferenceCategoryTextPaddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/fr_preferenceCategoryHeight" />
+</LinearLayout>

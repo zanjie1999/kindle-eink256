@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goto_notes">View My Notes &amp; Marks</string>
+    <string name="screen_size_category">XLARGE</string>
+    <string name="colors_and_brightness">Colors And Brightness</string>
+    <string name="font_size_options">Font Size Options</string>
+</resources>

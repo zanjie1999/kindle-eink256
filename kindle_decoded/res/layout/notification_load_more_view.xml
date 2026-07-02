@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/notification_load_more_container" android:background="?notification_tray_cell_default_background_color" android:paddingTop="@dimen/notification_load_more_view_padding_top" android:paddingBottom="@dimen/notification_load_more_view_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/notification_load_more_spinner" android:layout_width="@dimen/notification_load_more_spinner_size" android:layout_height="@dimen/notification_load_more_spinner_size" android:indeterminate="true" android:indeterminateDrawable="?notification_load_more_spinner" android:contentDescription="@string/inapp_load_more" android:importantForAccessibility="yes" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notification_load_more_error_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ThemeTextView android:id="@id/notification_load_more_error_text" android:paddingLeft="@dimen/notification_load_more_error_text_padding_left" android:paddingRight="@dimen/notification_load_more_error_text_padding_right" android:paddingBottom="@dimen/notification_load_more_error_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_load_more_error_text" android:maxLines="2" style="@style/notification_cell_body" />
+        <ImageButton android:gravity="center" android:id="@id/notification_load_more_error_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?refresh_button" android:scaleType="centerInside" />
+    </LinearLayout>
+</FrameLayout>

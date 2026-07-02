@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/sort_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/einkFilterContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black" android:id="@id/sort_filter_text" android:text="@string/sortby_recent_option" android:textAllCaps="true" style="@style/einkFilterTextStyle" />
+    <ImageView android:layout_marginRight="@dimen/eink_sort_type_filter_margin_right" style="@style/einkFilterDropDownImageStyle" />
+</LinearLayout>

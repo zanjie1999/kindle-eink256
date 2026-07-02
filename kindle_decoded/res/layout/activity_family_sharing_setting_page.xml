@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?library_background_color" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/profiles" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/family_sharing_header_image" android:layout_width="fill_parent" android:layout_height="158.0dip" android:src="@drawable/family_sharing_setting_header_image" android:contentDescription="Header image" />
+        <include layout="@layout/family_sharing_divider" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textAppearance="@style/Ruby.TextAppearance.Body.Text" android:textSize="20.0sp" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/more_item_family_sharing" android:layout_weight="2.0" />
+            <Switch android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/family_sharing_setting_explanation" android:lineSpacingMultiplier="1.1" />
+        <include layout="@layout/family_sharing_divider" />
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body.Text" android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_you_share" />
+        <LinearLayout android:orientation="vertical" android:id="@id/profile" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

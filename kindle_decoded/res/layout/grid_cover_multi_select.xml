@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.cover.CheckableFrameLayout android:paddingTop="?library_grid_view_vertical_spacing" android:layout_width="fill_parent" android:layout_height="@dimen/library_grid_cover_height" android:checkable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="bottom|center" android:id="@id/badgeable_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/badgeable_cover" />
+</com.amazon.kcp.cover.CheckableFrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/notifications_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llNotificationBackground" android:background="@color/kindle_splashscreen_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/llGenericBackground" android:background="@color/brochure_inactive_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.8" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.amazon.kcp.ui.brochure.BrochureLayout android:id="@id/slideshowPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

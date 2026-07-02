@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/anyactions_amazon_text_small" android:text="@string/startactions_widget_author_text_list_additional_authors" style="@style/startactions_author_text_list_widget_sentence_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

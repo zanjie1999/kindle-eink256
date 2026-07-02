@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:background="@drawable/aa_menu_v2_title_bar_bg" android:padding="@dimen/aa_menu_v2_disclosure_fragment_title_bar_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_tab_layout_height">
+        <TextView android:textSize="@dimen/aa_menu_v2_setting_subtitle_text_size" android:textColor="?aaMenuV2TextTitleColor" android:gravity="center_vertical" android:id="@id/back_view" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_tab_layout_height" android:drawableLeft="@drawable/aa_menu_v2_disclosure_back_view" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/fragment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aa_menu_v2_setting_disclosure_fragment_title_margin_left" android:layout_marginRight="@dimen/aa_menu_v2_setting_disclosure_fragment_title_margin_right" android:layout_centerInParent="true" style="@style/AaMenuV2SettingTitle" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/content_container" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

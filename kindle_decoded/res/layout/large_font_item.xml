@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/large_fonts_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/large_font_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_body" android:textColor="@color/large_fonts_font_size_text" android:layout_gravity="center" android:id="@id/large_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:singleLine="true" android:importantForAccessibility="no" android:fontFamily="Amazon Ember" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/large_font_operations" android:layout_width="50.0dip" android:layout_height="32.0dip">
+        <TextView android:textColor="@color/large_fonts_font_size_text" android:id="@id/large_font_default" android:text="@string/setting_large_fonts_default" style="@style/large_font_btn_text" />
+        <ImageView android:id="@id/large_font_download" android:background="?large_font_download_bg" android:src="@drawable/ic_font_download_white" style="@style/wrap" />
+        <View android:id="@id/large_font_remove" android:background="@drawable/ic_large_font_delete" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" />
+        <ProgressBar android:id="@id/large_font_downloading" android:visibility="gone" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" style="@style/large_font_download_progress_bar" />
+        <ProgressBar android:id="@id/large_font_downloading_with_cancel" android:visibility="gone" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" style="@style/large_font_download_progress_bar_with_cancel" />
+    </LinearLayout>
+</LinearLayout>

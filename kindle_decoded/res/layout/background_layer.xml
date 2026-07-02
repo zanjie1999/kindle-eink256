@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.speedreading.doubletime.DoubleTimeBackgroundLayer android:orientation="vertical" android:id="@id/background_layer_container" android:background="@color/double_time_view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="start" android:id="@id/dt_close_button" android:background="?android:selectableItemBackground" android:padding="@dimen/dt_background_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/dt_x_grey" android:contentDescription="@string/dt_close_button_desc" style="@android:style/Widget.TextView" />
+</com.amazon.kindle.speedreading.doubletime.DoubleTimeBackgroundLayer>

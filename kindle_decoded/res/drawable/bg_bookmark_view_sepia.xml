@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/menu_bookmark_background" android:dither="true" />
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/sepia_mode_chrome_menu_background" />
+        </shape>
+    </item>
+</layer-list>

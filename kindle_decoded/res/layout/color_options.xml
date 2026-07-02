@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.TextColorOptionsView android:id="@id/view_options_row_color" style="@style/view_options_row.color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.reader.ui.DottedButton android:id="@id/dotted_button_white" android:focusable="true" android:nextFocusDown="@id/brightness_slider" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/view_options_color_button">
+        <Button android:id="@id/font_color_white" android:duplicateParentState="true" android:text="@string/white" style="@style/view_options_color_button.white" />
+    </com.amazon.kcp.reader.ui.DottedButton>
+    <com.amazon.kcp.reader.ui.DottedButton android:id="@id/dotted_button_sepia" android:focusable="true" android:nextFocusDown="@id/brightness_slider" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/view_options_color_button.middle">
+        <Button android:id="@id/font_color_sepia" android:duplicateParentState="true" android:text="@string/sepia" style="@style/view_options_color_button.sepia" />
+    </com.amazon.kcp.reader.ui.DottedButton>
+    <com.amazon.kcp.reader.ui.DottedButton android:id="@id/dotted_button_black" android:focusable="true" android:nextFocusDown="@id/brightness_slider" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/view_options_color_button">
+        <Button android:id="@id/font_color_black" android:duplicateParentState="true" android:text="@string/black" style="@style/view_options_color_button.black" />
+    </com.amazon.kcp.reader.ui.DottedButton>
+</com.amazon.kcp.reader.ui.TextColorOptionsView>

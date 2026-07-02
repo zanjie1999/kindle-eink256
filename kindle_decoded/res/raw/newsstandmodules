@@ -1,0 +1,3 @@
+# add your newsstand modules here in the format of module_name.module=your_implementation_of_Module_interface
+NewsstandForStandAloneModule.module=com.amazon.nwstd.modules.NewsstandForStandAloneModule
+

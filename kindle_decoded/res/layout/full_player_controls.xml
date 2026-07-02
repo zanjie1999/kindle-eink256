@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/full_player_previous_chapter_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/full_player_controls_margin" android:src="@drawable/full_player_previous_chapter_black" android:scaleType="centerInside" android:contentDescription="@string/main_player_previous_chapter_text" />
+        <ImageView android:id="@id/full_player_jump_back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/full_player_controls_margin" android:src="@drawable/full_player_jump_back_black" android:scaleType="centerInside" android:contentDescription="@string/main_player_jump_back_text" />
+        <ImageView android:id="@id/full_player_play_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/full_player_play_black" android:scaleType="centerInside" android:contentDescription="@string/player_play_text" />
+        <ImageView android:id="@id/full_player_pause_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/full_player_pause_black" android:scaleType="centerInside" android:contentDescription="@string/player_pause_text" />
+        <ImageView android:id="@id/full_player_jump_forward_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/full_player_controls_margin" android:src="@drawable/full_player_jump_forward_black" android:scaleType="centerInside" android:contentDescription="@string/main_player_jump_forward_text" />
+        <ImageView android:id="@id/full_player_next_chapter_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/full_player_controls_margin" android:src="@drawable/full_player_next_chapter_black" android:scaleType="centerInside" android:contentDescription="@string/main_player_next_chapter_text" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/full_player_text_size" android:id="@id/full_player_chapter_text" android:padding="@dimen/full_player_chapter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

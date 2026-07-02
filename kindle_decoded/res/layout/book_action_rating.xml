@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/book_action_rating_review" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_action_rating_bar_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:id="@id/book_action_rating" style="@style/star_rating_bar" />
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_review" style="@style/book_action_review" />
+</LinearLayout>

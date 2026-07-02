@@ -1,0 +1,180 @@
+.class public Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+.super Ljava/lang/Object;
+.source "GetSMSAttributesResultStaxUnmarshaller.java"
+
+# interfaces
+.implements Lcom/amazon/kindle/com/amazonaws/transform/Unmarshaller;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller$attributesMapEntryUnmarshaller;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/amazon/kindle/com/amazonaws/transform/Unmarshaller<",
+        "Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;",
+        "Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static instance:Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 32
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static getInstance()Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+    .locals 1
+
+    .line 108
+    sget-object v0, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;->instance:Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+
+    if-nez v0, :cond_0
+
+    .line 109
+    new-instance v0, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+
+    invoke-direct {v0}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;-><init>()V
+
+    sput-object v0, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;->instance:Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+
+    .line 110
+    :cond_0
+    sget-object v0, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;->instance:Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public unmarshall(Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;)Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 76
+    new-instance v0, Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;
+
+    invoke-direct {v0}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;-><init>()V
+
+    .line 78
+    invoke-virtual {p1}, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;->getCurrentDepth()I
+
+    move-result v1
+
+    add-int/lit8 v2, v1, 0x1
+
+    .line 81
+    invoke-virtual {p1}, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;->isStartOfDocument()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    add-int/lit8 v2, v2, 0x2
+
+    .line 85
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;->nextEvent()I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-ne v3, v4, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v4, 0x2
+
+    if-ne v3, v4, :cond_2
+
+    const-string v3, "attributes/entry"
+
+    .line 90
+    invoke-virtual {p1, v3, v2}, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;->testExpression(Ljava/lang/String;I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 91
+    invoke-static {}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller$attributesMapEntryUnmarshaller;->getInstance()Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller$attributesMapEntryUnmarshaller;
+
+    move-result-object v3
+
+    .line 92
+    invoke-virtual {v3, p1}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller$attributesMapEntryUnmarshaller;->unmarshall(Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;)Ljava/util/Map$Entry;
+
+    move-result-object v3
+
+    .line 93
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v3}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;->addattributesEntry(Ljava/lang/String;Ljava/lang/String;)Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v4, 0x3
+
+    if-ne v3, v4, :cond_0
+
+    .line 97
+    invoke-virtual {p1}, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;->getCurrentDepth()I
+
+    move-result v3
+
+    if-ge v3, v1, :cond_0
+
+    :goto_1
+    return-object v0
+.end method
+
+.method public bridge synthetic unmarshall(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 32
+    check-cast p1, Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/com/amazonaws/services/sns/model/transform/GetSMSAttributesResultStaxUnmarshaller;->unmarshall(Lcom/amazon/kindle/com/amazonaws/transform/StaxUnmarshallerContext;)Lcom/amazon/kindle/com/amazonaws/services/sns/model/GetSMSAttributesResult;
+
+    move-result-object p1
+
+    return-object p1
+.end method

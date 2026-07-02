@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:paddingTop="@dimen/xray_feedback_error_list_row_padding" android:paddingBottom="@dimen/xray_feedback_error_list_row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center|left" android:id="@id/xray_info_card_error_type_text" android:paddingLeft="@dimen/xray_feedback_error_list_row_padding" android:paddingRight="@dimen/xray_feedback_error_list_row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/info_card_link" />
+</FrameLayout>

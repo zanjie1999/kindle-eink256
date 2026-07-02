@@ -1,0 +1,42 @@
+.class Lcom/amazon/android/docviewer/pdf/PdfDoc$3;
+.super Ljava/lang/Object;
+.source "PdfDoc.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/amazon/android/docviewer/pdf/PdfDoc;->search(Ljava/lang/String;Lcom/amazon/android/docviewer/KindleDocSearcher$SearchCallback;Lcom/amazon/kindle/services/download/IStatusTracker;)Ljava/lang/Runnable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/amazon/android/docviewer/pdf/PdfDoc;
+
+
+# direct methods
+.method constructor <init>(Lcom/amazon/android/docviewer/pdf/PdfDoc;)V
+    .locals 0
+
+    .line 726
+    iput-object p1, p0, Lcom/amazon/android/docviewer/pdf/PdfDoc$3;->this$0:Lcom/amazon/android/docviewer/pdf/PdfDoc;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 0
+
+    return-void
+.end method

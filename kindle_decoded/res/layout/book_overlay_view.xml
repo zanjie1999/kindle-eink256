@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:textColor="@android:color/transparent" android:background="@android:color/transparent" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@android:color/transparent" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

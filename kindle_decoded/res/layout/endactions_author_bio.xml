@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_startactions_borderless_button" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/endactions_header_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/endactions_widget_header_text" />
+    <FrameLayout android:id="@id/author_image_container" android:paddingTop="@dimen/endactions_image_vertical_align_with_text" android:layout_width="@dimen/endactions_author_image_width" android:layout_height="@dimen/endactions_author_image_height" android:layout_below="@id/endactions_header_text">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/author_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/anyactions_amazon_text_large" android:ellipsize="end" android:id="@id/author" android:paddingLeft="@dimen/endactions_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/author_image_container" android:layout_below="@id/endactions_header_text" />
+    <com.amazon.startactions.ui.helpers.TextViewWithMaxLines android:textAppearance="@style/anyactions_amazon_text_regular" android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/bio" android:paddingLeft="@dimen/endactions_medium_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_toRightOf="@id/author_image_container" android:layout_below="@id/author" />
+</RelativeLayout>

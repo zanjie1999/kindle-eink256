@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/ic_list_count_bg_light" android:insetLeft="@dimen/library_list_view_right_badge_padding_left" android:insetBottom="@dimen/library_list_view_right_badge_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

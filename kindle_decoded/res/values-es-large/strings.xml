@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goto_notes">Mis notas y marcadores</string>
+    <string name="menuitem_add_bookmark">Añadir marcador</string>
+    <string name="menuitem_reader_store">Comprar en la tienda de Kindle</string>
+    <string name="menuitem_remove_bookmark">Eliminar marcador</string>
+    <string name="menuitem_sync">Sincronizar con la página leída más avanzada</string>
+    <string name="transient_done">Terminar.</string>
+    <string name="colors_and_brightness">Colores y el brillo</string>
+    <string name="font_size_options">Opciones de tamaño de fuente</string>
+</resources>

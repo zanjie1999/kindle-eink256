@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/search_everywhere_padding_horizontal" android:paddingRight="@dimen/search_everywhere_padding_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/search_everywhere_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/search_everywhere_divider_height" />
+    <TextView android:textSize="@dimen/search_everywhere_text_size" android:textColor="@color/xor_text_color_selector" android:id="@id/search_everywhere_link" android:background="@drawable/xor_background_selector" android:paddingTop="@dimen/search_everywhere_padding_top" android:paddingBottom="@dimen/search_everywhere_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:singleLine="true" />
+</LinearLayout>

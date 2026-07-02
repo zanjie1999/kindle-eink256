@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="periodical_toc_articlelist_article" parent="@style/periodical_toc_articlelist_article_base">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="bookmark_list_description" parent="@style/bookmark_list_description_parent">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="bookmark_list_header" parent="@style/bookmark_list_header_parent">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="newtron_toc_header_periodical_title">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="popup_bookmark_list_header" parent="@style/popup_bookmark_list_header_parent">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="popup_bookmarkable_list_article" parent="@style/popup_bookmarkable_list_article_parent">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="toc_header_magazine_title" parent="@style/toc_header_magazine_title_base">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="toc_header_newspaper_title" parent="@style/toc_header_newspaper_title_base">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="toc_header_publish_date" parent="@style/toc_header_publish_date_base">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+</resources>

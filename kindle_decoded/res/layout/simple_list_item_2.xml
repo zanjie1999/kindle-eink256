@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?simple_two_lines_item_margin_bottom" android:minHeight="?simple_two_lines_list_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@android:id/text1" style="?simple_two_lines_list_item_first_line_style" />
+    <TextView android:id="@android:id/text2" style="?simple_two_lines_list_item_second_line_style" />
+    <View style="?simple_two_lines_item_divider" />
+</LinearLayout>

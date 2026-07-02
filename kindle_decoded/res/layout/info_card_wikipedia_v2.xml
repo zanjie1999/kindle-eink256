@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.WikipediaInfoCardView android:id="@id/infocard_wikipedia" style="@style/info_card_v2_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:importantForAccessibility="no" style="@style/info_card_v2_title_bar">
+            <TextView android:id="@id/info_card_wikipedia_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/info_card_wikipedia_title_margin_right" android:text="@string/info_card_wikipedia_title" style="@style/info_card_v2_title_text" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/info_card_wikipedia_content_wrapper" android:paddingLeft="@dimen/info_card_v2_content_horizontal_padding" android:paddingTop="@dimen/info_card_v2_content_vertical_padding" android:paddingRight="@dimen/info_card_v2_content_horizontal_padding" android:paddingBottom="@dimen/info_card_v2_content_vertical_padding" android:importantForAccessibility="no" style="@style/info_card_v2_content_bar">
+            <ProgressBar android:layout_gravity="center" android:id="@id/info_card_wikipedia_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/speak_wikipedia_loading" />
+            <com.amazon.kcp.reader.ui.ObservableWebView android:scrollbarThumbVertical="@drawable/info_card_v2_scroll_bar_thumb" android:id="@id/info_card_wikipedia_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/info_card_wikipedia_load" android:importantForAccessibility="yes" />
+            <TextView android:id="@id/info_card_wikipedia_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_card_wikipedia_error" style="@style/info_card_v2_content_text" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/info_card_v2_link_button_bar_horizontal_padding" android:paddingRight="@dimen/info_card_v2_link_button_bar_horizontal_padding" android:importantForAccessibility="no" style="@style/info_card_v2_button_bar">
+            <TextView android:id="@id/info_card_wikipedia_open_button" android:visibility="gone" android:text="@string/info_card_wikipedia_open" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="yes" style="@style/info_card_v2_link_button_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.kcp.reader.ui.WikipediaInfoCardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/try_again_button_row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/try_again_description_text_size" android:textColor="?toc_try_again_description_text_color" android:id="@id/toc_try_again_desc" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="2.0dip" />
+    <Button android:textSize="@dimen/try_again_button_text_size" android:textColor="?try_again_color" android:gravity="start|center" android:id="@id/falkor_try_again_button" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bottom_sheet_try_again_button_text" android:drawablePadding="@dimen/try_again_button_row_padding" android:drawableStart="?bottom_sheet_try_again_icon" />
+</LinearLayout>

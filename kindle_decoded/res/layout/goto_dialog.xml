@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_custom_view_padding" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/current_location_text" style="@style/current_location_text" />
+    <EditText android:id="@id/goto_input_field" android:paddingTop="@dimen/default_padding" android:inputType="number" android:imeOptions="actionGo" style="@style/fill_width" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?android:windowBackground" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fc="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/fc_toolbar_container" layout="@layout/fc_toolbar_no_border" />
+    <com.amazon.kedu.flashcards.views.QuizProgressView android:id="@id/progress_bar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/fc_quiz_progress_bar_expanded_height" android:layout_below="@id/fc_toolbar_container" fc:isProgressBarExpanded="@bool/fc_quiz_progress_bar_expanded" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/quiz_container" android:paddingLeft="@dimen/fc_quiz_container_padding" android:paddingTop="@dimen/fc_quiz_container_padding" android:paddingRight="@dimen/fc_quiz_container_padding" android:paddingBottom="@dimen/fc_quiz_container_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar">
+        <LinearLayout android:orientation="horizontal" android:id="@id/quiz_controls_container" android:layout_width="fill_parent" android:layout_height="@dimen/fc_quiz_controls_height" android:layout_alignParentBottom="true">
+            <com.amazon.kedu.flashcards.views.QuizButton android:id="@id/quiz_controls_incorrect_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/fc_ic_incorrect" android:layout_weight="0.5" android:onClick="onClickIncorrect" android:contentDescription="@string/fc_quiz_controls_incorrect_button" fc:highlightColor="@color/fc_negative_lighter" fc:primaryColor="@color/fc_negative" />
+            <Space android:layout_width="@dimen/fc_quiz_controls_spacing" android:layout_height="fill_parent" />
+            <com.amazon.kedu.flashcards.views.QuizButton android:id="@id/quiz_controls_correct_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/fc_ic_accept" android:layout_weight="0.5" android:onClick="onClickCorrect" android:contentDescription="@string/fc_quiz_controls_correct_button" fc:highlightColor="@color/fc_positive_lighter" fc:primaryColor="@color/fc_positive" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/quiz_pile_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/fc_quiz_pile_container_padding" android:layout_above="@id/quiz_controls_container">
+            <com.amazon.kedu.flashcards.views.QuizResultsView android:id="@id/quiz_results" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.amazon.kedu.flashcards.CardPileView android:id="@id/quiz_card_pile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.amazon.kedu.flashcards.views.QuizAccessibilityView android:id="@id/accessibility_quiz_controls" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.amazon.kedu.flashcards.views.EmptyDeckView android:id="@id/empty_deck_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/dismiss_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fc_quiz_dismiss_label_margin_top" android:text="@string/fc_quiz_pile_dismiss_label" android:alpha="0.0" style="@style/fc_quiz_pile_dismiss_label" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

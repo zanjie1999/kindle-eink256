@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view" android:importantForAccessibility="no" style="@style/top_level_selection_button_image" />
+    <TextView android:id="@id/text_view" android:importantForAccessibility="no" style="@style/top_level_selection_button" />
+</LinearLayout>

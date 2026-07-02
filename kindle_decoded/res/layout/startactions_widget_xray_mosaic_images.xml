@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xray_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:gravity="left" android:id="@id/xray_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/xray_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_widget_xray_margin_medium" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/xray_mosaic_images" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_widget_xray_margin_medium">
+        <ImageView android:id="@id/xray_mosaic_image_one" android:background="@drawable/startactions_xray_widget_image_background" android:padding="@dimen/startactions_widget_xray_images_image_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:cropToPadding="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/xray_mosaic_image_two" android:background="@drawable/startactions_xray_widget_image_background" android:padding="@dimen/startactions_widget_xray_images_image_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/startactions_widget_xray_images_padding_between_images" android:scaleType="centerCrop" android:cropToPadding="true" />
+            <ImageView android:id="@id/xray_mosaic_image_three" android:background="@drawable/startactions_xray_widget_image_background" android:padding="@dimen/startactions_widget_xray_images_image_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/startactions_widget_xray_images_padding_between_images" android:layout_marginTop="@dimen/startactions_widget_xray_images_padding_between_images" android:scaleType="centerCrop" android:cropToPadding="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textAppearance="@style/anyactions_amazon_text_roman_small" android:id="@id/xray_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_widget_xray_margin_medium" android:minHeight="@dimen/startactions_button_height" android:singleLine="false" />
+</LinearLayout>

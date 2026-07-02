@@ -1,0 +1,92 @@
+.class synthetic Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$1;
+.super Ljava/lang/Object;
+.source "TutorialMigrationHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/kindle/tutorial/TutorialMigrationHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation
+
+
+# static fields
+.field static final synthetic $SwitchMap$com$amazon$kindle$krx$tutorial$events$EventType:[I
+
+.field static final synthetic $SwitchMap$com$amazon$kindle$tutorial$TutorialMigrationHelper$LegacyTutorial:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 168
+    invoke-static {}, Lcom/amazon/kindle/krx/tutorial/events/EventType;->values()[Lcom/amazon/kindle/krx/tutorial/events/EventType;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$1;->$SwitchMap$com$amazon$kindle$krx$tutorial$events$EventType:[I
+
+    const/4 v1, 0x1
+
+    :try_start_0
+    sget-object v2, Lcom/amazon/kindle/krx/tutorial/events/EventType;->BOOK_OPEN:Lcom/amazon/kindle/krx/tutorial/events/EventType;
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 127
+    :catch_0
+    invoke-static {}, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;->values()[Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$1;->$SwitchMap$com$amazon$kindle$tutorial$TutorialMigrationHelper$LegacyTutorial:[I
+
+    :try_start_1
+    sget-object v2, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;->NLN_BROCHURE:Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aput v1, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v0, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$1;->$SwitchMap$com$amazon$kindle$tutorial$TutorialMigrationHelper$LegacyTutorial:[I
+
+    sget-object v1, Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;->START_ACTIONS:Lcom/amazon/kindle/tutorial/TutorialMigrationHelper$LegacyTutorial;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    return-void
+.end method

@@ -1,0 +1,31 @@
+.class public interface abstract Lcom/amazon/whispersync/google/protobuf/Message;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/amazon/whispersync/google/protobuf/MessageLite;
+.implements Lcom/amazon/whispersync/google/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/amazon/whispersync/google/protobuf/Message$Builder;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract equals(Ljava/lang/Object;)Z
+.end method
+
+.method public abstract hashCode()I
+.end method
+
+.method public abstract newBuilderForType()Lcom/amazon/whispersync/google/protobuf/Message$Builder;
+.end method
+
+.method public abstract toBuilder()Lcom/amazon/whispersync/google/protobuf/Message$Builder;
+.end method
+
+.method public abstract toString()Ljava/lang/String;
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?toc_episode_list_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/about_this_story_row_id" layout="@layout/about_this_story_row" />
+    <LinearLayout android:orientation="vertical" android:id="@id/episode_list_online_container" android:tag="online_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?toc_episode_list_divider" android:showDividers="middle" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/episode_list_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/episode_list_offline_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?toc_episode_list_divider" android:showDividers="middle" />
+    <include android:id="@id/episode_list_try_again" layout="@layout/left_panel_try_again_row" />
+</LinearLayout>

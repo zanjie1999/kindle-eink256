@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/dummy_result_cover_color" android:layout_width="@dimen/eink_search_result_cover_width" android:layout_height="@dimen/eink_search_result_cover_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideInset" android:id="@id/xray_card_excerpt_scroll_dark" android:background="@drawable/bg_xray_borderless_view" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/xray_amazon_text_light_regular" android:id="@id/xray_card_excerpt" android:paddingLeft="@dimen/xray_padding_card_content" android:paddingTop="@dimen/xray_padding_card_text_content_vertical" android:paddingRight="@dimen/xray_padding_card_content" android:paddingBottom="@dimen/xray_padding_card_text_content_vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/xray_line_spacing_excerpt" />
+</ScrollView>

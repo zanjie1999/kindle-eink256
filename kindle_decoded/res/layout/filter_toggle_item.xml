@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.widget.FilterToggleItem android:layout_width="fill_parent" android:layout_height="@dimen/checkable_item_height" style="@style/checkable_item_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/filter_switch" android:importantForAccessibility="no" style="@style/filter_toggle" />
+</com.amazon.kcp.widget.FilterToggleItem>

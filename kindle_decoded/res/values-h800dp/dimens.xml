@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kindle_toast_action_text_size">16.0sp</dimen>
+    <dimen name="kindle_toast_message_text_size">16.0sp</dimen>
+    <dimen name="reader_overflow_popup_max_height">600.0dip</dimen>
+</resources>

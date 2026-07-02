@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/upsell_bar_button_dark_background_pressed_nln"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/upsell_bar_button_dark_background_disabled_nln" />
+                    <stroke android:width="1.0dip" android:color="@color/upsell_bar_button_dark_border_nln" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/upsell_bar_button_dark_background_default_nln" />
+                    <stroke android:width="1.0dip" android:color="@color/upsell_bar_button_dark_border_nln" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

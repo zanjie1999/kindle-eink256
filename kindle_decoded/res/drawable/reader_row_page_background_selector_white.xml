@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/white_mode_row_background_selected"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="true" android:drawable="@color/white_mode_row_background_selected" />
+            <item android:drawable="@color/white_mode_row_background_activated" android:state_activated="true" />
+            <item android:drawable="@color/white_mode_row_background" />
+        </selector>
+    </item>
+</ripple>

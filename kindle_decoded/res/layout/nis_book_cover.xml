@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.widget.HomeBadgeableCover android:tag="IMAGE_1" android:duplicateParentState="true" android:foreground="@drawable/select_overlay_selector" style="?badgeable_cover_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/cover_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <include layout="@layout/badgeable_cover_content" />
+</com.amazon.kcp.home.widget.HomeBadgeableCover>

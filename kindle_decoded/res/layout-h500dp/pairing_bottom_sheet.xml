@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" style="@style/Background.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.amazon.kindle.ffs.view.BookerlyTextView android:id="@id/ugs_setup_register_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_ugs_setup_register_kindle" style="@style/Text.Title" />
+            <ImageView android:gravity="center" android:id="@id/ugs_setup_kindle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/drawable_bottom_margin" android:src="@drawable/kindles" />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/buttons" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/header">
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/setup_linear_layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="500.0dip" android:nestedScrollingEnabled="false" app:layout_constraintTop_toTopOf="parent">
+                <com.amazon.kindle.ffs.view.EmberTextView android:id="@id/ugs_setup_about_user" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text.CenteredBody" />
+                <View style="@style/Divider" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.amazon.kindle.ffs.view.EmberTextView android:id="@id/ffs_low_battery_verbiage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_low_power_detected_1" style="@style/Text.CenteredBody" />
+                    <com.amazon.kindle.ffs.view.EmberTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_low_power_detected_2" style="@style/Text.CenteredBody" />
+                </LinearLayout>
+                <com.amazon.kindle.ffs.view.EmberTextView android:id="@id/ugs_setup_legal_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" style="@style/Text.CenteredBody" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+            <com.amazon.kindle.ffs.view.EmberButton android:id="@id/ugs_setup_link_and_continue" android:text="@string/ffs_ugs_setup_link_and_continue" style="@style/FfsButton.Primary" />
+            <com.amazon.kindle.ffs.view.EmberButton android:id="@id/ugs_setup_cancel_setup" android:text="@string/ffs_ugs_setup_cancel_setup" style="@style/FfsButton.Tertiary" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

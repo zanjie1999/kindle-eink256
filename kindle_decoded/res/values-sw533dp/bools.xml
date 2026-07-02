@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="fc_quiz_progress_bar_expanded">true</bool>
+    <bool name="flashcards_enabled">true</bool>
+    <bool name="goodreads_enabled">true</bool>
+</resources>

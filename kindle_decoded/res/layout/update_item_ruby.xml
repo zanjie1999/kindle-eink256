@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/kcu_default_padding" android:paddingRight="@dimen/kcu_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/kcu_update_item_margin" android:paddingBottom="@dimen/kcu_update_item_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="top" android:id="@id/update_item_cover_image" android:layout_width="@dimen/kcu_update_item_cover_image_width" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/kcu_default_padding" android:paddingTop="@dimen/kcu_zero_padding" android:paddingRight="@dimen/kcu_default_padding" android:paddingBottom="@dimen/kcu_zero_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <com.amazon.versioning.reader.ui.views.KCUItemTitleTextView android:textColor="?text_primary" android:ellipsize="end" android:id="@id/update_item_title" android:paddingLeft="@dimen/kcu_zero_padding" android:paddingTop="@dimen/kcu_zero_padding" android:paddingRight="@dimen/kcu_zero_padding" android:paddingBottom="@dimen/kcu_update_item_text_to_text_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.amazon.versioning.reader.ui.views.KCUItemInfoTextView android:textColor="?text_secondary" android:id="@id/update_item_status" android:paddingLeft="@dimen/kcu_zero_padding" android:paddingTop="@dimen/kcu_zero_padding" android:paddingRight="@dimen/kcu_zero_padding" android:paddingBottom="@dimen/kcu_update_item_text_to_text_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:paddingTop="@dimen/kcu_item_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.amazon.versioning.reader.ui.views.KCUSecondaryButton android:id="@id/update_open_button" android:paddingTop="@dimen/kcu_button_margin" android:paddingBottom="@dimen/kcu_button_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/kcu_button_min_height" android:text="@string/update_notes_open_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

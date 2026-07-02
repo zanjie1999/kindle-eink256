@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.amazon.kedu.flashcards.views.SeeMoreButton android:id="@id/see_more_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/body" android:layout_centerHorizontal="true" style="@style/fc_deck_overview_card_side_front_meta_label_button" />
+</merge>

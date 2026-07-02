@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.ui.tutorial.JITTutorialLayout android:id="@id/jit_tutorial_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.ui.tutorial.TutorialHighlightView android:id="@id/jit_tutorial_highlight_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/tutorial_jit_textview_text_size" android:textColor="?text_primary" android:id="@id/jit_tutorial_text" android:background="?utm_tutorial_background" android:padding="@dimen/tutorial_jit_textview_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_jit_textview_margin" android:layout_marginRight="@dimen/tutorial_jit_textview_margin" android:singleLine="false" android:lineSpacingExtra="@dimen/tutorial_jit_textview_line_spacing" android:fontFamily="Amazon Ember Light" />
+    <com.amazon.kcp.ui.tutorial.JITCaretView android:id="@id/jit_tutorial_caret" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.amazon.kcp.ui.tutorial.JITTutorialLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/series_bar" style="@style/upsell_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/series_bar_header" style="@style/upsell_bar_text_message" />
+    <TextView android:id="@id/series_bar_title" android:layout_below="@id/series_bar_header" style="@style/upsell_bar_text_title" />
+    <TextView android:id="@id/series_bar_details" android:paddingBottom="@dimen/sample_bar_padding" android:layout_below="@id/series_bar_title" style="@style/upsell_bar_text_message" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/series_bar_expandable_details" android:paddingBottom="@dimen/sample_bar_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/series_bar_details" android:layout_alignParentLeft="true">
+        <ImageView android:gravity="center" android:id="@id/failure_asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sample_bar_padding" android:src="@drawable/upsell_triangle" />
+        <TextView android:id="@id/series_bar_expandable_details_text" android:layout_toRightOf="@id/failure_asset" style="@style/upsell_bar_expandable_message" />
+    </LinearLayout>
+    <Button android:id="@id/series_bar_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_below="@id/series_bar_expandable_details" style="@style/upsell_bar_button_orange" />
+    <Button android:id="@id/series_bar_buy_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_below="@id/series_bar_expandable_details" style="@style/upsell_bar_button_orange" />
+    <ImageView android:id="@id/series_bar_ku_badge" android:layout_below="@id/series_bar_buy_button" android:layout_centerHorizontal="true" style="@style/kindle_unlimited_badge" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/series_bar_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/series_bar_expandable_details">
+        <TextView android:id="@id/series_bar_progress_text" style="@style/upsell_bar_text_progress" />
+        <ProgressBar android:id="@id/series_bar_progress_bar" android:layout_width="fill_parent" style="@style/upsell_bar_progress_bar" />
+    </RelativeLayout>
+</RelativeLayout>

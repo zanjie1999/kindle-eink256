@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/full_player_download_audio_layout" android:background="@color/player_view_cover_art_overlay_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/full_player_download_image_view" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/full_player_download_white" android:scaleType="center" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/main_player_download_text_size" android:textColor="@color/player_white_text" android:id="@id/full_player_tap_to_download" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/full_player_cover_art_text_margin" android:text="@string/download_audio" android:layout_below="@id/full_player_download_image_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

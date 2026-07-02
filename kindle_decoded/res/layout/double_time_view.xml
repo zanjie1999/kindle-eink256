@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/double_time_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/control_panel_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/background_layer_view" layout="@layout/background_layer" />
+    <include android:id="@id/dt_header_view" layout="@layout/dt_header" />
+    <include android:id="@id/dt_speed_reading_box_view" android:layout_width="@dimen/dt_speed_reading_box_width" android:layout_height="@dimen/dt_speed_reading_box_height" android:layout_centerInParent="true" layout="@layout/dt_speed_reading_box" />
+    <include android:id="@id/dt_word_container_view" layout="@layout/dt_word_container" />
+    <com.amazon.kindle.speedreading.clutch.ClutchView android:id="@id/clutchview" android:layout_width="fill_parent" android:layout_height="@dimen/dt_clutch_height" android:layout_centerInParent="true" android:alpha="0.0" />
+</RelativeLayout>

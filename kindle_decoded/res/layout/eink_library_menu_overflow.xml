@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ImageButton android:id="@id/eink_lib_menu_overflow_image_button" android:paddingLeft="@dimen/eink_actionbar_overflow_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eink_icon_actionbar_overflow" android:scaleType="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

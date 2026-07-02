@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/action_bar" android:background="?core_primary" android:layout_width="fill_parent" android:layout_height="@dimen/notification_navigation_bar_height" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" app:titleTextAppearance="@style/notification_cell_body" style="@style/notification_cell_footer">
+        <androidx.appcompat.widget.ActionBarContainer android:layout_gravity="left" android:id="@id/action_bar_done_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_action_bar_done_button_padding_left" android:layout_marginBottom="@dimen/notification_action_bar_done_button_padding_bottom">
+            <ThemeTextView android:textColor="@color/accent_3_light" android:ellipsize="end" android:id="@id/notification_action_bar_done_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inapp_notifications_actionbar_done_button" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_action_bar_done" android:textAllCaps="true" style="@style/notification_cell_body" />
+        </androidx.appcompat.widget.ActionBarContainer>
+        <androidx.appcompat.widget.ActionBarContainer android:layout_gravity="right" android:id="@id/action_bar_trash_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_action_bar_trash_icon_padding_right">
+            <ImageView android:id="@id/notification_action_bar_trash_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?navigation_bar_trash_button" android:scaleType="centerInside" android:contentDescription="@string/accessibility_action_bar_trash" />
+        </androidx.appcompat.widget.ActionBarContainer>
+        <ThemeTextView android:layout_gravity="right" android:id="@id/notification_action_bar_selected_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/notification_action_bar_selected_count_view_padding_right" android:layout_centerVertical="true" android:textAllCaps="true" style="@style/notification_action_bar_text" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:background="?notification_bar_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/notification_navigation_bar_border" />
+</LinearLayout>

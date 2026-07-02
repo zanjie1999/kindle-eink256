@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bookmark_view_row" android:background="?readerListItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/bookmark_view_row_horizontal_padding" android:paddingTop="@dimen/bookmark_view_row_vertical_padding" android:paddingRight="@dimen/bookmark_view_row_drawable_padding" android:paddingBottom="@dimen/bookmark_view_row_vertical_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/bookmark_view_row_height" android:layout_weight="4.0">
+        <TextView android:id="@id/bookmark_view_row_book_text" android:text="@string/bookmark_view_row_default_text" style="@style/bookmark_view_row_book_text" />
+        <TextView android:id="@id/bookmark_view_row_location" android:text="@string/bookmark_view_row_loc" android:layout_below="@id/bookmark_view_row_book_text" style="@style/bookmark_view_row_page_text" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bookmark_edit_expand" android:background="@android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/bookmark_view_drawable_width" android:layout_height="fill_parent" android:contentDescription="@string/named_bookmarks_expand">
+        <ImageView android:id="@id/bookmark_edit_expand_pencil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_books_edit_bookmark_amazon_light" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/bookmark_edit_color" android:background="@android:color/transparent" android:layout_width="@dimen/bookmark_view_row_color_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

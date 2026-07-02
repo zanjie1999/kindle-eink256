@@ -1,0 +1,2 @@
+# add your module here in the format of module_name.module=your_implementation_of_Module_interface
+# ex: periodicals.module=com.amazon.kindle.periodicals.NewsstandModules

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/startactions_dialog_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/endactions_amazon_black" android:id="@id/tutorial_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/startactions_autoshelving_blocking_tutorial_title" style="@style/anyactions_amazon_text_medium_small" />
+        <TextView android:textColor="@color/endactions_amazon_black" android:id="@id/tutorial_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/startactions_autoshelving_blocking_tutorial_content" style="@style/anyactions_amazon_text_small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@color/startactions_blocking_tutorial_button_text_affirmative" android:id="@id/button_enable_autoshelving" android:background="@color/startactions_blocking_tutorial_button_background_affirmative" android:layout_marginRight="@dimen/blocking_tutorial_padding" android:text="@string/startactions_autoshelving_blocking_tutorial_choice_affirmative" style="@style/startactions_blocking_tutorial_button" />
+        <Button android:textColor="@color/startactions_blocking_tutorial_button_text_negative" android:id="@id/button_disable_autoshelving" android:background="@color/startactions_blocking_tutorial_button_background_negative" android:text="@string/startactions_autoshelving_blocking_tutorial_choice_negative" style="@style/startactions_blocking_tutorial_button" />
+    </LinearLayout>
+</LinearLayout>

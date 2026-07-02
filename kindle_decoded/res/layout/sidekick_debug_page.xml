@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/sk_page_size_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remove limit on number of cards displayed" />
+        <CheckBox android:id="@id/sk_force_feed_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force feed, DB, and cover-cache expired/reduce throttling to 10s" />
+        <CheckBox android:id="@id/sk_disable_card_shuffling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable card shuffling" />
+        <CheckBox android:id="@id/sk_web_cards_enabled_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Web Cards on Sidekick (requires UX V2)" />
+        <CheckBox android:id="@id/sk_author_follow_error_enabled_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force author follow card API call failure when pressing follow button" />
+        <CheckBox android:id="@id/sk_debug_cards_enabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable debug card data" />
+        <Button android:id="@id/sk_dismissed_cards_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear dismissed flags for cards" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Page ID Override" />
+        <EditText android:id="@id/sk_page_id_override" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sidekick Endpoint" />
+        <RadioGroup android:id="@id/sk_endpoint_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/sk_prod_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="amazon.com" />
+            <RadioButton android:id="@id/sk_preprod_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="from 'Gamma Endpoint'" />
+            <RadioButton android:id="@id/sk_file_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="from '/sdcard/sk-endpoint'" />
+            <RadioButton android:id="@id/sk_custom_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="from 'Custom Endpoint'" />
+        </RadioGroup>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Gamma Endpoint" />
+        <Spinner android:id="@id/sk_endpoint_dropdown" android:background="@android:drawable/btn_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Custom Endpoint" />
+        <EditText android:id="@id/sk_custom_endpoint_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+    </LinearLayout>
+</ScrollView>

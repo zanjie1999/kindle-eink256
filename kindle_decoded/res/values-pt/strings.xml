@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_cancel">Cancelar</string>
+    <string name="aa_no">Não</string>
+    <string name="aa_yes">Sim</string>
+    <string name="abc_action_bar_home_description">Navegar para a página inicial</string>
+    <string name="abc_action_bar_up_description">Navegar para cima</string>
+    <string name="abc_action_menu_overflow_description">Mais opções</string>
+    <string name="abc_action_mode_done">Concluído</string>
+    <string name="abc_activity_chooser_view_see_all">Ver tudo</string>
+    <string name="abc_activitychooserview_choose_application">Selecione um app</string>
+    <string name="abc_capital_off">DESATIVAR</string>
+    <string name="abc_capital_on">ATIVAR</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">espaço</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Pesquisar...</string>
+    <string name="abc_searchview_description_clear">Limpar consulta</string>
+    <string name="abc_searchview_description_query">Consulta de pesquisa</string>
+    <string name="abc_searchview_description_search">Pesquisar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Pesquisa por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartilhar com</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartilhar com %s</string>
+    <string name="abc_toolbar_collapse_description">Recolher</string>
+    <string name="accessibility_action_bar_count">%1$d notificações selecionadas.</string>
+    <string name="accessibility_action_bar_done">Concluído. Cancela e desmarca todas as notificações.</string>
+    <string name="accessibility_action_bar_trash">Excluir as notificações selecionadas.</string>
+    <string name="accessibility_bell_icon_with_badge">Notificações. Botão. %1$d notificações novas.</string>
+    <string name="accessibility_bell_icon_without_badge">Notificações. Botão.</string>
+    <string name="accessibility_fos_actions_when_multi_delete_and_not_selected">Toque duas vezes e mantenha pressionado para selecionar esta notificação.</string>
+    <string name="accessibility_fos_actions_when_multi_delete_and_selected">Toque duas vezes e mantenha pressionado para desmarcar esta notificação.</string>
+    <string name="accessibility_fos_actions_when_not_in_multi_delete">Toque duas vezes para ativar. Toque duas vezes e mantenha pressionado para selecionar e excluir esta notificação.</string>
+    <string name="accessibility_multi_delete_entered">Exibindo a barra de ferramentas com o botão excluir. Navegar até excluir notificações selecionadas.</string>
+    <string name="accessibility_multi_delete_exited">A barra de ferramentas com o botão excluir está oculta.</string>
+    <string name="accessibility_multi_delete_notifications_deleted">%1$d notificações excluídas.</string>
+    <string name="accessibility_new_notification">Nova notificação</string>
+    <string name="accessibility_normal_cell_long_click_to_delete">Toque duas vezes e mantenha pressionado para selecionar e excluir esta notificação.</string>
+    <string name="accessibility_select">selecionar</string>
+    <string name="accessibility_selected">Selecionado</string>
+    <string name="accessibility_tool_bar_back">Voltar</string>
+    <string name="accessibility_unselect">desmarcar</string>
+    <string name="accessibility_unselected">Desmarcado</string>
+    <string name="anyactions_author_affinity_button_processing">Processando…</string>
+    <string name="anyactions_author_follow_button_follow">Seguir</string>
+    <string name="anyactions_author_follow_button_following">Seguindo</string>
+    <string name="anyactions_author_follow_hint_follow">Obtenha atualizações sobre novos lançamentos, melhoria nas recomendações e, em breve, muito mais.</string>
+    <string name="anyactions_author_follow_hint_follow_multiple">Siga o autor para obter atualizações sobre novos lançamentos, melhoria nas recomendações e, em breve, muito mais.</string>
+    <string name="anyactions_content_description_close">Fechar</string>
+    <string name="anyactions_ok">OK</string>
+    <string name="anyactions_widget_goodreads_custom_shelf_warning_dialog_message">Mover este livro fará com que seja removido da atual prateleira personalizada. Tem certeza de que deseja remover?</string>
+    <string name="anyactions_widget_goodreads_custom_shelf_warning_dialog_negative_action">Cancelar</string>
+    <string name="anyactions_widget_goodreads_custom_shelf_warning_dialog_positive_action">Sim</string>
+    <string name="anyactions_widget_goodreads_custom_shelf_warning_dialog_title">Tem certeza?</string>
+    <string name="anyactions_widget_goodreads_offline_subtle_jit">Parece que você está off-line. Mantenha a opção ativada para atualizar sua atividade de leitura no Goodreads quando estiver on-line novamente.</string>
+    <string name="anyactions_widget_goodreads_remove_book_warning_dialog_message">Remover um livro exclui todas as atividades desse livro (curtidas, comentários, classificações, avaliações, citações, etc.) do seu perfil do Goodreads</string>
+    <string name="anyactions_widget_goodreads_remove_book_warning_dialog_negative_action">@string/anyactions_widget_goodreads_custom_shelf_warning_dialog_negative_action</string>
+    <string name="anyactions_widget_goodreads_remove_book_warning_dialog_positive_action">Remover</string>
+    <string name="anyactions_widget_goodreads_remove_book_warning_dialog_title">@string/anyactions_widget_goodreads_custom_shelf_warning_dialog_title</string>
+    <string name="anyactions_widget_goodreads_shelf_currently_reading">Lendo atualmente</string>
+    <string name="anyactions_widget_goodreads_shelf_not_on_profile">Não presente em meu perfil</string>
+    <string name="anyactions_widget_goodreads_shelf_read">Li</string>
+    <string name="anyactions_widget_goodreads_shelf_remove_from_profile">Remover do perfil</string>
+    <string name="anyactions_widget_goodreads_shelf_want_to_read">Quero ler</string>
+    <string name="anyactions_widget_goodreads_update_failed_dialog_button">@string/anyactions_ok</string>
+    <string name="anyactions_widget_goodreads_update_failed_dialog_message">Ocorreu um erro ao atualizar o perfil do Goodreads. Tente novamente ou acesse o site ou app do Goodreads para fazer essa alteração.</string>
+    <string name="anyactions_widget_goodreads_update_failed_subtle_jit_message">Ocorreu um erro anteriormente ao atualizar o perfil do Goodreads para este livro. Tente atualizar seu perfil novamente.</string>
+    <string name="anyactions_widget_goodreads_update_failed_unlinked_dialog_button">@string/anyactions_ok</string>
+    <string name="anyactions_widget_goodreads_update_failed_unlinked_dialog_message">Ocorreu um erro ao atualizar o perfil do Goodreads. Associe à sua conta do Goodreads nas Configurações do Kindle.</string>
+    <string name="anyactions_widget_goodreads_update_failed_unlinked_dialog_message_no_linking_flow">Ocorreu um erro ao atualizar o perfil do Goodreads. Acesse o site do Goodreads para vincular à sua conta.</string>
+    <string name="anyactions_widget_share_text">Compartilhar</string>
+    <string name="author_anonymity">Anônimo</string>
+    <string name="authors_separator">", "</string>
+    <string name="before_you_go">Antes de ir…</string>
+    <string name="before_you_go_left_nav">Antes de ir</string>
+    <string name="book_recommend_button_text">Recomendar este livro</string>
+    <string name="book_share_button_text">Compartilhar este livro</string>
+    <string name="chooser_title">Compartilhar com:</string>
+    <string name="clipping_limit_ellipses">…</string>
+    <string name="com_facebook_choose_friends">Escolher amigos</string>
+    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
+    <string name="com_facebook_internet_permission_error_message">A conexão ao WebView requer permissão da INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Erro do AndroidManifest</string>
+    <string name="com_facebook_loading">Carregando...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
+    <string name="com_facebook_loginview_log_in_button">Fazer login com o Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Sair</string>
+    <string name="com_facebook_loginview_log_out_button">Sair</string>
+    <string name="com_facebook_loginview_logged_in_as">Conectado como: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Conectado usando o Facebook</string>
+    <string name="com_facebook_logo_content_description">Logotipo do Facebook</string>
+    <string name="com_facebook_nearby">Próximos</string>
+    <string name="com_facebook_picker_done_button_text">Concluído</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d esteve aqui</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d esteve aqui</string>
+    <string name="com_facebook_requesterror_password_changed">Sua senha do Facebook foi alterada. Faça login neste aplicativo novamente para se reconectar a sua conta do Facebook.</string>
+    <string name="com_facebook_requesterror_permissions">Esta ação não é permitida neste aplicativo. Para alterar as permissões, tente fazer login no aplicativo novamente.</string>
+    <string name="com_facebook_requesterror_reconnect">Faça login neste aplicativo novamente para se reconectar a sua conta do Facebook.</string>
+    <string name="com_facebook_requesterror_relogin">Faça login neste aplicativo novamente para se reconectar a sua conta do Facebook.</string>
+    <string name="com_facebook_requesterror_web_login">Sua conta do Facebook está bloqueada. Faça login em www.facebook.com para continuar.</string>
+    <string name="com_facebook_tooltip_default">Novo! Você está no controle: escolha quais informações deseja compartilhar com os aplicativos.</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">Fazer login…</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">Conectado</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">Não conectado</string>
+    <string name="date_string_now">Agora</string>
+    <string name="delivered_time_format">h:mm a</string>
+    <string name="delivered_yesterday">Ontem</string>
+    <string name="detail_page_url_format">http://www.amazon.com/dp/%s/</string>
+    <string name="dialog_fragment_cancel_text">Cancelar</string>
+    <string name="dialog_fragment_clipping_limit_exceeded_message">Sua seleção de texto excede o limite de compartilhamento para este livro.</string>
+    <string name="dialog_fragment_message_generic_error">Não é possível concluir compartilhamento. Tente novamente.</string>
+    <string name="dialog_fragment_no_connection_message">Verifique sua conexão de rede Wi-Fi ou de celular e tente novamente.</string>
+    <string name="dialog_fragment_no_connection_title">Sem conexão com a Internet</string>
+    <string name="dialog_fragment_ok_text">OK</string>
+    <string name="dialog_fragment_settings_text">Configurações</string>
+    <string name="dialog_fragment_title_error">Erro</string>
+    <string name="dialog_fragment_title_unable_to_share">Não é possível compartilhar</string>
+    <string name="email_chooser_dialog_title">Selecione um aplicativo para enviar por e-mail:</string>
+    <string name="email_share_book_formatter">"Oi, acho que você deve ver este livro, \"%1$s\" de %2$s.
+
+ Comece a ler gratuitamente: %3$s
+
+ --------------
+
+ Leia em qualquer lugar gratuitamente: baixe o Kindle para Android, iOS, PC, Mac e mais
+%4$s"</string>
+    <string name="email_share_book_subject_formatter_a">Veja este livro: \"%1$s\"</string>
+    <string name="email_share_progress_book_done">Acabei de terminar a leitura</string>
+    <string name="email_share_progress_formatter">"Oi, imagino que você pode achar isso interessante: %1$s \"%2$s\" de %3$s .
+
+ %4$s %5$s
+
+ --------------
+
+ Leia em qualquer lugar gratuitamente: baixe o Kindle para Android, iOS, PC, Mac e mais
+%6$s"</string>
+    <string name="email_share_progress_reading">"Estou %1$d%% até "</string>
+    <string name="email_share_progress_subject_formatter_book_done_a">Veja este livro: \"%1$s\"</string>
+    <string name="email_share_progress_subject_formatter_reading_a">Lendo este livro no momento: \"%1$s\"</string>
+    <string name="email_share_progress_try_app_book_done">Experimente gratuitamente:</string>
+    <string name="email_share_progress_try_app_reading">Comece a ler gratuitamente:</string>
+    <string name="email_share_quote_formatter">"Oi, estou lendo \"%1$s\" de %2$s e quis compartilhar esta citação com você.
+
+ \"%3$s\"
+
+ Comece a ler este livro gratuitamente: %4$s
+
+ --------------
+
+ Leia em qualquer lugar gratuitamente: baixe o Kindle para Android, iOS, PC, Mac e mais
+%5$s"</string>
+    <string name="email_share_quote_subject_formatter_a">Citação interessante de \"%1$s\"</string>
+    <string name="email_share_quote_with_image_body_formatter">@string/share_quote_with_image_formatter</string>
+    <string name="email_share_quote_with_image_subject_formatter">Cita&amp;ccedil;&amp;atilde;o interessante de %1$s</string>
+    <string name="endactions_autoshelving_tutorial_content">Novo! Permita que seus amigos e seguidores saibam automaticamente que você concluiu a leitura.</string>
+    <string name="endactions_borrow">Leia de graça</string>
+    <string name="endactions_buy_now">Comprar Agora</string>
+    <string name="endactions_buy_with_price">Comprar por %1$s</string>
+    <string name="endactions_cancel">Cancelar</string>
+    <string name="endactions_default_author_bio">Biografia do autor não disponível</string>
+    <string name="endactions_ellipsis">...</string>
+    <string name="endactions_in_you_library">Na sua biblioteca</string>
+    <string name="endactions_learn_more">Saiba mais</string>
+    <string name="endactions_learn_more_about_this_book">Saiba mais sobre este livro</string>
+    <string name="endactions_ok">OK</string>
+    <string name="endactions_onetap_add_to_lib">Adicionar à biblioteca</string>
+    <string name="endactions_onetap_buy_cancel_success">Pedido cancelado</string>
+    <string name="endactions_onetap_general_error">Ocorreu algum problema. Tente novamente mais tarde ou entre em contato com o atendimento ao cliente.</string>
+    <string name="endactions_onetap_membership_badge_text">Incluído na sua assinatura</string>
+    <string name="endactions_onetap_order_processing_fail">Desculpe, tivemos um problema ao fazer o seu pedido. Clique aqui para tentar novamente na loja.</string>
+    <string name="endactions_onetap_processing">Processando...</string>
+    <string name="endactions_onetap_purchase_success">Agradecemos pelo seu pedido</string>
+    <string name="endactions_onetap_reach_borrow_limit">Você atingiu o seu limite de empréstimos. Para pegar essa obra emprestada, toque aqui e devolva pelo menos um dos seus livros.</string>
+    <string name="endactions_onetap_read_samples">Ler amostra grátis</string>
+    <string name="endactions_rate_book">Classificar este livro</string>
+    <string name="endactions_review_accessibility_selected_rating">Selecionada classificação %d de 5.</string>
+    <string name="endactions_review_book">Avaliar este livro</string>
+    <string name="endactions_reviews_amazon">Amazon</string>
+    <string name="endactions_reviews_amazon_customer">Cliente Amazon</string>
+    <string name="endactions_reviews_ampersand"> e </string>
+    <string name="endactions_reviews_author_by">Por %1$s</string>
+    <string name="endactions_reviews_editing_activity_title">Escrever uma avaliação para este livro</string>
+    <string name="endactions_reviews_error_message">Desculpe, mas estamos com um problema. Envie sua avaliação novamente.</string>
+    <string name="endactions_reviews_goodreads">Goodreads</string>
+    <string name="endactions_reviews_have_not_submitted">Você não enviou sua avaliação</string>
+    <string name="endactions_reviews_headline">Título</string>
+    <string name="endactions_reviews_headline_hint">Título ou resumo para a sua avaliação</string>
+    <string name="endactions_reviews_kindle_customer">Cliente Kindle</string>
+    <string name="endactions_reviews_max_length">Tamanho máximo atingido.</string>
+    <string name="endactions_reviews_on_amazon_and_goodreads">Na Amazon (como %1$s) e Goodreads</string>
+    <string name="endactions_reviews_on_amazon_as">Na Amazon (como %1$s)</string>
+    <string name="endactions_reviews_on_amazon_no_name">Na Amazon</string>
+    <string name="endactions_reviews_on_goodreads">Na Goodreads</string>
+    <string name="endactions_reviews_options">Opções</string>
+    <string name="endactions_reviews_options_cancel">Cancelar</string>
+    <string name="endactions_reviews_options_edit">Editar</string>
+    <string name="endactions_reviews_options_edit_amazon_name">Nome público na Amazon:</string>
+    <string name="endactions_reviews_options_edit_name">Editar nota</string>
+    <string name="endactions_reviews_options_must_select_one">Você deve selecionar uma opção.</string>
+    <string name="endactions_reviews_options_ok">OK</string>
+    <string name="endactions_reviews_options_post_review_on">Publicar avaliação em:</string>
+    <string name="endactions_reviews_options_public_name">Nome público: %1$s</string>
+    <string name="endactions_reviews_options_save">Salvar</string>
+    <string name="endactions_reviews_post_on_amazon">Publicado na Amazon (como %1$s)</string>
+    <string name="endactions_reviews_post_on_amazon_and_goodreads">Publicado na Amazon (como %1$s) e na Goodreads</string>
+    <string name="endactions_reviews_post_on_goodreads">Publicado na Goodreads</string>
+    <string name="endactions_reviews_posted_on_date">Publicado em %1$s</string>
+    <string name="endactions_reviews_rating_bar_clear_description">Botão Limpar classificação</string>
+    <string name="endactions_reviews_rating_error_dialog_button">@string/anyactions_ok</string>
+    <string name="endactions_reviews_rating_error_dialog_message">Ocorreu um erro ao publicar sua avaliação. Tente novamente.</string>
+    <string name="endactions_reviews_rating_error_message">Desculpe, mas estamos com um problema. Envie sua classificação novamente.</string>
+    <string name="endactions_reviews_rating_posted">Sua classificação foi publicada.</string>
+    <string name="endactions_reviews_rating_posted_on_amazon">Sua classificação foi publicada na Amazon.</string>
+    <string name="endactions_reviews_rating_posted_on_amazon_and_goodreads">Sua classificação foi publicada na Amazon e na Goodreads.</string>
+    <string name="endactions_reviews_rating_posted_on_goodreads">Sua classificação foi publicada na Goodreads.</string>
+    <string name="endactions_reviews_rating_removed">Sua classificação foi removida.</string>
+    <string name="endactions_reviews_repeated_words">Palavras repetidas não contam. </string>
+    <string name="endactions_reviews_resubmit">Reenviar</string>
+    <string name="endactions_reviews_return_to_review">Voltar para a avaliação</string>
+    <string name="endactions_reviews_review_hint">"Escreva aqui sua avaliação
+Considerar:
+Por que você escolheu esta classificação?
+Do que você gostou ou não gostou?
+A quem você recomendaria este produto?"</string>
+    <string name="endactions_reviews_review_thank_you_amazon">Obrigado por enviar sua avaliação para a Amazon.</string>
+    <string name="endactions_reviews_review_thank_you_amazon_and_goodreads">Obrigado por enviar sua avaliação para a Amazon e a Goodreads.</string>
+    <string name="endactions_reviews_review_thank_you_default">Obrigado por enviar sua avaliação.</string>
+    <string name="endactions_reviews_review_thank_you_goodreads">Obrigado por enviar sua avaliação para a Goodreads.</string>
+    <string name="endactions_reviews_save_for_later">Salvar para mais tarde</string>
+    <string name="endactions_reviews_see_your_review">Consultar sua avaliação</string>
+    <string name="endactions_reviews_space_required"> necessária. </string>
+    <string name="endactions_reviews_star_rating">Iniciar leitura</string>
+    <string name="endactions_reviews_submit">Enviar</string>
+    <string name="endactions_reviews_ui_placeholder_text">Próximo</string>
+    <string name="endactions_reviews_viewing_activity_title">Visualizar sua avaliação para este livro</string>
+    <string name="endactions_reviews_your_rating">Sua classificação</string>
+    <string name="endactions_see_in_store">Visualizar na loja</string>
+    <string name="endactions_sharing_prefill_title">terminou %1$s</string>
+    <string name="endactions_sharing_prefill_title_author">terminou %1$s de %2$s</string>
+    <string name="endactions_sharing_recommend_this_book">Recomendar este livro</string>
+    <string name="endactions_title_by_author">%1$s de %2$s</string>
+    <string name="endactions_title_newline_by_author">"%1$s
+de %2$s"</string>
+    <string name="endactions_truncate_string">%1$s…</string>
+    <string name="endactions_unbuy_error">Desculpe, ocorreu um erro. Entre em contato com o atendimento ao cliente.</string>
+    <string name="endactions_widget_buy_cancel">Comprou por engano? Clique para cancelar a compra.</string>
+    <string name="endactions_widget_buy_cancel_one_tap">Comprou por engano? Clique aqui para cancelar o pedido.</string>
+    <string name="endactions_widget_buy_cancel_success">Compra cancelada com êxito</string>
+    <string name="endactions_widget_buy_download">Baixar</string>
+    <string name="endactions_widget_buy_downloading">Baixando…</string>
+    <string name="endactions_widget_buy_downloading_percent">Baixando…%1$d%%</string>
+    <string name="endactions_widget_buy_fail">Desculpe, parece haver um problema com a conclusão de sua compra. Toque para acessar a loja.</string>
+    <string name="endactions_widget_buy_fail_mfa_challenge">Para a sua proteção, uma verificação de pagamento é necessária. Verifique seu e-mail ou a Central de Mensagens para obter instruções para concluir a compra.</string>
+    <string name="endactions_widget_buy_fail_need_billing_info">Desculpe, não foi possível processar sua compra devido a um problema com suas informações de pagamento. Toque para acessar a loja e tente novamente.</string>
+    <string name="endactions_widget_buy_fail_price_increased">Desculpe, não foi possível processar sua compra devido a um aumento de preço. Toque para acessar a loja e tente novamente.</string>
+    <string name="endactions_widget_buy_processing">Processando…</string>
+    <string name="endactions_widget_buy_read_now">Ler Agora</string>
+    <string name="endactions_widget_goodreads_shelf_auto_prompt">Marcar como lido no Goodreads</string>
+    <string name="endactions_widget_goodreads_shelf_manual_prompt">No Goodreads como:</string>
+    <string name="endactions_widget_goodreads_shelf_marked_as_read_toast">Adicionar à prateleira “Lido”</string>
+    <string name="enjoyed_this_sample">Gostou desta amostra?</string>
+    <string name="expand_button_title">Avançado</string>
+    <string name="expiration_expired">Expira</string>
+    <string name="expiration_today">Expira hoje</string>
+    <string name="facebook_application_name">Kindle</string>
+    <string name="facebook_linkshare_caption">Por %1$s</string>
+    <string name="facebook_linkshare_progress_done_description_formatter">Terminei de ler este livro no Kindle para Android. Descrição: %1$s</string>
+    <string name="facebook_linkshare_progress_reading_description_formatter">Terminei de ler %1$d%% no Kindle para Android. Descrição: %2$s</string>
+    <string name="facebook_linkshare_quote_share_description_formatter">Citação compartilhada via Kindle para Android: \"%1$s\"</string>
+    <string name="facebook_linkshare_recommend_description_formatter">Compartilhado via Kindle para Android. Descrição: %1$s</string>
+    <string name="facebook_share_progress_fallback_string">%1$d%% Leia: %2$s</string>
+    <string name="facebook_share_quote_with_image_string">\#KindleQuote</string>
+    <string name="featuredbooks_reviews">avaliações</string>
+    <string name="featuredbooks_stars">estrelas</string>
+    <string name="featuredbooks_title">Mencionado neste livro</string>
+    <string name="image_url_format">http://ecx.images-amazon.com/images/P/%s.01._SX150_SCLZZZZZZZ_.jpg</string>
+    <string name="in_app_notifications_title">Notificações</string>
+    <string name="inapp_load_more">Carregando mais notificações</string>
+    <string name="inapp_loading_notifications">Carregando notificações</string>
+    <string name="inapp_notifications_actionbar_done_button">Concluído</string>
+    <string name="inapp_notifications_delete">Excluir</string>
+    <string name="inapp_notifications_dialog_button_got_it">Entendi</string>
+    <string name="inapp_notifications_empty_feed_text">Você não tem nenhuma notificação no momento. Verifique novamente mais tarde!</string>
+    <string name="inapp_notifications_retry">Tentar novamente</string>
+    <string name="kre_recaps_close_and_go_back_to_reading_label">Fechar e voltar para a leitura</string>
+    <string name="kre_recaps_jump_forward_label">AVANÇAR</string>
+    <string name="kre_recaps_jump_forward_sheet_label">Avance, já que você leu o resumo</string>
+    <string name="kre_recaps_jump_forward_to_chapter_name_label">Como você leu o resumo \"%1$s\" até o final, avance para o capítulo \"%2$s\".</string>
+    <string name="kre_recaps_read_recap_label">Ler resumo</string>
+    <string name="kre_recaps_read_recap_panel_label">Ler resumo</string>
+    <string name="kre_recaps_recap_label">Resumo</string>
+    <string name="kre_recaps_recap_of_chapter_label">Resumo de %1$s</string>
+    <string name="kre_recaps_recaps_description">Reveja as principais informações de cada capítulo</string>
+    <string name="kre_recaps_recaps_label">Resumos</string>
+    <string name="kre_recaps_table_of_content_close_label">Fechar</string>
+    <string name="kre_recaps_table_of_content_title_label">Índice</string>
+    <string name="messenger_linkshare_progress_done_description_formatter">Terminei de ler este livro no Kindle para Android. Descrição: %1$s</string>
+    <string name="messenger_linkshare_progress_reading_description_formatter">Terminei de ler %1$d%% no Kindle para Android. Descrição: %2$s</string>
+    <string name="messenger_linkshare_quote_share_description_formatter">Citação compartilhada via Kindle para Android: \"%1$s\"</string>
+    <string name="messenger_linkshare_recommend_description_formatter">Compartilhado via Kindle para Android. Descrição: %1$s</string>
+    <string name="notification_delete_all_confirmation_dialog_action_button">Excluir</string>
+    <string name="notification_delete_all_confirmation_dialog_cancel_button">Cancelar</string>
+    <string name="notification_delete_all_confirmation_dialog_message">Dica: você pode deslizar o dedo para a esquerda em uma notificação individual para excluí-la.</string>
+    <string name="notification_delete_all_confirmation_dialog_title">Isso excluirá todas as suas notificações</string>
+    <string name="notification_load_more_error_text">Opa! Ocorreu algum problema. Toque para atualizar.</string>
+    <string name="notifications_delete_error_dialog_message">Ocorreu um erro e não foi possível excluir a mensagem neste momento. Tente novamente mais tarde.</string>
+    <string name="notifications_delete_error_dialog_title">Não é possível excluir</string>
+    <string name="notifications_network_error_dialog_message">Você não tem nenhuma conexão com a internet no momento.</string>
+    <string name="notifications_network_error_dialog_title">Sem conexão com a Internet</string>
+    <string name="progress_share_button_text_library">Compartilhar progresso</string>
+    <string name="progress_share_button_text_reader">Compartilhar progresso</string>
+    <string name="quote_share_button_text">Compartilhar</string>
+    <string name="readingactions_bottomsheet_title_widget_description_collapsed">As informações sobre este livro estão ocultas. Toque duas vezes ou deslize para cima para exibi-las.</string>
+    <string name="readingactions_bottomsheet_title_widget_description_expanded">As informações sobre este livro estão sendo exibidas. Toque duas vezes ou deslize para baixo para ocultá-las.</string>
+    <string name="readingactions_bottomsheet_title_widget_typical_time_to_read">Tempo típico para leitura</string>
+    <string name="readingactions_kre_madread_button_no_thank_you">Não, obrigado</string>
+    <string name="readingactions_kre_madread_rating_amazon">Classificar este livro na Amazon.</string>
+    <string name="readingactions_kre_madread_rating_amazon_goodreads">Classificar este livro na Amazon e no Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon">Classificação publicada na Amazon.</string>
+    <string name="readingactions_kre_madread_rating_posted_amazon_goodreads">Classificação publicada na Amazon e no Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_posted_goodreads">Classificação publicada no Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_remove">Remover classificação</string>
+    <string name="readingactions_kre_madread_rating_review_edit">Editar classificação e avaliação</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_goodreads">Obrigado! Sua classificação e avaliação para este livro foram publicadas no Goodreads.</string>
+    <string name="readingactions_kre_madread_rating_review_thank_you_processing">Obrigado! Estamos processando a sua avaliação. Isso pode levar vários dias, então agradecemos desde já pela sua paciência. Se você não vir a sua avaliação na página do produto ou na página do seu perfil depois de vários dias, talvez não tenhamos conseguido publicá-la conforme foi escrita. Leia as Diretrizes da comunidade da Amazon antes de reenviar sua avaliação.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon">Obrigado! Sua classificação para este livro foi publicada na Amazon.</string>
+    <string name="readingactions_kre_madread_rating_thank_you_amazon_goodreads">Obrigado! Sua classificação para este livro foi publicada na Amazon e no Goodreads.</string>
+    <string name="readingactions_kre_madread_review_add">Adicionar uma avaliação (opcional)</string>
+    <string name="readingactions_kre_madread_review_amazon">Avalie este livro na Amazon.</string>
+    <string name="readingactions_kre_madread_review_amazon_goodreads">Avaliar este livro na Amazon e no Goodreads.</string>
+    <string name="readingactions_kre_madread_review_body_hint">"Avaliar (20 palavras ou mais obrigatório)
+ ‐ O que você gostou e o que não gostou?
+ ‐ A quem você recomendaria esse livro?
+ ‐ Por que você escolheu essa classificação?"</string>
+    <string name="readingactions_kre_madread_review_post_amazon_goodreads">Publicar na Amazon (como %1$s) e no Goodreads</string>
+    <string name="readingactions_kre_madread_review_submitted">A avaliação foi enviada.</string>
+    <string name="readingactions_kre_madread_review_title_hint">Título da avaliação (obrigatório)</string>
+    <string name="search_menu_title">Pesquisar</string>
+    <string name="selection_share_button_text">Compartilhar a seleção</string>
+    <string name="series_bar_already_purchased">Você já possui o próximo livro da série.</string>
+    <string name="series_bar_header_nln">A seguir na série: </string>
+    <string name="series_bar_recent_cancel_multiline">Compre este título novamente dentro de alguns minutos. [[Saiba mais.]]</string>
+    <string name="share_app_name_email">E-mail</string>
+    <string name="share_app_name_facebook">Facebook</string>
+    <string name="share_app_name_flipboard">Flipboard</string>
+    <string name="share_app_name_goodreads">Goodreads</string>
+    <string name="share_app_name_google_plus">Google Plus</string>
+    <string name="share_app_name_hangouts">Pontos de encontro</string>
+    <string name="share_app_name_kik">Kik</string>
+    <string name="share_app_name_line">LINHA</string>
+    <string name="share_app_name_linkedin">LinkedIn</string>
+    <string name="share_app_name_message">Mensagem</string>
+    <string name="share_app_name_messenger">Messenger</string>
+    <string name="share_app_name_more">Mais</string>
+    <string name="share_app_name_pinterest">Pinterest</string>
+    <string name="share_app_name_reddit">Reddit</string>
+    <string name="share_app_name_skype">Skype</string>
+    <string name="share_app_name_stumbleupon">StumbleUpon</string>
+    <string name="share_app_name_tumblr">Tumblr</string>
+    <string name="share_app_name_twitter">Twitter</string>
+    <string name="share_app_name_wechat">WeChat</string>
+    <string name="share_app_name_weibo">Weibo</string>
+    <string name="share_app_name_whatsapp">Whatsapp</string>
+    <string name="share_book_formatter_a">"Acho que você gostaria deste livro: \"%1$s\" de %2$s.
+
+Comece a ler gratuitamente: %3$s"</string>
+    <string name="share_dialog_title_book">Recomendar o livro</string>
+    <string name="share_dialog_title_default">Compartilhar</string>
+    <string name="share_dialog_title_falkor_story">Recomendar esta historia</string>
+    <string name="share_dialog_title_progress">Compartilhar andamento da leitura</string>
+    <string name="share_dialog_title_quote">Compartilhar citação</string>
+    <string name="share_progress_book_done_formatter_a">"Acabei de ler este livro e acho que você pode gostar: \"%1$s\" de %2$s.
+
+Comece a Comece a ler gratuitamente: %3$s"</string>
+    <string name="share_progress_book_reading_formatter_a">"Estou %1$d%% com este livro e acho que você pode gostar: \"%2$s\" de %3$s.
+
+ Comece a ler gratuitamente: %4$s"</string>
+    <string name="share_quote_formatter_a">"Lembrei de você quando li esta citação de \"%1$s\" de %2$s -
+
+\"%3$s\"
+
+Comece a ler este livro gratuitamente: %4$s"</string>
+    <string name="share_quote_with_image_formatter">Veja esta citação %1$s</string>
+    <string name="sms_share_book_formatter_a">Acho que você vai gostar desse livro: %1$s</string>
+    <string name="sms_share_progress_formatter_book_done_a">Acabei de ler este livro. Talvez você goste: %1$s</string>
+    <string name="sms_share_progress_formatter_reading_a">Li %1$d%% deste livro. Veja: %2$s</string>
+    <string name="sms_share_quote_by_author">" de %1$s"</string>
+    <string name="sms_share_quote_formatter_a">Citação interessante de um livro que estou lendo: %1$s</string>
+    <string name="sms_share_quote_with_image_formatter">@string/share_quote_with_image_formatter</string>
+    <string name="spinner_dialog_fragment_message">Aguarde</string>
+    <string name="startactions_autoshelving_blocking_tutorial_choice_affirmative">@string/anyactions_ok</string>
+    <string name="startactions_autoshelving_blocking_tutorial_choice_negative">AGORA NÃO</string>
+    <string name="startactions_autoshelving_blocking_tutorial_content">Novo! Permita que seus amigos vejam os livros que você começou a ler. No caso dos livros que deseja manter em particular, basta desativar a opção.</string>
+    <string name="startactions_autoshelving_blocking_tutorial_title">Auto-atualização no Goodreads</string>
+    <string name="startactions_content_description_content_container">Mostrando informações sobre este livro.</string>
+    <string name="startactions_content_description_dismiss_overlay">Descartar sobreposição. Toque duas vezes para descartar informações sobre este livro.</string>
+    <string name="startactions_feature_title">Sobre este Livro</string>
+    <string name="startactions_header_close_content_description">Toque duas vezes para fechar informações sobre este livro.</string>
+    <string name="startactions_left_nav_button_content_description">Sobre este livro. Toque duas vezes para ver mais informações sobre este livro.</string>
+    <string name="startactions_reader_settings_subtitle">Mostrar informações sobre o livro na primeira vez em que eu abri-lo</string>
+    <string name="startactions_see_in_store_content_description">. Toque duas vezes para ver na loja.</string>
+    <string name="startactions_send_feedback_dialog_comments_hint">Observe que não conseguimos responder diretamente ao comentário enviado através deste formulário</string>
+    <string name="startactions_send_feedback_dialog_comments_prompt">Comentários adicionais (opcional):</string>
+    <string name="startactions_send_feedback_dialog_failure">Não foi possível enviar comentário. Tente novamente mais tarde.</string>
+    <string name="startactions_send_feedback_dialog_prompt">Você achou este recurso útil? (obrigatório)</string>
+    <string name="startactions_send_feedback_dialog_send">Enviar</string>
+    <string name="startactions_send_feedback_dialog_success">Comentário enviado com êxito</string>
+    <string name="startactions_serial_comma">,</string>
+    <string name="startactions_widget_audible_error_text">Desculpe, ocorreu um erro.</string>
+    <string name="startactions_widget_author_text_list_additional_authors">"Autores adicionais: "</string>
+    <string name="startactions_widget_error_message">Ocorreu um erro, tente novamente.</string>
+    <string name="startactions_widget_goodreads_content_description">Goodreads</string>
+    <string name="startactions_widget_goodreads_shelf_auto_accessibility_prompt">Toque duas vezes para alternar a configuração</string>
+    <string name="startactions_widget_goodreads_shelf_auto_accessibility_value_off">Desativado</string>
+    <string name="startactions_widget_goodreads_shelf_auto_accessibility_value_on">Ativado</string>
+    <string name="startactions_widget_goodreads_shelf_auto_prompt">Marcar como Lendo Atualmente</string>
+    <string name="startactions_widget_goodreads_shelf_disabled_subtle_jit">Ler com amigos é mais divertido. Ative esta opção para permitir que seus amigos e seguidores vejam os livros que você começou a ler.</string>
+    <string name="startactions_widget_goodreads_shelf_manual_accessibility_prompt">Toque duas vezes para alterar a prateleira atual</string>
+    <string name="startactions_widget_goodreads_shelf_manual_prompt">Em meu perfil como:</string>
+    <string name="startactions_widget_goodreads_shelf_subtle_jit">Ler com amigos é mais divertido. Mantenha a opção ativada para permitir que seus amigos e seguidores vejam os livros que você começou a ler.</string>
+    <string name="startactions_widget_goodreads_shelf_title">Goodreads</string>
+    <string name="startactions_widget_goodreads_teaser_button">Começar</string>
+    <string name="startactions_widget_goodreads_teaser_content_description_button">Começar no Goodreads.</string>
+    <string name="startactions_widget_goodreads_teaser_text">Compartilhe no Goodreads o que você está lendo!</string>
+    <string name="startactions_widget_header_num_reviews">(%d)</string>
+    <string name="startactions_widget_header_num_reviews_content_description">%d avaliações,</string>
+    <string name="startactions_widget_header_see_in_store_content_description">Toque duas vezes para ver na loja</string>
+    <string name="startactions_widget_header_stars_content_description">%d de 5 estrelas,</string>
+    <string name="startactions_widget_header_title_content_description">%s,</string>
+    <string name="startactions_widget_header_title_with_subtitle_content_description">%1$s de %2$s,</string>
+    <string name="startactions_widget_mark_as_reading_button">Marcar como Lendo Atualmente</string>
+    <string name="startactions_widget_mark_as_reading_button_in_progress">Atualizando…</string>
+    <string name="startactions_widget_mark_as_reading_button_marked">Marcado como Lendo Atualmente</string>
+    <string name="startactions_widget_read_less">− Menos</string>
+    <string name="startactions_widget_read_less_content_description">Menos</string>
+    <string name="startactions_widget_read_more">+ Mais</string>
+    <string name="startactions_widget_reader_settings_button">Configurações</string>
+    <string name="startactions_widget_see_all">+ Ver tudo</string>
+    <string name="startactions_widget_see_in_store">Ver na loja</string>
+    <string name="startactions_widget_see_in_store_hint">Toque duas vezes para ver na loja.</string>
+    <string name="startactions_widget_send_feedback_text">Enviar comentários</string>
+    <string name="startactions_widget_time_to_read_less_than">Menos de %s</string>
+    <string name="startactions_widget_time_to_read_time_format">%1$s %2$s</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="story_recommend_button_text">Recomendar esta historia</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="toast_message_facebook_post_failed">Não é possível concluir compartilhamento via Facebook.</string>
+    <string name="toast_message_facebook_post_succeeded">Publicado em seu mural com êxito</string>
+    <string name="twitter_share_book_formatter_a">Veja este livro: \"%1$s\" de %2$s. %3$s</string>
+    <string name="twitter_share_progress_formatter_book_done_base_a">Veja este livro que terminei de ler, \"%1$s\" de %2$s: %3$s</string>
+    <string name="twitter_share_progress_formatter_reading_base_a">%1$d%% de \"%2$s\" de %3$s. Experimente este livro gratuitamente: %4$s</string>
+    <string name="twitter_share_quote_formatter_a">Veja esta citação: \"%1$s\" - \"%2$s\"%3$s %4$s</string>
+    <string name="twitter_share_quote_formatter_by_author">" de %1$s"</string>
+    <string name="upsell_bar_buy_for_free_nln">Grátis</string>
+    <string name="upsell_bar_cancel_nln">Obrigado! Comprou por engano? [[Cancelar pedido]]</string>
+    <string name="upsell_bar_canceling_nln">Cancelando compra…</string>
+    <string name="upsell_bar_download_nln">Baixar</string>
+    <string name="upsell_bar_payment_error">Houve um problema ao processar seu pagamento. Verifique [[Configurações de pagamento]]</string>
+    <string name="upsell_bar_payment_error_nln">Houve um problema ao processar seu pagamento. [[Verifique as informações de pagamento.]]</string>
+    <string name="upsell_bar_payment_failure_billing_details_multiline">Houve um problema com suas informações de faturamento. [[Tente novamente na loja.]]</string>
+    <string name="upsell_bar_payment_failure_mfa_challenge_details">Seu banco requer verificação de pagamento. Enviamos um e-mail para concluir esta compra.</string>
+    <string name="upsell_bar_payment_failure_multiline">Sua compra pode ter falhado. [[Confirme aqui.]]</string>
+    <string name="upsell_bar_payment_failure_price_increase_multiline">O preço aumentou. [[Vá até a loja para concluir sua compra.]]</string>
+    <string name="upsell_bar_processing_nln">Processando compra…</string>
+    <string name="upsell_bar_recent_cancel_multiline">Sua compra foi cancelada. Compre este título novamente dentro de alguns minutos. [[Saiba mais]]</string>
+    <string name="upsell_bar_store_nln">[[Ver detalhes na Loja Kindle.]]</string>
+    <string name="upsell_bar_title_owned">Agradecemos por sua compra.</string>
+    <string name="v7_preference_off">DESATIVADO</string>
+    <string name="v7_preference_on">ATIVADO</string>
+    <string name="whatsapp_share_book_formatter_a">"Acho que você gostaria deste livro: \"%1$s\" de %2$s.
+
+Comece a ler gratuitamente: %3$s"</string>
+    <string name="whatsapp_share_progress_book_done_formatter_a">"Acabei de ler este livro e acho que você pode gostar: \"%1$s\" de %2$s.
+
+Comece a Comece a ler gratuitamente: %3$s"</string>
+    <string name="whatsapp_share_progress_book_reading_formatter_a">"Estou %1$d%% com este livro e acho que você pode gostar: \"%2$s\" de %3$s.
+
+ Comece a ler gratuitamente: %4$s"</string>
+    <string name="whatsapp_share_quote_formatter_a">"Lembrei de você quando li esta citação de \"%1$s\" de %2$s -
+
+\"%3$s\"
+
+Comece a ler este livro gratuitamente: %4$s"</string>
+    <string name="xray_feedback_back">Voltar</string>
+    <string name="xray_feedback_content_inappropriate">Conteúdo é impróprio</string>
+    <string name="xray_feedback_content_incorrect">O conteúdo está incorreto</string>
+    <string name="xray_feedback_content_insufficient_details">Conteúdo requer mais detalhes</string>
+    <string name="xray_feedback_content_spoilers">O conteúdo tem spoilers</string>
+    <string name="xray_feedback_dialog_comment_hint_info_card">Adicionar avaliação</string>
+    <string name="xray_feedback_dialog_prompt_info_card">Conte-nos mais.</string>
+    <string name="xray_feedback_dialog_title_info_card">Outras avaliações</string>
+    <string name="xray_feedback_error_type_title">Informe o que podemos melhorar.</string>
+    <string name="xray_feedback_no_content_description">X-Ray não foi útil</string>
+    <string name="xray_feedback_other">Outras avaliações...</string>
+    <string name="xray_feedback_yes_content_description">X-Ray foi útil</string>
+    <string name="xray_info_card_feedback_helpful">Sim</string>
+    <string name="xray_info_card_feedback_not_helpful">Não</string>
+    <string name="xray_info_card_feedback_question">Foi útil?</string>
+    <string name="xray_info_card_log_feedback_separator">|</string>
+    <string name="xray_info_card_log_feedback_thankyou">Agradecemos seus comentários!</string>
+</resources>

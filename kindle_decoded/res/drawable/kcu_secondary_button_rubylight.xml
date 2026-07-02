@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/kcu_secondary_button_bc_disabled_rubylight" />
+    <item android:state_selected="true" android:drawable="@drawable/kcu_secondary_button_bc_highlighted_rubylight" />
+    <item android:state_pressed="true" android:drawable="@drawable/kcu_secondary_button_bc_highlighted_rubylight" />
+    <item android:state_focused="true" android:drawable="@drawable/kcu_secondary_button_bc_focused_rubylight" />
+    <item android:drawable="@drawable/kcu_secondary_button_bc_normal_rubylight" />
+</selector>

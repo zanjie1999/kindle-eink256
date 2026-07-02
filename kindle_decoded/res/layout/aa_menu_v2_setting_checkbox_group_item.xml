@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/aa_v2_setting_checkbox_layout" android:paddingTop="@dimen/aa_menu_v2_setting_item_vertical_offset" android:paddingBottom="@dimen/aa_menu_v2_setting_item_vertical_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/aa_v2_setting_checkbox_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AaMenuV2SettingTitle" />
+        <TextView android:id="@id/aa_v2_setting_checkbox_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" android:layout_marginRight="@dimen/aa_menu_v2_setting_subtitle_margin_right" style="@style/AaMenuV2SettingSubtitle" />
+    </LinearLayout>
+    <android.widget.CheckBox android:theme="@style/AaMenuV2SettingSwitchStyle" android:layout_gravity="center_vertical" android:id="@id/aa_v2_setting_checkbox" android:background="@android:color/transparent" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?aaMenuV2CheckboxDrawable" app:showText="false" />
+</merge>

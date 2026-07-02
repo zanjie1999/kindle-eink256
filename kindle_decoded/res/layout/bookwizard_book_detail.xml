@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/book_detail_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/book_detail_header" layout="@layout/bookwizard_book_detail_header" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/bookwizard_spinner" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/bookwizard_book_detail_error" />
+    <ScrollView android:id="@id/book_detail_body_scroll_view" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/book_detail_header">
+        <LinearLayout android:orientation="vertical" android:id="@id/book_detail_body_container" android:paddingLeft="@dimen/bookwizard_details_body_container_padding_left" android:paddingRight="@dimen/bookwizard_details_body_container_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bookwizard_details_book_author_text_font" android:textStyle="bold" android:id="@id/book_detail_reason_code_text_view" android:paddingBottom="@dimen/bookwizard_details_reason_text_padding_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/book_detail_book_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/book_cover_image_view" android:layout_width="@dimen/bookwizard_details_cover_width" android:layout_height="@dimen/bookwizard_details_cover_height" android:scaleType="fitStart" android:adjustViewBounds="false" />
+                <LinearLayout android:orientation="vertical" android:id="@id/book_detail_book_header_without_image_container" android:paddingLeft="@dimen/bookwizard_details_header_without_image_view_paddingLeft" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/bookwizard_details_book_title_text_font" android:id="@id/book_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/bookwizard_details_book_author_text_font" android:id="@id/book_author_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <include layout="@layout/bookwizard_book_detail_user_rating" />
+                    <ImageView android:id="@id/bookdetail_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookwizard_ku_logo_small" />
+                    <RatingBar android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/bookwizard_rating_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/bookwizard_ratings_bar_height" style="@style/bookwizard_rating_bar" />
+                    <Button android:id="@id/book_details_wtr_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/bookwizard_wtr_button_height" android:layout_marginTop="@dimen/bookwizard_details_wtr_button_margin_top" android:text="@string/want_to_read_button" style="@style/bookwizard_wtr_button" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/bookwizard_details_book_author_text_font" android:id="@id/book_description_text_view" android:paddingTop="@dimen/bookwizard_details_description_text_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/bookwizard_details_scroll_view_padding_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

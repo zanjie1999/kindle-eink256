@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fr_grid_item_standard_width">168.0dip</dimen>
+    <dimen name="ku_cancel_button_font_size">16.0sp</dimen>
+    <dimen name="ku_legalese_font_size">16.0sp</dimen>
+    <dimen name="ku_page_body_font_size">16.0sp</dimen>
+    <dimen name="ku_start_button_font_size">17.0sp</dimen>
+</resources>

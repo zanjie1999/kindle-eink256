@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_player_controls_right_margin">112.0dip</dimen>
+</resources>

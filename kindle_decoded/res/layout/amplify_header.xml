@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.speedreading.SystemMarginView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/amplify_title_bar" android:background="@drawable/dt_reader_top_chrome_white_bg" android:padding="@dimen/amplify_titlebar_padding" android:layout_width="fill_parent" android:layout_height="@dimen/amplify_titlebar_height">
+        <ImageButton android:id="@id/exit_amplify" android:background="?android:selectableItemBackground" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/dt_arrow_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/exit_amplify" android:layout_alignParentStart="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/exit_amplify" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/amplify_header_chapter_textsize" android:textStyle="normal" android:textColor="@color/amplify_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/chapter_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:fontFamily="sans-serif" />
+            <TextView android:textSize="@dimen/amplify_header_ttr_textsize" android:textStyle="normal" android:textColor="@color/amplify_text_color" android:gravity="center" android:id="@id/chapter_ttr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/chapter_title" android:fontFamily="sans-serif-light" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.amazon.kindle.speedreading.SystemMarginView>

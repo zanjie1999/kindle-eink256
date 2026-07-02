@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/module_share_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/module_export_to_sharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="24.0sp" android:layout_marginRight="32.0sp" android:layout_marginBottom="24.0sp">
+            <TextView android:textSize="@dimen/notebook_module_share_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/module_export_to_sharing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_export_title" android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/module_export_to_flashcards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0sp" android:layout_marginTop="24.0sp" android:layout_marginRight="32.0sp" android:layout_marginBottom="24.0sp">
+            <TextView android:textSize="@dimen/notebook_module_share_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/module_export_to_flashcards_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_create_flashcards" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

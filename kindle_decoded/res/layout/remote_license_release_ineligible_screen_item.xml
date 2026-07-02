@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/rlr_ineligible_device_list_text_1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rlr_ineligible_list_device_name" android:paddingLeft="@dimen/rlr_device_list_left_right_padding" android:paddingRight="@dimen/rlr_device_list_left_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rlr_device_list_text_1_top_margin" android:layout_marginBottom="@dimen/rlr_device_list_text_1_bottom_margin" android:maxLines="2" android:scrollHorizontally="false" />
+    <TextView android:textAppearance="@style/rlr_ineligible_device_list_text_2" android:ellipsize="end" android:id="@id/rlr_ineligible_list_date_subtitle" android:paddingLeft="@dimen/rlr_device_list_left_right_padding" android:paddingRight="@dimen/rlr_device_list_left_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rlr_device_list_text_2_bottom_margin" android:maxLines="1" />
+</LinearLayout>

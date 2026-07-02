@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="notebook_search_max_results_before_expander">4</integer>
+</resources>

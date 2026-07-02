@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.LibraryBookRow android:paddingLeft="@dimen/ruby_library_book_row_padding_horizontal" android:paddingTop="@dimen/ruby_library_book_row_padding_vertical" android:paddingRight="@dimen/ruby_library_book_row_padding_horizontal" android:paddingBottom="@dimen/ruby_library_book_row_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/library_book_row_height" style="?library_book_row_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cover_container" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/select_overlay_selector_list">
+        <ImageView android:id="@id/cover_image" android:layout_width="@dimen/library_book_row_cover_container_width" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/right_edge_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <include layout="@layout/library_book_row_right_edge_parent_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/lib_book_row_title_container" android:paddingLeft="@dimen/ruby_library_book_row_cover_title_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_edge_parent" android:layout_toRightOf="@id/cover_container">
+        <include layout="@layout/ruby_library_book_row_content" />
+    </RelativeLayout>
+</com.amazon.kcp.library.ui.LibraryBookRow>

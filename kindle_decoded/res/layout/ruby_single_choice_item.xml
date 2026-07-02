@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/select_dialog_text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/select_listview_item_view_height" android:drawableLeft="?ruby_radio_button" android:drawablePadding="@dimen/select_listview_item_drawable_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

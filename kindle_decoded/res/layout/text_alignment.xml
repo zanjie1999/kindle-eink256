@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.StandaloneTextAlignmentOptionsView android:id="@id/view_options_row_text_alignment" style="@style/view_options_row.text_alignment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.reader.ui.DottedButton android:id="@id/text_align_justify" android:focusable="true" style="@style/view_options_text_alignment_button">
+        <ImageView android:background="@null" android:src="@drawable/ic_text_alignment_justify" style="@style/wrap" />
+    </com.amazon.kcp.reader.ui.DottedButton>
+    <com.amazon.kcp.reader.ui.DottedButton android:id="@id/text_align_left" android:focusable="true" style="@style/view_options_text_alignment_button">
+        <ImageView android:background="@null" android:src="@drawable/ic_text_alignment_left" style="@style/wrap" />
+    </com.amazon.kcp.reader.ui.DottedButton>
+</com.amazon.kcp.reader.ui.StandaloneTextAlignmentOptionsView>

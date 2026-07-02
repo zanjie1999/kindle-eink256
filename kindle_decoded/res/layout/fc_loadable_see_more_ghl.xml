@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.amazon.kedu.flashcards.views.SeeMoreImageView android:id="@id/ghl_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/fc_card_side_accessibility_image_content" fc:maxZoom="@dimen/fc_max_ghl_zoom" xmlns:fc="http://schemas.android.com/apk/res-auto" />
+</merge>

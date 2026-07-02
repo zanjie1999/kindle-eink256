@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.BookCoverView android:id="@id/book_cover_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.library.ui.Cover android:id="@id/cover" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:id="@id/title_tag" style="@style/cover_title_tag" />
+    <TextView android:id="@id/author_tag" style="@style/cover_author_tag" />
+    <TextView android:id="@id/keep_tag" style="@style/cover_keep_tag" />
+    <View android:id="@id/dim_view" style="@style/cover_dim_view" />
+    <ProgressBar android:id="@id/lib_book_cell_download_progress_downloading" android:visibility="gone" android:max="100" android:indeterminate="false" android:layout_centerInParent="true" style="@style/Widget.ProgressBar.Horizontal.Downloading" />
+</com.amazon.kcp.library.ui.BookCoverView>

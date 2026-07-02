@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/goodreads_logo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_medium_padding" android:src="@drawable/ic_goodreads_logo" android:contentDescription="@string/startactions_widget_goodreads_content_description" />
+    <include layout="@layout/startactions_component_divider" />
+    <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:textColor="@color/startactions_amazon_red" android:id="@id/mark_as_reading_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_medium_padding" android:text="@string/startactions_widget_error_message" />
+    <Button android:textAppearance="@style/anyactions_amazon_text_roman_small" android:id="@id/mark_as_reading_button" android:background="@drawable/bg_startactions_borderless_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_medium_padding" android:minHeight="@dimen/startactions_button_height" android:text="@string/startactions_widget_mark_as_reading_button" android:singleLine="false" android:drawablePadding="@dimen/startactions_goodreads_drawables_button_padding" android:contentDescription="@string/startactions_widget_mark_as_reading_button" />
+</LinearLayout>

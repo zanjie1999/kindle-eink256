@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Kindle.Dark" parent="@style/Base.Kindle.Shared.Dark.v26" />
+    <style name="Base.Kindle.Light" parent="@style/Base.Kindle.Shared.Light.v26" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar" />
+    <style name="FCAppBaseTheme" parent="@style/FCAppBaseTheme.v26" />
+    <style name="FCAppBaseThemeLight" parent="@style/FCAppBaseThemeLight.v26" />
+    <style name="KCUTheme.RubyDark.Base" parent="@style/KCUTheme.RubyDark.v26" />
+    <style name="KCUTheme.RubyLight.Base" parent="@style/KCUTheme.RubyLight.v26" />
+    <style name="Theme.Dynamic.Ruby.Dark" parent="@style/Theme.Dynamic.Ruby.Dark.v26" />
+    <style name="Theme.Dynamic.Ruby.Light" parent="@style/Theme.Dynamic.Ruby.Light.v26" />
+    <style name="Theme.ReaderStyle" parent="@style/Theme.ReaderStyle.White.v26" />
+    <style name="Theme.ReaderStyle.Black" parent="@style/Theme.ReaderStyle.Shared.Black.v26" />
+    <style name="Theme.ReaderStyle.Green" parent="@style/Theme.ReaderStyle.Shared.Green.v26" />
+    <style name="Theme.ReaderStyle.Sepia" parent="@style/Theme.ReaderStyle.Shared.Sepia.v26" />
+    <style name="Theme.ReaderStyle.White" parent="@style/Theme.ReaderStyle.Shared.White.v26" />
+    <style name="Theme.SocialSharing.Dark" parent="@style/Theme.SocialSharing.Dark.Base.v26" />
+    <style name="Theme.SocialSharing.Light" parent="@style/Theme.SocialSharing.Light.Base.v26" />
+    <style name="Theme.Xray.Dark" parent="@style/Base.Theme.Xray.Dark.v26" />
+    <style name="Theme.Xray.Light" parent="@style/Base.Theme.Xray.Light.v26" />
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="anyactions_theme_dark" parent="@style/anyactions_theme_dark.base.v26" />
+    <style name="anyactions_theme_light" parent="@style/anyactions_theme_light.base.v26" />
+    <style name="chromeDarkTheme" parent="@style/chromeDarkTheme.v26" />
+    <style name="chromeLightTheme" parent="@style/chromeLightTheme.v26" />
+    <style name="Base.Kindle.Shared.Dark.v26" parent="@style/Base.Kindle.Shared.Dark.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Base.Kindle.Shared.Light.v26" parent="@style/Base.Kindle.Shared.Light.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Base.Theme.Xray.Dark.v26" parent="@style/Base.Theme.Xray.Dark.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Base.Theme.Xray.Light.v26" parent="@style/Base.Theme.Xray.Light.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="FCAppBaseTheme.v26" parent="@style/FCAppBaseTheme.v23">
+        <item name="android:navigationBarColor">@color/fc_background_chrome</item>
+    </style>
+    <style name="FCAppBaseThemeLight.v26" parent="@style/FCAppBaseThemeLight.v23">
+        <item name="android:navigationBarColor">@color/fc_background_chrome.light</item>
+    </style>
+    <style name="KCUTheme.RubyDark.v26" parent="@style/KCUTheme.RubyDark.v23">
+        <item name="android:navigationBarColor">@color/secondary_dark</item>
+    </style>
+    <style name="KCUTheme.RubyLight.v26" parent="@style/KCUTheme.RubyLight.v23">
+        <item name="android:navigationBarColor">@color/tertiary_2_light</item>
+    </style>
+    <style name="Theme.Dynamic.Ruby.Dark.v26" parent="@style/Theme.Dynamic.Ruby.Dark.v23">
+        <item name="android:navigationBarColor">?core_primary</item>
+    </style>
+    <style name="Theme.Dynamic.Ruby.Light.v26" parent="@style/Theme.Dynamic.Ruby.Light.v23">
+        <item name="android:navigationBarColor">?core_primary</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Black.v26" parent="@style/Theme.ReaderStyle.Shared.Black.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Green.v26" parent="@style/Theme.ReaderStyle.Shared.Green.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Sepia.v26" parent="@style/Theme.ReaderStyle.Shared.Sepia.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.White.v26" parent="@style/Theme.ReaderStyle.Shared.White.v23">
+        <item name="android:navigationBarColor">?chromeBackgroundColor</item>
+    </style>
+    <style name="Theme.ReaderStyle.White.v26" parent="@style/Theme.ReaderStyle.Shared.White.v26" />
+    <style name="Theme.SocialSharing.Dark.Base.v26" parent="@style/Theme.SocialSharing.Dark.Base.v23">
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+    <style name="Theme.SocialSharing.Light.Base.v26" parent="@style/Theme.SocialSharing.Light.Base.v23">
+        <item name="android:navigationBarColor">#ffeeeeee</item>
+    </style>
+    <style name="anyactions_theme_dark.base.v26" parent="@style/anyactions_theme_dark.base.v23">
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+    <style name="anyactions_theme_light.base.v26" parent="@style/anyactions_theme_light.base.v23">
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+    <style name="chromeDarkTheme.v26" parent="@style/chromeDarkTheme.v23">
+        <item name="android:navigationBarColor">@color/recaps_nav_bar_color_dark</item>
+    </style>
+    <style name="chromeLightTheme.v26" parent="@style/chromeLightTheme.v23">
+        <item name="android:navigationBarColor">@color/recaps_nav_bar_color_light</item>
+    </style>
+</resources>

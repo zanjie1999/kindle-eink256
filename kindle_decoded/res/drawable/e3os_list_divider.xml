@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/e3os_list_divider" android:left="@dimen/e3os_divider_padding" android:right="@dimen/e3os_divider_padding" />
+</layer-list>

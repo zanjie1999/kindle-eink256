@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="klo_main_termlist_width">1040.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonTextSize">19.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonWidth">280.0dip</dimen>
+    <dimen name="upsell_fullpageAd_titleTextSize">38.0dip</dimen>
+    <dimen name="upsell_fullpage_button_marginTop">52.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingBottom">50.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingLeft">71.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingRight">71.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingTop">50.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingBottom">179.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingLeft">100.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingRight">180.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingTop">175.0dip</dimen>
+    <dimen name="upsell_fullpageAd_descriptionTextSize">27.0dip</dimen>
+</resources>

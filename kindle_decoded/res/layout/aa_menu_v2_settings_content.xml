@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/aa_menu_v2_bottom_sheet_top_shadow" android:background="@drawable/aa_menu_v2_bottom_bar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/aa_menu_v2_bottom_sheet_handle" android:background="?aaMenuV2BackgroundColor" android:paddingTop="@dimen/aa_menu_v2_bottom_sheet_handle_padding_top" android:paddingBottom="@dimen/aa_menu_v2_bottom_sheet_handle_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/aa_menu_v2_bottom_sheet_handle_collapsed" android:importantForAccessibility="no" />
+    <FrameLayout android:id="@id/aa_menu_v2_fragment_container" android:background="?aaMenuV2BackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/aa_menu_v2_no_settings_layout" android:background="?aaMenuV2BackgroundColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/kre_aamenu_no_settings_available" style="@style/AaMenuV2SettingDisabledTitle" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

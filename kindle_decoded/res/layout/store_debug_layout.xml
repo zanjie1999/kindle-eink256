@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:textSize="12.0sp" android:id="@id/store_override_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textOn="Store domain and weblabs overridden" android:textOff="Store domain and weblabs not overridden" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <EditText android:id="@id/store_domain_override_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/store_domain_override_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Set" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <EditText android:id="@id/store_weblabs_override_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="WEBLAB_A:T1&amp;WEBLAB_B:T2" />
+    <Button android:id="@id/store_weblabs_override_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Set" />
+    <ToggleButton android:id="@id/store_set_force_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <ToggleButton android:id="@id/store_set_force_dark_strategy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+</LinearLayout>

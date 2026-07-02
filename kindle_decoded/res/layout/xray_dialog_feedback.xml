@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xray_dialog_feedback_container" android:paddingLeft="@dimen/xray_padding_dialog" android:paddingRight="@dimen/xray_padding_dialog" android:paddingBottom="@dimen/xray_padding_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/xray_feedback_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xray_feedback_dialog_cancel" android:layout_alignParentLeft="true" style="@style/xray_text_button" />
+            <Button android:enabled="false" android:id="@id/xray_feedback_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xray_feedback_dialog_send" android:layout_alignParentRight="true" style="@style/xray_text_button" />
+        </RelativeLayout>
+        <TextView android:textAppearance="@style/xray_amazon_text_roman_large" android:layout_gravity="center_horizontal" android:id="@id/xray_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/xray_separator" style="@style/xray_horizontal_rule" />
+    <TextView android:textAppearance="@style/xray_amazon_text_medium_regular" android:id="@id/xray_feedback_dialog_prompt" android:paddingTop="@dimen/xray_padding_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:gravity="center|left|top" android:id="@id/xray_comments" android:paddingLeft="@dimen/xray_feedback_dialog_text_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/xray_padding_dialog" android:maxLength="@integer/xray_feedback_comments_max_characters" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+</LinearLayout>

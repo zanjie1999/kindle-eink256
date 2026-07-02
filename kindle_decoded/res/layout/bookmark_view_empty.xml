@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/bookmark_view_empty" android:paddingTop="@dimen/bookmark_view_row_vertical_padding" android:visibility="gone" android:text="@string/bookmark_view_empty" style="@style/bookmark_view_row.empty"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

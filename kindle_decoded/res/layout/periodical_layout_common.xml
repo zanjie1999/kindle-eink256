@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:focusable="true" android:focusableInTouchMode="true" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/thumbnail_grid_view_stub" android:layout="@layout/thumbnail_grid_view" android:inflatedId="@id/thumbnail_grid_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/replica_view_stub" android:visibility="gone" android:layout="@layout/replica_view" android:inflatedId="@id/replica_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/curl_view_stub" android:visibility="gone" android:layout="@layout/curl_view" android:inflatedId="@id/curl_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/text_view_stub" android:visibility="gone" android:layout="@layout/text_view" android:inflatedId="@id/text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center|right|top" android:id="@id/periodical_close_button_stub" android:layout="@layout/periodical_close_button" android:inflatedId="@id/periodical_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/replica_nav_bar_frag_stub" android:layout="@layout/replica_nav_bar_frag" android:inflatedId="@id/replica_nav_bar_frag" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:gravity="center_horizontal" android:id="@id/periodical_bookmark_list_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/periodical_magnifying_glass_stub" android:layout="@layout/periodical_magnifying_glass" android:inflatedId="@id/periodical_magnifying_glass" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/upsell_banner_view_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/upsell_banner_view" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/periodical_gridview_toolbar_stub" android:layout="@layout/periodical_gridview_toolbar" android:inflatedId="@id/periodical_gridview_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/nln_toolbar_height" />
+</merge>

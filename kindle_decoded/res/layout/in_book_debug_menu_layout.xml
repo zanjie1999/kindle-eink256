@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/launch_debug_paging_buttons_activity" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/docviewer_line_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/nln_rtl" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/test_dictionary_debug" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/positions_in_empty_marginals" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/debug_upsell" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/new_orientation_lock_debug" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/orientation_lock_tap_debug" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/aa_menu_v2_json_refactor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/debug_force_aa_side_sheet_in_landscape" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/aes_kfc_font" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/debug_eink_simulation" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:theme="@style/DebugSwitch" android:id="@id/newtron_phase_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/note_location_type" style="@style/wrap" />
+    <TextView android:id="@id/annotation_location" style="@style/wrap" />
+    <TextView android:id="@id/note_snippet" style="@style/wrap" />
+    <ImageView android:id="@id/annotation_image" style="@style/wrap" />
+    <ProgressBar android:id="@id/note_item_loading_spinner" style="@style/wrap" />
+    <TextView android:id="@id/annotation_type" style="@style/wrap" />
+</LinearLayout>

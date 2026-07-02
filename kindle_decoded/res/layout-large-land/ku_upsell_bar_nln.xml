@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sample_bar" style="@style/upsell_bar_nln"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/sample_bar_extend_button" android:visibility="visible" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upsell_bar_button_nln" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/sample_bar_extend_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/sample_bar_ku_badge" android:paddingTop="@dimen/sample_bar_title_text_top_padding_nln" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:paddingBottom="@dimen/sample_bar_title_text_bottom_padding_nln" android:src="@drawable/ku_badge" style="@style/upsell_bar_text_title_nln" />
+        <TextView android:textColor="@color/secondary_text_color_dark_nln" android:paddingTop="@dimen/sample_bar_title_text_top_padding_nln" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:paddingBottom="@dimen/sample_bar_title_text_bottom_padding_nln" android:focusable="false" android:text="@string/ku_upsell_banner_title_delimiter" style="@style/upsell_bar_text_title_nln" />
+        <TextView android:id="@id/sample_bar_title" android:paddingTop="@dimen/sample_bar_title_text_top_padding_nln" android:paddingRight="@dimen/sample_bar_text_padding_right_nln" android:paddingBottom="@dimen/sample_bar_title_text_bottom_padding_nln" android:focusable="true" style="@style/upsell_bar_text_title_nln" />
+    </LinearLayout>
+</RelativeLayout>

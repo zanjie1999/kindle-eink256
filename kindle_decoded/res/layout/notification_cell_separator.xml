@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/notification_cell_separator" android:paddingLeft="@dimen/notification_cell_separator_inset_horizontal" android:paddingRight="@dimen/notification_cell_separator_inset_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/notification_cell_separator_height" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?notification_tray_separator_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

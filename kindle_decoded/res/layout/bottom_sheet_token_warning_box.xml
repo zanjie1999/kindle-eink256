@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_token_warning_box" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/bottom_sheet_token_warning_box_text_size" android:textColor="?bottom_sheet_token_lower_text_color" android:gravity="center_horizontal" android:id="@id/token_warning_box_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="9.0dip" android:text="@string/token_warning_box_text_1" />
+    <TextView android:textSize="@dimen/bottom_sheet_token_warning_box_text_size" android:textColor="?bottom_sheet_token_lower_text_color" android:id="@id/token_warning_box_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/token_warning_box_text_2" />
+    <TextView android:textSize="@dimen/bottom_sheet_token_warning_box_text_size" android:textColor="?bottom_sheet_token_learn_more_text_color" android:id="@id/token_warning_box_learn_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/token_warning_box_learn_more_text" />
+</LinearLayout>

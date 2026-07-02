@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.mangaviewer.MangaDebugOptions android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/manga_tap_delay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <EditText android:id="@id/manga_tap_delay_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number" />
+        <Button android:id="@id/manga_tap_delay_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set manga single tap delay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/manga_tap_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/manga_tap_delay">
+        <Button android:id="@id/enable_manga_animation_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable custom Manga animation duration" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/manga_tap_animation">
+        <EditText android:id="@id/manga_animation_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number" />
+        <Button android:id="@id/manga_animation_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set manga page turn animation duration" android:layout_toRightOf="@id/manga_animation_edit" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.amazon.kindle.mangaviewer.MangaDebugOptions>

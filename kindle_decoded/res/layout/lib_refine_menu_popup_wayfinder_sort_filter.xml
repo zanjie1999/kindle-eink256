@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:importantForAccessibility="yes" style="@style/tablet_popup_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/refine_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+        <LinearLayout android:id="@id/refine_menu_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="start" android:id="@id/wayfinder_refine_menu_header" android:text="@string/library_filter" android:contentDescription="@string/lib_menu_filter_header_description" style="@style/popup_sheet_menu_header_search_sort_filter" />
+            <Space android:layout_gravity="center" android:id="@id/padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/menu_close_icon" android:padding="@dimen/lib_popup_menu_padding" android:visibility="gone" android:layout_width="@dimen/lib_popup_menu_layout_height" android:layout_height="@dimen/lib_popup_menu_layout_height" android:src="?top_bar_close_icon" android:contentDescription="@string/close_menu" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/lib_refine_menu_clear_filters" />
+</LinearLayout>

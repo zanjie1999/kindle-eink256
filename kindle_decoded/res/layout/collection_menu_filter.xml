@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/filter_root" android:background="?core_primary" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_menu_height" android:paddingStart="@dimen/lib_menu_left_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/content_type_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentStart="true">
+        <LinearLayout android:id="@id/content_filter_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:id="@id/content_type_text" android:text="@string/collections" style="@style/filter_menu_button_text" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?caret_down" android:paddingStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/create_collection_button" android:padding="@dimen/secondary_menu_icon_padding" android:layout_width="@dimen/secondary_menu_icon_size" android:layout_height="@dimen/secondary_menu_icon_size" android:src="?add_to_collection_icon" android:layout_centerVertical="true" android:contentDescription="@string/create_new_collection" android:layout_alignParentEnd="true" />
+</RelativeLayout>

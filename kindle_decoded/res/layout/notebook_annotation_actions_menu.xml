@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/annotation_actions_scroll" android:layout_width="wrap_content" android:layout_height="160.0dip">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:id="@id/annotation_actions_delete_highlight" android:padding="15.0sp" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_delete_highlight" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/annotation_actions_edit_note" android:padding="15.0sp" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_edit_note" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/annotation_actions_delete_note" android:padding="15.0sp" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_delete_note" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/annotation_actions_delete_bookmark" android:padding="15.0sp" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_delete_bookmark" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/annotation_actions_copy" android:padding="15.0sp" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_copy_text" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/change_to_blue" android:padding="15.0sp" android:visibility="gone" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_change_to_blue" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/change_to_yellow" android:padding="15.0sp" android:visibility="gone" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_change_to_yellow" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/change_to_pink" android:padding="15.0sp" android:visibility="gone" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_change_to_pink" android:textAllCaps="true" android:textAlignment="textStart" />
+                <TextView android:textSize="13.0sp" android:id="@id/change_to_orange" android:padding="15.0sp" android:visibility="gone" android:layout_width="161.0dip" android:layout_height="wrap_content" android:text="@string/annotation_actions_menu_change_to_orange" android:textAllCaps="true" android:textAlignment="textStart" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

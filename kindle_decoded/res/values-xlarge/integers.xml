@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="account_confirmation_content_weight">1</integer>
+    <integer name="account_confirmation_logo_weight">1</integer>
+</resources>

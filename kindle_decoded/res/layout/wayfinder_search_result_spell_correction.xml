@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:windowNoTitle="false" android:orientation="vertical" android:id="@id/spell_check_layout" android:background="?search_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:windowNoTitle="false" android:orientation="vertical" android:background="?search_header_background" android:paddingLeft="@dimen/search_screen_side_padding" android:paddingTop="@dimen/search_spell_check_inner_layout_padding" android:paddingRight="@dimen/search_screen_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?search_spell_check_auto_corrected_style" android:ellipsize="end" android:id="@id/auto_corrected_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" />
+        <TextView android:textAppearance="?search_spell_check_orignal_text_style" android:ellipsize="end" android:id="@id/actual_search_text" android:paddingTop="@dimen/search_spell_check_inner_layout_padding" android:paddingBottom="@dimen/search_spell_check_inner_layout_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" android:onClick="onOriginalSearchClicked" />
+    </LinearLayout>
+    <View android:id="@id/search_result_divider" android:background="?search_results_divider" android:layout_width="fill_parent" android:layout_height="@dimen/search_result_section_separator_height" />
+</LinearLayout>

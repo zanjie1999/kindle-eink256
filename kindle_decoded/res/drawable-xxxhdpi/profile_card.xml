@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <stroke android:width="2.0dip" android:color="@color/profile_card_shape_bolder" />
+        <solid android:color="@color/profile_card_shape_internal" />
+        <corners android:radius="5.0dip" />
+        <padding android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="2.0dip" />
+        <size android:height="40.0dip" android:width="85.0dip" />
+    </shape>
+</inset>

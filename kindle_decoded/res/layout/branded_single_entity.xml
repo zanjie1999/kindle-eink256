@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/single_entity_color_bar" android:tag="COLOR_1" android:layout_width="fill_parent" android:layout_height="@dimen/single_entity_card_color_bar_height" />
+        <include layout="@layout/home_card_image_header" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_divider_margin">
+            <ImageView android:id="@id/single_entity_banner_image" android:tag="THEMED_IMAGE_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_card_header_margin" android:scaleType="centerInside" android:adjustViewBounds="true" />
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header3.Home" android:id="@id/single_entity_title_text" android:tag="TEXT_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" />
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Body.Grey" android:id="@id/single_entity_body_text" android:tag="TEXT_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" />
+        </LinearLayout>
+        <include layout="@layout/home_card_footer" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?lib_menu_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/refine_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/refine_menu_header" android:text="@string/library_filter" android:contentDescription="@string/lib_menu_filter_header_description" style="@style/bottom_sheet_menu_header" />
+    </LinearLayout>
+    <include layout="@layout/lib_refine_menu_clear_filters" />
+</LinearLayout>

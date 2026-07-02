@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuitem_add_bookmark">ブックマークの追加</string>
+    <string name="menuitem_reader_store">Kindle ストアでショッピングをする</string>
+    <string name="menuitem_sync">読み終えた最後のページ に同期</string>
+    <string name="transient_downloading">ダウンロードしています。…</string>
+    <string name="transient_opening">アイテムを開いています。…</string>
+    <string name="colors_and_brightness">背景色と画面の明るさ</string>
+    <string name="font_size_options">フォントの大きさ</string>
+</resources>

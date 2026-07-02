@@ -1,0 +1,312 @@
+.class public final Lcom/amazon/falkor/bottomsheet/StoreWebViewFragment;
+.super Lcom/amazon/falkor/bottomsheet/WebViewWithSpinnerFragment;
+.source "StoreBottomSheetController.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/amazon/falkor/bottomsheet/StoreWebViewFragment$CreateDelegate;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 122
+    sget-object v0, Lcom/amazon/falkor/BottomSheetID;->STORE_BOTTOM_SHEET_ID:Lcom/amazon/falkor/BottomSheetID;
+
+    invoke-virtual {v0}, Lcom/amazon/falkor/BottomSheetID;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/amazon/falkor/bottomsheet/WebViewWithSpinnerFragment;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getRefreshEvent()Lcom/amazon/kindle/krx/events/IEvent;
+    .locals 1
+
+    .line 122
+    invoke-virtual {p0}, Lcom/amazon/falkor/bottomsheet/StoreWebViewFragment;->getRefreshEvent()Ljava/lang/Void;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/amazon/kindle/krx/events/IEvent;
+
+    return-object v0
+.end method
+
+.method protected getRefreshEvent()Ljava/lang/Void;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method protected getWebView()Landroid/webkit/WebView;
+    .locals 11
+
+    .line 126
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 128
+    sget-object v0, Lcom/amazon/falkor/webview/FalkorWebViewUtils;->INSTANCE:Lcom/amazon/falkor/webview/FalkorWebViewUtils;
+
+    .line 129
+    sget-object v2, Lcom/amazon/falkor/KindleReaderSDKReference;->INSTANCE:Lcom/amazon/falkor/KindleReaderSDKReference;
+
+    invoke-virtual {v2}, Lcom/amazon/falkor/KindleReaderSDKReference;->getSdk()Lcom/amazon/kindle/krx/IKindleReaderSDK;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/amazon/kindle/krx/IKindleReaderSDK;->getApplicationManager()Lcom/amazon/kindle/krx/application/IApplicationManager;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lcom/amazon/falkor/bottomsheet/WebViewWithSpinnerFragment;->getWebViewCallback()Lcom/amazon/falkor/bottomsheet/BottomSheetWebviewCallback;
+
+    move-result-object v3
+
+    invoke-interface {v2, v1, v3}, Lcom/amazon/kindle/krx/application/IApplicationManager;->getWebViewClient(Landroid/app/Activity;Lcom/amazon/kindle/krx/application/MAPWebViewClientCallback;)Landroid/webkit/WebViewClient;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "sdk.applicationManager.g\u2026ctivity, webViewCallback)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 130
+    invoke-virtual {p0}, Lcom/amazon/falkor/BaseWebViewFragment;->requireURL()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 131
+    new-instance v4, Lcom/amazon/falkor/bottomsheet/StoreBottomSheetJSInterface;
+
+    invoke-virtual {p0}, Lcom/amazon/falkor/BaseRefreshableFragment;->getMessageQueue()Lkotlin/Lazy;
+
+    move-result-object v5
+
+    sget-object v6, Lcom/amazon/falkor/KindleReaderSDKReference;->INSTANCE:Lcom/amazon/falkor/KindleReaderSDKReference;
+
+    invoke-virtual {v6}, Lcom/amazon/falkor/KindleReaderSDKReference;->getSdk()Lcom/amazon/kindle/krx/IKindleReaderSDK;
+
+    move-result-object v6
+
+    invoke-direct {v4, v5, v6}, Lcom/amazon/falkor/bottomsheet/StoreBottomSheetJSInterface;-><init>(Lkotlin/Lazy;Lcom/amazon/kindle/krx/IKindleReaderSDK;)V
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/16 v9, 0xf0
+
+    const/4 v10, 0x0
+
+    .line 128
+    invoke-static/range {v0 .. v10}, Lcom/amazon/falkor/webview/FalkorWebViewUtils;->createAndSetupRoundedWebView$default(Lcom/amazon/falkor/webview/FalkorWebViewUtils;Landroid/content/Context;Landroid/webkit/WebViewClient;Ljava/lang/String;Lcom/amazon/falkor/FalkorJSInterface;ZZZZILjava/lang/Object;)Lcom/amazon/falkor/webview/RoundedWebview;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public setParentBackground(Landroid/view/ViewGroup;)V
+    .locals 5
+
+    const-string/jumbo v0, "parent"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 140
+    sget-object v0, Lcom/amazon/falkor/utils/FalkorDarkModeUtils;->INSTANCE:Lcom/amazon/falkor/utils/FalkorDarkModeUtils;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "requireContext()"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 141
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_0
+
+    const-string v4, "is_in_dark_mode"
+
+    invoke-virtual {v2, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-ne v2, v3, :cond_0
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    .line 140
+    :goto_0
+    invoke-virtual {v0, v1, v2}, Lcom/amazon/falkor/utils/FalkorDarkModeUtils;->getContextThemeWrapper(Landroid/content/Context;Z)Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 144
+    new-instance v1, Landroid/util/TypedValue;
+
+    invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
+
+    .line 145
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    const-string/jumbo v4, "type"
+
+    invoke-virtual {v2, v4}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    if-eqz v2, :cond_6
+
+    .line 148
+    sget-object v4, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->FAVE_INFO:Lcom/amazon/falkor/bottomsheet/BottomSheetType;
+
+    invoke-virtual {v4}, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->getType()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    sget-object v4, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->FAVE_ACTION:Lcom/amazon/falkor/bottomsheet/BottomSheetType;
+
+    invoke-virtual {v4}, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->getType()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    sget-object v4, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->FAVE_EARNED:Lcom/amazon/falkor/bottomsheet/BottomSheetType;
+
+    invoke-virtual {v4}, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->getType()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 149
+    :goto_2
+    sget v2, Lcom/amazon/falkor/R$attr;->store_bottom_sheet_fave_upper_background_color:I
+
+    goto :goto_3
+
+    .line 151
+    :cond_4
+    sget-object v4, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->WHAT_IS_KINDLE_VELLA:Lcom/amazon/falkor/bottomsheet/BottomSheetType;
+
+    invoke-virtual {v4}, Lcom/amazon/falkor/bottomsheet/BottomSheetType;->getType()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    .line 152
+    sget v2, Lcom/amazon/falkor/R$attr;->store_bottom_sheet_introducing_kindle_vella_upper_background_color:I
+
+    goto :goto_3
+
+    .line 155
+    :cond_5
+    sget v2, Lcom/amazon/falkor/R$attr;->store_bottom_sheet_free_tokens_upper_background_color:I
+
+    .line 158
+    :goto_3
+    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2, v1, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 159
+    iget v0, v1, Landroid/util/TypedValue;->data:I
+
+    invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
+
+    :cond_6
+    return-void
+.end method
+
+.method protected shouldShowHandle()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method

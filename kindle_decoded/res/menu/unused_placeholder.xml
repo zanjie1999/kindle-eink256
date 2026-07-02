@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/annotation_share" android:title="@string/annotation_share" />
+    <item android:icon="@drawable/ic_menu_front_page" android:id="@id/menuitem_two_page" android:title="@string/menuitem_two_page" />
+</menu>

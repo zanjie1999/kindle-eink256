@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/aa_v2_setting_disclosure_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AaMenuV2SettingTitle" />
+    <TextView android:id="@id/aa_v2_setting_disclosure_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" android:layout_marginRight="@dimen/aa_menu_v2_setting_disclosure_subtitle_margin_right" style="@style/AaMenuV2SettingSubtitle" />
+    <TextView android:textSize="@dimen/aa_menu_v2_setting_subtitle_text_size" android:textColor="?aaMenuV2TextTitleColor" android:id="@id/aa_v2_setting_disclosure_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" android:layout_marginRight="@dimen/aa_menu_v2_setting_disclosure_subtitle_margin_right" android:fontFamily="Amazon Ember" />
+</merge>

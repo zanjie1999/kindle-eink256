@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RatingBar android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/anyactions_rating_bar" android:layout_width="wrap_content" android:layout_height="@dimen/endactions_review_rating_bar_stars_height" android:layout_marginRight="@dimen/endactions_review_rating_bar_stars_to_clear_padding" android:numStars="5" android:stepSize="1.0" style="@style/endactions_rating_bar_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

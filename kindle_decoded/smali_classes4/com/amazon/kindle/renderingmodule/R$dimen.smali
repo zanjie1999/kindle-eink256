@@ -1,0 +1,4216 @@
+.class public final Lcom/amazon/kindle/renderingmodule/R$dimen;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final aa_menu_v2_bottom_sheet_handle_padding_bottom:I = 0x7f07000d
+
+.field public static final aa_menu_v2_bottom_sheet_handle_padding_top:I = 0x7f07000e
+
+.field public static final aa_menu_v2_brightness_checkbox_drawable_padding:I = 0x7f07000f
+
+.field public static final aa_menu_v2_brightness_checkbox_layout_weight:I = 0x7f070010
+
+.field public static final aa_menu_v2_brightness_checkbox_text_size:I = 0x7f070011
+
+.field public static final aa_menu_v2_brightness_checkbox_top_padding:I = 0x7f070012
+
+.field public static final aa_menu_v2_brightness_seekbar_container_height:I = 0x7f070013
+
+.field public static final aa_menu_v2_brightness_seekbar_height:I = 0x7f070014
+
+.field public static final aa_menu_v2_brightness_seekbar_layout_weight:I = 0x7f070015
+
+.field public static final aa_menu_v2_dialog_button_min_width:I = 0x7f070016
+
+.field public static final aa_menu_v2_dialog_button_padding:I = 0x7f070017
+
+.field public static final aa_menu_v2_dialog_button_weight:I = 0x7f070018
+
+.field public static final aa_menu_v2_dialog_button_weight_landscape:I = 0x7f070019
+
+.field public static final aa_menu_v2_dialog_content_height_landscape:I = 0x7f07001a
+
+.field public static final aa_menu_v2_dialog_content_weight_landscape:I = 0x7f07001b
+
+.field public static final aa_menu_v2_dialog_edit_text_weight:I = 0x7f07001c
+
+.field public static final aa_menu_v2_dialog_edit_text_weight_landscape:I = 0x7f07001d
+
+.field public static final aa_menu_v2_dialog_error_width_landscape:I = 0x7f07001e
+
+.field public static final aa_menu_v2_dialog_input_min_width:I = 0x7f07001f
+
+.field public static final aa_menu_v2_dialog_padding:I = 0x7f070020
+
+.field public static final aa_menu_v2_dialog_side_margin:I = 0x7f070021
+
+.field public static final aa_menu_v2_dialog_text_view_weight:I = 0x7f070022
+
+.field public static final aa_menu_v2_dialog_title_text_size:I = 0x7f070023
+
+.field public static final aa_menu_v2_dialog_title_text_size_landscape:I = 0x7f070024
+
+.field public static final aa_menu_v2_disclosure_fragment_title_bar_padding:I = 0x7f070025
+
+.field public static final aa_menu_v2_divider_line_thickness:I = 0x7f070026
+
+.field public static final aa_menu_v2_divider_margin_horizontal:I = 0x7f070027
+
+.field public static final aa_menu_v2_downloadable_font_operations_icon_layout_height:I = 0x7f070028
+
+.field public static final aa_menu_v2_downloadable_font_operations_icon_layout_width:I = 0x7f070029
+
+.field public static final aa_menu_v2_downloadable_font_size_margin_right:I = 0x7f07002a
+
+.field public static final aa_menu_v2_downloadable_font_text_label_size:I = 0x7f07002b
+
+.field public static final aa_menu_v2_downloadable_fonts_item_height:I = 0x7f07002c
+
+.field public static final aa_menu_v2_downloadable_fonts_margin:I = 0x7f07002d
+
+.field public static final aa_menu_v2_input_height:I = 0x7f07002e
+
+.field public static final aa_menu_v2_input_height_landscape:I = 0x7f07002f
+
+.field public static final aa_menu_v2_landscape_checkbox_text_size:I = 0x7f070030
+
+.field public static final aa_menu_v2_landscape_dialog_button_height:I = 0x7f070031
+
+.field public static final aa_menu_v2_landscape_dialog_margin_top:I = 0x7f070032
+
+.field public static final aa_menu_v2_landscape_dialog_padding:I = 0x7f070033
+
+.field public static final aa_menu_v2_landscape_dialog_padding_top:I = 0x7f070034
+
+.field public static final aa_menu_v2_landscape_text_size:I = 0x7f070035
+
+.field public static final aa_menu_v2_radio_group_button_circle_margin:I = 0x7f070036
+
+.field public static final aa_menu_v2_radio_group_button_circle_margin_end:I = 0x7f070037
+
+.field public static final aa_menu_v2_radio_group_button_circle_width:I = 0x7f070038
+
+.field public static final aa_menu_v2_radio_group_button_rect_height:I = 0x7f070039
+
+.field public static final aa_menu_v2_radio_group_button_rect_margin_end:I = 0x7f07003a
+
+.field public static final aa_menu_v2_radio_group_button_rect_width:I = 0x7f07003b
+
+.field public static final aa_menu_v2_radio_group_checkbox_margin:I = 0x7f07003c
+
+.field public static final aa_menu_v2_radio_group_text_button_height:I = 0x7f07003d
+
+.field public static final aa_menu_v2_radio_group_text_button_text_size:I = 0x7f07003e
+
+.field public static final aa_menu_v2_seekbar_spacing:I = 0x7f07003f
+
+.field public static final aa_menu_v2_seekbar_tap_area_padding:I = 0x7f070040
+
+.field public static final aa_menu_v2_setting_brightness_size_max_width:I = 0x7f070041
+
+.field public static final aa_menu_v2_setting_brightness_size_min_width:I = 0x7f070042
+
+.field public static final aa_menu_v2_setting_disclosure_fragment_title_margin_left:I = 0x7f070043
+
+.field public static final aa_menu_v2_setting_disclosure_fragment_title_margin_right:I = 0x7f070044
+
+.field public static final aa_menu_v2_setting_disclosure_subtitle_margin_right:I = 0x7f070045
+
+.field public static final aa_menu_v2_setting_font_family_item_horizontal_spacing:I = 0x7f070046
+
+.field public static final aa_menu_v2_setting_font_family_item_vertical_spacing:I = 0x7f070047
+
+.field public static final aa_menu_v2_setting_font_family_item_width:I = 0x7f070048
+
+.field public static final aa_menu_v2_setting_font_family_margin_vertical:I = 0x7f070049
+
+.field public static final aa_menu_v2_setting_font_guidance_height:I = 0x7f07004a
+
+.field public static final aa_menu_v2_setting_font_guidance_text_size:I = 0x7f07004b
+
+.field public static final aa_menu_v2_setting_font_guidance_underline_thickness:I = 0x7f07004c
+
+.field public static final aa_menu_v2_setting_font_name_margin_top:I = 0x7f07004d
+
+.field public static final aa_menu_v2_setting_font_name_text_size:I = 0x7f07004e
+
+.field public static final aa_menu_v2_setting_font_size_item_large:I = 0x7f07004f
+
+.field public static final aa_menu_v2_setting_font_size_item_small:I = 0x7f070050
+
+.field public static final aa_menu_v2_setting_font_size_margin_vertical:I = 0x7f070051
+
+.field public static final aa_menu_v2_setting_item_horizontal_offset:I = 0x7f070052
+
+.field public static final aa_menu_v2_setting_item_vertical_offset:I = 0x7f070053
+
+.field public static final aa_menu_v2_setting_subtitle_margin_right:I = 0x7f070054
+
+.field public static final aa_menu_v2_setting_subtitle_margin_top:I = 0x7f070055
+
+.field public static final aa_menu_v2_setting_subtitle_text_size:I = 0x7f070056
+
+.field public static final aa_menu_v2_setting_title_text_size:I = 0x7f070057
+
+.field public static final aa_menu_v2_tab_layout_height:I = 0x7f070058
+
+.field public static final aa_menu_v2_tab_title_padding:I = 0x7f070059
+
+.field public static final aa_menu_v2_tab_title_size:I = 0x7f07005a
+
+.field public static final aa_menu_v2_theme_button_max_width:I = 0x7f07005b
+
+.field public static final aa_menu_v2_theme_button_text_size:I = 0x7f07005c
+
+.field public static final aa_menu_v2_theme_horizontal_margin:I = 0x7f07005d
+
+.field public static final aa_menu_v2_theme_text_padding:I = 0x7f07005e
+
+.field public static final aa_menu_v2_theme_view_height:I = 0x7f07005f
+
+.field public static final abc_action_bar_content_inset_material:I = 0x7f07006e
+
+.field public static final abc_action_bar_content_inset_with_nav:I = 0x7f07006f
+
+.field public static final abc_action_bar_default_height_material:I = 0x7f070070
+
+.field public static final abc_action_bar_default_padding_end_material:I = 0x7f070071
+
+.field public static final abc_action_bar_default_padding_start_material:I = 0x7f070072
+
+.field public static final abc_action_bar_elevation_material:I = 0x7f070073
+
+.field public static final abc_action_bar_icon_vertical_padding_material:I = 0x7f070074
+
+.field public static final abc_action_bar_overflow_padding_end_material:I = 0x7f070075
+
+.field public static final abc_action_bar_overflow_padding_start_material:I = 0x7f070076
+
+.field public static final abc_action_bar_stacked_max_height:I = 0x7f070077
+
+.field public static final abc_action_bar_stacked_tab_max_width:I = 0x7f070078
+
+.field public static final abc_action_bar_subtitle_bottom_margin_material:I = 0x7f070079
+
+.field public static final abc_action_bar_subtitle_top_margin_material:I = 0x7f07007a
+
+.field public static final abc_action_button_min_height_material:I = 0x7f07007b
+
+.field public static final abc_action_button_min_width_material:I = 0x7f07007c
+
+.field public static final abc_action_button_min_width_overflow_material:I = 0x7f07007d
+
+.field public static final abc_alert_dialog_button_bar_height:I = 0x7f07007e
+
+.field public static final abc_alert_dialog_button_dimen:I = 0x7f07007f
+
+.field public static final abc_button_inset_horizontal_material:I = 0x7f070080
+
+.field public static final abc_button_inset_vertical_material:I = 0x7f070081
+
+.field public static final abc_button_padding_horizontal_material:I = 0x7f070082
+
+.field public static final abc_button_padding_vertical_material:I = 0x7f070083
+
+.field public static final abc_cascading_menus_min_smallest_width:I = 0x7f070084
+
+.field public static final abc_config_prefDialogWidth:I = 0x7f070085
+
+.field public static final abc_control_corner_material:I = 0x7f070086
+
+.field public static final abc_control_inset_material:I = 0x7f070087
+
+.field public static final abc_control_padding_material:I = 0x7f070088
+
+.field public static final abc_dialog_corner_radius_material:I = 0x7f070089
+
+.field public static final abc_dialog_fixed_height_major:I = 0x7f07008a
+
+.field public static final abc_dialog_fixed_height_minor:I = 0x7f07008b
+
+.field public static final abc_dialog_fixed_width_major:I = 0x7f07008c
+
+.field public static final abc_dialog_fixed_width_minor:I = 0x7f07008d
+
+.field public static final abc_dialog_list_padding_bottom_no_buttons:I = 0x7f07008e
+
+.field public static final abc_dialog_list_padding_top_no_title:I = 0x7f07008f
+
+.field public static final abc_dialog_min_width_major:I = 0x7f070090
+
+.field public static final abc_dialog_min_width_minor:I = 0x7f070091
+
+.field public static final abc_dialog_padding_material:I = 0x7f070092
+
+.field public static final abc_dialog_padding_top_material:I = 0x7f070093
+
+.field public static final abc_dialog_title_divider_material:I = 0x7f070094
+
+.field public static final abc_disabled_alpha_material_dark:I = 0x7f070095
+
+.field public static final abc_disabled_alpha_material_light:I = 0x7f070096
+
+.field public static final abc_dropdownitem_icon_width:I = 0x7f070097
+
+.field public static final abc_dropdownitem_text_padding_left:I = 0x7f070098
+
+.field public static final abc_dropdownitem_text_padding_right:I = 0x7f070099
+
+.field public static final abc_edit_text_inset_bottom_material:I = 0x7f07009a
+
+.field public static final abc_edit_text_inset_horizontal_material:I = 0x7f07009b
+
+.field public static final abc_edit_text_inset_top_material:I = 0x7f07009c
+
+.field public static final abc_floating_window_z:I = 0x7f07009d
+
+.field public static final abc_list_item_padding_horizontal_material:I = 0x7f07009e
+
+.field public static final abc_panel_menu_list_width:I = 0x7f07009f
+
+.field public static final abc_progress_bar_height_material:I = 0x7f0700a0
+
+.field public static final abc_search_view_preferred_height:I = 0x7f0700a1
+
+.field public static final abc_search_view_preferred_width:I = 0x7f0700a2
+
+.field public static final abc_search_view_text_min_width:I = 0x7f0700a3
+
+.field public static final abc_seekbar_track_background_height_material:I = 0x7f0700a4
+
+.field public static final abc_seekbar_track_progress_height_material:I = 0x7f0700a5
+
+.field public static final abc_select_dialog_padding_start_material:I = 0x7f0700a6
+
+.field public static final abc_switch_padding:I = 0x7f0700a7
+
+.field public static final abc_text_size_body_1_material:I = 0x7f0700a8
+
+.field public static final abc_text_size_body_2_material:I = 0x7f0700a9
+
+.field public static final abc_text_size_button_material:I = 0x7f0700aa
+
+.field public static final abc_text_size_caption_material:I = 0x7f0700ab
+
+.field public static final abc_text_size_display_1_material:I = 0x7f0700ac
+
+.field public static final abc_text_size_display_2_material:I = 0x7f0700ad
+
+.field public static final abc_text_size_display_3_material:I = 0x7f0700ae
+
+.field public static final abc_text_size_display_4_material:I = 0x7f0700af
+
+.field public static final abc_text_size_headline_material:I = 0x7f0700b0
+
+.field public static final abc_text_size_large_material:I = 0x7f0700b1
+
+.field public static final abc_text_size_medium_material:I = 0x7f0700b2
+
+.field public static final abc_text_size_menu_header_material:I = 0x7f0700b3
+
+.field public static final abc_text_size_menu_material:I = 0x7f0700b4
+
+.field public static final abc_text_size_small_material:I = 0x7f0700b5
+
+.field public static final abc_text_size_subhead_material:I = 0x7f0700b6
+
+.field public static final abc_text_size_subtitle_material_toolbar:I = 0x7f0700b7
+
+.field public static final abc_text_size_title_material:I = 0x7f0700b8
+
+.field public static final abc_text_size_title_material_toolbar:I = 0x7f0700b9
+
+.field public static final action_bar_decoration_container_padding_left:I = 0x7f0700be
+
+.field public static final action_bar_decoration_container_padding_right:I = 0x7f0700bf
+
+.field public static final action_bar_decoration_container_padding_vertical:I = 0x7f0700c0
+
+.field public static final action_button_image_height:I = 0x7f0700c2
+
+.field public static final action_button_image_width:I = 0x7f0700c3
+
+.field public static final action_button_min_width:I = 0x7f0700c4
+
+.field public static final action_mode_done_padding_end:I = 0x7f0700c5
+
+.field public static final action_mode_done_padding_start:I = 0x7f0700c6
+
+.field public static final activity_horizontal_margin:I = 0x7f0700c7
+
+.field public static final activity_vertical_margin:I = 0x7f0700c8
+
+.field public static final add_to_collection_action_bar_divider_height:I = 0x7f0700c9
+
+.field public static final add_to_collection_action_bar_divider_margin_end:I = 0x7f0700ca
+
+.field public static final add_to_collection_action_bar_divider_margin_start:I = 0x7f0700cb
+
+.field public static final add_to_collection_action_bar_divider_width:I = 0x7f0700cc
+
+.field public static final add_to_collection_add_button_padding_end:I = 0x7f0700cd
+
+.field public static final add_to_collection_add_button_padding_start:I = 0x7f0700ce
+
+.field public static final add_to_collection_select_spinner_padding_horizontal:I = 0x7f0700cf
+
+.field public static final alert_dialog_content_horizontal_spacing:I = 0x7f0700d9
+
+.field public static final all_download_toggle_button_horizontal_padding:I = 0x7f0700e0
+
+.field public static final annotation_text_padding_left:I = 0x7f0700ee
+
+.field public static final annotation_text_padding_right:I = 0x7f0700ef
+
+.field public static final appcompat_actionbar_left_padding:I = 0x7f0700f8
+
+.field public static final appcompat_actionbar_right_padding:I = 0x7f0700f9
+
+.field public static final appcompat_actionbaricon_bottom_padding:I = 0x7f0700fa
+
+.field public static final appcompat_actionbaricon_left_padding:I = 0x7f0700fb
+
+.field public static final appcompat_actionbaricon_right_padding:I = 0x7f0700fc
+
+.field public static final appcompat_actionbaricon_top_padding:I = 0x7f0700fd
+
+.field public static final application_min_height:I = 0x7f0700fe
+
+.field public static final audio_player_max_width:I = 0x7f07010b
+
+.field public static final author_follow_button_drawable_padding:I = 0x7f07010c
+
+.field public static final author_follow_button_height:I = 0x7f07010d
+
+.field public static final author_follow_button_margin_top:I = 0x7f07010e
+
+.field public static final author_follow_button_side_padding:I = 0x7f07010f
+
+.field public static final author_follow_button_width:I = 0x7f070110
+
+.field public static final author_follow_default_avatar_size:I = 0x7f070111
+
+.field public static final author_follow_desc_margin_top:I = 0x7f070112
+
+.field public static final author_follow_info_zone_margin_start:I = 0x7f070113
+
+.field public static final author_follow_progress_bar_size:I = 0x7f070114
+
+.field public static final az_scrubber_padding:I = 0x7f070115
+
+.field public static final az_scrubber_text_max_padding:I = 0x7f070116
+
+.field public static final az_scrubber_text_min_padding:I = 0x7f070117
+
+.field public static final az_scrubber_text_size:I = 0x7f070118
+
+.field public static final az_scrubber_top_margin:I = 0x7f070119
+
+.field public static final az_scrubber_width:I = 0x7f07011a
+
+.field public static final badge_count_accessible_size:I = 0x7f07011b
+
+.field public static final badge_count_size:I = 0x7f07011c
+
+.field public static final badge_padding_default:I = 0x7f07011d
+
+.field public static final badge_padding_large:I = 0x7f07011e
+
+.field public static final badge_padding_small:I = 0x7f07011f
+
+.field public static final badgeable_cover_bottom_section_2_padding:I = 0x7f070120
+
+.field public static final badgeable_cover_bottom_section_badge_padding:I = 0x7f070121
+
+.field public static final badgeable_cover_bottom_section_image_view_height:I = 0x7f070122
+
+.field public static final badgeable_cover_bottom_section_image_view_width:I = 0x7f070123
+
+.field public static final badgeable_cover_date_label_text_size:I = 0x7f070124
+
+.field public static final banner_arrow_width:I = 0x7f070125
+
+.field public static final banner_height:I = 0x7f070126
+
+.field public static final banner_layout_margin:I = 0x7f070127
+
+.field public static final banner_margin:I = 0x7f070128
+
+.field public static final banner_margin_bottom:I = 0x7f070129
+
+.field public static final banner_widget_max_height:I = 0x7f07012a
+
+.field public static final biggest_subscription_badge_asset_height:I = 0x7f07012b
+
+.field public static final biggest_subscription_badge_asset_width:I = 0x7f07012c
+
+.field public static final birdseye_recycler_side_padding:I = 0x7f07012d
+
+.field public static final bl_article_title_margin_bottom:I = 0x7f07012e
+
+.field public static final bl_article_title_margin_end:I = 0x7f07012f
+
+.field public static final bl_article_title_margin_start:I = 0x7f070130
+
+.field public static final bl_article_title_margin_top:I = 0x7f070131
+
+.field public static final bl_blurb_by_margin_bottom:I = 0x7f070132
+
+.field public static final bl_blurb_by_margin_end:I = 0x7f070133
+
+.field public static final bl_blurb_by_margin_start:I = 0x7f070134
+
+.field public static final bl_blurb_card_article_title_text:I = 0x7f070135
+
+.field public static final bl_blurb_card_header_text:I = 0x7f070136
+
+.field public static final bl_blurb_icon_size:I = 0x7f070137
+
+.field public static final bl_blurb_min_height:I = 0x7f070138
+
+.field public static final bl_blurb_shoveler_padding:I = 0x7f070139
+
+.field public static final bl_blurb_text_margin_bottom:I = 0x7f07013a
+
+.field public static final bl_blurb_text_margin_end:I = 0x7f07013b
+
+.field public static final bl_blurb_text_margin_start:I = 0x7f07013c
+
+.field public static final bl_blurb_text_margin_top:I = 0x7f07013d
+
+.field public static final bl_blurb_width:I = 0x7f07013e
+
+.field public static final bl_header_desc_margin_bottom:I = 0x7f07013f
+
+.field public static final bl_header_desc_margin_end:I = 0x7f070140
+
+.field public static final bl_header_desc_margin_start:I = 0x7f070141
+
+.field public static final bl_header_desc_margin_top:I = 0x7f070142
+
+.field public static final bl_header_height:I = 0x7f070143
+
+.field public static final bl_header_image_margin_start:I = 0x7f070144
+
+.field public static final bl_header_image_margin_top:I = 0x7f070145
+
+.field public static final bl_header_margin_bottom:I = 0x7f070146
+
+.field public static final bl_header_margin_end:I = 0x7f070147
+
+.field public static final bl_header_margin_start:I = 0x7f070148
+
+.field public static final bl_header_margin_top:I = 0x7f070149
+
+.field public static final bl_shoveler_component_height:I = 0x7f07014a
+
+.field public static final bl_shoveler_component_image_height:I = 0x7f07014b
+
+.field public static final bl_shoveler_component_image_width:I = 0x7f07014c
+
+.field public static final bl_shoveler_component_width:I = 0x7f07014d
+
+.field public static final book_action_author:I = 0x7f070152
+
+.field public static final book_action_author_margin_top:I = 0x7f070153
+
+.field public static final book_action_button:I = 0x7f070154
+
+.field public static final book_action_button_height:I = 0x7f070155
+
+.field public static final book_action_button_margin_horizontal:I = 0x7f070156
+
+.field public static final book_action_button_margin_top:I = 0x7f070157
+
+.field public static final book_action_description:I = 0x7f070158
+
+.field public static final book_action_description_margin_bottom:I = 0x7f070159
+
+.field public static final book_action_more_button_padding:I = 0x7f07015a
+
+.field public static final book_action_more_option_button_width:I = 0x7f07015b
+
+.field public static final book_action_padding_bottom:I = 0x7f07015c
+
+.field public static final book_action_padding_left:I = 0x7f07015d
+
+.field public static final book_action_padding_right:I = 0x7f07015e
+
+.field public static final book_action_padding_top:I = 0x7f07015f
+
+.field public static final book_action_page_time:I = 0x7f070160
+
+.field public static final book_action_rating_bar_height:I = 0x7f070161
+
+.field public static final book_action_rating_bar_margin_right:I = 0x7f070162
+
+.field public static final book_action_rating_bar_margin_top:I = 0x7f070163
+
+.field public static final book_action_recommend_margin_left_and_right:I = 0x7f070164
+
+.field public static final book_action_recommend_margin_top:I = 0x7f070165
+
+.field public static final book_action_recommend_padding_right:I = 0x7f070166
+
+.field public static final book_action_seperate_line_margin_bottom:I = 0x7f070167
+
+.field public static final book_action_seperate_line_margin_top:I = 0x7f070168
+
+.field public static final book_action_time_page_margin_middle:I = 0x7f070169
+
+.field public static final book_action_time_page_margin_top_and_bottom:I = 0x7f07016a
+
+.field public static final book_action_time_page_side_length:I = 0x7f07016b
+
+.field public static final book_action_title:I = 0x7f07016c
+
+.field public static final book_action_triangle_height:I = 0x7f07016d
+
+.field public static final book_action_triangle_margin_top:I = 0x7f07016e
+
+.field public static final book_action_triangle_width:I = 0x7f07016f
+
+.field public static final book_actions_popup_item_padding_horizontal:I = 0x7f070170
+
+.field public static final book_actions_popup_item_padding_vertical:I = 0x7f070171
+
+.field public static final book_actions_popup_padding_vertical:I = 0x7f070172
+
+.field public static final book_actions_popup_title_padding_horizontal:I = 0x7f070173
+
+.field public static final book_actions_popup_title_padding_vertical:I = 0x7f070174
+
+.field public static final book_in_bar_bottom_margin:I = 0x7f070175
+
+.field public static final book_in_bar_height:I = 0x7f070176
+
+.field public static final book_in_bar_padding:I = 0x7f070177
+
+.field public static final book_in_bar_side_margin:I = 0x7f070178
+
+.field public static final book_in_bar_width:I = 0x7f070179
+
+.field public static final book_open_animation_final_cover_height_ratio:I = 0x7f07017a
+
+.field public static final book_open_animation_final_cover_width_ratio:I = 0x7f07017b
+
+.field public static final bookmark_right_margin:I = 0x7f07018f
+
+.field public static final bookmark_toggle_area_height:I = 0x7f070191
+
+.field public static final bookmark_toggle_area_width:I = 0x7f070192
+
+.field public static final bookmark_toggle_image_height:I = 0x7f070193
+
+.field public static final bookmark_toggle_image_width:I = 0x7f070194
+
+.field public static final bookmark_view_background_asset_fix:I = 0x7f070195
+
+.field public static final bookmark_view_bottom_offset:I = 0x7f070196
+
+.field public static final bookmark_view_divider_height:I = 0x7f070197
+
+.field public static final bookmark_view_drawable_width:I = 0x7f070198
+
+.field public static final bookmark_view_height:I = 0x7f070199
+
+.field public static final bookmark_view_padding_bottom:I = 0x7f07019b
+
+.field public static final bookmark_view_right_margin:I = 0x7f07019c
+
+.field public static final bookmark_view_row_color_width:I = 0x7f07019d
+
+.field public static final bookmark_view_row_drawable_padding:I = 0x7f07019e
+
+.field public static final bookmark_view_row_empty_text_size:I = 0x7f07019f
+
+.field public static final bookmark_view_row_height:I = 0x7f0701a0
+
+.field public static final bookmark_view_row_horizontal_padding:I = 0x7f0701a1
+
+.field public static final bookmark_view_row_location_text_size:I = 0x7f0701a2
+
+.field public static final bookmark_view_row_regular_text_size:I = 0x7f0701a3
+
+.field public static final bookmark_view_row_vertical_padding:I = 0x7f0701a4
+
+.field public static final bookmark_view_top_offset:I = 0x7f0701a5
+
+.field public static final bookmark_view_width:I = 0x7f0701a6
+
+.field public static final bottom_bar_background_height:I = 0x7f070229
+
+.field public static final bottom_bar_button_horizontal_padding:I = 0x7f07022a
+
+.field public static final bottom_bar_button_max_width:I = 0x7f07022b
+
+.field public static final bottom_bar_label_size:I = 0x7f07022c
+
+.field public static final bottom_bar_label_top_margin:I = 0x7f07022d
+
+.field public static final bottom_bar_top_border_height:I = 0x7f07022e
+
+.field public static final bottom_sheet_corner_radius:I = 0x7f07022f
+
+.field public static final bottom_sheet_max_width:I = 0x7f070230
+
+.field public static final branded_shoveler_color_bar_height:I = 0x7f070242
+
+.field public static final brochure_action_button_layout_height:I = 0x7f070243
+
+.field public static final brochure_action_button_layout_margin_bottom:I = 0x7f070244
+
+.field public static final brochure_action_button_layout_margin_horizontal:I = 0x7f070245
+
+.field public static final brochure_action_button_layout_width:I = 0x7f070246
+
+.field public static final brochure_action_button_text_size:I = 0x7f070247
+
+.field public static final brochure_button_width:I = 0x7f070248
+
+.field public static final brochure_close_button_height:I = 0x7f070249
+
+.field public static final brochure_close_button_width:I = 0x7f07024a
+
+.field public static final brochure_close_layout_margin_right:I = 0x7f07024b
+
+.field public static final brochure_close_layout_margin_top:I = 0x7f07024c
+
+.field public static final brochure_close_layout_tap_target_height:I = 0x7f07024d
+
+.field public static final brochure_close_layout_tap_target_width:I = 0x7f07024e
+
+.field public static final brochure_content_text_size:I = 0x7f07024f
+
+.field public static final brochure_content_text_width:I = 0x7f070250
+
+.field public static final brochure_content_view_margin_top:I = 0x7f070251
+
+.field public static final brochure_outer_margin:I = 0x7f070252
+
+.field public static final brochure_padding__top_portrait:I = 0x7f070253
+
+.field public static final brochure_padding_top_landscape:I = 0x7f070254
+
+.field public static final brochure_page_indicator_height:I = 0x7f070255
+
+.field public static final brochure_page_indicator_margin_top:I = 0x7f070256
+
+.field public static final brochure_page_indicator_spacing:I = 0x7f070257
+
+.field public static final brochure_slide_padding_bottom:I = 0x7f070258
+
+.field public static final brochure_slide_padding_top:I = 0x7f070259
+
+.field public static final button_default_min_height:I = 0x7f07025c
+
+.field public static final button_default_min_width:I = 0x7f07025d
+
+.field public static final button_default_padding_bottom:I = 0x7f07025e
+
+.field public static final button_default_padding_left:I = 0x7f07025f
+
+.field public static final button_default_padding_right:I = 0x7f070260
+
+.field public static final button_default_padding_top:I = 0x7f070261
+
+.field public static final button_dialog_border_width:I = 0x7f070262
+
+.field public static final campaign_cover_section_padding:I = 0x7f070264
+
+.field public static final cardview_compat_inset_shadow:I = 0x7f070265
+
+.field public static final cardview_default_elevation:I = 0x7f070266
+
+.field public static final cardview_default_radius:I = 0x7f070267
+
+.field public static final caret_height:I = 0x7f070268
+
+.field public static final caret_margin:I = 0x7f070269
+
+.field public static final caret_width:I = 0x7f07026a
+
+.field public static final carousel_bottom_margin:I = 0x7f07026b
+
+.field public static final carousel_icon_height:I = 0x7f07026c
+
+.field public static final carousel_icon_title_text_height:I = 0x7f07026d
+
+.field public static final carousel_icon_title_text_margin_bottom:I = 0x7f07026e
+
+.field public static final carousel_icon_title_text_margin_left:I = 0x7f07026f
+
+.field public static final carousel_icon_title_text_margin_left_right:I = 0x7f070270
+
+.field public static final carousel_icon_title_text_margin_top:I = 0x7f070271
+
+.field public static final carousel_icon_title_text_size:I = 0x7f070272
+
+.field public static final carousel_icon_title_text_width:I = 0x7f070273
+
+.field public static final carousel_icon_width:I = 0x7f070274
+
+.field public static final carousel_instructions_heading_size:I = 0x7f070275
+
+.field public static final carousel_instructions_subheading_1_size:I = 0x7f070276
+
+.field public static final carousel_instructions_subheading_2_size:I = 0x7f070277
+
+.field public static final carousel_instructions_vertical_padding:I = 0x7f070278
+
+.field public static final carousel_top_margin:I = 0x7f070279
+
+.field public static final center_lock_max_snapback_velocity:I = 0x7f07027a
+
+.field public static final centered_layout_padding_bottom:I = 0x7f07027b
+
+.field public static final centered_layout_padding_left:I = 0x7f07027c
+
+.field public static final centered_layout_padding_right:I = 0x7f07027d
+
+.field public static final chapter_navigation_left_margin:I = 0x7f070284
+
+.field public static final chapter_navigation_padding:I = 0x7f070285
+
+.field public static final chapter_navigation_right_margin:I = 0x7f070286
+
+.field public static final chart_book_info_zone_margin_start:I = 0x7f070287
+
+.field public static final chart_book_info_zone_margin_start_no_num:I = 0x7f070288
+
+.field public static final chart_book_title_margin_start:I = 0x7f070289
+
+.field public static final chart_cover_margin_bottom:I = 0x7f07028a
+
+.field public static final chart_default_book_cover_height:I = 0x7f07028b
+
+.field public static final chart_default_book_cover_width:I = 0x7f07028c
+
+.field public static final chart_default_book_number_size:I = 0x7f07028d
+
+.field public static final chart_default_book_number_width:I = 0x7f07028e
+
+.field public static final chart_text_margin_top:I = 0x7f07028f
+
+.field public static final checkable_item_height:I = 0x7f070290
+
+.field public static final checkable_item_no_icon_start_padding:I = 0x7f070291
+
+.field public static final cms_small_icon_height:I = 0x7f070292
+
+.field public static final cms_small_icon_title_text_height:I = 0x7f070293
+
+.field public static final cms_small_icon_title_text_padding_left:I = 0x7f070294
+
+.field public static final cms_small_icon_title_text_padding_right:I = 0x7f070295
+
+.field public static final cms_small_icon_title_text_padding_top:I = 0x7f070296
+
+.field public static final cms_small_icon_title_text_size:I = 0x7f070297
+
+.field public static final cms_small_icon_title_text_width:I = 0x7f070298
+
+.field public static final cms_small_icon_width:I = 0x7f070299
+
+.field public static final collection_cover_border_width:I = 0x7f0702a0
+
+.field public static final collection_cover_bottom_margin:I = 0x7f0702a1
+
+.field public static final collection_thumbnail_external_padding:I = 0x7f0702a2
+
+.field public static final collection_thumbnail_internal_padding:I = 0x7f0702a3
+
+.field public static final collection_thumbnails_label_height:I = 0x7f0702a4
+
+.field public static final collection_vertical_padding:I = 0x7f0702a5
+
+.field public static final collection_view_count_size:I = 0x7f0702a6
+
+.field public static final collection_view_name_size:I = 0x7f0702a7
+
+.field public static final comics_two_page_up_layout_size_threshold:I = 0x7f0702b6
+
+.field public static final command_bar_default_button_height:I = 0x7f0702b7
+
+.field public static final command_bar_default_button_width:I = 0x7f0702b8
+
+.field public static final command_bar_default_popup_max_height:I = 0x7f0702b9
+
+.field public static final command_bar_default_start_end_button_padding:I = 0x7f0702ba
+
+.field public static final compat_button_inset_horizontal_material:I = 0x7f0702bb
+
+.field public static final compat_button_inset_vertical_material:I = 0x7f0702bc
+
+.field public static final compat_button_padding_horizontal_material:I = 0x7f0702bd
+
+.field public static final compat_button_padding_vertical_material:I = 0x7f0702be
+
+.field public static final compat_control_corner_material:I = 0x7f0702bf
+
+.field public static final compat_notification_large_icon_max_height:I = 0x7f0702c0
+
+.field public static final compat_notification_large_icon_max_width:I = 0x7f0702c1
+
+.field public static final component_viewer_close_button_dimen:I = 0x7f0702c2
+
+.field public static final component_viewer_close_button_margin_right:I = 0x7f0702c3
+
+.field public static final component_viewer_header_height:I = 0x7f0702c4
+
+.field public static final component_viewer_header_separator_height:I = 0x7f0702c5
+
+.field public static final content_missing_view_retry_button_top_margin:I = 0x7f0702c6
+
+.field public static final content_missing_view_text_top_margin:I = 0x7f0702c7
+
+.field public static final cover_banner_font_size:I = 0x7f0702c9
+
+.field public static final cover_height:I = 0x7f0702ca
+
+.field public static final cover_overlay_progress_bar_height:I = 0x7f0702cb
+
+.field public static final cover_scroll_view_margin:I = 0x7f0702cc
+
+.field public static final create_collection_button_width:I = 0x7f0702ce
+
+.field public static final cs_breadcrumb_right_offset:I = 0x7f0702cf
+
+.field public static final cs_fast_navigation_margin_increase:I = 0x7f0702d0
+
+.field public static final cs_location_seekbar_snapping_threshold:I = 0x7f0702d1
+
+.field public static final cs_page_indicator_arrow_size:I = 0x7f0702d2
+
+.field public static final cs_page_indicator_container_x_offset:I = 0x7f0702d3
+
+.field public static final cs_page_indicator_shadow_offset:I = 0x7f0702d4
+
+.field public static final cs_page_indicator_shadow_radius:I = 0x7f0702d5
+
+.field public static final cs_page_indicator_shadow_radius_dark:I = 0x7f0702d6
+
+.field public static final cs_page_indicator_text_size:I = 0x7f0702d7
+
+.field public static final cs_page_indicator_text_view_horizontal_padding:I = 0x7f0702d8
+
+.field public static final cs_page_indicator_text_view_vertical_padding:I = 0x7f0702d9
+
+.field public static final cs_page_indicator_text_view_vertical_padding_dark:I = 0x7f0702da
+
+.field public static final cs_vertical_seek_bar_right_offset:I = 0x7f0702db
+
+.field public static final curve_degree:I = 0x7f0702dc
+
+.field public static final decorator_text_padding:I = 0x7f0702dd
+
+.field public static final default_button_image_side_padding:I = 0x7f0702df
+
+.field public static final default_padding:I = 0x7f0702e0
+
+.field public static final definition_container_background_bottom_padding_bottom:I = 0x7f0702e1
+
+.field public static final definition_container_background_top_padding_bottom:I = 0x7f0702e4
+
+.field public static final design_appbar_elevation:I = 0x7f0702ee
+
+.field public static final design_bottom_navigation_active_item_max_width:I = 0x7f0702ef
+
+.field public static final design_bottom_navigation_active_item_min_width:I = 0x7f0702f0
+
+.field public static final design_bottom_navigation_active_text_size:I = 0x7f0702f1
+
+.field public static final design_bottom_navigation_elevation:I = 0x7f0702f2
+
+.field public static final design_bottom_navigation_height:I = 0x7f0702f3
+
+.field public static final design_bottom_navigation_icon_size:I = 0x7f0702f4
+
+.field public static final design_bottom_navigation_item_max_width:I = 0x7f0702f5
+
+.field public static final design_bottom_navigation_item_min_width:I = 0x7f0702f6
+
+.field public static final design_bottom_navigation_margin:I = 0x7f0702f7
+
+.field public static final design_bottom_navigation_shadow_height:I = 0x7f0702f8
+
+.field public static final design_bottom_navigation_text_size:I = 0x7f0702f9
+
+.field public static final design_bottom_sheet_modal_elevation:I = 0x7f0702fa
+
+.field public static final design_bottom_sheet_peek_height_min:I = 0x7f0702fb
+
+.field public static final design_fab_border_width:I = 0x7f0702fc
+
+.field public static final design_fab_elevation:I = 0x7f0702fd
+
+.field public static final design_fab_image_size:I = 0x7f0702fe
+
+.field public static final design_fab_size_mini:I = 0x7f0702ff
+
+.field public static final design_fab_size_normal:I = 0x7f070300
+
+.field public static final design_fab_translation_z_hovered_focused:I = 0x7f070301
+
+.field public static final design_fab_translation_z_pressed:I = 0x7f070302
+
+.field public static final design_navigation_elevation:I = 0x7f070303
+
+.field public static final design_navigation_icon_padding:I = 0x7f070304
+
+.field public static final design_navigation_icon_size:I = 0x7f070305
+
+.field public static final design_navigation_item_horizontal_padding:I = 0x7f070306
+
+.field public static final design_navigation_item_icon_padding:I = 0x7f070307
+
+.field public static final design_navigation_max_width:I = 0x7f070308
+
+.field public static final design_navigation_padding_bottom:I = 0x7f070309
+
+.field public static final design_navigation_separator_vertical_padding:I = 0x7f07030a
+
+.field public static final design_snackbar_action_inline_max_width:I = 0x7f07030b
+
+.field public static final design_snackbar_background_corner_radius:I = 0x7f07030c
+
+.field public static final design_snackbar_elevation:I = 0x7f07030d
+
+.field public static final design_snackbar_extra_spacing_horizontal:I = 0x7f07030e
+
+.field public static final design_snackbar_max_width:I = 0x7f07030f
+
+.field public static final design_snackbar_min_width:I = 0x7f070310
+
+.field public static final design_snackbar_padding_horizontal:I = 0x7f070311
+
+.field public static final design_snackbar_padding_vertical:I = 0x7f070312
+
+.field public static final design_snackbar_padding_vertical_2lines:I = 0x7f070313
+
+.field public static final design_snackbar_text_size:I = 0x7f070314
+
+.field public static final design_tab_max_width:I = 0x7f070315
+
+.field public static final design_tab_scrollable_min_width:I = 0x7f070316
+
+.field public static final design_tab_text_size:I = 0x7f070317
+
+.field public static final design_tab_text_size_2line:I = 0x7f070318
+
+.field public static final design_textinput_caption_translate_y:I = 0x7f070319
+
+.field public static final details_deep_stack:I = 0x7f07031a
+
+.field public static final dialog_custom_view_padding:I = 0x7f07031b
+
+.field public static final disabled_alpha_material_dark:I = 0x7f070321
+
+.field public static final disabled_alpha_material_light:I = 0x7f070322
+
+.field public static final display_counter_text_size:I = 0x7f070324
+
+.field public static final doc_title_bottom_padding_ratio:I = 0x7f070327
+
+.field public static final doc_title_horz_padding_ratio:I = 0x7f070328
+
+.field public static final doc_title_text_size_ratio:I = 0x7f070329
+
+.field public static final dots_empty_diameter:I = 0x7f07032a
+
+.field public static final dots_filled_diameter:I = 0x7f07032b
+
+.field public static final dots_horizontal_spacing:I = 0x7f07032c
+
+.field public static final dotted_button_dot_margin:I = 0x7f07032d
+
+.field public static final download_progress_height:I = 0x7f07032e
+
+.field public static final downloaded_toggle_bar_horizontal_padding:I = 0x7f07032f
+
+.field public static final downloaded_toggle_bar_min_height:I = 0x7f070330
+
+.field public static final drop_down_side_padding:I = 0x7f070332
+
+.field public static final drop_down_text_size:I = 0x7f070333
+
+.field public static final drop_down_vert_padding:I = 0x7f070334
+
+.field public static final dropdown_selection_button_image_size:I = 0x7f070335
+
+.field public static final dropdown_selection_button_padding_horz:I = 0x7f070336
+
+.field public static final dropdown_selection_button_padding_vert:I = 0x7f070337
+
+.field public static final e30s_ratingbar_large_maxHeight:I = 0x7f070376
+
+.field public static final e30s_ratingbar_large_minHeight:I = 0x7f070377
+
+.field public static final e30s_ratingbar_medium_maxHeight:I = 0x7f070378
+
+.field public static final e30s_ratingbar_medium_minHeight:I = 0x7f070379
+
+.field public static final e30s_ratingbar_small_maxHeight:I = 0x7f07037a
+
+.field public static final e30s_ratingbar_small_minHeight:I = 0x7f07037b
+
+.field public static final e3os_caret_width:I = 0x7f07037c
+
+.field public static final e3os_checkedtextview_bottompadding:I = 0x7f07037d
+
+.field public static final e3os_checkedtextview_leftpadding:I = 0x7f07037e
+
+.field public static final e3os_checkedtextview_rightpadding:I = 0x7f07037f
+
+.field public static final e3os_checkedtextview_text_size:I = 0x7f070380
+
+.field public static final e3os_checkedtextview_toppadding:I = 0x7f070381
+
+.field public static final e3os_divider_padding:I = 0x7f070382
+
+.field public static final e3os_divider_width:I = 0x7f070383
+
+.field public static final e3os_dropdownlistview_rightpadding:I = 0x7f070384
+
+.field public static final e3os_edit_text_border:I = 0x7f070385
+
+.field public static final e3os_edit_text_border_focus:I = 0x7f070386
+
+.field public static final e3os_edit_text_bottom_margin:I = 0x7f070387
+
+.field public static final e3os_edit_text_bottom_padding:I = 0x7f070388
+
+.field public static final e3os_edit_text_cursor_bottom_padding:I = 0x7f070389
+
+.field public static final e3os_edit_text_cursor_top_padding:I = 0x7f07038a
+
+.field public static final e3os_edit_text_layout_height:I = 0x7f07038b
+
+.field public static final e3os_edit_text_left_margin:I = 0x7f07038c
+
+.field public static final e3os_edit_text_right_margin:I = 0x7f07038d
+
+.field public static final e3os_edit_text_text_size:I = 0x7f07038e
+
+.field public static final e3os_edit_text_top_margin:I = 0x7f07038f
+
+.field public static final e3os_edit_text_top_padding:I = 0x7f070390
+
+.field public static final e3os_empty_height:I = 0x7f070391
+
+.field public static final e3os_empty_width:I = 0x7f070392
+
+.field public static final e3os_expandable_listview_bottom_padding:I = 0x7f070393
+
+.field public static final e3os_expandable_listview_group_left_padding:I = 0x7f070394
+
+.field public static final e3os_expandable_listview_icon_left_padding:I = 0x7f070395
+
+.field public static final e3os_expandable_listview_left_padding:I = 0x7f070396
+
+.field public static final e3os_expandable_listview_top_padding:I = 0x7f070397
+
+.field public static final e3os_horizontal_scrollbar_bottom_padding:I = 0x7f070398
+
+.field public static final e3os_horizontal_scrollbar_left_padding:I = 0x7f070399
+
+.field public static final e3os_horizontal_scrollbar_right_padding:I = 0x7f07039a
+
+.field public static final e3os_horizontal_scrollbar_top_padding:I = 0x7f07039b
+
+.field public static final e3os_list_item_padding:I = 0x7f07039c
+
+.field public static final e3os_menupopup_disable_shadow:I = 0x7f07039d
+
+.field public static final e3os_overflow_icon_bottompadding:I = 0x7f07039e
+
+.field public static final e3os_overflow_icon_leftpadding:I = 0x7f07039f
+
+.field public static final e3os_overflow_icon_rightpadding:I = 0x7f0703a0
+
+.field public static final e3os_overflow_icon_toppadding:I = 0x7f0703a1
+
+.field public static final e3os_overflowmenu_item_size:I = 0x7f0703a2
+
+.field public static final e3os_overflowpopup_menu_offset:I = 0x7f0703a3
+
+.field public static final e3os_preference_icon_margin_right:I = 0x7f0703a4
+
+.field public static final e3os_preference_line_spacing:I = 0x7f0703a5
+
+.field public static final e3os_preference_margin_end:I = 0x7f0703a6
+
+.field public static final e3os_preference_min_height:I = 0x7f0703a7
+
+.field public static final e3os_preference_padding_start:I = 0x7f0703a8
+
+.field public static final e3os_preference_summary_text_size:I = 0x7f0703a9
+
+.field public static final e3os_preference_text_margin_top:I = 0x7f0703aa
+
+.field public static final e3os_preference_title_summary_distance:I = 0x7f0703ab
+
+.field public static final e3os_preference_title_text_size:I = 0x7f0703ac
+
+.field public static final e3os_preference_widget_margin_left:I = 0x7f0703ad
+
+.field public static final e3os_preference_widget_margin_top:I = 0x7f0703ae
+
+.field public static final e3os_progress_bar_height:I = 0x7f0703af
+
+.field public static final e3os_progress_bar_height_small:I = 0x7f0703b0
+
+.field public static final e3os_progress_bar_horizontal_height:I = 0x7f0703b1
+
+.field public static final e3os_progress_bar_horizontal_margin_bottom:I = 0x7f0703b2
+
+.field public static final e3os_progress_bar_horizontal_margin_top:I = 0x7f0703b3
+
+.field public static final e3os_progress_bar_width:I = 0x7f0703b4
+
+.field public static final e3os_progress_bar_width_small:I = 0x7f0703b5
+
+.field public static final e3os_seekbar_progress_width:I = 0x7f0703b6
+
+.field public static final e3os_seekbar_thumb_offset:I = 0x7f0703b7
+
+.field public static final e3os_seekbar_thumb_padding:I = 0x7f0703b8
+
+.field public static final e3os_seekbar_thumb_size:I = 0x7f0703b9
+
+.field public static final e3os_seekbar_thumb_stroke_width:I = 0x7f0703ba
+
+.field public static final e3os_seekbar_track_stroke:I = 0x7f0703bb
+
+.field public static final e3os_seekbar_track_width:I = 0x7f0703bc
+
+.field public static final e3os_spinner_dropdown_border_bottom:I = 0x7f0703bd
+
+.field public static final e3os_spinner_dropdown_border_top:I = 0x7f0703be
+
+.field public static final e3os_spinner_dropdown_border_width:I = 0x7f0703bf
+
+.field public static final e3os_spinner_dropdown_divider_height:I = 0x7f0703c0
+
+.field public static final e3os_spinner_dropdown_padding_left:I = 0x7f0703c1
+
+.field public static final e3os_spinner_dropdown_padding_right:I = 0x7f0703c2
+
+.field public static final e3os_spinner_dropdown_vertical_offset:I = 0x7f0703c3
+
+.field public static final e3os_switch_height:I = 0x7f0703c4
+
+.field public static final e3os_switch_min_width:I = 0x7f0703c5
+
+.field public static final e3os_toggle_text_size:I = 0x7f0703c6
+
+.field public static final e3os_vertical_padded_scrollbar_top_padding:I = 0x7f0703c7
+
+.field public static final e3os_vertical_scrollbar_bottom_padding:I = 0x7f0703c8
+
+.field public static final e3os_vertical_scrollbar_left_padding:I = 0x7f0703c9
+
+.field public static final e3os_vertical_scrollbar_right_padding:I = 0x7f0703ca
+
+.field public static final e3os_vertical_scrollbar_top_padding:I = 0x7f0703cb
+
+.field public static final e3os_window_elevation:I = 0x7f0703cc
+
+.field public static final edit_collection_title_padding_end:I = 0x7f0703cd
+
+.field public static final edit_note_text_side_margin:I = 0x7f0703ce
+
+.field public static final edit_note_text_size:I = 0x7f0703cf
+
+.field public static final eink_actionbar_height:I = 0x7f0703d0
+
+.field public static final eink_actionbar_icon_padding:I = 0x7f0703d1
+
+.field public static final eink_actionbar_margin_bottom:I = 0x7f0703d2
+
+.field public static final eink_actionbar_overflow_padding_left:I = 0x7f0703d3
+
+.field public static final eink_collection_grid_bottom_container_margin:I = 0x7f0703d4
+
+.field public static final eink_collection_grid_items_count_margin_bottom:I = 0x7f0703d5
+
+.field public static final eink_collection_grid_items_count_margin_left:I = 0x7f0703d6
+
+.field public static final eink_collection_grid_items_count_text_size:I = 0x7f0703d7
+
+.field public static final eink_collection_grid_items_count_width:I = 0x7f0703d8
+
+.field public static final eink_collection_grid_title_margin_horizontal:I = 0x7f0703d9
+
+.field public static final eink_collection_grid_title_margin_top:I = 0x7f0703da
+
+.field public static final eink_collection_grid_title_text_size:I = 0x7f0703db
+
+.field public static final eink_collection_list_row_overflow_area_width:I = 0x7f0703dc
+
+.field public static final eink_collection_list_row_title_container_margin_left:I = 0x7f0703dd
+
+.field public static final eink_collection_list_row_title_container_margin_right:I = 0x7f0703de
+
+.field public static final eink_content_type_filter_margin_right:I = 0x7f0703df
+
+.field public static final eink_cover_border_width:I = 0x7f0703e0
+
+.field public static final eink_edit_collection_checkbox_margin_left:I = 0x7f0703e1
+
+.field public static final eink_edit_collection_checkbox_margin_vertical:I = 0x7f0703e2
+
+.field public static final eink_edit_collection_done_text_size:I = 0x7f0703e3
+
+.field public static final eink_edit_collection_done_text_view_height:I = 0x7f0703e4
+
+.field public static final eink_edit_collection_done_text_view_padding_vertical:I = 0x7f0703e5
+
+.field public static final eink_filter_drop_down_image_height:I = 0x7f0703e6
+
+.field public static final eink_filter_drop_down_image_margin_bottom:I = 0x7f0703e7
+
+.field public static final eink_filter_drop_down_image_width:I = 0x7f0703e8
+
+.field public static final eink_filter_min_width:I = 0x7f0703e9
+
+.field public static final eink_grid_view_book_opening_height:I = 0x7f0703ea
+
+.field public static final eink_grid_view_book_opening_text_size:I = 0x7f0703eb
+
+.field public static final eink_grid_view_bottom_padding:I = 0x7f0703ec
+
+.field public static final eink_grid_view_cancel_badge_padding:I = 0x7f0703ed
+
+.field public static final eink_grid_view_download_progress_height:I = 0x7f0703ee
+
+.field public static final eink_grid_view_horizontal_spacing:I = 0x7f0703ef
+
+.field public static final eink_grid_view_item_height:I = 0x7f0703f0
+
+.field public static final eink_grid_view_item_width:I = 0x7f0703f1
+
+.field public static final eink_grid_view_side_padding_left:I = 0x7f0703f2
+
+.field public static final eink_grid_view_side_padding_right:I = 0x7f0703f3
+
+.field public static final eink_grid_view_top_padding:I = 0x7f0703f4
+
+.field public static final eink_grid_view_vertical_spacing:I = 0x7f0703f5
+
+.field public static final eink_home_scrollbar_padding_bottom:I = 0x7f0703f6
+
+.field public static final eink_home_scrollbar_padding_top:I = 0x7f0703f7
+
+.field public static final eink_icon_size:I = 0x7f0703f8
+
+.field public static final eink_lib_popup_menu_checkmark_padding_vertical:I = 0x7f0703f9
+
+.field public static final eink_lib_popup_menu_divider_margin_horizontal:I = 0x7f0703fa
+
+.field public static final eink_lib_popup_menu_divider_width:I = 0x7f0703fb
+
+.field public static final eink_lib_popup_menu_text_padding_vertical:I = 0x7f0703fc
+
+.field public static final eink_list_row_author_text_size:I = 0x7f0703fd
+
+.field public static final eink_list_row_cover_container_height:I = 0x7f0703fe
+
+.field public static final eink_list_row_cover_container_margin_top:I = 0x7f0703ff
+
+.field public static final eink_list_row_cover_container_width:I = 0x7f070400
+
+.field public static final eink_list_row_height:I = 0x7f070401
+
+.field public static final eink_list_row_item_width:I = 0x7f070402
+
+.field public static final eink_list_row_overflow_icon_size:I = 0x7f070403
+
+.field public static final eink_list_row_padding_bottom:I = 0x7f070404
+
+.field public static final eink_list_row_padding_left:I = 0x7f070405
+
+.field public static final eink_list_row_padding_right:I = 0x7f070406
+
+.field public static final eink_list_row_padding_top:I = 0x7f070407
+
+.field public static final eink_list_row_reading_progress_margin_right:I = 0x7f070408
+
+.field public static final eink_list_row_right_badge_icon_size:I = 0x7f070409
+
+.field public static final eink_list_row_right_badge_margin_left:I = 0x7f07040a
+
+.field public static final eink_list_row_status_text_size:I = 0x7f07040b
+
+.field public static final eink_list_row_title_container_item_margin_top:I = 0x7f07040c
+
+.field public static final eink_list_row_title_container_margin_left:I = 0x7f07040d
+
+.field public static final eink_list_row_title_container_margin_top:I = 0x7f07040e
+
+.field public static final eink_list_row_title_container_width:I = 0x7f07040f
+
+.field public static final eink_list_row_title_text_size:I = 0x7f070410
+
+.field public static final eink_list_view_padding_bottom:I = 0x7f070411
+
+.field public static final eink_list_view_padding_right:I = 0x7f070412
+
+.field public static final eink_overflow_dialog_corner_radius:I = 0x7f070413
+
+.field public static final eink_overflow_dialog_cover_height:I = 0x7f070414
+
+.field public static final eink_overflow_dialog_cover_margin_top:I = 0x7f070415
+
+.field public static final eink_overflow_dialog_cover_width:I = 0x7f070416
+
+.field public static final eink_overflow_dialog_desc_spacing:I = 0x7f070417
+
+.field public static final eink_overflow_dialog_inner_spacing_horizontal:I = 0x7f070418
+
+.field public static final eink_overflow_dialog_menu_item_height:I = 0x7f070419
+
+.field public static final eink_overflow_dialog_menu_margin_top:I = 0x7f07041a
+
+.field public static final eink_overflow_dialog_menu_text_size:I = 0x7f07041b
+
+.field public static final eink_overflow_dialog_padding_vertical:I = 0x7f07041c
+
+.field public static final eink_overflow_dialog_primary_text_size:I = 0x7f07041d
+
+.field public static final eink_overflow_dialog_secondary_text_size:I = 0x7f07041e
+
+.field public static final eink_overflow_dialog_title_margin_left:I = 0x7f07041f
+
+.field public static final eink_overflow_dialog_title_width:I = 0x7f070420
+
+.field public static final eink_overflow_menu_item_height:I = 0x7f070421
+
+.field public static final eink_reading_list_arrow_height:I = 0x7f070422
+
+.field public static final eink_reading_list_arrow_width:I = 0x7f070423
+
+.field public static final eink_reading_list_cover_height:I = 0x7f070424
+
+.field public static final eink_reading_list_cover_padding_right:I = 0x7f070425
+
+.field public static final eink_reading_list_cover_width:I = 0x7f070426
+
+.field public static final eink_reading_list_find_more_padding_bottom:I = 0x7f070427
+
+.field public static final eink_reading_list_find_more_padding_top:I = 0x7f070428
+
+.field public static final eink_reading_list_height:I = 0x7f070429
+
+.field public static final eink_reading_list_no_recommendations_text_size:I = 0x7f07042a
+
+.field public static final eink_reading_list_resume_book_author_text_size:I = 0x7f07042b
+
+.field public static final eink_reading_list_resume_book_title_text_size:I = 0x7f07042c
+
+.field public static final eink_reading_list_row_book_name_bottom_padding:I = 0x7f07042d
+
+.field public static final eink_reading_list_row_height:I = 0x7f07042e
+
+.field public static final eink_reading_list_row_padding_top:I = 0x7f07042f
+
+.field public static final eink_reading_list_screen_padding_left:I = 0x7f070430
+
+.field public static final eink_reading_list_shoveler_container_width:I = 0x7f070431
+
+.field public static final eink_reading_list_shoveler_margin_left:I = 0x7f070432
+
+.field public static final eink_reading_list_shoveler_padding_left:I = 0x7f070433
+
+.field public static final eink_reading_list_shoveler_padding_right:I = 0x7f070434
+
+.field public static final eink_reading_list_shoveler_padding_top:I = 0x7f070435
+
+.field public static final eink_reading_list_shoveler_title_padding_bottom:I = 0x7f070436
+
+.field public static final eink_reading_list_shoveler_title_text_size:I = 0x7f070437
+
+.field public static final eink_reading_list_shoveler_width:I = 0x7f070438
+
+.field public static final eink_reading_list_width:I = 0x7f070439
+
+.field public static final eink_resume_grid_view_padding:I = 0x7f07043a
+
+.field public static final eink_resume_side_margin:I = 0x7f07043b
+
+.field public static final eink_resume_title_height:I = 0x7f07043c
+
+.field public static final eink_resume_title_xor_height:I = 0x7f07043d
+
+.field public static final eink_resume_widget_empty_status_margin_top:I = 0x7f07043e
+
+.field public static final eink_resume_widget_empty_status_padding_end:I = 0x7f07043f
+
+.field public static final eink_resume_widget_empty_status_padding_start:I = 0x7f070440
+
+.field public static final eink_resume_widget_height:I = 0x7f070441
+
+.field public static final eink_resume_widget_margin:I = 0x7f070442
+
+.field public static final eink_resume_widget_normal_view_margin_bottom:I = 0x7f070443
+
+.field public static final eink_resume_widget_width:I = 0x7f070444
+
+.field public static final eink_search_box_edittext_height:I = 0x7f070445
+
+.field public static final eink_search_box_edittext_margin_horizontal:I = 0x7f070446
+
+.field public static final eink_search_box_edittext_padding_vertical:I = 0x7f070447
+
+.field public static final eink_search_box_edittext_width:I = 0x7f070448
+
+.field public static final eink_search_box_height:I = 0x7f070449
+
+.field public static final eink_search_box_margin_left:I = 0x7f07044a
+
+.field public static final eink_search_box_margin_top:I = 0x7f07044b
+
+.field public static final eink_search_box_padding_horizontal:I = 0x7f07044c
+
+.field public static final eink_search_box_padding_vertical:I = 0x7f07044d
+
+.field public static final eink_search_box_submit_margin_left:I = 0x7f07044e
+
+.field public static final eink_search_box_submit_padding_horizontal:I = 0x7f07044f
+
+.field public static final eink_search_box_text_size:I = 0x7f070450
+
+.field public static final eink_search_box_width:I = 0x7f070451
+
+.field public static final eink_search_close_margin_left:I = 0x7f070452
+
+.field public static final eink_search_dummy_hint_corner_radius:I = 0x7f070453
+
+.field public static final eink_search_dummy_hint_height:I = 0x7f070454
+
+.field public static final eink_search_dummy_hint_margin_left:I = 0x7f070455
+
+.field public static final eink_search_dummy_hint_margin_top:I = 0x7f070456
+
+.field public static final eink_search_dummy_hint_text_size:I = 0x7f070457
+
+.field public static final eink_search_dummy_hint_width:I = 0x7f070458
+
+.field public static final eink_search_dummy_result_desc_height:I = 0x7f070459
+
+.field public static final eink_search_dummy_result_desc_nonfull_width:I = 0x7f07045a
+
+.field public static final eink_search_dummy_result_desc_width_line1:I = 0x7f07045b
+
+.field public static final eink_search_dummy_result_desc_width_line2:I = 0x7f07045c
+
+.field public static final eink_search_dummy_result_desc_width_line3:I = 0x7f07045d
+
+.field public static final eink_search_dummy_result_rating_height:I = 0x7f07045e
+
+.field public static final eink_search_dummy_result_rating_width:I = 0x7f07045f
+
+.field public static final eink_search_library_result_margin_bottom:I = 0x7f070460
+
+.field public static final eink_search_result_author_margin_top:I = 0x7f070461
+
+.field public static final eink_search_result_author_text_size:I = 0x7f070462
+
+.field public static final eink_search_result_cover_height:I = 0x7f070463
+
+.field public static final eink_search_result_cover_width:I = 0x7f070464
+
+.field public static final eink_search_result_last_spacing:I = 0x7f070465
+
+.field public static final eink_search_result_menu_margin_bottom:I = 0x7f070466
+
+.field public static final eink_search_result_menu_margin_top:I = 0x7f070467
+
+.field public static final eink_search_result_normal_spacing:I = 0x7f070468
+
+.field public static final eink_search_result_rating_star_size:I = 0x7f070469
+
+.field public static final eink_search_result_side_padding:I = 0x7f07046a
+
+.field public static final eink_search_result_title_margin_top:I = 0x7f07046b
+
+.field public static final eink_search_result_title_text_size:I = 0x7f07046c
+
+.field public static final eink_search_store_section_height:I = 0x7f07046d
+
+.field public static final eink_search_store_section_margin_top:I = 0x7f07046e
+
+.field public static final eink_section_icon_inset_size:I = 0x7f07046f
+
+.field public static final eink_section_title_height:I = 0x7f070470
+
+.field public static final eink_section_title_text_size:I = 0x7f070471
+
+.field public static final eink_seeall_result_count_padding_left:I = 0x7f070472
+
+.field public static final eink_shoveler_margin:I = 0x7f070473
+
+.field public static final eink_sort_type_filter_margin_right:I = 0x7f070474
+
+.field public static final eink_widget_padding_bottom:I = 0x7f070475
+
+.field public static final eink_widget_padding_top:I = 0x7f070476
+
+.field public static final empty_library_button_min_size:I = 0x7f070477
+
+.field public static final end_button_padding:I = 0x7f070478
+
+.field public static final episode_header_text_size:I = 0x7f0704ba
+
+.field public static final episode_panel_item_padding:I = 0x7f0704bb
+
+.field public static final episode_panel_item_padding_bottom:I = 0x7f0704bc
+
+.field public static final episode_panel_item_padding_top:I = 0x7f0704bd
+
+.field public static final expandable_grid_widget_vert_padding:I = 0x7f0704c2
+
+.field public static final explore_cover_height:I = 0x7f0704c3
+
+.field public static final explore_cover_width:I = 0x7f0704c4
+
+.field public static final extra_line_spacing_default:I = 0x7f0704c5
+
+.field public static final extra_line_spacing_ja_vert_default:I = 0x7f0704c6
+
+.field public static final extra_line_spacing_narrow:I = 0x7f0704c7
+
+.field public static final extra_line_spacing_wide:I = 0x7f0704c8
+
+.field public static final f_grid_horizontal_margins_wide_item:I = 0x7f0704ce
+
+.field public static final f_grid_item_book_height:I = 0x7f0704cf
+
+.field public static final f_grid_item_doc_height:I = 0x7f0704d0
+
+.field public static final f_grid_item_newsstand_height:I = 0x7f0704d1
+
+.field public static final f_grid_item_tv_height:I = 0x7f0704d2
+
+.field public static final f_grid_item_video_height:I = 0x7f0704d3
+
+.field public static final f_grid_item_wide_width:I = 0x7f0704d4
+
+.field public static final fab_margin:I = 0x7f0704d7
+
+.field public static final fallback_close_button_size:I = 0x7f0704d8
+
+.field public static final fast_navigation_view_contrast_border:I = 0x7f0704d9
+
+.field public static final fast_navigation_view_padding_bottom:I = 0x7f0704da
+
+.field public static final fast_navigation_view_padding_top:I = 0x7f0704db
+
+.field public static final fast_navigation_view_seekbar_padding_bottom:I = 0x7f0704dc
+
+.field public static final fast_navigation_view_seekbar_padding_top:I = 0x7f0704dd
+
+.field public static final fastscroll_default_thickness:I = 0x7f0704de
+
+.field public static final fastscroll_margin:I = 0x7f0704df
+
+.field public static final fastscroll_minimum_range:I = 0x7f0704e0
+
+.field public static final feedback_screen_height:I = 0x7f070535
+
+.field public static final feedback_screen_top_margin:I = 0x7f070536
+
+.field public static final feedback_screen_width:I = 0x7f070537
+
+.field public static final file_size_top_padding:I = 0x7f070538
+
+.field public static final filter_fullscreen_status_bar_offset:I = 0x7f070539
+
+.field public static final filter_item_divider_height:I = 0x7f07053a
+
+.field public static final filters_bar_height:I = 0x7f07053b
+
+.field public static final filters_bar_left_padding:I = 0x7f07053c
+
+.field public static final filters_bar_right_padding:I = 0x7f07053d
+
+.field public static final fling_to_page_horiz_delta:I = 0x7f07053e
+
+.field public static final fling_to_page_velocity:I = 0x7f07053f
+
+.field public static final fontLarge:I = 0x7f070548
+
+.field public static final fontMedium:I = 0x7f070549
+
+.field public static final fontRegular:I = 0x7f07054a
+
+.field public static final fontSmall:I = 0x7f07054b
+
+.field public static final fontXLarge:I = 0x7f07054c
+
+.field public static final fontXSmall:I = 0x7f07054d
+
+.field public static final fontXXLarge:I = 0x7f07054e
+
+.field public static final fontXXSmall:I = 0x7f07054f
+
+.field public static final fr_action_button_min_height:I = 0x7f070550
+
+.field public static final fr_action_button_min_width:I = 0x7f070551
+
+.field public static final fr_action_button_min_width_overflow:I = 0x7f070552
+
+.field public static final fr_alert_dialog_min_button_height:I = 0x7f070553
+
+.field public static final fr_alert_dialog_min_button_width:I = 0x7f070554
+
+.field public static final fr_alert_dialog_minimum_width_major:I = 0x7f070555
+
+.field public static final fr_alert_dialog_minimum_width_minor:I = 0x7f070556
+
+.field public static final fr_button_drawable_padding:I = 0x7f070557
+
+.field public static final fr_button_min_height:I = 0x7f070558
+
+.field public static final fr_button_min_width:I = 0x7f070559
+
+.field public static final fr_button_padding_horizontal:I = 0x7f07055a
+
+.field public static final fr_button_padding_vertical:I = 0x7f07055b
+
+.field public static final fr_button_small_min_height:I = 0x7f07055c
+
+.field public static final fr_button_small_min_width:I = 0x7f07055d
+
+.field public static final fr_button_small_padding_horizontal:I = 0x7f07055e
+
+.field public static final fr_button_small_padding_vertical:I = 0x7f07055f
+
+.field public static final fr_disabled_alpha_dark:I = 0x7f070560
+
+.field public static final fr_disabled_alpha_light:I = 0x7f070561
+
+.field public static final fr_downloaded_toggle_divider_inset:I = 0x7f070562
+
+.field public static final fr_dropdown_item_min_width:I = 0x7f070563
+
+.field public static final fr_floating_window_elevation:I = 0x7f070564
+
+.field public static final fr_grid_horizontal_margins:I = 0x7f070565
+
+.field public static final fr_grid_item_spacing:I = 0x7f070566
+
+.field public static final fr_grid_item_standard_width:I = 0x7f070567
+
+.field public static final fr_grid_margin_bot:I = 0x7f070568
+
+.field public static final fr_grid_margin_top:I = 0x7f070569
+
+.field public static final fr_list_item_height_large:I = 0x7f07056a
+
+.field public static final fr_list_item_height_medium:I = 0x7f07056b
+
+.field public static final fr_list_item_height_small:I = 0x7f07056c
+
+.field public static final fr_preferenceCategoryHeight:I = 0x7f07056d
+
+.field public static final fr_preferenceCategoryTextPaddingBottom:I = 0x7f07056e
+
+.field public static final fr_preferenceCategoryTextPaddingTop:I = 0x7f07056f
+
+.field public static final fr_preferenceEditTextMarginBottom:I = 0x7f070570
+
+.field public static final fr_preferenceEditTextMarginLeft:I = 0x7f070571
+
+.field public static final fr_preferenceEditTextMarginRight:I = 0x7f070572
+
+.field public static final fr_preferenceListIconMarginRight:I = 0x7f070573
+
+.field public static final fr_preferenceListItemHeight:I = 0x7f070574
+
+.field public static final fr_preferenceListItemPaddingBottom:I = 0x7f070575
+
+.field public static final fr_preferenceListItemPaddingTop:I = 0x7f070576
+
+.field public static final fr_preferenceListSummaryMarginTop:I = 0x7f070577
+
+.field public static final fr_preference_checkbox_margin_right:I = 0x7f070578
+
+.field public static final fr_preference_switch_margin_right:I = 0x7f070579
+
+.field public static final fr_progress_bar_horizontal_height:I = 0x7f07057a
+
+.field public static final fr_ratingbar_height:I = 0x7f07057b
+
+.field public static final fr_ratingbar_small_height:I = 0x7f07057c
+
+.field public static final fr_select_listview_top_padding:I = 0x7f07057d
+
+.field public static final fr_standard_margins_horizontal:I = 0x7f07057e
+
+.field public static final fr_switch_min_width:I = 0x7f07057f
+
+.field public static final fr_switch_padding:I = 0x7f070580
+
+.field public static final fr_text_size_body_1:I = 0x7f070581
+
+.field public static final fr_text_size_body_2:I = 0x7f070582
+
+.field public static final fr_text_size_button:I = 0x7f070583
+
+.field public static final fr_text_size_caption:I = 0x7f070584
+
+.field public static final fr_text_size_display_1:I = 0x7f070585
+
+.field public static final fr_text_size_display_2:I = 0x7f070586
+
+.field public static final fr_text_size_headline:I = 0x7f070587
+
+.field public static final fr_text_size_label:I = 0x7f070588
+
+.field public static final fr_text_size_subhead1:I = 0x7f070589
+
+.field public static final fr_text_size_subhead2:I = 0x7f07058a
+
+.field public static final fr_text_size_title:I = 0x7f07058b
+
+.field public static final fr_toolbar_default_height:I = 0x7f07058c
+
+.field public static final fr_toolbar_padding_horizontal:I = 0x7f07058d
+
+.field public static final fr_zero_size:I = 0x7f07058e
+
+.field public static final fullpage_body_text_large_screen:I = 0x7f07059e
+
+.field public static final fullpage_body_text_small_screen:I = 0x7f07059f
+
+.field public static final fullpage_button_height:I = 0x7f0705a0
+
+.field public static final fullpage_button_padding:I = 0x7f0705a1
+
+.field public static final fullpage_button_section_spacing:I = 0x7f0705a2
+
+.field public static final fullpage_button_width:I = 0x7f0705a3
+
+.field public static final fullpage_content_padding_bottom:I = 0x7f0705a4
+
+.field public static final fullpage_content_padding_side:I = 0x7f0705a5
+
+.field public static final fullpage_content_padding_top:I = 0x7f0705a6
+
+.field public static final fullpage_padding_bottom:I = 0x7f0705a7
+
+.field public static final fullpage_padding_bottom_content_wrapped:I = 0x7f0705a8
+
+.field public static final fullpage_padding_side:I = 0x7f0705a9
+
+.field public static final fullpage_padding_side_content_wrapped:I = 0x7f0705aa
+
+.field public static final fullpage_padding_top:I = 0x7f0705ab
+
+.field public static final fullpage_padding_top_content_wrapped:I = 0x7f0705ac
+
+.field public static final fullpage_title_text_large_screen:I = 0x7f0705ad
+
+.field public static final fullpage_title_text_small_screen:I = 0x7f0705ae
+
+.field public static final gallery_curve_density:I = 0x7f0705af
+
+.field public static final gallery_curve_span:I = 0x7f0705b0
+
+.field public static final gallery_offset:I = 0x7f0705b1
+
+.field public static final generated_cover_date_text_size:I = 0x7f0705b4
+
+.field public static final generated_cover_proportional_layout_author_text_size:I = 0x7f0705b5
+
+.field public static final generated_cover_proportional_layout_bottom_margin:I = 0x7f0705b6
+
+.field public static final generated_cover_proportional_layout_height:I = 0x7f0705b7
+
+.field public static final generated_cover_proportional_layout_horz_margin:I = 0x7f0705b8
+
+.field public static final generated_cover_proportional_layout_title_text_size:I = 0x7f0705b9
+
+.field public static final generated_cover_proportional_layout_top_margin:I = 0x7f0705ba
+
+.field public static final generated_cover_proportional_layout_width:I = 0x7f0705bb
+
+.field public static final generated_cover_subtitle_text_size:I = 0x7f0705bc
+
+.field public static final generated_cover_title_min_padding:I = 0x7f0705bd
+
+.field public static final generated_cover_title_text_size:I = 0x7f0705be
+
+.field public static final graphical_highlight_anchor_tracking_distance:I = 0x7f0705bf
+
+.field public static final graphical_highlight_border_width:I = 0x7f0705c0
+
+.field public static final graphical_highlight_drag_to_select_padding:I = 0x7f0705c1
+
+.field public static final graphical_highlight_expansion_height:I = 0x7f0705c2
+
+.field public static final graphical_highlight_expansion_width:I = 0x7f0705c3
+
+.field public static final graphical_highlight_selection_start_distance:I = 0x7f0705c4
+
+.field public static final graphical_highlight_touch_precision:I = 0x7f0705c5
+
+.field public static final hero_card_height:I = 0x7f0705ca
+
+.field public static final hero_card_image_margin:I = 0x7f0705cb
+
+.field public static final hide_decoration_button_width:I = 0x7f0705cc
+
+.field public static final highlight_alpha_material_colored:I = 0x7f0705cd
+
+.field public static final highlight_alpha_material_dark:I = 0x7f0705ce
+
+.field public static final highlight_alpha_material_light:I = 0x7f0705cf
+
+.field public static final highlight_button_bounds_inset:I = 0x7f0705d0
+
+.field public static final highlight_button_corner_radius:I = 0x7f0705d1
+
+.field public static final highlight_button_stroke_width:I = 0x7f0705d2
+
+.field public static final highlight_category_button_width:I = 0x7f0705d3
+
+.field public static final hint_alpha_material_dark:I = 0x7f0705d4
+
+.field public static final hint_alpha_material_light:I = 0x7f0705d5
+
+.field public static final hint_pressed_alpha_material_dark:I = 0x7f0705d6
+
+.field public static final hint_pressed_alpha_material_light:I = 0x7f0705d7
+
+.field public static final home_announcement_close_button_size:I = 0x7f0705d9
+
+.field public static final home_announcement_text_margin_end:I = 0x7f0705da
+
+.field public static final home_card_announcement_margin:I = 0x7f0705db
+
+.field public static final home_card_divider_height:I = 0x7f0705dc
+
+.field public static final home_card_divider_margin:I = 0x7f0705dd
+
+.field public static final home_card_header_description_margin_top:I = 0x7f0705de
+
+.field public static final home_card_header_margin:I = 0x7f0705df
+
+.field public static final home_card_header_margin_top:I = 0x7f0705e0
+
+.field public static final home_card_image_header_image_height:I = 0x7f0705e1
+
+.field public static final home_card_image_header_margin_top:I = 0x7f0705e2
+
+.field public static final home_card_image_header_text_margin_top:I = 0x7f0705e3
+
+.field public static final home_card_margin:I = 0x7f0705e4
+
+.field public static final home_card_padding:I = 0x7f0705e5
+
+.field public static final home_card_spacing_between_cards:I = 0x7f0705e6
+
+.field public static final home_card_star_rating_height:I = 0x7f0705e7
+
+.field public static final home_donation_close_button_size:I = 0x7f0705e8
+
+.field public static final home_donation_content_margin_top:I = 0x7f0705e9
+
+.field public static final home_donation_image_margin_end:I = 0x7f0705ea
+
+.field public static final home_donation_image_size:I = 0x7f0705eb
+
+.field public static final home_donation_text_margin_end:I = 0x7f0705ec
+
+.field public static final home_feed_margin_bottom:I = 0x7f0705ed
+
+.field public static final home_feed_margin_top:I = 0x7f0705ee
+
+.field public static final home_footer_height:I = 0x7f0705ef
+
+.field public static final home_free_books_image_height:I = 0x7f0705f0
+
+.field public static final home_free_books_image_width:I = 0x7f0705f1
+
+.field public static final home_spinner_inner_radius:I = 0x7f0705f2
+
+.field public static final home_spinner_margin_top:I = 0x7f0705f3
+
+.field public static final home_spinner_progress_bar_size:I = 0x7f0705f4
+
+.field public static final home_spinner_text_margin_start:I = 0x7f0705f5
+
+.field public static final home_spinner_thickness:I = 0x7f0705f6
+
+.field public static final home_spinner_widget_height:I = 0x7f0705f7
+
+.field public static final info_card_footer_height:I = 0x7f0705f8
+
+.field public static final info_card_page_indicator_border:I = 0x7f0705f9
+
+.field public static final info_card_subtitle_text:I = 0x7f0705fa
+
+.field public static final info_card_v2_button_bar_height:I = 0x7f0705fb
+
+.field public static final info_card_v2_button_text_font_size:I = 0x7f0705fc
+
+.field public static final info_card_v2_container_height:I = 0x7f0705fd
+
+.field public static final info_card_v2_container_width:I = 0x7f0705fe
+
+.field public static final info_card_v2_content_horizontal_margin:I = 0x7f0705ff
+
+.field public static final info_card_v2_content_horizontal_padding:I = 0x7f070600
+
+.field public static final info_card_v2_content_secondary_text_font_size:I = 0x7f070601
+
+.field public static final info_card_v2_content_text_font_size:I = 0x7f070602
+
+.field public static final info_card_v2_content_vertical_padding:I = 0x7f070603
+
+.field public static final info_card_v2_definition_progress_bar_margin_top:I = 0x7f070606
+
+.field public static final info_card_v2_definition_progress_bar_size:I = 0x7f070607
+
+.field public static final info_card_v2_definition_view_maximum_height:I = 0x7f070608
+
+.field public static final info_card_v2_dictionary_selection_text_width:I = 0x7f070609
+
+.field public static final info_card_v2_go_to_dictionary_text_width:I = 0x7f07060c
+
+.field public static final info_card_v2_link_button_bar_horizontal_padding:I = 0x7f07060d
+
+.field public static final info_card_v2_normal_button_bar_horizontal_padding:I = 0x7f07060e
+
+.field public static final info_card_v2_normal_button_left_margin:I = 0x7f07060f
+
+.field public static final info_card_v2_title_bar_height:I = 0x7f070610
+
+.field public static final info_card_v2_title_bar_padding:I = 0x7f070611
+
+.field public static final info_card_v2_title_bar_text_font_size:I = 0x7f070612
+
+.field public static final info_card_v2_translate_button_padding:I = 0x7f070613
+
+.field public static final info_card_v2_translate_content_font_size:I = 0x7f070614
+
+.field public static final info_card_v2_wikipedia_content_font_size:I = 0x7f070615
+
+.field public static final info_card_v2_wordwise_helpful_text_width:I = 0x7f070616
+
+.field public static final info_card_v2_wordwise_other_meanings_text_width:I = 0x7f070617
+
+.field public static final info_card_wikipedia_button_height:I = 0x7f070618
+
+.field public static final info_card_wikipedia_button_text_size:I = 0x7f070619
+
+.field public static final info_card_wikipedia_html_left_margin:I = 0x7f07061a
+
+.field public static final info_card_wikipedia_html_right_margin:I = 0x7f07061b
+
+.field public static final info_card_wikipedia_html_top_margin:I = 0x7f07061c
+
+.field public static final info_card_wikipedia_license_text_size:I = 0x7f07061d
+
+.field public static final info_card_wikipedia_padding_left:I = 0x7f07061e
+
+.field public static final info_card_wikipedia_padding_right:I = 0x7f07061f
+
+.field public static final info_card_wikipedia_padding_top:I = 0x7f070620
+
+.field public static final info_card_wikipedia_title_margin_bottom:I = 0x7f070621
+
+.field public static final info_card_wikipedia_title_margin_right:I = 0x7f070622
+
+.field public static final infocard_button_padding_bottom:I = 0x7f070623
+
+.field public static final infocard_button_padding_top:I = 0x7f070624
+
+.field public static final infocard_button_width:I = 0x7f070625
+
+.field public static final infocard_dictionary_font_size:I = 0x7f070626
+
+.field public static final infocard_dictionary_top_padding:I = 0x7f070627
+
+.field public static final infocard_footer_button_padding:I = 0x7f070628
+
+.field public static final infocard_height:I = 0x7f070629
+
+.field public static final infocard_image_bottom_padding:I = 0x7f07062a
+
+.field public static final infocard_image_left_padding:I = 0x7f07062b
+
+.field public static final infocard_image_right_padding:I = 0x7f07062c
+
+.field public static final infocard_image_top_padding:I = 0x7f07062d
+
+.field public static final infocard_inter_item_padding:I = 0x7f07062e
+
+.field public static final infocard_item_side_padding:I = 0x7f07062f
+
+.field public static final infocard_item_vertical_padding:I = 0x7f070630
+
+.field public static final infocard_note_box_height:I = 0x7f070631
+
+.field public static final infocard_page_selector_height:I = 0x7f070632
+
+.field public static final infocard_page_selector_spacing:I = 0x7f070633
+
+.field public static final infocard_page_selector_vertical_margin:I = 0x7f070634
+
+.field public static final infocard_peek_amount:I = 0x7f070635
+
+.field public static final infocard_side_margin:I = 0x7f070636
+
+.field public static final infocard_side_padding:I = 0x7f070637
+
+.field public static final infocard_title_padding:I = 0x7f070638
+
+.field public static final infocard_title_text:I = 0x7f070639
+
+.field public static final infocard_width:I = 0x7f07063a
+
+.field public static final item_count_number:I = 0x7f07063b
+
+.field public static final item_count_number_large:I = 0x7f07063c
+
+.field public static final item_touch_helper_max_drag_scroll_per_frame:I = 0x7f07063d
+
+.field public static final item_touch_helper_swipe_escape_max_velocity:I = 0x7f07063e
+
+.field public static final item_touch_helper_swipe_escape_velocity:I = 0x7f07063f
+
+.field public static final jit_action_bar_first_button_offset:I = 0x7f070640
+
+.field public static final jit_action_bar_fourth_button_offset:I = 0x7f070641
+
+.field public static final jit_action_bar_second_button_offset:I = 0x7f070642
+
+.field public static final jit_action_bar_third_button_offset:I = 0x7f070643
+
+.field public static final kfc_search_history_border_height:I = 0x7f070680
+
+.field public static final kfc_search_history_clear_img_size:I = 0x7f070681
+
+.field public static final kfc_search_history_clear_img_start:I = 0x7f070682
+
+.field public static final kfc_search_history_clear_padding:I = 0x7f070683
+
+.field public static final kfc_search_history_item_height:I = 0x7f070684
+
+.field public static final kfc_search_history_item_img_size:I = 0x7f070685
+
+.field public static final kfc_search_history_item_left_padding:I = 0x7f070686
+
+.field public static final kfc_search_history_item_nopadding:I = 0x7f070687
+
+.field public static final kfc_search_history_item_right_padding:I = 0x7f070688
+
+.field public static final kfc_search_history_item_spacing:I = 0x7f070689
+
+.field public static final kfc_search_history_item_textsize:I = 0x7f07068a
+
+.field public static final kfc_search_history_item_vertical_space:I = 0x7f07068b
+
+.field public static final kfc_search_history_title_padding:I = 0x7f07068c
+
+.field public static final kindle_alert_dialog_minimum_width_major:I = 0x7f07068d
+
+.field public static final kindle_alert_dialog_minimum_width_minor:I = 0x7f07068e
+
+.field public static final kindle_button_drawable_padding:I = 0x7f07068f
+
+.field public static final kindle_button_min_height:I = 0x7f070690
+
+.field public static final kindle_button_min_width:I = 0x7f070691
+
+.field public static final kindle_button_padding_horizontal:I = 0x7f070692
+
+.field public static final kindle_button_padding_vertical:I = 0x7f070693
+
+.field public static final kindle_button_small_min_height:I = 0x7f070694
+
+.field public static final kindle_button_small_min_width:I = 0x7f070695
+
+.field public static final kindle_button_small_padding_horizontal:I = 0x7f070696
+
+.field public static final kindle_button_small_padding_vertical:I = 0x7f070697
+
+.field public static final kindle_downloaded_toggle_bar_horizontal_padding:I = 0x7f070698
+
+.field public static final kindle_downloaded_toggle_bar_min_height:I = 0x7f070699
+
+.field public static final kindle_downloaded_toggle_divider_inset:I = 0x7f07069a
+
+.field public static final kindle_downloaded_toggle_padding_horizontal:I = 0x7f07069b
+
+.field public static final kindle_text_button:I = 0x7f07069c
+
+.field public static final kindle_text_size_body_1:I = 0x7f07069d
+
+.field public static final kindle_text_size_title:I = 0x7f07069e
+
+.field public static final kindle_toast_action_padding_horizontal:I = 0x7f07069f
+
+.field public static final kindle_toast_action_padding_vertical:I = 0x7f0706a0
+
+.field public static final kindle_toast_action_text_size:I = 0x7f0706a1
+
+.field public static final kindle_toast_elevation:I = 0x7f0706a2
+
+.field public static final kindle_toast_message_action_margin:I = 0x7f0706a3
+
+.field public static final kindle_toast_message_text_size:I = 0x7f0706a4
+
+.field public static final kindle_toast_padding_horizontal:I = 0x7f0706a5
+
+.field public static final kindle_toast_padding_vertical_multi_line:I = 0x7f0706a6
+
+.field public static final kindle_toast_padding_vertical_single_line:I = 0x7f0706a7
+
+.field public static final landing_screen_action_badge_background_padding_horizontal:I = 0x7f070741
+
+.field public static final landing_screen_action_badge_background_radius:I = 0x7f070742
+
+.field public static final landing_screen_action_badge_min_width:I = 0x7f070743
+
+.field public static final landing_screen_action_badge_offset:I = 0x7f070744
+
+.field public static final landing_screen_action_badge_text_size:I = 0x7f070745
+
+.field public static final landing_screen_action_image_size:I = 0x7f070746
+
+.field public static final landing_screen_action_margin_horizontal:I = 0x7f070747
+
+.field public static final large_fonts_cancel_margin:I = 0x7f070748
+
+.field public static final large_fonts_cancel_size:I = 0x7f070749
+
+.field public static final large_fonts_item_height:I = 0x7f07074a
+
+.field public static final large_fonts_margin:I = 0x7f07074b
+
+.field public static final large_fonts_progress_height:I = 0x7f07074c
+
+.field public static final large_fonts_progress_width:I = 0x7f07074d
+
+.field public static final large_fonts_text_margin:I = 0x7f07074e
+
+.field public static final last_read_font_size:I = 0x7f07074f
+
+.field public static final lib_book_row_image_view_height:I = 0x7f070752
+
+.field public static final lib_book_row_image_view_width:I = 0x7f070753
+
+.field public static final lib_grid_back_issues_stack_height:I = 0x7f070756
+
+.field public static final lib_grid_default_side_padding:I = 0x7f070757
+
+.field public static final lib_grid_recycler_view_horizontal_padding:I = 0x7f070758
+
+.field public static final lib_grid_view_vertical_spacing:I = 0x7f070759
+
+.field public static final lib_menu_dropdown_width:I = 0x7f07075a
+
+.field public static final lib_menu_left_side_padding:I = 0x7f07075b
+
+.field public static final lib_menu_right_side_padding:I = 0x7f07075c
+
+.field public static final lib_popup_bottom_padding:I = 0x7f07075d
+
+.field public static final lib_popup_menu_layout_height:I = 0x7f07075e
+
+.field public static final lib_popup_menu_padding:I = 0x7f07075f
+
+.field public static final lib_recycler_parent_horizontal_margin:I = 0x7f070760
+
+.field public static final lib_search_book_row_horizontal_padding:I = 0x7f070761
+
+.field public static final lib_view_sort_menu_offset:I = 0x7f070763
+
+.field public static final lib_view_sort_menu_row_left_padding:I = 0x7f070764
+
+.field public static final lib_view_sort_menu_row_min_height:I = 0x7f070765
+
+.field public static final lib_view_sort_menu_row_right_padding:I = 0x7f070766
+
+.field public static final lib_view_sort_menu_row_top_padding:I = 0x7f070767
+
+.field public static final library_action_bar_button_width:I = 0x7f070768
+
+.field public static final library_action_bar_height:I = 0x7f070769
+
+.field public static final library_action_bar_nav_button_padding:I = 0x7f07076a
+
+.field public static final library_action_bar_nav_button_width:I = 0x7f07076b
+
+.field public static final library_action_bar_spinner_subtitle_size:I = 0x7f07076c
+
+.field public static final library_action_bar_spinner_title_size:I = 0x7f07076d
+
+.field public static final library_action_bar_text_size:I = 0x7f07076e
+
+.field public static final library_action_bar_title_padding:I = 0x7f07076f
+
+.field public static final library_bar_search_suggestion_icon_end_pad:I = 0x7f070777
+
+.field public static final library_bar_search_suggestion_icon_start_pad:I = 0x7f070778
+
+.field public static final library_bar_search_suggestion_text_end_pad:I = 0x7f070779
+
+.field public static final library_book_row_cover_container_height:I = 0x7f07077a
+
+.field public static final library_book_row_cover_container_width:I = 0x7f07077b
+
+.field public static final library_book_row_cover_title_gap:I = 0x7f07077c
+
+.field public static final library_book_row_downloading_text_size:I = 0x7f07077d
+
+.field public static final library_book_row_height:I = 0x7f07077e
+
+.field public static final library_book_row_right_edge_width:I = 0x7f07077f
+
+.field public static final library_book_row_side_padding:I = 0x7f070780
+
+.field public static final library_cover_cloud_horizontal_padding:I = 0x7f070782
+
+.field public static final library_cover_cloud_vertical_padding:I = 0x7f070783
+
+.field public static final library_cover_height:I = 0x7f070784
+
+.field public static final library_cover_horizontal_padding:I = 0x7f070785
+
+.field public static final library_cover_keep_right_margin:I = 0x7f070786
+
+.field public static final library_cover_subtitle_text_size:I = 0x7f070787
+
+.field public static final library_cover_title_text_size:I = 0x7f070788
+
+.field public static final library_cover_vertical_padding:I = 0x7f070789
+
+.field public static final library_cover_width:I = 0x7f07078a
+
+.field public static final library_gallery_cover_height:I = 0x7f07078b
+
+.field public static final library_gallery_cover_width:I = 0x7f07078c
+
+.field public static final library_gallery_spacing:I = 0x7f07078d
+
+.field public static final library_grid_book_prefix_height:I = 0x7f07078e
+
+.field public static final library_grid_cover_height:I = 0x7f07078f
+
+.field public static final library_grid_cover_width:I = 0x7f070790
+
+.field public static final library_grid_series_deep_stack:I = 0x7f070791
+
+.field public static final library_list_divider_height:I = 0x7f070793
+
+.field public static final library_list_view_right_badge_height:I = 0x7f070794
+
+.field public static final library_list_view_right_badge_padding_bottom:I = 0x7f070795
+
+.field public static final library_list_view_right_badge_padding_left:I = 0x7f070796
+
+.field public static final library_list_view_right_badge_width:I = 0x7f070797
+
+.field public static final library_nav_panel_divider_height:I = 0x7f070798
+
+.field public static final library_nav_panel_drag_edge_size:I = 0x7f070799
+
+.field public static final library_nav_panel_drag_threshold:I = 0x7f07079a
+
+.field public static final library_nav_panel_drawable_padding:I = 0x7f07079b
+
+.field public static final library_nav_panel_header_height:I = 0x7f07079c
+
+.field public static final library_nav_panel_header_horz_padding:I = 0x7f07079d
+
+.field public static final library_nav_panel_header_vert_padding:I = 0x7f07079e
+
+.field public static final library_nav_panel_item_height:I = 0x7f07079f
+
+.field public static final library_nav_panel_item_text_size:I = 0x7f0707a0
+
+.field public static final library_nav_panel_shadow_size:I = 0x7f0707a1
+
+.field public static final library_nav_panel_subhead_padding_horz:I = 0x7f0707a2
+
+.field public static final library_nav_panel_subhead_padding_vert:I = 0x7f0707a3
+
+.field public static final library_nav_panel_subhead_text_size:I = 0x7f0707a4
+
+.field public static final library_nav_panel_width:I = 0x7f0707a5
+
+.field public static final library_side_margin:I = 0x7f0707a6
+
+.field public static final line_decoration_horizontal_dash_width:I = 0x7f0707a7
+
+.field public static final line_decoration_horizontal_padding_dashed_line_drop:I = 0x7f0707a8
+
+.field public static final line_decoration_horizontal_padding_text_drop:I = 0x7f0707a9
+
+.field public static final line_decoration_horizontal_padding_text_right:I = 0x7f0707aa
+
+.field public static final line_decoration_horizontal_space_width:I = 0x7f0707ab
+
+.field public static final line_decoration_text_size:I = 0x7f0707ac
+
+.field public static final line_decoration_vertical_default_shadow_width:I = 0x7f0707ad
+
+.field public static final line_decoration_vertical_rotated_text_buffer:I = 0x7f0707ae
+
+.field public static final line_decoration_vertical_upright_char_spacing:I = 0x7f0707af
+
+.field public static final line_spacing_multiplier:I = 0x7f0707b0
+
+.field public static final local_file_setting_margin:I = 0x7f0707b1
+
+.field public static final local_file_setting_text_margin:I = 0x7f0707b2
+
+.field public static final localized_badge_text_size:I = 0x7f0707b3
+
+.field public static final location_container_padding_bottom:I = 0x7f0707b8
+
+.field public static final location_container_padding_top:I = 0x7f0707b9
+
+.field public static final location_seekbar_bottom_padding:I = 0x7f0707ba
+
+.field public static final location_seekbar_height:I = 0x7f0707bb
+
+.field public static final location_seekbar_horizontal_padding:I = 0x7f0707bc
+
+.field public static final location_seekbar_left_and_right_decorator_width:I = 0x7f0707bd
+
+.field public static final location_seekbar_left_and_right_default_width:I = 0x7f0707be
+
+.field public static final location_seekbar_max_height:I = 0x7f0707bf
+
+.field public static final location_seekbar_min_height:I = 0x7f0707c0
+
+.field public static final location_seekbar_outline_stroke_width:I = 0x7f0707c1
+
+.field public static final location_seekbar_snapping_threshold:I = 0x7f0707c2
+
+.field public static final location_seekbar_stroke_width:I = 0x7f0707c3
+
+.field public static final location_seekbar_text_padding:I = 0x7f0707c4
+
+.field public static final location_seekbar_thumb_radius:I = 0x7f0707c5
+
+.field public static final location_seekbar_top_padding:I = 0x7f0707c6
+
+.field public static final location_seekbar_waypoint_label_min_x_spacing:I = 0x7f0707c7
+
+.field public static final location_seekbar_waypoint_snap_distance:I = 0x7f0707c8
+
+.field public static final location_seekbar_waypoint_text_height:I = 0x7f0707c9
+
+.field public static final location_seeker_height:I = 0x7f0707ca
+
+.field public static final magnifying_glass_frame:I = 0x7f0707cb
+
+.field public static final magnifying_glass_horiz_frame:I = 0x7f0707cc
+
+.field public static final magnifying_glass_long:I = 0x7f0707cd
+
+.field public static final magnifying_glass_short:I = 0x7f0707ce
+
+.field public static final magnifying_glass_vert_frame:I = 0x7f0707cf
+
+.field public static final magnifying_glass_vert_offset:I = 0x7f0707d0
+
+.field public static final match_constraint:I = 0x7f0707db
+
+.field public static final max_handle_height:I = 0x7f0707dd
+
+.field public static final min_handle_width:I = 0x7f0707e0
+
+.field public static final min_selection_movement:I = 0x7f0707e1
+
+.field public static final min_touch_target_size:I = 0x7f0707e2
+
+.field public static final minimum_button_padding:I = 0x7f0707ea
+
+.field public static final minimum_column_spacing:I = 0x7f0707eb
+
+.field public static final minimum_graphical_highlight_initial_size:I = 0x7f0707ec
+
+.field public static final more_menu_item_height:I = 0x7f0707ef
+
+.field public static final more_menu_item_icon_margin_vertical:I = 0x7f0707f0
+
+.field public static final more_menu_item_icon_size:I = 0x7f0707f1
+
+.field public static final more_menu_item_padding_left:I = 0x7f0707f2
+
+.field public static final more_menu_item_primary_text_view_height:I = 0x7f0707f3
+
+.field public static final more_menu_item_secondary_text_view_height:I = 0x7f0707f4
+
+.field public static final more_menu_item_spaces_between_icon_and_text:I = 0x7f0707f5
+
+.field public static final more_menu_item_spaces_between_primary_and_secondary_text:I = 0x7f0707f6
+
+.field public static final more_menu_item_spaces_between_text_and_secondary_icon:I = 0x7f0707f7
+
+.field public static final more_screen_divider_padding:I = 0x7f0707f8
+
+.field public static final mrpr_bottom_sheet_button_height:I = 0x7f0707fa
+
+.field public static final mrpr_bottom_sheet_button_text_size:I = 0x7f0707fb
+
+.field public static final mrpr_bottom_sheet_footer_label_bottom_margin:I = 0x7f0707fc
+
+.field public static final mrpr_bottom_sheet_footer_label_top_margin:I = 0x7f0707fd
+
+.field public static final mrpr_bottom_sheet_last_updated_label_text_size:I = 0x7f0707fe
+
+.field public static final mrpr_bottom_sheet_last_updated_label_top_margin:I = 0x7f0707ff
+
+.field public static final mrpr_bottom_sheet_layout_padding:I = 0x7f070800
+
+.field public static final mrpr_bottom_sheet_layout_side_margin:I = 0x7f070801
+
+.field public static final mrpr_bottom_sheet_progress_bar_chevron_width:I = 0x7f070802
+
+.field public static final mrpr_bottom_sheet_progress_bar_divider_height:I = 0x7f070803
+
+.field public static final mrpr_bottom_sheet_progress_bar_divider_margin:I = 0x7f070804
+
+.field public static final mrpr_bottom_sheet_progress_bar_divider_offset:I = 0x7f070805
+
+.field public static final mrpr_bottom_sheet_progress_bar_waypoint_width:I = 0x7f070806
+
+.field public static final mtrl_bottomappbar_fabOffsetEndMode:I = 0x7f070807
+
+.field public static final mtrl_bottomappbar_fab_cradle_margin:I = 0x7f070808
+
+.field public static final mtrl_bottomappbar_fab_cradle_rounded_corner_radius:I = 0x7f070809
+
+.field public static final mtrl_bottomappbar_fab_cradle_vertical_offset:I = 0x7f07080a
+
+.field public static final mtrl_bottomappbar_height:I = 0x7f07080b
+
+.field public static final mtrl_btn_corner_radius:I = 0x7f07080c
+
+.field public static final mtrl_btn_dialog_btn_min_width:I = 0x7f07080d
+
+.field public static final mtrl_btn_disabled_elevation:I = 0x7f07080e
+
+.field public static final mtrl_btn_disabled_z:I = 0x7f07080f
+
+.field public static final mtrl_btn_elevation:I = 0x7f070810
+
+.field public static final mtrl_btn_focused_z:I = 0x7f070811
+
+.field public static final mtrl_btn_hovered_z:I = 0x7f070812
+
+.field public static final mtrl_btn_icon_btn_padding_left:I = 0x7f070813
+
+.field public static final mtrl_btn_icon_padding:I = 0x7f070814
+
+.field public static final mtrl_btn_inset:I = 0x7f070815
+
+.field public static final mtrl_btn_letter_spacing:I = 0x7f070816
+
+.field public static final mtrl_btn_padding_bottom:I = 0x7f070817
+
+.field public static final mtrl_btn_padding_left:I = 0x7f070818
+
+.field public static final mtrl_btn_padding_right:I = 0x7f070819
+
+.field public static final mtrl_btn_padding_top:I = 0x7f07081a
+
+.field public static final mtrl_btn_pressed_z:I = 0x7f07081b
+
+.field public static final mtrl_btn_stroke_size:I = 0x7f07081c
+
+.field public static final mtrl_btn_text_btn_icon_padding:I = 0x7f07081d
+
+.field public static final mtrl_btn_text_btn_padding_left:I = 0x7f07081e
+
+.field public static final mtrl_btn_text_btn_padding_right:I = 0x7f07081f
+
+.field public static final mtrl_btn_text_size:I = 0x7f070820
+
+.field public static final mtrl_btn_z:I = 0x7f070821
+
+.field public static final mtrl_card_elevation:I = 0x7f070822
+
+.field public static final mtrl_card_spacing:I = 0x7f070823
+
+.field public static final mtrl_chip_pressed_translation_z:I = 0x7f070824
+
+.field public static final mtrl_chip_text_size:I = 0x7f070825
+
+.field public static final mtrl_fab_elevation:I = 0x7f070826
+
+.field public static final mtrl_fab_translation_z_hovered_focused:I = 0x7f070827
+
+.field public static final mtrl_fab_translation_z_pressed:I = 0x7f070828
+
+.field public static final mtrl_navigation_elevation:I = 0x7f070829
+
+.field public static final mtrl_navigation_item_horizontal_padding:I = 0x7f07082a
+
+.field public static final mtrl_navigation_item_icon_padding:I = 0x7f07082b
+
+.field public static final mtrl_snackbar_background_corner_radius:I = 0x7f07082c
+
+.field public static final mtrl_snackbar_margin:I = 0x7f07082d
+
+.field public static final mtrl_textinput_box_bottom_offset:I = 0x7f07082e
+
+.field public static final mtrl_textinput_box_corner_radius_medium:I = 0x7f07082f
+
+.field public static final mtrl_textinput_box_corner_radius_small:I = 0x7f070830
+
+.field public static final mtrl_textinput_box_label_cutout_padding:I = 0x7f070831
+
+.field public static final mtrl_textinput_box_padding_end:I = 0x7f070832
+
+.field public static final mtrl_textinput_box_stroke_width_default:I = 0x7f070833
+
+.field public static final mtrl_textinput_box_stroke_width_focused:I = 0x7f070834
+
+.field public static final mtrl_textinput_outline_box_expanded_padding:I = 0x7f070835
+
+.field public static final mtrl_toolbar_default_height:I = 0x7f070836
+
+.field public static final namedbookmarks_button_height:I = 0x7f070837
+
+.field public static final namedbookmarks_padding_big:I = 0x7f070838
+
+.field public static final namedbookmarks_padding_bigger:I = 0x7f070839
+
+.field public static final namedbookmarks_padding_medium:I = 0x7f07083a
+
+.field public static final namedbookmarks_padding_small:I = 0x7f07083b
+
+.field public static final namedbookmarks_padding_tiny:I = 0x7f07083c
+
+.field public static final nav_panel_item_height:I = 0x7f07083d
+
+.field public static final nav_panel_subhead_text_size:I = 0x7f07083e
+
+.field public static final newsstand_library_cover_height:I = 0x7f07083f
+
+.field public static final newsstand_library_cover_width:I = 0x7f070840
+
+.field public static final nis_author_margin_top:I = 0x7f070841
+
+.field public static final nis_book_info_max_width:I = 0x7f070842
+
+.field public static final nis_book_info_zone_margin_start:I = 0x7f070843
+
+.field public static final nis_buy_button_height:I = 0x7f070844
+
+.field public static final nis_buy_button_margin_bottom:I = 0x7f070845
+
+.field public static final nis_buy_button_margin_top:I = 0x7f070846
+
+.field public static final nis_buy_button_width:I = 0x7f070847
+
+.field public static final nis_cover_margin_bottom:I = 0x7f070848
+
+.field public static final nis_info_margin_top:I = 0x7f070849
+
+.field public static final nis_overflow_margin_start:I = 0x7f07084a
+
+.field public static final nis_overflow_size:I = 0x7f07084b
+
+.field public static final nis_rating_view_padding:I = 0x7f07084c
+
+.field public static final nis_review_count_padding_horizontal:I = 0x7f07084d
+
+.field public static final nis_review_count_padding_vertical:I = 0x7f07084e
+
+.field public static final nis_see_all_padding_horizontal:I = 0x7f07084f
+
+.field public static final nis_see_all_padding_vertical:I = 0x7f070850
+
+.field public static final nln_additional_control_width:I = 0x7f070851
+
+.field public static final nln_bev_toc_header_text_size_1:I = 0x7f070852
+
+.field public static final nln_bev_toc_header_text_size_2:I = 0x7f070853
+
+.field public static final nln_bev_toc_header_text_size_3:I = 0x7f070854
+
+.field public static final nln_bev_toc_header_text_size_4:I = 0x7f070855
+
+.field public static final nln_breadcrumb_text_size:I = 0x7f070856
+
+.field public static final nln_breadcrumb_width:I = 0x7f070857
+
+.field public static final nln_debug_button_size:I = 0x7f070858
+
+.field public static final nln_divider_weight:I = 0x7f070859
+
+.field public static final nln_location_seeker_height:I = 0x7f07085a
+
+.field public static final nln_location_seeker_height_doubled:I = 0x7f07085b
+
+.field public static final nln_location_seeker_text_space:I = 0x7f07085c
+
+.field public static final nln_page_badge_size:I = 0x7f07085d
+
+.field public static final nln_page_container_text_size:I = 0x7f07085e
+
+.field public static final nln_pinch_dist:I = 0x7f07085f
+
+.field public static final nln_small_label_vert_padding:I = 0x7f070860
+
+.field public static final nln_text_container_height:I = 0x7f070861
+
+.field public static final nln_thumbnail_view_bottom_margin:I = 0x7f070862
+
+.field public static final nln_toolbar_height:I = 0x7f070863
+
+.field public static final nln_toolbar_shadow_height:I = 0x7f070864
+
+.field public static final nn_input_area_width:I = 0x7f070865
+
+.field public static final nn_sample_height:I = 0x7f070866
+
+.field public static final nn_sample_width:I = 0x7f070867
+
+.field public static final note_book_icon_max_width:I = 0x7f070868
+
+.field public static final note_list_annotation_type_width:I = 0x7f070869
+
+.field public static final note_list_item_annotation_type_and_location_font_size:I = 0x7f07086a
+
+.field public static final note_list_item_fontsize:I = 0x7f07086b
+
+.field public static final notebook_action_bar_drop_down_margin:I = 0x7f07086c
+
+.field public static final notebook_action_bar_spinner_padding_left:I = 0x7f07086d
+
+.field public static final notebook_action_bar_spinner_padding_right:I = 0x7f07086e
+
+.field public static final notebook_action_bar_spinner_subtitle_size:I = 0x7f07086f
+
+.field public static final notebook_action_bar_spinner_title_size:I = 0x7f070870
+
+.field public static final notebook_action_bar_spinner_width_min:I = 0x7f070871
+
+.field public static final notebook_annotation_selection_image_frame_marginLeft:I = 0x7f070874
+
+.field public static final notebook_annotation_selection_image_marginRight:I = 0x7f070875
+
+.field public static final notebook_bookmark_height:I = 0x7f070876
+
+.field public static final notebook_bookmark_height_for_lava_magazine:I = 0x7f070877
+
+.field public static final notebook_bookmark_width:I = 0x7f070878
+
+.field public static final notebook_bookmark_width_for_lava_magazine:I = 0x7f070879
+
+.field public static final notebook_card_bottomrightcorner_height:I = 0x7f07087b
+
+.field public static final notebook_card_toprightcorner_height:I = 0x7f07087c
+
+.field public static final notebook_dropdown_list_checkmark_width:I = 0x7f07087e
+
+.field public static final notebook_dropdown_list_divider_height:I = 0x7f07087f
+
+.field public static final notebook_dropdown_list_icon_width:I = 0x7f070880
+
+.field public static final notebook_dropdown_list_label_margin_left:I = 0x7f070881
+
+.field public static final notebook_dropdown_list_starred_divider_height:I = 0x7f070882
+
+.field public static final notebook_dropdown_offset_x:I = 0x7f070883
+
+.field public static final notebook_dropdown_offset_y:I = 0x7f070884
+
+.field public static final notebook_dropdown_width:I = 0x7f070887
+
+.field public static final notebook_export_citation_style_text_margin_left:I = 0x7f070889
+
+.field public static final notebook_export_citation_style_text_margin_top:I = 0x7f07088a
+
+.field public static final notebook_export_elements_margin:I = 0x7f07088b
+
+.field public static final notebook_export_layout_margin:I = 0x7f07088c
+
+.field public static final notebook_export_layout_padding:I = 0x7f07088d
+
+.field public static final notebook_export_progressbar_layout_height:I = 0x7f07088e
+
+.field public static final notebook_export_radiogroup_margin:I = 0x7f07088f
+
+.field public static final notebook_header_drop_down_indentation:I = 0x7f070890
+
+.field public static final notebook_list_padding:I = 0x7f070895
+
+.field public static final notebook_note_header_min_height:I = 0x7f07089f
+
+.field public static final notebook_paddingLeft:I = 0x7f0708a4
+
+.field public static final notebook_paddingRight:I = 0x7f0708a5
+
+.field public static final notebook_right_stripe_corner_height:I = 0x7f0708a7
+
+.field public static final notebook_right_stripe_width:I = 0x7f0708a8
+
+.field public static final notebook_search_result_highlight_width:I = 0x7f0708a9
+
+.field public static final notebook_sectionsMarginLeft:I = 0x7f0708aa
+
+.field public static final notebook_sectionsMarginRight:I = 0x7f0708ab
+
+.field public static final notebook_share_text_size:I = 0x7f0708ac
+
+.field public static final notebook_share_text_size_large:I = 0x7f0708ad
+
+.field public static final notebook_star_image_padding:I = 0x7f0708ae
+
+.field public static final notebook_text_padding_left:I = 0x7f0708b1
+
+.field public static final notebook_text_padding_right:I = 0x7f0708b2
+
+.field public static final notebook_text_snippet_padding:I = 0x7f0708b3
+
+.field public static final notebook_text_snippet_text_size:I = 0x7f0708b5
+
+.field public static final notebook_toc_page_location_container_margin_bottom:I = 0x7f0708b7
+
+.field public static final notebook_toc_page_location_container_margin_top:I = 0x7f0708b8
+
+.field public static final notecard_annotation_type_padding_left:I = 0x7f0708ba
+
+.field public static final notecard_bottom_row_annotation_container_padding_left:I = 0x7f0708bd
+
+.field public static final notecard_bottom_row_container_height:I = 0x7f0708be
+
+.field public static final notecard_bottom_row_delete_button_margin_right:I = 0x7f0708bf
+
+.field public static final notecard_bottom_row_right_margin:I = 0x7f0708c0
+
+.field public static final notecard_margin_left:I = 0x7f0708c2
+
+.field public static final notecard_margin_right:I = 0x7f0708c3
+
+.field public static final notes_card_height:I = 0x7f0708c6
+
+.field public static final notification_action_icon_size:I = 0x7f0708ce
+
+.field public static final notification_action_text_size:I = 0x7f0708cf
+
+.field public static final notification_big_circle_margin:I = 0x7f0708d0
+
+.field public static final notification_big_picture_height:I = 0x7f0708d1
+
+.field public static final notification_big_picture_width:I = 0x7f0708d2
+
+.field public static final notification_content_margin_start:I = 0x7f0708e4
+
+.field public static final notification_description_horizontal_padding:I = 0x7f0708f3
+
+.field public static final notification_large_icon_height:I = 0x7f070904
+
+.field public static final notification_large_icon_width:I = 0x7f070906
+
+.field public static final notification_main_column_padding_top:I = 0x7f07090e
+
+.field public static final notification_media_narrow_margin:I = 0x7f07090f
+
+.field public static final notification_progress_text_size:I = 0x7f07091b
+
+.field public static final notification_right_icon_size:I = 0x7f070920
+
+.field public static final notification_right_side_padding_top:I = 0x7f070921
+
+.field public static final notification_setting_horizontal_padding:I = 0x7f070922
+
+.field public static final notification_setting_vertical_padding:I = 0x7f070923
+
+.field public static final notification_small_icon_background_padding:I = 0x7f070924
+
+.field public static final notification_small_icon_size_as_large:I = 0x7f070925
+
+.field public static final notification_subtext_size:I = 0x7f070927
+
+.field public static final notification_top_pad:I = 0x7f07092b
+
+.field public static final notification_top_pad_large_text:I = 0x7f07092c
+
+.field public static final notifications_bottom_padding:I = 0x7f07092f
+
+.field public static final notifications_button_text_size:I = 0x7f070930
+
+.field public static final notifications_left_padding:I = 0x7f070931
+
+.field public static final notifications_right_padding:I = 0x7f070932
+
+.field public static final notifications_text1_size:I = 0x7f070933
+
+.field public static final notifications_text2_size:I = 0x7f070934
+
+.field public static final notifications_title_text_size:I = 0x7f070935
+
+.field public static final notifications_top_padding:I = 0x7f070936
+
+.field public static final oob_decoration_vert_padding:I = 0x7f070939
+
+.field public static final overflow_menu_icon_padding:I = 0x7f07093a
+
+.field public static final padding_extra_small:I = 0x7f07093b
+
+.field public static final padding_icon_selector_right:I = 0x7f07093c
+
+.field public static final padding_small:I = 0x7f07093d
+
+.field public static final page_flip_background_vertical_padding:I = 0x7f07093e
+
+.field public static final page_flip_bottom_border_weight:I = 0x7f07093f
+
+.field public static final page_flip_default_vertical_margin:I = 0x7f070940
+
+.field public static final page_flip_location_label_padding:I = 0x7f070941
+
+.field public static final page_flip_location_label_text_size:I = 0x7f070942
+
+.field public static final page_flip_page_total_padding:I = 0x7f070943
+
+.field public static final page_flip_title_container_height:I = 0x7f070944
+
+.field public static final page_flip_title_size:I = 0x7f070945
+
+.field public static final page_flip_title_space:I = 0x7f070946
+
+.field public static final page_indicator_height:I = 0x7f070947
+
+.field public static final page_indicator_margin_bottom:I = 0x7f070948
+
+.field public static final paging_widget_caret_height:I = 0x7f070949
+
+.field public static final paging_widget_caret_width:I = 0x7f07094a
+
+.field public static final paging_widget_corner_radius:I = 0x7f07094b
+
+.field public static final paging_widget_height:I = 0x7f07094c
+
+.field public static final paging_widget_input_area_width:I = 0x7f07094d
+
+.field public static final paging_widget_nav_button_width:I = 0x7f07094e
+
+.field public static final paging_widget_padding_left:I = 0x7f07094f
+
+.field public static final paging_widget_padding_right:I = 0x7f070950
+
+.field public static final paging_widget_page_caret_stroke_width:I = 0x7f070951
+
+.field public static final paging_widget_row_height:I = 0x7f070952
+
+.field public static final paging_widget_row_width:I = 0x7f070953
+
+.field public static final paging_widget_width:I = 0x7f070954
+
+.field public static final pdf_reader_bookmark_height:I = 0x7f070955
+
+.field public static final pdf_reader_bookmark_width:I = 0x7f070956
+
+.field public static final periodical_bottom_margin:I = 0x7f070957
+
+.field public static final periodical_min_location_container_width:I = 0x7f07095f
+
+.field public static final periodical_title_offset_from_top:I = 0x7f070964
+
+.field public static final periodical_top_margin:I = 0x7f070969
+
+.field public static final periodical_view_separator_size:I = 0x7f07096a
+
+.field public static final popup_container_height:I = 0x7f07098c
+
+.field public static final popup_container_width:I = 0x7f07098d
+
+.field public static final popup_dialog_side_padding:I = 0x7f07098e
+
+.field public static final popup_dialog_top_padding:I = 0x7f07098f
+
+.field public static final popup_left_shift:I = 0x7f070990
+
+.field public static final popup_right_shift:I = 0x7f070991
+
+.field public static final popup_top_shift:I = 0x7f070992
+
+.field public static final popup_width:I = 0x7f070993
+
+.field public static final preference_category_padding_start:I = 0x7f070994
+
+.field public static final preference_icon_minWidth:I = 0x7f070995
+
+.field public static final preference_list_padding_horizontal:I = 0x7f070996
+
+.field public static final preference_list_padding_top:I = 0x7f070997
+
+.field public static final preference_no_icon_padding_start:I = 0x7f070998
+
+.field public static final preference_seekbar_padding_end:I = 0x7f070999
+
+.field public static final preference_seekbar_padding_start:I = 0x7f07099a
+
+.field public static final preference_seekbar_value_width:I = 0x7f07099b
+
+.field public static final progressbar_height:I = 0x7f07099f
+
+.field public static final raised_bottom_right_badge_adjusted_margin:I = 0x7f0709ba
+
+.field public static final raised_bottom_right_badge_bottom_margin:I = 0x7f0709bb
+
+.field public static final reader_action_bar_cover_padding:I = 0x7f0709bc
+
+.field public static final reader_bookmark_corner_size:I = 0x7f0709bd
+
+.field public static final reader_bookmark_offset_from_edge:I = 0x7f0709be
+
+.field public static final reader_bottom_margin:I = 0x7f0709bf
+
+.field public static final reader_bottom_margin_v2:I = 0x7f0709c0
+
+.field public static final reader_continuous_scroll_bottom_margin:I = 0x7f0709c1
+
+.field public static final reader_continuous_scroll_bottom_margin_v2:I = 0x7f0709c2
+
+.field public static final reader_continuous_scroll_top_margin:I = 0x7f0709c3
+
+.field public static final reader_footer_offset_from_bottom:I = 0x7f0709c4
+
+.field public static final reader_hamburger_line_thickness:I = 0x7f0709c6
+
+.field public static final reader_left_button_icon_margin:I = 0x7f0709c7
+
+.field public static final reader_left_margin:I = 0x7f0709c8
+
+.field public static final reader_left_panel_width:I = 0x7f0709c9
+
+.field public static final reader_nav_panel_book_cover_padding:I = 0x7f0709ca
+
+.field public static final reader_nav_panel_book_info_padding:I = 0x7f0709cb
+
+.field public static final reader_nav_panel_button_padding:I = 0x7f0709cc
+
+.field public static final reader_nav_panel_button_text_size:I = 0x7f0709cd
+
+.field public static final reader_nav_panel_cover_height:I = 0x7f0709ce
+
+.field public static final reader_nav_panel_cover_width:I = 0x7f0709cf
+
+.field public static final reader_nav_panel_description_text_size:I = 0x7f0709d0
+
+.field public static final reader_nav_panel_expand_button_height:I = 0x7f0709d1
+
+.field public static final reader_nav_panel_expand_button_width:I = 0x7f0709d2
+
+.field public static final reader_nav_panel_item_padding:I = 0x7f0709d3
+
+.field public static final reader_nav_panel_item_text_size:I = 0x7f0709d4
+
+.field public static final reader_nav_panel_right_padding:I = 0x7f0709d5
+
+.field public static final reader_nav_panel_secondary_text_size:I = 0x7f0709d6
+
+.field public static final reader_nav_panel_width:I = 0x7f0709d7
+
+.field public static final reader_nav_panel_width_lava:I = 0x7f0709d8
+
+.field public static final reader_overflow_padding_left:I = 0x7f0709d9
+
+.field public static final reader_overflow_padding_right:I = 0x7f0709da
+
+.field public static final reader_overflow_popup_max_height:I = 0x7f0709db
+
+.field public static final reader_overflow_popup_max_height_neutron_phase_1:I = 0x7f0709dc
+
+.field public static final reader_right_button_icon_margin:I = 0x7f0709dd
+
+.field public static final reader_right_margin:I = 0x7f0709de
+
+.field public static final reader_search_debug_padding:I = 0x7f0709df
+
+.field public static final reader_search_extended_body_line_spacing:I = 0x7f0709e0
+
+.field public static final reader_search_font_ramp_body:I = 0x7f0709e1
+
+.field public static final reader_search_font_ramp_caption:I = 0x7f0709e2
+
+.field public static final reader_search_font_ramp_header:I = 0x7f0709e3
+
+.field public static final reader_search_font_ramp_headline:I = 0x7f0709e4
+
+.field public static final reader_search_in_book_underline_width:I = 0x7f0709e5
+
+.field public static final reader_search_list_divider_inset:I = 0x7f0709e6
+
+.field public static final reader_search_list_divider_size:I = 0x7f0709e7
+
+.field public static final reader_search_list_expander_height:I = 0x7f0709e8
+
+.field public static final reader_search_list_item_padding_horiz:I = 0x7f0709e9
+
+.field public static final reader_search_list_no_results_margin_top:I = 0x7f0709ea
+
+.field public static final reader_search_list_no_results_text_size:I = 0x7f0709eb
+
+.field public static final reader_search_list_section_header_label_text_size:I = 0x7f0709ec
+
+.field public static final reader_search_list_section_header_padding_vert:I = 0x7f0709ed
+
+.field public static final reader_search_list_spinner_dimen:I = 0x7f0709ee
+
+.field public static final reader_search_list_subsection_indentation:I = 0x7f0709ef
+
+.field public static final reader_search_result_accessory_margin_horiz:I = 0x7f0709f0
+
+.field public static final reader_search_result_accessory_width:I = 0x7f0709f1
+
+.field public static final reader_search_result_children_indent:I = 0x7f0709f2
+
+.field public static final reader_search_result_children_margin_top:I = 0x7f0709f3
+
+.field public static final reader_search_result_children_spacing:I = 0x7f0709f4
+
+.field public static final reader_search_result_element_spacing:I = 0x7f0709f5
+
+.field public static final reader_search_result_padding_horiz:I = 0x7f0709f6
+
+.field public static final reader_search_result_padding_vert:I = 0x7f0709f7
+
+.field public static final reader_text_decoration_height:I = 0x7f0709f9
+
+.field public static final reader_title_offset_from_top:I = 0x7f0709fa
+
+.field public static final reader_toolbar_padding_left:I = 0x7f0709fb
+
+.field public static final reader_toolbar_padding_right:I = 0x7f0709fc
+
+.field public static final reader_top_margin:I = 0x7f0709fd
+
+.field public static final reading_progress_badge_text_size:I = 0x7f0709fe
+
+.field public static final reading_progress_margin_bottom:I = 0x7f0709ff
+
+.field public static final reading_progress_margin_right:I = 0x7f070a00
+
+.field public static final reading_ruler_opacity_min_max_width:I = 0x7f070a01
+
+.field public static final reading_ruler_opacity_top_margin:I = 0x7f070a02
+
+.field public static final recent_search_empty_view_line_spacing:I = 0x7f070a58
+
+.field public static final recent_search_empty_view_margin_top:I = 0x7f070a59
+
+.field public static final recent_search_empty_view_padding_horiz:I = 0x7f070a5a
+
+.field public static final recent_search_list_header_padding_bottom:I = 0x7f070a5b
+
+.field public static final recent_search_list_header_padding_horiz:I = 0x7f070a5c
+
+.field public static final recent_search_list_header_padding_top:I = 0x7f070a5d
+
+.field public static final recent_search_list_item_padding_vert:I = 0x7f070a5e
+
+.field public static final recent_search_list_term_margin_end:I = 0x7f070a5f
+
+.field public static final recent_search_list_term_margin_start:I = 0x7f070a60
+
+.field public static final recent_search_list_term_padding_vert:I = 0x7f070a61
+
+.field public static final refine_menu_side_padding:I = 0x7f070a62
+
+.field public static final refine_sort_image_margin:I = 0x7f070a63
+
+.field public static final remote_license_release_item_height:I = 0x7f070a64
+
+.field public static final reorder_grid_max_scroll_distance:I = 0x7f070a65
+
+.field public static final reorder_grid_scroll_edge_threshold:I = 0x7f070a66
+
+.field public static final report_series_error_body_padding_left:I = 0x7f070a7a
+
+.field public static final report_series_error_body_padding_right:I = 0x7f070a7b
+
+.field public static final report_series_error_legal_disclaimer_margin_top:I = 0x7f070a7c
+
+.field public static final report_series_error_spinner_item_min_height:I = 0x7f070a7d
+
+.field public static final report_series_error_spinner_margin_bottom:I = 0x7f070a7e
+
+.field public static final resume_author_height:I = 0x7f070a7f
+
+.field public static final resume_author_margin_bottom:I = 0x7f070a80
+
+.field public static final resume_button_padding:I = 0x7f070a81
+
+.field public static final resume_divider_height:I = 0x7f070a82
+
+.field public static final resume_empty_view_margin:I = 0x7f070a83
+
+.field public static final resume_empty_view_margin_top:I = 0x7f070a84
+
+.field public static final resume_empty_view_notice_inline_space:I = 0x7f070a85
+
+.field public static final resume_empty_view_padding_horizontal:I = 0x7f070a86
+
+.field public static final resume_empty_view_padding_vertical:I = 0x7f070a87
+
+.field public static final resume_error_message_margin_top:I = 0x7f070a88
+
+.field public static final resume_hero_cover_height:I = 0x7f070a89
+
+.field public static final resume_hero_cover_width:I = 0x7f070a8a
+
+.field public static final resume_icon_height:I = 0x7f070a8b
+
+.field public static final resume_icon_margin:I = 0x7f070a8c
+
+.field public static final resume_image_view_padding:I = 0x7f070a8d
+
+.field public static final resume_large_cover_height:I = 0x7f070a8e
+
+.field public static final resume_large_cover_width:I = 0x7f070a8f
+
+.field public static final resume_layout_margin:I = 0x7f070a90
+
+.field public static final resume_margin:I = 0x7f070a91
+
+.field public static final resume_overflow_image_border_width:I = 0x7f070a92
+
+.field public static final resume_overflow_image_padding:I = 0x7f070a93
+
+.field public static final resume_overflow_image_size:I = 0x7f070a94
+
+.field public static final resume_overflow_size:I = 0x7f070a95
+
+.field public static final resume_popup_center_max_width:I = 0x7f070a96
+
+.field public static final resume_popup_center_min_width:I = 0x7f070a97
+
+.field public static final resume_popup_elevation:I = 0x7f070a98
+
+.field public static final resume_popup_horizontal_offset:I = 0x7f070a99
+
+.field public static final resume_popup_margin_horizontal:I = 0x7f070a9a
+
+.field public static final resume_popup_margin_top:I = 0x7f070a9b
+
+.field public static final resume_popup_menu_options_padding_horizontal:I = 0x7f070a9c
+
+.field public static final resume_popup_menu_options_padding_vertical:I = 0x7f070a9d
+
+.field public static final resume_popup_menu_title_option_padding_horizontal:I = 0x7f070a9e
+
+.field public static final resume_popup_menu_title_option_padding_vertical:I = 0x7f070a9f
+
+.field public static final resume_popup_min_space_from_screen:I = 0x7f070aa0
+
+.field public static final resume_popup_padding_vertical:I = 0x7f070aa1
+
+.field public static final resume_popup_radius:I = 0x7f070aa2
+
+.field public static final resume_popup_top_offset:I = 0x7f070aa3
+
+.field public static final resume_popup_width_increment:I = 0x7f070aa4
+
+.field public static final resume_read_now_height:I = 0x7f070aa5
+
+.field public static final resume_read_now_max_width:I = 0x7f070aa6
+
+.field public static final resume_read_now_min_width:I = 0x7f070aa7
+
+.field public static final resume_read_now_width:I = 0x7f070aa8
+
+.field public static final resume_small_cover_height:I = 0x7f070aa9
+
+.field public static final resume_small_cover_sash_badge_size:I = 0x7f070aaa
+
+.field public static final resume_small_cover_width:I = 0x7f070aab
+
+.field public static final resume_title_margin_bottom:I = 0x7f070aac
+
+.field public static final resume_title_padding_bottom:I = 0x7f070aad
+
+.field public static final resume_title_padding_top:I = 0x7f070aae
+
+.field public static final resume_title_text_size:I = 0x7f070aaf
+
+.field public static final resume_top_margin:I = 0x7f070ab0
+
+.field public static final rlr_body_layout_bottom_margin:I = 0x7f070ab1
+
+.field public static final rlr_body_layout_top_margin:I = 0x7f070ab2
+
+.field public static final rlr_bottom_bar_button_bottom_top_margin:I = 0x7f070ab3
+
+.field public static final rlr_bottom_bar_button_left_right_margin:I = 0x7f070ab4
+
+.field public static final rlr_bottom_bar_button_width_limited_left_right_margin:I = 0x7f070ab5
+
+.field public static final rlr_bottom_bar_height:I = 0x7f070ab6
+
+.field public static final rlr_cancel_button:I = 0x7f070ab7
+
+.field public static final rlr_cancel_button_icon:I = 0x7f070ab8
+
+.field public static final rlr_cancel_button_size:I = 0x7f070ab9
+
+.field public static final rlr_cover_bottom_margin:I = 0x7f070aba
+
+.field public static final rlr_cover_height:I = 0x7f070abb
+
+.field public static final rlr_cover_top_margin:I = 0x7f070abc
+
+.field public static final rlr_cover_width:I = 0x7f070abd
+
+.field public static final rlr_description1_bottom_margin:I = 0x7f070abe
+
+.field public static final rlr_description1_height:I = 0x7f070abf
+
+.field public static final rlr_description1_left_right_margin:I = 0x7f070ac0
+
+.field public static final rlr_description1_line_height:I = 0x7f070ac1
+
+.field public static final rlr_description2_height:I = 0x7f070ac2
+
+.field public static final rlr_description2_left_right_margin:I = 0x7f070ac3
+
+.field public static final rlr_description2_line_height:I = 0x7f070ac4
+
+.field public static final rlr_description2_text:I = 0x7f070ac5
+
+.field public static final rlr_device_list_left_right_padding:I = 0x7f070ac6
+
+.field public static final rlr_device_list_text_1:I = 0x7f070ac7
+
+.field public static final rlr_device_list_text_1_bottom_margin:I = 0x7f070ac8
+
+.field public static final rlr_device_list_text_1_top_margin:I = 0x7f070ac9
+
+.field public static final rlr_device_list_text_2:I = 0x7f070aca
+
+.field public static final rlr_device_list_text_2_bottom_margin:I = 0x7f070acb
+
+.field public static final rlr_device_list_top_margin:I = 0x7f070acc
+
+.field public static final rlr_error_subtitle_width_limited_bottom_margin:I = 0x7f070acd
+
+.field public static final rlr_ineligible_description_left_right_margin:I = 0x7f070ace
+
+.field public static final rlr_ineligible_description_top_margin:I = 0x7f070acf
+
+.field public static final rlr_layout_body_width_limited_left_right_margin:I = 0x7f070ad0
+
+.field public static final rlr_list_item_divider_height:I = 0x7f070ad1
+
+.field public static final rlr_progress_spinner:I = 0x7f070ad2
+
+.field public static final rlr_progress_spinner_text:I = 0x7f070ad3
+
+.field public static final rlr_progress_spinner_text_top_margin:I = 0x7f070ad4
+
+.field public static final rlr_progress_spinner_top_margin:I = 0x7f070ad5
+
+.field public static final rlr_release_progress_bar_height:I = 0x7f070ad6
+
+.field public static final rlr_screen_title_description_text:I = 0x7f070ad7
+
+.field public static final rlr_title_padding_start:I = 0x7f070ad8
+
+.field public static final row_separator_height:I = 0x7f070ad9
+
+.field public static final ruby_about_screen_copyright_padding_bottom:I = 0x7f070ada
+
+.field public static final ruby_about_screen_copyright_padding_top:I = 0x7f070adb
+
+.field public static final ruby_about_screen_detail_item_margin_top:I = 0x7f070adc
+
+.field public static final ruby_about_screen_detail_item_min_height:I = 0x7f070add
+
+.field public static final ruby_about_screen_section_icon_margin_end:I = 0x7f070ade
+
+.field public static final ruby_about_screen_section_icon_margin_start:I = 0x7f070adf
+
+.field public static final ruby_about_screen_title_margin_top:I = 0x7f070ae0
+
+.field public static final ruby_about_screen_version_margin_top:I = 0x7f070ae1
+
+.field public static final ruby_add_to_collection_create_button_margin_left:I = 0x7f070ae7
+
+.field public static final ruby_add_to_collection_create_button_margin_right:I = 0x7f070ae8
+
+.field public static final ruby_add_to_collection_item_height:I = 0x7f070ae9
+
+.field public static final ruby_dialog_collection_name_padding_vertical:I = 0x7f070aea
+
+.field public static final ruby_empty_library_buttons_icon_size:I = 0x7f070aeb
+
+.field public static final ruby_empty_library_buttons_icon_text_spacing:I = 0x7f070aec
+
+.field public static final ruby_empty_library_buttons_vertical_spacing:I = 0x7f070aed
+
+.field public static final ruby_empty_library_image_height:I = 0x7f070aee
+
+.field public static final ruby_empty_library_image_margin_top:I = 0x7f070aef
+
+.field public static final ruby_empty_library_image_width:I = 0x7f070af0
+
+.field public static final ruby_empty_library_separator_length:I = 0x7f070af1
+
+.field public static final ruby_empty_library_separator_vertical_margin:I = 0x7f070af2
+
+.field public static final ruby_empty_library_title_margin:I = 0x7f070af3
+
+.field public static final ruby_grid_list_bottom_padding:I = 0x7f070af4
+
+.field public static final ruby_grid_top_padding:I = 0x7f070af5
+
+.field public static final ruby_info_screen_item_min_height:I = 0x7f070af6
+
+.field public static final ruby_lib_grid_default_horizontal_spacing:I = 0x7f070af9
+
+.field public static final ruby_lib_grid_default_side_padding:I = 0x7f070afa
+
+.field public static final ruby_lib_grid_view_vertical_spacing:I = 0x7f070afb
+
+.field public static final ruby_library_book_row_author_text_margin_top:I = 0x7f070afc
+
+.field public static final ruby_library_book_row_cover_title_gap:I = 0x7f070afd
+
+.field public static final ruby_library_book_row_downloading_progress_margin_top:I = 0x7f070afe
+
+.field public static final ruby_library_book_row_downloading_progress_max_width:I = 0x7f070aff
+
+.field public static final ruby_library_book_row_downloading_text_margin_top:I = 0x7f070b00
+
+.field public static final ruby_library_book_row_extras_padding_bottom:I = 0x7f070b01
+
+.field public static final ruby_library_book_row_extras_padding_top:I = 0x7f070b02
+
+.field public static final ruby_library_book_row_extras_text_additional_padding_top:I = 0x7f070b03
+
+.field public static final ruby_library_book_row_padding_horizontal:I = 0x7f070b04
+
+.field public static final ruby_library_book_row_padding_vertical:I = 0x7f070b05
+
+.field public static final ruby_library_list_view_margin_top:I = 0x7f070b06
+
+.field public static final ruby_list_item_divider_height:I = 0x7f070b07
+
+.field public static final ruby_notification_setting_header_margin_bottom:I = 0x7f070b08
+
+.field public static final ruby_notification_setting_header_margin_top:I = 0x7f070b09
+
+.field public static final ruby_send_feedback_screen_disclaimer_text_margin_bottom:I = 0x7f070b0a
+
+.field public static final ruby_send_feedback_screen_disclaimer_text_margin_top:I = 0x7f070b0b
+
+.field public static final ruby_send_feedback_screen_edit_text_margin_top:I = 0x7f070b0c
+
+.field public static final ruby_send_to_kindle_screen_description_margin_bottom:I = 0x7f070b0d
+
+.field public static final ruby_send_to_kindle_screen_description_margin_top:I = 0x7f070b0e
+
+.field public static final ruby_send_to_kindle_screen_learn_more_padding_bottom:I = 0x7f070b0f
+
+.field public static final ruby_send_to_kindle_screen_learn_more_padding_left:I = 0x7f070b10
+
+.field public static final ruby_send_to_kindle_screen_learn_more_padding_right:I = 0x7f070b11
+
+.field public static final ruby_send_to_kindle_screen_learn_more_padding_top:I = 0x7f070b12
+
+.field public static final ruby_send_to_kindle_screen_title_margin_top:I = 0x7f070b13
+
+.field public static final ruby_settings_checked_item_drawable_padding:I = 0x7f070b14
+
+.field public static final ruby_settings_horizontal_margin:I = 0x7f070b15
+
+.field public static final ruby_simple_list_checkbox_margin_left:I = 0x7f070b16
+
+.field public static final ruby_simple_list_checkbox_margin_right:I = 0x7f070b17
+
+.field public static final ruby_simple_list_item_margin_bottom:I = 0x7f070b18
+
+.field public static final ruby_simple_list_title_text_margin_bottom:I = 0x7f070b19
+
+.field public static final ruby_simple_list_title_text_margin_top:I = 0x7f070b1a
+
+.field public static final ruby_simple_one_line_list_item_min_height:I = 0x7f070b1b
+
+.field public static final ruby_simple_two_lines_item_first_line_margin_top:I = 0x7f070b1c
+
+.field public static final ruby_simple_two_lines_item_margin_bottom:I = 0x7f070b1d
+
+.field public static final ruby_simple_two_lines_item_second_line_margin_bottom:I = 0x7f070b1e
+
+.field public static final ruby_simple_two_lines_list_item_min_height:I = 0x7f070b1f
+
+.field public static final ruby_switch_height:I = 0x7f070b27
+
+.field public static final ruby_switch_min_width:I = 0x7f070b28
+
+.field public static final ruby_transient_screen_button_min_width:I = 0x7f070b29
+
+.field public static final ruby_two_lines_cell_first_line_margin_top:I = 0x7f070b2a
+
+.field public static final ruby_two_lines_cell_second_line_margin_bottom:I = 0x7f070b2b
+
+.field public static final sash_badge_text_x_ratio:I = 0x7f070b42
+
+.field public static final sash_badge_text_y_ratio:I = 0x7f070b43
+
+.field public static final search_bar_text_top_padding:I = 0x7f070b44
+
+.field public static final search_box_close_icon_padding:I = 0x7f070b45
+
+.field public static final search_box_close_icon_size:I = 0x7f070b46
+
+.field public static final search_box_height:I = 0x7f070b47
+
+.field public static final search_box_icon_margin:I = 0x7f070b48
+
+.field public static final search_box_icon_padding:I = 0x7f070b49
+
+.field public static final search_box_margin_horizontal:I = 0x7f070b4a
+
+.field public static final search_box_margin_vertical:I = 0x7f070b4b
+
+.field public static final search_box_text_margin_start:I = 0x7f070b4c
+
+.field public static final search_box_text_size:I = 0x7f070b4d
+
+.field public static final search_element_spacing:I = 0x7f070b4e
+
+.field public static final search_element_spacing_bottom:I = 0x7f070b4f
+
+.field public static final search_everywhere_divider_height:I = 0x7f070b50
+
+.field public static final search_everywhere_height:I = 0x7f070b51
+
+.field public static final search_everywhere_padding_bottom:I = 0x7f070b52
+
+.field public static final search_everywhere_padding_horizontal:I = 0x7f070b53
+
+.field public static final search_everywhere_padding_top:I = 0x7f070b54
+
+.field public static final search_everywhere_text_size:I = 0x7f070b55
+
+.field public static final search_history_hint_padding:I = 0x7f070b56
+
+.field public static final search_history_hint_padding_horizontal:I = 0x7f070b57
+
+.field public static final search_history_hint_text_size:I = 0x7f070b58
+
+.field public static final search_history_item_height:I = 0x7f070b59
+
+.field public static final search_history_item_margin:I = 0x7f070b5a
+
+.field public static final search_history_item_text_size:I = 0x7f070b5b
+
+.field public static final search_history_list_height:I = 0x7f070b5c
+
+.field public static final search_layout_floatingbtn_horizontal_padding:I = 0x7f070b5d
+
+.field public static final search_no_results_text_size:I = 0x7f070b5e
+
+.field public static final search_result_list_padding:I = 0x7f070b5f
+
+.field public static final search_result_loading_margin:I = 0x7f070b60
+
+.field public static final search_result_section_separator_height:I = 0x7f070b61
+
+.field public static final search_result_section_text_size:I = 0x7f070b62
+
+.field public static final search_results_header_padding:I = 0x7f070b63
+
+.field public static final search_results_list_item_height:I = 0x7f070b64
+
+.field public static final search_results_padding_left:I = 0x7f070b65
+
+.field public static final search_results_padding_right:I = 0x7f070b66
+
+.field public static final search_results_section_header_padding:I = 0x7f070b67
+
+.field public static final search_results_text_size:I = 0x7f070b68
+
+.field public static final search_results_title_height:I = 0x7f070b69
+
+.field public static final search_screen_side_padding:I = 0x7f070b6a
+
+.field public static final search_section_spacing:I = 0x7f070b6b
+
+.field public static final search_spell_check_auto_correct_text_size:I = 0x7f070b6c
+
+.field public static final search_spell_check_inner_layout_padding:I = 0x7f070b6d
+
+.field public static final search_spell_check_layout_padding:I = 0x7f070b6e
+
+.field public static final search_spell_check_original_query_text_size:I = 0x7f070b6f
+
+.field public static final search_store_result_cover_width:I = 0x7f070b70
+
+.field public static final search_store_result_ku_badge_width:I = 0x7f070b71
+
+.field public static final search_store_result_width:I = 0x7f070b72
+
+.field public static final search_suggestion_desc_margin_top:I = 0x7f070b73
+
+.field public static final search_suggestion_desc_text_size:I = 0x7f070b74
+
+.field public static final search_suggestion_height:I = 0x7f070b75
+
+.field public static final search_suggestion_hint_padding_horizontal:I = 0x7f070b76
+
+.field public static final search_suggestion_hint_text_size:I = 0x7f070b77
+
+.field public static final search_suggestion_icon_padding:I = 0x7f070b78
+
+.field public static final search_suggestion_item_height:I = 0x7f070b79
+
+.field public static final search_suggestion_list_height:I = 0x7f070b7a
+
+.field public static final search_suggestion_list_padding_top:I = 0x7f070b7b
+
+.field public static final search_suggestion_text_padding_right:I = 0x7f070b7c
+
+.field public static final search_suggestion_title_margin_left:I = 0x7f070b7d
+
+.field public static final search_suggestion_title_text_size:I = 0x7f070b7e
+
+.field public static final secondary_menu_content_type_max_width:I = 0x7f070b80
+
+.field public static final secondary_menu_disabled_alpha_dark:I = 0x7f070b81
+
+.field public static final secondary_menu_disabled_alpha_light:I = 0x7f070b82
+
+.field public static final secondary_menu_height:I = 0x7f070b83
+
+.field public static final secondary_menu_icon_padding:I = 0x7f070b84
+
+.field public static final secondary_menu_icon_size:I = 0x7f070b85
+
+.field public static final seekbar_padding:I = 0x7f070b88
+
+.field public static final seekbar_top_padding:I = 0x7f070b89
+
+.field public static final seeker_text_padding_left:I = 0x7f070b8a
+
+.field public static final seeker_text_padding_right:I = 0x7f070b8b
+
+.field public static final select_listview_item_drawable_padding:I = 0x7f070b8c
+
+.field public static final select_listview_item_view_height:I = 0x7f070b8d
+
+.field public static final selection_bar_shadow_padding:I = 0x7f070b8f
+
+.field public static final selection_button_drawable_height:I = 0x7f070b90
+
+.field public static final selection_button_drawable_padding:I = 0x7f070b91
+
+.field public static final selection_button_dropdown_horz_offset:I = 0x7f070b92
+
+.field public static final selection_button_dropdown_vertical_offset:I = 0x7f070b93
+
+.field public static final selection_button_marker_bottom_inset:I = 0x7f070b94
+
+.field public static final selection_button_marker_top_inset:I = 0x7f070b95
+
+.field public static final selection_buttons_x_margin:I = 0x7f070b96
+
+.field public static final selection_handle_left_horizontal_offset:I = 0x7f070b97
+
+.field public static final selection_handle_left_vertical_offset:I = 0x7f070b98
+
+.field public static final selection_handle_right_horizontal_offset:I = 0x7f070b99
+
+.field public static final selection_handle_right_vertical_offset:I = 0x7f070b9a
+
+.field public static final series_bar_padding_left:I = 0x7f070b9b
+
+.field public static final series_bar_padding_right:I = 0x7f070b9c
+
+.field public static final series_detail_toolbar_item_margin_top:I = 0x7f070b9d
+
+.field public static final series_detail_toolbar_padding_bottom:I = 0x7f070b9e
+
+.field public static final series_detail_toolbar_padding_left:I = 0x7f070b9f
+
+.field public static final series_detail_toolbar_padding_right:I = 0x7f070ba0
+
+.field public static final series_detail_toolbar_padding_top:I = 0x7f070ba1
+
+.field public static final shadow_depth:I = 0x7f070ba2
+
+.field public static final shoveler_bottom_spacing:I = 0x7f070ba3
+
+.field public static final shoveler_default_badged_book_cover_height:I = 0x7f070ba4
+
+.field public static final shoveler_default_book_cover_height:I = 0x7f070ba5
+
+.field public static final shoveler_default_book_cover_width:I = 0x7f070ba6
+
+.field public static final shoveler_default_cover_height:I = 0x7f070ba7
+
+.field public static final shoveler_default_cover_width:I = 0x7f070ba8
+
+.field public static final shoveler_header_text_height:I = 0x7f070ba9
+
+.field public static final shoveler_header_text_size:I = 0x7f070baa
+
+.field public static final shoveler_layout_margin:I = 0x7f070bab
+
+.field public static final shoveler_margin:I = 0x7f070bac
+
+.field public static final shoveler_margin_offset:I = 0x7f070bad
+
+.field public static final shoveler_outer_padding:I = 0x7f070bae
+
+.field public static final shoveler_padding:I = 0x7f070baf
+
+.field public static final shoveler_padding_end:I = 0x7f070bb0
+
+.field public static final shoveler_padding_start:I = 0x7f070bb1
+
+.field public static final shoveler_slot_spacing:I = 0x7f070bb2
+
+.field public static final shoveler_slot_width:I = 0x7f070bb3
+
+.field public static final shovler_margin_bottom:I = 0x7f070bb4
+
+.field public static final simple_list_item_margin_bottom:I = 0x7f070bb5
+
+.field public static final simple_list_text_margin_bottom:I = 0x7f070bb6
+
+.field public static final simple_list_text_margin_left:I = 0x7f070bb7
+
+.field public static final simple_list_text_margin_top:I = 0x7f070bb8
+
+.field public static final simple_two_lines_item_margin_bottom:I = 0x7f070bb9
+
+.field public static final single_entity_card_color_bar_height:I = 0x7f070bba
+
+.field public static final soft_keyboard_height_landscape:I = 0x7f070bc4
+
+.field public static final soft_keyboard_height_portrait:I = 0x7f070bc5
+
+.field public static final softkey_bar_height:I = 0x7f070bc6
+
+.field public static final sort_filter_header_padding_bottom:I = 0x7f070bc7
+
+.field public static final start_button_padding:I = 0x7f070bce
+
+.field public static final store_upsell_image_view_margin:I = 0x7f070c0c
+
+.field public static final store_upsell_margin_top:I = 0x7f070c0d
+
+.field public static final store_upsell_padding_horizontal:I = 0x7f070c0e
+
+.field public static final store_upsell_padding_vertical:I = 0x7f070c0f
+
+.field public static final subscription_badges_minimum_acceptable_height:I = 0x7f070c10
+
+.field public static final subtitle_corner_radius:I = 0x7f070c11
+
+.field public static final subtitle_outline_width:I = 0x7f070c12
+
+.field public static final subtitle_shadow_offset:I = 0x7f070c13
+
+.field public static final subtitle_shadow_radius:I = 0x7f070c14
+
+.field public static final tablet_popup_top_shift:I = 0x7f070c16
+
+.field public static final tablet_popup_width:I = 0x7f070c17
+
+.field public static final tablet_selection_bottom_margin:I = 0x7f070c18
+
+.field public static final tablet_selection_button_divider_width:I = 0x7f070c19
+
+.field public static final tablet_selection_button_height:I = 0x7f070c1a
+
+.field public static final tablet_selection_button_spacing_horz:I = 0x7f070c1b
+
+.field public static final tablet_selection_button_width:I = 0x7f070c1c
+
+.field public static final tablet_selection_intra_item_padding:I = 0x7f070c1d
+
+.field public static final tablet_selection_left_padding:I = 0x7f070c1e
+
+.field public static final tablet_selection_right_padding:I = 0x7f070c1f
+
+.field public static final tablet_selection_row_height:I = 0x7f070c20
+
+.field public static final tablet_selection_row_width:I = 0x7f070c21
+
+.field public static final tablet_selection_row_width_after_divider:I = 0x7f070c22
+
+.field public static final tap_wiggle_threshold:I = 0x7f070c26
+
+.field public static final tat_shoveler_component_image_margin:I = 0x7f070c27
+
+.field public static final tat_shoveler_component_image_section_width:I = 0x7f070c28
+
+.field public static final tat_shoveler_component_intro_section_margin_bottom:I = 0x7f070c29
+
+.field public static final tat_shoveler_component_text_margin:I = 0x7f070c2a
+
+.field public static final tat_shoveler_component_text_section_width:I = 0x7f070c2b
+
+.field public static final tat_shoveler_component_title_text_margin_bottom:I = 0x7f070c2c
+
+.field public static final tat_shoveler_component_title_text_margin_top:I = 0x7f070c2d
+
+.field public static final text_article_title:I = 0x7f070c30
+
+.field public static final text_body:I = 0x7f070c31
+
+.field public static final text_body_2:I = 0x7f070c32
+
+.field public static final text_body_italic:I = 0x7f070c33
+
+.field public static final text_body_large:I = 0x7f070c34
+
+.field public static final text_button:I = 0x7f070c35
+
+.field public static final text_button_large:I = 0x7f070c36
+
+.field public static final text_caption_1:I = 0x7f070c37
+
+.field public static final text_caption_2:I = 0x7f070c38
+
+.field public static final text_caption_3:I = 0x7f070c39
+
+.field public static final text_display_1:I = 0x7f070c3a
+
+.field public static final text_display_2:I = 0x7f070c3b
+
+.field public static final text_header_1:I = 0x7f070c3c
+
+.field public static final text_header_2:I = 0x7f070c3d
+
+.field public static final text_header_3:I = 0x7f070c3e
+
+.field public static final text_header_3_home:I = 0x7f070c3f
+
+.field public static final text_header_4:I = 0x7f070c40
+
+.field public static final text_header_5:I = 0x7f070c41
+
+.field public static final text_headline:I = 0x7f070c42
+
+.field public static final text_label:I = 0x7f070c43
+
+.field public static final theme_detail_margin_top:I = 0x7f070c47
+
+.field public static final theme_radio_button_height:I = 0x7f070c48
+
+.field public static final theme_radio_group_end_padding:I = 0x7f070c49
+
+.field public static final theme_screen_horizontal_margin:I = 0x7f070c4a
+
+.field public static final thumbnail_scrubber_bitmap_height:I = 0x7f070c53
+
+.field public static final thumbnail_scrubber_bitmap_width:I = 0x7f070c54
+
+.field public static final thumbnail_scrubber_bottom_margin:I = 0x7f070c55
+
+.field public static final thumbnail_scrubber_chapter_info_padding:I = 0x7f070c56
+
+.field public static final thumbnail_scrubber_display_height:I = 0x7f070c57
+
+.field public static final thumbnail_scrubber_display_width:I = 0x7f070c58
+
+.field public static final thumbnail_scrubber_location_info_padding_bottom:I = 0x7f070c59
+
+.field public static final thumbnail_scrubber_margin_between_thumbnails:I = 0x7f070c5a
+
+.field public static final thumbnail_scrubber_pagenum_horiz_padding:I = 0x7f070c5b
+
+.field public static final thumbnail_scrubber_pagenum_vert_padding:I = 0x7f070c5c
+
+.field public static final thumbnail_scrubber_selection_width:I = 0x7f070c5d
+
+.field public static final thumbnail_scrubber_thumbnail_border:I = 0x7f070c5e
+
+.field public static final thumbnail_scrubber_top_margin:I = 0x7f070c5f
+
+.field public static final title_bar_button_text_size:I = 0x7f070c64
+
+.field public static final toc_divider_height:I = 0x7f070c68
+
+.field public static final toc_entry_content_min_height:I = 0x7f070c69
+
+.field public static final toc_entry_contents_vertical_padding:I = 0x7f070c6a
+
+.field public static final toc_entry_description_text_size:I = 0x7f070c6b
+
+.field public static final toc_entry_min_height:I = 0x7f070c6c
+
+.field public static final toc_entry_page_image_placeholder_width:I = 0x7f070c6d
+
+.field public static final toc_entry_position_label_text_size:I = 0x7f070c6e
+
+.field public static final toc_entry_title_text_size:I = 0x7f070c6f
+
+.field public static final toc_header_author_text_size:I = 0x7f070c70
+
+.field public static final toc_header_title_text_size:I = 0x7f070c7f
+
+.field public static final toc_icon_max_height_percent:I = 0x7f070c81
+
+.field public static final toc_indentation_padding:I = 0x7f070c82
+
+.field public static final toc_page_image_max_height_percent:I = 0x7f070c84
+
+.field public static final toolbar_height:I = 0x7f070c87
+
+.field public static final toolbar_shadow_height:I = 0x7f070c88
+
+.field public static final tooltip_body_text:I = 0x7f070c89
+
+.field public static final tooltip_border_stroke_width:I = 0x7f070c8a
+
+.field public static final tooltip_button_height:I = 0x7f070c8b
+
+.field public static final tooltip_button_layout_padding:I = 0x7f070c8c
+
+.field public static final tooltip_button_margin:I = 0x7f070c8d
+
+.field public static final tooltip_button_margin_left:I = 0x7f070c8e
+
+.field public static final tooltip_button_margin_right:I = 0x7f070c8f
+
+.field public static final tooltip_button_padding:I = 0x7f070c90
+
+.field public static final tooltip_button_text_size:I = 0x7f070c91
+
+.field public static final tooltip_close_button_height:I = 0x7f070c92
+
+.field public static final tooltip_close_button_padding:I = 0x7f070c93
+
+.field public static final tooltip_close_button_width:I = 0x7f070c94
+
+.field public static final tooltip_content_top_padding:I = 0x7f070c95
+
+.field public static final tooltip_corner_radius:I = 0x7f070c96
+
+.field public static final tooltip_horizontal_padding:I = 0x7f070c97
+
+.field public static final tooltip_image_padding:I = 0x7f070c98
+
+.field public static final tooltip_layout_bottom_padding:I = 0x7f070c99
+
+.field public static final tooltip_layout_left_padding:I = 0x7f070c9a
+
+.field public static final tooltip_layout_right_padding:I = 0x7f070c9b
+
+.field public static final tooltip_layout_top_padding:I = 0x7f070c9c
+
+.field public static final tooltip_margin:I = 0x7f070c9d
+
+.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f070c9e
+
+.field public static final tooltip_precise_anchor_threshold:I = 0x7f070c9f
+
+.field public static final tooltip_title_padding:I = 0x7f070ca0
+
+.field public static final tooltip_title_text:I = 0x7f070ca1
+
+.field public static final tooltip_vertical_padding:I = 0x7f070ca2
+
+.field public static final tooltip_y_offset_non_touch:I = 0x7f070ca3
+
+.field public static final tooltip_y_offset_touch:I = 0x7f070ca4
+
+.field public static final top_bar_bottom_border_height:I = 0x7f070ca5
+
+.field public static final top_bar_content_height:I = 0x7f070ca6
+
+.field public static final top_bar_height:I = 0x7f070ca7
+
+.field public static final top_level_selection_button_padding_horz:I = 0x7f070ca8
+
+.field public static final top_level_selection_button_padding_vert:I = 0x7f070ca9
+
+.field public static final top_search_widget_border_height:I = 0x7f070caa
+
+.field public static final top_search_widget_content_item_height:I = 0x7f070cab
+
+.field public static final top_search_widget_content_item_horizontal_space:I = 0x7f070cac
+
+.field public static final top_search_widget_content_item_icon_ring_inner_radius:I = 0x7f070cad
+
+.field public static final top_search_widget_content_item_icon_ring_thickness:I = 0x7f070cae
+
+.field public static final top_search_widget_content_item_icon_size:I = 0x7f070caf
+
+.field public static final top_search_widget_content_item_padding_horizontal:I = 0x7f070cb0
+
+.field public static final top_search_widget_content_padding_horizontal:I = 0x7f070cb1
+
+.field public static final top_search_widget_header_height:I = 0x7f070cb2
+
+.field public static final top_search_widget_header_margin_end:I = 0x7f070cb3
+
+.field public static final top_search_widget_header_margin_start:I = 0x7f070cb4
+
+.field public static final top_search_widget_header_padding_end:I = 0x7f070cb5
+
+.field public static final top_search_widget_header_padding_start:I = 0x7f070cb6
+
+.field public static final top_search_widget_header_shift_img_size:I = 0x7f070cb7
+
+.field public static final top_search_widget_img_margin_right:I = 0x7f070cb8
+
+.field public static final transient_screen_cover_size:I = 0x7f070cb9
+
+.field public static final trial_bar_button_margin:I = 0x7f070cc6
+
+.field public static final trial_bar_button_padding:I = 0x7f070cc7
+
+.field public static final trial_bar_padding:I = 0x7f070cc8
+
+.field public static final tutorial_dialog_description_top_margin:I = 0x7f070ccd
+
+.field public static final tutorial_dialog_horizontal_padding:I = 0x7f070cce
+
+.field public static final tutorial_dialog_image_left_margin:I = 0x7f070ccf
+
+.field public static final tutorial_dialog_image_right_margin:I = 0x7f070cd0
+
+.field public static final tutorial_dialog_image_vertical_margin:I = 0x7f070cd1
+
+.field public static final tutorial_dialog_image_vertical_padding:I = 0x7f070cd2
+
+.field public static final tutorial_dialog_left_margin:I = 0x7f070cd3
+
+.field public static final tutorial_dialog_right_margin:I = 0x7f070cd4
+
+.field public static final tutorial_dialog_top_margin:I = 0x7f070cd5
+
+.field public static final tutorial_dialog_vertical_padding:I = 0x7f070cd6
+
+.field public static final tutorial_element_margin_bottom:I = 0x7f070cd7
+
+.field public static final tutorial_element_margin_left:I = 0x7f070cd8
+
+.field public static final tutorial_element_margin_right:I = 0x7f070cd9
+
+.field public static final tutorial_element_margin_top:I = 0x7f070cda
+
+.field public static final tutorial_fullpage_action_button_height:I = 0x7f070cdb
+
+.field public static final tutorial_fullpage_action_button_width:I = 0x7f070cdc
+
+.field public static final tutorial_hit_caret_perpendicular_half:I = 0x7f070cdd
+
+.field public static final tutorial_jit_caret_bisector_length:I = 0x7f070cde
+
+.field public static final tutorial_jit_caret_margin:I = 0x7f070cdf
+
+.field public static final tutorial_jit_textview_line_spacing:I = 0x7f070ce0
+
+.field public static final tutorial_jit_textview_margin:I = 0x7f070ce1
+
+.field public static final tutorial_jit_textview_padding:I = 0x7f070ce2
+
+.field public static final tutorial_jit_textview_text_size:I = 0x7f070ce3
+
+.field public static final unified_selection_popup_button_height:I = 0x7f070ce5
+
+.field public static final unified_selection_popup_button_width:I = 0x7f070ce6
+
+.field public static final unified_selection_popup_definition_content_width:I = 0x7f070ce7
+
+.field public static final unified_selection_popup_definition_height:I = 0x7f070ce8
+
+.field public static final unified_selection_popup_width:I = 0x7f070cea
+
+.field public static final utm_brochure_content_bottom_margin:I = 0x7f070d78
+
+.field public static final utm_brochure_content_side_margin:I = 0x7f070d79
+
+.field public static final utm_brochure_content_top_margin:I = 0x7f070d7a
+
+.field public static final utm_brochure_image_horizontal_margin:I = 0x7f070d7b
+
+.field public static final utm_brochure_pageindicator_vertical_margin:I = 0x7f070d7c
+
+.field public static final utm_brochure_pageitem_horizontal_margin:I = 0x7f070d7d
+
+.field public static final utm_brochure_pageitem_vertical_margin:I = 0x7f070d7e
+
+.field public static final utm_button_height:I = 0x7f070d7f
+
+.field public static final utm_button_vertical_margin:I = 0x7f070d80
+
+.field public static final utm_button_width:I = 0x7f070d81
+
+.field public static final vertical_breadcrumb_arrow_margin_left:I = 0x7f070d82
+
+.field public static final vertical_breadcrumb_content_size:I = 0x7f070d83
+
+.field public static final vertical_breadcrumb_view_padding:I = 0x7f070d84
+
+.field public static final view_options_bottom_offset:I = 0x7f070d85
+
+.field public static final view_options_brightness_bottom_padding:I = 0x7f070d86
+
+.field public static final view_options_brightness_height:I = 0x7f070d87
+
+.field public static final view_options_brightness_padding_horz:I = 0x7f070d8b
+
+.field public static final view_options_brightness_slider_padding:I = 0x7f070d8c
+
+.field public static final view_options_brightness_top_padding:I = 0x7f070d8d
+
+.field public static final view_options_color_icon_height:I = 0x7f070d8f
+
+.field public static final view_options_color_icon_text_size:I = 0x7f070d90
+
+.field public static final view_options_color_icon_width:I = 0x7f070d91
+
+.field public static final view_options_drop_down_item_height:I = 0x7f070d92
+
+.field public static final view_options_drop_down_item_icon_padding:I = 0x7f070d93
+
+.field public static final view_options_drop_down_item_padding_horz:I = 0x7f070d94
+
+.field public static final view_options_drop_down_item_padding_top:I = 0x7f070d95
+
+.field public static final view_options_font_cancel_bg_margin:I = 0x7f070d96
+
+.field public static final view_options_font_cancel_bg_size:I = 0x7f070d97
+
+.field public static final view_options_font_cancel_icon_margin:I = 0x7f070d98
+
+.field public static final view_options_font_download_icon_padding:I = 0x7f070d99
+
+.field public static final view_options_fontsize_padding:I = 0x7f070d9a
+
+.field public static final view_options_horiz_offset:I = 0x7f070d9c
+
+.field public static final view_options_progress_bar_size:I = 0x7f070da2
+
+.field public static final view_options_row_height:I = 0x7f070da3
+
+.field public static final view_options_row_padding:I = 0x7f070da4
+
+.field public static final view_options_row_padding_horz:I = 0x7f070da5
+
+.field public static final view_options_row_padding_vert:I = 0x7f070da6
+
+.field public static final view_options_row_right_padding:I = 0x7f070da7
+
+.field public static final view_options_row_text_size:I = 0x7f070da8
+
+.field public static final view_options_row_text_title_size:I = 0x7f070da9
+
+.field public static final view_options_shadow_width:I = 0x7f070daa
+
+.field public static final view_options_text_alignment_bottom_padding:I = 0x7f070dab
+
+.field public static final view_options_text_alignment_button_padding:I = 0x7f070dac
+
+.field public static final view_options_text_alignment_top_padding:I = 0x7f070dad
+
+.field public static final view_options_text_size_padding_horz:I = 0x7f070dae
+
+.field public static final view_options_text_size_top_padding:I = 0x7f070daf
+
+.field public static final view_options_top_offset:I = 0x7f070db0
+
+.field public static final view_options_width:I = 0x7f070db1
+
+.field public static final wayfinder_search_section_height:I = 0x7f070db2
+
+.field public static final wayfinder_search_section_spacing:I = 0x7f070db3
+
+.field public static final waypoint_header_divider_height:I = 0x7f070db4
+
+.field public static final waypoint_view_width:I = 0x7f070db5
+
+.field public static final ways_to_read_shoveler_margin:I = 0x7f070db6
+
+.field public static final ways_to_read_shoveler_slot_spacing:I = 0x7f070db7
+
+.field public static final whackamole_max_title_width:I = 0x7f070dc4
+
+.field public static final whats_new_layout_left_padding:I = 0x7f070dc5
+
+.field public static final widget_margin:I = 0x7f070dc6
+
+.field public static final widget_progress_dot_spacing:I = 0x7f070dc7
+
+.field public static final width_scale_factor:I = 0x7f070dc8
+
+.field public static final wiki_card_web_font:I = 0x7f070dc9
+
+.field public static final word_wise_decoration_caret_height:I = 0x7f070dd3
+
+.field public static final word_wise_decoration_caret_width:I = 0x7f070dd4
+
+.field public static final word_wise_decoration_gloss_padding:I = 0x7f070dd5
+
+.field public static final word_wise_decoration_indicator_padding:I = 0x7f070dd6
+
+.field public static final word_wise_decoration_maximum_text_size:I = 0x7f070dd7
+
+.field public static final word_wise_decoration_maximum_text_size_cn:I = 0x7f070dd8
+
+.field public static final word_wise_decoration_maximum_text_size_eink:I = 0x7f070dd9
+
+.field public static final word_wise_decoration_maximum_text_size_eink_cn:I = 0x7f070dda
+
+.field public static final word_wise_decoration_minimum_text_size_eink:I = 0x7f070ddb
+
+.field public static final word_wise_decoration_minimum_text_size_eink_cn:I = 0x7f070ddc
+
+.field public static final word_wise_decoration_text_size_multiplier:I = 0x7f070ddd
+
+.field public static final word_wise_decoration_text_size_multiplier_cn:I = 0x7f070dde
+
+.field public static final word_wise_decoration_text_size_multiplier_eink:I = 0x7f070ddf
+
+.field public static final word_wise_decoration_text_size_multiplier_eink_cn:I = 0x7f070de0
+
+.field public static final wtr_card_margin_bottom:I = 0x7f070e2d
+
+.field public static final wtr_shoveler_component_image_section_height:I = 0x7f070e2e
+
+.field public static final wtr_shoveler_component_image_section_width:I = 0x7f070e2f
+
+.field public static final wtr_shoveler_component_intro_section_margin_bottom:I = 0x7f070e30
+
+.field public static final wtr_shoveler_component_intro_section_margin_top:I = 0x7f070e31
+
+.field public static final wtr_shoveler_component_text_margin:I = 0x7f070e32
+
+.field public static final wtr_shoveler_component_text_section_width:I = 0x7f070e33
+
+.field public static final wtr_shoveler_component_title_text_margin_bottom:I = 0x7f070e34
+
+.field public static final wtr_shoveler_component_title_text_margin_top:I = 0x7f070e35
+
+.field public static final wtr_shoveler_component_url_section_margin_bottom:I = 0x7f070e36
+
+.field public static final wtr_shoveler_component_width:I = 0x7f070e37
+
+.field public static final yj_bottom_margin_landscape:I = 0x7f070e8b
+
+.field public static final yj_bottom_margin_landscape_v2:I = 0x7f070e8c
+
+.field public static final yj_bottom_margin_portrait:I = 0x7f070e8d
+
+.field public static final yj_bottom_margin_portrait_v2:I = 0x7f070e8e
+
+.field public static final yj_footnotes_text_size:I = 0x7f070e8f
+
+.field public static final yj_top_margin_landscape:I = 0x7f070e90
+
+.field public static final yj_top_margin_portrait:I = 0x7f070e91

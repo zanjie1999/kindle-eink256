@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="@color/tertiary_1_light" android:layout_width="@dimen/add_to_collection_action_bar_divider_width" android:layout_height="@dimen/add_to_collection_action_bar_divider_height" android:layout_marginStart="@dimen/add_to_collection_action_bar_divider_margin_start" android:layout_marginEnd="@dimen/add_to_collection_action_bar_divider_margin_end" />
+    <com.amazon.kcp.library.ui.MultiSelectSpinner android:ellipsize="end" android:gravity="center_vertical" android:id="@id/selection_spinner" android:layout_width="wrap_content" android:layout_height="@dimen/top_bar_content_height" android:maxLines="1" android:drawablePadding="4.0dip" android:drawableEnd="?caret_down" android:paddingStart="@dimen/add_to_collection_select_spinner_padding_horizontal" android:paddingEnd="@dimen/add_to_collection_select_spinner_padding_horizontal" style="@style/Ruby.TextAppearance.Button.Large" />
+</LinearLayout>

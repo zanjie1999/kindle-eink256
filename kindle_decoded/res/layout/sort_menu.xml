@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:id="@id/sort_filter" android:contentDescription="@string/lib_menu_view_sort_description" style="@style/secondary_menu_button_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?library_view_sort" android:scaleType="centerInside" />
+</LinearLayout>

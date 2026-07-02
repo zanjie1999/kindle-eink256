@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.cover.CollectionThumbnail android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?collection_grid_view_vertical_spacing" android:foreground="@drawable/select_overlay_selector">
+        <LinearLayout android:orientation="vertical" android:background="?collection_cover_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/main_column" android:background="?collection_thumbnail_background_color" android:paddingLeft="@dimen/collection_thumbnail_external_padding" android:paddingTop="@dimen/collection_thumbnail_external_padding" android:paddingRight="@dimen/collection_thumbnail_external_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/left_collection_thumbnails_column" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginRight="@dimen/collection_thumbnail_internal_padding" android:layout_weight="1.0">
+                    <include layout="@layout/collection_cover_thumbnail" />
+                    <include layout="@layout/collection_cover_thumbnail" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/right_collection_thumbnails_column" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <include layout="@layout/collection_cover_thumbnail" />
+                    <include layout="@layout/collection_cover_thumbnail" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="?collection_thumbnail_text_background_color" android:paddingLeft="@dimen/collection_thumbnail_external_padding" android:paddingRight="@dimen/collection_thumbnail_external_padding" android:paddingBottom="@dimen/collection_thumbnail_external_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@id/collection_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/collection_thumbnails_label_height" android:maxLines="2" android:layout_weight="1.0" style="?collection_title_text_style" />
+                <TextView android:layout_gravity="right" android:id="@id/item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?collection_count_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.amazon.kcp.cover.CollectionThumbnail>

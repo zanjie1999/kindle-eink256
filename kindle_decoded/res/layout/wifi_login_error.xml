@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ugs_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kindle.ffs.view.EmberTextView android:textColor="@color/ugs_foreground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_wifi_login_error" android:textAllCaps="true" android:textAlignment="center" style="@style/Text.Header2" />
+    <com.amazon.kindle.ffs.view.EmberTextView android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" style="@style/Text.Body" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/try_again" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/ffs_try_again" style="@style/FfsButton.Primary" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ffs_cancel" style="@style/FfsButton.Tertiary" />
+</LinearLayout>

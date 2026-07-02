@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/aa_menu_v2_setting_title_text_size" android:id="@id/reading_ruler_opacity_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kre_aamenu_accessibility_label_readingruler_opacity_slider" android:fontFamily="Amazon Ember" />
+    <com.amazon.kindle.viewoptions.ui.AaSettingSeekBar android:id="@id/reading_ruler_opacity_setting" android:tag="reading_ruler_opacity_slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reading_ruler_opacity_top_margin" app:leftView="?ReadingRulerOpacityMinDrawable" app:leftViewId="@id/aa_menu_v2_reading_ruler_opacity_decrease" app:leftViewWidth="@dimen/reading_ruler_opacity_min_max_width" app:rightView="?ReadingRulerOpacityMaxDrawable" app:rightViewId="@id/aa_menu_v2_reading_ruler_opacity_increase" app:rightViewWidth="@dimen/reading_ruler_opacity_min_max_width" app:seekBarId="@id/aa_menu_v2_reading_ruler_opacity_seekbar" app:tickMarksEnabled="false" app:title="@string/kre_aamenu_accessibility_label_readingruler_opacity_slider" />
+</merge>

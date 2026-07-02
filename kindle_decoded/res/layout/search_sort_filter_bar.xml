@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/filter_root" android:background="?secondary_menu_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/refine_menu_side_padding" android:paddingEnd="@dimen/refine_menu_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:id="@id/refine_button" android:focusable="true" android:contentDescription="@string/library_filter" style="@style/secondary_menu_button_container">
+        <ImageView android:id="@id/filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?filter_menu_icon" android:scaleType="centerInside" />
+    </LinearLayout>
+    <Space android:layout_gravity="center" android:id="@id/padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="end" android:id="@id/sort_button" android:contentDescription="@string/lib_menu_view_sort_description" style="@style/secondary_menu_button_container">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/sort_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?library_view_sort" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

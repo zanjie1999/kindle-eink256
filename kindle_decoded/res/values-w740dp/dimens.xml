@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_player_controls_right_margin">80.0dip</dimen>
+    <dimen name="full_player_cover_margin">32.0dip</dimen>
+    <dimen name="upsell_popup_modal_height">768.0dip</dimen>
+    <dimen name="upsell_popup_modal_width">448.0dip</dimen>
+</resources>

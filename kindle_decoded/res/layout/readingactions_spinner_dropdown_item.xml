@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/readingactions_dropdown_divider" android:layout_width="fill_parent" android:layout_height="@dimen/startactions_group_title_divider_height" />
+    <TextView android:textAppearance="@style/readingactions_amazon_text_button_regular" android:gravity="center" android:id="@id/readingactions_spinner_dropdown_text" android:paddingTop="@dimen/readingactions_spinner_dropdown_item_vertical_padding" android:paddingBottom="@dimen/readingactions_spinner_dropdown_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+</LinearLayout>

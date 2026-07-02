@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/klo_bg_selected_list_item" />
+    <item android:state_checked="true" android:drawable="@drawable/klo_bg_checked_list_item" />
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/klo_action_bar_background" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/action_bar_bg_pressed" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/force_to_show_first_run_jit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force to Show Ruby First-Run JIT (KFS only)" />
+    <CheckBox android:id="@id/enable_tab_preactivation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Tab Pre-activation" />
+    <Button android:id="@id/reset_first_run_jit_display_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset Display Count of Ruby First-Run JIT (so that JIT can be shown again, KFS only)" />
+    <CheckBox android:id="@id/enable_reading_streaks_menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Reading Streaks More Menu Item" />
+    <CheckBox android:id="@id/use_reading_streaks_debug_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use Reading Streaks Debug URL" />
+    <CheckBox android:id="@id/enable_your_titles_on_fos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Manage Your Titles in MORE menu on FOS" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.bookwizard.ui.view.WelcomeScreenBackground android:id="@id/treeboy_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bookwizard_treeboy" android:scaleType="matrix" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bookwizard_welcome_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="@integer/bookwizard_welcome_content_weight">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/kindle_logo_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bookwizard_welcome_screen_margin_top" android:layout_marginBottom="@dimen/bookwizard_welcome_screen_margin_bottom" android:src="@drawable/bookwizard_kindle_logo" />
+            <TextView android:id="@id/welcome_to_kindle_text_view" android:layout_marginBottom="@dimen/bookwizard_welcome_screen_margin_bottom" style="@style/bookwizard_page_header_text_allCaps" />
+            <TextView android:id="@id/welcome_body_text" style="@style/bookwizard_page_body_text" />
+            <Button android:id="@id/start_button" android:layout_marginTop="@dimen/bookwizard_welcome_screen_button_margin_top" android:text="@string/lets_get_started" style="@style/bookwizard_positive_button_white" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/cp_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/bookwizard_country_picker_layout_height">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/country_picker_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookwizard_country_label" style="@style/bookwizard_country_picker_header" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/country_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bookwizard_country_picker_spinner" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

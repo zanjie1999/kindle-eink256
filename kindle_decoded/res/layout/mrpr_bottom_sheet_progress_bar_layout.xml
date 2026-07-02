@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mrpr_bottom_sheet_progress_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mrpr_bottom_sheet_book_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mrpr_bottom_sheet_layout_side_margin" android:layout_marginTop="@dimen/mrpr_bottom_sheet_progress_bar_divider_margin" android:layout_marginRight="@dimen/mrpr_bottom_sheet_layout_side_margin" android:layout_marginBottom="@dimen/mrpr_bottom_sheet_progress_bar_divider_margin">
+        <View android:id="@id/mrpr_bottom_sheet_book_line" android:background="@color/mrpr_bottom_sheet_book_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/mrpr_bottom_sheet_progress_bar_divider_height" />
+        <View android:id="@id/mrpr_bottom_sheet_current_position_line" android:background="@color/mrpr_bottom_sheet_current_position_line_color" android:layout_width="100.0dip" android:layout_height="@dimen/mrpr_bottom_sheet_progress_bar_divider_height" android:layout_marginTop="@dimen/mrpr_bottom_sheet_progress_bar_divider_offset" android:layout_below="@id/mrpr_bottom_sheet_book_line" />
+    </RelativeLayout>
+    <ImageView android:id="@id/mrpr_bottom_sheet_current_position_chevron" android:background="@color/transparent" android:layout_width="@dimen/mrpr_bottom_sheet_progress_bar_chevron_width" android:layout_height="@dimen/mrpr_bottom_sheet_progress_bar_chevron_width" android:src="@drawable/mrpr_bottom_sheet_forward_chevron" android:translationY="12.0dip" />
+</RelativeLayout>

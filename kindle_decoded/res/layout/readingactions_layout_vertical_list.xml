@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/nested_scroll_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_widget_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/readingactions_widget_container" android:paddingBottom="@dimen/readingactions_widget_container_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

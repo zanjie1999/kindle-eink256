@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:id="@id/off">
+        <nine-patch android:src="@drawable/aa_btn_switch_to_on_001" android:tint="?android:colorControlNormal" android:alpha="0.3" />
+    </item>
+    <item android:state_checked="true" android:id="@id/on">
+        <nine-patch android:src="@drawable/aa_btn_switch_to_on_012" android:tint="?android:colorControlActivated" />
+    </item>
+    <item android:id="@id/off">
+        <nine-patch android:src="@drawable/aa_btn_switch_to_on_001" android:tint="?android:colorControlNormal" />
+    </item>
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_001" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_002" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_003" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_004" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_005" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_006" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_007" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_008" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_009" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_010" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_011" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_on_012" android:tint="?android:colorControlActivated" />
+            </item>
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_001" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_002" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_003" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_004" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_005" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_006" android:tint="?android:colorControlActivated" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_007" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_008" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_009" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_010" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_011" android:tint="?android:colorControlNormal" />
+            </item>
+            <item android:duration="15">
+                <nine-patch android:src="@drawable/aa_btn_switch_to_off_012" android:tint="?android:colorControlNormal" />
+            </item>
+        </animation-list>
+    </transition>
+</animated-selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.reader.ui.ThumbnailScrubberContainer android:gravity="bottom" android:orientation="vertical" android:id="@id/thumbnail_scrubber" android:background="?location_seeker_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.kcp.reader.ui.ThumbnailScrubber android:id="@id/thumbnails" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/other_component_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/chapter_and_page_info" android:paddingLeft="@dimen/thumbnail_scrubber_chapter_info_padding" android:paddingRight="@dimen/thumbnail_scrubber_chapter_info_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/thumbnail_scrubber_location_info">
+                <TextView android:textStyle="bold" android:textColor="?chromeTextPrimary" android:ellipsize="end" android:id="@id/chapter_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/page_label_info" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/thumbnail_scrubber_text.general" />
+                <TextView android:textColor="?chromeTextPrimary" android:id="@id/page_label_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/thumbnail_scrubber_text.general" />
+            </RelativeLayout>
+            <com.amazon.kcp.reader.ui.ReaderLayoutSeekBar android:id="@id/seekBar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:secondaryProgress="0" android:layout_below="@id/chapter_and_page_info" style="@style/thumbnail_scrubber_seek_bar" />
+        </RelativeLayout>
+    </com.amazon.kcp.reader.ui.ThumbnailScrubberContainer>
+</RelativeLayout>

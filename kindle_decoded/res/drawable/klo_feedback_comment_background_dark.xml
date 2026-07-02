@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding android:left="@dimen/klo_feedback_border_line" android:top="@dimen/klo_feedback_border_line" android:right="@dimen/klo_feedback_border_line" android:bottom="@dimen/klo_feedback_border_line" />
+    <solid android:color="@color/klo_background_dark" />
+    <stroke android:height="@dimen/klo_feedback_border_line" android:width="@dimen/klo_feedback_border_line" android:color="@android:color/white" />
+</shape>

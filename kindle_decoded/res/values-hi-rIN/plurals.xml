@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">%d पेज</item>
+        <item quantity="one">%d पेज</item>
+    </plurals>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bookInfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:textStyle="bold" android:ellipsize="end" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:ellipsize="end" android:id="@id/header_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/header_title" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rating_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_medium_padding" android:layout_below="@id/header_sub_title" android:layout_alignParentLeft="true">
+            <RatingBar android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/stars" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="@style/anyactions_ratingbar_small_light" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/num_reviews" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/anyactions_amazon_text_small" />
+        </LinearLayout>
+        <Button android:id="@id/store_link" android:background="@drawable/bg_startactions_borderless_button" android:layout_below="@id/rating_bar" android:layout_alignParentLeft="true" style="@style/startactions_text_button_light_small" />
+        <Button android:gravity="center_vertical" android:id="@id/share_button" android:background="@drawable/bg_startactions_borderless_button" android:layout_width="wrap_content" android:text="@string/anyactions_widget_share_text" android:drawableRight="@drawable/anyactions_share_button_icon_light" android:drawablePadding="@dimen/startactions_header_share_icon_padding" android:layout_below="@id/rating_bar" android:layout_alignParentRight="true" style="@style/startactions_text_button_light_small" />
+    </RelativeLayout>
+    <include layout="@layout/startactions_component_divider" />
+    <com.amazon.startactions.ui.helpers.TextViewWithEndButton android:textAppearance="@style/anyactions_amazon_text_small" android:id="@id/expanding_text" android:background="@drawable/bg_startactions_borderless_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/startactions_medium_padding" android:maxLines="@integer/startactions_widget_expanding_text_max_lines_collapsed" android:textDirection="firstStrong" android:textAlignment="textStart" />
+    <Button android:id="@id/see_less" android:visibility="gone" android:layout_marginTop="@dimen/startactions_medium_padding" android:minHeight="0.0dip" android:text="@string/startactions_widget_read_less" android:contentDescription="@string/startactions_widget_read_less_content_description" style="@style/startactions_text_button_light_small" />
+</LinearLayout>

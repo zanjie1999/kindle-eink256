@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:importantForAccessibility="yes" style="@style/tablet_popup_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/refine_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" />
+    <include layout="@layout/lib_refine_menu_clear_filters" />
+</LinearLayout>

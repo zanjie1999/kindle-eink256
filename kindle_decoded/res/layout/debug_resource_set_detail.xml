@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/debug_setting_resource_set_detail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REMOTE" android:fontFamily="casual" />
+    <Button android:id="@id/debug_download_resource_set_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set to Remote and Download Again" />
+    <Button android:id="@id/debug_download_get_resource_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get this resource set" />
+    <Button android:id="@id/debug_release_resource_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Release this resource set" />
+    <TextView android:id="@id/debug_download_get_resource_set_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

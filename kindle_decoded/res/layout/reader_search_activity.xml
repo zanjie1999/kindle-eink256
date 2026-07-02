@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="?readerSearchListBackgroundColor" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/results_dim_view" android:background="?readerSearchListDimColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/reader_search_list_dim_desc" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_result_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/recent_search_terms_header_view" android:background="?readerSearchListBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/recent_search_term_list_header" />
+        <include android:id="@id/recent_search_terms_empty_view" layout="@layout/recent_search_term_empty_state" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/results_recycler_view" android:background="?readerSearchListBackgroundColor" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

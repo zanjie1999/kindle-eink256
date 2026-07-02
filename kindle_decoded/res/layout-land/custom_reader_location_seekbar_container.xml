@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.CustomReaderLocationSeeker android:orientation="vertical" android:id="@id/location_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nln_seeker_bar_text" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/above_decorator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/seeker_bar_animatable" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/non_floating_content" android:background="?location_seeker_background" android:layout_width="0.0dip" android:minHeight="@dimen/nln_location_seeker_height" android:layout_weight="1.0" style="@style/wrap">
+            <include layout="@layout/custom_reader_location_seekbar" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/nln_seeker_separator" android:background="?location_seeker_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="?chromeSeparator" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/additional_control" android:background="?location_seeker_background" android:visibility="gone" android:layout_width="@dimen/nln_additional_control_width" android:layout_height="fill_parent" android:baselineAligned="false" android:minHeight="@dimen/nln_location_seeker_height" />
+    </LinearLayout>
+</com.amazon.kcp.reader.ui.CustomReaderLocationSeeker>

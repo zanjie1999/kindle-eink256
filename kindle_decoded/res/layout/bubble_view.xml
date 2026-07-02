@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.BubbleView android:orientation="vertical" android:padding="20.0dip" android:visibility="invisible" android:layout_width="280.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" style="@style/bubble_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

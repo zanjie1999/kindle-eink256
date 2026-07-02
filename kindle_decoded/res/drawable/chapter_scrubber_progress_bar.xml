@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/amplify_progress_bar_color" />
+    <stroke android:width="@dimen/amplify_chapter_scrubber_border_width" android:color="@color/amplify_progress_bar_border_color" />
+</shape>

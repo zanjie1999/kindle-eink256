@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?library_background_color" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:text="@string/edit_device_name_subtitle" style="?device_name_screen_subtitle_style" />
+    <View style="?setting_screens_divider_under_title_style" />
+    <TextView android:text="@string/edit_device_name_description" style="?device_name_screen_description_style" />
+    <TextView android:text="@string/edit_device_name_title" style="?device_name_screen_device_name_label_style" />
+    <View style="?device_name_screen_divider_style" />
+    <androidx.appcompat.widget.AppCompatEditText android:id="@id/new_name" android:inputType="text" android:imeOptions="actionSend" app:backgroundTint="?edit_text_background_hint_color" style="?device_name_screen_edit_text_style" />
+    <Button android:id="@id/rename_btn" android:text="@string/edit_device_name_btn" style="?device_name_screen_rename_button_style" />
+</LinearLayout>

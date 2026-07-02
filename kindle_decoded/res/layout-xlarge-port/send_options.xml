@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/stk_action_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/archive_layout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <CheckBox android:textSize="16.0sp" android:textColor="#ffd4d4d4" android:id="@id/stk_archive_checkBox" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stkArchiveText" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/send_cancel_button_layout" android:paddingTop="6.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <RelativeLayout android:id="@id/send_button_relative_layout" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/cancel_button" android:background="@drawable/cancel_button_bg" android:layout_width="wrap_content" android:layout_height="40.0dip" android:minWidth="150.0dip" android:text="@string/cancelButtonText" android:layout_centerInParent="true" style="?android:buttonStyleSmall" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cancel_button_relative_layout" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/send_button" android:background="@drawable/send_button_bg" android:layout_width="wrap_content" android:layout_height="40.0dip" android:minWidth="150.0dip" android:text="@string/sendButtonText" android:layout_centerInParent="true" style="?android:buttonStyleSmall" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

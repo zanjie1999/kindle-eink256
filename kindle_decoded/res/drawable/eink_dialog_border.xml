@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/eink_background_white" />
+    <stroke android:width="2.0dip" android:color="@color/e3os_eink_dialog_border_color" />
+    <corners android:radius="4.0dip" />
+    <padding android:left="26.0dip" android:top="18.0dip" android:right="2.0dip" android:bottom="18.0dip" />
+</shape>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.setting.item.sync.SyncItemView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sync_item_id" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/more_menu_item_container">
+        <ImageView android:id="@id/sync_item_icon" style="@style/more_menu_item_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/sync_item_title" style="@style/more_menu_item_primary_text" />
+            <TextView android:id="@id/sync_item_status" android:visibility="gone" style="@style/more_menu_item_secondary_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/more_menu_item_divider" />
+</com.amazon.kindle.setting.item.sync.SyncItemView>

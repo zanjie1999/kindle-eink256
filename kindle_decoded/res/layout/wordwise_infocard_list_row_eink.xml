@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:paddingTop="@dimen/word_wise_output_padding" android:paddingRight="@dimen/word_wise_output_padding" android:paddingBottom="@dimen/word_wise_output_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center|left" android:id="@id/wordwise_card_row_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wordwise_info_card_list_row_eink" />
+    <TextView android:layout_gravity="center|right" android:id="@id/wordwise_card_row_marker" android:paddingRight="@dimen/word_wise_card_row_marker_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

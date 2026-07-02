@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.StandaloneReaderMenuContainer android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="bottom" android:id="@id/stub_location_seeker_decoration" android:layout="@layout/location_seeker_decoration" android:inflatedId="@id/location_seeker_decoration" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom|center|right" android:id="@id/waypoint_view_stub" android:visibility="gone" android:layout="@layout/waypoint_view" android:inflatedId="@id/waypoint_view" android:layout_width="@dimen/waypoint_view_width" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/action_bar_decoration_stub" android:visibility="gone" android:layout="@layout/action_bar_decoration" android:inflatedId="@id/action_bar_decoration" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/aa_menu_v2_bottom_sheet_stub" android:visibility="gone" android:layout="@layout/aa_menu_v2_bottom_sheet" android:inflatedId="@id/aa_menu_v2_bottom_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/aa_menu_v2_side_sheet_stub" android:visibility="gone" android:layout="@layout/aa_menu_v2_side_sheet" android:inflatedId="@id/aa_menu_v2_side_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/toolbar_with_shadow" />
+</com.amazon.kcp.reader.ui.StandaloneReaderMenuContainer>

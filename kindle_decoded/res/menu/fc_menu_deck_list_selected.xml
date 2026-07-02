@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?fc_ic_action_mode_edit" android:id="@id/menu_edit_deck" android:title="@string/fc_edit_deck" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?fc_ic_action_mode_delete" android:id="@id/menu_delete_deck" android:title="@string/fc_delete_deck" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+</menu>

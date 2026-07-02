@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingTop="@dimen/fr_select_listview_top_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fr_preference_edittext_container" android:paddingLeft="@dimen/fr_preferenceEditTextMarginLeft" android:paddingRight="@dimen/fr_preferenceEditTextMarginRight" android:paddingBottom="@dimen/fr_preferenceEditTextMarginBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/fr_preference_message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:textAppearanceSmall" />
+    </LinearLayout>
+</ScrollView>

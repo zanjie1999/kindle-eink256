@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="marketplace_from_language">A1AM78C64UM0Y8</string>
+    <string name="upsell_banner_button_text">Más información</string>
+    <string name="upsell_banner_text_description">No te pierdas ninguna edición. Comienza una &lt;font face=Amazon Ember Bold color=#fda500>&lt;b>prueba GRATUITA de 30 días&lt;/b>&lt;/font>.</string>
+    <string name="upsell_banner_text_title">¿DISFRUTAS DE ESTA REVISTA?</string>
+    <string name="upsell_full_page_button_text">Más información</string>
+    <string name="upsell_full_page_text_description">No te pierdas ninguna edición. Comienza una &lt;font face=Amazon Ember Bold color=#fda500>&lt;b>prueba GRATUITA de 30 días&lt;/b>&lt;/font>.</string>
+    <string name="upsell_full_page_text_title">¿DISFRUTAS DE ESTA REVISTA?</string>
+</resources>

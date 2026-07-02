@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?lib_menu_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lib_view_type_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/view_type_header" android:text="@string/lib_menu_view" android:contentDescription="@string/lib_menu_view_header_description" style="@style/bottom_sheet_menu_header">
+            <requestFocus />
+        </TextView>
+        <View style="@style/bottom_sheet_menu_item_divider" />
+        <include layout="@layout/lib_view_type_radio_group" />
+        <View style="@style/bottom_sheet_menu_group_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sort_options_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/lib_menu_sort" android:contentDescription="@string/lib_menu_sort_header_description" android:importantForAccessibility="yes" style="@style/bottom_sheet_menu_header" />
+        <View style="@style/bottom_sheet_menu_item_divider" />
+        <include layout="@layout/lib_sort_type_radio_group" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/upsell_bar_text_font_size_adjusted" android:id="@id/upsell_bar_header" android:paddingTop="@dimen/upsell_bar_title_text_top_padding_nln" android:paddingRight="@dimen/upsell_bar_text_padding_right_nln" android:paddingBottom="@dimen/upsell_bar_title_text_bottom_padding_nln" android:focusable="true" android:layout_toLeftOf="@id/right_content" android:layout_alignParentLeft="true" style="@style/upsell_bar_text_title_nln" />
+    <TextView android:textSize="@dimen/upsell_bar_text_font_size_adjusted" android:id="@id/upsell_bar_details" android:paddingRight="@dimen/upsell_bar_text_padding_right_nln" android:layout_toLeftOf="@id/right_content" android:layout_below="@id/upsell_bar_header" android:layout_alignParentLeft="true" style="@style/upsell_bar_text_message_nln" />
+    <ImageView android:id="@id/failure_asset" android:visibility="gone" android:layout_marginRight="@dimen/upsell_bar_padding" android:src="@drawable/upsell_triangle" android:layout_alignParentLeft="true" style="@style/upsell_bar_failure_asset" />
+    <TextView android:id="@id/upsell_bar_multiline_details" android:paddingRight="@dimen/upsell_bar_text_padding_right_nln" android:layout_toLeftOf="@id/right_content" android:layout_toRightOf="@id/failure_asset" style="@style/upsell_bar_expandable_message_nln" />
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.AuthorFollowCardView android:id="@id/author_follow_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_card_margin">
+        <include layout="@layout/home_card_text_header" />
+        <RelativeLayout android:id="@id/author_follow_card_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_card_margin" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin">
+            <ImageView android:id="@id/author_follow_avatar" android:tag="IMAGE_1" android:layout_width="@dimen/author_follow_default_avatar_size" android:layout_height="@dimen/author_follow_default_avatar_size" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header3.Home" android:ellipsize="end" android:id="@id/author_follow_name" android:tag="TEXT_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/author_follow_info_zone_margin_start" android:layout_toEndOf="@id/author_follow_avatar" />
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header1.Grey" android:ellipsize="end" android:id="@id/author_follow_desc" android:tag="TEXT_3" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/author_follow_desc_margin_top" android:layout_below="@id/author_follow_name" android:layout_alignStart="@id/author_follow_name" />
+            <com.amazon.kcp.home.ui.TwoStateButton android:id="@id/author_follow_more_button" android:tag="TWO_STATE_BUTTON_1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <FrameLayout android:id="@id/author_follow_following_button_layout" android:layout_width="wrap_content" android:layout_height="@dimen/author_follow_button_height" android:layout_marginTop="@dimen/author_follow_button_margin_top" android:layout_below="@id/author_follow_desc" android:layout_alignStart="@id/author_follow_desc">
+                <com.amazon.kcp.home.ui.TwoStateButton android:gravity="center" android:id="@id/author_follow_following_button" android:tag="TWO_STATE_BUTTON_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stateListAnimator="@null" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/author_follow_button_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    <TextView android:textAppearance="@style/Ruby.TextAppearance.Button" android:textSize="13.0sp" android:gravity="center" android:id="@id/author_follow_button_text" android:paddingLeft="2.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:importantForAccessibility="no" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/author_follow_progress_bar" android:padding="49.0dip" android:layout_width="@dimen/author_follow_button_width" android:layout_height="@dimen/author_follow_button_height" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.kcp.home.ui.AuthorFollowCardView>

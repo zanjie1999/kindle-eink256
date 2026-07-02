@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.android.ui.UiFontTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/send" android:paddingStart="@dimen/ruby_settings_horizontal_margin" android:paddingEnd="@dimen/ruby_settings_horizontal_margin" style="@style/Ruby.TextAppearance.Button.Large.Active"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

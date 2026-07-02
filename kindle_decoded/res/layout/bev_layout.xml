@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.DisablingRelativeLayout android:id="@id/content_container" android:background="?chromeBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view" android:paddingLeft="@dimen/birdseye_recycler_side_padding" android:paddingRight="@dimen/birdseye_recycler_side_padding" android:paddingBottom="@dimen/nln_toolbar_height" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/breadcrumb_1_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <include android:id="@id/breadcrumb_1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/breadcrumb" />
+    </RelativeLayout>
+    <include android:id="@id/breadcrumb_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bev_toolbar" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" layout="@layout/breadcrumb" />
+    <View android:id="@id/toolbar_shadow" android:background="@drawable/toolbar_shadow_fade_up" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_above="@id/bev_toolbar" />
+    <RelativeLayout android:id="@id/bev_toolbar" android:background="?chromeBackgroundColorTranslucent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/nln_toolbar_height" android:layout_alignParentBottom="true">
+        <com.amazon.kindle.nln.birdseye.CutoutResponsiveExitButton android:id="@id/exit_bev" android:background="?selectableItemBackgroundBorderless" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="@string/pfv_return_text" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <com.amazon.kindle.nln.UnboundedLinearLayout android:id="@id/animate_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/transient_breadcrumb_page" android:visibility="gone" layout="@layout/breadcrumb_content_container" />
+    <include android:id="@id/transient_breadcrumb_page2" android:visibility="gone" layout="@layout/breadcrumb_content_container" />
+</com.amazon.kindle.nln.DisablingRelativeLayout>

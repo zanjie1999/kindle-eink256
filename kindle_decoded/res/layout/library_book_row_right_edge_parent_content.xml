@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/middle_right_badge" android:layout="@layout/library_book_row_middle_right_image" android:inflatedId="@id/middle_right_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/middle_right_label" android:layout="@layout/library_book_row_middle_right_label" android:inflatedId="@id/middle_right_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

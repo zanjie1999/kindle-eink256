@@ -1,0 +1,1401 @@
+.class public Lcom/amazon/ebook/util/text/LanguageSubtagTrie;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static final LETTER_Z:I = 0x7a
+
+.field private static final MARKER:I = 0x60
+
+.field private static final SPACE:I = 0x20
+
+.field static final trie:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/16 v0, 0x4c4
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/amazon/ebook/util/text/LanguageSubtagTrie;->trie:[I
+
+    return-void
+
+    :array_0
+    .array-data 4
+        0x1a61
+        0x4e62
+        0x8263
+        0xb464
+        0xe265
+        0x11066
+        0x13867
+        0x16c68
+        0x19a69
+        0x1ce6a
+        0x1f86b
+        0x22c6c
+        0x25c6d
+        0x2906e
+        0x2c46f
+        0x2f070
+        0x32271
+        0x32e72
+        0x35673
+        0x38a74
+        0x3be75
+        0x3ec76
+        0x40a77
+        0x43878
+        0x46a79
+        0x4967a
+        0x3461
+        0x3562
+        0x3663
+        0x3764
+        0x3865
+        0x3966
+        0x3a67
+        0x3b68
+        0x3c69
+        0x3d6a
+        0x3e6b
+        0x3f6c
+        0x406d
+        0x416e
+        0x426f
+        0x4370
+        0x4471
+        0x4572
+        0x4673
+        0x4774
+        0x4875
+        0x4976
+        0x4a77
+        0x4b78
+        0x4c79
+        0x4d7a
+        0x7fefefd
+        0x7ff7fff
+        0x376f7ff
+        0x37f5fef
+        0x7e0f3ab
+        0x76e9ce1
+        0x3ffffff
+        0x30efdc0
+        0x3ffffce
+        0x20a0469
+        0x5ffefff
+        0x2ffffff
+        0x7bbffff
+        0x7ffffff
+        0x3fff1c5
+        0x3efffff
+        0x2887500
+        0x5e7dfff
+        0x7ffdfff
+        0x3efffff
+        0x3ffffef
+        0x542d8f0
+        0x3e6b9fe
+        0x108a004
+        0x7eedfe7
+        0x7892841
+        0x6861
+        0x6962
+        0x6a63
+        0x6b64
+        0x6c65
+        0x6d66
+        0x6e67
+        0x6f68
+        0x7069
+        0x716a
+        0x726b
+        0x736c
+        0x746d
+        0x756e
+        0x766f
+        0x7770
+        0x7871
+        0x7972
+        0x7a73
+        0x7b74
+        0x7c75
+        0x7d76
+        0x7e77
+        0x7f78
+        0x8079
+        0x817a
+        0x7ff5dff
+        0x3ffffff
+        0x3fffffb
+        0x3efffff
+        0x7ffafff
+        0x3ffffeb
+        0x7fbffff
+        0x7ffffff
+        0x7f9ff7f
+        0x3fffbff
+        0x3dfffff
+        0x3ffffdf
+        0x7ffffff
+        0x7fbffff
+        0x73fff7f
+        0x34fffff
+        0x3dfffff
+        0x7dfffff
+        0x7bffffe
+        0x3ffffff
+        0x3ffbeff
+        0x3fffb7d
+        0x3ffffef
+        0x3ffffbd
+        0x3ffffdf
+        0x37fffff
+        0x9b61
+        0x9c62
+        0x9d63
+        0x9e64
+        0x9f65
+        0xa066
+        0xa167
+        0xa268
+        0xa369
+        0xa46a
+        0xa56b
+        0xa66c
+        0xa76d
+        0xa86e
+        0xa96f
+        0xaa70
+        0xab71
+        0xac72
+        0xad73
+        0xae74
+        0xaf75
+        0xb076
+        0xb177
+        0xb279
+        0xb37a
+        0x7ffffbf
+        0x3efd9f2
+        0x2ed7f80
+        0x2ff3983
+        0x7085040
+        0x2482000
+        0x2888000
+        0x5ddff4f
+        0x3e4b50a
+        0x226bd92
+        0x3044bf7
+        0x2e6e82a
+        0x2aaf9c0
+        0x38ec8ec
+        0x7fdfe7f
+        0x3ba14a6
+        0x400020
+        0x7dfffdf
+        0x7fefbeb
+        0x2e87ce1
+        0x78feffc
+        0x4081000
+        0x3680040
+        0x7000800    # 9.632001E-35f
+        0x49840
+        0xcb61
+        0xcc62
+        0xcd63
+        0xce64
+        0xcf65
+        0xd067
+        0xd168
+        0xd269
+        0xd36a
+        0xd46b
+        0xd56c
+        0xd66d
+        0xd76e
+        0xd86f
+        0xd970
+        0xda72
+        0xdb73
+        0xdc74
+        0xdd75
+        0xde76
+        0xdf77
+        0xe079
+        0xe17a
+        0x6ffefbf
+        0x37b7f32
+        0x800100
+        0x6b1888
+        0x4fef791
+        0x3ee99a5
+        0x24a79b8
+        0x3dfffef
+        0x1f3f928
+        0x200c184
+        0x83000
+        0x2a8f9b6
+        0x26a916a
+        0x3b6dfdf
+        0x400
+        0x36e5bea
+        0x1265a00
+        0x302a5e0
+        0x3ffffbf
+        0x6000000
+        0x2004188
+        0x34a3822
+        0x6485000
+        0xf962
+        0xfa63
+        0xfb65
+        0xfc66
+        0xfd67
+        0xfe68
+        0xff69
+        0x1006a
+        0x1016b
+        0x1026c
+        0x1036d
+        0x1046e
+        0x1056f
+        0x10670
+        0x10772
+        0x10873
+        0x10974
+        0x10a75
+        0x10b76
+        0x10c77
+        0x10d78
+        0x10e79
+        0x10f7a
+        0x80920
+        0x182
+        0x4200000
+        0x2220000
+        0x2004806
+        0x20
+        0x450
+        0x2000000
+        0x22aed02
+        0x426ac24
+        0x32abcaa
+        0x7d43b38
+        0x4000040
+        0x20000
+        0x20e89c8
+        0x426faa4
+        0x58419e5
+        0x4000200
+        0x241000
+        0x800
+        0x40
+        0x2000800
+        0x200000
+        0x12461
+        0x12563
+        0x12665
+        0x12766
+        0x12867
+        0x12969
+        0x12a6a
+        0x12b6b
+        0x12c6c
+        0x12d6d
+        0x12e6e
+        0x12f6f
+        0x13070
+        0x13171
+        0x13272
+        0x13373
+        0x13475
+        0x13576
+        0x13677
+        0x13779
+        0x75ff567
+        0x80
+        0x100
+        0x4022000
+        0x100
+        0x6204568
+        0x4000000
+        0x10
+        0x2065102
+        0x420
+        0xa0000
+        0x4423184
+        0x200000
+        0x80
+        0x4c0afc0
+        0x204080
+        0x1f73372
+        0x100
+        0x2200000
+        0x4000000
+        0x15261
+        0x15362
+        0x15463
+        0x15564
+        0x15665
+        0x15766
+        0x15867
+        0x15968
+        0x15a69
+        0x15b6a
+        0x15c6b
+        0x15d6c
+        0x15e6d
+        0x15f6e
+        0x1606f
+        0x16170
+        0x16271
+        0x16372
+        0x16473
+        0x16574
+        0x16675
+        0x16776
+        0x16877
+        0x16978
+        0x16a79
+        0x16b7a
+        0x77fffff
+        0x3ffffb7
+        0xf05140
+        0x7fffb24
+        0x3cfe28f
+        0x8040
+        0x368d968
+        0x2a4d9c0
+        0x3c87fcf
+        0x29020
+        0x2201400
+        0x4c7892a
+        0x364723e
+        0x7eefb69
+        0x3ffffef
+        0x2001000
+        0x2021100
+        0x3cfabff
+        0x287c88
+        0x2020000
+        0x7fefffd
+        0x6b17d82
+        0x3fb116c
+        0x4
+        0x37a7102
+        0x2021000
+        0x18361
+        0x18462
+        0x18563
+        0x18664
+        0x18765
+        0x18867
+        0x18968
+        0x18a69
+        0x18b6a
+        0x18c6b
+        0x18d6c
+        0x18e6d
+        0x18f6e
+        0x1906f
+        0x19170
+        0x19272
+        0x19373
+        0x19474
+        0x19575
+        0x19676
+        0x19777
+        0x19879
+        0x1997a
+        0x7ffff9f
+        0x3001820
+        0x2040000
+        0x1082
+        0x64e2000
+        0x2008
+        0x20102
+        0x75fe94c
+        0x20000
+        0x2208080
+        0x3600060
+        0x3fff7ff
+        0x26718a0
+        0x7e7eddb
+        0x880
+        0x620a965
+        0x1045080
+        0x40208a4
+        0x5ffefff
+        0xa09010
+        0x2800800
+        0x6000004
+        0x4000000
+        0x1b461
+        0x1b562
+        0x1b663
+        0x1b764
+        0x1b865
+        0x1b966
+        0x1ba67
+        0x1bb68
+        0x1bc69
+        0x1bd6a
+        0x1be6b
+        0x1bf6c
+        0x1c06d
+        0x1c16e
+        0x1c26f
+        0x1c370
+        0x1c471
+        0x1c572
+        0x1c673
+        0x1c774
+        0x1c875
+        0x1c976
+        0x1ca77
+        0x1cb78
+        0x1cc79
+        0x1cd7a
+        0x4021500
+        0x36a7122
+        0x2044100
+        0x7e201e0
+        0x4000000
+        0x330a022
+        0x5287888
+        0x1020400
+        0x4000100
+        0xa11880
+        0x422cc5d
+        0x30ac8b8
+        0x2225982
+        0x5ad7cc1
+        0x4000128
+        0x20800
+        0x20
+        0x2269926
+        0x6ee3960
+        0x5a2e9df
+        0x4002000
+        0x1000010
+        0x400a880
+        0x804000
+        0x2000804
+        0x60100
+        0x1e361
+        0x1e462
+        0x1e563
+        0x1e664
+        0x1e765
+        0x1e867
+        0x1e968
+        0x1ea69
+        0x1eb6b
+        0x1ec6c
+        0x1ed6d
+        0x1ee6e
+        0x1ef6f
+        0x1f070
+        0x1f171
+        0x1f272
+        0x1f373
+        0x1f475
+        0x1f576
+        0x1f677
+        0x1f779
+        0x7f5ebe7
+        0x211960
+        0xc0
+        0x2080040
+        0x12ed160
+        0x1200800
+        0x20080
+        0x7ee6a72
+        0x820
+        0x200000
+        0x3c25184
+        0x24b4080
+        0x1400188
+        0x2000104
+        0x100
+        0x3000160
+        0x4000
+        0x3c4fdea
+        0x4401000
+        0x4020000
+        0x2200002
+        0x21261
+        0x21362
+        0x21463
+        0x21564
+        0x21665
+        0x21766
+        0x21867
+        0x21968
+        0x21a69
+        0x21b6a
+        0x21c6b
+        0x21d6c
+        0x21e6d
+        0x21f6e
+        0x2206f
+        0x22170
+        0x22271
+        0x22372
+        0x22473
+        0x22574
+        0x22675
+        0x22776
+        0x22877
+        0x22978
+        0x22a79
+        0x22b7a
+        0x7ffaf1e
+        0x3ffffff
+        0x3ffffff
+        0x2ffff7f
+        0x3ffffff
+        0x3ffffff
+        0x7fffffe
+        0x3ffdfff
+        0x7ff6eff
+        0x7ffffe7
+        0x7ffffff
+        0x7ffffff
+        0x7ffffff
+        0x7fbffff
+        0x6ffceff
+        0x3ffffff
+        0x3ffffff
+        0x7f7fdff
+        0x7ffffff
+        0x3ffffff
+        0x5fffeff
+        0x7ffffff
+        0x7ffffff
+        0x3f7ffff
+        0x7ffffff
+        0x3ffffff
+        0x24461
+        0x24562
+        0x24663
+        0x24764
+        0x24865
+        0x24966    # 2.10001E-40f
+        0x24a67
+        0x24b68
+        0x24c69
+        0x24d6a
+        0x24e6b
+        0x24f6c
+        0x2506d
+        0x2516e
+        0x2526f
+        0x25370
+        0x25472
+        0x25573
+        0x25674
+        0x25775
+        0x25876
+        0x25977
+        0x25a79
+        0x25b7a
+        0x7fff7af
+        0x7bb3bff
+        0xf46680
+        0x14ffe00
+        0x3ffffff
+        0x2001000
+        0x70ef361
+        0x20674e0
+        0x7ffcfbf
+        0x224400
+        0x3e759c2
+        0x3fefea4
+        0x3ffff3f
+        0x74f78a1
+        0x7bfffff
+        0x2201804
+        0x2aaf951
+        0x26e6dc0
+        0x48218a0
+        0x6f3fffb
+        0x6008020
+        0x22c6848
+        0x2081000
+        0x45001
+        0x27661
+        0x27762
+        0x27863
+        0x27964
+        0x27a65
+        0x27b66
+        0x27c67
+        0x27d68
+        0x27e69
+        0x27f6a
+        0x2806b
+        0x2816c
+        0x2826d
+        0x2836e
+        0x2846f
+        0x28570
+        0x28671
+        0x28772
+        0x28873
+        0x28974
+        0x28a75
+        0x28b76
+        0x28c77
+        0x28d78
+        0x28e79
+        0x28f7a
+        0x37bb6fd
+        0x3f7ffff
+        0x3ffffff
+        0x3fff7ff
+        0x3fffffb
+        0x3ffffff
+        0x7ffffff
+        0x7ffffef
+        0x7ffffef
+        0x2efffff
+        0x7bfffff
+        0x7f7ffbd
+        0x3ffff7f
+        0x7ffffff
+        0x6ffafff
+        0x3efffff
+        0x3bfffff
+        0x7fdffff
+        0x5ffffff
+        0x7fffffe
+        0x3effff7
+        0x37effff
+        0x3ffffff
+        0x3ffffff
+        0x5ffffff
+        0x3efffff
+        0x2aa61
+        0x2ab62
+        0x2ac63
+        0x2ad64
+        0x2ae65
+        0x2af66
+        0x2b067
+        0x2b168
+        0x2b269
+        0x2b36a
+        0x2b46b
+        0x2b56c
+        0x2b66d
+        0x2b76e
+        0x2b86f
+        0x2b970
+        0x2ba71
+        0x2bb72
+        0x2bc73
+        0x2bd74
+        0x2be75
+        0x2bf76
+        0x2c077
+        0x2c178
+        0x2c279
+        0x2c37a
+        0x7ffffcf
+        0x7ffbffe
+        0x3fffde5
+        0x7dff7ff
+        0x7ffbbdf
+        0x2404120
+        0x7ffffff
+        0x3febf7f
+        0x3fffbff
+        0x34779e6
+        0x3ffbdfd
+        0x6abd937
+        0x3ffffff
+        0x7fff7ff
+        0x6febefb
+        0x30458a2
+        0x8b800
+        0x7aa7545
+        0x2eeffff
+        0x23adab
+        0x3ff7fff
+        0x4042000
+        0x3a22106
+        0x26a7124
+        0x5fffffe
+        0x302a0a2
+        0x2da61
+        0x2db62
+        0x2dc63
+        0x2dd64
+        0x2de66
+        0x2df67
+        0x2e068
+        0x2e169
+        0x2e26a
+        0x2e36b
+        0x2e46c
+        0x2e56d
+        0x2e66e
+        0x2e76f
+        0x2e870
+        0x2e972
+        0x2ea73
+        0x2eb74
+        0x2ec75
+        0x2ed77
+        0x2ee79
+        0x2ef7a
+        0x2800110
+        0x26960
+        0x6040820
+        0x2008060
+        0x8a0
+        0x1a80820
+        0x60
+        0x2001000
+        0x5880498
+        0x367f9b4
+        0x2602900
+        0x7aadf7c
+        0x32b9dec
+        0x481180
+        0x200a842
+        0x6ac19fd
+        0x6820c64
+        0x362fbef
+        0x3223000
+        0x24000
+        0x1402002
+        0x2000
+        0x30961
+        0x30a62
+        0x30b63
+        0x30c64
+        0x30d65
+        0x30e66
+        0x30f67
+        0x31068
+        0x31169
+        0x3126a
+        0x3136b
+        0x3146c
+        0x3156d
+        0x3166e
+        0x3176f
+        0x31870
+        0x31971
+        0x31a72
+        0x31b73
+        0x31c74
+        0x31d75
+        0x31e77
+        0x31f78
+        0x32079
+        0x3217a
+        0x7feefff
+        0x1be5df3
+        0x3fff508
+        0x2821860
+        0x37fee97
+        0x2204000
+        0x20a90a2
+        0x24efb78
+        0x7ff7dff
+        0x40
+        0x38c1de0
+        0x7fddffb
+        0x3b7fbef
+        0x3ae3fff
+        0xfebedf
+        0x222ffe0
+        0x2202008
+        0x3eeffef
+        0x6ee7fea
+        0x6061d7a
+        0x3fbaf6f
+        0x3083908
+        0x2000
+        0x203026
+        0x1000
+        0x32861    # 2.89992E-40f
+        0x32975
+        0x32a76
+        0x32b77
+        0x32c78
+        0x32d79
+        0x2000000
+        0x7def79f
+        0x2a77c8b
+        0x2a420c0
+        0x2845fe8
+        0x2000400
+        0x34261
+        0x34362
+        0x34463    # 3.00039E-40f
+        0x34564
+        0x34665
+        0x34767
+        0x34868
+        0x34969
+        0x34a6a
+        0x34b6b
+        0x34c6d
+        0x34d6e
+        0x34e6f
+        0x34f70
+        0x35072
+        0x35173
+        0x35274
+        0x35375
+        0x35477
+        0x35579
+        0x3dfffff
+        0x1000000
+        0x100000
+        0x1000000
+        0x32b71c2
+        0x22091a0
+        0x80400
+        0x2307160
+        0xa0080
+        0x3062040
+        0x7fefdff
+        0x6485408
+        0x7f86d28
+        0x1040
+        0x20800
+        0x1024000
+        0x42008
+        0x5be8e63
+        0x600a900
+        0x10a0
+        0x37061
+        0x37162
+        0x37263
+        0x37364
+        0x37465
+        0x37566
+        0x37667
+        0x37768
+        0x37869
+        0x3796a
+        0x37a6b
+        0x37b6c
+        0x37c6d
+        0x37d6e
+        0x37e6f
+        0x37f70
+        0x38071
+        0x38172
+        0x38273
+        0x38374
+        0x38475
+        0x38576
+        0x38677
+        0x38778
+        0x38879
+        0x3897a
+        0x7f7efff
+        0x3ffffff
+        0x73edebc
+        0x7bdfdf5
+        0x7fffffb
+        0x1002088
+        0x7aefd6d
+        0x7afffff
+        0x77fefff
+        0x368fde8
+        0x7ffbfff
+        0x6ff77ef
+        0x7dff7ff
+        0x5bfffbf
+        0x7efdfbf
+        0x1eaefe6
+        0x6053be0
+        0x7befbff
+        0x7fffff7
+        0x77ffff8
+        0x7abe3df
+        0x7a08184
+        0x59ffffe
+        0x1a8f9a8
+        0x3c2f98a
+        0x3e85418
+        0x3a461
+        0x3a562
+        0x3a663
+        0x3a764
+        0x3a865
+        0x3a966
+        0x3aa67
+        0x3ab68
+        0x3ac69
+        0x3ad6a
+        0x3ae6b
+        0x3af6c
+        0x3b06d
+        0x3b16e
+        0x3b26f
+        0x3b370
+        0x3b471
+        0x3b572
+        0x3b673
+        0x3b774
+        0x3b875
+        0x3b976
+        0x3ba77
+        0x3bb78
+        0x3bc79
+        0x3bd7a
+        0x7fbdfbf
+        0x3ffffff
+        0x3fefeef
+        0x3dfdbf6
+        0x7febffe
+        0x21940
+        0x7fe0ffe
+        0x4f6f7ff
+        0x6fffeff
+        0x20a38a0
+        0x770f7ed
+        0x7dffffe
+        0x3fffffb
+        0x7feffff
+        0x5ff6fbf
+        0x2bbff7f
+        0x1007f68
+        0x7ffffff
+        0x7ffe7bf
+        0x7fffffb
+        0x3ff7eff
+        0x260f8ca
+        0x7fc7f6e
+        0x3ae3be6
+        0x62755f5
+        0x2053804
+        0x3d561
+        0x3d662
+        0x3d764
+        0x3d865
+        0x3d966
+        0x3da67
+        0x3db68
+        0x3dc69
+        0x3dd6a
+        0x3de6b
+        0x3df6c
+        0x3e06d
+        0x3e16e
+        0x3e26f
+        0x3e370
+        0x3e472
+        0x3e573
+        0x3e674
+        0x3e775
+        0x3e876
+        0x3e977
+        0x3ea79
+        0x3eb7a
+        0x3100
+        0x2020122
+        0x22b6020
+        0x80
+        0x20000
+        0x7201802
+        0x2001000
+        0x90
+        0x20000
+        0x60c46a8
+        0x392f020
+        0x3ca3da0
+        0x268a505
+        0x8000
+        0x20010
+        0x7bffd7f
+        0x2068420
+        0x2200520
+        0x3120
+        0x244000
+        0x2000000
+        0x2000000
+        0x4001080
+        0x3fb61
+        0x3fc62
+        0x3fd65
+        0x3fe67
+        0x3ff69
+        0x4006b
+        0x4016c
+        0x4026d
+        0x4036e
+        0x4046f
+        0x40572
+        0x40673
+        0x40774
+        0x40875
+        0x40977
+        0x23f7db2
+        0x1000000
+        0x4c06d00
+        0x140
+        0x4d850d0
+        0x203ec60
+        0x480
+        0x3ffe7bf
+        0xa400
+        0x4000140
+        0x20008c0
+        0x24010
+        0x800
+        0x3040
+        0x2000000
+        0x42161
+        0x42262
+        0x42363
+        0x42464
+        0x42565
+        0x42666
+        0x42767
+        0x42868
+        0x42969
+        0x42a6a
+        0x42b6b
+        0x42c6c
+        0x42d6d
+        0x42e6e
+        0x42f6f
+        0x43070
+        0x43172
+        0x43273
+        0x43374
+        0x43475
+        0x43577
+        0x43678
+        0x43779
+        0x7ffffff
+        0x337e758
+        0x2020000
+        0x490020
+        0x2c63de8
+        0x80000
+        0x20a080a
+        0x2088020
+        0x1bff17a
+        0x2020000
+        0x3404028
+        0x2aae9be
+        0x3e638cc
+        0x1eaac20
+        0x7fab98a
+        0x800000
+        0x34e75bf
+        0x20281b0
+        0x12a008
+        0x3447176
+        0x2000908
+        0x2000000
+        0x3002102
+        0x45161
+        0x45262
+        0x45363
+        0x45464
+        0x45565
+        0x45666
+        0x45767
+        0x45868
+        0x45969
+        0x45a6b
+        0x45b6c
+        0x45c6d
+        0x45d6e
+        0x45e6f
+        0x45f70
+        0x46071
+        0x46172
+        0x46273
+        0x46374
+        0x46475
+        0x46576
+        0x46677
+        0x46778
+        0x46879
+        0x4697a
+        0x3ea7ffa
+        0x282290c
+        0x1ac797a
+        0x802002
+        0x14865e0
+        0x2000000
+        0x2105100
+        0x6e00170
+        0x3025512
+        0x3ffdfff
+        0x3ea1ca2
+        0x3fdffff
+        0x34c1980
+        0xcabd08
+        0xaabda2
+        0x2000040
+        0x3223168
+        0x3e77fb2
+        0x3eb7feb
+        0x3092d60
+        0x221880
+        0x2a84900
+        0x1008140
+        0x4000
+        0x42400
+        0x48061
+        0x48162
+        0x48263
+        0x48364
+        0x48465
+        0x48567
+        0x48668
+        0x48769
+        0x4886b
+        0x4896c
+        0x48a6d    # 4.17E-40f
+        0x48b6e
+        0x48c6f
+        0x48d70
+        0x48e72
+        0x48f73
+        0x49074
+        0x49175
+        0x49276
+        0x49377
+        0x49479
+        0x4957a
+        0x3ffefff
+        0x367f806
+        0x45400
+        0x688080
+        0x2a351f2
+        0x6508
+        0x2404000
+        0x61ff7f7
+        0x20ae942
+        0x22a7922
+        0x3eeffc5
+        0x26cd8a0
+        0x50af086
+        0x30cbc01
+        0x322d088
+        0xc05d82
+        0x2004400
+        0x3fbf76f
+        0x2000040
+        0x2005368
+        0x21
+        0x88000
+        0x4ad61
+        0x4ae62
+        0x4af63
+        0x4b064
+        0x4b165
+        0x4b267
+        0x4b368
+        0x4b469
+        0x4b56b
+        0x4b66c
+        0x4b76d
+        0x4b86e
+        0x4b96f
+        0x4ba70
+        0x4bb71
+        0x4bc72
+        0x4bd73
+        0x4be74
+        0x4bf75
+        0x4c077
+        0x4c178
+        0x4c279
+        0x4c37a
+        0x7ffefff
+        0xa04048
+        0x2040000
+        0x10000
+        0x20c1000
+        0x3003100
+        0x542100c
+        0x300b109
+        0x30c8d71
+        0x213288
+        0x3ffffff
+        0x2688080
+        0x842b80
+        0x3ffffff
+        0x200000
+        0x2081c80    # 9.999881E-38f
+        0x200e120
+        0x2876e6
+        0x6043002
+        0x2000000
+        0x4
+        0x1091400
+        0x2010000
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static valid(Ljava/lang/String;)Z
+    .locals 7
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_6
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "`"
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 v1, 0x3
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object p0
+
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    array-length v5, p0
+
+    if-ge v1, v5, :cond_6
+
+    sget-object v5, Lcom/amazon/ebook/util/text/LanguageSubtagTrie;->trie:[I
+
+    aget v5, v5, v2
+
+    and-int/lit16 v5, v5, 0xff
+
+    int-to-char v5, v5
+
+    const/16 v6, 0x20
+
+    if-ne v5, v6, :cond_1
+
+    const/16 v5, 0x60
+
+    :cond_1
+    if-le v3, v5, :cond_2
+
+    return v0
+
+    :cond_2
+    aget-char v3, p0, v1
+
+    if-ge v5, v3, :cond_3
+
+    add-int/lit8 v2, v2, 0x1
+
+    move v3, v5
+
+    goto :goto_0
+
+    :cond_3
+    aget-char v3, p0, v1
+
+    if-ne v5, v3, :cond_6
+
+    add-int/lit8 v4, v4, 0x1
+
+    add-int/lit8 v1, v1, 0x1
+
+    sget-object v3, Lcom/amazon/ebook/util/text/LanguageSubtagTrie;->trie:[I
+
+    aget v2, v3, v2
+
+    shr-int/lit8 v2, v2, 0x8
+
+    const/4 v5, 0x2
+
+    if-ne v4, v5, :cond_5
+
+    aget-char p0, p0, v5
+
+    rsub-int/lit8 p0, p0, 0x7a
+
+    const/4 v1, 0x1
+
+    shl-int p0, v1, p0
+
+    aget v2, v3, v2
+
+    and-int/2addr p0, v2
+
+    if-eqz p0, :cond_4
+
+    const/4 v0, 0x1
+
+    :cond_4
+    return v0
+
+    :cond_5
+    const/4 v3, 0x0
+
+    goto :goto_0
+
+    :cond_6
+    :goto_1
+    return v0
+.end method

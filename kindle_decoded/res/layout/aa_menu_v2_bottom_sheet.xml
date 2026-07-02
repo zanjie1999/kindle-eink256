@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.viewoptions.ui.AaSettingBottomSheet android:orientation="vertical" android:id="@id/aa_menu_v2_bottom_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.kindle.viewoptions.ui.AaSettingsViewContent android:orientation="vertical" android:id="@id/aa_menu_v2_setting_content" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundDimEnabled="false" app:behavior_hideable="true" app:behavior_peekHeight="0.0dip" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.amazon.kindle.viewoptions.ui.AaSettingBrightnessBarContainer android:orientation="vertical" android:id="@id/aa_menu_v2_brightness_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</com.amazon.kindle.viewoptions.ui.AaSettingBottomSheet>

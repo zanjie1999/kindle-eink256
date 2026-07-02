@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/whackamole_action_bar" />
+    <include layout="@layout/whackamole_search_bar" />
+    <FrameLayout android:id="@id/add_to_collection_root" android:background="#ffe6e7e8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

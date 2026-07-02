@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/search_results_padding_left" android:paddingRight="@dimen/search_results_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/search_results_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.DeprecatedStyle.Subhead1" android:textColor="?reader_search_result_text" android:id="@id/result_text" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+    <TextView android:textAppearance="@style/TextAppearance.DeprecatedStyle.Body1" android:textColor="?reader_search_location_text" android:id="@id/location_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

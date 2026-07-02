@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goto_notes">Meine Notizen anzeigen</string>
+    <string name="menuitem_remove_bookmark">Lesezeichen löschen</string>
+    <string name="colors_and_brightness">Farbe und Helligkeit</string>
+    <string name="font_size_options">Schritfartoptionen</string>
+</resources>

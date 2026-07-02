@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ReaderViewOptions android:id="@id/view_options" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:contentDescription="@string/view_options_description" style="?viewOptionsStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_options_content" android:paddingLeft="@dimen/view_options_row_padding_horz" android:paddingTop="@dimen/view_options_row_padding_vert" android:paddingRight="@dimen/view_options_row_padding_horz" android:paddingBottom="@dimen/view_options_row_padding_vert" android:nextFocusLeft="@id/brightness_slider" android:nextFocusRight="@id/font_size1" android:nextFocusUp="@id/brightness_slider" android:nextFocusDown="@id/font_size1" android:layout_width="fill_parent" style="@style/wrap">
+        <include layout="@layout/reader_brightness_slider" style="@style/fill_width" />
+    </LinearLayout>
+</com.amazon.kcp.reader.ui.ReaderViewOptions>

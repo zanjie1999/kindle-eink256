@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.pageflip.PageFlipFrameLayout android:id="@id/pageflip_layout" android:background="?chromeBackgroundColor" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/book_title_bar" />
+        <com.amazon.kindle.nln.pageflip.PageFlipRecyclerView android:gravity="center_vertical" android:id="@id/recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.amazon.kindle.nln.UnboundedLinearLayout android:id="@id/animate_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/breadcrumb_1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/breadcrumb" />
+    <include android:id="@id/breadcrumb_2" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/breadcrumb" />
+    <include android:id="@id/transient_breadcrumb_page" android:visibility="invisible" layout="@layout/breadcrumb_content_container" />
+    <include android:id="@id/transient_breadcrumb_page2" android:visibility="invisible" layout="@layout/breadcrumb_content_container" />
+</com.amazon.kindle.nln.pageflip.PageFlipFrameLayout>

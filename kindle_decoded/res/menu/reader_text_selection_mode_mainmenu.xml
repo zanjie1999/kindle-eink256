@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/annotation_note" android:title="@string/annotation_note" />
+    <item android:id="@id/annotation_highlight" android:title="@string/annotation_highlight" />
+    <item android:id="@id/annotation_delete_highlight" android:title="@string/annotation_delete_highlight" />
+    <item android:id="@id/annotation_search_in_book" android:title="@string/annotation_search_in_book" />
+    <item android:id="@id/annotation_image_zoom" android:title="@string/annotation_image_zoom" />
+    <item android:id="@id/annotation_wikipedia" android:title="@string/annotation_wikipedia" />
+    <item android:id="@id/annotation_web" android:title="@string/annotation_web" />
+</menu>

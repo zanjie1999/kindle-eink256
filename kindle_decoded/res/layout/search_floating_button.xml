@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textStyle="bold" android:textColor="?core_accent_3" android:id="@id/floating_button" android:background="@drawable/expandable_grid_widget_button_selector" android:paddingLeft="@dimen/search_layout_floatingbtn_horizontal_padding" android:paddingRight="@dimen/search_layout_floatingbtn_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

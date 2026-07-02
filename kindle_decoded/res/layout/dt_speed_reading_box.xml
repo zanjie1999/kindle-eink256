@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.speedreading.doubletime.DoubleTimeSpeedReadingBox android:gravity="center" android:orientation="vertical" android:id="@id/dt_speed_reading_box_container" android:background="@drawable/double_time_center_view_bg_2" android:layout_width="@dimen/dt_speed_reading_box_width" android:layout_height="@dimen/dt_speed_reading_box_height" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/dt_speed_reading_box_lines" android:background="@drawable/dt_lines_white" android:layout_width="@dimen/dt_speed_reading_line_width" android:layout_height="@dimen/dt_speed_reading_line_height" />
+</com.amazon.kindle.speedreading.doubletime.DoubleTimeSpeedReadingBox>

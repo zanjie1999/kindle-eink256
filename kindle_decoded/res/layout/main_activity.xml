@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/library_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="?toolbar_parent_style">
+            <androidx.appcompat.widget.Toolbar android:id="@id/top_bar" style="@style/Library.Widget.Toolbar.Ruby" />
+        </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/screenlet_container" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_decoration_container" android:background="@color/primary_dark" android:paddingTop="@dimen/oob_decoration_vert_padding" android:paddingBottom="@dimen/oob_decoration_vert_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_decoration_container_themed" android:background="?bottom_bar_background" android:paddingTop="@dimen/oob_decoration_vert_padding" android:paddingBottom="@dimen/oob_decoration_vert_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/bottom_bar_background" android:background="?bottom_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_background_height" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/bottom_bar_left_spacing" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.amazon.kcp.library.ui.bottombar.BottomBar android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/main_view_bottom_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</FrameLayout>

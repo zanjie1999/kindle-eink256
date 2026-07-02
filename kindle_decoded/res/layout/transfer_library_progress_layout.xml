@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress_layout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:background="@android:color/transparent" android:layout_width="200.0dip" android:layout_height="200.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/library_transfer_progress_spinner" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/library_transfer_spinner_title" />
+</LinearLayout>

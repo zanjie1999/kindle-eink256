@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bookwizard_header_rating_books_needed">
+        <item quantity="other">建議您至少再為 %1$d 本書評分。</item>
+        <item quantity="one">建議您至少再為 %1$d 本書評分。</item>
+    </plurals>
+    <plurals name="bookwizard_ku_books_header_rated">
+        <item quantity="other">最多還可選 %1$d 本書。 開始閱讀前請點選「完成」。</item>
+        <item quantity="one">最多還可選 %1$d 本書。 開始閱讀前請點選「完成」。</item>
+    </plurals>
+    <plurals name="charts_review_counts">
+        <item quantity="other">%d 則顧客評論</item>
+        <item quantity="one">一則顧客評論</item>
+    </plurals>
+    <plurals name="date_string_hours">
+        <item quantity="other">%1$d 小時前</item>
+        <item quantity="one">1 小時前</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">%1$d 分鐘前</item>
+        <item quantity="one">1 分鐘前</item>
+    </plurals>
+    <plurals name="dt_eoc_hours">
+        <item quantity="other">%1d 小時</item>
+        <item quantity="one">%1$d 小時</item>
+    </plurals>
+    <plurals name="dt_eoc_minutes">
+        <item quantity="other">%1d 分鐘</item>
+        <item quantity="one">%1$d 分鐘</item>
+    </plurals>
+    <plurals name="dt_eoc_seconds">
+        <item quantity="other">%1d 秒</item>
+        <item quantity="one">%1$d 秒</item>
+    </plurals>
+    <plurals name="dt_eoc_words">
+        <item quantity="other">%1$d 個字</item>
+        <item quantity="one">%1$d 字</item>
+    </plurals>
+    <plurals name="endactions_reviews_more_words">
+        <item quantity="other">還有 %d 個字</item>
+        <item quantity="one">還有 %d 個字</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">%1$d 天後到期</item>
+        <item quantity="one">1 天後到期</item>
+    </plurals>
+    <plurals name="falkor_story_ownership_count">
+        <item quantity="other">您擁有此故事的 %1$d 集，共 %2$d 集。</item>
+        <item quantity="one">您擁有此故事的 %1$d 集，共 %2$d 集。</item>
+    </plurals>
+    <plurals name="number_of_collection_items">
+        <item quantity="other">%d 個項目</item>
+        <item quantity="one">%d 個項目</item>
+    </plurals>
+    <plurals name="popularhighlights_annotation_item_label">
+        <item quantity="other">熱門標註 - %1$d 標註</item>
+        <item quantity="one">熱門標註 - %1$d 標註</item>
+    </plurals>
+    <plurals name="popularhighlights_content_decoration_label">
+        <item quantity="other">%1$d 個標註</item>
+        <item quantity="one">%1$d 個標註</item>
+    </plurals>
+    <plurals name="series_ownership_count_issues">
+        <item quantity="other">您擁有本系列的 %1$d 期。</item>
+        <item quantity="one">您擁有本系列的 %1$d 期。</item>
+    </plurals>
+    <plurals name="series_ownership_count_omnibus">
+        <item quantity="other">您擁有本系列的 %1$d 個合集.</item>
+        <item quantity="one">您擁有本系列的 %1$d 個合集.</item>
+    </plurals>
+    <plurals name="series_ownership_count_trades">
+        <item quantity="other">您擁有本系列的 %1$d 冊。</item>
+        <item quantity="one">您擁有本系列的 %1$d 冊。</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_hours">
+        <item quantity="other">%d 小時</item>
+        <item quantity="one">%d 小時</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_minutes">
+        <item quantity="other">%d 分鐘</item>
+        <item quantity="one">%d 分鐘</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">%d 頁</item>
+        <item quantity="one">%d 頁</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_images">
+        <item quantity="other">%D 個影像</item>
+        <item quantity="one">%d 個影像</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_people">
+        <item quantity="other">%d 個人</item>
+        <item quantity="one">%d 人</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_terms">
+        <item quantity="other">%d 個字詞</item>
+        <item quantity="one">%d 個字詞</item>
+    </plurals>
+    <plurals name="unpublished_falkor_story_ownership_count">
+        <item quantity="other">您有此故事的 %1$d 集。</item>
+        <item quantity="one">您有此故事的 %1$d 集。</item>
+    </plurals>
+    <plurals name="xray_mentions_count">
+        <item quantity="other">提及 %d 次</item>
+        <item quantity="one">提及 %d 次</item>
+    </plurals>
+</resources>

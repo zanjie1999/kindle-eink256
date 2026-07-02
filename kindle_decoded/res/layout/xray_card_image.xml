@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/xray_card" android:focusable="true" android:nextFocusDown="@id/xray_card_page_link" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nextFocusForward="@id/xray_card_page_link"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/xray_card_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/xray_padding_card_content" android:scaleType="fitCenter" android:layout_above="@id/xray_separator" />
+    <View android:id="@id/xray_separator" android:layout_marginLeft="@dimen/xray_padding_card_content" android:layout_marginRight="@dimen/xray_padding_card_content" android:layout_above="@id/xray_card_page_link" style="@style/xray_horizontal_rule" />
+    <Button android:id="@id/xray_card_page_link" android:nextFocusLeft="@id/xray_card" android:nextFocusRight="@id/xray_card" android:nextFocusUp="@id/xray_card" android:text="@string/xray_go_to_page" android:layout_alignParentBottom="true" style="@style/xray_card_link.left" />
+</RelativeLayout>

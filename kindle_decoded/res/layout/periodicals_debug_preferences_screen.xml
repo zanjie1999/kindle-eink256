@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Debug ON / OFF Switch" android:key="first_category">
+        <CheckBoxPreference android:title="Enable Debug Settings" android:key="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Newsstand debug options - IMMEDIATE application of settings" android:key="second_category">
+        <CheckBoxPreference android:title="Show clickable content" android:key="showClickableContent" android:summary="Show clickable content in Newsstand, links and text" android:dependency="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Newsstand debug options - RESTART ONLY application of settings" android:key="third_category">
+        <Preference android:title="Clear bookmarks" android:key="clear_bookmarks" android:summary="Click to clear Newsstand bookmarks saved in DB (does not delete those in memory, not yet saved - ie current open Newsstand)" android:dependency="enableDebugSettings" />
+        <EditTextPreference android:title="Tap tutorial - number of instances" android:key="tap_tutorial_instances" android:summary="Number of times the tutorial will be displayed (negative values will not change the Newsstand value)" android:dependency="enableDebugSettings" android:dialogMessage="Input the new number of instances to use" android:inputType="number" />
+        <Preference android:title="Apply TapToTextTutorial Value" android:key="applyTapToTextTutorialValue" android:summary="Save value to the newsstand database (only works when the app is opened)" android:dependency="enableDebugSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ThumbnailGridView settings - applied after orientation change" android:key="fourth_category">
+        <CheckBoxPreference android:title="Enable customization of the ThumbnailGridView" android:key="customizeThumbnailGridView" android:dependency="enableDebugSettings" android:defaultValue="false" />
+        <EditTextPreference android:title="ThumbnailGridView number of columns" android:key="thumbnailGridViewNbOfColumns" android:dependency="customizeThumbnailGridView" android:dialogMessage="ThumbnailGridView number of columns" android:inputType="number" />
+        <EditTextPreference android:title="ThumbnailGridView horizontal spacing" android:key="thumbnailGridViewHorizontalSpacing" android:dependency="customizeThumbnailGridView" android:dialogMessage="ThumbnailGridView horizontal spacing" android:inputType="number" />
+        <EditTextPreference android:title="ThumbnailGridView vertical spacing" android:key="thumbnailGridViewVerticalSpacing" android:dependency="customizeThumbnailGridView" android:dialogMessage="ThumbnailGridView vertical spacing" android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Popup Bookmark settings" android:key="fifth_category">
+        <CheckBoxPreference android:title="Enable Bookmark Popup" android:key="showPopupBookmark" android:dependency="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Folio debug settings" android:key="sixth_category">
+        <CheckBoxPreference android:title="Disable some articles" android:key="disableSomeArticles" android:dependency="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Download settings" android:key="seventh_category">
+        <CheckBoxPreference android:title="Force articles in downloading state" android:key="articleAlwaysDownloading" android:dependency="enableDebugSettings" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Download error state" android:key="downloadError" android:dependency="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Upsell settings" android:key="eighth_category">
+        <ListPreference android:entries="@array/upsell_type_entries" android:title="Force all magazines to be upsell" android:key="forceUpsellFlag" android:summary="Select the upsell type" android:dependency="enableDebugSettings" android:dialogTitle="Choose upsell type" android:entryValues="@array/upsell_type_entry_values" />
+        <EditTextPreference android:title="Frequency of full sync in MS" android:key="upsell_freqSync" android:summary="Frequency of full sync in MS (negative values will not change the Newsstand value)" android:dependency="enableDebugSettings" android:dialogMessage="Frequency of sync in MS" android:inputType="number" />
+        <Preference android:title="Apply upsell freq Value" android:key="upsell_freqSync_apply" android:summary="Update the scheduling frequency" android:dependency="enableDebugSettings" />
+        <Preference android:title="Unregister any sync alarms" android:key="upsell_sync_unregister_alarm" android:summary="Unregister any sync alarms. You will need to kill application to register default scheduling again." android:dependency="enableDebugSettings" />
+        <Preference android:title="Sync the upsell data NOW" android:key="upsell_sync_now" android:summary="Sync the upsell data NOW" android:dependency="enableDebugSettings" />
+        <Preference android:title="Sync the upsell data from device" android:key="upsell_sync_from_sample_json" android:summary="Sync the upsell data from sample json present in the device locally. Push the json file(name=upsell_http_response.json) in the /sdcard/ " android:dependency="enableDebugSettings" />
+        <Preference android:title="Sync the cover data for magazines on the device" android:key="upsell_cover_sync_now" android:summary="Sync the cover data NOW" android:dependency="enableDebugSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Content feature options" android:key="ninth_category">
+        <CheckBoxPreference android:title="Enable YJ Replica content" android:key="enableYJReplicaContent" android:summary="Enable YJ Replica content for magazines" android:dependency="enableDebugSettings" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

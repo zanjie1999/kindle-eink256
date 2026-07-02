@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" style="@style/wrap">
+        <ImageView android:src="?loading_screen_logo" style="@style/wrap" />
+        <TextView android:textSize="20.0sp" android:textColor="?library_text_color" android:id="@id/ftue_loading_screen_status" android:padding="15.0dip" android:text="@string/syncing_your_account" android:fontFamily="sans-serif" style="@style/wrap" />
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/splash_page_progress_bar" />
+    </LinearLayout>
+</FrameLayout>

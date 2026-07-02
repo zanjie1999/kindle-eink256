@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-sub-authenticator accountType="com.amazon.account">
+    <token-types>
+        <token-type name="com.amazon.kindle.tokens.adp_token" />
+        <token-type name="com.amazon.kindle.private_key" />
+        <token-type name="com.amazon.kindle.tokens.device_type" />
+        <token-type name="com.amazon.kindle.tokens.dsn" />
+        <token-type name="com.amazon.kindle.tokens.storeAuthCookie" />
+        <token-type name="com.amazon.kindle.tokens.xmain" />
+        <token-type name="com.amazon.kindle.tokens.email" />
+        <token-type name="com.amazon.kindle.tokens.device_name" />
+        <token-type name="com.amazon.kindle.tokens.user_name" />
+    </token-types>
+</account-sub-authenticator>

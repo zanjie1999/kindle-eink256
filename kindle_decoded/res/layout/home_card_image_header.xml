@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/home_card_header_image" android:tag="THEMED_IMAGE_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/home_card_image_header_image_height" android:layout_marginTop="@dimen/home_card_image_header_margin_top" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" />
+    <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Caption2.Italic.Grey" android:ellipsize="end" android:id="@id/home_card_header_desc" android:tag="TEXT_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_image_header_text_margin_top" android:maxLines="3" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" />
+    <View android:id="@id/home_card_header_divider" android:layout_marginTop="@dimen/home_card_divider_margin" android:layout_marginBottom="@dimen/home_card_divider_margin" style="@style/HomeCardDivider" />
+</merge>

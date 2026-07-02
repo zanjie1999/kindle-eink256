@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/reader_frame_core" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/magnified_content_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/activity_fragments_layout" />
+        <com.amazon.kindle.nln.ChromeFragmentContainerLayout android:id="@id/reader_chrome_fragment_container" android:clipChildren="false" android:clipToPadding="false" style="@style/fill" />
+    </FrameLayout>
+    <ViewStub android:id="@id/progressive_download_content_missing_view_stub" android:layout="@layout/progressive_download_content_missing_view" android:inflatedId="@id/progressive_download_content_missing_view" style="@style/fill" />
+    <include layout="@layout/accessibility_gap_view_layout" />
+    <include layout="@layout/magnifying_glass" />
+    <ImageView android:layout_gravity="center|left" android:id="@id/prev_page_view" android:visibility="gone" android:src="@drawable/arrow_prev" style="@style/wrap" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/next_page_view" android:visibility="gone" android:src="@drawable/arrow_next" style="@style/wrap" />
+    <ViewStub android:id="@id/orientation_lock_container_stub" android:layout="@layout/orientation_lock_container" android:inflatedId="@id/orientation_lock_container" style="@style/wrap" />
+    <include android:id="@id/reader_menu_container" layout="@layout/reader_menu_container" style="@style/fill" />
+    <include android:id="@id/reader_layout_plugin_containers" layout="@layout/reader_layout_plugin_containers" style="@style/fill" />
+    <FrameLayout android:id="@id/bottom_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</merge>

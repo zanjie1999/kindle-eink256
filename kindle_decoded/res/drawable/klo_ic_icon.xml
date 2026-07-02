@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1.0dip" android:color="@android:color/transparent" />
+    <size android:height="@dimen/klo_empty_indicator_size" android:width="@dimen/klo_empty_indicator_size" />
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/book_detail_book_header_container" android:paddingBottom="@dimen/bookwizard_details_header_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center" android:id="@id/book_details_close_button" android:background="@drawable/bookwizard_close_button" android:layout_width="@dimen/bookwizard_details_close_button_size" android:layout_height="@dimen/bookwizard_details_close_button_size" android:contentDescription="@string/bookwizard_details_close" />
+    <LinearLayout android:orientation="vertical" android:id="@id/book_detail_title_screen_container" android:paddingLeft="@dimen/bookwizard_details_title_screen_container_padding_left" android:paddingTop="@dimen/bookwizard_details_title_screen_container_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/bookwizard_details_title_text_font" android:id="@id/book_detail_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_title_text" />
+        <TextView android:textSize="@dimen/bookwizard_details_powered_by_goodreads_text_font" android:id="@id/book_detail_powered_by_good_reads_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

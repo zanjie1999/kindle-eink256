@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:fillViewport="true" android:importantForAccessibility="auto" style="@style/tablet_popup_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

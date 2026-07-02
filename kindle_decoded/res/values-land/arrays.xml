@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="page_margins_user_settings">
+        <item>15.0dip</item>
+        <item>30.0dip</item>
+        <item>50.0dip</item>
+    </array>
+    <array name="two_page_margins_user_settings">
+        <item>53.0dip</item>
+        <item>75.0dip</item>
+        <item>106.0dip</item>
+    </array>
+    <array name="vertical_page_margins_user_settings">
+        <item>24.0sp</item>
+        <item>36.0sp</item>
+        <item>50.0sp</item>
+    </array>
+</resources>

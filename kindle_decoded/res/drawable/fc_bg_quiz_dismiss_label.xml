@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/fc_background_highlight" />
+    <corners android:radius="@dimen/fc_quiz_controls_radius" />
+</shape>

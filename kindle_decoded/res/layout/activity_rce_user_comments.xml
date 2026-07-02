@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/toolbar_rce" />
+        <TextView android:id="@id/rceSummary" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:textAlignment="textStart" android:layoutDirection="ltr" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/RceTheme_Font.Regular" />
+        <EditText android:gravity="top" android:id="@id/rceUserComment" android:background="?android:editTextBackground" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/default_hint" android:minLines="6" android:ems="10" android:inputType="textMultiLine" android:paddingStart="19.0dip" android:paddingEnd="19.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/RceTheme_Font.Regular" />
+        <TextView android:id="@id/rceLegalStatement" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rce_plugin_legal_statement" android:textDirection="ltr" android:textAlignment="textStart" android:layoutDirection="ltr" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/RceTheme_Font.Regular" />
+        <Button android:enabled="false" android:textAppearance="@style/RceTheme_Button" android:textSize="13.0sp" android:textColor="?button_textColors" android:layout_gravity="end" android:id="@id/rceSubmitBtn" android:background="?submit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" android:minWidth="81.0dip" android:minHeight="36.0dip" android:text="@string/rce_plugin_submit_btn_text" android:layout_marginEnd="32.0dip" />
+    </LinearLayout>
+</ScrollView>

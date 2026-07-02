@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.nwstd.toc.widget.ArticleRow style="@style/periodical_toc_article_cntr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/periodical_toc_title" style="@style/periodical_toc_articlelist_article" />
+    <RelativeLayout android:background="@drawable/readingwidget_book_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/toc_magazine_thumbnail_margin_left" android:layout_alignParentRight="true">
+        <com.amazon.nwstd.ui.MaskedImageView android:id="@id/periodical_toc_thumbnail" style="@style/wrap" />
+    </RelativeLayout>
+</com.amazon.nwstd.toc.widget.ArticleRow>

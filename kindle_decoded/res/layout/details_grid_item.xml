@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.DetailsGridItem android:gravity="bottom|center" android:orientation="vertical" android:paddingTop="?library_grid_view_vertical_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/details_grid_deep_stack" android:layout_width="wrap_content" android:layout_height="@dimen/details_deep_stack" layout="@layout/details_grid_deep_stack" />
+    <include android:id="@id/badgeable_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/badgeable_cover" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:id="@id/details_grid_title" android:lines="2" style="@style/details_grid_item_text.title" />
+        <TextView android:gravity="center_vertical" android:id="@id/details_grid_subtitle" android:layout_marginTop="4.0dip" android:lines="1" style="@style/details_grid_item_text.subtitle" />
+    </LinearLayout>
+</com.amazon.kcp.library.ui.DetailsGridItem>

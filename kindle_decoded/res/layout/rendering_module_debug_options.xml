@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.rendering.debug.KRF5DebugOptions android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/updateYjBundles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force update YJR resource bundles (must kill app afterwards)" />
+        <Button android:id="@id/disableAnnotations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable YJ annotations (must start new reading session, does not persist beyond app lifecycle)" android:singleLine="false" />
+        <Button android:id="@id/forceKUX" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Force KUX" android:singleLine="false" />
+        <TextView android:id="@id/versionNotification" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/versionSet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/eventId" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/krfVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/yjrVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/kfxsdk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/yjrCommit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.amazon.kindle.rendering.debug.KRF5DebugOptions>

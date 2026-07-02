@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?library_background_color" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/whispersend_email_address" style="?send_to_kindle_screen_title_style" />
+    <View style="?setting_screens_divider_under_title_style" />
+    <TextView android:text="@string/send_to_kindle_description" style="?send_to_kindle_screen_description_style" />
+    <TextView android:id="@id/learn_more" android:text="@string/send_to_kindle_learn_more" style="?send_to_kindle_screen_learn_more_style" />
+</LinearLayout>

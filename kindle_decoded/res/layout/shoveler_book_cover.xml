@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.widget.HomeBadgeableCover android:duplicateParentState="true" android:layout_height="@dimen/shoveler_default_book_cover_height" style="?badgeable_cover_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/badgeable_cover_image" />
+    <include layout="@layout/badgeable_cover_content" />
+</com.amazon.kcp.home.widget.HomeBadgeableCover>

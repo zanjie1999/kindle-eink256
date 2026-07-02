@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:gravity="bottom|center" android:src="@drawable/splash_tree_boy" />
+    </item>
+    <item>
+        <bitmap android:gravity="center|top" android:src="@drawable/kindle_logo_white" />
+    </item>
+</layer-list>

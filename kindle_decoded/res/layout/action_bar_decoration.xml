@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ActionBarDecoration android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action_bar_decoration_container" android:background="?toolbar_decorator_background" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/page_flip_title_space" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center|right" android:id="@id/hide_decoration_button" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/hide_decoration_button_width" android:layout_height="@dimen/page_flip_title_space" android:src="?actionBarDecorationHideButton" android:scaleType="centerInside" android:rotationX="180.0" />
+    </LinearLayout>
+    <View android:id="@id/action_bar_container_bottom_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_flip_bottom_border_weight" />
+</com.amazon.kcp.reader.ui.ActionBarDecoration>

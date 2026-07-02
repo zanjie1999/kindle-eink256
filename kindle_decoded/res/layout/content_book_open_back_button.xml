@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/book_open_back_button_chevron" android:background="?selectableItemBackground" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nav_panel_header_cancel"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/close_book_chevron" android:focusable="false" android:clickable="false" android:layout_width="@dimen/action_button_image_width" android:layout_height="@dimen/action_button_image_height" android:src="@drawable/ic_leave_book_down_arrow" android:scaleType="centerInside" android:tint="?core_accent_1" android:layout_marginStart="@dimen/start_button_padding" android:layout_marginEnd="@dimen/start_button_padding" />
+    <TextView android:textSize="17.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/close_book_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_panel_header_cancel" android:singleLine="true" style="?book_open_splash_screen_text_style" />
+</LinearLayout>

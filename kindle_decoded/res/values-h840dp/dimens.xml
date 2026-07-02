@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ruby_account_confirmation_change_account_margin_top">25.0dip</dimen>
+    <dimen name="ruby_account_confirmation_continue_margin_top">50.0dip</dimen>
+    <dimen name="ruby_account_confirmation_headline_text">26.0sp</dimen>
+    <dimen name="ruby_account_confirmation_welcome_email_margin_top">10.0dip</dimen>
+    <dimen name="ruby_account_confirmation_welcome_text_margin_top">56.0dip</dimen>
+    <dimen name="ruby_legal_first_line_top_margin">55.0dip</dimen>
+    <dimen name="ruby_welcome_tos_margin_top">25.0dip</dimen>
+</resources>

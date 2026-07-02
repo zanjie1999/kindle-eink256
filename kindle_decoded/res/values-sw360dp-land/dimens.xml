@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="f_grid_horizontal_margins_wide_item">24.0dip</dimen>
+</resources>

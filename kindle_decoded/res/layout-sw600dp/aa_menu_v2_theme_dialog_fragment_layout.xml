@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/aa_menu_v2_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/aa_menu_v2_dialog_title_text_size" android:textColor="?aaMenuV2DialogTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/aa_menu_v2_dialog_title" android:paddingTop="@dimen/aa_menu_v2_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:fontFamily="Bookerly" style="@style/AaMenuV2DialogContentBaseStyle" />
+    <LinearLayout android:id="@id/aa_menu_v2_dialog_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/aa_menu_v2_dialog_default_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2DialogTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/aa_menu_v2_dialog_padding" android:paddingBottom="@dimen/aa_menu_v2_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/AaMenuV2DialogContentBaseStyle">
+        <Button android:id="@id/aa_menu_v2_dialog_negative" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/aa_menu_v2_dialog_button_weight" style="@style/AaMenuV2DialogNegativeButtonStyle" />
+        <Button android:id="@id/aa_menu_v2_dialog_positive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/aa_menu_v2_dialog_button_weight" style="@style/AaMenuV2DialogPositiveButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

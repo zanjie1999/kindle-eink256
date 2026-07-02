@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/report_series_error_body_padding_left" android:paddingRight="@dimen/report_series_error_body_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Spinner android:id="@id/series_error_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/report_series_error_spinner_margin_bottom" />
+    <androidx.appcompat.widget.AppCompatEditText android:textColorHint="?report_series_error_dialog_text_color_hint" android:id="@id/customer_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_series_error" android:singleLine="false" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="?edit_text_cursor_drawable" android:textDirection="firstStrong" app:backgroundTint="?report_series_error_dialog_background_tint" style="?report_series_error_dialog_edit_text_style" />
+    <TextView android:textAppearance="?legal_disclaimer_text_style" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/report_series_error_legal_disclaimer_margin_top" android:text="@string/series_error_legal_disclaimer" />
+</LinearLayout>

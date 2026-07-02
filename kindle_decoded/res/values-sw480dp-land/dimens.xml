@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="upsell_bar_button_font_size_adjusted">14.0sp</dimen>
+    <dimen name="upsell_bar_text_font_size_adjusted">15.0sp</dimen>
+    <dimen name="xray_padding_carousel_context_bottom">11.0dip</dimen>
+    <dimen name="xray_padding_description_bottom">7.0dip</dimen>
+    <dimen name="xray_size_carousel_context_footer_height">40.0sp</dimen>
+</resources>

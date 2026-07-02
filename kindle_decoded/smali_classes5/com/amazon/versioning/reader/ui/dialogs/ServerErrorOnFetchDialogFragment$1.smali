@@ -1,0 +1,70 @@
+.class Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment$1;
+.super Ljava/lang/Object;
+.source "ServerErrorOnFetchDialogFragment.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment;->getNonRubyDialogBuilder()Landroidx/appcompat/app/AlertDialog$Builder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment;
+
+.field final synthetic val$builder:Landroidx/appcompat/app/AlertDialog$Builder;
+
+
+# direct methods
+.method constructor <init>(Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment;Landroidx/appcompat/app/AlertDialog$Builder;)V
+    .locals 0
+
+    .line 43
+    iput-object p1, p0, Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment$1;->this$0:Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment;
+
+    iput-object p2, p0, Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment$1;->val$builder:Landroidx/appcompat/app/AlertDialog$Builder;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    .line 47
+    iget-object p1, p0, Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment$1;->val$builder:Landroidx/appcompat/app/AlertDialog$Builder;
+
+    invoke-virtual {p1}, Landroidx/appcompat/app/AlertDialog$Builder;->create()Landroidx/appcompat/app/AlertDialog;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
+
+    .line 49
+    iget-object p1, p0, Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment$1;->this$0:Lcom/amazon/versioning/reader/ui/dialogs/ServerErrorOnFetchDialogFragment;
+
+    iget-object p2, p1, Lcom/amazon/versioning/reader/ui/dialogs/KindleContentDialogFragment;->dialogCompletionListner:Lcom/amazon/versioning/interfaces/DialogActionListener;
+
+    if-eqz p2, :cond_0
+
+    .line 50
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getTag()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p2, p1}, Lcom/amazon/versioning/interfaces/DialogActionListener;->onDialogRequestForActivityTermination(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method

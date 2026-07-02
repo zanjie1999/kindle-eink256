@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/transient_reflection_foreground" />
+    <View android:id="@id/transient_cover_reflection" />
+    <View android:id="@id/book_gallery_stub" />
+    <View android:id="@id/library_filter_label" />
+    <View android:id="@id/library_filter_count" />
+    <View android:id="@id/library_state" />
+    <View android:id="@id/library_state_menu_overlay_container" />
+    <View android:id="@id/libary_state_menu_list" />
+</View>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?readerSearchSimpleResultBackground" android:paddingTop="@dimen/reader_search_result_padding_vert" android:paddingBottom="@dimen/reader_search_result_padding_vert" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/expander" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?readerSearchListExpanderDrawable" android:scaleType="fitCenter" android:contentDescription="@string/reader_search_list_expander_desc" />
+</FrameLayout>

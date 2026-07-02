@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/tap_to_text_dialog_padding" android:paddingTop="@dimen/tap_to_text_dialog_padding" android:paddingRight="@dimen/tap_to_text_dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_text_dialog_string" />
+    <ImageView android:id="@id/doubletap" android:background="@drawable/double_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tap_to_text_animation_margin_bottom" android:contentDescription="@string/tap_to_text_dialog_string" />
+</LinearLayout>

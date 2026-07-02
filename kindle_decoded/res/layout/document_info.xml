@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/document_info_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_linear_layout" android:paddingLeft="11.0dip" android:paddingTop="6.0dip" android:paddingRight="11.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff999999" android:id="@id/title_text" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titleViewText" />
+        <EditText android:enabled="false" android:textSize="14.0sp" android:textColor="#ff111111" android:textColorHint="#ff111111" android:id="@id/title_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/titleValueViewText" android:hint="@string/titleViewText" android:inputType="text" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/author_relative_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/edit_title_author_button" android:background="@drawable/edit_button_inactive" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/author_linear_layout" android:paddingLeft="11.0dip" android:paddingTop="4.0dip" android:paddingRight="11.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/edit_title_author_button" android:layout_centerVertical="true">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff999999" android:id="@id/author_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/authorViewText" />
+            <EditText android:enabled="false" android:textSize="14.0sp" android:textColor="#ff111111" android:textColorHint="#ff111111" android:id="@id/author_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/authorValueViewText" android:hint="@string/authorViewText" android:inputType="text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/size_linear_layout" android:paddingLeft="11.0dip" android:paddingTop="4.0dip" android:paddingRight="11.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff999999" android:id="@id/size_text" android:paddingRight="36.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uploadSizeViewText" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:textColorHint="#ff111111" android:id="@id/size_value_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/uploadSizeValueViewText" android:hint="@string/uploadSizeViewText" />
+    </LinearLayout>
+</LinearLayout>

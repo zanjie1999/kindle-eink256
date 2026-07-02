@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/kcu_ruby_scrollbar_top" android:right="@dimen/kcu_ruby_scrollbar_right" android:bottom="@dimen/kcu_ruby_scrollbar_bottom">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/kcu_ruby_scrollbar_width" />
+            <solid android:color="#64000000" />
+            <corners android:radius="@dimen/kcu_ruby_scrollbar_coner_radius" />
+            <padding android:left="@dimen/kcu_ruby_scrollbar_padding_horizontal" android:right="@dimen/kcu_ruby_scrollbar_padding_horizontal" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/books_card_image" android:tag="THEMED_IMAGE_1" android:layout_width="@dimen/home_free_books_image_width" android:layout_height="@dimen/home_free_books_image_height" android:layout_marginTop="@dimen/home_card_header_margin" android:layout_marginBottom="@dimen/home_card_header_margin" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin" android:layout_alignParentEnd="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/books_card_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_header_margin" android:layout_marginBottom="@dimen/home_card_margin" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/home_card_margin" android:layout_toStartOf="@id/books_card_image" android:layout_alignParentStart="true">
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:id="@id/books_card_title" android:tag="TITLE" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:background="?card_divider_background_color" android:layout_width="wrap_content" android:layout_height="@dimen/home_card_divider_height" android:layout_marginTop="@dimen/home_card_divider_margin" android:layout_marginBottom="@dimen/home_card_divider_margin" />
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Body.Light" android:id="@id/books_card_body" android:tag="TEXT_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

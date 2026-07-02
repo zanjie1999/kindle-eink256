@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <integer name="fr_grid_item_num_columns">3</integer>
+    <integer name="fullpage_max_height_percentage">66</integer>
+    <integer name="fullpage_max_width_percentage">66</integer>
+    <integer name="in_book_clock_width_percentage_of_header">18</integer>
+    <integer name="search_history_item_num">9</integer>
+    <integer name="tooltip_screen_width_percentage">50</integer>
+    <integer name="tutorial_jit_max_textview_width_percentage">50</integer>
+</resources>

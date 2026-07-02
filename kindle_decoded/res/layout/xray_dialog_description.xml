@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xray_dialog_description_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/xray_amazon_text_light_xxlarge" android:id="@id/xray_dialog_description_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_padding_dialog" android:layout_marginTop="@dimen/xray_padding_dialog" android:layout_marginRight="@dimen/xray_padding_dialog" android:layout_marginBottom="@dimen/xray_padding_dialog" />
+    <com.amazon.xray.ui.widget.DescriptionView android:id="@id/xray_dialog_description_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/xray_padding_description_dialog_left" android:layout_marginRight="@dimen/xray_padding_description_dialog_right" android:layout_weight="1.0" />
+    <Button android:id="@id/xray_dialog_description_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_padding_dialog" android:layout_marginTop="@dimen/xray_padding_dialog" android:layout_marginRight="@dimen/xray_padding_dialog" android:layout_marginBottom="@dimen/xray_padding_dialog" android:text="@string/xray_description_dialog_cancel_button_label" />
+</LinearLayout>

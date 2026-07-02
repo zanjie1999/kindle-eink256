@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fc_toolbar_container" layout="@layout/fc_toolbar" />
+    <RelativeLayout android:background="@color/fc_card_background" android:padding="@dimen/fc_deck_creation_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fc_toolbar_container">
+        <RelativeLayout android:id="@id/deck_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.amazon.kedu.flashcards.views.ReaderContentEditText android:id="@id/deck_name_edit_text" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/fc_deck_creation_deck_name" android:maxLength="@integer/fc_deck_name_max_length" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="text" android:textDirection="firstStrong" style="@style/fc_deck_title_edit_text" />
+        </RelativeLayout>
+        <TextView android:id="@id/card_count_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/deck_name_layout" style="@style/fc_deck_creation_label" />
+    </RelativeLayout>
+</RelativeLayout>

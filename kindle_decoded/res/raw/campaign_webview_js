@@ -1,0 +1,23 @@
+/*
+ * This file injects CampaignWebViewJavascriptInterface object which is used
+ * for campaign web page.
+ */
+
+window.CampaignWebViewJavascriptInterface = function() {
+    var KCP_JS_PREFIX = "KindleAndroidReader_Campaign_";
+    wrappedInterface = {};
+
+    wrappedInterface.openStoreDetailPage = function(asin, referralTag) {
+        var argStr = JSON.stringify({
+            asin: asin,
+            referralTag: referralTag
+        });
+        return prompt(KCP_JS_PREFIX + JSON.stringify({
+            methodName: 'openStoreDetailPage',
+            args: [argStr],
+            argsType: "string"
+        }));
+    };
+
+    return wrappedInterface;
+}();

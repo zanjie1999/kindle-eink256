@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item>
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#ff797979" />
+                </shape>
+            </item>
+            <item android:top="@dimen/anyactions_subtle_jit_border_thickness" android:bottom="@dimen/anyactions_subtle_jit_border_thickness">
+                <shape android:shape="rectangle">
+                    <solid android:color="#ff2b2b2b" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

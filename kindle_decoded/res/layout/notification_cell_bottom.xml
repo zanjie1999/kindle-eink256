@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/notification_cell_parent_container" android:background="?notification_tray_border_color" android:paddingLeft="@dimen/notification_tray_border" android:paddingRight="@dimen/notification_tray_border" android:paddingBottom="@dimen/notification_tray_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/notification_tray_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/notification_cell_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/notification_cell_separator" />
+        <include layout="@layout/notification_cell" />
+    </LinearLayout>
+</LinearLayout>

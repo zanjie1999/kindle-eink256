@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fc_toolbar_container" layout="@layout/fc_toolbar" />
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fc_toolbar_container" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/deck_title" android:background="@color/fc_card_background" android:paddingLeft="@dimen/fc_deck_overview_card_padding_sides" android:paddingTop="@dimen/fc_deck_overview_title_padding_ends" android:paddingRight="@dimen/fc_deck_overview_card_padding_sides" android:paddingBottom="@dimen/fc_deck_overview_title_padding_ends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickedEditDeckTitle">
+            <com.amazon.kedu.flashcards.views.ReaderContentEditText android:id="@id/deck_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/edit_title_button_switcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" android:importantForAccessibility="no" android:textDirection="firstStrong" style="@style/fc_deck_title_edit_text" />
+            <ViewSwitcher android:id="@id/edit_title_button_switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fc_deck_overview_card_padding_sides" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:layout_gravity="center" android:id="@id/deck_title_edit_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_edit_deck_text" android:contentDescription="@string/fc_edit_deck_title_button_text" style="@style/fc_deck_overview_card_side_front_meta_label_button" />
+                <ImageButton android:layout_gravity="center" android:id="@id/deck_title_done_editing_button" android:onClick="onClickedDoneEditingDeckTitle" android:contentDescription="@string/fc_deck_overview_accessibility_save_deck_title" style="@style/fc_button.accept_changes" />
+            </ViewSwitcher>
+        </RelativeLayout>
+        <View android:background="@color/fc_text_light_secondary" android:layout_width="fill_parent" android:layout_height="@dimen/fc_deck_overview_title_separator_height" />
+        <com.amazon.kedu.flashcards.views.DeckOverviewListView android:id="@id/flashcards_list" android:paddingTop="@dimen/fc_deck_overview_divider_height" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="@dimen/fc_deck_overview_divider_height" />
+        <com.amazon.kedu.flashcards.views.EmptyDeckView android:id="@id/deck_overview_empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

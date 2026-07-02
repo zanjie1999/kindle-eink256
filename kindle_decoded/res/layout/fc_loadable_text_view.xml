@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.amazon.kedu.flashcards.views.CardTextView android:gravity="center" android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:importantForAccessibility="no" android:textDirection="firstStrong" style="@style/fc_card_side_front_text" />
+</merge>

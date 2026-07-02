@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/library_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/library_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" app:titleTextAppearance="@style/ToolbarStyle.Title" style="?toolbarStyle" />
+        <include layout="@layout/library_home_screen_toolbar_extensions" />
+        <View android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/library_toast_anchor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/secondary_menu_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:id="@id/secondary_menu_divider" android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <FrameLayout android:id="@id/library_content_under_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <FrameLayout android:id="@id/library_top_decoration_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <com.amazon.kcp.library.ui.LibraryContentContainer android:id="@id/library_content_container" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:importantForAccessibility="yes" android:paddingStart="@dimen/lib_recycler_parent_horizontal_margin" android:paddingEnd="@dimen/lib_recycler_parent_horizontal_margin">
+                            <include layout="@layout/default_library_screen" />
+                            <FrameLayout android:layout_gravity="bottom" android:id="@id/sync_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                            <include layout="@layout/empty_library_stub" />
+                        </com.amazon.kcp.library.ui.LibraryContentContainer>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/library_bottom_decoration_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

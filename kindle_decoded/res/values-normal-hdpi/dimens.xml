@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_player_artwork_size">280.0dip</dimen>
+    <dimen name="main_player_download_center_image_height">47.0dip</dimen>
+    <dimen name="main_player_download_center_image_width">55.0dip</dimen>
+    <dimen name="main_player_sleep_timer_height">22.0dip</dimen>
+    <dimen name="main_player_sleep_timer_margin_bottom">6.0dip</dimen>
+    <dimen name="player_artwork_size">280.0dip</dimen>
+</resources>

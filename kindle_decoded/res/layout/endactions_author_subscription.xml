@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_startactions_borderless_button" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/endactions_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget_header_text" />
+    <TextView android:id="@id/endactions_subscription_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/endactions_header_text" style="@style/anyactions_amazon_text_small" />
+</LinearLayout>

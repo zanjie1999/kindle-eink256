@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionaries>
+    <Dictionary>
+        <Title>The New Oxford American Dictionary</Title>
+        <ASIN>B009HB9VMG</ASIN>
+        <Language>en</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>US</Marketplace>
+        <LanguageString>English (US)</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代汉语词典</Title>
+        <ASIN>B00AZOHEFU</ASIN>
+        <Language>zh</Language>
+        <SubLanguage>zh</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>中文 - 中文</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代英汉词典</Title>
+        <ASIN>B007Z8VKSQ</ASIN>
+        <Language>en</Language>
+        <SubLanguage>zh</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>英语 - 中文</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代汉英词典</Title>
+        <ASIN>B00AZOHEGE</ASIN>
+        <Language>zh</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>中文 - 英语</LanguageString>
+    </Dictionary>
+</Dictionaries>

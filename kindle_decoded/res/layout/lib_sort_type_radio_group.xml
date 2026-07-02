@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.library.ui.popup.LibrarySortTypeRadioGroup android:orientation="vertical" android:id="@id/lib_sortby_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_series_order" android:visibility="gone" android:contentDescription="@string/sortby_series_order_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_series_order_reversed" android:visibility="gone" android:contentDescription="@string/sortby_series_order_reversed_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_recent" android:contentDescription="@string/sortby_recent_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_title" android:visibility="gone" android:contentDescription="@string/sortby_title_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_author" android:visibility="gone" android:contentDescription="@string/sortby_author_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_author_reverse" android:visibility="gone" android:contentDescription="@string/sortby_author_reverse_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_publication_date" android:visibility="gone" android:contentDescription="@string/sortby_publication_date_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_publication_date_series" android:visibility="gone" android:contentDescription="@string/sortby_publication_date_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_publication_date_series_reversed" android:visibility="gone" android:contentDescription="@string/sortby_publication_date_reversed_option" style="@style/checkable_radio_item_style" />
+    <com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/lib_menu_sort_custom" android:visibility="gone" android:contentDescription="@string/sortby_custom_option" style="@style/checkable_radio_item_style" />
+</com.amazon.kindle.library.ui.popup.LibrarySortTypeRadioGroup>

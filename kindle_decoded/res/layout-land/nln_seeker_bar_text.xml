@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="@dimen/page_flip_default_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/page_flip_location_label_text_size" android:textColor="?action_bar_item_color" android:ellipsize="end" android:gravity="center" android:id="@id/nln_text_primary" android:paddingLeft="@dimen/page_flip_location_label_padding" android:paddingRight="@dimen/page_flip_location_label_padding" android:layout_width="wrap_content" android:layout_height="@dimen/nln_text_container_height" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="Amazon Ember" />
+</RelativeLayout>

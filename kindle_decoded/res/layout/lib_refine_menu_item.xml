@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.widget.RefineLibraryCheckableItem android:id="@id/refine_menu_checkable_item" style="@style/refine_menu_item_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

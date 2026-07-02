@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_options_root" android:paddingTop="@dimen/view_options_text_size_top_padding" style="@style/fill_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/view_options_title" android:layout_width="0.0dip" android:text="@string/text_size" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/view_options_row_text.title" />
+    <include android:id="@id/view_options_text_sizes_group" layout="@layout/text_sizes" style="@style/wrap" />
+</LinearLayout>

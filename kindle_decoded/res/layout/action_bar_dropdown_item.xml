@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textColor="@android:color/white" android:ellipsize="marquee" android:background="@drawable/klo_bg_selectable_list_item" android:paddingLeft="@dimen/klo_action_bar_drop_down_margin" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:singleLine="true" style="?android:spinnerDropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="animateBookmark">true</bool>
+    <bool name="book_reader_has_title">true</bool>
+    <bool name="book_reader_title_on_page">true</bool>
+    <bool name="dual_panel_periodical_view_supported">true</bool>
+    <bool name="fixed_size_definition_popup">true</bool>
+    <bool name="flashcards_enabled">true</bool>
+    <bool name="large_layout">true</bool>
+    <bool name="library_default_to_grid_view">true</bool>
+    <bool name="limit_article_count">false</bool>
+    <bool name="reader_title_centered">true</bool>
+    <bool name="show_unified_library">true</bool>
+    <bool name="transient_screen_translucent_mode">true</bool>
+    <bool name="welcome_orientation_lock">false</bool>
+    <bool name="dim_archived_item_covers">true</bool>
+    <bool name="show_footer_bar">false</bool>
+</resources>

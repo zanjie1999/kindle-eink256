@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/search_screen_side_padding" android:paddingTop="@dimen/search_section_spacing" android:paddingRight="@dimen/search_screen_side_padding" android:paddingBottom="@dimen/search_section_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/search_store_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/search_result_loading_margin" style="@android:style/Widget.ProgressBar.Small" />
+    <TextView android:textAppearance="?search_result_store_loading_text" android:id="@id/search_store_loading_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_results_loading" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/aa_menu_v2_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2DialogTextStyle" />
+    <TextView android:textColor="@color/aa_menu_v2_new_theme_error_text_color" android:id="@id/aa_menu_v2_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2DialogTextStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/aa_menu_v2_dialog_input_container" android:background="@drawable/aa_menu_v2_dialog_input_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_dialog_padding" android:layout_marginBottom="@dimen/aa_menu_v2_dialog_padding" android:weightSum="1.0" style="@style/AaMenuV2DialogContentBaseStyle">
+        <EditText android:textColor="?aaMenuV2DialogTextColor" android:id="@id/aa_menu_v2_dialog_input" android:background="@null" android:padding="@dimen/aa_menu_v2_dialog_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_input_height" android:layout_weight="0.8" android:inputType="text" android:imeOptions="flagNoFullscreen" android:textCursorDrawable="@drawable/aa_menu_v2_edit_text_cursor" android:fontFamily="Amazon Ember" />
+        <TextView android:textColor="?aaMenuV2DialogInputBoxBorderColor" android:gravity="center" android:id="@id/aa_menu_v2_dialog_input_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_input_height" android:maxLines="1" android:layout_weight="0.2" android:fontFamily="Amazon Ember" />
+    </LinearLayout>
+    <CheckBox android:textColor="?aaMenuV2DialogTextColor" android:id="@id/aa_menu_v2_dialog_checkbox" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/aa_menu_v2_dialog_padding" android:fontFamily="Amazon Ember" style="@style/AaMenuV2DialogContentBaseStyle" />
+</LinearLayout>

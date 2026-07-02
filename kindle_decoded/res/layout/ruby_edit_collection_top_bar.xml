@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?library_action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/contextual_done_button" style="?actionModeCloseButtonStyle" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:gravity="center|right" android:id="@id/rearrange_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ruby_rearrange_hint" android:singleLine="false" android:layout_weight="1.0" android:paddingEnd="@dimen/edit_collection_title_padding_end" />
+</LinearLayout>

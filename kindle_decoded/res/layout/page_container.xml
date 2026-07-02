@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.NoOverlapLinearLayout android:orientation="vertical" android:id="@id/thumbnail_page" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/page_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/bookmark_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?pfvBookmarkIcon" android:layout_marginEnd="6.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/page_label_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/page_label_divider" android:background="?readerLightChromeColor" android:layout_width="fill_parent" android:layout_height="@dimen/nln_divider_weight" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/mark_badge" android:visibility="gone" android:layout_width="@dimen/nln_page_badge_size" android:layout_height="@dimen/nln_page_badge_size" android:layout_marginLeft="6.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/nln_page_container_text_size" android:textColor="?readerLightChromeColor" android:id="@id/page_label" android:paddingTop="@dimen/nln_small_label_vert_padding" android:paddingBottom="@dimen/nln_small_label_vert_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="Amazon Ember" />
+            <ImageView android:id="@id/note_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/nln_page_badge_size" android:layout_marginRight="6.0dip" android:layout_marginBottom="2.0dip" android:src="?pfvNoteIcon" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.kindle.nln.NoOverlapLinearLayout>

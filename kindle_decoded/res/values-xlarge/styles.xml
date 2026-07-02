@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Amazon.DetailViewBodyText" parent="@style/TextAppearance.Amazon">
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:textColor">@color/amznLightGrey</item>
+    </style>
+    <style name="TextAppearance.Amazon.DetailViewBodyText.Secondary" parent="@style/TextAppearance.Amazon.DetailViewBodyText">
+        <item name="android:textSize">@dimen/fontXSmall</item>
+        <item name="android:textColor">@color/amznGrey</item>
+    </style>
+    <style name="TextAppearance.Amazon.DetailViewBodyText.Small" parent="@style/TextAppearance.Amazon.DetailViewBodyText">
+        <item name="android:textSize">@dimen/fontRegular</item>
+    </style>
+    <style name="wordwise_info_card_link" parent="@style/info_card_link" />
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.dictionary.TabletDefinitionContainer android:id="@id/info_card_definition" android:importantForAccessibility="yes" style="@style/info_card_v2_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <FrameLayout android:importantForAccessibility="no" style="@style/info_card_v2_title_bar">
+            <TextView android:layout_gravity="center|left" android:id="@id/definition_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dictionary" android:importantForAccessibility="no" style="@style/info_card_v2_title_text" />
+        </FrameLayout>
+        <com.amazon.android.widget.ScrollListenerScrollView android:scrollbarThumbVertical="@drawable/info_card_v2_scroll_bar_thumb" android:id="@id/definition_scrollView" android:fillViewport="true" android:importantForAccessibility="no" style="@style/info_card_v2_content_bar">
+            <RelativeLayout android:id="@id/definition_view_wrapper" android:paddingLeft="@dimen/info_card_v2_content_horizontal_padding" android:paddingTop="@dimen/info_card_v2_content_vertical_padding" android:paddingRight="@dimen/info_card_v2_content_horizontal_padding" android:paddingBottom="@dimen/info_card_v2_content_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+                <FrameLayout android:id="@id/definition_view_container_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+                    <FrameLayout android:layout_gravity="top" android:id="@id/definition_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+                    <ImageView android:id="@id/definition_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                    <ImageView android:id="@id/full_definition_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:scaleType="fitXY" />
+                    <TextView android:layout_gravity="bottom" android:id="@id/inline_go_to_dictionary_link" android:visibility="gone" android:text="@string/full_definition" style="@style/info_card_v2_link_button" />
+                </FrameLayout>
+                <TextView android:id="@id/definition_container_message_title" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/info_card_v2_content_text" />
+                <TextView android:id="@id/definition_container_message" android:paddingTop="@dimen/definition_download_top_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/definition_container_message_title" android:layout_alignParentLeft="true" style="@style/info_card_v2_content_text" />
+                <RelativeLayout android:id="@id/dictionary_direct_download_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/unified_selection_popup_full_definition_link_height" android:layout_marginTop="@dimen/dictionary_direct_download_button_top_margin" android:layout_below="@id/definition_container_message" android:layout_alignParentLeft="true">
+                    <TextView android:gravity="center" android:id="@id/dictionary_download_text" android:background="@drawable/button_light" android:padding="@dimen/info_card_v2_content_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/info_card_v2_content_text" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dictionary_downloading_content" android:paddingTop="@dimen/definition_download_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/definition_container_message">
+                    <ProgressBar android:id="@id/dictionary_downloading_progress" android:layout_width="0.0dip" android:layout_height="5.0dip" android:max="100" android:indeterminate="false" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+                    <ImageView android:id="@id/dictionary_download_button" android:paddingLeft="@dimen/dictionary_download_button_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dictionary_download_button" android:contentDescription="@string/resume_download_description" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.amazon.android.widget.ScrollListenerScrollView>
+        <RelativeLayout android:paddingLeft="@dimen/info_card_v2_normal_button_bar_horizontal_padding" android:paddingRight="@dimen/info_card_v2_link_button_bar_horizontal_padding" android:importantForAccessibility="no" style="@style/info_card_v2_button_bar">
+            <RelativeLayout android:id="@id/definition_choose_dictionary_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/info_card_v2_normal_button_left_margin" android:layout_alignParentLeft="true" android:contentDescription="@string/read_langauge_selection" android:importantForAccessibility="yes">
+                <TextView android:gravity="center" android:id="@id/dictionary_selection_text" android:background="@drawable/button_light" android:layout_width="@dimen/info_card_v2_dictionary_selection_text_width" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/info_card_v2_normal_button_text_bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/definition_links" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:contentDescription="@string/read_go_to_dictionary_button">
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="end|center" android:id="@id/definition_dictionary_Link" android:layout_width="@dimen/info_card_v2_go_to_dictionary_text_width" android:layout_height="fill_parent" android:text="@string/definition_go_to_dictionary" android:layout_centerVertical="true" app:autoSizeMaxTextSize="@dimen/info_card_v2_button_text_font_size" app:autoSizeMinTextSize="6.0dip" app:autoSizeStepGranularity="1.0dip" app:autoSizeTextType="uniform" style="@style/info_card_v2_link_button_bold" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.amazon.kcp.reader.ui.dictionary.TabletDefinitionContainer>

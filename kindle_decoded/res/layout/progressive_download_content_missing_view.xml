@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.yj.ui.ContentMissingView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_centerInParent="true" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ProgressBar android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/progressive_download_progressbar_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/speak_download_in_progress" style="@style/progressive_download_content_missing_progressbar_horizontal" />
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/progressive_download_error_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_badge_error_amazon" android:contentDescription="@string/speak_progress_error_icon" />
+        <ProgressBar android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/progressive_download_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/speak_download_in_progress" style="@style/progressive_download_content_missing_progressbar" />
+    </FrameLayout>
+    <TextView android:textColor="@color/amazon_medium_grey" android:ellipsize="end" android:id="@id/progressive_download_progress_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_missing_view_text_top_margin" android:text="@string/download_waiting" android:singleLine="true" android:layout_centerInParent="true" style="@style/progressive_download_content_missing_text" />
+    <Button android:id="@id/progressive_download_pageasset_unavailable_download_retry_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_missing_view_retry_button_top_margin" android:text="@string/fix_try_again" android:layout_below="@id/progressive_download_progress_text" android:layout_centerHorizontal="true" />
+</com.amazon.kindle.yj.ui.ContentMissingView>

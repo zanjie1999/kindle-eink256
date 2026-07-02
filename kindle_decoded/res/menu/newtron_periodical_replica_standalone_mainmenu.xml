@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_chrome_toc_toggle" android:id="@id/menuitem_periodical_toc" android:title="@string/goto_toc" android:showAsAction="always" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_book_search" android:id="@id/menuitem_search" android:title="@string/menuitem_search" android:showAsAction="always" android:actionViewClass="android.widget.SearchView" app:showAsAction="always" />
+    <item android:id="@id/menuitem_toggle_view_mode" android:title="@string/menuitem_toggle_view_mode" android:showAsAction="always" app:showAsAction="always" />
+    <item android:id="@id/menuitem_reader_store" android:title="@string/menuitem_reader_store" />
+</menu>

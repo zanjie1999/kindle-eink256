@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reader_overflow_popup_max_height">380.0dip</dimen>
+</resources>

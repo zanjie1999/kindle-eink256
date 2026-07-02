@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ReaderAudioControl android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/audio_player_container" android:background="@drawable/rounded_overlay" android:layout_marginTop="115.0dip" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/start_audio_player" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reader_play_white" />
+        <ImageView android:id="@id/pause_audio_player" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reader_pause_white" />
+    </FrameLayout>
+    <SeekBar android:layout_gravity="center" android:id="@id/audio_player_seekbar" android:layout_width="@dimen/audio_player_max_width" style="@style/reader_overlay_seek_bar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/stop_audio_player" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_zoom_close_button" />
+</com.amazon.kcp.reader.ui.ReaderAudioControl>

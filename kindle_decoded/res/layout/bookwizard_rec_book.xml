@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/bookwizard_rec_book"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/download_container" android:paddingTop="@dimen/bookwizard_recs_download_padding_vertical" android:paddingBottom="@dimen/bookwizard_recs_download_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/download_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bookwizard_recs_download" />
+        <ImageButton android:gravity="center_vertical" android:id="@id/download_button" android:background="@color/transparent" android:paddingLeft="@dimen/bookwizard_recs_download_icon_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bookwizard_download_button" android:scaleType="fitCenter" android:contentDescription="@string/bookwizard_recs_download" />
+    </LinearLayout>
+    <com.amazon.bookwizard.ui.view.CoverImageView android:id="@id/cover_image" android:layout_width="@dimen/bookwizard_cover_width" android:layout_height="@dimen/bookwizard_cover_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/download_container" android:layout_centerHorizontal="true" />
+</RelativeLayout>

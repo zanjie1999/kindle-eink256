@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?ruby_list_item_divider" android:showDividers="middle" android:layout_marginStart="@dimen/theme_screen_horizontal_margin" android:layout_marginEnd="@dimen/theme_screen_horizontal_margin">
+        <RadioGroup android:orientation="vertical" android:id="@id/theme_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?ruby_list_item_divider" android:showDividers="middle" android:paddingEnd="@dimen/theme_radio_group_end_padding">
+            <RadioButton android:id="@id/button_theme_light" android:text="@string/theme_light" style="@style/color_theme_radio_button_style" />
+            <RadioButton android:id="@id/button_theme_dark" android:text="@string/theme_dark" style="@style/color_theme_radio_button_style" />
+            <RadioButton android:id="@id/button_follow_system" android:text="@string/theme_follow_system" style="@style/color_theme_radio_button_style" />
+        </RadioGroup>
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/theme_detail_margin_top" android:text="@string/theme_detail_info" />
+    </LinearLayout>
+</ScrollView>

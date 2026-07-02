@@ -1,0 +1,186 @@
+.class Lcom/amazon/startactions/metrics/SessionManager$Session;
+.super Ljava/lang/Object;
+.source "SessionManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/startactions/metrics/SessionManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "Session"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/amazon/startactions/metrics/SessionManager$Session$TimeoutRunnable;
+    }
+.end annotation
+
+
+# static fields
+.field private static final HANDLER:Landroid/os/Handler;
+
+
+# instance fields
+.field private final id:Ljava/lang/String;
+
+.field private lastUpdated:J
+
+.field private final metric:Lcom/amazon/startactions/metrics/Metric;
+
+.field private timeoutRunnable:Ljava/lang/Runnable;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 272
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    sput-object v0, Lcom/amazon/startactions/metrics/SessionManager$Session;->HANDLER:Landroid/os/Handler;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    .line 280
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 281
+    iput-object p1, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->id:Ljava/lang/String;
+
+    .line 283
+    new-instance p1, Lcom/amazon/startactions/metrics/Metric;
+
+    const-string v0, "StartActionsSession"
+
+    invoke-direct {p1, v0}, Lcom/amazon/startactions/metrics/Metric;-><init>(Ljava/lang/String;)V
+
+    iput-object p1, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->metric:Lcom/amazon/startactions/metrics/Metric;
+
+    .line 284
+    invoke-virtual {p0}, Lcom/amazon/startactions/metrics/SessionManager$Session;->renew()V
+
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/amazon/startactions/metrics/SessionManager$Session;)Ljava/lang/String;
+    .locals 0
+
+    .line 265
+    iget-object p0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->id:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 2
+
+    .line 328
+    iget-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->metric:Lcom/amazon/startactions/metrics/Metric;
+
+    invoke-virtual {v0}, Lcom/amazon/startactions/metrics/Metric;->close()V
+
+    .line 330
+    iget-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->timeoutRunnable:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_0
+
+    .line 331
+    sget-object v1, Lcom/amazon/startactions/metrics/SessionManager$Session;->HANDLER:Landroid/os/Handler;
+
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public getId()Ljava/lang/String;
+    .locals 1
+
+    .line 291
+    iget-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->id:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getLastUpdated()J
+    .locals 2
+
+    .line 305
+    iget-wide v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->lastUpdated:J
+
+    return-wide v0
+.end method
+
+.method public getMetric()Lcom/amazon/startactions/metrics/Metric;
+    .locals 1
+
+    .line 298
+    iget-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->metric:Lcom/amazon/startactions/metrics/Metric;
+
+    return-object v0
+.end method
+
+.method public renew()V
+    .locals 4
+
+    .line 313
+    iget-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->timeoutRunnable:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_0
+
+    .line 314
+    sget-object v1, Lcom/amazon/startactions/metrics/SessionManager$Session;->HANDLER:Landroid/os/Handler;
+
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    goto :goto_0
+
+    .line 316
+    :cond_0
+    new-instance v0, Lcom/amazon/startactions/metrics/SessionManager$Session$TimeoutRunnable;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/amazon/startactions/metrics/SessionManager$Session$TimeoutRunnable;-><init>(Lcom/amazon/startactions/metrics/SessionManager$Session;Lcom/amazon/startactions/metrics/SessionManager$1;)V
+
+    iput-object v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->timeoutRunnable:Ljava/lang/Runnable;
+
+    .line 319
+    :goto_0
+    sget-object v0, Lcom/amazon/startactions/metrics/SessionManager$Session;->HANDLER:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->timeoutRunnable:Ljava/lang/Runnable;
+
+    const-wide/32 v2, 0x1b7740
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 321
+    new-instance v0, Ljava/util/Date;
+
+    invoke-direct {v0}, Ljava/util/Date;-><init>()V
+
+    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/amazon/startactions/metrics/SessionManager$Session;->lastUpdated:J
+
+    return-void
+.end method

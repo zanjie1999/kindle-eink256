@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bookwizard_country_spinner_margin_bottom">4.0dip</dimen>
+    <dimen name="bookwizard_welcome_screen_background_padding">24.0dip</dimen>
+    <dimen name="bookwizard_welcome_screen_button_margin_top">20.0dip</dimen>
+    <dimen name="bookwizard_welcome_screen_margin_bottom">20.0dip</dimen>
+    <dimen name="bookwizard_welcome_screen_margin_top">88.0dip</dimen>
+    <dimen name="carousel_instructions_heading_size">20.0sp</dimen>
+    <dimen name="carousel_instructions_subheading_1_size">15.0sp</dimen>
+    <dimen name="carousel_instructions_vertical_padding">0.0dip</dimen>
+    <dimen name="definiton_popup_width">480.0dip</dimen>
+    <dimen name="gallery_curve_density">300.0dip</dimen>
+    <dimen name="gallery_curve_span">1100.0dip</dimen>
+    <dimen name="lib_grid_default_side_padding">33.0dip</dimen>
+    <dimen name="main_player_artwork_size">208.0dip</dimen>
+    <dimen name="main_player_sleep_timer_height">28.0dip</dimen>
+    <dimen name="main_player_sleep_timer_margin_bottom">8.0dip</dimen>
+    <dimen name="player_artwork_size">208.0dip</dimen>
+    <dimen name="welcome_bottom_margin">10.0dip</dimen>
+    <dimen name="welcome_carousel_bottom_margin">20.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_sides">250.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_top">10.0dip</dimen>
+    <dimen name="whackamole_max_title_width">320.0dip</dimen>
+    <dimen name="transient_screen_cover_size">300.0dip</dimen>
+    <dimen name="view_options_brightness_icon_outter_padding">5.0dip</dimen>
+</resources>

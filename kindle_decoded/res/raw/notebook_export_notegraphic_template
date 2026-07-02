@@ -1,0 +1,3 @@
+<div class="notebookGraphic">
+<img width="#graphicWidth" height="#graphicHeight" src="#dataURI" />
+</div>

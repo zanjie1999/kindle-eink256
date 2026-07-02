@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/aa_menu_v2_radio_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AaMenuV2SettingTitle" />
+    <TextView android:id="@id/aa_menu_v2_radio_group_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" android:layout_marginRight="@dimen/aa_menu_v2_setting_subtitle_margin_right" style="@style/AaMenuV2SettingSubtitle" />
+    <HorizontalScrollView android:id="@id/aa_menu_v2_radio_group_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:id="@id/aa_menu_v2_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <CheckedTextView android:id="@id/aa_menu_v2_radio_group_checkbox" android:paddingTop="@dimen/aa_menu_v2_radio_group_checkbox_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/aa_menu_v2_radio_group_checkbox_margin" android:drawableStart="?aaMenuV2CheckboxDrawable" style="@style/AaMenuV2SettingTitle" />
+</merge>

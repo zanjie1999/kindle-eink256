@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/body" style="@style/fc_deck_overview_card_side_back_footer">
+        <com.amazon.kedu.flashcards.views.SeeMoreButton android:id="@id/see_more_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/fc_deck_overview_card_side_back_meta_label_button" />
+    </RelativeLayout>
+</merge>

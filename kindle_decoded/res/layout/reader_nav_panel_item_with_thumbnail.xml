@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/reader_nav_panel_item_with_thumbnail" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/reader_nav_panel_selected_filler" android:layout_weight="0.0" style="@style/LavaPanelNavigationItemStyleHighlighter" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="16.0dip">
+        <com.amazon.kcp.library.ui.SelectionFriendlyTextView android:id="@id/reader_nav_panel_item_with_thumbnail_title" style="@style/LavaPanelNavigationItemStyleTitle" />
+        <com.amazon.kcp.library.ui.SelectionFriendlyTextView android:id="@id/reader_nav_panel_item_with_thumbnail_description" style="@style/LavaPanelNavigationItemStyleDescription" />
+    </LinearLayout>
+    <ImageView android:id="@id/reader_nav_panel_item_with_thumbnail_thumbnail" android:layout_weight="0.0" style="@style/LavaPanelNavigationItemStyleThumbnail" />
+</LinearLayout>

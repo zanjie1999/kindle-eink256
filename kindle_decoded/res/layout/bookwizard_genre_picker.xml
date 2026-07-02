@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/bookwizard_page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bookwizard_footer" layout="@layout/bookwizard_footer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bookwizard_header" android:background="@color/transparent" android:paddingLeft="@dimen/bookwizard_header_layout_padding_horizontal" android:paddingTop="@dimen/bookwizard_header_layout_padding_vertical" android:paddingRight="@dimen/bookwizard_header_layout_padding_horizontal" android:paddingBottom="@dimen/bookwizard_header_layout_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/header_step_text" android:layout_marginTop="@dimen/bookwizard_header_margin" style="@style/bookwizard_step_text" />
+        <ImageView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bookwizard_header_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bookwizard_ku_books_logo_vertical_margin" android:layout_marginBottom="@dimen/bookwizard_ku_books_logo_vertical_margin" />
+        <TextView android:textSize="@dimen/bookwizard_header_first_line_font_size" android:textColor="@color/white" android:id="@id/header_first_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bookwizard_header_margin" />
+        <TextView android:textSize="@dimen/bookwizard_header_second_line_font_size" android:textColor="@color/white" android:id="@id/header_second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bookwizard_header_margin" />
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bookwizard_footer" android:layout_below="@id/bookwizard_header" android:layout_centerHorizontal="true" layout="@layout/bookwizard_spinner" />
+    <ScrollView android:id="@id/genre_content_pane" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bookwizard_footer" android:layout_below="@id/bookwizard_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.amazon.bookwizard.ui.view.ExpandableHeightGridView android:id="@id/genre_grid" android:paddingLeft="@dimen/bookwizard_page_padding_horizontal" android:paddingTop="@dimen/bookwizard_genre_padding_vertical" android:paddingRight="@dimen/bookwizard_page_padding_horizontal" android:paddingBottom="@dimen/bookwizard_genre_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/bookwizard_genre_grid_spacing_horizontal" android:verticalSpacing="@dimen/bookwizard_genre_grid_spacing_vertical" android:stretchMode="columnWidth" android:numColumns="@integer/bookwizard_genre_grid_column_count" android:isScrollContainer="false" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bookwizard_goodreads_padding" android:layout_marginRight="@dimen/bookwizard_goodreads_padding" android:layout_marginBottom="@dimen/bookwizard_goodreads_padding" layout="@layout/bookwizard_goodreads_logo" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/search_element_spacing" android:paddingBottom="@dimen/search_element_spacing" android:layout_width="@dimen/search_store_result_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/store_result_ku_badge" android:layout_width="@dimen/search_store_result_ku_badge_width" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignEnd="@id/store_result_cover_image" />
+    <ImageView android:id="@id/store_result_cover_image" android:layout_width="@dimen/search_store_result_cover_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_element_spacing_bottom" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_below="@id/store_result_ku_badge" />
+    <TextView android:id="@id/author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/store_result_cover_image" style="?search_result_store_author_style" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/reviews_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/author">
+        <RatingBar android:id="@id/star_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="11.0dip" android:progressDrawable="@drawable/rating_star_layered" android:minHeight="11.0dip" android:numStars="5" android:isIndicator="true" />
+        <TextView android:id="@id/reviews_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?search_result_store_review_style" />
+    </LinearLayout>
+</RelativeLayout>

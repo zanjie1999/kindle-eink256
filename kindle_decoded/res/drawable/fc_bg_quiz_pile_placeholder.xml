@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@null" />
+    <stroke android:width="@dimen/fc_quiz_pile_placeholder_border_width" android:color="@color/fc_background_medium" android:dashWidth="@dimen/fc_quiz_pile_placeholder_border_dash_width" android:dashGap="@dimen/fc_quiz_pile_placeholder_border_dash_gap" />
+</shape>

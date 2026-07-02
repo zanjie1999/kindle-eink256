@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/download_debug_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Use these options to override the values the we report when contacting various webservices. Forcing Mobi downloads ignores values manually entered." />
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/force_mobi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force Mobi Downloads" android:minLines="2" android:labelFor="@id/force_mobi" />
+        </LinearLayout>
+        <Button android:id="@id/download_all_books" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download All Books" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Platform Version Override" android:labelFor="@id/platform_version" />
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/platform_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="180.0dip" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:id="@id/submit_platform_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set" />
+        </LinearLayout>
+        <TextView android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Application Version Override" android:labelFor="@id/app_version" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/app_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="180.0dip" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:id="@id/submit_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/enable_coroutines_layout" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/enable_coroutines_workflow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable coroutines in the download system" android:minLines="2" android:labelFor="@id/enable_coroutines_workflow" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/enable_download_debug_toasts" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show download related Toast messages" android:minLines="2" android:labelFor="@id/enable_download_debug_toasts" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/download_fonts_separately" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download fonts separately" android:minLines="2" android:labelFor="@id/download_fonts_separately" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/allow_optimal_urls" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allow downloading through the optimal URLs in the manifest" android:minLines="2" android:labelFor="@id/allow_optimal_urls" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/always_fail_downloads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Always cause downloads to fail after parsing the manifest." android:minLines="2" android:layout_weight="1.0" android:labelFor="@id/always_fail_downloads" />
+        </LinearLayout>
+        <TextView android:id="@id/asset_request_download_manager_thread_count_title" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Number of download threads for the new download system (ADM replacement)" android:labelFor="@id/asset_request_download_manager_thread_count" />
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/asset_request_download_manager_thread_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="180.0dip" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:id="@id/submit_asset_request_download_manager_thread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set" />
+        </LinearLayout>
+        <ToggleButton android:id="@id/toggle_using_required_exclusive_threading_on_ardm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Toggle ARDM required exclusive threading OFF" android:textOff="Toggle ARDM required exclusive threading ON" />
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/enable_okhttp_web_request_executor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable OkHttp for ebook downloads" android:minLines="2" android:labelFor="@id/enable_okhttp_web_request_executor" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/enable_http2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable HTTP2 via OkHttp" android:minLines="2" android:labelFor="@id/enable_http2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/simulate_adp_signing_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simulate ADP Signing failures when using OkHttp" android:minLines="2" android:layout_weight="1.0" android:labelFor="@id/simulate_adp_signing_failure" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

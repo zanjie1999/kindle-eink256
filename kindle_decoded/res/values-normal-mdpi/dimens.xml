@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_player_artwork_size">178.0dip</dimen>
+    <dimen name="main_player_sleep_timer_height">16.0dip</dimen>
+    <dimen name="main_player_sleep_timer_margin_bottom">3.0dip</dimen>
+    <dimen name="player_artwork_size">178.0dip</dimen>
+</resources>

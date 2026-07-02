@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tutorial_container" style="@style/tutorial_screen_eink"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/wordwise_jit_frame_width_eink" android:layout_height="@dimen/wordwise_jit_frame_height_eink" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="vertical" android:id="@id/wordwise_difficulty_container" android:background="@drawable/bubble_container_background_light_eink_new" android:paddingBottom="@dimen/wordwise_jit_bubble_bottom_padding_eink" android:layout_width="@dimen/wordwise_jit_bubble_width_eink" android:layout_height="@dimen/wordwise_jit_bubble_height_eink" android:layout_marginLeft="@dimen/wordwise_jit_bubble_horizontal_margin_eink" android:layout_marginTop="@dimen/wordwise_jit_bubble_vertical_margin_eink" android:layout_marginRight="@dimen/wordwise_jit_bubble_horizontal_margin_eink" android:layout_marginBottom="@dimen/wordwise_jit_bubble_vertical_margin_eink" />
+        <TextView android:textSize="@dimen/wordwise_jit_text_size_eink" android:textColor="@color/black" android:layout_gravity="center|top" android:paddingLeft="@dimen/wordwise_jit_text_left_padding_eink" android:paddingTop="@dimen/wordwise_jit_text_top_padding_eink" android:paddingRight="@dimen/wordwise_jit_text_right_padding_eink" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wordwise_tutorial_for_footer" />
+    </FrameLayout>
+</RelativeLayout>

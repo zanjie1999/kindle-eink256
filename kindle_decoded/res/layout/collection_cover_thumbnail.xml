@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/collection_thumbnail_internal_padding" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="bottom|center" android:id="@id/badgeable_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/badgeable_cover" />
+</FrameLayout>

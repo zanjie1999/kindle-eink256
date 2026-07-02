@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.bookwizard.ui.view.WelcomeScreenBackground android:id="@id/treeboy_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bookwizard_treeboy" android:scaleType="matrix" />
+    <ImageButton android:layout_gravity="right" android:id="@id/close_button" android:background="@null" android:padding="@dimen/bookwizard_landing_close_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookwizard_close_button" android:contentDescription="@string/bookwizard_details_close" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="@dimen/bookwizard_landing_content_weight">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo_image_view" android:layout_width="wrap_content" android:layout_height="@dimen/bookwizard_landing_logo_height" android:layout_marginBottom="@dimen/bookwizard_landing_logo_margin_vertical" android:src="@drawable/bookwizard_kindle_logo" />
+            <TextView android:id="@id/welcome_to_header_view" android:layout_marginBottom="@dimen/bookwizard_landing_text_paragraph_margin_vertical" android:text="@string/landing_header_text" style="@style/bookwizard_page_header_text_allCaps" />
+            <TextView android:id="@id/welcome_to_text_view" android:layout_width="@dimen/bookwizard_landing_text_width" android:layout_marginBottom="@dimen/bookwizard_landing_text_margin_vertical" android:text="@string/landing_help_text" style="@style/bookwizard_page_body_text" />
+            <Button android:textStyle="normal" android:id="@id/start_button" android:paddingLeft="@dimen/bookwizard_landing_button_padding_horizontal" android:paddingRight="@dimen/bookwizard_landing_button_padding_horizontal" android:text="@string/launch_store" style="@style/bookwizard_positive_button_white" />
+        </LinearLayout>
+        <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="@dimen/bookwizard_landing_space_weight" />
+    </LinearLayout>
+</FrameLayout>

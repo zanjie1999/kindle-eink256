@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.breadcrumb.BreadCrumbContentLayout android:id="@id/breadcrumb_content_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/badge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/breadcrumb_label_container" android:background="?readerBreadcrumbLabelBackgroundColor" android:visibility="gone" android:layout_width="@dimen/nln_breadcrumb_width" android:layout_height="wrap_content">
+        <View android:id="@id/breadcrumb_container_divider" android:background="?readerLightChromeColor" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" />
+        <TextView android:textSize="@dimen/nln_breadcrumb_text_size" android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/safety_net_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/nln_breadcrumb_label_max_lines" android:fontFamily="Amazon Ember" />
+    </LinearLayout>
+</com.amazon.kindle.nln.breadcrumb.BreadCrumbContentLayout>

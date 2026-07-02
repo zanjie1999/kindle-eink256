@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?readerSearchListSubsectionHeaderColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/titleLabel" android:paddingLeft="@dimen/reader_search_list_item_padding_horiz" android:paddingTop="@dimen/reader_search_list_section_header_padding_vert" android:paddingRight="@dimen/reader_search_list_item_padding_horiz" android:paddingBottom="@dimen/reader_search_list_section_header_padding_vert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/reader_search_list_item_padding_horiz" android:paddingEnd="@dimen/reader_search_list_item_padding_horiz" style="@style/reader_search_list_subsection_header" />
+</FrameLayout>

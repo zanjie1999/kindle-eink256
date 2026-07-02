@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/xray_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/xray_image_caption_container" android:padding="@dimen/xray_padding_full_screen_image_caption" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.xray.ui.widget.EnhancedTextView android:textAppearance="@style/xray_amazon_text_light_regular" android:id="@id/xray_image_caption" android:background="@drawable/bg_xray_borderless_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/xray_card_caption_max_lines" />
+    </FrameLayout>
+</FrameLayout>

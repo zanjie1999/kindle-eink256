@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_announcement_margin" android:layout_marginBottom="@dimen/home_card_announcement_margin" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="@dimen/home_card_margin">
+        <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/home_announcement_text" android:id="@id/announcement_body" android:tag="TEXT_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/home_announcement_text_margin_end" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/announcement_close_button" android:tag="BUTTON_1" android:layout_width="@dimen/home_announcement_close_button_size" android:layout_height="@dimen/home_announcement_close_button_size" android:layout_centerVertical="true" android:contentDescription="@string/kre_home_dismiss_button" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

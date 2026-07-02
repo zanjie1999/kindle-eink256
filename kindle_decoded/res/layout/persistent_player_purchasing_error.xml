@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/persistent_player_layout" android:padding="@dimen/persistent_player_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/player_purchase_error_icon" android:layout_width="24.0dip" android:layout_height="21.5dip" android:adjustViewBounds="false" />
+    <TextView android:gravity="center" android:id="@id/player_purchase_error_retry" android:background="@drawable/player_action_text_background" android:paddingTop="6.5dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upsell_error_link" style="@style/Hp_TextAppearance_Upsell_Bold" />
+    <TextView android:gravity="center" android:id="@id/player_purchase_error_phone_number" android:paddingTop="5.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upsell_error_contact_info_us" style="@style/Hp_TextAppearance_Upsell_Roman" />
+</LinearLayout>

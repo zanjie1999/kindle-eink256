@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/upsell_bar_container" style="@style/upsell_bar_nln"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/upsell_bar_text_layout" />
+    <FrameLayout android:id="@id/right_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/buttons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/upsell_bar_button_font_size_adjusted" android:id="@id/upsell_bar_button" android:visibility="gone" style="@style/upsell_bar_button_nln" />
+            <Button android:textSize="@dimen/upsell_bar_button_font_size_adjusted" android:id="@id/upsell_bar_ku_button" android:visibility="gone" style="@style/upsell_bar_ku_button_nln" />
+            <Button android:textSize="@dimen/upsell_bar_button_font_size_adjusted" android:id="@id/upsell_bar_buy_button" android:visibility="gone" style="@style/upsell_bar_buy_button_nln" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/upsell_bar_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/upsell_bar_progress_text" style="@style/upsell_bar_text_progress_nln" />
+            <ProgressBar android:id="@id/upsell_bar_progress_bar" android:layout_width="@dimen/progress_bar_width_nln" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

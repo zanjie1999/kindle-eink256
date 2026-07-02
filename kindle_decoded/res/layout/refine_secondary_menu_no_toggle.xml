@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/filter_root" android:background="?secondary_menu_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/refine_menu_side_padding" android:paddingEnd="@dimen/refine_menu_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/filter_menu" />
+    <Space android:id="@id/toggle_left_padding" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@id/menu_header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/library_subhead" android:layout_weight="1.0" style="?kindle_downloadedToggleButtonStyle" />
+    <ImageView android:layout_gravity="end" android:id="@id/create_collection_button" android:padding="@dimen/secondary_menu_icon_padding" android:visibility="gone" android:layout_width="@dimen/secondary_menu_icon_size" android:layout_height="@dimen/secondary_menu_icon_size" android:src="?add_to_collection_icon" android:contentDescription="@string/create_new_collection" />
+    <include layout="@layout/sort_menu" />
+</LinearLayout>

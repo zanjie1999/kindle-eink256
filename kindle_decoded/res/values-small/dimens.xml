@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="word_wise_card_footer_text_fixed_size">15.0dip</dimen>
+    <dimen name="word_wise_card_middle_text_size">14.0dip</dimen>
+    <dimen name="word_wise_slider_container_width">320.0dip</dimen>
+    <dimen name="word_wise_slider_padding">3.0dip</dimen>
+</resources>

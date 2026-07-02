@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pkg="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/xray_inline_progress" />
+    <include layout="@layout/xray_inline_error" />
+    <RelativeLayout android:id="@id/xray_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.xray.ui.widget.TimelineSeekBar android:id="@id/xray_seek_bar" android:paddingLeft="@dimen/xray_padding_seek_bar_gutter" android:paddingTop="@dimen/xray_padding_seek_bar_top" android:paddingRight="@dimen/xray_padding_seek_bar_gutter" android:paddingBottom="@dimen/xray_padding_timeline_seek_bar_bottom" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xray_padding_timeline_seek_bar_chapter_overlap" />
+        <TextView android:textAppearance="@style/xray_amazon_text_light_regular" android:ellipsize="end" android:gravity="center" android:id="@id/xray_chapter" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/xray_size_chapter_height" android:layout_marginLeft="@dimen/xray_padding_gutter" android:layout_marginRight="@dimen/xray_padding_gutter" android:lines="1" android:layout_below="@id/xray_seek_bar" />
+        <com.amazon.xray.ui.widget.CardCarousel android:id="@id/xray_excerpt_cards" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/xray_carousel_context_footer" android:layout_below="@id/xray_chapter" />
+        <FrameLayout android:id="@id/xray_carousel_context_footer" android:layout_width="fill_parent" android:layout_height="@dimen/xray_size_carousel_context_footer_height" android:layout_marginLeft="@dimen/xray_padding_related_entity_gutter" android:layout_marginTop="@dimen/xray_padding_carousel_context_top" android:layout_marginRight="@dimen/xray_padding_related_entity_gutter" android:layout_marginBottom="@dimen/xray_padding_carousel_context_bottom" android:layout_alignParentBottom="true">
+            <com.amazon.xray.ui.widget.RelatedEntitySentenceView android:id="@id/xray_related_entities" android:layout_width="fill_parent" android:layout_height="fill_parent" pkg:xray_max_rows="@integer/xray_related_entity_max_lines" />
+            <com.amazon.xray.ui.widget.EnhancedTextView android:textAppearance="@style/xray_amazon_text_light_regular" android:id="@id/xray_image_caption" android:background="@drawable/bg_xray_borderless_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/xray_padding_related_entity_button_top" android:lines="@integer/xray_card_caption_max_lines" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

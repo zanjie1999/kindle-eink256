@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?lib_menu_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/refine_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/refine_menu_header_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:layout_gravity="start" android:id="@id/refine_menu_header" android:text="@string/library_filter" android:contentDescription="@string/lib_menu_filter_header_description" style="@style/bottom_sheet_menu_header" />
+            <Space android:layout_gravity="center" android:id="@id/padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/menu_close_icon" android:padding="@dimen/lib_popup_menu_padding" android:visibility="gone" android:layout_width="@dimen/lib_popup_menu_layout_height" android:layout_height="@dimen/lib_popup_menu_layout_height" android:src="?top_bar_close_icon" android:contentDescription="@string/close_menu" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/lib_refine_menu_clear_filters" />
+</LinearLayout>

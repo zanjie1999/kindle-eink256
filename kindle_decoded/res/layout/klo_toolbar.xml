@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.appcompat.widget.Toolbar android:id="@id/klo_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</merge>

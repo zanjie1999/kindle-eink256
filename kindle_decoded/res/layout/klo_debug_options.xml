@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.klo.debug.KLODebugOptions android:orientation="vertical" android:background="@drawable/klo_feedback_background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/klo_debug_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/klo_debug_controls_title" />
+    <Button android:id="@id/klo_debug_button_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.amazon.klo.debug.KLODebugOptions>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.bookwizard.ui.view.ShovelerView android:orientation="vertical" android:paddingBottom="@dimen/bookwizard_ratings_shoveler_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bookwizard_shoveler_header_text" />
+    <com.amazon.bookwizard.ui.view.HorizontalListView android:id="@id/content_pane" android:layout_width="fill_parent" android:layout_height="@dimen/bookwizard_ratings_book_height" android:fillViewport="true" />
+</com.amazon.bookwizard.ui.view.ShovelerView>

@@ -1,0 +1,54 @@
+.class public final Lcom/amazon/whispersync/org/codehaus/jackson/map/util/ArrayBuilders$FloatBuilder;
+.super Lcom/amazon/whispersync/org/codehaus/jackson/map/util/PrimitiveArrayBuilder;
+.source "ArrayBuilders.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/whispersync/org/codehaus/jackson/map/util/ArrayBuilders;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "FloatBuilder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/amazon/whispersync/org/codehaus/jackson/map/util/PrimitiveArrayBuilder<",
+        "[F>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 127
+    invoke-direct {p0}, Lcom/amazon/whispersync/org/codehaus/jackson/map/util/PrimitiveArrayBuilder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic _constructArray(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 124
+    invoke-virtual {p0, p1}, Lcom/amazon/whispersync/org/codehaus/jackson/map/util/ArrayBuilders$FloatBuilder;->_constructArray(I)[F
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final _constructArray(I)[F
+    .locals 0
+
+    .line 129
+    new-array p1, p1, [F
+
+    return-object p1
+.end method

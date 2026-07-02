@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.viewoptions.ui.AaSettingSideSheet android:orientation="vertical" android:id="@id/aa_menu_v2_side_sheet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/aa_menu_v2_side_sheet_shadow" android:background="@drawable/aa_menu_v2_side_sheet_shadow" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/aa_menu_v2_side_sheet_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.kindle.viewoptions.ui.AaSettingsViewContent android:orientation="vertical" android:id="@id/aa_menu_v2_setting_content" android:background="?aaMenuV2BackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundDimEnabled="false" />
+        <com.amazon.kindle.viewoptions.ui.AaSettingBrightnessBarContainer android:orientation="vertical" android:id="@id/aa_menu_v2_brightness_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.amazon.kindle.viewoptions.ui.AaSettingSideSheet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?core_primary" android:layout_width="fill_parent" android:layout_height="@dimen/kfc_search_history_item_height">
+        <TextView android:id="@id/kfc_search_history_hint" android:text="@string/kfc_search_history_title" android:layout_centerVertical="true" android:paddingStart="@dimen/kfc_search_history_title_padding" style="@style/kfc_search_history_text" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/kfc_search_history_clear" android:background="?selection_state_button_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/kfc_search_history_clear_img_start" android:paddingEnd="@dimen/kfc_search_history_clear_padding" android:layout_marginEnd="@dimen/kfc_search_history_clear_padding" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="@dimen/kfc_search_history_clear_img_size" android:layout_height="@dimen/kfc_search_history_clear_img_size" android:src="?search_history_widget_clear_icon" />
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:text="@string/kfc_search_history_clear" android:layout_marginStart="@dimen/kfc_search_history_clear_padding" style="@style/kfc_search_history_clear_text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="@dimen/kfc_search_history_border_height" />
+    <GridView android:id="@id/kfc_search_history_list" android:paddingTop="@dimen/kfc_search_history_item_vertical_space" android:paddingBottom="@dimen/kfc_search_history_item_vertical_space" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/kfc_search_history_item_nopadding" android:verticalSpacing="@dimen/kfc_search_history_item_vertical_space" android:stretchMode="columnWidth" android:numColumns="@integer/kfc_search_history_column_num" android:paddingStart="@dimen/kfc_search_history_title_padding" android:paddingEnd="@dimen/kfc_search_history_title_padding" />
+    <TextView android:textAppearance="@style/kfc_search_history_no_result_text" android:gravity="center" android:id="@id/kfc_no_search_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/kfc_search_history_item_height" android:layout_marginTop="@dimen/kfc_search_history_item_vertical_space" android:text="@string/search_history_no_results" />
+</LinearLayout>

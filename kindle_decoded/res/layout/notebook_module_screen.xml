@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.notebook.module.NotebookScreenLayout android:id="@id/notebook_module_screen" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/notebook_module_screen_header_and_list" android:padding="@dimen/notebook_list_padding" style="@style/fill">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/selected_filter_bar" android:background="#ffe0e0e0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingStart="30.0dip" android:paddingEnd="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/selected_filter_names" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="36.0dip" android:maxLines="2" android:layout_weight="1.0" android:importantForAccessibility="yes" android:fontFamily="@string/notebook_module_font_family" style="@style/TextAppearance.AppCompat.Body1" />
+            <ImageButton android:id="@id/selected_filters_close_btn" android:background="@color/transparent" android:focusable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:contentDescription="Clear filter" />
+        </LinearLayout>
+        <com.amazon.notebook.module.NotebookScreenListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@id/list_module_view" android:scrollbars="vertical" android:layout_weight="1.0" android:smoothScrollbar="true" android:fadeScrollbars="false" style="@style/notes_list" />
+        <TextView android:gravity="center" android:id="@id/zero_notes_module_notification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_notes_notification_text" style="@style/zero_notes_notification" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/notebook_module_spinner" android:focusable="false" android:clickable="false" style="@style/fill">
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_module_spinner" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/notebook_progress_bar" />
+    </FrameLayout>
+</com.amazon.notebook.module.NotebookScreenLayout>

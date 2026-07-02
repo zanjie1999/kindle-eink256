@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fc="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/front_layout" android:background="@color/fc_deck_overview_flashcard_frontside_background" android:padding="@dimen/fc_edit_card_flashcard_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.amazon.kedu.flashcards.views.CardSideView android:id="@id/front_side" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" fc:layoutResource="@layout/fc_edit_card_side_front_view" fc:side="front" />
+            <Button android:id="@id/flip_sides_button" android:padding="@dimen/fc_edit_card_flashcard_side_content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_edit_card_flip_sides_button_text" android:layout_below="@id/front_side" android:layout_alignParentLeft="true" android:onClick="onFlipSidesClicked" style="@style/fc_card_side_meta_label.button" />
+        </RelativeLayout>
+        <com.amazon.kedu.flashcards.views.CardSideView android:id="@id/back_side" android:background="@color/fc_deck_overview_flashcard_backside_background" android:padding="@dimen/fc_edit_card_flashcard_side_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/front_layout" fc:layoutResource="@layout/fc_edit_card_side_back_view" fc:side="back" />
+    </RelativeLayout>
+</ScrollView>

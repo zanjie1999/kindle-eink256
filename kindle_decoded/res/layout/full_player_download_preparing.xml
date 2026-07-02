@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/full_player_download_preparing_layout" android:background="@color/player_view_cover_art_overlay_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/download_audio_initialize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/full_player_preparing_spinner" android:focusable="false" android:layout_width="@dimen/full_player_progress_bar_size" android:layout_height="@dimen/full_player_progress_bar_size" android:indeterminate="true" android:indeterminateDrawable="@drawable/full_player_download_spinner" android:layout_centerHorizontal="true" style="?android:progressBarStyle" />
+    <TextView android:textSize="@dimen/main_player_download_text_size" android:textColor="@color/player_white_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/full_player_cover_art_text_margin" android:text="@string/player_preparing_download" android:layout_below="@id/full_player_preparing_spinner" android:layout_centerHorizontal="true" />
+</RelativeLayout>

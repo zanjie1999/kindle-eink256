@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="display_counter_text_size">14.0sp</dimen>
+    <dimen name="fc_nln_toolbar_height">64.0dip</dimen>
+    <dimen name="klo_nln_toolbar_height">64.0dip</dimen>
+    <dimen name="nln_additional_control_width">300.0dip</dimen>
+    <dimen name="nln_breadcrumb_text_size">15.0dip</dimen>
+    <dimen name="nln_breadcrumb_width">148.0dip</dimen>
+    <dimen name="nln_location_seeker_height">64.0dip</dimen>
+    <dimen name="nln_location_seeker_height_doubled">128.0dip</dimen>
+    <dimen name="nln_page_badge_size">21.0dip</dimen>
+    <dimen name="nln_page_container_text_size">13.0sp</dimen>
+    <dimen name="nln_toolbar_height">64.0dip</dimen>
+    <dimen name="page_flip_location_label_text_size">15.0sp</dimen>
+    <dimen name="page_flip_title_size">21.0sp</dimen>
+    <dimen name="nln_text_container_height">32.0dip</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bookwizard_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bookwizard_footer" layout="@layout/bookwizard_footer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bookwizard_header" android:background="@color/transparent" android:paddingLeft="@dimen/bookwizard_header_layout_padding_horizontal" android:paddingTop="@dimen/bookwizard_header_layout_padding_vertical" android:paddingRight="@dimen/bookwizard_header_layout_padding_horizontal" android:paddingBottom="@dimen/bookwizard_header_layout_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:layout_gravity="start" android:id="@id/header_step_text" android:layout_marginTop="@dimen/bookwizard_header_margin" style="@style/bookwizard_step_text" />
+        <ImageView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bookwizard_payoff_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bookwizard_ku_books_logo_vertical_margin" android:layout_marginBottom="@dimen/bookwizard_ku_books_logo_vertical_margin" />
+        <TextView android:textSize="@dimen/bookwizard_header_first_line_font_size" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bookwizard_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="@integer/bookwizard_ku_books_header_line_count" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bookwizard_footer" android:layout_below="@id/bookwizard_header">
+        <include layout="@layout/bookwizard_spinner" />
+        <GridView android:id="@id/bookwizard_payoff_grid" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:horizontalSpacing="@dimen/bookwizard_ku_books_grid_spacing_horizontal" android:verticalSpacing="@dimen/bookwizard_ku_books_grid_spacing_vertical" android:stretchMode="columnWidth" android:columnWidth="@dimen/bookwizard_grid_cover_width" android:numColumns="auto_fit" />
+    </RelativeLayout>
+</RelativeLayout>

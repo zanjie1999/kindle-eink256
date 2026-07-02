@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/custom_color_box" android:padding="@dimen/default_padding" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="Letterbox color (A R G B):" style="@style/wrap" />
+    <LinearLayout android:orientation="horizontal" style="@style/wrap">
+        <EditText android:id="@id/maskAText" android:padding="@dimen/default_padding" android:hint="A" android:selectAllOnFocus="true" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/maskRText" android:padding="@dimen/default_padding" android:hint="R" android:selectAllOnFocus="true" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/maskGText" android:padding="@dimen/default_padding" android:hint="G" android:selectAllOnFocus="true" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+        <EditText android:id="@id/maskBText" android:padding="@dimen/default_padding" android:hint="B" android:selectAllOnFocus="true" android:layout_weight="0.25" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/wrap">
+        <TextView android:text="Panel transition duration(ms): " style="@style/wrap" />
+        <EditText android:id="@id/animationDurationText" android:paddingTop="@dimen/default_padding" android:selectAllOnFocus="true" android:inputType="number" android:imeOptions="actionGo" style="@style/wrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/wrap">
+        <CheckBox android:id="@id/fitToWidthCheck" android:paddingTop="@dimen/default_padding" android:text="Fit to width" android:layout_weight="0.5" style="@style/wrap" />
+        <CheckBox android:id="@id/twoPageUpCheck" android:paddingTop="@dimen/default_padding" android:text="Two page up" android:layout_weight="0.5" style="@style/wrap" />
+    </LinearLayout>
+    <TextView android:text="Show full page on..." style="@style/fill_width" />
+    <LinearLayout android:orientation="horizontal" style="@style/wrap">
+        <CheckBox android:id="@id/fullpageOnEnterCheck" android:paddingTop="@dimen/default_padding" android:text="Enter" android:layout_weight="0.5" style="@style/wrap" />
+        <CheckBox android:id="@id/fullpageOnExitCheck" android:paddingTop="@dimen/default_padding" android:text="Exit" android:layout_weight="0.5" style="@style/wrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/wrap">
+        <CheckBox android:id="@id/verticalScrollCheck" android:paddingTop="@dimen/default_padding" android:text="Vertical Scroll" android:layout_weight="0.5" style="@style/wrap" />
+        <CheckBox android:id="@id/autoRotateCheck" android:paddingTop="@dimen/default_padding" android:text="Auto Rotate" android:layout_weight="0.5" style="@style/wrap" />
+    </LinearLayout>
+</LinearLayout>

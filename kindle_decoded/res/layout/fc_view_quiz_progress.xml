@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/negative_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" style="@style/fc_quiz_progress_bar.negative" />
+    <TextView android:id="@id/positive_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_toRightOf="@id/negative_bar" android:importantForAccessibility="no" android:layout_toEndOf="@id/negative_bar" style="@style/fc_quiz_progress_bar.positive" />
+</merge>

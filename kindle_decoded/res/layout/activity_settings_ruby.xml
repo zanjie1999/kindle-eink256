@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?kcu_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.versioning.reader.ui.views.KCUToolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/update_toolbar" android:background="?kcu_toolbar_background_color" android:padding="@dimen/kcu_zero_padding" android:layout_width="fill_parent" android:layout_height="@dimen/kcu_activity_toolbar_height">
+        <com.amazon.versioning.reader.ui.views.KCUToolbarTextView android:textColor="?title_text_color" android:gravity="center|left" android:id="@id/update_toolbar_title" android:padding="@dimen/kcu_zero_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/kcu_zero_padding" />
+    </com.amazon.versioning.reader.ui.views.KCUToolbar>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/settings_view_frame" android:padding="@dimen/kcu_default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/abu_setting_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/kcu_setting_item_vertical_padding" android:paddingBottom="@dimen/kcu_setting_item_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.amazon.versioning.reader.ui.views.KCUSettingItemTitleTextView android:textColor="?setting_text_title_color" android:id="@id/tv_updates_enabled_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_update_settings_large_text" />
+                    <com.amazon.versioning.reader.ui.views.KCUSettingItemInfoTextView android:textColor="?setting_text_info_color" android:id="@id/tv_updates_enabled_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_update_settings_subtext_on_fragment" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatCheckedTextView android:gravity="bottom" android:id="@id/cb_updates_enabled" android:paddingTop="@dimen/kcu_setting_item_vertical_padding" android:paddingBottom="@dimen/kcu_setting_item_vertical_padding" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/kcu_setting_checkbox_height" android:checkMark="?kcu_ruby_checkbox" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_progress_frame" android:padding="@dimen/kcu_default_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/initial_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="?kcu_loading_spinner" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

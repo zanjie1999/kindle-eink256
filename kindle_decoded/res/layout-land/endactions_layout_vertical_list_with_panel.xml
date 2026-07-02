@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/anyactions_header" layout="@layout/anyactions_header_bar" />
+    <FrameLayout android:id="@id/endactions_header_bottom_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/anyactions_header">
+        <include layout="@layout/endactions_list_divider" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/endactions_panel_widget_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/endactions_header_bottom_divider" android:layout_alignParentLeft="true" />
+    <ScrollView android:id="@id/endactions_widget_scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/endactions_panel_widget_container" android:layout_below="@id/endactions_header_bottom_divider" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/endactions_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

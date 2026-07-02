@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?library_background_color" android:paddingTop="@dimen/account_confirmation_top_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:paddingLeft="@dimen/account_confirmation_logo_padding" android:paddingRight="@dimen/account_confirmation_logo_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?confirmation_page_logo" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="3.0" layout="@layout/account_confirmation_content" />
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/account_confirmation_tos" />
+    </LinearLayout>
+</LinearLayout>

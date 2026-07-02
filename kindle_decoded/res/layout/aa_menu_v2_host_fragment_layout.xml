@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.viewoptions.ui.AaSettingsViewPager android:id="@id/aa_menu_v2_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amazon.kindle.viewoptions.ui.AaSettingTabLayout android:id="@id/aa_menu_v2_tab_layout" android:background="@drawable/aa_menu_v2_title_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/aa_menu_v2_tab_layout_height" app:tabMinWidth="0.0dip" app:tabRippleColor="@null" app:tabSelectedTextColor="?aaMenuV2SelectedBlueColor" style="@style/AaMenuV2BottomSheetTabLayoutStyle" />
+</com.amazon.kindle.viewoptions.ui.AaSettingsViewPager>

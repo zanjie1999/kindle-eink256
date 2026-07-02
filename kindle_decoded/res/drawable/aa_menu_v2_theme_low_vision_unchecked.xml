@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="58.0dip" android:width="58.0dip" android:viewportWidth="58.0" android:viewportHeight="58.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?aaMenuV2RadioOptionBackgroundColor" android:pathData="M13.5,7.5L44.5,7.5A6,6 0,0 1,50.5 13.5L50.5,44.5A6,6 0,0 1,44.5 50.5L13.5,50.5A6,6 0,0 1,7.5 44.5L7.5,13.5A6,6 0,0 1,13.5 7.5z" android:strokeColor="?aaMenuV2RadioOptionBorderColor" android:strokeWidth="1.0" />
+    <path android:fillColor="?aaMenuV2RadioOptionContentColor" android:pathData="M29.5,20C23.3636,20 18.1232,23.9393 16,29.5C18.1232,35.0607 23.3636,39 29.5,39C35.6364,39 40.8768,35.0607 43,29.5C40.8768,23.9393 35.6364,20 29.5,20ZM29.5,35.8333C26.1127,35.8333 23.3636,32.996 23.3636,29.5C23.3636,26.004 26.1127,23.1667 29.5,23.1667C32.8873,23.1667 35.6364,26.004 35.6364,29.5C35.6364,32.996 32.8873,35.8333 29.5,35.8333ZM29.5,25.7C27.4627,25.7 25.8182,27.3973 25.8182,29.5C25.8182,31.6027 27.4627,33.3 29.5,33.3C31.5373,33.3 33.1818,31.6027 33.1818,29.5C33.1818,27.3973 31.5373,25.7 29.5,25.7Z" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.0" />
+</vector>

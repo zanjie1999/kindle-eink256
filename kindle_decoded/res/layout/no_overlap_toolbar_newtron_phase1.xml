@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.NoOverlapToolbar android:id="@id/book_toolbar" style="@style/Reader.Toolbar.NewtronPhase1.Newsstand"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

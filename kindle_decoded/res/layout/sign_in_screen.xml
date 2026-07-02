@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/sign_in_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:id="@id/sign_in_headline" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_in_prompt" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <EditText android:id="@id/sign_in_email" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_prompt" android:layout_below="@id/sign_in_headline" android:inputType="textEmailAddress" />
+    <EditText android:id="@id/sign_in_password" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password_prompt" android:layout_below="@id/sign_in_email" android:inputType="textPassword" />
+    <RelativeLayout android:id="@id/sign_in_controls" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/welcome_default_margin" android:layout_marginBottom="@dimen/welcome_default_margin" android:layout_below="@id/sign_in_password">
+        <TextView android:id="@id/sign_in_forgot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_password" android:layout_alignParentLeft="true" style="@style/sign_in_link_font" />
+        <TextView android:id="@id/sign_in_create_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/welcome_default_margin" android:text="@string/create_account_link" android:layout_below="@id/sign_in_forgot" android:layout_alignParentLeft="true" style="@style/sign_in_link_font" />
+        <TextView android:id="@id/sign_in_button" android:minWidth="100.0dip" android:text="@string/sign_in" android:layout_alignParentRight="true" style="@style/welcome_sign_in_button" />
+    </RelativeLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/license_agreement" android:paddingTop="@dimen/welcome_default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/license_agreement" android:layout_below="@id/sign_in_controls" style="@style/sign_in_link_font" />
+</RelativeLayout>

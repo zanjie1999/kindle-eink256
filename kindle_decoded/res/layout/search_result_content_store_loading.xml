@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/search_result_stub" android:inflatedId="@id/search_result_store_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/search_result_divider" android:background="?search_results_divider" android:layout_width="fill_parent" android:layout_height="@dimen/search_result_section_separator_height" android:layout_marginLeft="@dimen/search_screen_side_padding" android:layout_marginRight="@dimen/search_screen_side_padding" />
+</LinearLayout>

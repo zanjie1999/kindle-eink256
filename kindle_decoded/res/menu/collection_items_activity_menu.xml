@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?edit_icon" android:id="@id/edit_button" android:menuCategory="container" android:title="@string/edit_collection_description" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?add_to_collection_icon" android:id="@id/add_to_collection" android:menuCategory="container" android:title="@string/add_to_collection_description" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?actionbar_download_icon" android:id="@id/download_collection" android:menuCategory="container" android:title="@string/download_collection_prompt" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?library_view_sort" android:id="@id/lib_menu_view_sort" android:menuCategory="container" android:title="@string/lib_menu_view_sort_description" android:showAsAction="always" app:showAsAction="always" />
+</menu>

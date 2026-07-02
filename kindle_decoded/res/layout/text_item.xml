@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.setting.item.views.SATextItemView android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ruby_simple_two_lines_list_item_min_height" style="@style/more_menu_item_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/item_subtitle" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/SimpleTwoLinesItemText.SecondLine.Ruby" />
+        </LinearLayout>
+    </LinearLayout>
+</com.amazon.kindle.setting.item.views.SATextItemView>

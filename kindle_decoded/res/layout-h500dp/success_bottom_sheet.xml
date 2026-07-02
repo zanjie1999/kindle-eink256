@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" style="@style/Background.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kindles_checked" android:importantForAccessibility="no" />
+    <com.amazon.kindle.ffs.view.BookerlyTextView android:id="@id/success_bottom_sheet_header" android:text="@string/ffs_ugs_success_title" style="@style/Text.Header" />
+    <com.amazon.kindle.ffs.view.BookerlyTextView android:id="@id/success_bottom_sheet_body" android:text="@string/ffs_ugs_success_text" style="@style/Text.CenteredBody" />
+    <com.amazon.kindle.ffs.view.EmberButton android:id="@id/success_bottom_sheet_positive_button" android:text="@string/ffs_ugs_finish_text" style="@style/FfsButton.Primary" />
+</LinearLayout>

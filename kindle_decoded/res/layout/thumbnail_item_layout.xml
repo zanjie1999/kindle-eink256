@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.android.widget.ThumbnailItem android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/item1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <view android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" class="com.amazon.android.widget.ThumbnailImageView" />
+            <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/thumbnailbar_pagenumber_text" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/left_page_left_bookmark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bookmark_thumbnail_gallery_icon_margin" android:src="@drawable/ic_bookmark_list_amzn" />
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/left_page_right_bookmark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bookmark_thumbnail_gallery_icon_margin" android:src="@drawable/ic_bookmark_list_amzn" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <view android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" class="com.amazon.android.widget.ThumbnailImageView" />
+            <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/thumbnailbar_pagenumber_text" />
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/right_page_right_bookmark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bookmark_thumbnail_gallery_icon_margin" android:src="@drawable/ic_bookmark_list_amzn" />
+        </FrameLayout>
+    </TableRow>
+</com.amazon.android.widget.ThumbnailItem>

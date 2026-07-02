@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionaries>
+    <Dictionary>
+        <Title>Duden Deutsches Universalwörterbuch</Title>
+        <ASIN>B003YL4LVQ</ASIN>
+        <Language>de</Language>
+        <SubLanguage>de</SubLanguage>
+        <Marketplace>DE</Marketplace>
+        <LanguageString>Deutsch</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Oxford Dictionary of English</Title>
+        <ASIN>B003WUYRGI</ASIN>
+        <Language>en</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>UK</Marketplace>
+        <LanguageString>English (UK)</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>The New Oxford American Dictionary</Title>
+        <ASIN>B003ODIZL6</ASIN>
+        <Language>en</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>US</Marketplace>
+        <LanguageString>English (US)</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>el Diccionario de la lengua española</Title>
+        <ASIN>B005F12G7O</ASIN>
+        <Language>es</Language>
+        <SubLanguage>es</SubLanguage>
+        <Marketplace>ES</Marketplace>
+        <LanguageString>Español</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Dictionnaire français de définitions</Title>
+        <ASIN>B005F12G6U</ASIN>
+        <Language>fr</Language>
+        <SubLanguage>fr</SubLanguage>
+        <Marketplace>FR</Marketplace>
+        <LanguageString>Français</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Vocabolario della Lingua Italiana</Title>
+        <ASIN>B005F3XOMI</ASIN>
+        <Language>it</Language>
+        <SubLanguage>it</SubLanguage>
+        <Marketplace>IT</Marketplace>
+        <LanguageString>Italiana</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Dicionário Priberam da Língua Portuguesa</Title>
+        <ASIN>B005EOCESI</ASIN>
+        <Language>pt</Language>
+        <SubLanguage>pt</SubLanguage>
+        <Marketplace>BR</Marketplace>
+        <LanguageString>Português</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Priberam's Portuguese-English Dictionary</Title>
+        <ASIN>B00A8QWA8Q</ASIN>
+        <Language>pt</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>BR</Marketplace>
+        <LanguageString>Português-Inglês</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Dicionário Priberam de Inglês-Português</Title>
+        <ASIN>B00A8QWA7W</ASIN>
+        <Language>en</Language>
+        <SubLanguage>pt</SubLanguage>
+        <Marketplace>BR</Marketplace>
+        <LanguageString>Inglês-Português</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>株式会社小学館</Title>
+        <ASIN>B005FNK020</ASIN>
+        <Language>ja</Language>
+        <SubLanguage>ja</SubLanguage>
+        <Marketplace>JP</Marketplace>
+        <LanguageString>日本語 - 日本語</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>プログレッシブ英和中辞典（4版）</Title>
+        <ASIN>B005FNK002</ASIN>
+        <Language>en</Language>
+        <SubLanguage>ja</SubLanguage>
+        <Marketplace>JP</Marketplace>
+        <LanguageString>英語 - 日本語</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>プログレッシブ和英中辞典第３版</Title>
+        <ASIN>B00DQB1G3K</ASIN>
+        <Language>ja</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>JP</Marketplace>
+        <LanguageString>日本語 - 英語</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代汉语词典</Title>
+        <ASIN>B00AZOHEFU</ASIN>
+        <Language>zh</Language>
+        <SubLanguage>zh</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>中文 - 中文</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代英汉词典</Title>
+        <ASIN>B007Z8VKSQ</ASIN>
+        <Language>en</Language>
+        <SubLanguage>zh</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>英语 - 中文</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>现代汉英词典</Title>
+        <ASIN>B00AZOHEGE</ASIN>
+        <Language>zh</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>CN</Marketplace>
+        <LanguageString>中文 - 英语</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Groot woordenboek Engels-Nederlands</Title>
+        <ASIN>B00KAJJRMI</ASIN>
+        <Language>en</Language>
+        <SubLanguage>nl</SubLanguage>
+        <Marketplace>NL</Marketplace>
+        <LanguageString>Engels-Nederlands</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Groot woordenboek Nederlands-Engels</Title>
+        <ASIN>B00KAJJRI2</ASIN>
+        <Language>nl</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>NL</Marketplace>
+        <LanguageString>Nederlands-Engels</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Groot woordenboek hedendaags Nederlands</Title>
+        <ASIN>B00KAJJRIW</ASIN>
+        <Language>nl</Language>
+        <SubLanguage>nl</SubLanguage>
+        <Marketplace>NL</Marketplace>
+        <LanguageString>Nederlands</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Rajpal Hindi Shabdkosh</Title>
+        <ASIN>B06X1B7X4V</ASIN>
+        <Language>hi</Language>
+        <SubLanguage>hi</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Hindi</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Prabhat Prakashan advanced Hindi-English dictionary</Title>
+        <ASIN>B06W9KK63F</ASIN>
+        <Language>hi</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Hindi-English</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Prabhat Prakashan advanced English-Hindi dictionary</Title>
+        <ASIN>B06WGQZXQK</ASIN>
+        <Language>en</Language>
+        <SubLanguage>hi</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>English-Hindi</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Karky Tamil-Tamil  dictionary</Title>
+        <ASIN>B06WD4ZVPS</ASIN>
+        <Language>ta</Language>
+        <SubLanguage>ta</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Tamil</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Karky Tamil-English  dictionary</Title>
+        <ASIN>B06X3WWDDP</ASIN>
+        <Language>ta</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Tamil-English</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Karky English-Tamil  dictionary</Title>
+        <ASIN>B06VWDXNGN</ASIN>
+        <Language>en</Language>
+        <SubLanguage>ta</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>English-Tamil</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Gujarati Monolingual Dictionary by Oza and Bhatt</Title>
+        <ASIN>B06X3WX1GR</ASIN>
+        <Language>gu</Language>
+        <SubLanguage>gu</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Gujarati</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Gujarati – English Dictionary By Oza and Bhatt</Title>
+        <ASIN>B06WLMBNTG</ASIN>
+        <Language>gu</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Gujarati-English</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>English - Gujarati Dictionary by Oza and Bhatt</Title>
+        <ASIN>B06X6HVXF9</ASIN>
+        <Language>en</Language>
+        <SubLanguage>gu</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>English-Gujarati</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Megdap Marathi  dictionary</Title>
+        <ASIN>B06X3WWDDS</ASIN>
+        <Language>mr</Language>
+        <SubLanguage>mr</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Marathi</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Megdap Marathi-English dictionary</Title>
+        <ASIN>B06WP6LM97</ASIN>
+        <Language>mr</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Marathi-English</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Megdap English-Marathi dictionary</Title>
+        <ASIN>B06WRSQK1W</ASIN>
+        <Language>en</Language>
+        <SubLanguage>mr</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>English-Marathi</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Sabdatharavali</Title>
+        <ASIN>B06VVXNLGY</ASIN>
+        <Language>ml</Language>
+        <SubLanguage>ml</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Malayalam</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Arabic Dictionary</Title>
+        <ASIN>B076VBJ9FG</ASIN>
+        <Language>ar</Language>
+        <SubLanguage>ar</SubLanguage>
+        <Marketplace>AR</Marketplace>
+        <LanguageString>العربية</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>Arabic - English dictionary</Title>
+        <ASIN>B076V21W3S</ASIN>
+        <Language>ar</Language>
+        <SubLanguage>en</SubLanguage>
+        <Marketplace>IN</Marketplace>
+        <LanguageString>Arabic-English</LanguageString>
+    </Dictionary>
+    <Dictionary>
+        <Title>English - Arabic Dictionary</Title>
+        <ASIN>B076J26GW2</ASIN>
+        <Language>en</Language>
+        <SubLanguage>ar</SubLanguage>
+        <Marketplace>EN</Marketplace>
+        <LanguageString>English-Arabic</LanguageString>
+    </Dictionary>
+</Dictionaries>

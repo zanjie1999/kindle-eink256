@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/upsell_player_layout" android:layout_width="fill_parent" android:layout_height="@dimen/upsell_player_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/upsell_player_pre_purchase" />
+    <include layout="@layout/upsell_player_delay_purchase_queued" />
+    <include layout="@layout/upsell_player_delay_purchase_processing" />
+    <include layout="@layout/upsell_player_processing_purchase" />
+    <include layout="@layout/upsell_player_purchase_canceled" />
+    <include layout="@layout/upsell_player_purchase_error" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.speedreading.doubletime.DoubletimeHeaderView android:orientation="vertical" android:background="@drawable/dt_reader_top_chrome_white_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dt_header_height" android:layout_marginTop="@dimen/status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/dt_header_text_size" android:layout_gravity="start" android:id="@id/doubletime_quit_button" android:background="?android:selectableItemBackground" android:padding="@dimen/dt_background_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_app_pretty_name" android:drawableLeft="@drawable/dt_arrow_back_full" android:contentDescription="@string/dt_close_button_desc" android:fontFamily="Amazon Ember Light" style="@android:style/Widget.TextView" />
+</com.amazon.kindle.speedreading.doubletime.DoubletimeHeaderView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout android:orientation="horizontal" style="@style/ReaderStyle.Navigation.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/reader_nav_panel_item_text" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ReaderStyle.Navigation.Item.Label" />
+    <TextView android:textSize="@dimen/reader_nav_panel_secondary_text_size" android:textColor="?readerRowPageNumberTextColor" android:id="@id/reader_nav_panel_item_page_label" android:layout_width="wrap_content" style="@style/ReaderStyle.Navigation.Item.Label" />
+</com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout>

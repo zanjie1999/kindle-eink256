@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kedu.flashcards.views.ReaderContentEditText android:id="@id/flashcard_back_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textDirection="firstStrong" style="@style/fc_edit_card_side_edit_text.back"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

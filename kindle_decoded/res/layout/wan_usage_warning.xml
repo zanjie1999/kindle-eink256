@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/translation_alert_dialog_padding" android:paddingTop="@dimen/translation_alert_dialog_padding" android:paddingRight="@dimen/translation_alert_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/translation_output_text_size" android:id="@id/translation_message_text" android:paddingBottom="@dimen/translation_alert_dialog_padding" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/translation_speech_wan_prompt_data" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/dont_show_checkbox" android:paddingLeft="@dimen/translation_alert_dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/translation_speech_wan_show" />
+</LinearLayout>

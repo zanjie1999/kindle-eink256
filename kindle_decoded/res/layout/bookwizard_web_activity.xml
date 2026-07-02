@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/loading_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/bookwizard_progress_spinner" android:layout_width="@dimen/bookwizard_loading_progressbar_size" android:layout_height="@dimen/bookwizard_loading_progressbar_size" android:layout_centerInParent="true" style="@style/EinkWidget.ProgressBar">
+            <tag android:value="@string/DISPLAY_MODE_PROGRESS_BAR_INDEFINITE" android:id="@id/E3OS_DISPLAY_MODE" />
+        </ProgressBar>
+        <TextView android:id="@id/bookwizard_loading_screen_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bookwizard_loading_text_horizontal_margin" android:layout_marginRight="@dimen/bookwizard_loading_text_horizontal_margin" android:layout_marginBottom="@dimen/bookwizard_loading_text_bottom" android:text="@string/bookwizard_loading_screen_text" android:layout_above="@id/bookwizard_progress_spinner" android:layout_centerHorizontal="true" style="@style/bookwizard_loading_screen_text" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/web_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sample_bar" style="@style/upsell_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/sample_bar_extend_button" android:visibility="visible" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upsell_bar_button_nln" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/sample_bar_extend_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@id/sample_bar_title" android:paddingRight="@dimen/sample_bar_padding" android:focusable="true" style="@style/upsell_bar_text_title_nln" />
+    </LinearLayout>
+</RelativeLayout>

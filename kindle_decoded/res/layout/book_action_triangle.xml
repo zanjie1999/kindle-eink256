@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/book_action_triangleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/resume_margin" android:layout_marginEnd="@dimen/resume_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/book_action_triangle" android:layout_width="@dimen/book_action_triangle_width" android:layout_height="@dimen/book_action_triangle_height" android:layout_marginTop="@dimen/book_action_triangle_margin_top" android:src="@drawable/book_action_triangle" />
+</FrameLayout>

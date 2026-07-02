@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/navigation_bar" android:background="?core_primary" android:layout_width="fill_parent" android:layout_height="@dimen/notification_navigation_bar_height" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" app:titleTextAppearance="@style/notification_cell_body" style="@style/notification_cell_footer">
+        <androidx.appcompat.widget.ActionBarContainer android:layout_gravity="left" android:id="@id/navigation_bar_back_button" android:clickable="true" android:layout_width="@dimen/notification_navigation_bar_icon_horizontal" android:layout_height="@dimen/notification_navigation_bar_icon_vertical" android:layout_marginLeft="@dimen/notification_navigation_bar_back_icon_padding_left" android:layout_marginRight="@dimen/notification_navigation_bar_back_icon_padding_right">
+            <ImageView android:id="@id/navigation_back_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?navigation_bar_back_button" android:scaleType="centerInside" android:contentDescription="@string/accessibility_tool_bar_back" />
+        </androidx.appcompat.widget.ActionBarContainer>
+        <ThemeTextView android:id="@id/notification_navigation_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_app_notifications_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAllCaps="true" style="@style/notification_cell_body" />
+        <androidx.appcompat.widget.ActionBarContainer android:layout_gravity="right" android:id="@id/navigation_bar_trash_button" android:clickable="true" android:layout_width="@dimen/notification_navigation_bar_icon_horizontal" android:layout_height="@dimen/notification_navigation_bar_icon_vertical" android:layout_marginRight="@dimen/notification_navigation_bar_trash_icon_padding_right">
+            <ImageView android:id="@id/navigation_trash_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?navigation_bar_trash_button" android:scaleType="centerInside" android:contentDescription="@string/notification_delete_all_confirmation_dialog_action_button" />
+        </androidx.appcompat.widget.ActionBarContainer>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:background="?notification_bar_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/notification_navigation_bar_border" />
+</LinearLayout>

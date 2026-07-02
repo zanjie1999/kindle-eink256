@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/enable_webview_debugging" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/use_gamma_endpoints" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/toggle_falkor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/app_expan_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AppExpan Debug Settings" />
+    <ToggleButton android:id="@id/dark_mode_phase_one" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/dark_mode_phase_two" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/dark_mode_phase_three" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

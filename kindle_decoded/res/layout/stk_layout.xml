@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/stkHeaderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/stk_header_include" layout="@layout/stk_action_bar" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/docInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/doc_info_include" layout="@layout/document_info" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/line_gradient1" android:background="@drawable/horizontal_line_gradient" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:id="@id/deviceOptionsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/device_options_include" layout="@layout/delivery_options" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/sendOptionsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/device_options_include" layout="@layout/send_options" />
+    </LinearLayout>
+</LinearLayout>

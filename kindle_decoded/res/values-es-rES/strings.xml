@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="could_not_write_to_storage_check_your_storage_media">No se pudo escribir en el almacenamiento externo.</string>
+    <string name="mlp_assist_downloads_toast">Toque Amazon_App.apk para instalar la app de Amazon para Android.</string>
+    <string name="mlp_assist_unknown_sources_toast">Baje hasta Fuentes desconocidas y toque la casilla.</string>
+    <string name="no_free_space_on_external_storage">No hay espacio disponible en el almacenamiento externo.</string>
+    <string name="overflow_button_content_description">Más opciones</string>
+</resources>

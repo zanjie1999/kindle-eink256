@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:paddingLeft="@dimen/bookwizard_warning_margin_horizontal" android:paddingTop="@dimen/bookwizard_warning_margin_vertical" android:paddingBottom="@dimen/bookwizard_warning_margin_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookwizard_ku_logo" android:layout_alignParentLeft="true" android:contentDescription="@string/bookwizard_ku_logo_description" />
+        <ImageButton android:id="@id/ku_dialog_close_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookwizard_close_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/bookwizard_details_close" />
+    </RelativeLayout>
+    <ScrollView android:paddingLeft="@dimen/bookwizard_warning_margin_horizontal" android:paddingRight="@dimen/bookwizard_warning_margin_horizontal" android:paddingBottom="@dimen/bookwizard_warning_margin_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/ku_welcome_dialog_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookwizard_ku_welcome_dialog_header" style="@style/bookwizard_page_header_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bookwizard_ku_offer_text_margin_horizontal" android:layout_marginRight="@dimen/bookwizard_ku_offer_text_margin_horizontal" android:layout_marginBottom="@dimen/bookwizard_welcome_to_kindle_margin" android:text="@string/bookwizard_ku_welcome_dialog_description" style="@style/bookwizard_page_body_text" />
+            <Button android:textColor="@color/black" android:id="@id/ku_trial_continue_button" android:background="@color/white" android:text="@string/bookwizard_ku_welcome_dialog_continue" android:textAllCaps="true" style="@style/bookwizard_positive_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

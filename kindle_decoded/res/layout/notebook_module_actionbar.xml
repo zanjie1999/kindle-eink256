@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/module_dropdown" android:background="@drawable/spinner_ab_holo_dark" android:paddingLeft="@dimen/notebook_action_bar_spinner_padding_left" android:paddingRight="@dimen/notebook_action_bar_spinner_padding_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/notebook_action_bar_spinner_width_min" android:paddingStart="@dimen/notebook_action_bar_spinner_padding_left" android:paddingEnd="@dimen/notebook_action_bar_spinner_padding_right" android:elevation="0.0dip">
+        <RelativeLayout android:id="@id/module_dropdown_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/notebook_action_bar_spinner_title_size" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/module_nav_spinner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_notebook" android:singleLine="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/notebook_action_bar_spinner_subtitle_size" android:textColor="?android:textColorSecondary" android:id="@id/module_nav_spinner_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/module_nav_spinner_title" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

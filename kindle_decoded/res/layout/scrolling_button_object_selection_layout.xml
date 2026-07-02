@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.PagingWidgetObjectSelectionLayout android:orientation="vertical" android:clipChildren="false" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/selection_dismiss_button" android:background="#00ffffff" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:contentDescription="@string/speak_dismiss_selection" />
+    <com.amazon.android.widget.PagingButtonWidget android:id="@id/selection_buttons" android:background="@android:color/transparent" android:paddingLeft="@dimen/paging_widget_padding_left" android:paddingRight="@dimen/paging_widget_padding_right" android:layout_width="wrap_content" android:layout_height="@dimen/paging_widget_height" amzn:buttonColor="?selection_buttons_background_color" amzn:buttonDivider="@drawable/scrolling_paging_divider" amzn:buttonTextColor="?selection_buttons_text_color" amzn:widgetStrokeColor="?selection_buttons_border_color" amzn:widgetStrokeWidth="1.0dip" xmlns:amzn="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/info_card_layout" />
+</com.amazon.kcp.reader.ui.PagingWidgetObjectSelectionLayout>

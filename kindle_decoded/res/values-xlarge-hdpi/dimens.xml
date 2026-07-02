@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="article_list_image_max_height">164.0px</dimen>
+    <dimen name="article_list_image_max_width">132.0px</dimen>
+    <dimen name="bookmark_list_bookmark_icon_right_margin">10.0px</dimen>
+    <dimen name="bookmark_list_bottom_padding">36.0px</dimen>
+    <dimen name="bookmark_list_description_right_margin">36.0px</dimen>
+    <dimen name="bookmark_list_left_padding">42.0px</dimen>
+    <dimen name="bookmark_list_right_padding">42.0px</dimen>
+    <dimen name="bookmark_list_thumbnail_height">165.0px</dimen>
+    <dimen name="bookmark_list_thumbnail_width">127.0px</dimen>
+    <dimen name="bookmark_list_top_padding">36.0px</dimen>
+    <dimen name="bookmark_list_view_header_height">66.0px</dimen>
+    <dimen name="bookmark_list_view_header_left_margin">42.0px</dimen>
+    <dimen name="bookmark_page_icon_margin">40.0px</dimen>
+    <dimen name="bookmark_thumbnail_gallery_icon_margin">10.0px</dimen>
+    <dimen name="bookmark_view_landscape_width">800.0px</dimen>
+    <dimen name="periodical_magnifying_glass_vert_offset">20.0dip</dimen>
+    <dimen name="replica_bookmark_corner_size">175.0dip</dimen>
+    <dimen name="replica_view_options_right_offset">73.0dip</dimen>
+    <dimen name="replica_view_options_top_offset_land">73.0dip</dimen>
+    <dimen name="replica_view_options_width">530.0dip</dimen>
+    <dimen name="tap_to_text_animation_margin_bottom">0.0dip</dimen>
+    <dimen name="tap_to_text_dialog_padding">42.0px</dimen>
+    <dimen name="tap_to_text_ok_vertical_margin">30.0px</dimen>
+    <dimen name="thumbnail_item_height">200.0dip</dimen>
+    <dimen name="toc_header_cover_height">164.0px</dimen>
+    <dimen name="toc_header_cover_width">132.0px</dimen>
+    <dimen name="toc_header_masthead_height">48.0px</dimen>
+    <dimen name="toc_header_masthead_width">360.0px</dimen>
+    <dimen name="zoom_not_supported_dialog_padding">42.0px</dimen>
+</resources>

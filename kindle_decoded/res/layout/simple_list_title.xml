@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="?simple_list_item_margin_bottom" style="@style/fill_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@android:id/text1" style="?simple_list_title_text_style" />
+    <View style="?view_custom_title_divider" />
+</LinearLayout>

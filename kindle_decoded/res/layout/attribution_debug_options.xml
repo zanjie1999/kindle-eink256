@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.amazon.kindle.attribution.AttributionModule$DebugOptionsView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/dbg_manual_app_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trigger app start event" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <Button android:id="@id/dbg_manual_app_reg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trigger app registration event" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dbg_starts_total_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total app starts: " />
+            <TextView android:id="@id/dbg_starts_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dbg_starts_total_label" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dbg_starts_version_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App starts (this version): " />
+            <TextView android:id="@id/dbg_starts_version_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dbg_starts_version_label" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dbg_regs_total_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total app registrations: " />
+            <TextView android:id="@id/dbg_regs_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dbg_regs_total_label" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dbg_regs_version_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App registrations (this version): " />
+            <TextView android:id="@id/dbg_regs_version_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dbg_regs_version_label" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@id/clear_app_start_reg_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset app start &amp; registration data" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</view>

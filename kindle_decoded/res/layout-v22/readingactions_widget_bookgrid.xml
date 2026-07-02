@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/book_grid_widget_container" android:paddingBottom="@dimen/readingactions_widget_shoveler_internal_padding_vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:accessibilityHeading="true" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/readingactions_book_grid_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/readingactions_widget_shoveler_internal_padding_vertical" layout="@layout/readingactions_layout_group_header" />
+    <com.amazon.readingactions.ui.widget.BookGridView android:id="@id/readingactions_bookgrid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

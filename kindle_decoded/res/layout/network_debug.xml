@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/toggle_force_show_fave_bottom_sheet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ToggleButton android:id="@id/toggle_pre_prod_endpoint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pre_prod_note" />
+    <ToggleButton android:id="@id/toggle_page_not_found_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/toggle_page_not_found_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_error_text" />
+    <ToggleButton android:id="@id/toggle_internal_server_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/toggle_internal_server_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_error_text" />
+    <ToggleButton android:id="@id/toggle_episode_info_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/toggle_episode_info_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/episode_info_error_text" />
+    <ToggleButton android:id="@id/toggle_smd_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/toggle_smd_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smd_error_text" />
+</LinearLayout>

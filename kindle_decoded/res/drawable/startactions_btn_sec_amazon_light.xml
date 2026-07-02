@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/startactions_btn_sec_active_amazon_light" />
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/startactions_btn_sec_focused_amazon_light" />
+    <item android:state_enabled="false" android:drawable="@drawable/startactions_btn_sec_disabled_amazon_light" />
+    <item android:drawable="@drawable/startactions_btn_sec_normal_amazon_light" />
+</selector>

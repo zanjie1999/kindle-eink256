@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_layout" android:background="?return_dialog_background" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="TextView" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/return_dialog_message" android:textAlignment="viewStart" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textAppearance="@style/Ruby.TextAppearance.Button" android:id="@id/negative_button" android:background="?return_dialog_cancel_button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+        <Button android:textColor="?resume_primary_button_text_color" android:id="@id/positive_button" android:background="?resume_primary_button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_confirmation" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/upsell_player_delay_purchase_processing_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/player_text_t2" android:textColor="@color/player_button_text_color" android:ellipsize="end" android:id="@id/upsell_player_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upsell_player_processing" android:singleLine="true" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/upsell_player_processing_progress_bar" android:focusable="false" android:clickable="false" android:layout_width="@dimen/upsell_player_processing_progress_bar_size" android:layout_height="@dimen/upsell_player_processing_progress_bar_size" android:layout_marginLeft="@dimen/upsell_player_purchase_processing_margin_left" android:layout_marginRight="@dimen/upsell_player_purchase_processing_margin_right" android:indeterminate="true" android:indeterminateDrawable="@drawable/upsell_player_pruchase_spinner" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

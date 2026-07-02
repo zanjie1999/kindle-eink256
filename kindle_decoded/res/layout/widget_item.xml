@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/widget_cover" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/widget_title_tag" android:visibility="invisible" android:layout_alignLeft="@id/widget_cover" android:layout_alignRight="@id/widget_cover" android:layout_centerVertical="true" style="@style/cover_title_tag" />
+    <TextView android:id="@id/widget_author_tag" android:visibility="invisible" android:layout_alignLeft="@id/widget_cover" android:layout_alignRight="@id/widget_cover" android:layout_alignParentBottom="true" style="@style/cover_author_tag" />
+</RelativeLayout>

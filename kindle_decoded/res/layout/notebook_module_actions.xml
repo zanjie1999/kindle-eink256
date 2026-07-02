@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_light" android:id="@id/notebook_module_filter" android:title="@string/notebook_module_filter_title" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_share_android_light" android:id="@id/notebook_module_header_action_export" android:title="@string/notebook_export_title" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+</menu>

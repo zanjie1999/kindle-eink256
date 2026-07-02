@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" style="@style/periodical_toc_articlelist_section_separator"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

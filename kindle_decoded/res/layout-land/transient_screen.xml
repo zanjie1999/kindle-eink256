@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/transient_downloading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/transient_text.downloading" />
+        <include android:id="@id/large_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip" android:layout_weight="1.0" layout="@layout/book_cover_view" />
+    </LinearLayout>
+    <include android:layout_gravity="center" android:id="@id/currently_downloading_group" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" layout="@layout/transient_downloading_section" />
+</LinearLayout>

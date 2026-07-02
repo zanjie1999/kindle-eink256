@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mlp_assist_downloads_toast">Tippen Sie auf Amazon_App.apk, um die Amazon App für Android zu installieren.</string>
+    <string name="mlp_assist_unknown_sources_toast">Blättern Sie abwärts zu Unbekannte Quellen und tippen Sie auf das Kontrollkästchen.</string>
+    <string name="overflow_button_content_description">Weitere Optionen</string>
+</resources>

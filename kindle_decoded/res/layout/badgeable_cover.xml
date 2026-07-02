@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.cover.BadgeableCover android:duplicateParentState="true" android:foreground="@drawable/select_overlay_selector" style="?badgeable_cover_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/badgeable_cover_image" />
+    <include layout="@layout/badgeable_cover_content" />
+</com.amazon.kcp.cover.BadgeableCover>

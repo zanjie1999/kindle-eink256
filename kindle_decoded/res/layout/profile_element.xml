@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/profile_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/family_sharing_name_avatar" />
+    <View android:background="?core_tertiary_1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:gravity="center_vertical" android:id="@id/currently_sharing" android:layout_width="0.0dip" android:layout_height="70.0dip" android:text="@string/currently_sharing" android:paddingStart="5.0dip" android:layout_marginStart="5.0dip" app:layout_constraintEnd_toStartOf="@id/x_item" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.7" />
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:gravity="center|right" android:id="@id/x_item" android:clickable="true" android:layout_width="0.0dip" android:layout_height="70.0dip" android:text="x item" android:paddingEnd="5.0dip" app:layout_constraintStart_toEndOf="@id/currently_sharing" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.3" />
+        <View android:id="@id/divider" android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintBottom_toTopOf="@id/share_future_purchases_text" app:layout_constraintTop_toBottomOf="@id/currently_sharing" />
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:textColor="@color/family_sharing_future_purchase" android:gravity="center_vertical" android:id="@id/share_future_purchases_text" android:layout_width="0.0dip" android:layout_height="70.0dip" android:text="@string/future_purchases" android:paddingStart="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/share_future_purchases_switch" app:layout_constraintTop_toBottomOf="@id/divider" app:layout_constraintWidth_percent="0.8" />
+        <Switch android:id="@id/share_future_purchases_switch" android:layout_width="0.0dip" android:layout_height="70.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/share_future_purchases_text" app:layout_constraintTop_toBottomOf="@id/divider" app:layout_constraintWidth_percent="0.2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

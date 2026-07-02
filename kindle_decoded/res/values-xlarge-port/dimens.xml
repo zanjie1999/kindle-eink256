@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="periodical_top_margin">100.0dip</dimen>
+    <dimen name="reader_top_margin">100.0dip</dimen>
+    <dimen name="feedback_screen_height">700.0dip</dimen>
+    <dimen name="feedback_screen_top_margin">20.0dip</dimen>
+    <dimen name="feedback_screen_width">550.0dip</dimen>
+</resources>

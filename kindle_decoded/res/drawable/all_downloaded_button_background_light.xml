@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/primary_light" />
+                </shape>
+            </item>
+            <item android:state_checked="true" android:left="-3.0dip" android:top="-3.0dip" android:right="-3.0dip" android:bottom="0.0dip">
+                <shape>
+                    <stroke android:width="2.0dip" android:color="@color/ruby_button_text_tertiary_color_light" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

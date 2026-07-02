@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <inset android:drawable="@drawable/eink_icon_forward_small_xor" android:insetBottom="@dimen/eink_section_icon_inset_size" />
+    </item>
+    <item android:state_enabled="false">
+        <inset android:drawable="@drawable/eink_icon_forward_small_disabled" android:insetBottom="@dimen/eink_section_icon_inset_size" />
+    </item>
+    <item>
+        <inset android:drawable="@drawable/eink_icon_forward_small_normal" android:insetBottom="@dimen/eink_section_icon_inset_size" />
+    </item>
+</selector>

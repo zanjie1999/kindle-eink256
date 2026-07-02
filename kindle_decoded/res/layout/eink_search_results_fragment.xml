@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/eink_search_result_side_padding" android:paddingRight="@dimen/eink_search_result_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/library_search_result" android:layout_width="fill_parent" android:layout_height="@dimen/eink_section_title_height" android:layout_marginTop="@dimen/eink_search_result_menu_margin_top" android:layout_marginBottom="@dimen/eink_search_result_menu_margin_bottom">
+        <TextView android:textColor="@color/xor_text_color_selector" android:id="@id/library_result_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/library_search_results" android:layout_weight="1.0" style="@style/einkTitleTextStyle" />
+        <TextView android:id="@id/library_result_seeall" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/see_all_search_results" style="@style/einkForwardTextStyle" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/eink_search_result_cover_height" android:layout_marginBottom="@dimen/eink_search_library_result_margin_bottom">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/library_result_recycler_view" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="@dimen/eink_search_result_cover_height" />
+        <TextView android:id="@id/library_results_hint" android:visibility="gone" style="@style/eink_search_hints" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/store_search_result" android:layout_width="fill_parent" android:layout_height="@dimen/eink_section_title_height" android:layout_marginTop="@dimen/eink_search_store_section_margin_top" android:layout_marginBottom="@dimen/eink_search_result_menu_margin_bottom">
+        <TextView android:textColor="@color/xor_text_color_selector" android:id="@id/store_result_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/store_search_results" android:layout_weight="1.0" style="@style/einkTitleTextStyle" />
+        <TextView android:id="@id/store_result_seeall" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/see_all_search_results" style="@style/einkForwardTextStyle" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/store_result_recycler_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/eink_search_store_section_height" />
+        <TextView android:id="@id/store_results_hint" android:visibility="gone" style="@style/eink_search_hints" />
+    </FrameLayout>
+</LinearLayout>

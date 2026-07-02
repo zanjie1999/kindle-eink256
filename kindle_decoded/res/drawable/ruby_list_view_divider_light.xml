@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/ruby_library_book_row_padding_horizontal" android:insetRight="@dimen/ruby_library_book_row_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <size android:height="1.0dip" />
+        <solid android:color="@color/tertiary_1_light" />
+    </shape>
+</inset>

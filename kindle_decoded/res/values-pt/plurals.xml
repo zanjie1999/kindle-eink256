@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="date_string_hours">
+        <item quantity="other">%1$d horas atrás</item>
+        <item quantity="one">1 hora atrás</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">%1$d minutos atrás</item>
+        <item quantity="one">1 minuto atrás</item>
+    </plurals>
+    <plurals name="endactions_reviews_more_words">
+        <item quantity="other">mais %d palavras</item>
+        <item quantity="one">mais %d palavra</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">Expira em %1$d dias</item>
+        <item quantity="one">Expira em 1 dia</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">%d páginas</item>
+        <item quantity="one">%d página</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_images">
+        <item quantity="other">%d imagens</item>
+        <item quantity="one">%d imagem</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_people">
+        <item quantity="other">%d pessoas</item>
+        <item quantity="one">%d pessoa</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_terms">
+        <item quantity="other">%d termos</item>
+        <item quantity="one">%d termo</item>
+    </plurals>
+</resources>

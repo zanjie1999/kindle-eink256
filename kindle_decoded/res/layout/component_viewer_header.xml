@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ComponentViewerHeader android:layout_width="fill_parent" android:layout_height="@dimen/component_viewer_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/image_zoom_close_button" android:layout_width="@dimen/component_viewer_close_button_dimen" android:layout_height="@dimen/component_viewer_close_button_dimen" android:layout_marginRight="@dimen/component_viewer_close_button_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/component_viewer_header_separator" android:layout_width="fill_parent" android:layout_height="@dimen/component_viewer_header_separator_height" android:layout_alignParentBottom="true" />
+</com.amazon.kcp.reader.ui.ComponentViewerHeader>

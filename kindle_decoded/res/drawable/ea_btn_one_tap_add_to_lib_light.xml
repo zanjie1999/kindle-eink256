@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/aa_btn_default_alpha" android:tint="@color/ea_btn_one_tap_add_to_lib_light" />
+    </item>
+</ripple>

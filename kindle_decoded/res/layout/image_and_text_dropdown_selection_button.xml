@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/image_and_text_dropdown" style="@style/image_and_text_dropdown_selection_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

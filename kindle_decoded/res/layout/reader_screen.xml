@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.reader.ui.ReaderDrawerLayout android:id="@id/reader_drawer_layout" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/reader_under_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/content_container" android:background="?chromeBackgroundColor" android:importantForAccessibility="no" style="@style/fill" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/reader_left_panel" android:background="?readerNavPanelBackground" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/reader_nav_panel_width" android:layout_height="fill_parent" android:contentDescription="@string/nav_panel_desc" />
+    <FrameLayout android:orientation="vertical" android:id="@id/toc_component_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.amazon.kcp.reader.ui.ReaderDrawerLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_search_widget_header" android:background="?core_primary" android:layout_width="fill_parent" android:layout_height="@dimen/top_search_widget_header_height">
+        <TextView android:textSize="@dimen/text_button_large" android:textColor="?text_primary" android:ellipsize="end" android:id="@id/top_search_widget_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_search" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/top_search_widget_header_margin_start" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/top_search_widget_header_shift_container" android:background="?selection_state_button_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/top_search_widget_header_padding_start" android:paddingEnd="@dimen/top_search_widget_header_padding_end" android:layout_marginEnd="@dimen/top_search_widget_header_margin_end" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/top_search_widget_header_shift_img" android:layout_width="@dimen/top_search_widget_header_shift_img_size" android:layout_height="@dimen/top_search_widget_header_shift_img_size" android:src="?top_search_widget_header_shift_img" android:layout_marginEnd="@dimen/top_search_widget_img_margin_right" />
+            <TextView android:textSize="@dimen/text_button_large" android:textColor="?core_accent_3" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/top_search_widget_header_shift_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_search_shift" android:maxLines="1" />
+        </LinearLayout>
+        <View android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_search_widget_border_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/top_search_recyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/top_search_widget_content_padding_horizontal" android:paddingEnd="@dimen/top_search_widget_content_padding_horizontal" />
+    <View android:background="?core_tertiary_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_search_widget_border_height" />
+</merge>

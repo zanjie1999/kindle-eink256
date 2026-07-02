@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/full_definition_loading_drawable_light"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="line1" android:animation="@animator/full_definition_loading_line_animator_1_light" />
+    <target android:name="line2" android:animation="@animator/full_definition_loading_line_animator_2_light" />
+    <target android:name="line3" android:animation="@animator/full_definition_loading_line_animator_3_light" />
+</animated-vector>

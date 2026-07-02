@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <inset android:drawable="@drawable/bg_inapp_secondary_button_dark_disabled" android:insetTop="@dimen/text_only_button_padding_vertical" android:insetBottom="@dimen/text_only_button_padding_vertical" />
+    </item>
+    <item android:state_pressed="true">
+        <inset android:drawable="@drawable/bg_inapp_secondary_button_dark_pressed" android:insetTop="@dimen/text_only_button_padding_vertical" android:insetBottom="@dimen/text_only_button_padding_vertical" />
+    </item>
+    <item android:state_focused="true">
+        <inset android:drawable="@drawable/bg_inapp_secondary_button_dark_focused" android:insetTop="@dimen/text_only_button_padding_vertical" android:insetBottom="@dimen/text_only_button_padding_vertical" />
+    </item>
+    <item android:state_hovered="true">
+        <inset android:drawable="@drawable/bg_inapp_secondary_button_dark_focused" android:insetTop="@dimen/text_only_button_padding_vertical" android:insetBottom="@dimen/text_only_button_padding_vertical" />
+    </item>
+    <item>
+        <inset android:drawable="@drawable/bg_inapp_secondary_button_dark_normal" android:insetTop="@dimen/text_only_button_padding_vertical" android:insetBottom="@dimen/text_only_button_padding_vertical" />
+    </item>
+</selector>

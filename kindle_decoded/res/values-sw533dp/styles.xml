@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="fc_deck_overview_card_side_front_text" parent="@style/fc_font.light.large">
+        <item name="android:textColor">@color/fc_card_side_term_text_color</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="klo_termdetail_extras">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="klo_termdetail_extras_card">
+        <item name="android:layout_width">@dimen/klo_termdetail_outside_margin_bottom</item>
+        <item name="android:layout_weight">50.0</item>
+    </style>
+    <style name="klo_termdetail_extras_first_card" parent="@style/klo_termdetail_extras_card">
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:layout_weight">50.0</item>
+    </style>
+    <style name="klo_termdetail_license_label" parent="@style/klo_detail_footer_focusable_style">
+        <item name="android:gravity">end</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:paddingTop">@dimen/klo_termdetail_topcard_src_padding_top</item>
+        <item name="android:paddingRight">@dimen/klo_termdetail_topcard_license_padding_right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_toRightOf">@id/klo_detail_src</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="klo_termdetail_source_label" parent="@style/klo_detail_footer_focusable_style">
+        <item name="android:paddingLeft">@dimen/klo_termdetail_topcard_src_padding_left</item>
+        <item name="android:paddingTop">@dimen/klo_termdetail_topcard_src_padding_top</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>

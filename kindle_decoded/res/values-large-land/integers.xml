@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bookwizard_genre_grid_column_count">4</integer>
+    <integer name="bookwizard_ku_offer_row_count">2</integer>
+    <integer name="bookwizard_welcome_content_weight">2</integer>
+</resources>

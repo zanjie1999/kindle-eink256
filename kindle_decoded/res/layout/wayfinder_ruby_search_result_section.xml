@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?search_header_background" android:paddingLeft="@dimen/search_screen_side_padding" android:paddingTop="@dimen/wayfinder_search_section_spacing" android:paddingRight="@dimen/search_screen_side_padding" android:paddingBottom="@dimen/wayfinder_search_section_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:textSize="@dimen/text_header_1" android:textStyle="bold" android:gravity="center|left" android:id="@id/ruby_search_section_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

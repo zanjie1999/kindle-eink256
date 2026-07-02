@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/amazon_blue" android:gravity="center_vertical" android:id="@id/search_result_text_link_content" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/search_screen_side_padding" android:paddingTop="@dimen/search_element_spacing" android:paddingRight="@dimen/search_screen_side_padding" android:paddingBottom="@dimen/search_element_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@string/fr_fontFamilyRegular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

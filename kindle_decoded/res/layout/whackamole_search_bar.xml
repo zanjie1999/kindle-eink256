@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/bg_actionbar_white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/library_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/library_action_bar_text_size" android:textColor="@color/collection_text_color" android:id="@id/search_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_hint" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:inputType="textFilter" android:imeOptions="actionDone" android:textDirection="firstStrong" />
+    </LinearLayout>
+</FrameLayout>

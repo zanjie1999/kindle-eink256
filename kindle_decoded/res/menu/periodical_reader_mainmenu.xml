@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_ab_search" android:id="@id/menuitem_search" android:title="@string/menuitem_search" android:showAsAction="ifRoom" android:actionViewClass="android.widget.SearchView" app:actionViewClass="android.widget.SearchView" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_ab_view_options" android:id="@id/menuitem_viewoptions" android:title="@string/menuitem_viewoptions" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_articles_standalone" android:id="@id/menuitem_periodical_toc" android:title="@string/goto_toc" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:id="@id/menuitem_keep" android:title="@string/menuitem_keep" />
+    <item android:id="@id/menuitem_reader_store" android:title="@string/menuitem_reader_store" />
+</menu>

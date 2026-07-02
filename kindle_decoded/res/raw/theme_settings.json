@@ -1,0 +1,15 @@
+{
+  "name": "Themes",
+  "settings": [
+    {
+      "identifier": 22,
+      "priority": 100,
+      "display": {
+        "type": "custom"
+      },
+      "disabledDisplay": {
+        "type": "none"
+      }
+    }
+  ]
+}

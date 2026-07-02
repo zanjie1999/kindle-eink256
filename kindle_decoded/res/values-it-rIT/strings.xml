@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mlp_assist_downloads_toast">"Tocca Amazon_App.apk per installare l'app Amazon per Android."</string>
+    <string name="mlp_assist_unknown_sources_toast">Scorri fino a Origini sconosciute e tocca la casella di controllo.</string>
+    <string name="overflow_button_content_description">Altre opzioni</string>
+</resources>

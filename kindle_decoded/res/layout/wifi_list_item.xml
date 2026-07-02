@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:textColor="@color/ugs_background" android:background="@color/ugs_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start|clip_vertical" android:id="@id/strength_and_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="28.0dip" android:maxHeight="28.0dip" android:layout_weight="0.0" android:contentDescription="Strength and password" />
+    <TextView android:textColor="@color/ugs_foreground" android:gravity="center|left|top" android:id="@id/network_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+    <ProgressBar android:id="@id/connecting_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="20.0dip" android:maxHeight="20.0dip" android:minWidth="20.0dip" android:minHeight="20.0dip" android:layout_weight="0.0" android:indeterminateTint="@color/ugs_foreground" style="?android:progressBarStyle" />
+</LinearLayout>

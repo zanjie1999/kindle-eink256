@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_url">http://amzn.to/1IXK5Z5</string>
+    <string name="kre_recaps_close_and_go_back_to_reading_label">Close and go back to reading</string>
+    <string name="kre_recaps_jump_forward_label">JUMP FORWARD</string>
+    <string name="kre_recaps_jump_forward_sheet_label">Jump forward since you read the recap</string>
+    <string name="kre_recaps_jump_forward_to_chapter_name_label">Since you read till the end of recap \"%1$s\", skip to chapter \"%2$s\".</string>
+    <string name="kre_recaps_read_recap_label">Read recap</string>
+    <string name="kre_recaps_read_recap_panel_label">Read Recap</string>
+    <string name="kre_recaps_recap_label">Recap</string>
+    <string name="kre_recaps_recap_of_chapter_label">Recap of %1$s</string>
+    <string name="kre_recaps_recaps_description">Review key insights from each chapter</string>
+    <string name="kre_recaps_recaps_label">Recaps</string>
+    <string name="kre_recaps_table_of_content_close_label">Close</string>
+    <string name="kre_recaps_table_of_content_title_label">Table of Contents</string>
+    <string name="menuitem_toggle_view_mode">Switch</string>
+    <string name="upsell_banner_button_text">LEARN MORE</string>
+    <string name="upsell_banner_text_description">Never miss an issue. Start a &lt;font face=Amazon Ember Bold color=#fda500>&lt;b>30-day FREE trial&lt;/b>&lt;/font>.</string>
+    <string name="upsell_banner_text_title">ENJOYING YOUR MAGAZINE?</string>
+    <string name="upsell_full_page_button_text">LEARN MORE</string>
+    <string name="upsell_full_page_text_description">Never miss an issue. Start a &lt;font face=Amazon Ember Bold color=#fda500>&lt;b>30-day FREE trial&lt;/b>&lt;/font>.</string>
+    <string name="upsell_full_page_text_title">ENJOYING YOUR MAGAZINE?</string>
+</resources>

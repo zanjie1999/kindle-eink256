@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.nln.pageIndicator.CSPageIndicatorView android:id="@id/cs_page_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="@dimen/cs_page_indicator_container_x_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cs_page_indicator_text_size" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/page_indicator_text_view" android:paddingLeft="@dimen/cs_page_indicator_text_view_horizontal_padding" android:paddingTop="?csPageIndicatorTextViewVerticalPadding" android:paddingRight="@dimen/cs_page_indicator_text_view_horizontal_padding" android:paddingBottom="?csPageIndicatorTextViewVerticalPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.amazon.kindle.nln.pageIndicator.CSPageIndicatorView>

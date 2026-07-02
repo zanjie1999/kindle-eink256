@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/library_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="?toolbar_parent_style">
+        <androidx.appcompat.widget.Toolbar android:id="@id/back_issues_top_bar" style="@style/Library.Widget.Toolbar.Ruby" />
+    </LinearLayout>
+    <LinearLayout android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/empty_library_stub" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/back_issue_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

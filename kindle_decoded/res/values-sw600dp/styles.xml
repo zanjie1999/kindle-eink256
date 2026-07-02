@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RubyDark" parent="@style/Dark_Base">
+        <item name="notification_activity_background">@color/secondary_dark</item>
+    </style>
+    <style name="Theme.Upgrader" parent="@style/Theme.Dialog" />
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="store_label">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+</resources>

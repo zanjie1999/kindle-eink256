@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audiobook_upsell_msg_post_purchase" style="@style/Hp_TextAppearance_Start_Actions" />
+    <Button android:textColor="@color/upsell_button_text" android:layout_gravity="center_horizontal" android:id="@id/read_and_listen_button" android:background="@drawable/green_gradient" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/audiobook_read_and_listen" android:textAllCaps="true" style="@style/Hp_TextAppearance_Amazon_Light_Small" />
+    <TextView android:textColorLink="@color/link_text_color" android:autoLink="all" android:linksClickable="false" android:layout_gravity="center" android:id="@id/purchased_by_accident" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audiobook_upsell_msg_details_post_purchase" style="@style/Hp_TextAppearance_Amazon_Medium_XSmall" />
+</LinearLayout>

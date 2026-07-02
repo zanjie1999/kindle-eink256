@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dynamic_button_widget_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="left" android:id="@id/dynamic_button_widget_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/startactions_widget_header_padding_vertical" layout="@layout/readingactions_layout_group_header" />
+    <TextView android:textAppearance="@style/readingactions_amazon_text_body" android:gravity="left" android:id="@id/dynamic_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/ra_text_size_body_line_spacing_extra" />
+    <Button android:textAppearance="@style/readingactions_amazon_text_button_regular" android:layout_gravity="center_horizontal" android:id="@id/dynamic_button" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/readingactions_large_padding" android:minHeight="40.0dip" />
+</LinearLayout>

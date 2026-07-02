@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_action_button_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_primary_button" style="@style/book_action_primary_button" />
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_optional_button" style="@style/book_action_optional_button" />
+    <include layout="@layout/book_action_more_option_button" />
+</LinearLayout>

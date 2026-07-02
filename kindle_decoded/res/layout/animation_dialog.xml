@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?readerBackgroundColor" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Animation speed" />
+    <SeekBar android:id="@id/scale_scrubber" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <TextView android:id="@id/max_jump_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max jump duration:" />
+    <SeekBar android:id="@id/max_jump_scrubber" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/bc_show_waypoint" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Show non-MRPR waypoint?" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+    <TextView android:id="@id/page_percent_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Percentage of page visible to hide breadcrumb: " />
+    <SeekBar android:id="@id/page_percent_scrubber" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/bc_fade" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Breadcrumb: fade em?" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/pageps" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Label pages with p's?" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+    <TextView android:id="@id/breadcrumb_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Breadcrumb size" />
+    <SeekBar android:id="@id/breadcrumb_scrubber" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <TextView android:id="@id/breadcrumb_shift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Breadcrumb shift" />
+    <SeekBar android:id="@id/breadcrumb_shift_scrubber" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/enable_animation" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Enable animation" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/interpolator" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Use Lutz Interpolator" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+    <TextView android:id="@id/coeff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coefficient" />
+    <SeekBar android:id="@id/coeff_scrubber" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" />
+    <CheckedTextView android:gravity="center_vertical" android:id="@id/strict" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Strict mode" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+</LinearLayout>

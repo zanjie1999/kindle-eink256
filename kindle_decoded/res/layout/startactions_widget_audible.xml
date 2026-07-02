@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/audible_widget_container" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

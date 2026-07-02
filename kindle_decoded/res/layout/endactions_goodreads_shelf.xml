@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/manual_shelf_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/anyactions_amazon_text_large" android:id="@id/shelf_selection_prompt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/endactions_component_title_right_margin" android:text="@string/endactions_widget_goodreads_shelf_manual_prompt" android:layout_weight="1.0" />
+        <Spinner android:id="@id/shelf_selection_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/updating_shelf_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="@dimen/endactions_review_goodreads_shelf_updating_shelf_spinner_size" android:layout_height="@dimen/endactions_review_goodreads_shelf_updating_shelf_spinner_size" />
+            <TextView android:textAppearance="@style/anyactions_amazon_text_large" android:id="@id/updating_shelf_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/endactions_review_goodreads_shelf_updating_shelf_view_spacing" android:text="@string/startactions_widget_mark_as_reading_button_in_progress" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_shelf_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/anyactions_amazon_text_large" android:id="@id/auto_shelf_prompt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/endactions_component_title_right_margin" android:text="@string/endactions_widget_goodreads_shelf_auto_prompt" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/holder_for_tutorial" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Space android:id="@id/filler" android:layout_width="1.0px" android:layout_height="1.0px" />
+            <include layout="@layout/anyactions_switch" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

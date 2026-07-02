@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <stroke android:width="1.0dip" android:color="@color/black" />
+    <corners android:radius="@dimen/eink_search_dummy_hint_corner_radius" />
+</shape>

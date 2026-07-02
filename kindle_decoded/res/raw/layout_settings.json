@@ -1,0 +1,72 @@
+{
+  "name": "Layout",
+  "settings": [
+    {
+      "identifier": 2,
+      "priority": 100,
+      "display": {
+        "type": "radioGroup",
+        "title": "Page Color Mode",
+        "buttonText": ["White", "Black", "Sepia", "Green"],
+        "buttonImagesSelected": ["WhiteSelected", "BlackSelected", "SepiaSelected", "GreenSelected"],
+        "buttonImagesUnselected": ["White", "Black", "Sepia", "Green"],
+        "buttonIds": [1, 2, 3, 4]
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 3,
+      "priority": 200,
+      "display": {
+        "type": "toggle",
+        "title": "continuous_scrolling"
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 5,
+      "priority": 300,
+      "display": {
+        "type": "radioGroup",
+        "title": "Spacing",
+        "buttonText": ["small", "medium", "large"],
+        "buttonImagesSelected": ["ls-small", "ls-med", "ls-large"],
+        "buttonImagesUnselected": ["ls-small", "ls-med", "ls-large"],
+        "buttonIds": [1,2,3]
+      },
+      "disabledDisplay": {
+        "type": "none"
+      }
+    },
+    {
+      "identifier": 6,
+      "priority": 400,
+      "display": {
+        "type": "radioGroup",
+        "title": "Alignment",
+        "buttonText": ["ragged", "justified"],
+        "buttonImagesSelected": ["alignment-right", "alignment-justify"],
+        "buttonImagesUnselected": ["alignment-right", "alignment-justify"],
+        "buttonIds": [1,2]
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    },
+    {
+      "identifier": 8,
+      "priority": 500,
+      "display": {
+        "type": "toggle",
+        "title": "orientation_lock"
+      },
+      "disabledDisplay": {
+        "type": "message"
+      }
+    }
+  ]
+}

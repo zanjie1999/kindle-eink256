@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="fill_horizontal" android:id="@id/trial_bar_wrapper" android:background="@drawable/trial_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:layout_gravity="center|right" android:id="@id/trial_bar" android:paddingLeft="@dimen/trial_bar_padding" android:paddingTop="@dimen/trial_bar_padding" android:paddingBottom="@dimen/trial_bar_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trial Bar" android:maxLines="2" android:layout_weight="4.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <Button android:layout_gravity="center|right" android:id="@id/trial_store_button" android:background="@drawable/trial_bar_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/trial_bar_button_margin" android:layout_marginRight="@dimen/trial_bar_button_margin" android:layout_marginBottom="@dimen/trial_bar_button_margin" android:text="@string/see_in_store_button" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

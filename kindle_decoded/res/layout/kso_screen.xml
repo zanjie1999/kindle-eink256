@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/kso_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/kso_screen_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+    <FrameLayout android:id="@id/kso_button_container" android:background="@null" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="@dimen/kso_skip_button_text_size" android:textColor="@color/toast_text_color" android:layout_gravity="end" android:id="@id/kso_skip_btn" android:background="@color/black_overlay" android:padding="@dimen/kso_skip_button_padding" android:layout_width="@dimen/kso_skip_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kso_skip_button_margin_top" android:minHeight="@dimen/kso_skip_button_min_height" android:text="@string/kso_skip_button_counting" android:layout_marginEnd="@dimen/kso_skip_button_margin_end" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+.class public interface abstract Lcom/amazon/whispersync/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/whispersync/google/protobuf/Descriptors$FileDescriptor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "InternalDescriptorAssigner"
+.end annotation
+
+
+# virtual methods
+.method public abstract assignDescriptors(Lcom/amazon/whispersync/google/protobuf/Descriptors$FileDescriptor;)Lcom/amazon/whispersync/google/protobuf/ExtensionRegistry;
+.end method

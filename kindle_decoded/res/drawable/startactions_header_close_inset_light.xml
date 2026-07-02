@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/startactions_header_close_selector_light" android:insetLeft="@dimen/startactions_header_close_button_inset_left" android:insetRight="@dimen/startactions_header_close_button_inset_right" android:insetTop="@dimen/startactions_header_close_button_inset_top" android:insetBottom="@dimen/startactions_header_close_button_inset_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/toc_fragment_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/toc_header_container" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/toc_header_divider" android:layout_width="fill_parent" android:layout_height="@dimen/toc_divider_height" />
+    <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/toc_left_spacer" android:layout_width="wrap_content" android:layout_height="fill_parent" app:columnWidth="@integer/ux_toc_spacer_column_count" />
+        <ImageView android:id="@id/toc_book_cover" android:background="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toc_sample_icon_foreground" android:contentDescription="@string/book_cover_image_description" app:columnWidth="@integer/ux_toc_book_cover_column_count" app:insetToColumnGutters="true" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/toc_list_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:columnWidth="@integer/ux_toc_list_container_column_count" app:insetToColumnGutters="false" />
+        <View android:id="@id/toc_right_spacer" android:layout_width="wrap_content" android:layout_height="fill_parent" app:columnWidth="@integer/ux_toc_spacer_column_count" />
+    </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

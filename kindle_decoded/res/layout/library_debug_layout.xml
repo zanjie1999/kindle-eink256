@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ToggleButton android:id="@id/enable_collection_download" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/large_library" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/details_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/series_binding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/delete_books_from_account" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/personal_lending_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/kindle_owners_lending_library" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/rental_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_search_cx_updates" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_search_wayfinder_preprod_service" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_store_search_filter_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_store_search_as_you_type_removal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_store_clickstream_attribution_metrics_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/search_fallback_detection_metrics_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ToggleButton android:id="@id/library_search_spell_correction" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/debug_buttons_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/library_debug_menu_divider" />
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change Library Metadata" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@id/content_metadata_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Is Sample:" />
+            <Spinner android:id="@id/is_sample_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/asin_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:hint="Asin" />
+            <EditText android:id="@id/value_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:hint="New Value" />
+            <Button android:id="@id/set_value_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Value" />
+        </LinearLayout>
+        <include layout="@layout/library_debug_menu_divider" />
+        <ToggleButton android:id="@id/enable_tcn_sorting" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enter Minutes for Invalid Downloads Check" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/days_passed_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:hint="Enter Offline Threshold in Minutes" android:inputType="number" />
+            <Button android:id="@id/set_days_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Value" />
+        </LinearLayout>
+        <include layout="@layout/library_debug_menu_divider" />
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" RLR List Consumptions Error Selection" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@id/list_consumptions_failure_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+            <Button android:id="@id/set_list_consumptions_failure_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set List Consumptions Failure" />
+        </LinearLayout>
+        <include layout="@layout/library_debug_menu_divider" />
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="RLR Remove Consumptions Error Selection" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@id/remove_consumptions_failure_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+            <Button android:id="@id/set_remove_consumptions_failure_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Remove Consumptions Failure" />
+        </LinearLayout>
+        <include layout="@layout/library_debug_menu_divider" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/search_library_result_cap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:hint="Max # of search results to display\n(set as blank to reset to default)" android:inputType="number" />
+            <Button android:id="@id/search_library_result_cap_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Value" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

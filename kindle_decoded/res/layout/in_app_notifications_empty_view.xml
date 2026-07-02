@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ThemeTextView android:gravity="center" android:id="@id/empty_text" android:paddingLeft="@dimen/notification_empty_view_padding_left" android:paddingTop="@dimen/notification_empty_view_padding_top" android:paddingRight="@dimen/notification_empty_view_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/notification_empty_view" />
+    <ImageView android:gravity="center" android:id="@id/refresh_button" android:paddingTop="@dimen/notification_empty_view_image_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?refresh_button" android:scaleType="centerInside" />
+</LinearLayout>

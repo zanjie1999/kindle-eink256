@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?library_background_color" android:paddingLeft="@dimen/large_fonts_margin" android:paddingRight="@dimen/large_fonts_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_body" android:textColor="?large_font_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_fonts_text_margin" android:layout_marginBottom="@dimen/large_fonts_text_margin" android:text="@string/setting_large_fonts_text" android:fontFamily="Amazon Ember" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/large_fonts_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

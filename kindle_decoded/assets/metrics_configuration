@@ -1,0 +1,49 @@
+{
+    "prod": {
+        "TransportType": "Http",
+        "NetworkTypes": ["Wifi","Wan"],
+
+        "BatchQueueConfiguration": {
+            "Type": "NonVolatile",
+            "DirectoryPrefix": "metrics"
+        },
+
+        "CodecConfiguration": {
+            "Type": "ProtocolBuffers",
+            "Version": "1.0"
+        },
+        "HttpConfiguration": {
+            "RequestSignerType": "OAuth",
+            "UrlEndpoint": "https://device-metrics-us.amazon.com:443",
+            "StaticCredentialUrlEndpoint": "https://device-metrics-us-2.amazon.com:443"
+        },
+        "PipelineConfiguration": {
+            "NormalPriority": {
+                "MaxBatchOpenTimeMillis": 300000,
+                "CheckBatchOpenTimeMillis": 180000,
+                "MaxBatchEntries": 65536,
+                "MaxBatchSizeBytes": 65536,
+                "MaxBatchQueueCapacityBytes": 5242880,
+                "MaxBatchQueueEntries": 65536,
+                "ExpiryTimeMillis": 604800000,
+                "PurgePeriodMillis": 86400000,
+                "TransmissionPeriodMillis": 600000,
+                "BatchTransmitterType": "Periodic",
+                "Channels": ["ANONYMOUS"]
+            },
+            "HighPriority": {
+                "MaxBatchOpenTimeMillis": 1000,
+                "CheckBatchOpenTimeMillis": 500,
+                "MaxBatchEntries": 65536,
+                "MaxBatchSizeBytes": 65536,
+                "MaxBatchQueueCapacityBytes": 1048576,
+                "MaxBatchQueueEntries": 65536,
+                "ExpiryTimeMillis": 604800000,
+                "PurgePeriodMillis": 86400000,
+                "TransmissionPeriodMillis": 300000,
+                "BatchTransmitterType": "Urgent",
+                "Channels": ["ANONYMOUS"]
+            }
+        }
+    }
+}

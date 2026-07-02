@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:gravity="center_vertical" android:id="@id/falkor_discover_card_title" android:tag="TITLE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_margin" android:layout_marginBottom="@dimen/home_card_margin" android:textAllCaps="false" android:layout_marginStart="@dimen/home_card_margin" />
+        <ImageView android:layout_gravity="center" android:id="@id/falkor_discovery_image" android:tag="THEMED_IMAGE_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" />
+        <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:textSize="20.0sp" android:id="@id/falkor_discover_body_1" android:tag="TEXT_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_margin" android:layout_marginBottom="@dimen/home_card_margin" android:layout_marginStart="@dimen/home_card_margin" android:layout_marginEnd="50.0dip" />
+        <View android:id="@id/home_card_footer_divider" style="@style/HomeCardDivider" />
+        <Button android:id="@id/home_card_footer_button" android:tag="BUTTON_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" style="@style/home_footer_button" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

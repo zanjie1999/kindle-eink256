@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_actionbar_white_secondary" android:layout_width="fill_parent" android:layout_height="@dimen/library_action_bar_height" android:divider="@drawable/divider_gray_vert" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/library_action_bar_text_size" android:textColor="@color/collection_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/title_button" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/whackamole_max_title_width" android:singleLine="true" android:drawableLeft="@drawable/ic_back_arrow_gray" android:drawablePadding="10.0dip" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.amazon.kcp.library.ui.MultiSelectSpinner android:textSize="@dimen/library_action_bar_text_size" android:textColor="@color/collection_text_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/selection_spinner" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawableRight="@drawable/dropdrown_icon" android:drawablePadding="5.0dip" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/library_action_bar_text_size" android:textColor="@color/collection_text_color" android:gravity="center" android:id="@id/add_button" android:background="@color/transparent" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/contextual_action_bar_add" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/reader_search_list_divider_size" android:width="@dimen/reader_search_list_divider_size" />
+    <solid android:color="@color/reader_search_list_divider_light" />
+</shape>

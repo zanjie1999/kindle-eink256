@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mlp_assist_downloads_toast">[Amazon_App.apk] をタップして、Android 用の Amazon アプリをインストールします。</string>
+    <string name="mlp_assist_unknown_sources_toast">「不明のソース」までスクロールして、チェックボックスをタップにします。</string>
+    <string name="overflow_button_content_description">その他のオプション</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_widget_max_height">267.0dip</dimen>
+    <dimen name="resume_hero_cover_height">267.0dip</dimen>
+    <dimen name="resume_hero_cover_width">178.0dip</dimen>
+    <dimen name="shoveler_default_badged_book_cover_height">247.0dip</dimen>
+    <dimen name="shoveler_default_book_cover_height">225.0dip</dimen>
+    <dimen name="shoveler_default_book_cover_width">147.0dip</dimen>
+    <dimen name="shoveler_default_cover_height">267.0dip</dimen>
+    <dimen name="shoveler_default_cover_width">178.0dip</dimen>
+    <dimen name="shoveler_slot_spacing">16.0dip</dimen>
+</resources>

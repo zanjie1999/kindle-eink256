@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/aa_theme_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aa_menu_v2_divider_margin_horizontal" android:layout_marginRight="@dimen/aa_menu_v2_divider_margin_horizontal" android:minHeight="@dimen/aa_menu_v2_theme_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/aa_menu_v2_theme_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_theme_view_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_theme_icon" android:paddingLeft="@dimen/aa_menu_v2_setting_item_horizontal_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/aa_menu_v2_theme_title" android:paddingRight="@dimen/aa_menu_v2_theme_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2SettingTitle" />
+            <TextView android:id="@id/aa_menu_v2_theme_subtitle" android:paddingRight="@dimen/aa_menu_v2_theme_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2SettingSubtitle" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_edit_theme_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aa_menu_v2_theme_edit" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_delete_theme_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aa_menu_v2_theme_delete" />
+            <Button android:textStyle="bold" android:textColor="?aaMenuV2TextTitleColor" android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_save_theme_button" android:background="@drawable/aa_menu_v2_border_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/aa_menu_v2_theme_horizontal_margin" android:text="@string/aa_menu_v2_themes_save_button_text" style="@style/AaMenuV2ThemeButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/aa_menu_v2_theme_undo_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/aa_menu_v2_theme_view_height">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_theme_undo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aa_menu_v2_theme_horizontal_margin" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/AaMenuV2ThemeUndoStyle" />
+        <Button android:textColor="@color/aa_menu_v2_static_blue_color" android:layout_gravity="center_vertical" android:id="@id/aa_menu_v2_theme_undo_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/aa_menu_v2_theme_horizontal_margin" android:text="@string/aa_menu_v2_themes_undo_button_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AaMenuV2ThemeButtonStyle" />
+    </LinearLayout>
+</FrameLayout>

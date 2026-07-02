@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/double_tap_001" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_002" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_003" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_004" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_005" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_006" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_007" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_008" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_009" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_010" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_011" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_012" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_013" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_014" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_015" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_016" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_017" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_018" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_019" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_020" />
+    <item android:duration="40" android:drawable="@drawable/double_tap_021" />
+    <item android:duration="500" android:drawable="@drawable/double_tap_022" />
+</animation-list>

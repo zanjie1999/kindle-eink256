@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/selection_button_visual_separator_light" />
+    <size android:height="@dimen/tablet_selection_button_height" android:width="@dimen/tablet_selection_button_divider_width" />
+</shape>

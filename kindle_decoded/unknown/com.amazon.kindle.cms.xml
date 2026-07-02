@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.amazon.kindle.cms.api" file="/system/framework/com.amazon.kindle.cms.jar"/>
+</permissions>

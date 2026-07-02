@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/anyactions_header" layout="@layout/anyactions_header_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/endactions_published_review_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/endactions_widget_padding_horizontal" android:layout_marginTop="@dimen/endactions_review_rating_bar_top_padding" android:layout_marginRight="@dimen/endactions_widget_padding_horizontal" android:layout_marginBottom="@dimen/endactions_review_rating_bar_bottom_padding" layout="@layout/endactions_review_rating_bar" />
+            <include layout="@layout/endactions_list_divider" />
+            <LinearLayout android:orientation="vertical" android:id="@id/endactions_published_review_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget">
+                <TextView android:textAppearance="@style/anyactions_amazon_text_medium_regular" android:id="@id/endactions_published_review_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/endactions_reviews_ui_placeholder_text" />
+                <TextView android:textAppearance="@style/anyactions_amazon_text_regular" android:id="@id/endactions_published_review_text" android:paddingTop="@dimen/endactions_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/endactions_reviews_ui_placeholder_text" />
+                <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:textColor="?textColorSecondary" android:id="@id/endactions_published_review_submitted_on" android:paddingTop="@dimen/endactions_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/endactions_reviews_posted_on_date" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hushpuppy Upsell Weblab Override" />
+    <RadioGroup android:id="@id/radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/override_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Override Disabled" />
+        <RadioButton android:id="@id/always_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Always Show Upsell" />
+        <RadioButton android:id="@id/always_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Always Hide Upsell" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.EmptyLibraryView android:gravity="center" android:orientation="vertical" android:id="@id/empty_library_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_library_image" android:visibility="gone" android:layout_width="@dimen/ruby_empty_library_image_width" android:layout_height="@dimen/ruby_empty_library_image_height" android:layout_marginTop="@dimen/ruby_empty_library_image_margin_top" />
+    <TextView android:id="@id/empty_library_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ruby_empty_library_title_margin" android:textAlignment="center" android:layout_marginStart="@dimen/ruby_empty_library_title_margin" android:layout_marginEnd="@dimen/ruby_empty_library_title_margin" style="@style/Ruby.TextAppearance.Body" />
+    <View android:id="@id/empty_library_separator" android:background="?core_tertiary_1" android:layout_width="@dimen/ruby_empty_library_separator_length" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ruby_empty_library_separator_vertical_margin" android:layout_marginBottom="@dimen/ruby_empty_library_separator_vertical_margin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_library_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.amazon.kcp.library.ui.EmptyLibraryView>

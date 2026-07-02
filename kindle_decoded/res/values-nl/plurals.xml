@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bookwizard_header_rating_books_needed">
+        <item quantity="other">We raden je aan nog minstens %1$d boeken te beoordelen.</item>
+        <item quantity="one">We raden je aan nog minstens %1$d boek te beoordelen.</item>
+    </plurals>
+    <plurals name="bookwizard_ku_books_header_rated">
+        <item quantity="other">Selecteer tot %1$d extra boeken. Tik op Klaar als je wilt beginnen met lezen.</item>
+        <item quantity="one">Selecteer %1$d extra boek. Tik op Klaar als je wilt beginnen met lezen.</item>
+    </plurals>
+    <plurals name="charts_review_counts">
+        <item quantity="other">%d klantrecensies</item>
+        <item quantity="one">een klantrecensie</item>
+    </plurals>
+    <plurals name="date_string_hours">
+        <item quantity="other">%1$d uur geleden</item>
+        <item quantity="one">1 uur geleden</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">%1$d minuten geleden</item>
+        <item quantity="one">1 minuut geleden</item>
+    </plurals>
+    <plurals name="endactions_reviews_more_words">
+        <item quantity="other">%d woorden over</item>
+        <item quantity="one">%d woord over</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">Verloopt over %1$d dagen</item>
+        <item quantity="one">Verloopt over 1 dag</item>
+    </plurals>
+    <plurals name="falkor_story_ownership_count">
+        <item quantity="other">Je hebt %1$d van %2$d afleveringen van dit verhaal</item>
+        <item quantity="one">Je hebt %1$d van %2$d aflevering van dit verhaal</item>
+    </plurals>
+    <plurals name="popularhighlights_annotation_item_label">
+        <item quantity="other">Populaire markering - %1$d markers</item>
+        <item quantity="one">Populaire markering - %1$d marker</item>
+    </plurals>
+    <plurals name="popularhighlights_content_decoration_label">
+        <item quantity="other">%1$d markers</item>
+        <item quantity="one">%1$d marker</item>
+    </plurals>
+    <plurals name="series_ownership_count_issues">
+        <item quantity="other">Je hebt %1$d nummers in deze serie.</item>
+        <item quantity="one">Je hebt %1$d nummer in deze serie.</item>
+    </plurals>
+    <plurals name="series_ownership_count_omnibus">
+        <item quantity="other">Je hebt %1$d omnibussen in deze serie.</item>
+        <item quantity="one">Je hebt %1$d omnibus in deze serie.</item>
+    </plurals>
+    <plurals name="series_ownership_count_trades">
+        <item quantity="other">Je hebt %1$d volumes in deze serie.</item>
+        <item quantity="one">Je hebt %1$d volume in deze serie.</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_hours">
+        <item quantity="other">%d uur</item>
+        <item quantity="one">%d uur</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_minutes">
+        <item quantity="other">%d minuten</item>
+        <item quantity="one">%d minuut</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">"%d pagina's"</item>
+        <item quantity="one">%d pagina</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_images">
+        <item quantity="other">%d afbeeldingen</item>
+        <item quantity="one">%d afbeelding</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_people">
+        <item quantity="other">%d personen</item>
+        <item quantity="one">%d persoon</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_terms">
+        <item quantity="other">%d termen</item>
+        <item quantity="one">%d term</item>
+    </plurals>
+    <plurals name="unpublished_falkor_story_ownership_count">
+        <item quantity="other">Je hebt %1$d afleveringen van dit verhaal</item>
+        <item quantity="one">Je hebt %1$d aflevering van dit verhaal</item>
+    </plurals>
+    <plurals name="xray_mentions_count">
+        <item quantity="other">%d vermeldingen</item>
+        <item quantity="one">%d vermelding</item>
+    </plurals>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_startactions_borderless_button" android:paddingTop="@dimen/endactions_review_rating_bar_top_padding" android:paddingBottom="@dimen/endactions_review_rating_bar_bottom_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget_no_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/endactions_review_widget_rate_and_review_component_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/endactions_widget_no_vertical_padding">
+        <FrameLayout android:id="@id/endactions_review_widget_rating_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/endactions_review_rating_bar" />
+        </FrameLayout>
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:id="@id/endactions_review_widget_mini_post_label" android:paddingBottom="@dimen/endactions_review_rating_bar_subtext_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/endactions_reviews_on_amazon_as" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/endactions_review_widget_subtle_jit_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/endactions_review_widget_rate_and_review_component_container" style="@style/endactions_widget">
+        <TextView android:textAppearance="@style/anyactions_amazon_text_small" android:id="@id/endactions_review_widget_subtle_jit_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/endactions_review_widget_goodreads_shelf_component_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/endactions_review_goodreads_shelf_section_top_margin" android:layout_below="@id/endactions_review_widget_subtle_jit_container" android:layout_alignLeft="@id/endactions_review_widget_rate_and_review_component_container" style="@style/endactions_widget_no_vertical_padding" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/endactions_review_widget_share_component_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/endactions_review_share_section_top_margin" android:layout_marginBottom="@dimen/endactions_review_share_section_bottom_margin" android:layout_below="@id/endactions_review_widget_goodreads_shelf_component_container" android:layout_alignLeft="@id/endactions_review_widget_rate_and_review_component_container" style="@style/endactions_widget_no_vertical_padding">
+        <TextView android:textAppearance="@style/anyactions_amazon_text_large" android:id="@id/endactions_review_widget_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/endactions_review_share_section_title_right_margin" />
+        <Button android:id="@id/endactions_review_widget_share_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/endactions_share_book_button_min_height" android:singleLine="false" />
+    </LinearLayout>
+</RelativeLayout>

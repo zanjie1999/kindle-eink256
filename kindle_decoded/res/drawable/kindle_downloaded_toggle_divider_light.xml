@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/kindle_downloaded_toggle_divider_inset" android:insetBottom="@dimen/kindle_downloaded_toggle_divider_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <nine-patch android:src="@drawable/kindle_divider_light" />
+</inset>

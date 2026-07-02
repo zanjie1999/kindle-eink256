@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/whats_new_layout_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/whats_new_version" style="@style/whats_new_version" />
+        <LinearLayout android:id="@id/whats_new_table" style="@style/bullets_table" />
+    </LinearLayout>
+</ScrollView>

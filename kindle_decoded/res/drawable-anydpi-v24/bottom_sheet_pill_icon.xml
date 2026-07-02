@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:id="@id/icon_pill" android:height="5.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff9d9d9d" android:pathData="M2.5,0L29.5,0A2.5,2.5 0,0 1,32 2.5L32,2.5A2.5,2.5 0,0 1,29.5 5L2.5,5A2.5,2.5 0,0 1,0 2.5L0,2.5A2.5,2.5 0,0 1,2.5 0z" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/aa_menu_v2_bottom_bar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/aa_menu_v2_brightness_seekbar_container_height">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="?aaMenuV2BrightnessBackgroundColor" android:layout_width="fill_parent" android:layout_height="@dimen/aa_menu_v2_brightness_seekbar_height">
+            <com.amazon.kindle.viewoptions.ui.AaSettingSeekBar android:id="@id/aa_menu_v2_brightness_setting" android:tag="aa_menu_v2_brightness_slider" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/aa_menu_v2_brightness_seekbar_layout_weight" app:initVal="0" app:leftView="?aaMenuV2BrightnessMinDrawable" app:leftViewId="@id/aa_menu_v2_decrease_brightness" app:leftViewWidth="@dimen/aa_menu_v2_setting_brightness_size_min_width" app:maxVal="100" app:rightView="?aaMenuV2BrightnessMaxDrawable" app:rightViewId="@id/aa_menu_v2_increase_brightness" app:rightViewWidth="@dimen/aa_menu_v2_setting_brightness_size_max_width" app:seekBarId="@id/aa_menu_v2_brightness_seekbar" app:tickMarksEnabled="false" app:title="@string/aa_menu_v2_brightness_slider_title" />
+            <CheckBox android:textSize="@dimen/aa_menu_v2_brightness_checkbox_text_size" android:textColor="?aaMenuV2TextTitleColor" android:id="@id/aa_menu_v2_brightness_slider_checkbox" android:paddingTop="@dimen/aa_menu_v2_brightness_checkbox_top_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/aa_menu_v2_brightness_checkbox_description" android:drawableTop="?aaMenuV2CheckboxDrawable" android:drawablePadding="@dimen/aa_menu_v2_brightness_checkbox_drawable_padding" android:layout_weight="@dimen/aa_menu_v2_brightness_checkbox_layout_weight" app:buttonTint="?aaMenuV2TextTitleColor" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="?aaMenuV2BrightnessBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</merge>

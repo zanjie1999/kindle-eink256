@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/xray_spoiler_button" android:title="@string/xray_menu_show_spoilers" android:showAsAction="never" />
+    <item android:id="@id/xray_feedback_button" android:title="@string/xray_menu_send_feedback" android:showAsAction="never" />
+</menu>

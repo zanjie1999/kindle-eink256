@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="account_confirmation_content_weight">3</integer>
+    <integer name="bitmap_cache_size_memory_GT1024">50</integer>
+    <integer name="bitmap_pool_size_memory_GT1024">15</integer>
+    <integer name="bitmap_pool_size_memory_LE1024">15</integer>
+    <integer name="bookwizard_genre_grid_column_count">3</integer>
+    <integer name="bookwizard_ku_offer_row_count">3</integer>
+    <integer name="carousel_frame_weight">7</integer>
+    <integer name="dim_screen_time_min">4</integer>
+    <integer name="navigation_margin_percent">16</integer>
+    <integer name="welcome_bottom_frame_weight">3</integer>
+    <integer name="extra_line_spacing_ja_vert_default">8</integer>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bookwizard_header_rating_books_needed">
+        <item quantity="other">あと%1$d冊以上の本を評価することをお勧めします。</item>
+        <item quantity="one">少なくともあと%1$d冊の本を評価することをお勧めします。</item>
+    </plurals>
+    <plurals name="bookwizard_ku_books_header_rated">
+        <item quantity="other">最大であと%1$d冊の書籍を選択してください。読み始める準備ができたら、「完了」をタップしてください。</item>
+        <item quantity="one">最大であと%1$d冊の書籍を選択してください。読み始める準備ができたら、「完了」をタップしてください。</item>
+    </plurals>
+    <plurals name="charts_review_counts">
+        <item quantity="other">%d 件のカスタマーレビュー</item>
+        <item quantity="one">1件のカスタマーレビュー</item>
+    </plurals>
+    <plurals name="date_string_hours">
+        <item quantity="other">%1$d時間前</item>
+        <item quantity="one">1時間前</item>
+    </plurals>
+    <plurals name="date_string_minutes">
+        <item quantity="other">%1$d分前</item>
+        <item quantity="one">1分前</item>
+    </plurals>
+    <plurals name="dt_eoc_hours">
+        <item quantity="other">%1d時間</item>
+        <item quantity="one">%1$d時間</item>
+    </plurals>
+    <plurals name="dt_eoc_minutes">
+        <item quantity="other">%1d分</item>
+        <item quantity="one">%1$d分</item>
+    </plurals>
+    <plurals name="dt_eoc_seconds">
+        <item quantity="other">%1d秒</item>
+        <item quantity="one">%1$d秒</item>
+    </plurals>
+    <plurals name="dt_eoc_words">
+        <item quantity="other">%1$d語</item>
+        <item quantity="one">%1$d語</item>
+    </plurals>
+    <plurals name="endactions_reviews_more_words">
+        <item quantity="other">残り%d語</item>
+        <item quantity="one">残り%d語</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">後%1$d日で期限が切れます</item>
+        <item quantity="one">後1日で期限が切れます</item>
+    </plurals>
+    <plurals name="falkor_story_ownership_count">
+        <item quantity="other">このストーリーの%1$d/%2$dのエピソードを持っています。</item>
+        <item quantity="one">このストーリーの%1$d/%2$dのエピソードを持っています。</item>
+    </plurals>
+    <plurals name="popularhighlights_annotation_item_label">
+        <item quantity="other">ポピュラーハイライト - %1$d 蛍光ペン</item>
+        <item quantity="one">ポピュラーハイライト - %1$d 蛍光ペン</item>
+    </plurals>
+    <plurals name="popularhighlights_content_decoration_label">
+        <item quantity="other">%1$d 蛍光ペン</item>
+        <item quantity="one">%1$d 蛍光ペン</item>
+    </plurals>
+    <plurals name="series_ownership_count_issues">
+        <item quantity="other">このシリーズを%1$d冊持っています.</item>
+        <item quantity="one">このシリーズを%1$d冊持っています.</item>
+    </plurals>
+    <plurals name="series_ownership_count_omnibus">
+        <item quantity="other">このシリーズを%1$d冊持っています.</item>
+        <item quantity="one">このシリーズを%1$d冊持っています.</item>
+    </plurals>
+    <plurals name="series_ownership_count_trades">
+        <item quantity="other">このシリーズを%1$d冊持っています.</item>
+        <item quantity="one">このシリーズを%1$d冊持っています.</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_hours">
+        <item quantity="other">%d時間</item>
+        <item quantity="one">%d時間</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_minutes">
+        <item quantity="other">%d分</item>
+        <item quantity="one">%d分</item>
+    </plurals>
+    <plurals name="startactions_widget_time_to_read_pages">
+        <item quantity="other">%dページ</item>
+        <item quantity="one">%dページ</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_images">
+        <item quantity="other">%d画像</item>
+        <item quantity="one">%d画像</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_people">
+        <item quantity="other">%d人</item>
+        <item quantity="one">%d人</item>
+    </plurals>
+    <plurals name="startactions_widget_xray_num_terms">
+        <item quantity="other">%d用語</item>
+        <item quantity="one">%d用語</item>
+    </plurals>
+    <plurals name="unpublished_falkor_story_ownership_count">
+        <item quantity="other">このストーリーの%1$dのエピソードを持っています。</item>
+        <item quantity="one">このストーリーの%1$dのエピソードを持っています。</item>
+    </plurals>
+    <plurals name="xray_mentions_count">
+        <item quantity="other">%d件のカスタマーレビュー</item>
+        <item quantity="one">%d件のカスタマーレビュー</item>
+    </plurals>
+</resources>

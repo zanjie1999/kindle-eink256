@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="aa_menu_v2_seekbar_weight">4</integer>
+    <integer name="fr_grid_item_num_columns">4</integer>
+    <integer name="xray_all_of_type_entity_description_max_lines">2</integer>
+    <integer name="xray_card_caption_max_lines">1</integer>
+    <integer name="xray_description_max_lines">2</integer>
+    <integer name="xray_description_max_lines_with_large_font">1</integer>
+    <integer name="xray_excerpt_max_lines">2</integer>
+    <integer name="xray_feedback_comments_max_lines">2</integer>
+    <integer name="xray_related_entity_max_lines">1</integer>
+</resources>

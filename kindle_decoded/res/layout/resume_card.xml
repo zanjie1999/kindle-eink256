@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:id="@id/resume_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/resume_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/resume_shoveler_view" android:visibility="gone" layout="@layout/resume_shoveler_widget" />
+        <include android:id="@id/resume_widget_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/resume_empty_view_margin" android:layout_marginEnd="@dimen/resume_empty_view_margin" layout="@layout/resume_empty_view" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

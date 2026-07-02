@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/home_card_footer_divider" android:layout_marginTop="@dimen/home_card_divider_margin" style="@style/HomeCardDivider" />
+    <Button android:id="@id/home_card_footer_button" android:tag="BUTTON_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" style="@style/home_footer_button" />
+</merge>

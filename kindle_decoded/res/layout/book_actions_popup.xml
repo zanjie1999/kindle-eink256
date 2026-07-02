@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/book_actions_popup_scrollview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.amazon.android.ui.UiFontTextView android:textAppearance="@style/Ruby.TextAppearance.Header4" android:ellipsize="end" android:id="@id/book_actions_popup_title" android:paddingTop="@dimen/book_actions_popup_title_padding_vertical" android:paddingBottom="@dimen/book_actions_popup_title_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="@dimen/book_actions_popup_title_padding_horizontal" android:paddingEnd="@dimen/book_actions_popup_title_padding_horizontal" />
+            <View android:background="?core_tertiary_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/book_actions_popup_container" android:paddingTop="@dimen/book_actions_popup_padding_vertical" android:paddingBottom="@dimen/book_actions_popup_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

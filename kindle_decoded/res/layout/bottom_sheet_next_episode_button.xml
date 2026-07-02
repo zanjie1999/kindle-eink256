@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bottom_sheet_drag_icon_layout" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/bottom_sheet_next_episode_layout_vertical_padding" android:paddingBottom="@dimen/bottom_sheet_next_episode_layout_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bottom_sheet_next_episode_layout_horizontal_padding" android:paddingEnd="@dimen/bottom_sheet_next_episode_layout_horizontal_padding"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <Button android:textSize="@dimen/bottom_sheet_next_episode_button_text_size" android:textColor="@android:color/white" android:id="@id/bottom_sheet_next_episode_button" android:background="?next_episode_offline_selector" android:padding="@dimen/bottom_sheet_next_episode_button_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bottom_sheet_next_episode_button_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="@dimen/bottom_sheet_next_episode_button_max_width" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

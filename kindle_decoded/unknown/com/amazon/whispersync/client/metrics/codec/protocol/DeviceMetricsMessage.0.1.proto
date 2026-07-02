@@ -1,0 +1,83 @@
+//  Device Metrics Message Structure Overview
+//
+//  MetricBatch 
+//	{
+//    String deviceSerialNumber;
+//	  String deviceType;
+//    optional String tag;
+//
+//	  List metadata: <key=value> [, ... , <key_n=value_n];
+//
+//    [Metrics 1]
+//        long Timestamp;
+//        String program;
+//        String source;
+//        List DataPoint: <name, value, type, samples>
+//                [, ..., <name, value, type, samples>_n ];
+//       ...
+//
+//    [Metrics n]
+//        long Timestamp;
+//        String program;
+//        String source;
+//        List DataPoint: <name, value, type, samples>
+//                [, ..., <name, value, type, samples>_n ];
+//  }
+//
+//  @author yilin
+
+// Important instructions while improving this Protocol Buffer Message:
+// * Do not remove or modify any existing field
+// * Only add optional fields
+
+package metrics;
+
+option java_package = "com.amazon.client.metrics.codec";
+option java_outer_classname = "DeviceMetricsMessage";
+
+// Device Basic Info, Metadata, MetricEntry
+message MetricBatchMessage {
+	required string deviceSerialNumber = 1;
+	/* 
+	 * Device type is optional because we are ideally able to extract it from
+	 * the authentication token on the service side. However, if the client
+	 * does supply a deviceType, it takes precedence over the extraction. This
+	 * latter use case is currently relevant for Apps on 3rd-party-devices,
+	 * who must explicitly set a deviceType until we can move them off of
+	 * DeviceLegacy OAuth authentication.
+	 */
+	optional string deviceType = 2;
+	optional string tag = 3;
+	
+	repeated KeyValue metadata = 4;
+	repeated MetricEntryMessage metricEntry = 5;
+}
+
+// Timestamp, Program, Source, List<DataPoint>
+message MetricEntryMessage {
+   required int64 timestamp = 1;
+   required string program = 2;
+   required string source = 3;
+   repeated DataPointMessage dataPoint = 4;
+}
+
+// Name, Value, SampleSize
+message DataPointMessage {
+    required string name = 1;
+    required string value = 2;
+    required int32 SampleSize = 3;
+    
+    enum DataType {
+    	COUNTER = 0;
+    	TIMER = 1;
+    	DISCRETE = 2;
+	}
+    required DataType type = 4;
+}
+
+// key-value pair
+message KeyValue {
+	required string key = 1;
+	required string value = 2;
+}
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/toc_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/toc_header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ListView android:id="@id/toc_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?defaultTocChapterBorder" android:dividerHeight="0.5dip" />
+</LinearLayout>

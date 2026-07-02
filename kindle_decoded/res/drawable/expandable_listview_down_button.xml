@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/expandable_listview_down_button_icon" android:left="@dimen/e3os_expandable_listview_icon_left_padding" android:top="@dimen/e3os_expandable_listview_top_padding" android:bottom="@dimen/e3os_expandable_listview_bottom_padding" />
+</layer-list>

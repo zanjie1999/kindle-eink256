@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textStyle="bold" android:textColor="?core_accent_3" android:id="@id/expand_button" android:background="@drawable/expandable_grid_widget_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/expandable_grid_widget_vert_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.nwstd.toc.widget.ArticleRow android:background="@color/transparent" android:paddingLeft="@dimen/bookmark_list_left_padding" android:paddingTop="@dimen/bookmark_list_top_padding" android:paddingRight="@dimen/bookmark_list_right_padding" android:paddingBottom="@dimen/bookmark_list_bottom_padding" android:focusable="false" style="@style/bookmark_list_view_cntr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/description" android:layout_marginRight="@dimen/bookmark_list_description_right_margin" style="@style/bookmark_list_description" />
+    <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/readingwidget_book_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/bookmark_thumbnail" style="@style/wrap" />
+        <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bookmark_list_bookmark_icon_right_margin" android:src="@drawable/ic_bookmark_list_amzn" />
+    </FrameLayout>
+</com.amazon.nwstd.toc.widget.ArticleRow>

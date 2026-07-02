@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/checkable_item_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkable_item_left_icon" style="@style/checkable_item_left_icon" />
+    <LinearLayout android:id="@id/checkable_item_title" style="@style/checkable_item_title_style">
+        <ImageView android:id="@id/checkable_item_title_image" style="@style/checkable_item_title_image" />
+        <com.amazon.kcp.widget.WrapWidthTextView android:id="@id/checkable_item_text_view" style="@style/checkable_menu_item_text_style" />
+        <TextView android:id="@id/checkable_item_count" style="@style/checkable_menu_item_count_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/checkable_item_image_view" style="@style/checkable_menu_item_checkmark_style" />
+</LinearLayout>

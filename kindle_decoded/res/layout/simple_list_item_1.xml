@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@android:id/text1" android:minHeight="?simple_one_line_list_item_min_height" style="?simple_one_line_list_item_text_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

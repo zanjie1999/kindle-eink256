@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/search_seeall_results_count" android:title="Search Result" app:actionLayout="@layout/eink_search_library_seeall_result_count" app:showAsAction="always" />
+    <item android:id="@id/search_seeall_content_filter" android:title="Filter Menus" app:actionLayout="@layout/eink_search_library_seeall_filters" app:showAsAction="always" />
+</menu>

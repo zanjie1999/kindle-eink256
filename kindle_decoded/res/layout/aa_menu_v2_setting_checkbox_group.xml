@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/aa_menu_v2_checkbox_group_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AaMenuV2SettingTitle" />
+    <TextView android:id="@id/aa_menu_v2_checkbox_group_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_subtitle_margin_top" style="@style/AaMenuV2SettingSubtitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/aa_menu_v2_checkbox_group_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

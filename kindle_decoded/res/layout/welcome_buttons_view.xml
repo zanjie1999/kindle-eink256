@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/welcome_bottom_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="130.0dip" android:layout_weight="@integer/welcome_bottom_frame_weight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/welcome_signin" android:visibility="gone" android:layout_marginTop="10.0dip" android:minHeight="10.0dip" android:layout_weight="0.0" style="@style/welcome_sign_in_button" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/welcome_start_reading" android:visibility="gone" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_weight="0.0" style="@style/welcome_start_reading_button" />
+        <LinearLayout android:id="@id/welcome_no_account_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:rowCount="1" android:columnCount="3">
+            <View android:layout_gravity="fill_horizontal|center" android:background="@color/amazon_medium_grey" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="center" android:id="@id/welcome_no_account" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:minHeight="10.0dip" style="@style/welcome_no_account_hint" />
+            <View android:layout_gravity="fill_horizontal|center" android:background="@color/amazon_medium_grey" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/welcome_terms_of_use" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/welcome_terms_of_use" android:layout_weight="1.0" style="@style/welcome_terms_of_use_font" />
+</LinearLayout>

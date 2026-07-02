@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/open_notifications_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kinapp_debug_open_notifications" />
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/use_kinapp_gamma" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kinapp_debug_use_gamma" android:minLines="2" android:labelFor="@id/use_kinapp_gamma" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/delete_request_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kinapp_debug_delete_request_fail" android:minLines="2" android:labelFor="@id/delete_request_fail" />
+    </LinearLayout>
+</LinearLayout>

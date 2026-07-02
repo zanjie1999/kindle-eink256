@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" style="@style/fill_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:text="@string/registered_to" style="@style/wrap" />
+    <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" style="@style/wrap">
+        <LinearLayout android:orientation="vertical" style="@style/wrap">
+            <TextView android:textColor="?about_screen_text_color" android:text="@string/user_name" android:fontFamily="sans-serif-regular" style="@style/wrap" />
+            <TextView android:textColor="?about_screen_text_color" android:text="@string/device_name" android:fontFamily="sans-serif-regular" style="@style/wrap" />
+            <TextView android:textColor="?about_screen_text_color" android:id="@id/user_email_key" android:text="@string/user_email" android:fontFamily="sans-serif-regular" style="@style/wrap" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_marginLeft="10.0dip" style="@style/fill_width">
+            <TextView android:id="@id/user_name" android:fontFamily="sans-serif-light" style="@style/wrap" />
+            <TextView android:id="@id/device_name" android:fontFamily="sans-serif-light" style="@style/wrap" />
+            <TextView android:id="@id/user_email" android:fontFamily="sans-serif-light" style="@style/wrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/deregister_btn" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/logout_device" style="@style/fill_width" />
+</LinearLayout>

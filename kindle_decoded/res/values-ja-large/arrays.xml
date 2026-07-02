@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="page_margins_user_settings">
+        <item>25.0dip</item>
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+    </array>
+    <array name="yj_page_margins_landscape">
+        <item>25.0dip</item>
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+    </array>
+    <array name="yj_page_margins_portrait">
+        <item>25.0dip</item>
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+    </array>
+</resources>

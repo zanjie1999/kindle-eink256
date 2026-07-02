@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/aa_menu_v2_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/aa_menu_v2_landscape_dialog_padding" android:paddingBottom="@dimen/aa_menu_v2_landscape_dialog_padding" android:layout_width="fill_parent" android:layout_height="@dimen/aa_menu_v2_dialog_content_height_landscape" style="@style/AaMenuV2DialogContentBaseStyle">
+        <LinearLayout android:id="@id/aa_menu_v2_dialog_content_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+            <TextView android:id="@id/aa_menu_v2_dialog_default_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/AaMenuV2DialogTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

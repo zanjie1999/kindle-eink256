@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHeight_percent="0.6" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:columnWidth="3" app:insetToColumnGutters="true">
+            <com.amazon.android.tableofcontents.columns.ColumnView android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+        <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:columnWidth="8" app:insetToColumnGutters="true">
+            <com.amazon.android.tableofcontents.columns.ColumnView android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+        <com.amazon.android.tableofcontents.columns.ColumnViewGroup android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:columnWidth="1" app:insetToColumnGutters="true">
+            <com.amazon.android.tableofcontents.columns.ColumnView android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+    </com.amazon.android.tableofcontents.columns.ColumnViewGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

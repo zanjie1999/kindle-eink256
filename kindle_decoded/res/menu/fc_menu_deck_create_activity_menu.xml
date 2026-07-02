@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?fc_ic_done" android:id="@id/action_done" android:orderInCategory="300" android:title="@string/fc_action_done" android:showAsAction="always" app:showAsAction="always" />
+</menu>

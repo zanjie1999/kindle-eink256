@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/klo_action_bar_spinner_title_size" android:textColor="@color/klo_action_bar_text_color" android:ellipsize="end" android:id="@id/nav_spinner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/klo_action_bar_drop_down_margin" android:layout_marginRight="@dimen/klo_action_bar_drop_down_margin" android:singleLine="true" />
+    <TextView android:textSize="@dimen/klo_action_bar_spinner_subtitle_size" android:textColor="@color/klo_action_bar_text_color" android:ellipsize="end" android:id="@id/nav_spinner_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/klo_action_bar_drop_down_margin" android:layout_marginRight="@dimen/klo_action_bar_drop_down_margin" android:singleLine="true" />
+</LinearLayout>

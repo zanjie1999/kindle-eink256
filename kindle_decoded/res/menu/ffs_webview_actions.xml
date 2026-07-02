@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ffs_webview_back" android:id="@id/ffs_webview_action_back" android:title="@string/ffs_webview_back" app:showAsAction="always" />
+    <item android:icon="@drawable/ffs_webview_close" android:id="@id/ffs_webview_action_close" android:title="@string/ffs_webview_close" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kedu.flashcards.views.LoadableTextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" fc:maxTextSize="@dimen/fc_font_extra_large_text_size" fc:minTextSize="@dimen/fc_font_large_text_size" fc:textGravity="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fc="http://schemas.android.com/apk/res-auto" />

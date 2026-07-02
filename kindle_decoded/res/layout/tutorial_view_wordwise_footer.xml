@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tutorial_container" style="@style/tutorial_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/jit_footer_right_margin" android:layout_marginBottom="@dimen/jit_footer_bottom_margin" android:src="@drawable/tutorial_triangle_downward" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:text="@string/wordwise_tutorial_for_footer" android:layout_above="@id/triangle" android:layout_alignParentRight="true" style="@style/tutorial_bubble" />
+</RelativeLayout>

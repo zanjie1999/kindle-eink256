@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/resume_empty_view_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Headline" android:gravity="center" android:id="@id/resume_empty_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/resume_empty_view_margin" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Body" android:gravity="center" android:id="@id/resume_empty_view_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/resume_empty_view_margin" android:lineSpacingExtra="@dimen/resume_empty_view_notice_inline_space" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Button.Link" android:gravity="center" android:id="@id/resume_empty_view_link" android:paddingTop="@dimen/resume_empty_view_padding_vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/resume_empty_view_margin_top" android:paddingStart="@dimen/resume_empty_view_padding_horizontal" android:paddingEnd="@dimen/resume_empty_view_padding_horizontal" />
+</LinearLayout>

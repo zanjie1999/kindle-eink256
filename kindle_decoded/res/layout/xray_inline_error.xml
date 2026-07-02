@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/xray_amazon_text_light_large" android:gravity="center" android:layout_gravity="center" android:id="@id/xray_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xray_error" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

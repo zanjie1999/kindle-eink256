@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/section_list_custom_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/section_list_header_text_size" android:textStyle="bold" android:gravity="bottom" android:id="@id/section_list_header_title" android:paddingLeft="@dimen/articlelist_section_paddingLeft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/section_list_header_close_button" android:background="@android:color/transparent" android:paddingLeft="@dimen/periodical_text_view_close_button_padding_left" android:paddingTop="@dimen/periodical_text_view_close_button_padding_top" android:paddingRight="@dimen/periodical_text_view_close_button_padding_right" android:paddingBottom="@dimen/periodical_text_view_close_button_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

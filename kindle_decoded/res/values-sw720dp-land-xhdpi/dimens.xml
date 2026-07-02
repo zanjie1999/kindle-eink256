@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="upsell_banner_button_font_size">9.0dip</dimen>
+    <dimen name="upsell_banner_paddingLeft">100.0dip</dimen>
+    <dimen name="upsell_banner_paddingRight">100.0dip</dimen>
+    <dimen name="upsell_banner_text_description_font_size">12.0dip</dimen>
+    <dimen name="upsell_banner_text_title_font_size">14.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingBottom">60.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingLeft">50.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingRight">50.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingTop">60.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingTop">175.0dip</dimen>
+</resources>

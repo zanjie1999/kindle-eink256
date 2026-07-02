@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/endactions_dialog_horizontal_padding" android:paddingTop="@dimen/endactions_dialog_top_padding" android:paddingRight="@dimen/endactions_dialog_horizontal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/anyactions_amazon_text_medium_regular" android:textColor="@color/anyactions_amazon_orange_dark" android:id="@id/endactions_reviews_options_must_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endactions_reviews_options_must_select_one" />
+    <CheckBox android:id="@id/endactions_reviews_options_amazon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endactions_reviews_amazon" />
+    <TextView android:textAppearance="@style/anyactions_amazon_text_regular" android:textColor="?textColorSecondary" android:id="@id/endactions_reviews_options_public_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/endactions_dialog_checkbox_subtext_indent" android:hint="@string/endactions_reviews_options_public_name" />
+    <TextView android:textAppearance="@style/anyactions_amazon_text_regular" android:textColor="@color/endactions_amazon_blue" android:id="@id/endactions_reviews_options_edit_public_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/endactions_dialog_checkbox_subtext_indent" android:text="@string/endactions_reviews_options_edit" />
+    <CheckBox android:id="@id/endactions_reviews_options_goodreads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endactions_reviews_goodreads" />
+</LinearLayout>

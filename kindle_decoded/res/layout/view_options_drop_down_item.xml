@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/view_options_row_drop_down"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_options_drop_down_icon" android:paddingTop="@dimen/view_options_drop_down_item_icon_padding" android:paddingRight="@dimen/view_options_drop_down_item_icon_padding" android:paddingBottom="@dimen/view_options_drop_down_item_icon_padding" style="@style/wrap" />
+    <TextView android:id="@id/view_options_drop_down_text" android:paddingTop="@dimen/view_options_drop_down_item_padding_top" style="@style/view_options_row_text" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:id="@id/view_options_drop_down_status" android:paddingTop="@dimen/view_options_drop_down_item_padding_top" style="@style/view_options_row_text.title" />
+    <TextView android:textColor="?aes_font_download_gray" android:id="@id/view_options_drop_down_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingEnd="@dimen/view_options_fontsize_padding" style="@style/view_options_row_text.title" />
+    <FrameLayout android:id="@id/view_options_drop_down_downloading" android:visibility="gone" android:layout_width="@dimen/view_options_progress_bar_size" android:layout_height="@dimen/view_options_progress_bar_size" android:importantForAccessibility="no">
+        <View android:id="@id/view_options_progress_layer1" android:background="@drawable/bg_font_download_loading_white" android:layout_width="@dimen/view_options_font_cancel_bg_size" android:layout_height="@dimen/view_options_font_cancel_bg_size" android:layout_margin="@dimen/view_options_font_cancel_bg_margin" />
+        <ProgressBar android:id="@id/view_options_drop_down_progress_bar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/accessibility_font_downloading" android:importantForAccessibility="yes" style="@style/AES_font_download_progress_bar" />
+        <View android:id="@id/view_options_progress_layer2" android:background="?aes_font_cancel_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/view_options_font_cancel_icon_margin" />
+    </FrameLayout>
+    <ImageView android:id="@id/view_options_drop_down_download_icon" android:background="?aes_font_download_icon_bg" android:focusable="true" android:visibility="gone" android:src="?aes_font_download_icon" android:importantForAccessibility="yes" style="@style/wrap" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@android:color/black" android:right="8.0dip" />
+            <item android:drawable="@drawable/e3os_back_icon_inverse" android:left="16.0dip" android:top="16.0dip" android:right="24.0dip" android:bottom="16.0dip" />
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@android:color/white" android:right="8.0dip" />
+            <item android:drawable="@drawable/e3os_back_icon" android:left="16.0dip" android:top="16.0dip" android:right="24.0dip" android:bottom="16.0dip" />
+        </layer-list>
+    </item>
+</selector>

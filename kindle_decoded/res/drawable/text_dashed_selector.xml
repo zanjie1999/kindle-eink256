@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/black" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="line">
+                    <size android:height="4.0dip" />
+                    <stroke android:width="2.0dip" android:color="@color/white" android:dashWidth="4.0dip" android:dashGap="4.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="line">
+                    <size android:height="4.0dip" />
+                    <stroke android:width="2.0dip" android:color="@color/gray" android:dashWidth="4.0dip" android:dashGap="4.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="line">
+                    <size android:height="4.0dip" />
+                    <stroke android:width="2.0dip" android:color="@color/black" android:dashWidth="4.0dip" android:dashGap="4.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

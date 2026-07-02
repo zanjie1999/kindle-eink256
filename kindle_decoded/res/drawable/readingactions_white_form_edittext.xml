@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/readingactions_form_edittext_border_width" android:color="@color/readingactions_bg_container_light_gray" />
+    <solid android:paddingLeft="@dimen/readingactions_form_edittext_padding_horizontal" android:paddingTop="@dimen/readingactions_form_edittext_padding_vertical" android:color="@color/readingactions_bg_group_white" />
+    <padding android:left="@dimen/readingactions_form_edittext_padding_horizontal" android:top="@dimen/readingactions_form_edittext_padding_vertical" android:right="@dimen/readingactions_form_edittext_padding_horizontal" android:bottom="@dimen/readingactions_form_edittext_padding_vertical" />
+</shape>

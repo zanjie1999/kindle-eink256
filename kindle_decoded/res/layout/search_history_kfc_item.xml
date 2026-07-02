@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selection_state_button_background" android:layout_width="fill_parent" android:layout_height="@dimen/kfc_search_history_item_height" android:paddingStart="@dimen/kfc_search_history_item_left_padding" android:paddingEnd="@dimen/kfc_search_history_item_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/kfc_search_history_item_icon" android:layout_width="@dimen/kfc_search_history_item_img_size" android:layout_height="@dimen/kfc_search_history_item_img_size" android:src="?search_history_widget_item_icon" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/kfc_search_history_item_left_padding" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/search_item_query" android:layout_centerVertical="true" android:layout_toEndOf="@id/kfc_search_history_item_icon" style="@style/kfc_search_history_text" />
+</RelativeLayout>

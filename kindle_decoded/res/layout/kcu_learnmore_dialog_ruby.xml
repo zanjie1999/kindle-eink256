@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?kcu_dialog_background_color" android:padding="@dimen/kcu_default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingBottom="@dimen/kcu_dialog_scroll_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+        <com.amazon.versioning.reader.ui.views.KCULearnMoreTextView android:textColor="?kcu_dialog_text_color" android:id="@id/kcu_learnmore_dialog_text_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.amazon.versioning.reader.ui.views.KCUSecondaryButton android:layout_gravity="center_horizontal" android:id="@id/kcu_learnmore_dialog_button_id" android:paddingTop="@dimen/kcu_button_margin" android:paddingBottom="@dimen/kcu_button_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/kcu_learnmore_button_vertical_margin_ruby" android:minHeight="@dimen/kcu_button_min_height" />
+    <com.amazon.versioning.reader.ui.views.KCULearnMoreLinkTextView android:textColor="?kcu_dialog_button_text_color" android:gravity="center" android:id="@id/kcu_learnmore_dialog_link_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

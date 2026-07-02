@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_footer_height">395.0dip</dimen>
+    <dimen name="samsung_club_banner_height">420.0dip</dimen>
+</resources>

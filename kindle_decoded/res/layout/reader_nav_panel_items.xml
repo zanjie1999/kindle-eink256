@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?readerListDivider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:descendantFocusability="afterDescendants" style="@style/fill">
+        <ListView android:id="@id/reader_nav_panel_content" android:descendantFocusability="afterDescendants" android:divider="?readerListDivider" style="@style/fill" />
+        <View android:background="@drawable/reader_nav_panel_list_foreground" android:layout_width="fill_parent" android:layout_height="14.0dip" />
+    </FrameLayout>
+</LinearLayout>

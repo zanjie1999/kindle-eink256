@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="upsell_fullpageAd_buttonHeight">30.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonPaddingRight">49.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonTextSize">14.0dip</dimen>
+    <dimen name="upsell_fullpageAd_buttonWidth">126.0dip</dimen>
+    <dimen name="upsell_fullpageAd_relativeLayoutHeight">183.0dip</dimen>
+    <dimen name="upsell_fullpageAd_titleTextSize">30.0dip</dimen>
+    <dimen name="upsell_fullpage_button_marginTop">69.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingBottom">40.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingLeft">47.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingRight">47.0dip</dimen>
+    <dimen name="upsell_fullpage_image_paddingTop">40.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingLeft">65.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingRight">65.0dip</dimen>
+    <dimen name="upsell_fullpage_paddingTop">117.0dip</dimen>
+    <dimen name="upsell_fullpageAd_descriptionTextSize">27.0dip</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.rendering.KRIFLayout android:focusable="true" android:focusableInTouchMode="true" style="@style/fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/reader_layout" />
+</com.amazon.kindle.rendering.KRIFLayout>

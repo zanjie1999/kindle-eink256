@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="0.0" android:toDegrees="360.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring" android:useLevel="false" android:innerRadius="@dimen/full_player_progress_bar_radius" android:thickness="@dimen/full_player_progress_bar_thickness">
+        <gradient android:startColor="@android:color/transparent" android:endColor="@android:color/white" android:useLevel="false" android:angle="0.0" android:type="sweep" />
+    </shape>
+</rotate>

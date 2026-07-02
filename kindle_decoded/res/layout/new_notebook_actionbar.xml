@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/notebook_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/notebook_module_title" android:fontFamily="Amazon Ember" android:textAlignment="center" android:layout_marginStart="@dimen/notebook_actionbar_padding" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</RelativeLayout>

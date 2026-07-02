@@ -1,0 +1,315 @@
+.class public Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;
+.super Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;
+.source "AnrArtifactProcessor.java"
+
+
+# static fields
+.field public static final ANR_ARTIFACT_TAGS:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final MIN_NUM_LINES_TO_BE_READ:I = 0xa
+
+.field private static final REGEX_STACK_TRACE_DATA:Ljava/lang/String; = "(at\\s.*\\(.*\\))"
+
+.field public static final REGEX_STACK_TRACE_PATTERN:Ljava/util/regex/Pattern;
+
+
+# instance fields
+.field private final mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+.field private final mCrashDedupeUtil:Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;
+
+.field private final mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    const-string v0, "(at\\s.*\\(.*\\))"
+
+    .line 29
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->REGEX_STACK_TRACE_PATTERN:Ljava/util/regex/Pattern;
+
+    .line 40
+    new-instance v0, Ljava/util/HashSet;
+
+    const/16 v1, 0x8
+
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(I)V
+
+    const-string/jumbo v1, "system_app_anr"
+
+    .line 41
+    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    const-string v1, "data_app_anr"
+
+    .line 42
+    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    const-string/jumbo v1, "system_server_anr"
+
+    .line 43
+    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    .line 44
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->ANR_ARTIFACT_TAGS:Ljava/util/Set;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/amazon/device/utils/det/DetUtil;Ljava/lang/String;Ljava/util/Map;Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessorFactory;Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/amazon/device/utils/det/DetUtil;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessorFactory;",
+            "Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;",
+            ")V"
+        }
+    .end annotation
+
+    .line 54
+    invoke-direct {p0, p1, p2, p3}, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;-><init>(Lcom/amazon/device/utils/det/DetUtil;Ljava/lang/String;Ljava/util/Map;)V
+
+    if-eqz p4, :cond_1
+
+    if-eqz p5, :cond_0
+
+    .line 64
+    iget-object p1, p0, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->mHeaderWriter:Lcom/amazon/device/utils/det/DetUtil$HeaderWriter;
+
+    invoke-virtual {p4, p1}, Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessorFactory;->construct(Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;)Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    .line 66
+    new-instance p1, Ljava/util/HashMap;
+
+    const/4 p2, 0x3
+
+    invoke-direct {p1, p2}, Ljava/util/HashMap;-><init>(I)V
+
+    .line 69
+    iget-object p2, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    const-string p3, "Process"
+
+    invoke-interface {p1, p3, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 70
+    iget-object p2, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    const-string p3, "hasForegroundActivities"
+
+    invoke-interface {p1, p3, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 71
+    new-instance p2, Lcom/amazon/device/crashmanager/processor/ExtractJavaVersionHeaderProcessor;
+
+    iget-object p3, p0, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->mHeaderWriter:Lcom/amazon/device/utils/det/DetUtil$HeaderWriter;
+
+    invoke-direct {p2, p3}, Lcom/amazon/device/crashmanager/processor/ExtractJavaVersionHeaderProcessor;-><init>(Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;)V
+
+    const-string p3, "Package"
+
+    invoke-interface {p1, p3, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 73
+    new-instance p2, Lcom/amazon/device/utils/det/DetUtil$DefaultHeaderProcessor;
+
+    iget-object p3, p0, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->mHeaderWriter:Lcom/amazon/device/utils/det/DetUtil$HeaderWriter;
+
+    invoke-direct {p2, p1, p3}, Lcom/amazon/device/utils/det/DetUtil$DefaultHeaderProcessor;-><init>(Ljava/util/Map;Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;)V
+
+    iput-object p2, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    .line 77
+    iput-object p5, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mCrashDedupeUtil:Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;
+
+    return-void
+
+    .line 60
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Duplicate count must not be null."
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 57
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Metrics header processor factory must not be null."
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+
+# virtual methods
+.method protected addSpecificHeaders(Lcom/amazon/device/crashmanager/Artifact;Ljava/io/BufferedReader;Ljava/io/Writer;Ljava/lang/String;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 92
+    iget-object v0, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    invoke-virtual {p1}, Lcom/amazon/device/crashmanager/Artifact;->getTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;->setProcessTag(Ljava/lang/String;)V
+
+    .line 93
+    iget-object v0, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    invoke-virtual {v0, p4}, Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;->setAction(Ljava/lang/String;)V
+
+    .line 95
+    iget-object p4, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    const-string v0, "ContentType"
+
+    const-string v1, "JavaCrash"
+
+    invoke-interface {p4, v0, v1, p3}, Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;->process(Ljava/lang/String;Ljava/lang/String;Ljava/io/Writer;)V
+
+    .line 102
+    iget-object p4, p0, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->mDetUtil:Lcom/amazon/device/utils/det/DetUtil;
+
+    iget-object v0, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    invoke-virtual {p4, p2, p3, v0}, Lcom/amazon/device/utils/det/DetUtil;->processHeaders(Ljava/io/BufferedReader;Ljava/io/Writer;Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;)Ljava/lang/String;
+
+    move-result-object p4
+
+    .line 103
+    invoke-static {p4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 105
+    iget-object v3, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    const/4 v4, 0x0
+
+    iget-object v6, p0, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->mBuffer:[C
+
+    iget-object v7, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mMetricsHeaderProcessor:Lcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;
+
+    const/4 v8, 0x0
+
+    const-string v5, "ANR"
+
+    move-object v1, p2
+
+    move-object v2, p3
+
+    invoke-static/range {v1 .. v8}, Lcom/amazon/device/crashmanager/utils/CrashDescriptorUtil;->calculateCrashDescriptorFromTrace(Ljava/io/BufferedReader;Ljava/io/Writer;Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;Ljava/lang/String;Ljava/lang/String;[CLcom/amazon/device/crashmanager/processor/MetricsHeaderProcessor;Lcom/amazon/client/metrics/common/MetricEvent;)Ljava/lang/String;
+
+    move-result-object p4
+
+    .line 108
+    :cond_0
+    iget-object p2, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    const-string v0, "CrashDescriptor"
+
+    invoke-interface {p2, v0, p4, p3}, Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;->process(Ljava/lang/String;Ljava/lang/String;Ljava/io/Writer;)V
+
+    .line 109
+    invoke-virtual {p1}, Lcom/amazon/device/crashmanager/Artifact;->getTag()Ljava/lang/String;
+
+    move-result-object p2
+
+    iget-object v0, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mCrashDedupeUtil:Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;
+
+    iget-object v1, p0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->mAnrHeaderProcessor:Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;
+
+    invoke-static {p2, p4, v0, p3, v1}, Lcom/amazon/device/crashmanager/utils/CrashReportUtil;->addCrashDuplicateHeader(Ljava/lang/String;Ljava/lang/String;Lcom/amazon/device/crashmanager/utils/CrashDescriptorDedupeUtil;Ljava/io/Writer;Lcom/amazon/device/utils/det/DetUtil$HeaderProcessor;)V
+
+    .line 110
+    invoke-virtual {p1, p4}, Lcom/amazon/device/crashmanager/Artifact;->setCrashDescriptor(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public canProcessTag(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 82
+    sget-object v0, Lcom/amazon/device/crashmanager/processor/AnrArtifactProcessor;->ANR_ARTIFACT_TAGS:Ljava/util/Set;
+
+    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public bridge synthetic processArtifact(Lcom/amazon/device/crashmanager/Artifact;)Ljava/io/InputStream;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 26
+    invoke-super {p0, p1}, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->processArtifact(Lcom/amazon/device/crashmanager/Artifact;)Ljava/io/InputStream;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic processArtifact(Lcom/amazon/device/crashmanager/Artifact;Ljava/lang/String;)Ljava/io/InputStream;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 26
+    invoke-super {p0, p1, p2}, Lcom/amazon/device/crashmanager/processor/AbstractDetArtifactProcessor;->processArtifact(Lcom/amazon/device/crashmanager/Artifact;Ljava/lang/String;)Ljava/io/InputStream;
+
+    move-result-object p1
+
+    return-object p1
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" style="@style/ReaderStyle.Navigation.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/reader_nav_panel_item_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReaderStyle.Navigation.Item.Label" />
+    <TextView android:textSize="@dimen/reader_nav_panel_description_text_size" android:id="@id/reader_nav_panel_item_secondary_text" android:paddingTop="2.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReaderStyle.Navigation.Item.Label" />
+</com.amazon.kcp.library.ui.SelectionFriendlyLinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="58.0dip" android:width="58.0dip" android:viewportWidth="58.0" android:viewportHeight="58.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?aaMenuV2RadioOptionBackgroundColor" android:pathData="M13.5,7.5L44.5,7.5A6,6 0,0 1,50.5 13.5L50.5,44.5A6,6 0,0 1,44.5 50.5L13.5,50.5A6,6 0,0 1,7.5 44.5L7.5,13.5A6,6 0,0 1,13.5 7.5z" android:strokeColor="?aaMenuV2RadioOptionBorderColor" android:strokeWidth="1.0" />
+    <path android:fillColor="#00000000" android:pathData="M18.25,14.5L18.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+    <path android:fillColor="#00000000" android:pathData="M22.25,14.5L22.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+    <path android:fillColor="#00000000" android:pathData="M26.25,14.5L26.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+    <path android:fillColor="#00000000" android:pathData="M30.25,14.5L30.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+    <path android:fillColor="#00000000" android:pathData="M34.25,14.5L34.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+    <path android:fillColor="#00000000" android:pathData="M38.25,14.5L38.25,43.5" android:strokeColor="?aaMenuV2RadioOptionContentColor" android:strokeWidth="1.5" android:strokeLineCap="square" />
+</vector>

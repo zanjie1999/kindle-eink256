@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:left="@dimen/e3os_seekbar_thumb_padding" android:top="@dimen/e3os_seekbar_thumb_padding" android:right="@dimen/e3os_seekbar_thumb_padding" android:bottom="@dimen/e3os_seekbar_thumb_padding">
+        <shape android:shape="oval">
+            <size android:height="@dimen/e3os_seekbar_thumb_size" android:width="@dimen/e3os_seekbar_thumb_size" />
+            <stroke android:width="@dimen/e3os_seekbar_thumb_stroke_width" android:color="@color/e3os_eink_seekbar_thumb_stroke" />
+            <solid android:color="@color/e3os_eink_seekbar_thumb_solid" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:left="@dimen/e3os_seekbar_thumb_padding" android:top="@dimen/e3os_seekbar_thumb_padding" android:right="@dimen/e3os_seekbar_thumb_padding" android:bottom="@dimen/e3os_seekbar_thumb_padding">
+        <shape android:shape="oval">
+            <size android:height="@dimen/e3os_seekbar_thumb_size" android:width="@dimen/e3os_seekbar_thumb_size" />
+            <stroke android:width="@dimen/e3os_seekbar_thumb_stroke_width" android:color="@android:color/transparent" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

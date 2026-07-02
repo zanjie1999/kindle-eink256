@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuitem_reader_store">Acquista nel Kindle Store</string>
+    <string name="menuitem_sync">Sinc. con l’ultima pagina letta</string>
+    <string name="transient_downloading">Download in corso…</string>
+    <string name="colors_and_brightness">Colori e la luminosità</string>
+    <string name="font_size_options">Opzioni dimensione carattere</string>
+</resources>

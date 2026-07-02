@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/periodical_toc_magazine" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/newtron_toolbar" android:id="@id/newtron_periodical_toc_toolbar" android:background="?android:colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" app:contentInsetStart="0.0dip">
+        <TableLayout android:paddingLeft="@dimen/toc_header_left_padding" android:paddingTop="@dimen/toc_header_top_padding" android:paddingRight="@dimen/toc_header_right_padding" android:paddingBottom="@dimen/toc_header_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+            <TableRow>
+                <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/toc_header_cover_right_margin">
+                        <ImageView android:id="@id/periodical_cover" android:background="@drawable/toc_cover_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/periodical_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/toc_header_magazine_title" />
+                        <TextView android:id="@id/periodical_toc_publish_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/toc_header_publish_date" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/periodical_toc_section_btn" android:layout_marginLeft="@dimen/toc_header_magazine_section_list_button_margin_left" android:layout_column="2" style="@style/periodical_toc_section_btn">
+                    <TextView android:textSize="16.0sp" android:textColor="?android:textColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/section_list_title" />
+                    <ImageView android:background="?android:moreIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/toc_header_section_arrow_left_margin" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <com.amazon.nwstd.toc.widget.ArticleRow android:id="@id/periodical_header_toc" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/toc_divider_height" />
+    <com.amazon.nwstd.toc.widget.PeriodicalContentSpinner android:id="@id/periodical_toc_section_list" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:prompt="@string/section_list_title" android:spinnerMode="dialog" />
+</LinearLayout>

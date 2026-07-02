@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/time_to_read_widget_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/readingactions_amazon_text_body" android:id="@id/reading_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textAppearance="@style/readingactions_amazon_text_body" android:id="@id/reading_pages" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/endactions_small_padding" android:layout_weight="0.0" />
+</LinearLayout>

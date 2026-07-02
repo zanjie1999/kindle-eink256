@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@android:color/black" android:left="@dimen/appcompat_actionbar_left_padding" android:right="@dimen/appcompat_actionbar_right_padding" />
+            <item android:drawable="@drawable/e3os_back_icon_inverse" android:left="@dimen/appcompat_actionbaricon_left_padding" android:top="@dimen/appcompat_actionbaricon_top_padding" android:right="@dimen/appcompat_actionbaricon_right_padding" android:bottom="@dimen/appcompat_actionbaricon_bottom_padding" />
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@android:color/white" android:left="@dimen/appcompat_actionbar_left_padding" android:right="@dimen/appcompat_actionbar_right_padding" />
+            <item android:drawable="@drawable/e3os_back_icon" android:left="@dimen/appcompat_actionbaricon_left_padding" android:top="@dimen/appcompat_actionbaricon_top_padding" android:right="@dimen/appcompat_actionbaricon_right_padding" android:bottom="@dimen/appcompat_actionbaricon_bottom_padding" />
+        </layer-list>
+    </item>
+</selector>

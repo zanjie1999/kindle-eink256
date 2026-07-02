@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kindle.viewoptions.font.FontFamilyListItem android:orientation="vertical" android:layout_width="@dimen/aa_menu_v2_setting_font_family_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kindle.viewoptions.font.FontGuidanceTextView android:textSize="@dimen/aa_menu_v2_setting_font_guidance_text_size" android:id="@id/font_guidance" android:layout_width="fill_parent" android:layout_height="@dimen/aa_menu_v2_setting_font_guidance_height" android:importantForAccessibility="no" />
+    <TextView android:textSize="@dimen/aa_menu_v2_setting_font_name_text_size" android:gravity="center_horizontal" android:id="@id/font_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aa_menu_v2_setting_font_name_margin_top" android:minLines="2" android:fontFamily="Amazon Ember" />
+</com.amazon.kindle.viewoptions.font.FontFamilyListItem>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center|left" android:id="@id/sendFeedbackButton" android:text="@string/startactions_widget_send_feedback_text" style="@style/startactions_text_button_light_small" />
+</RelativeLayout>

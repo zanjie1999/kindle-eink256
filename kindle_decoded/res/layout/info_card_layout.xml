@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/info_card_parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/info_card_widget_stub" android:layout="@layout/info_card_widget" android:inflatedId="@id/info_card_widget_stub_inflated" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

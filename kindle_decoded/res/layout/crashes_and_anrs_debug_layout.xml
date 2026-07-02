@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/forceAppCrashDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To force a simple app crash, tap the button below. The crash will happen immediately." />
+    <Button android:id="@id/btn_force_crash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Force App Crash" />
+    <TextView android:id="@id/forceNativeCrashDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To force a native crash, tap the button below. It can take several seconds for the crash to occur." />
+    <Button android:id="@id/btn_force_native_crash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Force Native (C++) Crash" />
+    <TextView android:id="@id/forceAnrDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To force an ANR, follow these steps:\n1. Click the Force ANR button below\n2. Turn the device's screen off and back on again\n3. Tap the button again\n4. Wait for ten seconds" />
+    <Button android:id="@id/btn_force_anr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Force ANR (App Not Responding)" />
+</LinearLayout>

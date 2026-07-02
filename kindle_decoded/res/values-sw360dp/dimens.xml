@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fr_grid_item_standard_width">150.0dip</dimen>
+    <dimen name="ku_offer_cover_height">88.0dip</dimen>
+    <dimen name="ku_offer_cover_spacing_horizontal">10.0dip</dimen>
+    <dimen name="ku_offer_cover_spacing_vertical">10.0dip</dimen>
+    <dimen name="ku_offer_cover_width">57.0dip</dimen>
+    <dimen name="ku_offer_grid_view_height">180.0dip</dimen>
+    <dimen name="ku_offer_grid_view_width">325.0dip</dimen>
+    <dimen name="preference_category_padding_start">56.0dip</dimen>
+</resources>

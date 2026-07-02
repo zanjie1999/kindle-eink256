@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?lib_menu_share_icon" android:id="@id/lib_menu_share_button" android:orderInCategory="50" android:title="@string/share_this_book" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?add_to_collection_icon" android:id="@id/add_to_collection" android:orderInCategory="100" android:title="@string/add_to_collection" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?remove_from_collection_icon" android:id="@id/remove_from_collection" android:orderInCategory="200" android:title="@string/menuitem_remove_from_collection" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?actionbar_delete_icon" android:id="@id/lib_menu_delete" android:visible="false" android:orderInCategory="300" android:title="@string/lib_menu_delete" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="?actionbar_download_icon" android:id="@id/lib_menu_download" android:orderInCategory="400" android:title="@string/lib_menu_download" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:id="@id/lib_menu_view_all_in_store" android:title="@string/series_see_all_in_store" android:showAsAction="never" app:showAsAction="never" />
+    <item android:id="@id/lib_menu_perioidical_keep" android:orderInCategory="600" android:title="@string/lib_context_keep" android:showAsAction="never" app:showAsAction="never" />
+    <item android:id="@id/lib_menu_perioidical_dont_keep" android:orderInCategory="600" android:title="@string/lib_context_dontkeep" android:showAsAction="never" app:showAsAction="never" />
+</menu>

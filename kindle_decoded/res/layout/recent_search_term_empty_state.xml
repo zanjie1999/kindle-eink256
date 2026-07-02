@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/recent_search_empty_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recent_search_empty_view_margin_top" android:text="@string/recent_search_on_empty_message_displayed" android:lineSpacingExtra="@dimen/recent_search_empty_view_line_spacing" android:fontFamily="Amazon Ember Light" android:textDirection="ltr" android:paddingStart="@dimen/recent_search_empty_view_padding_horiz" android:paddingEnd="@dimen/recent_search_empty_view_padding_horiz" style="style=@style/reader_search_text.body" />
+</LinearLayout>

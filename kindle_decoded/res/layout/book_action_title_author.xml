@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_title" style="@style/book_action_title" />
+    <com.amazon.android.ui.UiFontTextView android:id="@id/book_action_author" style="@style/book_action_author" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/selection_overlay_focused" />
+    <item android:state_checked="true" android:state_selected="true" android:drawable="@drawable/selection_overlay_focused" />
+    <item android:state_focused="true" android:drawable="@drawable/selection_overlay_focused" />
+    <item android:state_selected="true" android:drawable="@drawable/selection_overlay_focused" />
+    <item android:state_checked="true" android:drawable="@drawable/selection_overlay_no_check" />
+</selector>

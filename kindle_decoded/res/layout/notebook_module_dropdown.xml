@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/notebook_module_filter_menu_title" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <View android:id="@id/notebook_filter_divider" android:background="@color/notebook_filter_menu_border_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/module_dropdown_item_content" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <ImageView android:id="@id/module_filter_checked" android:focusable="false" android:layout_width="@dimen/notebook_dropdown_list_checkmark_width" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/notebook_filter_dismiss" android:layout_alignParentEnd="true" />
+            <RelativeLayout android:textSize="14.0sp" android:gravity="start|center" android:orientation="horizontal" android:id="@id/module_filter_text_count" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/notebook_dropdown_list_label_margin_left" android:singleLine="true" android:layout_toLeftOf="@id/module_filter_checked" android:importantForAccessibility="yes" android:layout_marginStart="@dimen/notebook_dropdown_list_label_margin_left" android:layout_toStartOf="@id/module_filter_checked">
+                <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="start|center" android:id="@id/module_filter_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/notebook_module_filter_title" android:singleLine="true" android:layout_alignParentLeft="true" android:importantForAccessibility="yes" android:layout_alignParentStart="true" style="@style/TextAppearance.AppCompat.Body1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ExpandableListView android:id="@id/notebook_module_dropdown_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:childDivider="?readerListDivider" android:divider="@null" android:dividerHeight="0.0dip" style="@style/TextAppearance.AppCompat.Body1"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

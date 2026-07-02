@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="font_size_array">
+        <item>14</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>20</item>
+        <item>21</item>
+        <item>23</item>
+        <item>34</item>
+        <item>40</item>
+        <item>56</item>
+        <item>66</item>
+        <item>96</item>
+    </integer-array>
+    <array name="page_margins_user_settings">
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+        <item>80.0dip</item>
+    </array>
+    <integer-array name="typeface_ramp_spacing_array">
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <array name="vertical_page_margins_user_settings">
+        <item>65.0dip</item>
+        <item>85.0dip</item>
+        <item>105.0dip</item>
+    </array>
+    <array name="yj_page_margins_landscape">
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+        <item>80.0dip</item>
+    </array>
+    <array name="yj_page_margins_portrait">
+        <item>40.0dip</item>
+        <item>60.0dip</item>
+        <item>80.0dip</item>
+    </array>
+    <integer-array name="yj_typeface_ramp_spacing_array_narrow">
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </integer-array>
+    <integer-array name="yj_typeface_ramp_spacing_array_normal">
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="yj_typeface_ramp_spacing_array_wide">
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>9</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>9</item>
+        <item>9</item>
+        <item>9</item>
+        <item>9</item>
+    </integer-array>
+</resources>

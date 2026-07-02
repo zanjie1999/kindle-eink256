@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/readingactions_xxxlarge_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/blurb_card_container" android:paddingBottom="@dimen/readingactions_xlarge_padding" android:layout_width="@dimen/readingactions_blurb_widget_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/blurb_book_image" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/readingactions_blurb_rec_image_height" android:scaleType="fitStart" android:adjustViewBounds="true" android:maxWidth="@dimen/readingactions_blurb_rec_image_width" />
+        <ImageView android:id="@id/blurb_cover_image_pointer" android:layout_width="@dimen/readingactions_blurb_card_cover_image_pointer_width" android:layout_height="@dimen/readingactions_blurb_rec_image_height" android:translationZ="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/blurb_card_content_layout" android:paddingBottom="@dimen/readingactions_small_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/readingactions_blurb_card_width" android:minHeight="@dimen/readingactions_blurb_card_content_min_height" android:paddingStart="@dimen/readingactions_large_padding" android:paddingEnd="@dimen/readingactions_large_padding" android:layout_marginStart="-1.0dip">
+            <ImageView android:id="@id/blurb_quote" android:background="@drawable/readingactions_blurb_quote_light" android:layout_width="@dimen/readingactions_blurb_quote_image_width" android:layout_height="@dimen/readingactions_blurb_quote_image_height" android:layout_marginTop="@dimen/readingactions_large_padding" android:layout_marginBottom="@dimen/readingactions_xsmall_padding" />
+            <TextView android:textAppearance="@style/anyactions_amazon_text_blurb" android:textStyle="normal" android:id="@id/blurb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/endactions_medium_padding" android:minHeight="@dimen/readingactions_blurb_text_min_height" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/blurb_author_image" android:layout_width="@dimen/readingactions_blurb_author_image_width" android:layout_height="@dimen/readingactions_blurb_author_image_height" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/readingactions_large_padding">
+                    <TextView android:textSize="@dimen/aa_text_size_blurb" android:textStyle="bold" android:id="@id/blurb_author_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="@style/anyactions_amazon_text_blurb" android:textStyle="italic" android:id="@id/blurb_author_role" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/blurb_learn_more" android:layout_width="@dimen/readingactions_blurb_card_button_width" android:layout_height="wrap_content" android:minHeight="@dimen/featuredbooks_button_height" android:text="@string/endactions_learn_more" android:contentDescription="@string/endactions_learn_more_about_this_book" android:layout_marginEnd="@dimen/readingactions_large_padding" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/blurb_try_sample" android:layout_width="@dimen/readingactions_blurb_card_button_width" android:layout_height="wrap_content" android:minHeight="@dimen/featuredbooks_button_height" android:text="@string/endactions_onetap_read_samples" android:layout_marginStart="@dimen/readingactions_large_padding" />
+    </LinearLayout>
+</LinearLayout>

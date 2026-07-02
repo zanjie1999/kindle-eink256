@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.cover.TwoStateProgressBar android:layout_width="fill_parent" android:layout_height="@dimen/download_progress_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/initial_progress_bar" android:progressDrawable="?progress_bar_downloading_drawable" style="@style/DownloadProgressBar" />
+    <ProgressBar android:id="@id/final_progress_bar" android:progressDrawable="?progress_bar_downloading_openable_drawable" style="@style/DownloadProgressBar" />
+</com.amazon.kcp.cover.TwoStateProgressBar>

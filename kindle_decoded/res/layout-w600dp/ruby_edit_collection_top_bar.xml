@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?library_action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="start" android:id="@id/contextual_done_button" style="?actionModeCloseButtonStyle" />
+    <TextView android:textAppearance="@style/Ruby.TextAppearance.Header1" android:layout_gravity="center" android:id="@id/rearrange_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ruby_rearrange_hint" />
+</FrameLayout>

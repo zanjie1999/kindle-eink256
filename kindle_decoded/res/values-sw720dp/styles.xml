@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="more_screen">
+        <item name="android:background">?bg_more_screen</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+    <style name="nis_buy_button_base" parent="@style/Ruby.TextAppearance.Button">
+        <item name="android:textColor">?resume_primary_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?nis_card_button_background_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/nis_buy_button_height</item>
+        <item name="android:minWidth">@dimen/nis_buy_button_width</item>
+    </style>
+</resources>

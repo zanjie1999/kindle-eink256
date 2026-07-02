@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuitem_add_bookmark">Adicionar marcador</string>
+    <string name="menuitem_remove_bookmark">Remover marcador</string>
+</resources>

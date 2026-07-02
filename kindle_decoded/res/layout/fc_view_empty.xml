@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0">
+            <ImageButton android:id="@id/empty_add_button" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" style="@style/fc_empty_add_button" />
+            <TextView android:id="@id/empty_add_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/empty_add_button" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@style/fc_empty_add_label" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/empty_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:importantForAccessibility="no" style="@style/fc_empty_description" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

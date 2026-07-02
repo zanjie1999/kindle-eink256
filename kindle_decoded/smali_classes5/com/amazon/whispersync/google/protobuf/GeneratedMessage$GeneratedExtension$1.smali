@@ -1,0 +1,46 @@
+.class Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$ExtensionDescriptorRetriever;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension;->internalInit(Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension;
+
+.field final synthetic val$descriptor:Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;
+
+
+# direct methods
+.method constructor <init>(Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension;Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension$1;->this$0:Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension;
+
+    iput-object p2, p0, Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension$1;->val$descriptor:Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getDescriptor()Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;
+    .locals 1
+
+    iget-object v0, p0, Lcom/amazon/whispersync/google/protobuf/GeneratedMessage$GeneratedExtension$1;->val$descriptor:Lcom/amazon/whispersync/google/protobuf/Descriptors$FieldDescriptor;
+
+    return-object v0
+.end method

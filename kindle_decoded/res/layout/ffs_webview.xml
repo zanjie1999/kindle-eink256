@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/ffs_webview_navigation_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/webViewProgressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    <WebView android:id="@id/ffs_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

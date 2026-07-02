@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ruby_edit_collection_top_bar" />
+    <FrameLayout android:id="@id/collection_edit_root" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/lib_recycler_parent_horizontal_margin" android:paddingEnd="@dimen/lib_recycler_parent_horizontal_margin" />
+</LinearLayout>

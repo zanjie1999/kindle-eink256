@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notebook_action_bar_spinner_subtitle_size">11.0dip</dimen>
+    <dimen name="notebook_action_bar_spinner_title_size">15.0dip</dimen>
+</resources>

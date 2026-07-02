@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generated_cover_date_text_size">14.0dip</dimen>
+    <dimen name="popup_bookmark_view_top_margin">0.0dip</dimen>
+    <dimen name="selected_thumbnail_item_border_width">5.0dip</dimen>
+    <dimen name="status_bar_height">25.0dip</dimen>
+    <dimen name="thumbnail_item_height">126.0dip</dimen>
+    <dimen name="thumbnail_item_page_nb_horizontal_padding">5.0dip</dimen>
+    <dimen name="thumbnail_item_width">175.0dip</dimen>
+    <dimen name="thumbnail_items_spacing">9.0dip</dimen>
+    <dimen name="thumbnail_slider_bottom">5.0dip</dimen>
+    <dimen name="thumbnail_slider_bottom_padding">12.0dip</dimen>
+    <dimen name="thumbnail_slider_minHeight">129.0dip</dimen>
+    <dimen name="generated_cover_date_padding_medium">6.0dip</dimen>
+    <dimen name="generated_cover_date_padding_small">0.0dip</dimen>
+</resources>

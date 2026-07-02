@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carousel_instructions_subheading_1">Here are a few titles from the Kindle Select 25 list.</string>
+    <string name="device_orientation">LANDSCAPE</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/periodical_magnifying_glass" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.kcp.periodicals.ui.PeriodicalMagnifyingView android:id="@id/periodical_magnifying_view" android:layout_width="@dimen/periodical_magnifying_view_width" android:layout_height="@dimen/periodical_magnifying_view_height" android:layout_marginLeft="@dimen/periodical_magnifying_glass_horiz_frame" android:layout_marginTop="@dimen/periodical_magnifying_glass_vert_frame" android:layout_marginRight="@dimen/periodical_magnifying_glass_horiz_frame" android:layout_marginBottom="@dimen/periodical_magnifying_glass_vert_frame" />
+    <ImageView android:id="@id/periodical_magnifying_frame" android:layout_width="@dimen/periodical_magnifying_glass_width" android:layout_height="@dimen/periodical_magnifying_glass_height" android:src="@drawable/magnify" android:scaleType="fitXY" />
+</FrameLayout>

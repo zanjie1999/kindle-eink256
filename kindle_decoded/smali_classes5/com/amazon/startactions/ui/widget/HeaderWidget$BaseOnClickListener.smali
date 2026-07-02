@@ -1,0 +1,45 @@
+.class abstract Lcom/amazon/startactions/ui/widget/HeaderWidget$BaseOnClickListener;
+.super Ljava/lang/Object;
+.source "HeaderWidget.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/startactions/ui/widget/HeaderWidget;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x402
+    name = "BaseOnClickListener"
+.end annotation
+
+
+# instance fields
+.field protected final expandingTextView:Lcom/amazon/startactions/ui/helpers/TextViewWithEndButton;
+
+.field protected final parentView:Landroid/view/View;
+
+.field protected final seeLessButton:Landroid/widget/Button;
+
+
+# direct methods
+.method public constructor <init>(Lcom/amazon/startactions/ui/widget/HeaderWidget;Lcom/amazon/startactions/ui/helpers/TextViewWithEndButton;Landroid/widget/Button;Landroid/view/View;)V
+    .locals 0
+
+    .line 300
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 301
+    iput-object p2, p0, Lcom/amazon/startactions/ui/widget/HeaderWidget$BaseOnClickListener;->expandingTextView:Lcom/amazon/startactions/ui/helpers/TextViewWithEndButton;
+
+    .line 302
+    iput-object p3, p0, Lcom/amazon/startactions/ui/widget/HeaderWidget$BaseOnClickListener;->seeLessButton:Landroid/widget/Button;
+
+    .line 303
+    iput-object p4, p0, Lcom/amazon/startactions/ui/widget/HeaderWidget$BaseOnClickListener;->parentView:Landroid/view/View;
+
+    return-void
+.end method

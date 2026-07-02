@@ -1,0 +1,194 @@
+.class public final Lcom/amazon/kcp/reader/SelectionSettingItemProvider;
+.super Ljava/lang/Object;
+.source "SelectionSettingItemProvider.kt"
+
+# interfaces
+.implements Lcom/amazon/kindle/setting/item/ItemsProvider;
+
+
+# instance fields
+.field private final userSettingsController:Lcom/amazon/kcp/application/UserSettingsController;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 26
+    invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
+
+    move-result-object v0
+
+    const-string v1, "Utils.getFactory()"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0}, Lcom/amazon/kcp/application/IKindleObjectFactory;->getUserSettingsController()Lcom/amazon/kcp/application/UserSettingsController;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/amazon/kcp/reader/SelectionSettingItemProvider;->userSettingsController:Lcom/amazon/kcp/application/UserSettingsController;
+
+    return-void
+.end method
+
+.method public static final synthetic access$toggled(Lcom/amazon/kcp/reader/SelectionSettingItemProvider;Z)V
+    .locals 0
+
+    .line 19
+    invoke-direct {p0, p1}, Lcom/amazon/kcp/reader/SelectionSettingItemProvider;->toggled(Z)V
+
+    return-void
+.end method
+
+.method private final toggled(Z)V
+    .locals 4
+
+    .line 29
+    invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
+
+    move-result-object v0
+
+    const-string v1, "Utils.getFactory()"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0}, Lcom/amazon/kcp/application/IKindleObjectFactory;->getKindleReaderSDK()Lcom/amazon/kindle/krx/IKindleReaderSDK;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lcom/amazon/kindle/krx/IKindleReaderSDK;->getReadingStreamsEncoder()Lcom/amazon/kindle/krx/readingstreams/IReadingStreamsEncoder;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x1
+
+    const-string v2, "Settings"
+
+    const-string v3, "SelectionSettingsToggleShowsMenu"
+
+    .line 30
+    invoke-interface {v0, v2, v3, p1, v1}, Lcom/amazon/kindle/krx/readingstreams/IReadingStreamsEncoder;->recordSetting(Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    .line 31
+    :cond_1
+    iget-object v0, p0, Lcom/amazon/kcp/reader/SelectionSettingItemProvider;->userSettingsController:Lcom/amazon/kcp/application/UserSettingsController;
+
+    invoke-virtual {v0, p1}, Lcom/amazon/kcp/application/UserSettingsController;->setDisplaySelectionButtonsOnQH(Z)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createSelectionItem(Landroid/content/Context;)Lcom/amazon/kindle/setting/item/Item;
+    .locals 11
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 40
+    new-instance v0, Lcom/amazon/kindle/setting/item/template/ToggleItem;
+
+    .line 42
+    sget v1, Lcom/amazon/kindle/krl/R$string;->automatic_highlight_menu_display_option_label:I
+
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v1, "context.getString(R.stri\u2026enu_display_option_label)"
+
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 43
+    sget v1, Lcom/amazon/kindle/krl/R$string;->kre_more_rs_hm_context:I
+
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 44
+    sget-object v5, Lcom/amazon/kindle/setting/item/Category;->READING_SETTING:Lcom/amazon/kindle/setting/item/Category;
+
+    .line 45
+    iget-object p1, p0, Lcom/amazon/kcp/reader/SelectionSettingItemProvider;->userSettingsController:Lcom/amazon/kcp/application/UserSettingsController;
+
+    invoke-virtual {p1}, Lcom/amazon/kcp/application/UserSettingsController;->shouldDisplaySelectionButtonsOnQH()Z
+
+    move-result v6
+
+    .line 46
+    new-instance v7, Lcom/amazon/kcp/reader/SelectionSettingItemProvider$createSelectionItem$1;
+
+    invoke-direct {v7, p0}, Lcom/amazon/kcp/reader/SelectionSettingItemProvider$createSelectionItem$1;-><init>(Lcom/amazon/kcp/reader/SelectionSettingItemProvider;)V
+
+    const-string v2, "setting_item_highlight_menu"
+
+    const/4 v8, 0x0
+
+    const/16 v9, 0x40
+
+    const/4 v10, 0x0
+
+    move-object v1, v0
+
+    .line 40
+    invoke-direct/range {v1 .. v10}, Lcom/amazon/kindle/setting/item/template/ToggleItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/amazon/kindle/setting/item/Category;ZLcom/amazon/kindle/setting/item/template/OnToggleHandler;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-object v0
+.end method
+
+.method public getItems()Ljava/util/Collection;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Lcom/amazon/kindle/setting/item/Item;",
+            ">;"
+        }
+    .end annotation
+
+    .line 22
+    invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
+
+    move-result-object v0
+
+    const-string v1, "Utils.getFactory()"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0}, Lcom/amazon/kcp/application/IKindleObjectFactory;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "Utils.getFactory().context"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/amazon/kcp/reader/SelectionSettingItemProvider;->createSelectionItem(Landroid/content/Context;)Lcom/amazon/kindle/setting/item/Item;
+
+    move-result-object v0
+
+    .line 23
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method

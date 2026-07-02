@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ruby_lib_grid_default_column_count">16</integer>
+</resources>

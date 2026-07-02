@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/klo_main" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/klo_termlist_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/klo_toolbar" layout="@layout/klo_toolbar" />
+    <TextView android:textSize="@dimen/klo_main_noterms_text_size" android:textStyle="bold" android:id="@id/klo_no_terms" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/klo_main_noterms_margin_left" android:text="@string/klo_noterms" android:layout_below="@id/klo_toolbar" android:layout_marginStart="@dimen/klo_main_noterms_margin_left" />
+    <com.amazon.klo.list.TermListView android:scrollbarStyle="outsideOverlay" android:id="@id/klo_list" android:paddingLeft="@dimen/klo_main_termlist_padding_sides" android:paddingTop="@dimen/klo_main_termlist_padding_top" android:paddingRight="@dimen/klo_main_termlist_padding_sides" android:clipToPadding="false" android:layout_width="@dimen/klo_main_termlist_width" android:layout_height="fill_parent" android:layout_below="@id/klo_toolbar" android:layout_centerHorizontal="true" custom:listSelector="@drawable/klo_card_background_overlay" custom:numColumns="@integer/klo_termlist_num_columns" />
+    <RelativeLayout android:id="@id/klo_spinner_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/klo_toolbar">
+        <ProgressBar android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/klo_pdf_render_spinner" />
+    </RelativeLayout>
+</RelativeLayout>

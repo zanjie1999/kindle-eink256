@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:paddingRight="@dimen/view_options_row_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center|left" android:id="@id/view_options_selected_title" android:paddingRight="16.0dip" style="@style/view_options_row_text.title" />
+    <LinearLayout android:gravity="right" android:layout_gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/view_options_selected_value" android:paddingTop="@dimen/view_options_drop_down_item_padding_top" android:lines="1" style="@style/view_options_row_text" />
+    </LinearLayout>
+</LinearLayout>

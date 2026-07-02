@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/draggable_flashcard" android:background="?fc_secondary_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amazon.kedu.flashcards.views.DeckOverviewCardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/overlay" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/flashcard_deleted_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/fc_deck_list_item_body">
+        <TextView android:textColor="?fc_textColorPrimaryStateful" android:id="@id/deleted_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_flashcard_deleted_text" android:layout_toLeftOf="@id/undo_delete_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/undo_delete_button" android:layout_alignParentStart="true" style="@style/fc_deck_list_primary_label" />
+        <Button android:textSize="@dimen/fc_font_micro_text_size" android:id="@id/undo_delete_button" android:paddingLeft="@dimen/fc_deck_list_undo_button_padding_sides" android:paddingTop="@dimen/fc_deck_list_undo_button_padding_ends" android:paddingRight="@dimen/fc_deck_list_undo_button_padding_sides" android:paddingBottom="@dimen/fc_deck_list_undo_button_padding_ends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_undo_deleted_flashcard_button_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/fc_button.neutral" />
+    </RelativeLayout>
+</merge>

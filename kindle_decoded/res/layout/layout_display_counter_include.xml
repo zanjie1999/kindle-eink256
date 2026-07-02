@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/display_count_current" style="@style/display_counter_text" />
+    <TextView android:id="@id/display_count_divider" android:text="/" style="@style/display_counter_text" />
+    <TextView android:id="@id/display_count_max" style="@style/display_counter_text" />
+</merge>

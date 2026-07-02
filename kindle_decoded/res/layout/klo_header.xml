@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dropdown" android:background="@drawable/klo_spinner_ab_holo_dark" android:paddingLeft="@dimen/klo_action_bar_spinner_padding_left" android:paddingRight="@dimen/klo_action_bar_spinner_padding_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/klo_action_bar_spinner_width_min" android:paddingStart="@dimen/klo_action_bar_spinner_padding_left" android:paddingEnd="@dimen/klo_action_bar_spinner_padding_right">
+        <RelativeLayout android:id="@id/dropdown_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:id="@id/nav_spinner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/klo_XR4T" android:layout_alignParentTop="true" android:contentDescription="@string/klo_XR4T_content_description" style="@style/klo_termlist_spinner_title" />
+            <TextView android:id="@id/nav_spinner_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/nav_spinner_title" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/klo_termlist_spinner_subtitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

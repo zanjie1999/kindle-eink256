@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@android:color/black" />
+            <item android:drawable="@drawable/e3os_overflow_button_icon_pressed" android:left="@dimen/e3os_overflow_icon_leftpadding" android:top="@dimen/e3os_overflow_icon_toppadding" android:right="@dimen/e3os_overflow_icon_rightpadding" android:bottom="@dimen/e3os_overflow_icon_bottompadding" />
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@android:color/white" />
+            <item android:drawable="@drawable/e3os_overflow_button_icon_unpressed" android:left="@dimen/e3os_overflow_icon_leftpadding" android:top="@dimen/e3os_overflow_icon_toppadding" android:right="@dimen/e3os_overflow_icon_rightpadding" android:bottom="@dimen/e3os_overflow_icon_bottompadding" />
+        </layer-list>
+    </item>
+</selector>

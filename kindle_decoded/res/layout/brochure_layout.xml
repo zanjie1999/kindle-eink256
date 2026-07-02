@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/notifications_screen" android:background="@color/brochure_layout_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:id="@id/pagerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <com.amazon.kcp.reader.ui.DotPageIndicator android:layout_gravity="center_horizontal" android:id="@id/brochurePageIndicator" android:layout_width="wrap_content" android:layout_height="@dimen/brochure_page_indicator_height" android:layout_marginTop="@dimen/brochure_page_indicator_margin_top" android:importantForAccessibility="no" custom:indicatorSpacing="@dimen/brochure_page_indicator_spacing" custom:indicatorType="resource" custom:resourceActive="@drawable/ic_circle_blue" custom:resourceInactive="@drawable/ic_circle_grey" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/rlCloseContainer" android:layout_width="@dimen/brochure_close_layout_tap_target_width" android:layout_height="@dimen/brochure_close_layout_tap_target_height" android:layout_marginTop="@dimen/brochure_close_layout_margin_top" android:layout_marginRight="@dimen/brochure_close_layout_margin_right" android:layout_alignParentRight="true" android:contentDescription="@string/close">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/brochure_close_button_width" android:layout_height="@dimen/brochure_close_button_height" android:src="@drawable/component_close_button_light" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/brochure_action_button_layout_height" android:layout_marginBottom="@dimen/brochure_action_button_layout_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:id="@id/shareButton" android:visibility="gone" android:text="@string/brochure_share_button_text" style="@style/brochure_button" />
+        <Button android:id="@id/nextButton" android:text="@string/brochure_next_button_text" style="@style/brochure_button" />
+    </LinearLayout>
+</RelativeLayout>

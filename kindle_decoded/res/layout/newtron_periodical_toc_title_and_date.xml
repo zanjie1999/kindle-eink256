@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/periodical_toc_masthead" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/periodical_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/newtron_toc_header_periodical_title" />
+        <TextView android:id="@id/periodical_toc_publish_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toc_header_newspaper_publish_date_top_margin" style="@style/toc_header_publish_date" />
+    </LinearLayout>
+</merge>

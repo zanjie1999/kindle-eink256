@@ -1,0 +1,13 @@
+<div class="notebookFor">
+ノートブック: 
+</div>
+<div class="bookTitle">
+#bookTitle
+</div>
+<div class="authors">
+#authors
+</div>
+<div class="citation">
+#bibliography
+</div>
+<hr />

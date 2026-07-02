@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="carousel_instructions_heading_size">35.0sp</dimen>
+    <dimen name="carousel_instructions_subheading_1_size">25.0sp</dimen>
+    <dimen name="carousel_instructions_vertical_padding">10.0dip</dimen>
+    <item type="dimen" name="curve_degree">2.0</item>
+    <dimen name="gallery_curve_density">335.0dip</dimen>
+    <dimen name="gallery_offset">-200.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_sides">350.0dip</dimen>
+    <dimen name="welcome_sign_in_padding_top">50.0dip</dimen>
+    <dimen name="whackamole_max_title_width">480.0dip</dimen>
+    <dimen name="welcome_slide_margin">100.0dip</dimen>
+</resources>

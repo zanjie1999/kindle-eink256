@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="0.0" android:toDegrees="1080.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring" android:useLevel="true" android:innerRadius="10.5dip" android:thickness="2.0dip">
+        <gradient android:startColor="@color/white_mode_seekbar_progress" android:endColor="@color/white_mode_seekbar_progress" android:useLevel="false" android:angle="0.0" />
+    </shape>
+</rotate>

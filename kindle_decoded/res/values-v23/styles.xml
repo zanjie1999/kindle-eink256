@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Kindle.Dark" parent="@style/Base.Kindle.Shared.Dark.v23" />
+    <style name="Base.Kindle.Light" parent="@style/Base.Kindle.Shared.Light.v23" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored" />
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="FCAppBaseTheme" parent="@style/FCAppBaseTheme.v23" />
+    <style name="FCAppBaseThemeLight" parent="@style/FCAppBaseThemeLight.v23" />
+    <style name="FfsTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/ugs_background</item>
+        <item name="android:windowLightStatusBar">@bool/light_navigation_and_status_bar</item>
+    </style>
+    <style name="KCUTheme.RubyDark.Base" parent="@style/KCUTheme.RubyDark.v23" />
+    <style name="KCUTheme.RubyLight" parent="@style/KCUTheme.RubyLight.Base">
+        <item name="android:statusBarColor">@color/primary_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="alert_dialog_error_icon">@drawable/ic_dialog_alert_light</item>
+        <item name="bulletTextColor">?text_primary</item>
+        <item name="button_text_color_tertiary">@color/ruby_button_text_tertiary_color_light</item>
+        <item name="core_accent_1">@color/accent_1_light</item>
+        <item name="core_accent_2">@color/accent_2_light</item>
+        <item name="core_accent_3">@color/accent_3_light</item>
+        <item name="core_accent_4">@color/accent_4_light</item>
+        <item name="core_attention">@color/attention_light</item>
+        <item name="core_brand">@color/brand_light</item>
+        <item name="core_primary">@color/primary_light</item>
+        <item name="core_secondary">@color/tertiary_1_light</item>
+        <item name="core_tertiary_1">@color/tertiary_1_light</item>
+        <item name="core_tertiary_2">@color/tertiary_2_light</item>
+        <item name="empty_text_color">?text_primary</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back_light</item>
+        <item name="kcu_background_color">@color/tertiary_2_light</item>
+        <item name="kcu_dialog_background_color">@color/tertiary_1_light</item>
+        <item name="kcu_dialog_button_text_color">?core_accent_3</item>
+        <item name="kcu_dialog_negative_button">?text_primary</item>
+        <item name="kcu_dialog_text_color">?text_primary</item>
+        <item name="kcu_dialog_title_color">?text_primary</item>
+        <item name="kcu_loading_spinner">@drawable/kcu_loading_spinner_light</item>
+        <item name="kcu_ruby_checkbox">@drawable/kcu_ruby_checkbox_light</item>
+        <item name="kcu_scrollbar_thumb">@drawable/kcu_scrollview_thumb_rubylight</item>
+        <item name="kcu_toolbar_background_color">@color/primary_light</item>
+        <item name="nav_info_icon">@drawable/ic_nav_info_light</item>
+        <item name="navigationIcon">?homeAsUpIndicator</item>
+        <item name="setting_text_info_color">?text_secondary</item>
+        <item name="setting_text_title_color">?text_primary</item>
+        <item name="text_inverse">@color/text_inverse_light</item>
+        <item name="text_primary">@color/text_primary_light</item>
+        <item name="text_secondary">@color/text_secondary_light</item>
+        <item name="text_tertiary">@color/text_tertiary_light</item>
+        <item name="title_text_color">?text_primary</item>
+    </style>
+    <style name="KCUTheme.RubyLight.Base" parent="@style/KCUTheme.RubyLight.v23" />
+    <style name="Theme.Dynamic.Ruby.Dark" parent="@style/Theme.Dynamic.Ruby.Dark.v23" />
+    <style name="Theme.Dynamic.Ruby.Light" parent="@style/Theme.Dynamic.Ruby.Light.v23" />
+    <style name="Theme.ReaderStyle" parent="@style/Theme.ReaderStyle.White.v23" />
+    <style name="Theme.ReaderStyle.Black" parent="@style/Theme.ReaderStyle.Shared.Black.v23" />
+    <style name="Theme.ReaderStyle.Green" parent="@style/Theme.ReaderStyle.Shared.Green.v23" />
+    <style name="Theme.ReaderStyle.Sepia" parent="@style/Theme.ReaderStyle.Shared.Sepia.v23" />
+    <style name="Theme.ReaderStyle.White" parent="@style/Theme.ReaderStyle.Shared.White.v23" />
+    <style name="Theme.SocialSharing.Dark" parent="@style/Theme.SocialSharing.Dark.Base.v23" />
+    <style name="Theme.SocialSharing.Light" parent="@style/Theme.SocialSharing.Light.Base.v23" />
+    <style name="Theme.Xray.Dark" parent="@style/Base.Theme.Xray.Dark.v23" />
+    <style name="Theme.Xray.Light" parent="@style/Base.Theme.Xray.Light.v23" />
+    <style name="anyactions_theme_dark" parent="@style/anyactions_theme_dark.base.v23" />
+    <style name="anyactions_theme_light" parent="@style/anyactions_theme_light.base.v23" />
+    <style name="chromeDarkTheme" parent="@style/chromeDarkTheme.v23" />
+    <style name="chromeLightTheme" parent="@style/chromeLightTheme.v23" />
+    <style name="ku_legalese" parent="@style/ku_page_body_text">
+        <item name="android:textSize">@dimen/ku_legalese_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:breakStrategy">simple</item>
+    </style>
+    <style name="Base.Kindle.Shared.Dark.v23" parent="@style/Theme.ReaderStyle.Shared.Black">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?toolbar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.Kindle.Shared.Light.v23" parent="@style/Theme.ReaderStyle.Shared.White">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?toolbar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.Theme.Xray.Dark.v23" parent="@style/Base.Theme.Xray.Dark">
+        <item name="android:colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.Theme.Xray.Light.v23" parent="@style/Base.Theme.Xray.Light">
+        <item name="android:colorPrimaryDark">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="FCAppBaseTheme.v23" parent="@style/Theme.AppCompat">
+        <item name="android:colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/fc_background_chrome</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="FCAppBaseThemeLight.v23" parent="@style/Theme.AppCompat.Light">
+        <item name="android:colorPrimaryDark">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/fc_background_chrome.light</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="KCUTheme.RubyDark.v23" parent="@style/KCUTheme.RubyDark">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/status_bar_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="KCUTheme.RubyLight.v23" parent="@style/KCUTheme.RubyLight">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/status_bar_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.Dynamic.Ruby.Dark.v23" parent="@style/Theme.Dynamic.Ruby.DarkBase">
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?core_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Dynamic.Ruby.Light.v23" parent="@style/Theme.Dynamic.Ruby.LightBase">
+        <item name="android:colorPrimaryDark">@color/primary_light</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?core_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Black.v23" parent="@style/Theme.ReaderStyle.Shared.Black">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Green.v23" parent="@style/Theme.ReaderStyle.Shared.Green">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.Sepia.v23" parent="@style/Theme.ReaderStyle.Shared.Sepia">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.Shared.White.v23" parent="@style/Theme.ReaderStyle.Shared.White">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?chromeBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.ReaderStyle.White.v23" parent="@style/Theme.ReaderStyle.Shared.White.v23" />
+    <style name="Theme.SocialSharing.Dark.Base.v23" parent="@style/Theme.SocialSharing.Dark.Base">
+        <item name="android:colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.SocialSharing.Light.Base.v23" parent="@style/Theme.SocialSharing.Light.Base">
+        <item name="android:colorPrimaryDark">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="anyactions_theme_dark.base.v23" parent="@style/anyactions_theme_dark.base.v21">
+        <item name="android:colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="anyactions_theme_light.base.v23" parent="@style/anyactions_theme_light.base.v21">
+        <item name="android:colorPrimaryDark">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="chromeDarkTheme.v23" parent="@style/chromeDarkThemeBase">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="chromeLightTheme.v23" parent="@style/chromeLightThemeBase">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

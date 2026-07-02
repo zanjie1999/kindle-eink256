@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/startactions_widget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center|left" android:id="@id/reader_settings_button" android:text="@string/startactions_widget_reader_settings_button" style="@style/startactions_text_button_light_small" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.cover.NumberedCollectionThumbnail android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?collection_grid_view_vertical_spacing" android:foreground="@drawable/select_overlay_selector">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?collection_cover_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/item_count_number" android:id="@id/item_count_number_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" style="@style/Ruby.TextAppearance.Header2" />
+            <TextView android:gravity="center_horizontal" android:id="@id/collection_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.54" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/Ruby.TextAppearance.Caption3" />
+        </LinearLayout>
+    </FrameLayout>
+</com.amazon.kcp.cover.NumberedCollectionThumbnail>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" style="@style/klo_termlist_dropdown_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dropdown_item_content" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall">
+        <ImageView android:id="@id/filter_checked" android:focusable="false" android:layout_width="@dimen/klo_action_bar_dropdown_list_checkmark_width" android:layout_height="wrap_content" android:src="@drawable/klo_ic_checkmark_pressed" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/filter_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/klo_action_bar_dropdown_list_label_margin_left" android:layout_toLeftOf="@id/filter_checked" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/klo_action_bar_dropdown_list_label_margin_left" android:layout_toStartOf="@id/filter_checked" android:layout_alignParentStart="true" style="@style/klo_termlist_dropdown_item_filter_text" />
+    </RelativeLayout>
+</LinearLayout>

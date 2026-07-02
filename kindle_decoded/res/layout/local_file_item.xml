@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/more_menu_item_container">
+        <ImageView android:src="?local_file_folder_icon" style="@style/more_menu_item_icon" />
+        <TextView android:id="@id/title" android:layout_weight="1.0" style="@style/more_menu_item_primary_text" />
+        <CheckBox android:id="@id/checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SimpleCheckBox" />
+    </LinearLayout>
+    <View style="@style/more_menu_item_divider" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.kcp.home.ui.HomeCardView android:id="@id/ways_to_read_card" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/home_card_text_header" />
+        <com.amazon.kcp.home.widget.HorizontalScrollListenerScrollView android:id="@id/wtr_shoveler_horizontal_scroller" android:focusable="false" android:scrollbars="none" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/shoveler_padding" android:layout_marginStart="@dimen/ways_to_read_shoveler_margin" android:layout_marginEnd="@dimen/ways_to_read_shoveler_margin">
+            <LinearLayout android:orientation="horizontal" android:id="@id/wtr_shoveler" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.amazon.kcp.home.widget.HorizontalScrollListenerScrollView>
+        <include layout="@layout/home_card_footer" />
+    </LinearLayout>
+</com.amazon.kcp.home.ui.HomeCardView>

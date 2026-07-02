@@ -1,0 +1,78 @@
+.class Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/DaggerProvisionerServicesComponent$com_amazon_whisperjoin_deviceprovisioningservice_di_components_BaseComponent_getSharedPreferencesProvider;
+.super Ljava/lang/Object;
+.source "DaggerProvisionerServicesComponent.java"
+
+# interfaces
+.implements Ljavax/inject/Provider;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/DaggerProvisionerServicesComponent;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "com_amazon_whisperjoin_deviceprovisioningservice_di_components_BaseComponent_getSharedPreferencesProvider"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljavax/inject/Provider<",
+        "Lcom/amazon/whisperjoin/deviceprovisioningservice/util/SharedPreferencesProvider;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final baseComponent:Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/BaseComponent;
+
+
+# direct methods
+.method constructor <init>(Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/BaseComponent;)V
+    .locals 0
+
+    .line 707
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 708
+    iput-object p1, p0, Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/DaggerProvisionerServicesComponent$com_amazon_whisperjoin_deviceprovisioningservice_di_components_BaseComponent_getSharedPreferencesProvider;->baseComponent:Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/BaseComponent;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get()Lcom/amazon/whisperjoin/deviceprovisioningservice/util/SharedPreferencesProvider;
+    .locals 2
+
+    .line 713
+    iget-object v0, p0, Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/DaggerProvisionerServicesComponent$com_amazon_whisperjoin_deviceprovisioningservice_di_components_BaseComponent_getSharedPreferencesProvider;->baseComponent:Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/BaseComponent;
+
+    .line 714
+    invoke-interface {v0}, Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/BaseComponent;->getSharedPreferencesProvider()Lcom/amazon/whisperjoin/deviceprovisioningservice/util/SharedPreferencesProvider;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable component method"
+
+    .line 713
+    invoke-static {v0, v1}, Ldagger/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast v0, Lcom/amazon/whisperjoin/deviceprovisioningservice/util/SharedPreferencesProvider;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 701
+    invoke-virtual {p0}, Lcom/amazon/whisperjoin/deviceprovisioningservice/di/components/DaggerProvisionerServicesComponent$com_amazon_whisperjoin_deviceprovisioningservice_di_components_BaseComponent_getSharedPreferencesProvider;->get()Lcom/amazon/whisperjoin/deviceprovisioningservice/util/SharedPreferencesProvider;
+
+    move-result-object v0
+
+    return-object v0
+.end method

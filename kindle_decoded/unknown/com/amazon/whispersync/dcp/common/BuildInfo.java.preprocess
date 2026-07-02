@@ -1,0 +1,69 @@
+// Copyright 2011 Amazon.com. All rights reserved.
+package com.amazon.dcp.common;
+
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.util.Log;
+
+public final class BuildInfo
+{
+    public static final String DCP_PACKAGE_NAME = "com.amazon.dcp";
+
+    public static final int DCP_NOT_FOUND = -1;
+
+    private static final String TAG = BuildInfo.class.getName();
+
+    private static final int JAR_BUILD_VERSION = Integer.parseInt("@version.code@", 10);
+
+    private BuildInfo()
+    {
+    }
+
+    public static void checkForStaleVersion(final Context context)
+    {
+        int dcpVersion = getDcpVersion(context);
+
+        if (dcpVersion == DCP_NOT_FOUND)
+        {
+            return;
+        }
+
+        if (getVersion() < dcpVersion)
+        {
+            String packageName = context.getPackageName();
+            Log.w(TAG, String.format("The current package (%s) was built with a stale "
+                                         + "version of DCP (%d) the current version is %d",
+                                     packageName,
+                                     getVersion(),
+                                     dcpVersion));
+        }
+    }
+
+    public static int getVersion()
+    {
+        return JAR_BUILD_VERSION;
+    }
+
+    public static int getDcpVersion(final Context context)
+    {
+        int checkResult = context.getPackageManager().checkSignatures(DCP_PACKAGE_NAME, context.getPackageName());
+        if (checkResult != PackageManager.SIGNATURE_MATCH)
+        {
+            return DCP_NOT_FOUND;
+        }
+
+        try
+        {
+            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(DCP_PACKAGE_NAME, 0);
+
+            return packageInfo.versionCode;
+        }
+        catch (NameNotFoundException e)
+        {
+            Log.v(TAG, "DCP cannot be found because it is not installed");
+            return DCP_NOT_FOUND;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_sheet_animated_background_view" android:background="@color/medium_transparent_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom" android:id="@id/bottom_sheet_coordinator" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.amazon.kindle.krx.ui.bottomsheet.MaxSpecLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_sheet_dialog" android:background="@drawable/bg_bottom_sheet_rounded_corners" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="15.0dip" android:backgroundTint="?bottom_sheet_background" app:layout_behavior="@string/bottom_sheet_behavior" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <FrameLayout android:id="@id/bottom_sheet_drag_icon_container" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/bottom_sheet_pill" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/ic_bottom_sheet_pill" android:scaleType="fitCenter" />
+                <ImageView android:layout_gravity="center" android:id="@id/bottom_sheet_chevron" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/ic_bottom_sheet_chevron" android:scaleType="fitCenter" />
+            </FrameLayout>
+        </com.amazon.kindle.krx.ui.bottomsheet.MaxSpecLinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

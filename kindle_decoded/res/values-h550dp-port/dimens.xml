@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fc_quiz_container_padding_bottom">15.0dip</dimen>
+    <dimen name="fc_quiz_end_button_padding_ends">10.0dip</dimen>
+    <dimen name="fc_quiz_end_margin_ends">10.0dip</dimen>
+    <dimen name="fc_quiz_end_score_margin_bottom">20.0dip</dimen>
+    <dimen name="fc_quiz_pile_container_padding">15.0dip</dimen>
+    <item type="dimen" name="fc_ic_plus_big_nonnln_height">@dimen/wrap_content</item>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pkg="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/xray_inline_progress" />
+    <include layout="@layout/xray_inline_error" />
+    <RelativeLayout android:id="@id/xray_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/xray_description_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/xray_entity_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_padding_gutter" android:layout_marginTop="@dimen/xray_padding_vertical" android:scaleType="fitStart" android:adjustViewBounds="true" />
+            <com.amazon.xray.ui.widget.EnhancedTextView android:textAppearance="@style/xray_amazon_text_light_regular" android:id="@id/xray_entity_desc" android:background="@drawable/bg_xray_borderless_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_padding_horizontal" android:layout_marginTop="@dimen/xray_padding_description_top" android:layout_marginRight="@dimen/xray_padding_gutter" android:layout_marginBottom="@dimen/xray_padding_description_bottom" android:lines="@integer/xray_description_max_lines" android:layout_toRightOf="@id/xray_entity_icon" android:lineSpacingExtra="@dimen/xray_line_spacing_description" />
+            <View android:id="@id/xray_description_separator" android:layout_marginLeft="@dimen/xray_padding_gutter" android:layout_marginTop="@dimen/xray_padding_description_horizontal_rule_top" android:layout_marginRight="@dimen/xray_padding_gutter" android:layout_below="@id/xray_entity_desc" style="@style/xray_horizontal_rule" />
+        </RelativeLayout>
+        <com.amazon.xray.ui.widget.TabView android:id="@id/xray_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xray_padding_tab_view_horizontal" android:layout_marginRight="@dimen/xray_padding_tab_view_horizontal" android:layout_below="@id/xray_description_container" pkg:xray_content_view="@id/xray_tab_content" pkg:xray_orientation="horizontal" />
+        <FrameLayout android:id="@id/xray_tab_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/xray_tabs" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

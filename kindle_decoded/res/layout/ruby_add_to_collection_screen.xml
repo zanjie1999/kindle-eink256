@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" style="?toolbarStyle" />
+    <LinearLayout android:orientation="horizontal" android:background="?library_action_bar_bg" android:paddingTop="@dimen/search_box_margin_vertical" android:paddingBottom="@dimen/search_box_margin_vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" android:paddingStart="@dimen/search_box_margin_horizontal" android:paddingEnd="@dimen/search_box_margin_horizontal">
+        <ImageView android:background="?top_bar_search_background" android:padding="@dimen/search_box_icon_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?top_bar_search_icon" />
+        <EditText android:textColorHint="?text_secondary" android:gravity="center_vertical" android:id="@id/search_text" android:background="?top_bar_search_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="@string/search_hint" android:layout_weight="1.0" android:inputType="textFilter" android:imeOptions="actionDone" android:textDirection="firstStrong" android:paddingStart="@dimen/search_box_text_margin_start" style="@style/Ruby.TextAppearance.Body.Grey" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/add_to_collection_root" android:background="?library_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/lib_recycler_parent_horizontal_margin" android:paddingEnd="@dimen/lib_recycler_parent_horizontal_margin" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="klo_action_bar_drop_down_margin">15.0dip</dimen>
+    <dimen name="klo_action_bar_spinner_subtitle_size">10.0dip</dimen>
+    <dimen name="klo_action_bar_spinner_title_size">14.0dip</dimen>
+    <dimen name="thumbnail_grid_view_horizontal_spacing">25.0px</dimen>
+    <dimen name="thumbnail_grid_view_vertical_spacing">20.0px</dimen>
+</resources>

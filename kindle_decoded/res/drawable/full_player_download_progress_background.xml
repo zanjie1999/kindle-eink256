@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:innerRadius="@dimen/full_player_progress_bar_radius" android:thickness="@dimen/full_player_progress_bar_thickness"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@android:color/white" android:endColor="@android:color/white" android:angle="0.0" android:type="sweep" />
+</shape>

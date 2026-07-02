@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fc_quiz_container_padding_bottom">5.0dip</dimen>
+    <dimen name="fc_quiz_end_button_padding_ends">8.0dip</dimen>
+    <dimen name="fc_quiz_end_margin_ends">8.0dip</dimen>
+    <dimen name="fc_quiz_end_score_margin_bottom">5.0dip</dimen>
+    <dimen name="fc_quiz_pile_container_padding">5.0dip</dimen>
+    <dimen name="thumbnail_scrubber_display_height">156.0dip</dimen>
+    <dimen name="thumbnail_scrubber_display_width">129.0dip</dimen>
+    <dimen name="fc_ic_plus_big_nonnln_height">120.0dip</dimen>
+    <item type="dimen" name="fc_ic_plus_big_nonnln_width">@dimen/wrap_content</item>
+</resources>
