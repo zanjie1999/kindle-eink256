@@ -10,7 +10,7 @@ sdkInfo:
   targetSdkVersion: 30
 packageInfo:
   forcedPackageId: 127
-  renameManifestPackage: com.zyyme.kindle
+  renameManifestPackage: com.amazon.kindle
 versionInfo:
   versionCode: 1221337088
   versionName: 8.51.1.0(1.3.272119.0)
