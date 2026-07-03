@@ -22,3 +22,5 @@
 ```
 git config --global core.longpaths true 
 ```
+
+传书可以到[Send to Kindle](https://www.amazon.com/sendtokindle)上传，单文件上限200MB，无限空间，亚马逊大善人
