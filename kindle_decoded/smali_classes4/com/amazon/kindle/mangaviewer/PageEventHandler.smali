@@ -201,6 +201,115 @@
     return-void
 .end method
 
+.method private leftOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+    .locals 3
+
+    invoke-interface {p1}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->getAdapter()Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->isLeftPageAvailable()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_no_page
+
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->getDocViewer()Lcom/amazon/android/docviewer/mobi/MangaDocViewer;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/amazon/android/docviewer/mobi/MangaDocViewer;->startTapToTurnPage()V
+
+    invoke-interface {p1}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->getCurrentItem()I
+
+    move-result v0
+
+    sub-int/2addr v0, v2
+
+    invoke-interface {p1, v0}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->setCurrentItem(I)V
+
+    return v2
+
+    :cond_no_page
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->getDocViewer()Lcom/amazon/android/docviewer/mobi/MangaDocViewer;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->isBookNavigatorInitialized()Z
+
+    move-result v0
+
+    invoke-interface {p1, v0}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->publishPageTurnAbortedEvent(Z)V
+
+    return v2
+.end method
+
+.method private rightOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+    .locals 3
+
+    invoke-interface {p1}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->getAdapter()Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->isRightPageAvailable()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_no_page
+
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->getDocViewer()Lcom/amazon/android/docviewer/mobi/MangaDocViewer;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/amazon/android/docviewer/mobi/MangaDocViewer;->startTapToTurnPage()V
+
+    invoke-interface {p1}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->getCurrentItem()I
+
+    move-result v0
+
+    add-int/2addr v0, v2
+
+    invoke-interface {p1, v0}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->setCurrentItem(I)V
+
+    return v2
+
+    :cond_no_page
+    invoke-interface {v0}, Lcom/amazon/kindle/mangaviewer/IMangaPagerAdapter;->getDocViewer()Lcom/amazon/android/docviewer/mobi/MangaDocViewer;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->isBookNavigatorInitialized()Z
+
+    move-result v0
+
+    invoke-interface {p1, v0}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->publishPageTurnAbortedEvent(Z)V
+
+    return v2
+.end method
+
+.method private showOverlays()Z
+    .locals 2
+
+    iget-object v0, p0, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->m_layout:Lcom/amazon/kcp/reader/ui/BookLayout;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1, v1}, Lcom/amazon/kcp/reader/ui/ReaderLayout;->setOverlaysVisible(ZZ)Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    return v1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 
 # virtual methods
 .method public keyDown(Landroid/view/KeyEvent;Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
@@ -233,6 +342,38 @@
 
     .line 187
     :cond_0
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v0
+
+    const/16 v1, 0x13
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x14
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x15
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x16
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x17
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x42
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0xa0
+
+    if-eq v0, v1, :cond_consume_key
+
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
     move-result-object v0
@@ -276,6 +417,11 @@
 
     return p1
 
+    :cond_consume_key
+    const/4 p1, 0x1
+
+    return p1
+
     :cond_3
     :goto_1
     const/4 p1, 0x0
@@ -313,6 +459,92 @@
 
     .line 209
     :cond_0
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v0
+
+    const/16 v1, 0x17
+
+    if-eq v0, v1, :cond_keyboard_show_overlays
+
+    const/16 v1, 0x42
+
+    if-eq v0, v1, :cond_keyboard_show_overlays
+
+    const/16 v1, 0xa0
+
+    if-eq v0, v1, :cond_keyboard_show_overlays
+
+    const/16 v1, 0x13
+
+    if-eq v0, v1, :cond_keyboard_backward
+
+    const/16 v1, 0x14
+
+    if-eq v0, v1, :cond_keyboard_forward
+
+    const/16 v1, 0x15
+
+    if-eq v0, v1, :cond_keyboard_left
+
+    const/16 v1, 0x16
+
+    if-eq v0, v1, :cond_keyboard_right
+
+    goto :cond_volume_key_check
+
+    :cond_keyboard_show_overlays
+    invoke-direct {p0}, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->showOverlays()Z
+
+    move-result p1
+
+    return p1
+
+    :cond_keyboard_backward
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->m_layout:Lcom/amazon/kcp/reader/ui/BookLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    invoke-direct {p0, p2}, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->backwardOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_keyboard_forward
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->m_layout:Lcom/amazon/kcp/reader/ui/BookLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    invoke-direct {p0, p2}, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->forwardOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_keyboard_left
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->m_layout:Lcom/amazon/kcp/reader/ui/BookLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    invoke-direct {p0, p2}, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->leftOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_keyboard_right
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->m_layout:Lcom/amazon/kcp/reader/ui/BookLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    invoke-direct {p0, p2}, Lcom/amazon/kindle/mangaviewer/PageEventHandler;->rightOneItem(Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_volume_key_check
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
     move-result-object v0
