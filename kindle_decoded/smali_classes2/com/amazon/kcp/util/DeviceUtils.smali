@@ -276,37 +276,9 @@
 .method public static isEinkScreen(Landroid/content/Context;)Z
     .locals 1
 
-    .line 156
-    const-class v0, Lcom/amazon/android/system/DeviceScreenDetector;
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/amazon/discovery/UniqueDiscovery;->of(Ljava/lang/Class;)Lcom/amazon/discovery/UniqueDiscovery;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/amazon/discovery/UniqueDiscovery;->value()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/amazon/android/system/DeviceScreenDetector;
-
-    if-eqz v0, :cond_0
-
-    .line 157
-    invoke-interface {v0, p0}, Lcom/amazon/android/system/DeviceScreenDetector;->isEink(Landroid/content/Context;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
+    return v0
 .end method
 
 .method public static setMIUIStatusBarMode(Landroid/view/Window;Lcom/amazon/kindle/krx/theme/Theme;)V

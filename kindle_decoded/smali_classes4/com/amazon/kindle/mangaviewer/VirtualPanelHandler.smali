@@ -1841,6 +1841,38 @@
 
     .line 254
     :cond_0
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v0
+
+    const/16 v1, 0x13
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x14
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x15
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x16
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x17
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x42
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0xa0
+
+    if-eq v0, v1, :cond_consume_key
+
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
     move-result-object v0
@@ -1881,6 +1913,11 @@
     invoke-super {p0, p1, p2}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->keyDown(Landroid/view/KeyEvent;Lcom/amazon/kindle/mangaviewer/IMangaViewPager;)Z
 
     move-result p1
+
+    return p1
+
+    :cond_consume_key
+    const/4 p1, 0x1
 
     return p1
 
@@ -1925,6 +1962,44 @@
 
     move-result-object v1
 
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v2
+
+    const-string v4, "VirtualPanel_VolumeButtons"
+
+    const-string v5, "VirtualPanelHandler"
+
+    const/4 v6, 0x1
+
+    const/16 v3, 0x17
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0x42
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0xa0
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0x13
+
+    if-eq v2, v3, :cond_4
+
+    const/16 v3, 0x14
+
+    if-eq v2, v3, :cond_1
+
+    const/16 v3, 0x15
+
+    if-eq v2, v3, :cond_keyboard_left
+
+    const/16 v3, 0x16
+
+    if-eq v2, v3, :cond_keyboard_right
+
     .line 277
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
@@ -1953,6 +2028,36 @@
 
     const/4 v6, 0x1
 
+    const/16 v3, 0x17
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0x42
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0xa0
+
+    if-eq v2, v3, :cond_keyboard_show_overlays
+
+    const/16 v3, 0x13
+
+    if-eq v2, v3, :cond_4
+
+    const/16 v3, 0x14
+
+    if-eq v2, v3, :cond_1
+
+    const/16 v3, 0x15
+
+    if-eq v2, v3, :cond_keyboard_left
+
+    const/16 v3, 0x16
+
+    if-eq v2, v3, :cond_keyboard_right
+
+    const/16 v3, 0x18
+
     if-eq v2, v3, :cond_4
 
     const/16 v3, 0x19
@@ -1960,6 +2065,65 @@
     if-eq v2, v3, :cond_1
 
     goto :goto_2
+
+    :cond_keyboard_show_overlays
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler;->m_layout:Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    invoke-virtual {p1, v6, v6}, Lcom/amazon/kcp/reader/ui/ReaderLayout;->setOverlaysVisible(ZZ)Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    return v6
+
+    :cond_keyboard_left
+    invoke-interface {p2}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->isInAnimation()Z
+
+    move-result p1
+
+    if-nez p1, :cond_keyboard_left_done
+
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler;->m_layout:Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    sget-object p1, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;->LEFT:Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;
+
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler;->handleDirectionAction(Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;Lcom/amazon/kindle/mangaviewer/IMangaViewPager;Lcom/amazon/kindle/mangaviewer/BoundImageView;Lcom/amazon/kindle/mangaviewer/VirtualPanelGrid;)Z
+
+    invoke-static {}, Lcom/amazon/kcp/application/metrics/internal/MetricsManager;->getInstance()Lcom/amazon/kcp/application/metrics/internal/MetricsManager;
+
+    move-result-object p1
+
+    sget-object p2, Lcom/amazon/kindle/krx/metrics/MetricType;->INFO:Lcom/amazon/kindle/krx/metrics/MetricType;
+
+    invoke-virtual {p1, v5, v4, p2}, Lcom/amazon/kcp/application/metrics/internal/AbstractMetricsManager;->reportMetric(Ljava/lang/String;Ljava/lang/String;Lcom/amazon/kindle/krx/metrics/MetricType;)V
+
+    :cond_keyboard_left_done
+    return v6
+
+    :cond_keyboard_right
+    invoke-interface {p2}, Lcom/amazon/kindle/mangaviewer/IMangaViewPager;->isInAnimation()Z
+
+    move-result p1
+
+    if-nez p1, :cond_keyboard_right_done
+
+    iget-object p1, p0, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler;->m_layout:Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    invoke-virtual {p0, p1}, Lcom/amazon/kindle/mangaviewer/SimpleTouchEventHandler;->hideViewOptions(Lcom/amazon/kcp/reader/ui/ReaderLayout;)V
+
+    sget-object p1, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;->RIGHT:Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;
+
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler;->handleDirectionAction(Lcom/amazon/kindle/mangaviewer/VirtualPanelHandler$ActionDirection;Lcom/amazon/kindle/mangaviewer/IMangaViewPager;Lcom/amazon/kindle/mangaviewer/BoundImageView;Lcom/amazon/kindle/mangaviewer/VirtualPanelGrid;)Z
+
+    invoke-static {}, Lcom/amazon/kcp/application/metrics/internal/MetricsManager;->getInstance()Lcom/amazon/kcp/application/metrics/internal/MetricsManager;
+
+    move-result-object p1
+
+    sget-object p2, Lcom/amazon/kindle/krx/metrics/MetricType;->INFO:Lcom/amazon/kindle/krx/metrics/MetricType;
+
+    invoke-virtual {p1, v5, v4, p2}, Lcom/amazon/kcp/application/metrics/internal/AbstractMetricsManager;->reportMetric(Ljava/lang/String;Ljava/lang/String;Lcom/amazon/kindle/krx/metrics/MetricType;)V
+
+    :cond_keyboard_right_done
+    return v6
 
     .line 285
     :cond_1

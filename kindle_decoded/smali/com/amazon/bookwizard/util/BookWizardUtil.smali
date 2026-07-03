@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final DEFAULT_EINK_HOSTNAME:Ljava/lang/String; = "www.amazon.cn"
+.field private static final DEFAULT_EINK_HOSTNAME:Ljava/lang/String; = "www.amazon.com"
 
 .field private static final DEFAULT_EINK_PFM:Ljava/lang/String;
 
@@ -33,7 +33,7 @@
     sput-object v0, Lcom/amazon/bookwizard/util/BookWizardUtil;->XACB_COOKIE_PATTERN_WITH_QUOTES:Ljava/util/regex/Pattern;
 
     .line 40
-    sget-object v0, Lcom/amazon/kcp/application/Marketplace;->CN:Lcom/amazon/kcp/application/Marketplace;
+    sget-object v0, Lcom/amazon/kcp/application/Marketplace;->US:Lcom/amazon/kcp/application/Marketplace;
 
     invoke-virtual {v0}, Lcom/amazon/kcp/application/Marketplace;->getId()Ljava/lang/String;
 
@@ -432,7 +432,7 @@
 
     if-eqz v0, :cond_2
 
-    const-string/jumbo v0, "www.amazon.cn"
+    const-string/jumbo v0, "www.amazon.com"
 
     goto :goto_1
 

@@ -2495,6 +2495,18 @@
 
     move-result v0
 
+    const/16 v3, 0x17
+
+    if-eq v0, v3, :cond_show_overlays
+
+    const/16 v3, 0x42
+
+    if-eq v0, v3, :cond_show_overlays
+
+    const/16 v3, 0xa0
+
+    if-eq v0, v3, :cond_show_overlays
+
     if-ne v0, v1, :cond_0
 
     .line 1626
@@ -2505,6 +2517,11 @@
     xor-int/2addr p1, v2
 
     invoke-virtual {p0, p1, v2}, Lcom/amazon/kcp/reader/ui/ReaderLayout;->setOverlaysVisible(ZZ)Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    return v2
+
+    :cond_show_overlays
+    invoke-virtual {p0, v2, v2}, Lcom/amazon/kcp/reader/ui/ReaderLayout;->setOverlaysVisible(ZZ)Lcom/amazon/kcp/reader/ui/ReaderLayout;
 
     return v2
 
