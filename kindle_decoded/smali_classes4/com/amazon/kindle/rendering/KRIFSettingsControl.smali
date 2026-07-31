@@ -1782,6 +1782,31 @@
     invoke-virtual {v0, p1}, Lcom/amazon/krf/platform/ViewSettings;->setDefaultFontFace(Ljava/lang/String;)V
 
     :cond_2
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->isLocalFontFace(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_zyyme_faces_set
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/amazon/kindle/rendering/KRIFSettingsControl;->portraitHasStagedChanges:Z
+
+    iget-object v1, p0, Lcom/amazon/kindle/rendering/KRIFSettingsControl;->portraitViewSettings:Lcom/amazon/krf/platform/ViewSettings;
+
+    invoke-virtual {v1, p1}, Lcom/amazon/krf/platform/ViewSettings;->setDefaultSansSerifFontFace(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Lcom/amazon/krf/platform/ViewSettings;->setDefaultMonospaceFontFace(Ljava/lang/String;)V
+
+    iput-boolean v0, p0, Lcom/amazon/kindle/rendering/KRIFSettingsControl;->landscapeHasStagedChanges:Z
+
+    iget-object v1, p0, Lcom/amazon/kindle/rendering/KRIFSettingsControl;->landscapeViewSettings:Lcom/amazon/krf/platform/ViewSettings;
+
+    invoke-virtual {v1, p1}, Lcom/amazon/krf/platform/ViewSettings;->setDefaultSansSerifFontFace(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Lcom/amazon/krf/platform/ViewSettings;->setDefaultMonospaceFontFace(Ljava/lang/String;)V
+
+    :cond_zyyme_faces_set
     return-object p0
 .end method
 

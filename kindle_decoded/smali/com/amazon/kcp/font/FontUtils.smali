@@ -838,6 +838,15 @@
         }
     .end annotation
 
+    invoke-static {p0}, Lcom/amazon/kcp/font/LocalFontManager;->getFontPath(Lcom/mobipocket/android/drawing/FontFamily;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_zyyme_local_font
+
+    return-object v0
+
+    :cond_zyyme_local_font
     .line 271
     invoke-static {p1}, Lcom/amazon/kcp/font/FontUtils;->supportSeparatelyFontsDownload(Ljava/lang/String;)Z
 

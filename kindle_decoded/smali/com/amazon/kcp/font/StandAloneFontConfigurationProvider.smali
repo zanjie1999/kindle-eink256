@@ -25,7 +25,9 @@
 .method public getFallbackFontConfigFile(Lcom/amazon/kindle/model/content/ILocalBookInfo;)Ljava/io/File;
     .locals 0
 
-    const/4 p1, 0x0
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getConfigFile()Ljava/io/File;
+
+    move-result-object p1
 
     return-object p1
 .end method
@@ -33,7 +35,9 @@
 .method public getFallbackFontConfigFile(Ljava/lang/String;)Ljava/io/File;
     .locals 0
 
-    const/4 p1, 0x0
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getConfigFile()Ljava/io/File;
+
+    move-result-object p1
 
     return-object p1
 .end method
@@ -90,6 +94,15 @@
 .method public getFontConfigFile(Ljava/lang/String;)Ljava/io/File;
     .locals 1
 
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getConfigFile()Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_zyyme_default_config
+
+    return-object v0
+
+    :cond_zyyme_default_config
     .line 33
     invoke-static {p1}, Lcom/amazon/kcp/font/FontUtils;->getBaseLanguage(Ljava/lang/String;)Ljava/lang/String;
 

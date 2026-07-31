@@ -1638,6 +1638,8 @@
 
     .line 105
     :cond_3
+    goto :cond_4
+
     invoke-static {}, Lcom/amazon/kindle/build/BuildInfo;->isFirstPartyBuild()Z
 
     move-result v2

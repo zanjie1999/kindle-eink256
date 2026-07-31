@@ -397,6 +397,23 @@
     return-void
 .end method
 
+.method public onResume()V
+    .locals 1
+
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Lcom/amazon/kcp/font/LocalFontManager;->syncIfPermitted(Landroid/content/Context;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 7
 

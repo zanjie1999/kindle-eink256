@@ -625,12 +625,16 @@
 .end method
 
 .method public declared-synchronized onBookOpen(Ljava/lang/String;)V
-    .locals 0
+    .locals 1
 
     monitor-enter p0
 
     .line 284
     :try_start_0
+    iget-object v0, p0, Lcom/amazon/kcp/font/FontConfigInitializer;->context:Landroid/content/Context;
+
+    invoke-static {v0, p1}, Lcom/amazon/kcp/font/LocalFontManager;->syncIfPermitted(Landroid/content/Context;Ljava/lang/String;)V
+
     invoke-virtual {p0}, Lcom/amazon/kcp/font/StandaloneFontConfigInitializer;->initializeFonts()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -828,6 +832,18 @@
 
 .method public validateFont(Lcom/mobipocket/android/drawing/FontFamily;)Z
     .locals 2
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->getFontPath(Lcom/mobipocket/android/drawing/FontFamily;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_zyyme_default_validation
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_zyyme_default_validation
 
     .line 262
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getCurrentBookLanguage()Ljava/lang/String;

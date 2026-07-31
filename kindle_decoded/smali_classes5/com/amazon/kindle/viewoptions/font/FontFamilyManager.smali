@@ -6,6 +6,8 @@
 # instance fields
 .field private final TAG:Ljava/lang/String;
 
+.field private containerView:Landroid/view/View;
+
 .field private listView:Lcom/amazon/kindle/viewoptions/ui/listview/AaSettingListView;
 
 
@@ -132,12 +134,23 @@
 
 # virtual methods
 .method public final getView(Landroid/content/Context;)Landroid/view/View;
-    .locals 10
+    .locals 12
 
     const-string v0, "context"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    move-object v10, p1
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->requestPermissionAndSync(Landroid/content/Context;)V
+
+    iget-object v0, p0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;->containerView:Landroid/view/View;
+
+    if-eqz v0, :cond_zyyme_create_list
+
+    return-object v0
+
+    :cond_zyyme_create_list
     .line 35
     iget-object v0, p0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;->listView:Lcom/amazon/kindle/viewoptions/ui/listview/AaSettingListView;
 
@@ -262,9 +275,58 @@
 
     .line 54
     :cond_3
-    iget-object p1, p0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;->listView:Lcom/amazon/kindle/viewoptions/ui/listview/AaSettingListView;
+    iget-object v11, p0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;->listView:Lcom/amazon/kindle/viewoptions/ui/listview/AaSettingListView;
 
-    return-object p1
+    if-eqz v11, :cond_zyyme_no_list
+
+    new-instance v0, Landroid/widget/LinearLayout;
+
+    invoke-direct {v0, v10}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
+
+    const/4 v1, -0x1
+
+    const/4 v2, -0x2
+
+    invoke-virtual {v0, v11, v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
+
+    new-instance v3, Landroid/widget/TextView;
+
+    invoke-direct {v3, v10}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    const-string/jumbo v4, "字体ttf/otf请放到内置存储zyymeFonts文件夹,最多5个"
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    const/high16 v4, 0x41400000    # 12.0f
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextSize(F)V
+
+    const/16 v4, 0x11
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setGravity(I)V
+
+    const/16 v4, 0x10
+
+    const/16 v5, 0x8
+
+    const/16 v6, 0xc
+
+    invoke-virtual {v3, v4, v5, v4, v6}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    invoke-virtual {v0, v3, v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
+
+    iput-object v0, p0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;->containerView:Landroid/view/View;
+
+    return-object v0
+
+    :cond_zyyme_no_list
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method public final onAvailableFontsChange(Lcom/amazon/kcp/font/DownloadOnDemandFontEvent;)V
@@ -306,6 +368,24 @@
     invoke-interface {p1, v0}, Lcom/amazon/kindle/krx/thread/IThreadPoolManager;->submitOnMainThread(Ljava/lang/Runnable;)V
 
     :cond_1
+    return-void
+.end method
+
+.method public final onLocalFontsChange(Lcom/amazon/kcp/font/LocalFontsChangedEvent;)V
+    .locals 2
+    .annotation runtime Lcom/amazon/kindle/krx/events/Subscriber;
+    .end annotation
+
+    invoke-static {}, Lcom/amazon/foundation/internal/ThreadPoolManager;->getInstance()Lcom/amazon/foundation/internal/IThreadPoolManager;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager$onAvailableFontsChange$1;
+
+    invoke-direct {v0, p0}, Lcom/amazon/kindle/viewoptions/font/FontFamilyManager$onAvailableFontsChange$1;-><init>(Lcom/amazon/kindle/viewoptions/font/FontFamilyManager;)V
+
+    invoke-interface {p1, v0}, Lcom/amazon/kindle/krx/thread/IThreadPoolManager;->submitOnMainThread(Ljava/lang/Runnable;)V
+
     return-void
 .end method
 

@@ -2601,6 +2601,8 @@
 .method public downloadFontManuallyIfNeeds(Lcom/amazon/kcp/font/DynamicFontDownloadHelper$OnDemandFontInfo;Ljava/lang/String;)V
     .locals 2
 
+    return-void
+
     .line 681
     invoke-virtual {p1}, Lcom/amazon/kcp/font/DynamicFontDownloadHelper$OnDemandFontInfo;->isDownloading()Z
 
@@ -2701,6 +2703,8 @@
 
 .method public downloadOnDemandFontsIfNeeded(Ljava/lang/String;)V
     .locals 4
+
+    return-void
 
     .line 312
     invoke-static {p1}, Lcom/amazon/kcp/font/DynamicFontDownloadHelper$DownloadableFonts;->getOnDemandFonts(Ljava/lang/String;)Ljava/util/List;

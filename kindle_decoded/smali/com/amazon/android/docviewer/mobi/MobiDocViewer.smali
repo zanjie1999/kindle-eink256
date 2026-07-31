@@ -741,6 +741,22 @@
 
     invoke-virtual {p0, v1, v3}, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->setFontConfig(Ljava/lang/String;Ljava/lang/String;)V
 
+    invoke-interface {p1}, Lcom/amazon/kcp/application/IKindleObjectFactory;->getFontFactory()Lcom/mobipocket/android/drawing/AndroidFontFactory;
+
+    move-result-object v1
+
+    iget-object v3, p0, Lcom/amazon/android/docviewer/BaseKindleDocViewer;->m_bookItem:Lcom/amazon/kindle/model/content/ILocalBookItem;
+
+    invoke-virtual {v1, v3}, Lcom/mobipocket/android/drawing/AndroidFontFactory;->getFontFamilyForBook(Lcom/amazon/kindle/model/content/ILocalBookItem;)Lcom/mobipocket/android/drawing/FontFamily;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/mobipocket/android/drawing/FontFamily;->getTypeFaceName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->setDefaultFontFace(Ljava/lang/String;)Z
+
     .line 384
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
@@ -7454,7 +7470,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_zyyme_same_font
 
     .line 1215
     invoke-static {p1}, Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettingsHelper;->isValidFontFace(Ljava/lang/String;)Z
@@ -7465,6 +7481,13 @@
 
     goto :goto_0
 
+    :cond_zyyme_same_font
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->isLocalFontFace(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :goto_0
+
     :cond_2
     return v1
 
@@ -7474,6 +7497,20 @@
     iget-object v0, p0, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->m_settings:Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;
 
     invoke-virtual {v0, p1}, Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;->setDefaultFontFace(Ljava/lang/String;)V
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->isLocalFontFace(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_zyyme_faces_set
+
+    invoke-virtual {v0, p1}, Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;->setDefaultFallbackFontFace(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;->setDefaultSansSerifFontFace(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;->setDefaultMonospaceFontFace(Ljava/lang/String;)V
+
+    :cond_zyyme_faces_set
 
     .line 1221
     invoke-virtual {p0}, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->disableMobiViewInvalidating()V
@@ -7502,6 +7539,20 @@
 
 .method public setFontConfig(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getConfigFile()Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_zyyme_no_local_fallback
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p1
+
+    move-object p2, p1
+
+    :cond_zyyme_no_local_fallback
 
     .line 2487
     iget-object v0, p0, Lcom/amazon/android/docviewer/mobi/MobiDocViewer;->m_settings:Lcom/amazon/kindle/krf/KRF/Reader/RenderingSettings;

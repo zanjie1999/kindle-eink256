@@ -2568,6 +2568,15 @@
 .method public getDisplayName()Ljava/lang/String;
     .locals 2
 
+    invoke-static {p0}, Lcom/amazon/kcp/font/LocalFontManager;->getDisplayName(Lcom/mobipocket/android/drawing/FontFamily;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_zyyme_default_name
+
+    return-object v0
+
+    :cond_zyyme_default_name
     .line 167
     iget v0, p0, Lcom/mobipocket/android/drawing/FontFamily;->displayNameResId:I
 

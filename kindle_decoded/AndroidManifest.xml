@@ -41,6 +41,7 @@
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     <uses-permission android:name="com.audible.hushpuppy.tablet.permission.COMPANION_MAPPING"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
     <uses-permission android:name="com.amazon.dcp.messaging.permission.HANDLE_DEVICE_MESSAGE"/>

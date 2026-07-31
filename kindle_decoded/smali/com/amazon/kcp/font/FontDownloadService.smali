@@ -634,6 +634,8 @@
 .method public static startService(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
+    return-void
+
     .line 95
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -674,6 +676,12 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 2
+
+    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+
+    const/4 p1, 0x2
+
+    return p1
 
     .line 123
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
