@@ -1816,10 +1816,6 @@
 .method private final isDownloadableFontsSettingVisible()Z
     .locals 3
 
-    const/4 v0, 0x0
-
-    return v0
-
     .line 1027
     invoke-static {}, Lcom/amazon/ksdk/presets/ContextManager;->instance()Lcom/amazon/ksdk/presets/ContextManager;
 
