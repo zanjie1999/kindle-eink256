@@ -297,7 +297,7 @@
 
     invoke-direct {v3, v10}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    const-string/jumbo v4, "字体ttf/otf请放到内置存储zyymeFonts文件夹"
+    const-string/jumbo v4, "字体ttf/otf请放到内置存储zyymeFonts文件夹,最多5个"
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
