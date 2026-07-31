@@ -6,8 +6,6 @@
 # static fields
 .field private static final CONFIG_FILE_NAME:Ljava/lang/String; = "zyyme_fonts.xml"
 
-.field private static final MAX_FONTS:I = 0x5
-
 .field private static final SOURCE_DIRECTORY:Ljava/lang/String; = "zyymeFonts"
 
 .field private static configFile:Ljava/io/File;
@@ -34,6 +32,8 @@
     .end annotation
 .end field
 
+.field private static final localFontInfos:Ljava/util/ArrayList;
+
 .field private static permissionRequested:Z
 
 
@@ -52,6 +52,12 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lcom/amazon/kcp/font/LocalFontManager;->localFontInfos:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -74,6 +80,10 @@
     sget-object v0, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
+
+    sget-object v0, Lcom/amazon/kcp/font/LocalFontManager;->localFontInfos:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -242,14 +252,6 @@
     array-length v3, v1
 
     if-ge v2, v3, :cond_2
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    const/4 v4, 0x5
-
-    if-ge v3, v4, :cond_2
 
     aget-object v3, v1, v2
 
@@ -435,6 +437,301 @@
     return-object p0
 .end method
 
+.method private static writeSelectedSystemConfig(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
+    .locals 2
+
+    new-instance v0, Ljava/io/FileOutputStream;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+
+    new-instance v1, Ljava/io/OutputStreamWriter;
+
+    invoke-direct {v1, v0}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+
+    invoke-virtual {v1, p1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
+
+    return-object p0
+.end method
+
+.method private static appendFontconfigDir(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "    <dir>"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->escapeXml(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, "</dir>\n"
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    return-void
+.end method
+
+.method private static appendFontconfigInclude(Ljava/lang/StringBuilder;Ljava/io/File;)V
+    .locals 1
+
+    const-string v0, "    <include ignore_missing=\"no\">"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->escapeXml(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, "</include>\n"
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    return-void
+.end method
+
+.method private static copyFontconfigAsset(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)V
+    .locals 2
+
+    invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/io/FileOutputStream;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p1, p2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+
+    invoke-static {p0, p1}, Lcom/amazon/kcp/util/IOUtils;->writeInToOut(Ljava/io/InputStream;Ljava/io/OutputStream;)I
+
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+
+    invoke-virtual {p1}, Ljava/io/OutputStream;->close()V
+
+    return-void
+.end method
+
+.method private static escapeXml(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "&"
+
+    const-string v1, "&amp;"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "<"
+
+    const-string v1, "&lt;"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, ">"
+
+    const-string v1, "&gt;"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static writeAndActivateFontconfig(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 10
+
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/io/File;
+
+    const-string/jumbo v2, "zyyme-fonts-base.conf"
+
+    invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string v2, "fonts.conf"
+
+    invoke-static {p0, v2, v1}, Lcom/amazon/kcp/font/LocalFontManager;->copyFontconfigAsset(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)V
+
+    new-instance v2, Ljava/io/File;
+
+    const-string/jumbo v3, "zyyme-jp.conf"
+
+    invoke-direct {v2, v0, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string v3, "01-jp.conf"
+
+    invoke-static {p0, v3, v2}, Lcom/amazon/kcp/font/LocalFontManager;->copyFontconfigAsset(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)V
+
+    new-instance v3, Ljava/io/File;
+
+    const-string/jumbo v4, "zyyme-local.conf"
+
+    invoke-direct {v3, v0, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string v4, "48-lab126-local.conf"
+
+    invoke-static {p0, v4, v3}, Lcom/amazon/kcp/font/LocalFontManager;->copyFontconfigAsset(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)V
+
+    new-instance v4, Ljava/io/File;
+
+    const-string/jumbo v5, "zyyme-fontconfig.conf"
+
+    invoke-direct {v4, v0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const-string v6, "<?xml version=\"1.0\"?>\n<fontconfig>\n"
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v5, v1}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigInclude(Ljava/lang/StringBuilder;Ljava/io/File;)V
+
+    invoke-static {v5, v2}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigInclude(Ljava/lang/StringBuilder;Ljava/io/File;)V
+
+    invoke-static {v5, v3}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigInclude(Ljava/lang/StringBuilder;Ljava/io/File;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v5, v1}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigDir(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    new-instance v1, Ljava/io/File;
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "zyymeFonts"
+
+    invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v5, v1}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigDir(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1}, Lcom/amazon/kcp/application/IKindleObjectFactory;->getFileSystem()Lcom/amazon/kindle/io/IFileConnectionFactory;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/amazon/kcp/font/FontUtils;->getFontDir(Lcom/amazon/kindle/io/IFileConnectionFactory;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v5, v1}, Lcom/amazon/kcp/font/LocalFontManager;->appendFontconfigDir(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/amazon/kcp/font/LocalFontManager;->escapeXml(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v1, "    <cachedir>"
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "/font-cache</cachedir>\n"
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz p1, :cond_1
+
+    invoke-static {p1}, Lcom/amazon/kcp/font/LocalFontManager;->escapeXml(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p2}, Lcom/amazon/kcp/font/LocalFontManager;->escapeXml(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string p0, "    <match target=\"scan\">\n        <test name=\"file\" compare=\"eq\"><string>"
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "</string></test>\n        <edit name=\"family\" mode=\"prepend\"><string>"
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "</string></edit>\n        <edit name=\"family\" mode=\"prepend\"><string>ZyymeSelected</string></edit>\n    </match>\n    <match target=\"pattern\">\n        <edit name=\"family\" mode=\"append\" binding=\"strong\"><string>ZyymeSelected</string></edit>\n    </match>\n"
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_1
+    const-string p0, "</fontconfig>\n"
+
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v4, p0}, Lcom/amazon/kcp/font/LocalFontManager;->writeSelectedSystemConfig(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
+
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x1
+
+    invoke-static {p0, p1}, Lcom/amazon/kindle/krf/KRFLibrary;->setFontconfigConfigFile(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    invoke-static {}, Lcom/amazon/kindle/krf/KRFLibrary;->updateFontconfigCache()Z
+
+    invoke-static {}, Lcom/amazon/kindle/krf/KRFLibrary;->resetFontCache()V
+
+    :cond_2
+    return p0
+.end method
+
 
 # virtual methods
 .method public static getConfigFile()Ljava/io/File;
@@ -509,6 +806,97 @@
     check-cast p0, Ljava/lang/String;
 
     return-object p0
+.end method
+
+.method public static getLocalFontInfos()Ljava/util/ArrayList;
+    .locals 2
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    sget-object v1, Lcom/amazon/kcp/font/LocalFontManager;->localFontInfos:Ljava/util/ArrayList;
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    return-object v0
+.end method
+
+.method public static configureFontconfig(Ljava/lang/String;)Z
+    .locals 6
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_2
+
+    sget-object v1, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
+
+    invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/mobipocket/android/drawing/FontFamily;
+
+    invoke-virtual {v2}, Lcom/mobipocket/android/drawing/FontFamily;->getTypeFaceName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :goto_0
+
+    sget-object v1, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
+
+    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    :cond_2
+    invoke-static {}, Lcom/amazon/kcp/application/ReddingApplication;->getDefaultApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    :try_start_0
+    invoke-static {v1, v0, p0}, Lcom/amazon/kcp/font/LocalFontManager;->writeAndActivateFontconfig(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    move-exception p0
+
+    const-string v0, "ZyymeFonts"
+
+    const-string v1, "Unable to activate local Fontconfig"
+
+    invoke-static {v0, v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_3
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method public static hasStoragePermission(Landroid/content/Context;)Z
@@ -764,23 +1152,34 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v3, Ljava/util/ArrayList;
 
-    move-result-object v3
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v3, Ljava/util/ArrayList;
+    invoke-virtual {v2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
-    if-nez v3, :cond_1
+    move-result-object v4
 
-    invoke-static {p1}, Lcom/amazon/kcp/font/FontUtils;->getBaseLanguage(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v4}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
-    move-result-object p1
+    move-result-object v4
 
-    invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :goto_zyyme_all_fonts
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result-object v3
+    move-result v5
 
-    check-cast v3, Ljava/util/ArrayList;
+    if-eqz v5, :cond_1
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/util/Collection;
+
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    goto :goto_zyyme_all_fonts
 
     :cond_1
     if-nez v3, :cond_zyyme_has_ids
@@ -802,6 +1201,10 @@
     sget-object v4, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
 
     invoke-interface {v4}, Ljava/util/Map;->clear()V
+
+    sget-object v4, Lcom/amazon/kcp/font/LocalFontManager;->localFontInfos:Ljava/util/ArrayList;
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -838,17 +1241,33 @@
 
     move-result-object v8
 
+    if-eqz v8, :cond_7
+
+    sget-object v9, Lcom/amazon/kcp/font/LocalFontManager;->fontPaths:Ljava/util/Map;
+
+    invoke-interface {v9, v8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_zyyme_new_font_family
+
+    invoke-virtual {v7}, Lcom/amazon/ksdk/presets/FontInfo;->getId()J
+
+    move-result-wide v9
+
+    const/4 v11, 0x1
+
+    invoke-virtual {v1, v9, v10, v11}, Lcom/amazon/ksdk/presets/AaSettingsConfiguration;->markFontDownloaded(JZ)Z
+
+    goto :goto_0
+
+    :cond_zyyme_new_font_family
+
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v9
 
     if-ge v5, v9, :cond_7
-
-    const/4 v9, 0x5
-
-    if-ge v5, v9, :cond_7
-
-    if-eqz v8, :cond_7
 
     invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -872,6 +1291,10 @@
 
     invoke-interface {v11, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    sget-object v9, Lcom/amazon/kcp/font/LocalFontManager;->localFontInfos:Ljava/util/ArrayList;
+
+    invoke-virtual {v9, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     invoke-static {v4, v7, v10}, Lcom/amazon/kcp/font/LocalFontManager;->appendFamily(Ljava/lang/StringBuilder;Lcom/amazon/ksdk/presets/FontInfo;Ljava/lang/String;)V
 
     invoke-virtual {v7}, Lcom/amazon/ksdk/presets/FontInfo;->getId()J
@@ -881,6 +1304,8 @@
     const/4 v11, 0x1
 
     invoke-virtual {v1, v9, v10, v11}, Lcom/amazon/ksdk/presets/AaSettingsConfiguration;->markFontDownloaded(JZ)Z
+
+    add-int/lit8 v5, v5, 0x1
 
     add-int/lit8 v6, v6, 0x1
 
@@ -896,8 +1321,6 @@
     invoke-virtual {v1, v9, v10, v11}, Lcom/amazon/ksdk/presets/AaSettingsConfiguration;->markFontDownloaded(JZ)Z
 
     :goto_1
-    add-int/lit8 v5, v5, 0x1
-
     goto :goto_0
 
     :cond_a

@@ -321,7 +321,7 @@
 .end method
 
 .method private final getFontFamilyInfoMap()Ljava/util/LinkedHashMap;
-    .locals 2
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -365,9 +365,22 @@
 
     move-result-object v0
 
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getLocalFontInfos()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_zyyme_local_font_options
+
     invoke-virtual {v0}, Lcom/amazon/ksdk/presets/AaSettingsConfiguration;->fontOptions()Ljava/util/ArrayList;
 
-    move-result-object v0
+    move-result-object v1
+
+    :cond_zyyme_local_font_options
+    move-object v0, v1
 
     .line 160
     invoke-direct {p0, v0}, Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;->mapKSDKFontInfoToReaderFontFamilyInfo(Ljava/util/List;)Ljava/util/LinkedHashMap;
@@ -558,8 +571,6 @@
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 109
-    sget-object v3, Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;->INSTANCE:Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;
-
     invoke-virtual {v2}, Lcom/amazon/ksdk/presets/FontInfo;->getFontFamily()Ljava/lang/String;
 
     move-result-object v4
@@ -568,9 +579,30 @@
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getLocalFontInfos()Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_zyyme_use_language_family
+
+    invoke-static {v4}, Lcom/mobipocket/android/drawing/FontFamily;->fromTypeFaceName(Ljava/lang/String;)Lcom/mobipocket/android/drawing/FontFamily;
+
+    move-result-object v3
+
+    goto :goto_zyyme_family_ready
+
+    :cond_zyyme_use_language_family
+    sget-object v3, Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;->INSTANCE:Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;
+
     invoke-direct {v3, v4, v1}, Lcom/amazon/kindle/viewoptions/font/FontFamilyUtils;->getReaderFontFamily(Ljava/lang/String;Ljava/lang/String;)Lcom/mobipocket/android/drawing/FontFamily;
 
     move-result-object v3
+
+    :goto_zyyme_family_ready
 
     .line 110
     new-instance v4, Ljava/lang/StringBuilder;
@@ -607,6 +639,12 @@
 
     .line 114
     :cond_2
+    invoke-static {v3}, Lcom/amazon/kcp/font/LocalFontManager;->getFontPath(Lcom/mobipocket/android/drawing/FontFamily;)Ljava/lang/String;
+
+    move-result-object v4
+
+    if-nez v4, :cond_3
+
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->getFactory()Lcom/amazon/kcp/application/IKindleObjectFactory;
 
     move-result-object v4
@@ -672,6 +710,16 @@
 
     .line 123
     :cond_4
+    invoke-static {}, Lcom/amazon/kcp/font/LocalFontManager;->getLocalFontInfos()Ljava/util/ArrayList;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
     sget-object p1, Lcom/mobipocket/android/drawing/LanguageSet;->TCN:Lcom/mobipocket/android/drawing/LanguageSet;
 
     invoke-virtual {p1, v1}, Lcom/mobipocket/android/drawing/LanguageSet;->contains(Ljava/lang/String;)Z
