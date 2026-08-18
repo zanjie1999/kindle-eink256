@@ -11,7 +11,9 @@
 - 方向键DPAD支持，方便在没有触摸屏的设备上使用
 
 ### 点击右侧的Releases下载apk安装即可
-黑白用`kindle_eink256`，彩墨用`kindle_no_eink256`
+黑白用`kindle_eink256`，彩墨用`kindle_no_eink256`  
+
+自定义字体放到内置存储的`zyymeFonts`文件夹  
 ### 禁止商用
 
 ## 额外说明
