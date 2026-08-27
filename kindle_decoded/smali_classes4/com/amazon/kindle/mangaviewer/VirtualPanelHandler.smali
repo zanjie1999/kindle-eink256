@@ -1853,6 +1853,14 @@
 
     if-eq v0, v1, :cond_consume_key
 
+    const/16 v1, 0x5c
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x5d
+
+    if-eq v0, v1, :cond_consume_key
+
     const/16 v1, 0x15
 
     if-eq v0, v1, :cond_consume_key
@@ -1988,7 +1996,15 @@
 
     if-eq v2, v3, :cond_4
 
+    const/16 v3, 0x5c
+
+    if-eq v2, v3, :cond_4
+
     const/16 v3, 0x14
+
+    if-eq v2, v3, :cond_1
+
+    const/16 v3, 0x5d
 
     if-eq v2, v3, :cond_1
 

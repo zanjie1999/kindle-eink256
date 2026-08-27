@@ -578,6 +578,14 @@
 
     if-eq p1, v1, :cond_2
 
+    const/16 v1, 0x5c
+
+    if-eq p1, v1, :pswitch_5
+
+    const/16 v1, 0x5d
+
+    if-eq p1, v1, :pswitch_4
+
     const-string v1, "PageTurnVolumeButtons"
 
     packed-switch p1, :pswitch_data_0

@@ -354,6 +354,14 @@
 
     if-eq v0, v1, :cond_consume_key
 
+    const/16 v1, 0x5c
+
+    if-eq v0, v1, :cond_consume_key
+
+    const/16 v1, 0x5d
+
+    if-eq v0, v1, :cond_consume_key
+
     const/16 v1, 0x15
 
     if-eq v0, v1, :cond_consume_key
@@ -479,7 +487,15 @@
 
     if-eq v0, v1, :cond_keyboard_backward
 
+    const/16 v1, 0x5c
+
+    if-eq v0, v1, :cond_keyboard_backward
+
     const/16 v1, 0x14
+
+    if-eq v0, v1, :cond_keyboard_forward
+
+    const/16 v1, 0x5d
 
     if-eq v0, v1, :cond_keyboard_forward
 
