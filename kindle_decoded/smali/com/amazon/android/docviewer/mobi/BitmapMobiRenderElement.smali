@@ -341,10 +341,6 @@
     :cond_0
     iget-object v0, p0, Lcom/amazon/android/docviewer/mobi/BitmapMobiRenderElement;->m_bitmap:Landroid/graphics/Bitmap;
 
-    invoke-static {v0}, Lcom/zyyme/eink256/Eink256Patch;->processInPlace(Landroid/graphics/Bitmap;)V
-
-    iget-object v0, p0, Lcom/amazon/android/docviewer/mobi/BitmapMobiRenderElement;->m_bitmap:Landroid/graphics/Bitmap;
-
     iget-object v1, p0, Lcom/amazon/android/docviewer/mobi/BitmapMobiRenderElement;->m_bitmapRect:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0, p2, v1, p3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V

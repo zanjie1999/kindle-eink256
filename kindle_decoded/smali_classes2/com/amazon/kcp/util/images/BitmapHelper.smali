@@ -574,19 +574,6 @@
 
     invoke-static {p0, v2, v1, v0}, Landroid/graphics/BitmapFactory;->decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/zyyme/eink256/Eink256Patch;->process(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    .line 316
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
-
-    .line 318
-    :cond_0
     new-instance p0, Lcom/amazon/kindle/util/drawing/Dimension;
 
     iget v1, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I

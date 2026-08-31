@@ -183,6 +183,12 @@
     .line 89
     invoke-virtual {p1, v0}, Lcom/amazon/kcp/reader/ui/NoSicsImageCache$ImageLoadingTask;->cancel(Z)Z
 
+    iget-object v0, p0, Lcom/amazon/kcp/reader/ui/NoSicsImageCache;->bitmapLoaderExecutor:Ljava/util/concurrent/ExecutorService;
+
+    check-cast v0, Ljava/util/concurrent/ThreadPoolExecutor;
+
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->remove(Ljava/lang/Runnable;)Z
+
     .line 92
     :cond_0
     iget-object p1, p0, Lcom/amazon/kcp/reader/ui/NoSicsImageCache;->imageLoadingTasks:[Lcom/amazon/kcp/reader/ui/NoSicsImageCache$ImageLoadingTask;
@@ -210,7 +216,7 @@
 
     aget-object p2, p3, p2
 
-    invoke-interface {p1, p2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-interface {p1, p2}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
     .line 95
     sget-object p1, Lcom/amazon/kcp/reader/ui/ThumbnailScrubber$ThumbnailState;->LOADING:Lcom/amazon/kcp/reader/ui/ThumbnailScrubber$ThumbnailState;

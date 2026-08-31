@@ -576,9 +576,46 @@
 .end method
 
 .method public static setDefaultMarketplaceId(Ljava/lang/String;)V
-    .locals 0
+    .locals 3
 
     .line 111
+    if-eqz p0, :store_marketplace
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "zh"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :store_marketplace
+
+    sget-object v0, Lcom/amazon/kcp/application/Marketplace;->CN:Lcom/amazon/kcp/application/Marketplace;
+
+    invoke-virtual {v0}, Lcom/amazon/kcp/application/Marketplace;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :store_marketplace
+
+    sget-object v0, Lcom/amazon/kcp/application/Marketplace;->US:Lcom/amazon/kcp/application/Marketplace;
+
+    invoke-virtual {v0}, Lcom/amazon/kcp/application/Marketplace;->getId()Ljava/lang/String;
+
+    move-result-object p0
+
+:store_marketplace
     sput-object p0, Lcom/amazon/kcp/application/Marketplace;->defaultMarketplaceId:Ljava/lang/String;
 
     return-void

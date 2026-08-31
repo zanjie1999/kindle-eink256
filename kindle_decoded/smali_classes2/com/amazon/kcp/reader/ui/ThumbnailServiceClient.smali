@@ -581,6 +581,17 @@
     .line 129
     invoke-virtual {p0}, Lcom/amazon/kcp/reader/ui/ThumbnailServiceClient;->unbind()V
 
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/amazon/kcp/reader/ui/ThumbnailServiceClient;->pendingThumbnailRequests:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
     .line 130
     iget-object v0, p0, Lcom/amazon/kcp/reader/ui/ThumbnailServiceClient;->thumbnailServiceConnection:Landroid/content/ServiceConnection;
 
@@ -618,6 +629,13 @@
 
     :cond_1
     return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit p0
+
+    throw v1
 .end method
 
 .method public unbind()V

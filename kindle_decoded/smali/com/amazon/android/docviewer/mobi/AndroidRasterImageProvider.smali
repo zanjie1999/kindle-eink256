@@ -217,8 +217,6 @@
 
     iput-object v0, p0, Lcom/amazon/android/docviewer/mobi/AndroidRasterImageProvider;->m_originalBitmap:Landroid/graphics/Bitmap;
 
-    invoke-static {v0}, Lcom/zyyme/eink256/Eink256Patch;->processInPlace(Landroid/graphics/Bitmap;)V
-
     if-nez v0, :cond_1
 
     return-void
@@ -232,8 +230,6 @@
     .line 105
     :cond_2
     iget-object v0, p0, Lcom/amazon/android/docviewer/mobi/AndroidRasterImageProvider;->m_originalBitmap:Landroid/graphics/Bitmap;
-
-    invoke-static {v0}, Lcom/zyyme/eink256/Eink256Patch;->processInPlace(Landroid/graphics/Bitmap;)V
 
     invoke-virtual {p1, v0, p2, p3, p4}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 

@@ -383,7 +383,7 @@
     <string name="bookwizard_details_close">關閉</string>
     <string name="bookwizard_details_error_body">很抱歉，我們無法擷取這本書的詳細資訊。 請稍後再試。</string>
     <string name="bookwizard_done_button_text">完成</string>
-    <string name="bookwizard_eink_error_body">發生未預期的錯誤。 請再試一次。 如果問題持續發生，請至 www.amazon.cn/devicesupport 聯絡 Amazon 客戶服務。</string>
+    <string name="bookwizard_eink_error_body">發生未預期的錯誤。 請再試一次。 如果問題持續發生，請至 www.amazon.com/devicesupport 聯絡 Amazon 客戶服務。</string>
     <string name="bookwizard_error_body">目前無法完成您的要求。 請稍後再試。 如果問題持續發生，您可透過「設定」功能表中的「傳送意見回饋」選項，傳送電子郵件給我們。</string>
     <string name="bookwizard_error_exit">退出</string>
     <string name="bookwizard_error_header">發生意外的錯誤</string>
@@ -1703,7 +1703,7 @@
     <string name="mark_as_read_item_hidden_toast_for_accessibility">%1$s 已標示為紅色，未顯示在您的書櫃中</string>
     <string name="mark_as_read_toast_action">是</string>
     <string name="mark_as_unread">標示為未閱讀</string>
-    <string name="marketplace_from_language">AAHKV2X7AFYLW</string>
+    <string name="marketplace_from_language">ATVPDKIKX0DER</string>
     <string name="matchmaker_add_audible_narration">閱讀與聆聽有聲書</string>
     <string name="max_brightness_image">最大亮度影像</string>
     <string name="mchl_text_change_black">變更為黑色</string>

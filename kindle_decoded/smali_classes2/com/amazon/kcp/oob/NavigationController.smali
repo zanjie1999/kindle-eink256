@@ -2159,7 +2159,13 @@
 
     move-result p1
 
+    sget-object v1, Lcom/amazon/kcp/library/LibraryTab;->ID:Ljava/lang/String;
+
     const/4 v0, 0x0
+
+    invoke-direct {p0, v1, v0}, Lcom/amazon/kcp/oob/NavigationController;->tabIndexFromTabId(Ljava/lang/String;I)I
+
+    move-result v0
 
     if-eqz p1, :cond_2
 

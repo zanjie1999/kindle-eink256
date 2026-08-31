@@ -1781,6 +1781,33 @@
 
     if-eqz v0, :cond_2
 
+    const-string v3, "zh"
+
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :return_country_marketplace
+
+    sget-object v3, Lcom/amazon/kcp/application/Marketplace;->CN:Lcom/amazon/kcp/application/Marketplace;
+
+    invoke-virtual {v3}, Lcom/amazon/kcp/application/Marketplace;->getId()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :return_country_marketplace
+
+    sget-object v0, Lcom/amazon/kcp/application/Marketplace;->US:Lcom/amazon/kcp/application/Marketplace;
+
+    invoke-virtual {v0}, Lcom/amazon/kcp/application/Marketplace;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+:return_country_marketplace
     return-object v0
 
     .line 181

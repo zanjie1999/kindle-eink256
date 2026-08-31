@@ -319,11 +319,7 @@
 
     int-to-float v0, v0
 
-    iget-object v1, p0, Lcom/amazon/kcp/reader/gestures/PageTurnGestureHandler;->layout:Lcom/amazon/kcp/reader/ui/ReaderLayout;
-
-    invoke-virtual {v1}, Lcom/amazon/kcp/reader/ui/ReaderLayout;->getNavigationMarginPercent()F
-
-    move-result v1
+    const/high16 v1, 0x3f000000    # 0.5f
 
     mul-float v0, v0, v1
 
@@ -342,9 +338,19 @@
 .end method
 
 .method protected getNavigationMarginTop()F
-    .locals 1
+    .locals 2
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/amazon/kcp/reader/gestures/PageTurnGestureHandler;->layout:Lcom/amazon/kcp/reader/ui/ReaderLayout;
+
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getHeight()I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x3e800000    # 0.25f
+
+    mul-float v0, v0, v1
 
     return v0
 .end method

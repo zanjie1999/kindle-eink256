@@ -306,7 +306,7 @@
     <string name="bookwizard_details_close">关闭</string>
     <string name="bookwizard_details_error_body">抱歉，我们无法读取此电子书的详细信息。请稍后重试。</string>
     <string name="bookwizard_done_button_text">完成</string>
-    <string name="bookwizard_eink_error_body">发生未知错误，请重试。如果问题仍然存在，请联系亚马逊客服 (www.amazon.cn/devicesupport)。</string>
+    <string name="bookwizard_eink_error_body">发生未知错误，请重试。如果问题仍然存在，请联系亚马逊客服 (www.amazon.com/devicesupport)。</string>
     <string name="bookwizard_error_body">此时无法完成您的请求。请稍后重试。如果问题仍然存在，可通过【设置】菜单中的【发送反馈】选项通过电子邮件联系我们。</string>
     <string name="bookwizard_error_exit">退出</string>
     <string name="bookwizard_error_header">出现未知错误</string>
@@ -510,7 +510,7 @@
     <string name="decrease_brightness">降低亮度</string>
     <string name="decrease_text_size">减少文本大小</string>
     <string name="default_device_name_template">我的%%DUPE_STRATEGY_1ST%%%1$s</string>
-    <string name="default_domain">https://www.amazon.cn</string>
+    <string name="default_domain">https://www.amazon.com</string>
     <string name="default_line_spacing">正常行间距</string>
     <string name="default_logger_tag">亚马逊 Kindle</string>
     <string name="definition_dictionary">完整释义</string>
@@ -1593,7 +1593,7 @@
     <string name="mark_as_read_item_hidden_toast_for_accessibility">%1$s 已经被标记为“已读”，不会在您的图书馆中显示。</string>
     <string name="mark_as_read_toast_action">是</string>
     <string name="mark_as_unread">标记为“未读”</string>
-    <string name="marketplace_from_language">AAHKV2X7AFYLW</string>
+    <string name="marketplace_from_language">ATVPDKIKX0DER</string>
     <string name="matchmaker_add_audible_narration">使用Audible阅读有声读物</string>
     <string name="max_brightness_image">最大亮度图像</string>
     <string name="mchl_text_change_black">将标注颜色改为黑色</string>
@@ -2264,7 +2264,7 @@
     <string name="several_bug_fixes">修复了多个错误</string>
     <string name="shake_to_collapse_library_search_section_instruction">图书馆搜索结果已展开。晃动设备，折叠图书馆搜索结果</string>
     <string name="share">分享</string>
-    <string name="share_app_link">https://www.amazon.cn/kindleforandroid/</string>
+    <string name="share_app_link">https://www.amazon.com/kindleforandroid/</string>
     <string name="share_app_name_email">电子邮箱</string>
     <string name="share_app_name_facebook">Facebook</string>
     <string name="share_app_name_flipboard">Flipboard</string>

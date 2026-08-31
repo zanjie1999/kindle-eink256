@@ -173,9 +173,27 @@
 .end method
 
 .method public static processInPlace(Landroid/graphics/Bitmap;)V
-    .locals 0
+    .locals 1
+
+    if-eqz p0, :return_without_processing
+
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->isRecycled()Z
+
+    move-result v0
+
+    if-eqz v0, :check_mutable
+
+    goto :return_without_processing
+
+:check_mutable
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->isMutable()Z
+
+    move-result v0
+
+    if-eqz v0, :return_without_processing
 
     invoke-static {p0}, Lcom/zyyme/eink256/Eink256Patch;->process(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
+:return_without_processing
     return-void
 .end method
