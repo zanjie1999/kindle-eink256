@@ -9530,6 +9530,9 @@
 .method public setVisibleOverlays(IZZ)Z
     .locals 5
 
+    # E-ink displays should update reader chrome immediately without slide/fade animations.
+    const/4 p2, 0x0
+
     .line 2417
     invoke-static {}, Lcom/amazon/kcp/reader/AudibleHelper;->isReaderInAudibleMode()Z
 

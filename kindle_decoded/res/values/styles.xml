@@ -5666,7 +5666,7 @@
         <item name="legal_disclaimer_text_style">@style/Ruby.TextAppearance.Caption2.Grey</item>
         <item name="lib_menu_background">@color/primary_light</item>
         <item name="lib_menu_share_icon">@drawable/ic_share_light</item>
-        <item name="library_background_color">@drawable/library_background_mesh_light</item>
+        <item name="library_background_color">@color/white</item>
         <item name="library_book_row_style">@style/library_book_row.light</item>
         <item name="library_collections_view">@drawable/ic_collections_view_light</item>
         <item name="library_details_view">@drawable/ic_details_view_light</item>
@@ -11109,7 +11109,7 @@
     </style>
     <style name="periodical_section_articles">
         <item name="android:typeface">sans</item>
-        <item name="android:textColor">#ffcccccc</item>
+        <item name="android:textColor">#ffffffff</item>
         <item name="android:shadowColor">#4c000000</item>
         <item name="android:shadowDx">0.0</item>
         <item name="android:shadowDy">0.0</item>
