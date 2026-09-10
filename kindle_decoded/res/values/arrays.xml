@@ -1632,9 +1632,9 @@
         <item>@string/wide</item>
     </string-array>
     <array name="page_margins_user_settings">
+        <item>7.0dip</item>
         <item>15.0dip</item>
-        <item>30.0dip</item>
-        <item>50.0dip</item>
+        <item>25.0dip</item>
     </array>
     <integer-array name="pdf_page_margin_percents">
         <item>1</item>

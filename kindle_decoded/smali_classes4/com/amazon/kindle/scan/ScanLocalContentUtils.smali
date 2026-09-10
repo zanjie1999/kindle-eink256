@@ -546,7 +546,7 @@
 .end method
 
 .method public final addLocalContentPaths(Landroid/content/Context;Lcom/amazon/kindle/io/IPathDescriptor;)V
-    .locals 3
+    .locals 4
 
     const-string v0, "context"
 
@@ -577,6 +577,29 @@
     invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v0, p2}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
+
+    # Also scan the optional external SD-card documents directory when it exists.
+    const-string v3, "/mnt/media_rw/extsd/documents"
+
+    new-instance p2, Ljava/io/File;
+
+    invoke-direct {p2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_extsd_missing
+
+    invoke-virtual {p2}, Ljava/io/File;->isDirectory()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_extsd_missing
+
+    invoke-virtual {v0, v3}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
+
+    :cond_extsd_missing
 
     .line 133
     invoke-static {}, Lcom/amazon/kcp/debug/ScopedStorageUtilsManager;->getInstance()Lcom/amazon/kcp/debug/ScopedStorageUtils;

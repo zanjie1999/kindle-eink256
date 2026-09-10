@@ -301,7 +301,19 @@
     .locals 1
 
     .line 120
-    sget v0, Lcom/amazon/kindle/krl/R$dimen;->reader_top_margin:I
+    invoke-static {}, Lcom/amazon/kindle/build/BuildInfo;->isFirstPartyBuild()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 121
+    sget v0, Lcom/amazon/kindle/krl/R$dimen;->reader_bottom_margin_v2:I
+
+    return v0
+
+    :cond_0
+    sget v0, Lcom/amazon/kindle/krl/R$dimen;->reader_bottom_margin:I
 
     return v0
 .end method
