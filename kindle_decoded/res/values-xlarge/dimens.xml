@@ -41,7 +41,7 @@
     <dimen name="notebook_bookmark_width">633.3281dip</dimen>
     <dimen name="periodical_top_margin">80.0dip</dimen>
     <dimen name="reader_bookmark_corner_size">80.0dip</dimen>
-    <dimen name="reader_title_offset_from_top">25.0dip</dimen>
+    <dimen name="reader_title_offset_from_top">18.0dip</dimen>
     <dimen name="reader_top_margin">80.0dip</dimen>
     <dimen name="thumbnail_scrubber_location_info_padding_bottom">17.0dip</dimen>
     <dimen name="welcome_button_width">280.0dip</dimen>

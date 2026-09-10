@@ -1,3 +1,9 @@
+param(
+    [Parameter(Position = 0)]
+    [AllowEmptyString()]
+    [string] $SigningPassword
+)
+
 $ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -146,7 +152,11 @@ function Build-And-Sign {
 
     $unsignedApk = Join-Path $rootDir "$BaseName.apk"
     Invoke-Checked -FilePath $java -Arguments @("-jar", $apktool, "b", "--force-all", $decodedDir, "-o", $unsignedApk)
-    Invoke-Checked -FilePath $java -Arguments @("-jar", $signer, "--apks", $unsignedApk, "--ks", $keystore, "--ksAlias", $keyAlias)
+    $signerArguments = @("-jar", $signer, "--apks", $unsignedApk, "--ks", $keystore, "--ksAlias", $keyAlias)
+    if (-not [string]::IsNullOrEmpty($SigningPassword)) {
+        $signerArguments += @("--ksPass", $SigningPassword, "--ksKeyPass", $SigningPassword)
+    }
+    Invoke-Checked -FilePath $java -Arguments $signerArguments
 }
 
 if (-not (Test-Path -LiteralPath $patchFile)) {

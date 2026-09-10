@@ -2503,7 +2503,7 @@
     <item type="dimen" name="reader_search_result_padding_horiz">@dimen/reader_search_list_item_padding_horiz</item>
     <dimen name="reader_search_result_padding_vert">10.0dip</dimen>
     <dimen name="reader_text_decoration_height">12.0sp</dimen>
-    <dimen name="reader_title_offset_from_top">8.0dip</dimen>
+    <dimen name="reader_title_offset_from_top">18.0dip</dimen>
     <dimen name="reader_toolbar_padding_left">0.0dip</dimen>
     <dimen name="reader_toolbar_padding_right">0.0dip</dimen>
     <dimen name="reader_top_margin">32.0dip</dimen>
