@@ -5,7 +5,7 @@
 让图片渲染实现16阶灰度抖256阶灰度显示（4bit抖8bit Floyd-Steinberg），让墨水屏体验更好
 
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/22b49524-ffac-48d4-829b-88f26499ff1e" />
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/25833872-00e6-4636-bb18-17f2313db4ce" />
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/004baa86-51c4-47ab-a0ee-3ad7afee32d3" />
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/54036895-4b88-4e6c-bedd-f8daaec019fd" />
 
 #### 额外修改
