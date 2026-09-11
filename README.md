@@ -4,9 +4,9 @@
 加入了之前写的[eink256](https://github.com/zanjie1999/eink256)中的抖动实现部分的native  
 让图片渲染实现16阶灰度抖256阶灰度显示（4bit抖8bit Floyd-Steinberg），让墨水屏体验更好
 
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/22b49524-ffac-48d4-829b-88f26499ff1e" />
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/004baa86-51c4-47ab-a0ee-3ad7afee32d3" />
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/54036895-4b88-4e6c-bedd-f8daaec019fd" />
+<img height="350" alt="image" src="https://github.com/user-attachments/assets/22b49524-ffac-48d4-829b-88f26499ff1e" />
+<img height="350" alt="image" src="https://github.com/user-attachments/assets/004baa86-51c4-47ab-a0ee-3ad7afee32d3" />
+<img height="350" alt="image" src="https://github.com/user-attachments/assets/54036895-4b88-4e6c-bedd-f8daaec019fd" />
 
 #### 额外修改
 - 软件级16灰阶抖256灰阶
