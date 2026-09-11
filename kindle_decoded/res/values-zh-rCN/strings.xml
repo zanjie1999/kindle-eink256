@@ -1407,8 +1407,8 @@
     <string name="kre_more_as_update_setting_title">自动同步电子书更新</string>
     <string name="kre_more_coupon_context">查看您是否有可用的优惠券。</string>
     <string name="kre_more_my_wallet_settings">我的钱包</string>
-    <string name="kre_more_pdoc_switch_text">在图书馆中查看设备中的文件。</string>
-    <string name="kre_more_pdoc_switch_title">在图书馆中显示个人文档</string>
+    <string name="kre_more_pdoc_switch_text">将书放到/sdcard/Books</string>
+    <string name="kre_more_pdoc_switch_title">在图书馆中显示本地文件</string>
     <string name="kre_more_rs_about_this_book_context">首次打开时显示此电子书的相关信息。</string>
     <string name="kre_more_rs_hm_context">选择一段文字时显示标注菜单。</string>
     <string name="kre_more_rs_migration_message">在电子书中前往 Aa 菜单，可找到热门标注和生词提示等阅读设置。</string>

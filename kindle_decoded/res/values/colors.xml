@@ -328,7 +328,7 @@
     <color name="com_facebook_usersettingsfragment_connected_shadow_color">#ff000000</color>
     <color name="com_facebook_usersettingsfragment_connected_text_color">#ffffffff</color>
     <color name="com_facebook_usersettingsfragment_not_connected_text_color">#ffa6aed7</color>
-    <color name="comics_background_color">#ff000000</color>
+    <color name="comics_background_color">#ffffffff</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -1426,8 +1426,8 @@
     <color name="white_mode_chrome_menu_background">@color/white_mode_background</color>
     <color name="white_mode_component_viewer_background">#d9ffffff</color>
     <color name="white_mode_component_viewer_header_separator">#ffd1d3d4</color>
-    <color name="white_mode_highlight">#fffdf691</color>
-    <color name="white_mode_highlight_blue">#ffa9ddf3</color>
+    <color name="white_mode_highlight">#dcdcdc91</color>
+    <color name="white_mode_highlight_blue">#ff70baf3</color>
     <color name="white_mode_highlight_orange">#fffedc99</color>
     <color name="white_mode_highlight_pink">#fffdbbd6</color>
     <color name="white_mode_icon">@color/default_icon</color>

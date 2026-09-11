@@ -68,6 +68,9 @@
 
     move-result v0
 
+    # Keep the library list available even when the account session is absent.
+    const/4 v0, 0x1
+
     .line 34
     sget v1, Lcom/amazon/kindle/thirdparty/R$id;->empty_library_logged_in:I
 
@@ -161,6 +164,9 @@
     invoke-interface {v0}, Lcom/amazon/kcp/application/IAuthenticationManager;->isAuthenticated()Z
 
     move-result v0
+
+    # Do not suppress the local/library list while signed out.
+    const/4 v0, 0x1
 
     .line 56
     invoke-static {}, Lcom/amazon/kcp/util/Utils;->isDefaultContentSupported()Z

@@ -13,7 +13,7 @@ packageInfo:
   renameManifestPackage: com.amazon.kindle
 versionInfo:
   versionCode: 1221337088
-  versionName: 4.3
+  versionName: 4.4
 resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
