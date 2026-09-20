@@ -22,6 +22,7 @@
 - 背景改成纯白色，标注颜色加深
 - 高对比度文字
 - 调整阅读器顶部布局，并调小三档边距(你可以改page_margins_user_settings，kindle是value-large)
+- 不强制竖屏(ruby_activity_orientation_lock)
 
 ### 点击右侧的Releases下载apk安装即可
 黑白用`kindle_eink256`，彩墨用`kindle_no_eink256`
