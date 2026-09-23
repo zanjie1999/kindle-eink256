@@ -197,7 +197,7 @@
     .line 425
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
-    const-string v1, "Amazon"
+    const-string v1, "zyymeKindle"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 

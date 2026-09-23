@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final BUILD_MANUFACTURER_VALUE_AMAZON:Ljava/lang/String; = "Amazon"
+.field private static final BUILD_MANUFACTURER_VALUE_AMAZON:Ljava/lang/String; = "zyymeKindle"
 
 .field private static sDevicePlatformIdentifierUtil:Lcom/amazon/client/metrics/common/internal/util/DevicePlatformIdentifierUtil;
 
@@ -23,7 +23,7 @@
     .line 44
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
-    const-string v1, "Amazon"
+    const-string v1, "zyymeKindle"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
